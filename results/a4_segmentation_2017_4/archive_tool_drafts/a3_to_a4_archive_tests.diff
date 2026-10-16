@@ -1,0 +1,163 @@
+--- tests/test_a3_archive.py
++++ tests/test_a4_archive.py
+@@ -14,10 +14,12 @@
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(ROOT / "scripts"))
+-import archive_a3_board_results as archive
+-
+-RAW = ROOT / "build/board_results/a3_background_2026-10-12"
+-PACKAGE = ROOT / "build/deploy/a3_background_2017_4_r1"
++import archive_a4_board_results as archive
++
++LOCAL_ARCHIVE = ROOT / "build/board_results/a4_segmentation_2026-10-12"
++RAW = LOCAL_ARCHIVE if (LOCAL_ARCHIVE / "a4_results_bundle.zip").is_file() else Path.home() / "Downloads"
++NOTEBOOK_NAME = "a4_segmentation_check_executed.ipynb" if RAW == LOCAL_ARCHIVE else "a4_segmentation_check.ipynb"
++PACKAGE = ROOT / "build/deploy/a4_segmentation_2017_4_r1"
+ 
+ 
+ class BundleBoundaryTests(unittest.TestCase):
+@@ -46,7 +48,7 @@
+ 
+     def test_traversal_member_rejected_without_extraction(self):
+         names = sorted(archive.BUNDLE_NAMES)
+-        names[0] = "../a3_background_result.json"
++        names[0] = "../a4_segmentation_result.json"
+         with self.assertRaisesRegex(ValueError, "ZIP member"):
+             archive.read_bundle(self.bundle(names))
+ 
+@@ -62,20 +64,20 @@
+         path = self.bundle(sorted(archive.BUNDLE_NAMES))
+         with ZipFile(path, "w") as output:
+             for name in sorted(archive.BUNDLE_NAMES):
+-                output.writestr(name, b"x" * (500_001 if name == "a3_background_result.json" else 1))
++                output.writestr(name, b"x" * (500_001 if name == "a4_segmentation_result.json" else 1))
+         with self.assertRaisesRegex(ValueError, "member size"):
+             archive.read_bundle(path)
+ 
+ 
+-@unittest.skipUnless((RAW / "a3_results_bundle.zip").is_file() and (PACKAGE / "a3_manifest.json").is_file(),
+-                     "Real A3 data are kept in the ignored local archive, not redistributed in Git")
++@unittest.skipUnless((RAW / "a4_results_bundle.zip").is_file() and (PACKAGE / "a4_manifest.json").is_file(),
++                     "Real A4 data are kept in the ignored local archive, not redistributed in Git")
+ class ActualEvidenceTests(unittest.TestCase):
+     @classmethod
+     def setUpClass(cls):
+-        cls.members = archive.read_bundle(RAW / "a3_results_bundle.zip")
+-        cls.report = json.loads(cls.members["a3_background_result.json"])
+-        cls.notebook = json.loads((RAW / "a3_background_check_executed.ipynb").read_bytes())
+-        cls.manifest = json.loads((PACKAGE / "a3_manifest.json").read_bytes())
++        cls.members = archive.read_bundle(RAW / "a4_results_bundle.zip")
++        cls.report = json.loads(cls.members["a4_segmentation_result.json"])
++        cls.notebook = json.loads((RAW / NOTEBOOK_NAME).read_bytes())
++        cls.manifest = json.loads((PACKAGE / "a4_manifest.json").read_bytes())
+         archive.validate_a3_package(PACKAGE, cls.manifest)
+ 
+     def verify(self, report=None, notebook=None, members=None):
+@@ -85,8 +87,8 @@
+ 
+     def test_actual_downloaded_records_and_all_raw_arrays_match(self):
+         checks = self.verify()
+-        self.assertEqual(sum(item["words"] for item in checks["frames"]), 7_274_496)
+-        self.assertEqual(sum(item["words"] for item in checks["raw_arrays"]), 655_360)
++        self.assertEqual(sum(item["words"] for item in checks["frames"]), 9_895_936)
++        self.assertEqual(sum(item["words"] for item in checks["raw_arrays"]), 983_040)
+         self.assertTrue(all(item["mismatched_words"] == 0 for item in checks["raw_arrays"]))
+ 
+     def test_notebook_save_metadata_and_markdown_remain_mutable(self):
+@@ -156,7 +158,7 @@
+             self.verify(report=report)
+ 
+     def test_changed_raw_word_rejected_even_if_file_hash_is_updated(self):
+-        for mode, shift in ((2, 0), (2, 8), (2, 16), (2, 24), (3, 16), (3, 24)):
++        for mode, shift in ((mode, shift) for mode in (1, 2, 3) for shift in (0, 8, 16, 24)):
+             with self.subTest(mode=mode, diagnostic_byte=shift // 8):
+                 report, members = copy.deepcopy(self.report), dict(self.members)
+                 record = next(item for item in report["transfers"]
+@@ -171,24 +173,81 @@
+                 with self.assertRaisesRegex(ValueError, "differs from the M0 golden"):
+                     self.verify(report=report, members=members)
+ 
+-    def test_changed_background_preview_rejected_even_if_hash_is_updated(self):
++    def test_changed_binary_mask_preview_rejected_even_if_hash_is_updated(self):
+         from PIL import Image
+         report, members = copy.deepcopy(self.report), dict(self.members)
+-        pixels = archive.decoded_png(members["a3_preview.png"])
++        pixels = archive.decoded_png(members["a4_preview.png"])
+         pixels[128, 640] ^= np.uint8(1)
+         stream = io.BytesIO()
+         Image.fromarray(pixels).save(stream, format="PNG")
+-        members["a3_preview.png"] = stream.getvalue()
+-        report["preview"]["sha256"] = archive.digest(members["a3_preview.png"])
++        members["a4_preview.png"] = stream.getvalue()
++        report["preview"]["sha256"] = archive.digest(members["a4_preview.png"])
+         with self.assertRaisesRegex(ValueError, "FPGA diagnostic byte"):
+             self.verify(report=report, members=members)
+ 
+     def test_changed_preview_rejected(self):
+         members = dict(self.members)
+-        members["a3_preview.png"] += b"alteration"
++        members["a4_preview.png"] += b"alteration"
+         with self.assertRaisesRegex(ValueError, "Preview file hash"):
+             self.verify(members=members)
+ 
+ 
++    def test_changed_frame_order_rejected(self):
++        report = copy.deepcopy(self.report)
++        report["transfers"][1], report["transfers"][2] = report["transfers"][2], report["transfers"][1]
++        with self.assertRaisesRegex(ValueError, "Unexpected frame order"):
++            self.verify(report=report)
++
++    def test_only_smoke_status_rejected(self):
++        report = copy.deepcopy(self.report)
++        report["status"] = "A4_SMOKE_PASS_FULL_PENDING"
++        with self.assertRaisesRegex(ValueError, "incomplete or failed"):
++            self.verify(report=report)
++
++    def test_duplicate_completion_marker_rejected(self):
++        notebook = copy.deepcopy(self.notebook)
++        code = [cell for cell in notebook["cells"] if cell["cell_type"] == "code"]
++        code[2]["outputs"].append({"output_type": "stream", "name": "stdout", "text": ["A4_LOAD_PASS: official drivers and reset state checked\n"]})
++        with self.assertRaisesRegex(ValueError, "completion marker"):
++            self.verify(notebook=notebook)
++
++    def test_changed_embedded_preview_rejected(self):
++        import base64
++        from PIL import Image
++        notebook = copy.deepcopy(self.notebook)
++        cell = [c for c in notebook["cells"] if c["cell_type"] == "code"][5]
++        output = next(o for o in cell["outputs"] if "image/png" in o.get("data", {}))
++        pixels = archive.decoded_png(self.members["a4_preview.png"])
++        pixels[128, 640] ^= np.uint8(1)
++        stream = io.BytesIO()
++        Image.fromarray(pixels).save(stream, format="PNG")
++        output["data"]["image/png"] = base64.b64encode(stream.getvalue()).decode()
++        with self.assertRaisesRegex(ValueError, "Notebook preview differs"):
++            self.verify(notebook=notebook)
++
++    def test_bicubic_binary_mask_rejected_even_if_hash_is_updated(self):
++        from PIL import Image
++        report, members = copy.deepcopy(self.report), dict(self.members)
++        pixels = archive.decoded_png(members["a4_preview.png"])
++        words = np.load(io.BytesIO(members["a4_output_stare_512_mode3.npy"]), allow_pickle=False)
++        mask = ((words >> 16) & 255).astype(np.uint8)
++        wrong = np.asarray(Image.fromarray(mask).resize((256, 256), Image.Resampling.BICUBIC))
++        pixels[24:, 512:768] = wrong[:, :, None]
++        stream = io.BytesIO()
++        Image.fromarray(pixels).save(stream, format="PNG")
++        members["a4_preview.png"] = stream.getvalue()
++        report["preview"]["sha256"] = archive.digest(members["a4_preview.png"])
++        with self.assertRaisesRegex(ValueError, "FPGA diagnostic byte"):
++            self.verify(report=report, members=members)
++
++    def test_final_fov_and_binary_values_in_actual_buffers(self):
++        checks = self.verify()
++        self.assertEqual(len(checks["raw_arrays"]), 6)
++        for record in checks["raw_arrays"]:
++            self.assertTrue(set(record["mask_byte_values"]).issubset({0, 255}))
++            if "mode3" in record["name"]:
++                self.assertEqual(record["final_mask_outside_fov_pixels"], 0)
++
++
+ if __name__ == "__main__":
+     unittest.main()

@@ -1,0 +1,86 @@
+{
+  "original_notebook": {
+    "fixed_artifacts": "PASS_EXACT_SHA256_EXCLUDING_NOTEBOOK_JSON",
+    "notebook_code_sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201",
+    "mutable_notebook_json": [
+      "b_integration_check.ipynb",
+      "b_performance_profile.ipynb"
+    ],
+    "current_notebook_sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "autosaved_notebook": {
+    "fixed_artifacts": "PASS_EXACT_SHA256_EXCLUDING_NOTEBOOK_JSON",
+    "notebook_code_sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201",
+    "mutable_notebook_json": [
+      "b_integration_check.ipynb",
+      "b_performance_profile.ipynb"
+    ],
+    "current_notebook_sha256": "0a4010b9fadcfba7430789ce5945b788dde72511a64cd0d77cd87bc19ff330e0",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "a617f272c01ea0c768706c589a453609bb3c09b51343df7805664fcd9e904e28",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "minimal_fix": {
+    "files": {
+      "b_profile_board_test.py": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "b_profile_manifest.json": {
+        "bytes": 6385,
+        "sha256": "60146fc140ee2e38b4089d9eb46a8d7963d852aae37018574cd426127240d694"
+      },
+      "分段计时说明.txt": {
+        "bytes": 4077,
+        "sha256": "e148127749758661369894cc863a7e14b3d6bf9e1a43798957f64bd64f0fc2db"
+      }
+    },
+    "unchanged_artifacts": [
+      "a0_dma_board_test.py",
+      "a1_point_board_test.py",
+      "a2_gaussian_board_test.py",
+      "a3_background_board_test.py",
+      "a4_segmentation_board_test.py",
+      "b_integration.bit",
+      "b_integration.hwh",
+      "b_integration_board_test.py",
+      "b_integration_check.ipynb",
+      "b_manifest.json",
+      "b_performance_profile.ipynb",
+      "stare_im0001_256.npy",
+      "stare_im0001_512.npy",
+      "使用说明.txt"
+    ],
+    "measurement_code_and_contract_unchanged": true
+  },
+  "status": "PASS_HOST_PROFILING_PACKAGE",
+  "board_status": "NOT_RUN",
+  "files": 17,
+  "destination": "D:\\PLD\\retina_fpga\\build\\deploy\\b_profile_2017_4_r2",
+  "inherited_files_unchanged": [
+    "a0_dma_board_test.py",
+    "a1_point_board_test.py",
+    "a2_gaussian_board_test.py",
+    "a3_background_board_test.py",
+    "a4_segmentation_board_test.py",
+    "b_integration.bit",
+    "b_integration.hwh",
+    "b_integration_board_test.py",
+    "b_integration_check.ipynb",
+    "b_manifest.json",
+    "stare_im0001_256.npy",
+    "stare_im0001_512.npy",
+    "使用说明.txt"
+  ]
+}

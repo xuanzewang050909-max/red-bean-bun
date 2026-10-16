@@ -1,0 +1,22 @@
+{
+  "status": "RESTART_UPLOAD_READY_BOARD_NOT_RUN",
+  "source": "q4_c5_upload_r1",
+  "jupyter_url": "http://192.168.2.99:9090/tree",
+  "experiment_url": "http://192.168.2.99:8090/",
+  "new_jupyter_folder": "retina_q4_c5_restart_r1",
+  "zip_bytes_unchanged": true,
+  "all_seven_executable_cells_unchanged": true,
+  "python310_parse": true,
+  "fresh_notebook_extraction_and_138_member_validation": true,
+  "original45_host_checks_reused_not_rerun": true,
+  "files": {
+    "q4_c5_experimental_r1.zip": {
+      "bytes": 14416177,
+      "sha256": "f49fa30dca7ff0e05135f1497398f255f50adb52021d83b2f92f9687a0775758"
+    },
+    "q4_quality_start.ipynb": {
+      "bytes": 8712,
+      "sha256": "0ac0c5ab603ce8c6f55b186be600e691b2282ad150929fc68b39048a757e1954"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "25 host tests; no new physical board execution or measured speedup",
+  "log": {
+    "bytes": 4185,
+    "sha256": "cda499e1c214a96a7c1a5109d7d22dce808b62f54b81d9ee349453e46447e996"
+  },
+  "sources": {
+    "scripts/b_layout_board_test.py": {
+      "bytes": 18759,
+      "sha256": "a45aa2b2aa36d24c065a730b7831fd0a5b22d01f941a35a3b79f6c8727185c7b"
+    },
+    "scripts/package_b_layout.py": {
+      "bytes": 9303,
+      "sha256": "070aa5d702dfb4c3e9a08e99f7178695d5b719499b15c8f43435924c8e6dc560"
+    },
+    "tests/test_b_layout.py": {
+      "bytes": 22711,
+      "sha256": "653192a3e6ec15f885e421037a3cc874d9114c62e1383e052dbf10d497eec975"
+    },
+    "notebooks/b_layout_compare.ipynb": {
+      "bytes": 4623,
+      "sha256": "b00de641b4b7951dec1ae52cd972e3e67f2d1430368c241b8d56c00e83359317"
+    },
+    "docs/b_layout_compare_steps.md": {
+      "bytes": 4055,
+      "sha256": "283d33a211ad9b7328dd4ce76e5692246db82e728c51643b40441fe4488b0d3f"
+    }
+  }
+}

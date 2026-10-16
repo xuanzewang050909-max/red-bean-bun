@@ -1,0 +1,14 @@
+{
+  "status": "Q4_OFFLINE_INDEPENDENT_MASK_AND_METRIC_COUNTS_PASS",
+  "matched_masks": 600,
+  "matched_pixels": 98304000,
+  "region_confusion_tables": 3600,
+  "experiment_report_sha256": "c9c8ed10675f8dcdeb48bd7d978fc7568855b83690ac74ec66daac444d71f073",
+  "verifier_sha256": "f585f52be22be94e002256adeb9c2379deb62e64475ce87fc8f75029a5d3864d",
+  "source_commit": "2d2e86fdce355e8dcb7ef6ac51b6565377c482ec",
+  "production_files_unchanged": true,
+  "board_execution": false,
+  "candidate_decision": "REJECT_Q4_GRADIENT_R4_FOR_PL",
+  "candidate_oracle_sha256": "981536da0e226b835140585bb7502674d64cbfae0f3a432a22d23615e74ae418",
+  "candidate_oracle_source": "scripts/verify_q4_gradient.py"
+}

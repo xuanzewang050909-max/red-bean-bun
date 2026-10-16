@@ -1,0 +1,78 @@
+{
+  "status": "PASS_HOST_ASSEMBLED_PACKAGE_VALIDATION",
+  "board_status": "NOT_RUN",
+  "checks": [
+    {
+      "case": "actual_eleven_file_package",
+      "result": "PASS_VALID"
+    },
+    {
+      "case": "saved_execution_metadata_outputs",
+      "result": "PASS_VALID"
+    },
+    {
+      "case": "markdown_change",
+      "result": "PASS_VALID_BY_CODE_CONTRACT"
+    },
+    {
+      "case": "changed_notebook_code",
+      "result": "PASS_REJECTED",
+      "error": "Notebook code mismatch"
+    },
+    {
+      "case": "altered_a0_dma_board_test.py",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a0_dma_board_test.py"
+    },
+    {
+      "case": "altered_a1_point_board_test.py",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a1_point_board_test.py"
+    },
+    {
+      "case": "altered_a2_gaussian_board_test.py",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a2_gaussian_board_test.py"
+    },
+    {
+      "case": "altered_a3_background.bit",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a3_background.bit"
+    },
+    {
+      "case": "altered_a3_background.hwh",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a3_background.hwh"
+    },
+    {
+      "case": "altered_a3_background_board_test.py",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a3_background_board_test.py"
+    },
+    {
+      "case": "altered_stare_im0001_256.npy",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: stare_im0001_256.npy"
+    },
+    {
+      "case": "altered_stare_im0001_512.npy",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: stare_im0001_512.npy"
+    },
+    {
+      "case": "altered_\u4f7f\u7528\u8bf4\u660e.txt",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: \u4f7f\u7528\u8bf4\u660e.txt"
+    },
+    {
+      "case": "wrong_stage_revision",
+      "result": "PASS_REJECTED",
+      "error": "Wrong or incomplete A3 release"
+    },
+    {
+      "case": "missing_hwh_manifest_entry",
+      "result": "PASS_REJECTED",
+      "error": "Wrong or incomplete A3 release"
+    }
+  ]
+}

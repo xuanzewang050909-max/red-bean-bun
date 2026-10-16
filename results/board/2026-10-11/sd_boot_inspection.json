@@ -1,0 +1,518 @@
+{
+  "operation": "Read-only source; boot-file copies only, NOT a full-card backup",
+  "files": [
+    {
+      "name": "BOOT.BIN",
+      "size": 4141288,
+      "sha256": "ccc272148b46c85bd7db0cc38d81981a59a48b80777fcab7b06782da9d267027"
+    },
+    {
+      "name": "image.ub",
+      "size": 3971880,
+      "sha256": "1ec738ed2cd801173f9b5ed2923a195e20b8ead616d40aef1ef7cdfa5afa8d84"
+    },
+    {
+      "name": "system.bit",
+      "size": 3510780,
+      "sha256": "3aa4d50e160ebab2000d3f19b9ef3ff00fd6779331c6a0e3cf83b34d9a82dafb"
+    },
+    {
+      "name": "system.dtb",
+      "size": 15909,
+      "sha256": "9fb7ca9db34e7d3d2f5a1691d3667fd9c5af302a90e49e1793849d50930a6d8a"
+    },
+    {
+      "name": "u-boot.bin",
+      "size": 526024,
+      "sha256": "166801486ac958676441601b50ee63d32a2099cc38f0d33990b0b90b3fa835fe"
+    },
+    {
+      "name": "zImage",
+      "size": 3970616,
+      "sha256": "28e2cc9e27ebbd75d3ebe5d1172df8640a27c352a65517ef10755175d38f4944"
+    }
+  ],
+  "device_tree": {
+    "/": {
+      "#address-cells": "00000001",
+      "#size-cells": "00000001",
+      "compatible": [
+        "xlnx,zynq-7000"
+      ]
+    },
+    "/amba/memory-controller@f8006000": {
+      "compatible": [
+        "xlnx,zynq-ddrc-a05"
+      ],
+      "reg": "f800600000001000"
+    },
+    "/amba/serial@e0000000": {
+      "compatible": [
+        "xlnx,xuartps",
+        "cdns,uart-r1p8"
+      ],
+      "status": [
+        "disabled"
+      ],
+      "clocks": "00000001000000170000000100000028",
+      "clock-names": [
+        "uart_clk",
+        "pclk"
+      ],
+      "reg": "e000000000001000",
+      "interrupts": "000000000000001b00000004"
+    },
+    "/amba/serial@e0001000": {
+      "compatible": [
+        "xlnx,xuartps",
+        "cdns,uart-r1p8"
+      ],
+      "status": [
+        "okay"
+      ],
+      "clocks": "00000001000000180000000100000029",
+      "clock-names": [
+        "uart_clk",
+        "pclk"
+      ],
+      "reg": "e000100000001000",
+      "interrupts": "000000000000003200000004",
+      "device_type": [
+        "serial"
+      ],
+      "port-number": "00000000"
+    },
+    "/amba/memory-controller@e000e000": {
+      "#address-cells": "00000001",
+      "#size-cells": "00000001",
+      "status": [
+        "disabled"
+      ],
+      "clock-names": [
+        "memclk",
+        "aclk"
+      ],
+      "clocks": "000000010000000b000000010000002c",
+      "compatible": [
+        "arm,pl353-smc-r2p1"
+      ],
+      "interrupt-parent": "00000004",
+      "interrupts": "000000000000001200000004",
+      "ranges": "",
+      "reg": "e000e00000001000"
+    },
+    "/amba/memory-controller@e000e000/flash@e1000000": {
+      "status": [
+        "disabled"
+      ],
+      "compatible": [
+        "arm,pl353-nand-r2p1"
+      ],
+      "reg": "e100000001000000",
+      "#address-cells": "00000001",
+      "#size-cells": "00000001"
+    },
+    "/amba/memory-controller@e000e000/flash@e2000000": {
+      "status": [
+        "disabled"
+      ],
+      "compatible": [
+        "cfi-flash"
+      ],
+      "reg": "e200000002000000",
+      "#address-cells": "00000001",
+      "#size-cells": "00000001"
+    },
+    "/amba/ethernet@e000b000": {
+      "compatible": [
+        "cdns,zynq-gem",
+        "cdns,gem"
+      ],
+      "reg": "e000b00000001000",
+      "status": [
+        "okay"
+      ],
+      "interrupts": "000000000000001600000004",
+      "clocks": "000000010000001e000000010000001e000000010000000d",
+      "clock-names": [
+        "pclk",
+        "hclk",
+        "tx_clk"
+      ],
+      "#address-cells": "00000001",
+      "#size-cells": "00000000",
+      "enet-reset": "000000050000000900000000",
+      "phy-mode": [
+        "rgmii-id"
+      ],
+      "xlnx,ptp-enet-clock": "069f6bcb",
+      "local-mac-address": "000a35001e53",
+      "phy-handle": "00000006"
+    },
+    "/amba/ethernet@e000b000/ethernet-phy@1": {
+      "device_type": [
+        "ethernet-phy"
+      ],
+      "reg": "00000001",
+      "linux,phandle": "00000006",
+      "phandle": "00000006"
+    },
+    "/amba/ethernet@e000c000": {
+      "compatible": [
+        "cdns,zynq-gem",
+        "cdns,gem"
+      ],
+      "reg": "e000c00000001000",
+      "status": [
+        "disabled"
+      ],
+      "interrupts": "000000000000002d00000004",
+      "clocks": "000000010000001f000000010000001f000000010000000e",
+      "clock-names": [
+        "pclk",
+        "hclk",
+        "tx_clk"
+      ],
+      "#address-cells": "00000001",
+      "#size-cells": "00000000"
+    },
+    "/chosen": {
+      "bootargs": [
+        "console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait"
+      ],
+      "stdout-path": [
+        "serial0:115200n8"
+      ]
+    },
+    "/aliases": {
+      "ethernet0": [
+        "/amba/ethernet@e000b000"
+      ],
+      "serial0": [
+        "/amba/serial@e0001000"
+      ],
+      "spi0": [
+        "/amba/spi@e000d000"
+      ]
+    },
+    "/memory": {
+      "device_type": [
+        "memory"
+      ],
+      "reg": "0000000040000000"
+    }
+  },
+  "fit_image": {
+    "/": {
+      "timestamp": "672e231f",
+      "description": [
+        "U-Boot fitImage for PetaLinux/4.14-xilinx-v2018.3+gitAUTOINC+eeab73d120/plnx-zynq7"
+      ],
+      "#address-cells": "00000001"
+    },
+    "/images/kernel@1": {
+      "description": [
+        "Linux kernel"
+      ],
+      "type": [
+        "kernel"
+      ],
+      "arch": [
+        "arm"
+      ],
+      "os": [
+        "linux"
+      ],
+      "compression": [
+        "gzip"
+      ],
+      "load": "00008000",
+      "entry": "00008000"
+    },
+    "/images/kernel@1/hash@1": {
+      "value": "6ac5fb073d08cba352a976fe3851b4f1c1c42234",
+      "algo": [
+        "sha1"
+      ]
+    },
+    "/images/fdt@system-top.dtb": {
+      "description": [
+        "Flattened Device Tree blob"
+      ],
+      "type": [
+        "flat_dt"
+      ],
+      "arch": [
+        "arm"
+      ],
+      "compression": [
+        "none"
+      ]
+    },
+    "/images/fdt@system-top.dtb/hash@1": {
+      "value": "2bde4f484bf9bde1046ea4351269f6f7e792b3af",
+      "algo": [
+        "sha1"
+      ]
+    },
+    "/configurations": {
+      "default": [
+        "conf@system-top.dtb"
+      ]
+    },
+    "/configurations/conf@system-top.dtb": {
+      "description": [
+        "1 Linux kernel, FDT blob"
+      ],
+      "kernel": [
+        "kernel@1"
+      ],
+      "fdt": [
+        "fdt@system-top.dtb"
+      ]
+    },
+    "/configurations/conf@system-top.dtb/hash@1": {
+      "algo": [
+        "sha1"
+      ]
+    }
+  },
+  "fit_embedded_device_tree": {
+    "/": {
+      "#address-cells": "00000001",
+      "#size-cells": "00000001",
+      "compatible": [
+        "xlnx,zynq-7000"
+      ]
+    },
+    "/amba/serial@e0000000": {
+      "compatible": [
+        "xlnx,xuartps",
+        "cdns,uart-r1p8"
+      ],
+      "status": [
+        "disabled"
+      ],
+      "clocks": "00000001000000170000000100000028",
+      "clock-names": [
+        "uart_clk",
+        "pclk"
+      ],
+      "reg": "e000000000001000",
+      "interrupts": "000000000000001b00000004"
+    },
+    "/amba/serial@e0001000": {
+      "compatible": [
+        "xlnx,xuartps",
+        "cdns,uart-r1p8"
+      ],
+      "status": [
+        "okay"
+      ],
+      "clocks": "00000001000000180000000100000029",
+      "clock-names": [
+        "uart_clk",
+        "pclk"
+      ],
+      "reg": "e000100000001000",
+      "interrupts": "000000000000003200000004",
+      "device_type": [
+        "serial"
+      ],
+      "port-number": "00000000"
+    },
+    "/chosen": {
+      "bootargs": [
+        "console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait"
+      ],
+      "stdout-path": [
+        "serial0:115200n8"
+      ]
+    },
+    "/aliases": {
+      "ethernet0": [
+        "/amba/ethernet@e000b000"
+      ],
+      "serial0": [
+        "/amba/serial@e0001000"
+      ],
+      "spi0": [
+        "/amba/spi@e000d000"
+      ]
+    },
+    "/memory": {
+      "device_type": [
+        "memory"
+      ],
+      "reg": "0000000040000000"
+    }
+  },
+  "memory_bytes": 1073741824,
+  "system_bit_header": {
+    "a": "orb_fpga_wrapper;UserID=0XFFFFFFFF;Version=2018.3",
+    "b": "7z015clg485",
+    "c": "2024/11/08",
+    "d": "22:32:25",
+    "payload_bytes": 3510668
+  },
+  "boot_bin_bit_payload_match": {
+    "raw_offset": -1,
+    "word_byte_reversed_offset": 104256,
+    "interpretation": "Exact match proves system.bit payload is included in BOOT.BIN"
+  },
+  "BOOT.BIN_selected_strings": [
+    "zynq_gem_recv",
+    "zynq_dma_transfer",
+    "zynq_dma_xfer_init",
+    "zynq_align_dma_buffer",
+    "zynq_validate_bitstream",
+    "zynq_load",
+    "zynq_loadfs",
+    "** Invalid partition type \"%.32s\" (expect \"U-Boot\")",
+    "Board: Xilinx Zynq",
+    "/home/null/project1/SLAM-ZYNQ/build/tmp/work/plnx_zynq7-xilinx-linux-gnueabi/u-boot-xlnx/v2018.01-xilinx-v2018.3+gitAUTOINC+d8fc4b3b70-r0/git/drivers/usb/gadget/composite.c",
+    "bootcmd=run default_bootcmd",
+    "board=zynq",
+    "board_name=zynq",
+    "soc=zynq",
+    "console=console=ttyPS0,115200",
+    "psserial0=setenv stdout ttyPS0;setenv stdin ttyPS0",
+    "default_bootcmd=run uenvboot; run cp_kernel2ram && bootm ${netstart}",
+    "U-Boot.armv7",
+    "/home/null/project1/SLAM-ZYNQ/build/tmp/work/plnx_zynq7-xilinx-linux-gnueabi/u-boot-xlnx/v2018.01-xilinx-v2018.3+gitAUTOINC+d8fc4b3b70-r0/git/common/bootm_os.c",
+    "MU-Boot EFI: Relocation at %p is out of range (%lx)",
+    "zynq ULPI viewport init failed",
+    "No valid device tree binary found - please append one to U-Boot binary, use u-boot-dtb.bin or define CONFIG_OF_EMBED. For sandbox, use -d <file.dtb>",
+    "Zynq> ",
+    "Xilinx Device",
+    "Xilinx",
+    "U-Boot 2018.01",
+    "Load device from bitstream buffer (Xilinx only)",
+    "Load device from bitstream buffer with partial bitstream(Xilinx only)",
+    "Load device from filesystem (FAT by default) (Xilinx only)",
+    "default-arm-zynq",
+    "zynqimage",
+    "Xilinx Zynq Boot Image",
+    "zynqmpimage",
+    "Xilinx ZynqMP Boot Image",
+    "U-Boot",
+    "zynq_clk",
+    "gpio_zynq",
+    "xlnx,zynq-gpio-1.0",
+    "xlnx,zynqmp-gpio-1.0",
+    "zynq_gpio",
+    "zynqmp_gpio",
+    "zynq_gem",
+    "cdns,zynqmp-gem",
+    "cdns,zynq-gem",
+    "Xilinx PCS/PMA PHY",
+    "serial_zynq",
+    "zynq_qspi",
+    "xlnx,zynq-qspi-1.0",
+    "ehci_zynq",
+    "xlnx,zynq-usb-2.20a",
+    "U-Boot 2018.01 (Nov 08 2024 - 14:41:43 +0000) Xilinx Zynq ZC702",
+    "Zynq PL",
+    "ZynqMP PL",
+    "Device configuration interface (Zynq)",
+    "csu_dma configuration interface (ZynqMP)",
+    "xlnx,zynq-7000",
+    "xlnx,zynq-xadc-1.00.a",
+    "xlnx,zynq-can-1.0",
+    "xlnx,zynq-can-1.0",
+    "xlnx,zynq-gpio-1.0",
+    "xlnx,zynq-ddrc-a05",
+    "xlnx,zynq-ocmc-1.0",
+    "xlnx,zynq-spi-r1p6",
+    "xlnx,zynq-spi-r1p6",
+    "xlnx,zynq-qspi-1.0",
+    "cdns,zynq-gem",
+    "cdns,zynq-gem",
+    "xlnx,zynq-slcr",
+    "xlnx,zynq-reset",
+    "xlnx,pinctrl-zynq",
+    "xlnx,zynq-devcfg-1.0",
+    "xlnx,zynq-efuse",
+    "xlnx,zynq-usb-2.20a",
+    "xlnx,zynq-usb-2.20a",
+    "console=ttyPS0,115200 earlyprintk root=/dev/mmcblk0p2 rw rootwait"
+  ],
+  "u-boot.bin_selected_strings": [
+    "zynq_gem_recv",
+    "zynq_dma_transfer",
+    "zynq_dma_xfer_init",
+    "zynq_align_dma_buffer",
+    "zynq_validate_bitstream",
+    "zynq_load",
+    "zynq_loadfs",
+    "** Invalid partition type \"%.32s\" (expect \"U-Boot\")",
+    "Board: Xilinx Zynq",
+    "/home/zzz/petalinux/ORB_ZYNQ2/build/tmp/work/plnx_zynq7-xilinx-linux-gnueabi/u-boot-xlnx/v2018.01-xilinx-v2018.3+gitAUTOINC+d8fc4b3b70-r0/git/drivers/usb/gadget/composite.c",
+    "bootcmd=run default_bootcmd",
+    "board=zynq",
+    "board_name=zynq",
+    "soc=zynq",
+    "console=console=ttyPS0,115200",
+    "psserial0=setenv stdout ttyPS0;setenv stdin ttyPS0",
+    "default_bootcmd=run uenvboot; run cp_kernel2ram && bootm ${netstart}",
+    "U-Boot.armv7",
+    "/home/zzz/petalinux/ORB_ZYNQ2/build/tmp/work/plnx_zynq7-xilinx-linux-gnueabi/u-boot-xlnx/v2018.01-xilinx-v2018.3+gitAUTOINC+d8fc4b3b70-r0/git/common/bootm_os.c",
+    "MU-Boot EFI: Relocation at %p is out of range (%lx)",
+    "zynq ULPI viewport init failed",
+    "No valid device tree binary found - please append one to U-Boot binary, use u-boot-dtb.bin or define CONFIG_OF_EMBED. For sandbox, use -d <file.dtb>",
+    "Zynq> ",
+    "Xilinx Device",
+    "Xilinx",
+    "U-Boot 2018.01",
+    "Load device from bitstream buffer (Xilinx only)",
+    "Load device from bitstream buffer with partial bitstream(Xilinx only)",
+    "Load device from filesystem (FAT by default) (Xilinx only)",
+    "default-arm-zynq",
+    "zynqimage",
+    "Xilinx Zynq Boot Image",
+    "zynqmpimage",
+    "Xilinx ZynqMP Boot Image",
+    "U-Boot",
+    "zynq_clk",
+    "gpio_zynq",
+    "xlnx,zynq-gpio-1.0",
+    "xlnx,zynqmp-gpio-1.0",
+    "zynq_gpio",
+    "zynqmp_gpio",
+    "zynq_gem",
+    "cdns,zynqmp-gem",
+    "cdns,zynq-gem",
+    "Xilinx PCS/PMA PHY",
+    "serial_zynq",
+    "zynq_qspi",
+    "xlnx,zynq-qspi-1.0",
+    "ehci_zynq",
+    "xlnx,zynq-usb-2.20a",
+    "U-Boot 2018.01 (Oct 30 2024 - 08:44:34 +0000) Xilinx Zynq ZC702",
+    "Zynq PL",
+    "ZynqMP PL",
+    "Device configuration interface (Zynq)",
+    "csu_dma configuration interface (ZynqMP)",
+    "xlnx,zynq-7000",
+    "xlnx,zynq-xadc-1.00.a",
+    "xlnx,zynq-can-1.0",
+    "xlnx,zynq-can-1.0",
+    "xlnx,zynq-gpio-1.0",
+    "xlnx,zynq-ddrc-a05",
+    "xlnx,zynq-ocmc-1.0",
+    "xlnx,zynq-spi-r1p6",
+    "xlnx,zynq-spi-r1p6",
+    "xlnx,zynq-qspi-1.0",
+    "cdns,zynq-gem",
+    "cdns,zynq-gem",
+    "xlnx,zynq-slcr",
+    "xlnx,zynq-reset",
+    "xlnx,pinctrl-zynq",
+    "xlnx,zynq-devcfg-1.0",
+    "xlnx,zynq-efuse",
+    "xlnx,zynq-usb-2.20a",
+    "xlnx,zynq-usb-2.20a",
+    "console=ttyPS0,115200 earlyprintk"
+  ],
+  "system.bit_selected_strings": []
+}

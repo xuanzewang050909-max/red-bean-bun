@@ -1,0 +1,56 @@
+{
+  "status": "PASS_ACTUAL_C7_RTL_SHARDED_NOT_BOARD",
+  "unique_complete_frames": 17,
+  "unique_complete_words": 2490368,
+  "repeated_seed_frames": 7,
+  "total_complete_frames": 24,
+  "total_complete_words": 3145728,
+  "compiled_snapshot": {
+    "Compile_Options.txt": {
+      "bytes": 95,
+      "sha256": "2faf3fba6194269832422a4dc3c9a4044f25724d95465b68ff4c397794c2e146"
+    },
+    "xsim.dbg": {
+      "bytes": 4449252,
+      "sha256": "a0b9efa76056bc861af391555f46342a4a665ca94cb98a1708ba755035517741"
+    },
+    "xsim.mem": {
+      "bytes": 941674,
+      "sha256": "4348af010d4e5702dacd4a235ba12d015d5dd9f25c7768905f37e19c00601ef7"
+    },
+    "xsim.reloc": {
+      "bytes": 798593,
+      "sha256": "0ad7fc4be04c41f275250b75e2521aaa81dad5e32688b15896a4446b6ad1be2d"
+    },
+    "xsim.rtti": {
+      "bytes": 323,
+      "sha256": "79fd1761b243bd323f917e64cd2ed10e283bfe0a0b14e01e64f1dc0a4786f5f4"
+    },
+    "xsim.svtype": {
+      "bytes": 89,
+      "sha256": "2b77d78fb8ca93823b473efcf83588a93103a50e010a3f43c9ed89257133d5fe"
+    },
+    "xsim.type": {
+      "bytes": 24,
+      "sha256": "cf1c5a4aa3dd8007f3756f2f3d607d67751cd98e99c8f5038c3f8b9fd06aa8c8"
+    },
+    "xsim.xdbg": {
+      "bytes": 64,
+      "sha256": "2113f6d87fd6f064cbcfd09c0801b39b683b770d7c535e2a8e5bfc395962d6f9"
+    },
+    "xsimk.exe": {
+      "bytes": 10721837,
+      "sha256": "2a27bb52c5e5862bf66b8eccbece2782b13a6dcd83ff5691311a2a2dc729e1d1"
+    }
+  },
+  "excluded_mutable_snapshot_data": "Simulator logs/waveforms and webtalk usage statistics only; all nine executable/static data components checked.",
+  "vector_manifest": {
+    "bytes": 11934,
+    "sha256": "afd11cc053dd026bb9cc622c386c03ac2c3826f3357b1c961cbd881d08410e1d"
+  },
+  "checker": {
+    "bytes": 8329,
+    "sha256": "376e2835f4ea5ac8adcd62c0e23927c3ac903c81bac647422d391c6040f06073"
+  },
+  "scope": "All original adjacent transitions retained; separate groups reset at start. Not one continuous eighteen-case simulator process. Board NOT_RUN."
+}

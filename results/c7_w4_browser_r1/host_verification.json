@@ -1,0 +1,71 @@
+{
+  "status": "HOST_CHECKS_PASS_BOARD_NOT_RUN",
+  "host_python_tests": 13,
+  "client_scenarios": 6,
+  "total_distinct_w4b_tests": 19,
+  "prior_w4_processing_regressions": 19,
+  "final_package_protocol_rechecks": 8,
+  "final_client_rechecks": 6,
+  "rechecks_not_counted_twice": true,
+  "host_full_flow": {
+    "frames": 309,
+    "matched_words": 81002496,
+    "matched_png_images": 1545,
+    "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD"
+  },
+  "board_status": "BOARD_NOT_RUN",
+  "formal_fps": null,
+  "quality_acceptance": false,
+  "baseline_bit": {
+    "bytes": 4045680,
+    "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+  },
+  "baseline_hwh": {
+    "bytes": 379665,
+    "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+  },
+  "release": {
+    "status": "HOST_PACKAGE_BOARD_NOT_RUN",
+    "files": {
+      "c7_w4_browser.ipynb": {
+        "bytes": 6406,
+        "sha256": "aebe579cc7199ae33b376a3a09016d9aa5e3de7815eb71d724460029ece80704"
+      },
+      "c7_w4_browser_r1.zip": {
+        "bytes": 14763834,
+        "sha256": "ac770b24659ccc3db5c400337baf6dda1cf6a47444420e62698b9373799c77d0"
+      }
+    },
+    "embedded_files": 137
+  },
+  "identical_to_tested_dev03_package": true,
+  "complete_payload_files": 137,
+  "initial_failure": "One host static test incorrectly treated the observer expected_words byte-count keyword as a CPU reference call. Corrected to AST call check; no production behavior changed. Original failure log retained.",
+  "verifier_fixture": "Temporary synthetic metadata fixture tested auditor positive path and was removed with test temporary directory. Original HOST evidence rejected. Neither is a board result.",
+  "logs": {
+    "w4b_host_tests_01.log": {
+      "bytes": 21277,
+      "sha256": "e7b9da1cd832f7328451fe796fd7fc7ff911e96625cb14ffe8797469934009fb"
+    },
+    "w4b_host_tests_02.log": {
+      "bytes": 6470,
+      "sha256": "44e9b5ad0fa3c067db23ecd29d03fd11482e795f7b5b6bf9829b765155cf6153"
+    },
+    "w4b_client_tests_01.log": {
+      "bytes": 187,
+      "sha256": "cab3964c8e0a3791994980c05a3f41f0ae53bfa14bc89c67a04e29a251a598f6"
+    },
+    "w4b_final_pair_01.log": {
+      "bytes": 1173,
+      "sha256": "a8318c9621236f04963e3d1edf0d5a420b0bebe22b7434909a3140ba3aba086d"
+    },
+    "w4b_client_final_01.log": {
+      "bytes": 187,
+      "sha256": "cab3964c8e0a3791994980c05a3f41f0ae53bfa14bc89c67a04e29a251a598f6"
+    },
+    "w4_processing_regression_2026-10-16.log": {
+      "bytes": 2430,
+      "sha256": "e43b2f163d94871b8de2cd8dc80070541f742f76258a794155348aab7f765303"
+    }
+  }
+}

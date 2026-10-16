@@ -1,0 +1,130 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 03:19:10 2026
+# Process ID: 33200
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -nojournal -log D:/PLD/retina_fpga/results/a4_segmentation_2017_4/reset_tool_02.log -source vivado/scripts/simulate_a4_reset.tcl -tclargs D:/PLD/retina_fpga/build/a4_segmentation_02 D:/PLD/retina_fpga/build/a4_reset_sim_02
+# Log file: D:/PLD/retina_fpga/results/a4_segmentation_2017_4/reset_tool_02.log
+# Journal file: 
+#-----------------------------------------------------------
+source vivado/scripts/simulate_a4_reset.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[llength $argv] != 2} {error "Expected build directory and NEW simulation directory"}
+# set candidate [file normalize [lindex $argv 0]]
+# set out [file normalize [lindex $argv 1]]
+# if {[file exists $out]} {error "Refusing to overwrite previous simulation"}
+# set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+# create_project reset_sim $out -part xc7z020clg400-1
+# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+# read_ip [file join $candidate a4_segmentation.srcs sources_1 bd a4_segmentation ip a4_segmentation_reset_100m_0 a4_segmentation_reset_100m_0.xci]
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+# generate_target simulation [get_ips]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'a4_segmentation_reset_100m_0'. Target already exists and is up to date.
+# set fp [open [file join $root scripts a0_reset_tb.sv] r]
+# set tb [string map {a0_dma_reset_100m_0 a4_segmentation_reset_100m_0} [read $fp]]
+# close $fp
+# set fp [open [file join $out reset_tb.sv] w]
+# puts -nonewline $fp $tb
+# close $fp
+# add_files -fileset sim_1 [file join $out reset_tb.sv]
+# set_property top a0_reset_tb [get_filesets sim_1]
+# set_property xsim.simulate.runtime 20us [get_filesets sim_1]
+# launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'a0_reset_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj a0_reset_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module a0_reset_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj a0_reset_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PLD/retina_fpga/build/a4_segmentation_02/a4_segmentation.srcs/sources_1/bd/a4_segmentation/ip/a4_segmentation_reset_100m_0/sim/a4_segmentation_reset_100m_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity a4_segmentation_reset_100m_0
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 4482cb18f80046188376e823dc6ae289 --incr --debug typical --relax --mt 2 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot a0_reset_tb_behav xil_defaultlib.a0_reset_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture a4_segmentation_reset_100m_0_arch of entity xil_defaultlib.a4_segmentation_reset_100m_0 [a4_segmentation_reset_100m_0_def...]
+Compiling module xil_defaultlib.a0_reset_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot a0_reset_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim/xsim.dir/a0_reset_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 12 03:19:20 2026...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "a0_reset_tb_behav -key {Behavioral:sim_1:Functional:a0_reset_tb} -tclbatch {a0_reset_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source a0_reset_tb.tcl
+## current_wave_config
+CHECK: ext=1 aux=0 ic=0 per=0 GSR=0
+RESET_FAULT_REPRODUCED: aux=0 holds AXI/DMA reset
+RESET_SIM_PASS: real vendor IP, auxiliary polarity and PS reset verified
+$finish called at time : 10996 ns : File "D:/PLD/retina_fpga/build/a4_reset_sim_02/reset_tb.sv" Line 48
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'a0_reset_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 20us
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:09 . Memory (MB): peak = 311.648 ; gain = 16.543
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 311.648 ; gain = 0.000
+# set fp [open [file join $out reset_sim.sim sim_1 behav xsim simulate.log] r]
+# set result [read $fp]
+# close $fp
+# if {[string first "RESET_SIM_PASS:" $result] < 0 || [string first "Fatal:" $result] >= 0} {
+#     error "Reset simulation did not pass"
+# }
+# puts "A4_VENDOR_RESET_SIM_PASS"
+A4_VENDOR_RESET_SIM_PASS
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 03:19:27 2026...

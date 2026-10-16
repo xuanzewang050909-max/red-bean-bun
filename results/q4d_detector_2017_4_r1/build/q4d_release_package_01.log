@@ -1,0 +1,16 @@
+{
+  "status": "PACKAGE_READY_BOARD_NOT_RUN",
+  "fixed_frames": 160,
+  "planned_words": 26214400,
+  "zip_members": 138,
+  "upload": {
+    "q4d_c7_experimental_r1.zip": {
+      "bytes": 14771015,
+      "sha256": "9b0817670b34f1f0038ba545b56b318fff1ca74dae6c4cb6af026d50b14f5129"
+    },
+    "q4d_quality_start.ipynb": {
+      "bytes": 8200,
+      "sha256": "ecc677a036b1490fa6182ba6fc911aef4230b28804cc2ffa9780953e5827200e"
+    }
+  }
+}

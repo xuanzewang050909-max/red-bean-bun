@@ -1,0 +1,102 @@
+{
+  "source": "E:\\BaiduNetdiskDownload\\Pynq资料（含实验指导书等）.zip",
+  "sha256": "9ef9500720b157ddf9239a34a1d42b65185b8fd7cdab0dca4e4f065d1bc9580e",
+  "entries": [
+    {
+      "name": "Pynq资料（含实验指导书等）/board_files/pynq-z2/A.0/board.xml",
+      "size": 54479,
+      "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\board_files\\pynq-z2\\A.0\\board.xml"
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/board_files/pynq-z2/A.0/part0_pins.xml",
+      "size": 9007,
+      "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\board_files\\pynq-z2\\A.0\\part0_pins.xml"
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/board_files/pynq-z2/A.0/preset.xml",
+      "size": 74492,
+      "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\board_files\\pynq-z2\\A.0\\preset.xml"
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/board_files/pynq-z2/A.0/pynq_z2.jpg",
+      "size": 175776
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/Vivado Lisence/vivado-license.lic",
+      "size": 1019
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/原理图/PYNQ-Z2_PA_v3.pdf",
+      "size": 892881,
+      "sha256": "0026abda4cadd0da86b7fe02096e469d8487c19d513680c5b1b701aa693f6953",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\原理图\\PYNQ-Z2_PA_v3.pdf",
+      "pages": 2,
+      "metadata": {
+        "/Title": "PowerPoint 簡報",
+        "/Author": "Andrew Liu 劉鎧華",
+        "/Keywords": "No Markings, , , , , , , , ,",
+        "/CreationDate": "D:20180518173712+08'00'",
+        "/ModDate": "D:20180518173712+08'00'",
+        "/Producer": "Microsoft® PowerPoint® 2010",
+        "/Creator": "Microsoft® PowerPoint® 2010"
+      }
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/原理图/TUL_PYNQ Schematic_R12.pdf",
+      "size": 406955,
+      "sha256": "bfcdb2a1c1c57e9036f4c457b3f01035c137c9a1c6edf634d8a0356f5947abbb",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\原理图\\TUL_PYNQ Schematic_R12.pdf",
+      "pages": 15,
+      "metadata": {
+        "/Producer": "GPL Ghostscript 9.07",
+        "/CreationDate": "D:20180319181030+08'00'",
+        "/ModDate": "D:20180319181030+08'00'",
+        "/Author": "Edd",
+        "/Creator": "PDFCreator Version 1.7.1",
+        "/Keywords": "",
+        "/Subject": "",
+        "/Title": "TUL_PYNQ_R12_0319_S"
+      }
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/实验指导书/Pynq实验指导书v1.0.pdf",
+      "size": 4457211,
+      "sha256": "77b33649e58ee90e8efc466ca4d6796f1def8e523e5830ac8f013e8ee9a832a5",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\实验指导书\\Pynq实验指导书v1.0.pdf",
+      "pages": 50,
+      "metadata": {
+        "/Author": "龚志鹏",
+        "/CreationDate": "D:20180917164341+08'00'",
+        "/Creator": "Microsoft® Word 2016",
+        "/ModDate": "D:20180917165616+08'00'",
+        "/Producer": "Microsoft® Word 2016",
+        "/Title": "Pynq实验指导书v1.0"
+      }
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/实验指导书/往年开发平台指导书（含大量入门基础）/EES-A7实验指导书 .pdf",
+      "size": 3845324,
+      "sha256": "1dfd31ebcfdf39e4032a8cf334acc1a49b04b799b1804b9da555f275d79ffc46",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\实验指导书\\往年开发平台指导书（含大量入门基础）\\EES-A7实验指导书 .pdf",
+      "pages": 102,
+      "metadata": {
+        "/Title": "FPGA EES-A7开发实验指导书",
+        "/Author": "翟广超",
+        "/Creator": "Microsoft® Word 2016",
+        "/CreationDate": "D:20160926080426+08'00'",
+        "/ModDate": "D:20160926080426+08'00'",
+        "/Producer": "Microsoft® Word 2016"
+      }
+    },
+    {
+      "name": "Pynq资料（含实验指导书等）/引脚约束文件/pynq-z2_v1.0.xdc",
+      "size": 16697,
+      "sha256": "07441e999bac956c77e78091c782cade278efc5a78affc51e5b12b4800b1fe73",
+      "extracted_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\vendor_package\\引脚约束文件\\pynq-z2_v1.0.xdc"
+    }
+  ],
+  "zip_crc_check": "PASS"
+}

@@ -1,0 +1,51 @@
+{
+  "status": "PASS_PINNED_PYNQ_3_0_1_VIDEO_IMPORT_NAMESPACES",
+  "board_status": "NOT_RUN",
+  "runner": {
+    "bytes": 19456,
+    "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+  },
+  "resolved_imports": [
+    {
+      "module": "pynq.lib.video.common",
+      "symbol": "VideoMode",
+      "source": "references/PYNQ/v3.0.1/pynq/lib/video/common.py"
+    },
+    {
+      "module": "pynq.lib.video.common",
+      "symbol": "PIXEL_BGR",
+      "source": "references/PYNQ/v3.0.1/pynq/lib/video/common.py"
+    },
+    {
+      "module": "pynq.lib.video.dma",
+      "symbol": "AxiVDMA",
+      "source": "references/PYNQ/v3.0.1/pynq/lib/video/dma.py"
+    },
+    {
+      "module": "pynq.lib.video.hierarchies",
+      "symbol": "VideoOut",
+      "source": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py"
+    },
+    {
+      "module": "pynq.lib.video.hierarchies",
+      "symbol": "HDMIWrapper",
+      "source": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py"
+    }
+  ],
+  "official_sources": {
+    "references/PYNQ/v3.0.1/pynq/lib/video/common.py": {
+      "bytes": 3312,
+      "sha256": "2c4d6c2cb3ede0aca97aa2980dec7d5147ce6f4d446635ddd7dd1e894282cbf7"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+      "bytes": 20367,
+      "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+      "bytes": 12224,
+      "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+    }
+  },
+  "pynq_commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+  "limit": "Source-level Python export validation; installed board driver binding and display still require board execution"
+}

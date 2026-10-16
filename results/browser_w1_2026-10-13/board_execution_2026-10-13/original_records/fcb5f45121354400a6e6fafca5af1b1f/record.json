@@ -1,0 +1,257 @@
+{
+  "run_id": "fcb5f45121354400a6e6fafca5af1b1f",
+  "session_id": "4341c09cebe24ec3b169c9d696079162",
+  "request": {
+    "image_id": "im0001",
+    "side": 256,
+    "threshold": 28,
+    "mode": "final",
+    "client_nonce": "mv6joxokcfp765dsmgv",
+    "algorithm": "A",
+    "mode_code": 3
+  },
+  "config_id": "61cbe8d1cf2dab2e674593fad2881ed3681d8b7f98928a72a4a4fc1a87316126",
+  "status": "COMPLETED",
+  "accepted_server_ns": 89941489709830,
+  "revision": "browser_a4_w1_r1_fixed28_real_dma",
+  "hardware_identity": {
+    "bit": {
+      "bytes": 4045683,
+      "sha256": "ad0754dcd042ad9c787f49a58a857a0f3c34919241b76a1e66dcc6481817179c"
+    },
+    "hwh": {
+      "bytes": 350105,
+      "sha256": "499f81c7165bcf585e96a25fc7e3d32f85e33734ee894ccc1b58ed91e7f1d1ea"
+    }
+  },
+  "evidence_kind": "PYNQ_PL_DMA",
+  "evidence": {
+    "evidence_kind": "PYNQ_PL_DMA",
+    "requested_control_word": 7,
+    "hardware_latched_parameter_readback": null,
+    "config_evidence": "Host control submission plus completed PL counters; threshold fixed by immutable firmware. No latched readback capability.",
+    "frame_status_before": 49155,
+    "frame_status_after": 65540,
+    "frame_count": 4,
+    "frame_counter_wrapped": false,
+    "dma_status": {
+      "mm2s": 4098,
+      "s2mm": 4098
+    },
+    "send_bytes": 262144,
+    "recv_bytes": 262144,
+    "buffers": {
+      "tx": {
+        "physical_address": 378011648,
+        "nbytes": 262144,
+        "shape": [
+          65536
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      },
+      "rx": {
+        "physical_address": 378273792,
+        "nbytes": 262144,
+        "shape": [
+          65536
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      }
+    },
+    "output_sha256": "57d2c84e5a4cac2355fd5f7c4654f71d9ff81b0ec8047728e5ffa5857197af6f",
+    "raw_timestamps_ns": {
+      "config_start_ns": 89941519636507,
+      "config_end_ns": 89941519723276,
+      "dma_start_ns": 89941530879824,
+      "dma_end_ns": 89941533291049,
+      "snapshot_start_ns": 89941533411123,
+      "snapshot_end_ns": 89941534626846
+    },
+    "timing_ns": {
+      "config_ns": 86769,
+      "dma_transaction_ns": 2411225,
+      "cpu_snapshot_ns": 1215723,
+      "inference_ns": 14990339,
+      "pl_core_frame_ns": null,
+      "pl_core_cycles": null,
+      "pure_dma_transport_ns": null
+    },
+    "numeric_validation": "Structural/raw-channel/binary/FOV checks only; download raw NPY for independent full M0 comparison.",
+    "native_cache_policy": "Unmodified official transfer/wait/flush/invalidate; cacheable flag is not kernel mapping proof."
+  },
+  "input": {
+    "sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+    "file": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "rgb_sha256": "7bf39582f043a1919a72c37e24bc634bef17ff1c190cfc155587e8cee3a91297",
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 256,
+      "nominal_scale": 0.3657142857142857,
+      "resized_width": 256,
+      "resized_height": 221,
+      "pad_left": 0,
+      "pad_top": 17,
+      "pad_right": 0,
+      "pad_bottom": 18,
+      "effective_scale_x": 0.3657142857142857,
+      "effective_scale_y": 0.3652892561983471,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    }
+  },
+  "output": {
+    "sha256": "57d2c84e5a4cac2355fd5f7c4654f71d9ff81b0ec8047728e5ffa5857197af6f",
+    "shape": [
+      256,
+      256
+    ],
+    "dtype": "uint32",
+    "words": 65536,
+    "file": {
+      "bytes": 262272,
+      "sha256": "0c07d9ad198f62c420726882c4cd14877f9da18a72925d2e8d6b09407b944770"
+    }
+  },
+  "quality": {
+    "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+    "vessel_pixels": 8467,
+    "fov_pixels": 51370,
+    "vessel_area_fraction": 0.16482382713646096,
+    "annotations": {
+      "AH": {
+        "tp": 2559,
+        "fp": 5908,
+        "fn": 1947,
+        "tn": 40956,
+        "dice": 0.3945116781006706,
+        "iou": 0.24572690608795852,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      },
+      "VK": {
+        "tp": 2777,
+        "fp": 5690,
+        "fn": 2542,
+        "tn": 40361,
+        "dice": 0.4028724793268533,
+        "iou": 0.2522481605958761,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      }
+    },
+    "quality_reason": null
+  },
+  "timing_ns": {
+    "config_ns": 86769,
+    "dma_transaction_ns": 2411225,
+    "cpu_snapshot_ns": 1215723,
+    "inference_ns": 14990339,
+    "pl_core_frame_ns": null,
+    "pl_core_cycles": null,
+    "pure_dma_transport_ns": null,
+    "queue_wait_ns": 7027354,
+    "input_read_ns": 22667145,
+    "raw_save_ns": 35474400,
+    "evaluation_ns": 49655932,
+    "png_encoding_ns": 1131955217,
+    "worker_result_ns": 1281383641
+  },
+  "raw_timestamps_ns": {
+    "worker_start_ns": 89941496737184,
+    "input_ready_ns": 89941519404329,
+    "config_start_ns": 89941519636507,
+    "config_end_ns": 89941519723276,
+    "dma_start_ns": 89941530879824,
+    "dma_end_ns": 89941533291049,
+    "snapshot_start_ns": 89941533411123,
+    "snapshot_end_ns": 89941534626846,
+    "raw_saved_ns": 89941570101246,
+    "evaluation_end_ns": 89941619757178,
+    "encoding_end_ns": 89942751712395,
+    "worker_result_ready_ns": 89942778120825
+  },
+  "timing_scope": "Worker result excludes final JSON publication, HTTP/polling and browser; DMA overlaps PL. Inference includes config/allocation/native DMA/read-only snapshot. Core and pure transport are unavailable.",
+  "images": {
+    "original": {
+      "url": "/api/runs/fcb5f45121354400a6e6fafca5af1b1f/images/original",
+      "bytes": 77792,
+      "sha256": "64aa429044834f827c3854a8d2623905a589fc2ac8bd2b946e44623b31310cef"
+    },
+    "enhanced": {
+      "url": "/api/runs/fcb5f45121354400a6e6fafca5af1b1f/images/enhanced",
+      "bytes": 22939,
+      "sha256": "be8b2f95758523fc6da4105252cd015178e61a2e93224c5ba563f5f92fd69a26"
+    },
+    "mask": {
+      "url": "/api/runs/fcb5f45121354400a6e6fafca5af1b1f/images/mask",
+      "bytes": 3995,
+      "sha256": "5ddc46a53e677a13a503a1c127ed8bef204a62a38a91b4116e96950bf81702da"
+    },
+    "overlay": {
+      "url": "/api/runs/fcb5f45121354400a6e6fafca5af1b1f/images/overlay",
+      "bytes": 81841,
+      "sha256": "ea87ccab927f535b5b519106fa6a1cf439a598e35bbef3d0e95a5c2485b499c7"
+    },
+    "response": {
+      "url": "/api/runs/fcb5f45121354400a6e6fafca5af1b1f/images/response",
+      "bytes": 16582,
+      "sha256": "841bfee690ade12cf8d34ce9616fce6348fad40c41c4e3f63c00e6edefd5b326"
+    }
+  },
+  "files": {
+    "enhanced.png": {
+      "bytes": 22939,
+      "sha256": "be8b2f95758523fc6da4105252cd015178e61a2e93224c5ba563f5f92fd69a26"
+    },
+    "input_packed.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "mask.png": {
+      "bytes": 3995,
+      "sha256": "5ddc46a53e677a13a503a1c127ed8bef204a62a38a91b4116e96950bf81702da"
+    },
+    "original.png": {
+      "bytes": 77792,
+      "sha256": "64aa429044834f827c3854a8d2623905a589fc2ac8bd2b946e44623b31310cef"
+    },
+    "output_packed.npy": {
+      "bytes": 262272,
+      "sha256": "0c07d9ad198f62c420726882c4cd14877f9da18a72925d2e8d6b09407b944770"
+    },
+    "overlay.png": {
+      "bytes": 81841,
+      "sha256": "ea87ccab927f535b5b519106fa6a1cf439a598e35bbef3d0e95a5c2485b499c7"
+    },
+    "response.png": {
+      "bytes": 16582,
+      "sha256": "841bfee690ade12cf8d34ce9616fce6348fad40c41c4e3f63c00e6edefd5b326"
+    }
+  },
+  "browser_timing": null,
+  "formal_quality_experiment": false,
+  "overlay_presentation": {
+    "green_rgb": [
+      0,
+      255,
+      0
+    ],
+    "alpha_percent": 65,
+    "rounding": "integer_half_up",
+    "browser_slider": "Presentation only; exported PNG retains fixed 65%"
+  }
+}

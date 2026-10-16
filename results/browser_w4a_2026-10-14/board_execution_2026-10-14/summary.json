@@ -1,0 +1,450 @@
+{
+  "status": "W4a_DOWNLOADED_ARRAYS_AND_OBSERVATIONS_VERIFIED_NOT_FINAL_ACCEPTANCE",
+  "session_id": "8f2289bdbdc94093b63dbfeb9eeb4d5c",
+  "verified_runs": 50,
+  "matched_words": 13107200,
+  "matched_png_images": 250,
+  "matched_png_values": 117964800,
+  "profile_groups": {
+    "baseline": {
+      "loop_id": "mv750cyh3hbk3ej2t4g",
+      "warmup_ids": [
+        "d96e6701e91e42da8613bc1c4ef467c7",
+        "1eaf345d30764b88978ae275b2f505d9",
+        "ddced0869cea4ccc9343eafe61d641bf"
+      ],
+      "measured_ids": [
+        "739c1192c1274d2dbd743735dda920b2",
+        "1ec291a1fd854bdbbd122aab7bffa49a",
+        "f90d133de2374e3c84a723bd56f016d9",
+        "8bba929201004831a7d071d26b2a507e",
+        "d0402e76554246b1979e17d56c8b935c",
+        "3d929a224e834bfa917729de9704e75b",
+        "03afd8f800b940b6ae778e1827352491",
+        "4d5dbc8ef4b74446ad927519ef1a204c",
+        "dfac6341c8d8463b80322d310d97729a",
+        "3dc1e9a7a763427f913231929d9b9adb",
+        "84a8900e71e5486b8e8309eee1c3b394",
+        "7c47e6671a0848048f0c6696c9a45f74",
+        "1f4d72ec09eb4bccb616ec1b0a477fd4",
+        "50a9f3952558469a834a9f51defed5a1",
+        "249df41a3bec404bba9b3bf85919ef51",
+        "a40ad89abb814442a1dc07f764a0f170",
+        "48d5f1cb95ea49a7b834c0ff1b324a74",
+        "480e58933ddb43578b118cf4c5cd7d44",
+        "8ada0796b09845fdb75b575ccc39d7e7",
+        "9526bea3455141cf8158f16000bb0884"
+      ],
+      "output_sha256": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62"
+    },
+    "fast": {
+      "loop_id": "mv753pb1glqvpcyyzuv",
+      "warmup_ids": [
+        "e9ac996c8115460fa56e3d43eb1ea85d",
+        "5d4d71b1c82f450cbd109bff7543a68a",
+        "e55d29d3f89f42d9a1e3ce299a62488c"
+      ],
+      "measured_ids": [
+        "540b6ff08a904bc39cc28fd2b0909874",
+        "fd63dcd95f96430b82b6971d35d73097",
+        "59c3235d24004498ba1698b7477c87fc",
+        "ff306a6371a647268ff6f9097429994c",
+        "ae1073cb3ca84001bf5b66467fbccb8c",
+        "8aa02cc99aef4c29a2da7144b9af51d3",
+        "7dca9ef4cffd49e5b62088d445d32920",
+        "5b0400e1f8244a7a982be5b77409d1c6",
+        "41246ebe97d84fcabd8b7d7039e026c6",
+        "8f1eff548ca74e769af48d8f4008d0d1",
+        "947e48a6b015448f8336a942bd8cb7be",
+        "fb7c47b553994709b9d5e959a948e877",
+        "3617f64965df4315b061d11bfed246b0",
+        "85b3347132b24688bcd0f42d235cf7f8",
+        "97b79d32d8aa4ec5ae4ac68f512b3980",
+        "d496c0514687461699cfae7ba8f89bd8",
+        "23fd76a312fb41a9956e28ac73466379",
+        "04a94c439623442496e92d369c8334da",
+        "d544b7e6467e4a37acb87fc6f5bc7e12",
+        "611cd602b3454f23b31d5ff83913bcbe"
+      ],
+      "output_sha256": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62"
+    }
+  },
+  "display_loops": {
+    "mv750cyh3hbk3ej2t4g": {
+      "index": 20,
+      "start": 111273.39999997616,
+      "render": 219633.29999998212,
+      "visible": true,
+      "hidden_indices": [],
+      "verified_fps": 0.18457012234229545,
+      "config_id": "a0896057a6880c711b32cfcccf1521205cf0f9039e7e1ffd00f530e2bd52d5b2"
+    },
+    "mv753pb1glqvpcyyzuv": {
+      "index": 20,
+      "start": 256663.89999997616,
+      "render": 290890,
+      "visible": true,
+      "hidden_indices": [],
+      "verified_fps": 0.5843493708014079,
+      "config_id": "fc075bf2f048c03914a54c5e7c1d6a9a4d5bf31a9daaba06339034a279234aa6"
+    }
+  },
+  "timing_summary": {
+    "mv750cyh3hbk3ej2t4g": {
+      "png_profile": "baseline",
+      "native_runs": 20,
+      "hidden_indices": [],
+      "warmup_frames": 3,
+      "scope": "W4a PNG profile comparison: 3 warmup plus 20 measured; not formal 100-frame three-configuration performance",
+      "server_latency_ms": {
+        "pl_core_frame_ms": {
+          "n": 20,
+          "mean": 3.0227844999999998,
+          "median": 3.02265,
+          "p95": 3.023089,
+          "minimum": 3.02264,
+          "maximum": 3.02478,
+          "percentile_method": "linear"
+        },
+        "observer_readback_ms": {
+          "n": 20,
+          "mean": 1.2485384500000003,
+          "median": 1.241317,
+          "p95": 1.2897377,
+          "minimum": 1.178117,
+          "maximum": 1.37584,
+          "percentile_method": "linear"
+        },
+        "dma_transaction_ms": {
+          "n": 20,
+          "mean": 6.739487700000001,
+          "median": 4.8224615,
+          "p95": 11.45813305,
+          "minimum": 4.743532,
+          "maximum": 11.865095,
+          "percentile_method": "linear"
+        },
+        "inference_ms": {
+          "n": 20,
+          "mean": 32.5324606,
+          "median": 32.3601235,
+          "p95": 36.36195625,
+          "minimum": 28.698554,
+          "maximum": 38.138708,
+          "percentile_method": "linear"
+        },
+        "cpu_snapshot_ms": {
+          "n": 20,
+          "mean": 8.951338400000001,
+          "median": 9.1921355,
+          "p95": 11.4721159,
+          "minimum": 6.705704,
+          "maximum": 11.631581,
+          "percentile_method": "linear"
+        },
+        "input_read_ms": {
+          "n": 20,
+          "mean": 87.7503702,
+          "median": 87.803861,
+          "p95": 89.66963885,
+          "minimum": 85.697704,
+          "maximum": 89.834898,
+          "percentile_method": "linear"
+        },
+        "raw_save_ms": {
+          "n": 20,
+          "mean": 146.97206294999998,
+          "median": 145.491858,
+          "p95": 151.4605804,
+          "minimum": 140.929237,
+          "maximum": 159.46411,
+          "percentile_method": "linear"
+        },
+        "evaluation_ms": {
+          "n": 20,
+          "mean": 155.45153605000002,
+          "median": 155.792074,
+          "p95": 157.99784019999998,
+          "minimum": 151.819397,
+          "maximum": 159.585902,
+          "percentile_method": "linear"
+        },
+        "png_encoding_ms": {
+          "n": 20,
+          "mean": 4659.668054849999,
+          "median": 4762.6368665,
+          "p95": 4800.93929125,
+          "minimum": 4315.925741,
+          "maximum": 4822.168775,
+          "percentile_method": "linear"
+        },
+        "worker_result_ms": {
+          "n": 20,
+          "mean": 5178.674137600001,
+          "median": 5278.797786,
+          "p95": 5328.0866607,
+          "minimum": 4835.571236,
+          "maximum": 5342.514115,
+          "percentile_method": "linear"
+        },
+        "queue_wait_ms": {
+          "n": 20,
+          "mean": 7.0586341500000005,
+          "median": 6.9603785,
+          "p95": 7.314777200000001,
+          "minimum": 6.821951,
+          "maximum": 8.235692,
+          "percentile_method": "linear"
+        },
+        "array_decode_overlay_ms": {
+          "n": 20,
+          "mean": 194.9865941,
+          "median": 194.147009,
+          "p95": 202.57731285,
+          "minimum": 185.618892,
+          "maximum": 226.018332,
+          "percentile_method": "linear"
+        },
+        "png_fromarray_ms": {
+          "n": 20,
+          "mean": 16.57042145,
+          "median": 16.441597,
+          "p95": 16.897176250000005,
+          "minimum": 15.980288,
+          "maximum": 19.3672,
+          "percentile_method": "linear"
+        },
+        "png_save_ms": {
+          "n": 20,
+          "mean": 4419.1573169,
+          "median": 4521.90612,
+          "p95": 4552.83725475,
+          "minimum": 4084.383169,
+          "maximum": 4561.311364,
+          "percentile_method": "linear"
+        },
+        "png_file_hash_ms": {
+          "n": 20,
+          "mean": 25.405966749999997,
+          "median": 24.610498,
+          "p95": 28.15675375,
+          "minimum": 23.853833,
+          "maximum": 29.733977,
+          "percentile_method": "linear"
+        },
+        "file_inventory_hash_ms": {
+          "n": 20,
+          "mean": 94.5594527,
+          "median": 92.761923,
+          "p95": 99.81783580000001,
+          "minimum": 90.114794,
+          "maximum": 115.784178,
+          "percentile_method": "linear"
+        }
+      },
+      "mean_png_fraction_of_worker_time": 0.8996714943569716,
+      "visible_request_latency_ms": {
+        "n": 20,
+        "mean": 5403.829999998212,
+        "median": 5517.9000000059605,
+        "p95": 5569.164999999106,
+        "minimum": 5040.5999999940395,
+        "maximum": 5591.299999982119,
+        "percentile_method": "linear"
+      },
+      "visible_result_to_render_ms": {
+        "n": 20,
+        "mean": 89.04499999880791,
+        "median": 89.79999999701977,
+        "p95": 95.45000001043081,
+        "minimum": 80.19999998807907,
+        "maximum": 98.2999999821186,
+        "percentile_method": "linear"
+      },
+      "entire_loop_duration_ms": 108359.90000000596,
+      "browser_actual_fps": 0.18457012234229545,
+      "display_fps_valid": true,
+      "pl_core_measured_per_run": true,
+      "pure_dma_transport_ns": null,
+      "browser_time_scope": "Client monotonic double-rAF approximation; hidden requests excluded from latency statistics, any hidden interval invalidates entire-loop visible FPS"
+    },
+    "mv753pb1glqvpcyyzuv": {
+      "png_profile": "fast",
+      "native_runs": 20,
+      "hidden_indices": [],
+      "warmup_frames": 3,
+      "scope": "W4a PNG profile comparison: 3 warmup plus 20 measured; not formal 100-frame three-configuration performance",
+      "server_latency_ms": {
+        "pl_core_frame_ms": {
+          "n": 20,
+          "mean": 3.022863,
+          "median": 3.022665,
+          "p95": 3.024554,
+          "minimum": 3.02264,
+          "maximum": 3.02463,
+          "percentile_method": "linear"
+        },
+        "observer_readback_ms": {
+          "n": 20,
+          "mean": 1.2709989999999998,
+          "median": 1.249834,
+          "p95": 1.4227112000000002,
+          "minimum": 1.152382,
+          "maximum": 1.510818,
+          "percentile_method": "linear"
+        },
+        "dma_transaction_ms": {
+          "n": 20,
+          "mean": 5.57875955,
+          "median": 4.7886585,
+          "p95": 10.444415300000001,
+          "minimum": 4.700216,
+          "maximum": 11.381957,
+          "percentile_method": "linear"
+        },
+        "inference_ms": {
+          "n": 20,
+          "mean": 32.2720658,
+          "median": 32.592966000000004,
+          "p95": 35.6695851,
+          "minimum": 25.659207,
+          "maximum": 36.073508,
+          "percentile_method": "linear"
+        },
+        "cpu_snapshot_ms": {
+          "n": 20,
+          "mean": 8.047982150000001,
+          "median": 6.9100615,
+          "p95": 10.933857,
+          "minimum": 6.695908,
+          "maximum": 11.058117,
+          "percentile_method": "linear"
+        },
+        "input_read_ms": {
+          "n": 20,
+          "mean": 87.07743255,
+          "median": 86.08474749999999,
+          "p95": 88.94313405,
+          "minimum": 85.608437,
+          "maximum": 93.934036,
+          "percentile_method": "linear"
+        },
+        "raw_save_ms": {
+          "n": 20,
+          "mean": 146.19308840000002,
+          "median": 145.188526,
+          "p95": 154.21254620000002,
+          "minimum": 141.162929,
+          "maximum": 156.359816,
+          "percentile_method": "linear"
+        },
+        "evaluation_ms": {
+          "n": 20,
+          "mean": 155.21342810000002,
+          "median": 154.24443050000002,
+          "p95": 165.2069804,
+          "minimum": 149.260609,
+          "maximum": 171.368289,
+          "percentile_method": "linear"
+        },
+        "png_encoding_ms": {
+          "n": 20,
+          "mean": 935.8156314499998,
+          "median": 927.7472355,
+          "p95": 967.8149888,
+          "minimum": 919.450165,
+          "maximum": 985.396103,
+          "percentile_method": "linear"
+        },
+        "worker_result_ms": {
+          "n": 20,
+          "mean": 1455.99332485,
+          "median": 1453.512459,
+          "p95": 1501.34502505,
+          "minimum": 1429.08145,
+          "maximum": 1502.088515,
+          "percentile_method": "linear"
+        },
+        "queue_wait_ms": {
+          "n": 20,
+          "mean": 7.075507900000001,
+          "median": 7.103446,
+          "p95": 7.292955399999999,
+          "minimum": 6.819145,
+          "maximum": 7.332616,
+          "percentile_method": "linear"
+        },
+        "array_decode_overlay_ms": {
+          "n": 20,
+          "mean": 194.0159832,
+          "median": 192.4277505,
+          "p95": 211.72686335,
+          "minimum": 184.995791,
+          "maximum": 223.878966,
+          "percentile_method": "linear"
+        },
+        "png_fromarray_ms": {
+          "n": 20,
+          "mean": 17.102343499999996,
+          "median": 16.432634,
+          "p95": 19.985139600000004,
+          "minimum": 16.009482,
+          "maximum": 20.765367,
+          "percentile_method": "linear"
+        },
+        "png_save_ms": {
+          "n": 20,
+          "mean": 692.95559015,
+          "median": 687.4316325,
+          "p95": 712.47373375,
+          "minimum": 679.677692,
+          "maximum": 744.64603,
+          "percentile_method": "linear"
+        },
+        "png_file_hash_ms": {
+          "n": 20,
+          "mean": 28.17599605,
+          "median": 27.7574585,
+          "p95": 31.0278617,
+          "minimum": 27.238154,
+          "maximum": 32.234584,
+          "percentile_method": "linear"
+        },
+        "file_inventory_hash_ms": {
+          "n": 20,
+          "mean": 97.67303575,
+          "median": 97.5972065,
+          "p95": 101.7939269,
+          "minimum": 93.193901,
+          "maximum": 103.122424,
+          "percentile_method": "linear"
+        }
+      },
+      "mean_png_fraction_of_worker_time": 0.6427104791907785,
+      "visible_request_latency_ms": {
+        "n": 20,
+        "mean": 1696.6300000041724,
+        "median": 1681.550000011921,
+        "p95": 1725.2150000065567,
+        "minimum": 1651.7000000178814,
+        "maximum": 1968.7000000178814,
+        "percentile_method": "linear"
+      },
+      "visible_result_to_render_ms": {
+        "n": 20,
+        "mean": 109.9,
+        "median": 94.1000000089407,
+        "p95": 116.90999998301288,
+        "minimum": 89.69999998807907,
+        "maximum": 385.0,
+        "percentile_method": "linear"
+      },
+      "entire_loop_duration_ms": 34226.10000002384,
+      "browser_actual_fps": 0.5843493708014079,
+      "display_fps_valid": true,
+      "pl_core_measured_per_run": true,
+      "pure_dma_transport_ns": null,
+      "browser_time_scope": "Client monotonic double-rAF approximation; hidden requests excluded from latency statistics, any hidden interval invalidates entire-loop visible FPS"
+    }
+  }
+}

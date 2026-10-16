@@ -1,0 +1,76 @@
+{
+  "status": "PASS_BOARD_RECORDS_AND_RAW_ARRAYS_VERIFIED_AND_ARCHIVED",
+  "verified_host_utc": "2026-10-11T19:48:15.652815+00:00",
+  "revision": "a4_segmentation_r1_vendor_morphology",
+  "hardware_source_commit": "b3d4ef316db044e027593d4567a94f637fc15545",
+  "release_manifest_sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae",
+  "board_clock_utc_unverified": "2022-10-22T06:24:32.854809+00:00",
+  "frames_verified": 61,
+  "input_words_verified": 9895936,
+  "raw_output_words_verified": 983040,
+  "notebook_code_sha256": "c6719d95778d95d6103a8a706c7d8091d3a0ed6cccc9100ad6f27f7aa24b5c50",
+  "source_paths": {
+    "notebook": "C:\\Users\\Gabriel\\Downloads\\a4_segmentation_check.ipynb",
+    "bundle": "C:\\Users\\Gabriel\\Downloads\\a4_results_bundle.zip"
+  },
+  "raw_files": {
+    "a4_segmentation_check_executed.ipynb": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_segmentation_check_executed.ipynb",
+      "bytes": 207586,
+      "sha256": "3ad74daa2fc3fd62b706c8b7486fb17f6d52d3a6a9952970d191d21d9f31c5b7"
+    },
+    "a4_results_bundle.zip": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_results_bundle.zip",
+      "bytes": 1486539,
+      "sha256": "990aa5a73564eddb86e12abbddf8ba20aff928b18d03986e6e437af03b26a254"
+    },
+    "a4_segmentation_result.json": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_segmentation_result.json",
+      "bytes": 72661,
+      "sha256": "548d3fa9461fda63f7b6420e0089f7c48d8eeb7ac9d68fd137e7abc9bcd3b2aa"
+    },
+    "a4_preview.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_preview.png",
+      "bytes": 147471,
+      "sha256": "601e0f695d4f674f35436a244e42cddba7c5e2bb96401bad283900e5d39a4efa"
+    },
+    "a4_output_stare_256_mode1.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_output_stare_256_mode1.npy",
+      "bytes": 262272,
+      "sha256": "a75fe9093456fc5e64510585ca4d5986fbe295ebcb76efdf72dab6f82b5eb4b0"
+    },
+    "a4_output_stare_256_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_output_stare_256_mode2.npy",
+      "bytes": 262272,
+      "sha256": "973e1720c4f45993168b4512b14a6e1fcc416c7597e06a616c3e0ec5f2b0674f"
+    },
+    "a4_output_stare_256_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_output_stare_256_mode3.npy",
+      "bytes": 262272,
+      "sha256": "0c07d9ad198f62c420726882c4cd14877f9da18a72925d2e8d6b09407b944770"
+    },
+    "a4_output_stare_512_mode1.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_output_stare_512_mode1.npy",
+      "bytes": 1048704,
+      "sha256": "e3631b505c733a36e5d0926a4178f8952ef202a64965995a766effff67154e8f"
+    },
+    "a4_output_stare_512_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_output_stare_512_mode2.npy",
+      "bytes": 1048704,
+      "sha256": "699051e2f1395f7ed641d71e4d1d7d2c53ea4b24b5b23474db30c0b06bc64b2d"
+    },
+    "a4_output_stare_512_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\a4_output_stare_512_mode3.npy",
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "user_result_screenshot.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a4_segmentation_2026-10-12\\user_result_screenshot.png",
+      "bytes": 349188,
+      "sha256": "fa7cd85baf0472a3ab7cc849c88579736f30f4c28470022f0623877b81122fe6"
+    }
+  },
+  "local_archive_policy": "Retinal arrays, PNG and output-bearing Notebook stay in ignored build/board_results. Original JSON and hashes are tracked; no dataset redistribution.",
+  "scope": "Actual PYNQ-Z2 A4: 61 bypass/initial/closed/final segmentation frames; standard DMA/GPIO/DDR and aligned raw G, enhancement, mask and response.",
+  "limits": "All 61 board output hashes recomputed independently; all 6 saved STARE buffers compared word by word on the host. Other 55 raw buffers are not downloaded. No final HDMI integration, FPS or new medical quality validation."
+}

@@ -1,0 +1,23 @@
+{
+  "client_date": "2026-10-14",
+  "status": "SOURCE_FROZEN_BEFORE_FIRST_TOOL_RUN",
+  "candidate": "C2_l9_d12345_m1_p28",
+  "input_scope": "synthetic only; no medical GT/heldout decoded",
+  "source_sha256": {
+    "hls/retina_quality_hls.cpp": "eb4b3ad97b3b4a4d64ae0a35ee01e580811ab7fdf6928d10c503a5cf35c73d80",
+    "hls/retina_quality_hls.hpp": "4ca7db7bbe54ed8c8c833447e46a6af2fd471243d3b2b325ecb9798d99e0a57c",
+    "hls/retina_c2_support_hls.cpp": "30004f9c8852aa97bf1d2ccd331cc1d2620bad952e455427069589c03ed16071",
+    "hls/retina_c2_support_hls.hpp": "199e4439c4e2e940d166d86b2b69741f09797ae273ff730e4722817225931d9a",
+    "tests/retina_quality_hls_tb.cpp": "7245a08f129bd3297d9f9903c55b4410c8ffb8ccf8f128e6821148ca1d4887da",
+    "vivado/scripts/build_q2_quality_hls.tcl": "2ff735ab54ffc77a33038d8b866e202901004c53239f9159e76e14c2911fd3c5",
+    "docs/q2_pipeline_probe.md": "390066c77cf746c893b89baaf5c20d7087d4cf3a859bed4fb080d0d2fb7ec622",
+    "hls/retina_segmentation_hls.cpp": "856767221754e0460cef66eb7d07d28e9f1113a92a53affc48521f1e14daf0fa",
+    "hls/contrast_lut_values.h": "4b8f3cf0c1afe53bcaeef9dfcea863eb0eb6e073631993a90864124550a16763"
+  },
+  "source_parent_commit": "6a2ab74d89ed8f32fb25f42f3337b10e6678eb1f",
+  "csim_expected_full_frames": 24,
+  "csim_expected_words": 2949120,
+  "board_status": "NOT_RUN",
+  "integrated_overlay_status": "NOT_IMPLEMENTED",
+  "actual_timing_ms": null
+}

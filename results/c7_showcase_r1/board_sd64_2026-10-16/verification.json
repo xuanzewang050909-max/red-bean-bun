@@ -1,0 +1,43 @@
+{
+  "status": "SHOWCASE_BOARD_ARRAYS_VERIFIED_COVERAGE_REPORTED",
+  "tasks": 8,
+  "matched_words": 1900544,
+  "matched_pngs": 36,
+  "boot": {
+    "boot_id": "f470c777-f12d-440e-930e-6328f444c79b",
+    "uptime_seconds": 991.84
+  },
+  "archive": {
+    "bytes": 11706991,
+    "sha256": "3dc47008a0376bee7ce63cb3136ab8547f2893d14a68c7231dc1a3c0b87c8db1"
+  },
+  "notebook": {
+    "bytes": 12076,
+    "sha256": "208e7dd24e172c9e16a1d0bc94203817d0b4e6d57868a2d60c88f424c10f930a"
+  },
+  "ignored_empty_cells": 1,
+  "coverage": {
+    "images_c7_final_t112": [
+      "im0001",
+      "im0002",
+      "im0003",
+      "im0324"
+    ],
+    "sides": [
+      256,
+      512
+    ],
+    "visible_frames": 8,
+    "missing_visible_frames": 0,
+    "no_gt": false,
+    "bypass": true,
+    "c2_modes": []
+  },
+  "video": "DEFERRED_BY_USER",
+  "exclusions": [
+    "Array verification does not prove a physical power cycle",
+    "Not forced power/network/DMA-fault recovery",
+    "Not a new FPS or quality benchmark",
+    "Navigation gestures require separate user observation; frame identity/order verified here"
+  ]
+}

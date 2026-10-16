@@ -1,0 +1,37 @@
+{
+  "test_log": "host_runner_tests_release.log",
+  "source_files": {
+    "scripts/a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "tests/test_a4_board_runner.py": {
+      "bytes": 10341,
+      "sha256": "aa38f813ca280035c0624ceb67d9166a18c7a6eb10da794c7602765f36a19c1b"
+    },
+    "scripts/a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "scripts/a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "scripts/a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "scripts/a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "scripts/prepare_a4_vectors.py": {
+      "bytes": 3379,
+      "sha256": "bed8caf8c2c15b842b8ea2d6ca4d6e56e1d097a6ea3547d30066ffd900aa9da0"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    }
+  }
+}

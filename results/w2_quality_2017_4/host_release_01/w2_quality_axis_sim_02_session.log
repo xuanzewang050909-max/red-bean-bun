@@ -1,0 +1,315 @@
+Q2_QUALITY_VECTORS_READY: 17 full frames; 2490368 words
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/w2_quality_axis_sim_02/retina_quality_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_guard
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/w2_quality_axis_sim_02/retina_quality_guard.v:100]
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/w2_quality_axis_sim_02/retina_quality_guard.v:107]
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/w2_quality_axis_sim_02/retina_quality_guard.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/background_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module background_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/Block_proc.v" into library work
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/closed_carrier.v" into library work
+INFO: [VRFC 10-311] analyzing module closed_carrier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/column_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module column_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/count_neighbors.v" into library work
+INFO: [VRFC 10-311] analyzing module count_neighbors
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/dilate_zero.v" into library work
+INFO: [VRFC 10-311] analyzing module dilate_zero
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/enhance_aligned_lut.v" into library work
+INFO: [VRFC 10-311] analyzing module enhance_aligned_lut_rom
+INFO: [VRFC 10-311] analyzing module enhance_aligned_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/enhance_aligned.v" into library work
+INFO: [VRFC 10-311] analyzing module enhance_aligned
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/erode_zero.v" into library work
+INFO: [VRFC 10-311] analyzing module erode_zero
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d10_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d10_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d10_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d12_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d12_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d12_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d4_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d7_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d7_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d7_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w10_d9_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d9_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d9_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w14_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w14_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w14_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w16_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w19_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w19_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w19_d3_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d3_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d3_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w32_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w32_d2048_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2048_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w32_d6_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d6_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d6_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w32_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w64_d2048_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w64_d2048_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w64_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w64_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w64_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w64_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w8_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/fifo_w8_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/filter_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module filter_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/Filter2D_1.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/Filter2D_k_buf_0_bkb.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D_k_buf_0_bkb_ram
+INFO: [VRFC 10-311] analyzing module Filter2D_k_buf_0_bkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/Filter2D.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/final_join.v" into library work
+INFO: [VRFC 10-311] analyzing module final_join
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/initial_fov.v" into library work
+INFO: [VRFC 10-311] analyzing module initial_fov
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/response_carrier.v" into library work
+INFO: [VRFC 10-311] analyzing module response_carrier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/retina_c2_support.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_c2_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/retina_quality_hleOg.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_hleOg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/retina_quality_hls.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_hls
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/retina_quality_hlShg.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_hlShg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/retina_quality_hludo.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_hludo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/retina_quality_hlyd2.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_hlyd2_DSP48_0
+INFO: [VRFC 10-311] analyzing module retina_quality_hlyd2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/row_filter_l_bordvdy.v" into library work
+INFO: [VRFC 10-311] analyzing module row_filter_l_bordvdy_ram
+INFO: [VRFC 10-311] analyzing module row_filter_l_bordvdy
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/row_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module row_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/select_response.v" into library work
+INFO: [VRFC 10-311] analyzing module select_response
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/SepFilter2D.v" into library work
+INFO: [VRFC 10-311] analyzing module SepFilter2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/split_words.v" into library work
+INFO: [VRFC 10-311] analyzing module split_words
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_backgro1iI.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_backgro1iI_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_backgro1iI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_closed_bck.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_closed_bck_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_closed_bck
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_count_n7jG.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_count_n7jG_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_count_n7jG
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_dilate_5jm.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_dilate_5jm_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_dilate_5jm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_enhance8jQ.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_enhance8jQ_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_enhance8jQ
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_erode_z6jw.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_erode_z6jw_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_erode_z6jw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_filter_0iy.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_filter_0iy_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_filter_0iy
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_final_jbbk.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_final_jbbk_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_final_jbbk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_initialbak.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_initialbak_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_initialbak
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_respons9j0.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_respons9j0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_respons9j0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_retina_2iS.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_retina_2iS_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_retina_2iS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_row_filxdS.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_row_filxdS_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_row_filxdS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_select_3i2.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_select_3i2_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_select_3i2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/start_for_thresho4jc.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_thresho4jc_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_thresho4jc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q2_quality_hls_01/solution1/syn/verilog/threshold_binary.v" into library work
+INFO: [VRFC 10-311] analyzing module threshold_binary
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/build/w2_quality_axis_sim_02/retina_w2_quality_axis_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module retina_w2_quality_axis_tb
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe retina_w2_quality_axis_tb -s w2_quality_axis_sim -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.retina_quality_guard_default
+Compiling module work.Block_proc
+Compiling module work.split_words
+Compiling module work.Filter2D_k_buf_0_bkb_ram
+Compiling module work.Filter2D_k_buf_0_bkb(DataWidth=8...
+Compiling module work.retina_quality_hleOg(ID=1,din0_W...
+Compiling module work.Filter2D
+Compiling module work.filter_sum
+Compiling module work.enhance_aligned_lut_rom
+Compiling module work.enhance_aligned_lut(DataWidth=8,...
+Compiling module work.enhance_aligned
+Compiling module work.retina_quality_hludo(ID=1,din0_W...
+Compiling module work.column_filter
+Compiling module work.row_filter_l_bordvdy_ram
+Compiling module work.row_filter_l_bordvdy(DataWidth=1...
+Compiling module work.row_filter
+Compiling module work.fifo_w14_d1_A_shiftReg
+Compiling module work.fifo_w14_d1_A
+Compiling module work.fifo_w10_d1_A_shiftReg
+Compiling module work.fifo_w10_d1_A
+Compiling module work.start_for_row_filxdS_shiftReg
+Compiling module work.start_for_row_filxdS
+Compiling module work.SepFilter2D
+Compiling module work.background_sum
+Compiling module work.retina_quality_hlyd2_DSP48_0
+Compiling module work.retina_quality_hlyd2(ID=1,NUM_ST...
+Compiling module work.response_carrier
+Compiling module work.retina_quality_hlShg(ID=1,din0_W...
+Compiling module work.retina_c2_support
+Compiling module work.select_response
+Compiling module work.threshold_binary
+Compiling module work.initial_fov
+Compiling module work.dilate_zero
+Compiling module work.erode_zero
+Compiling module work.closed_carrier
+Compiling module work.Filter2D_1
+Compiling module work.count_neighbors
+Compiling module work.final_join
+Compiling module work.fifo_w32_d6_A_shiftReg
+Compiling module work.fifo_w32_d6_A
+Compiling module work.fifo_w10_d2_A_shiftReg
+Compiling module work.fifo_w10_d2_A
+Compiling module work.fifo_w10_d4_A_shiftReg
+Compiling module work.fifo_w10_d4_A
+Compiling module work.fifo_w10_d7_A_shiftReg
+Compiling module work.fifo_w10_d7_A
+Compiling module work.fifo_w10_d9_A_shiftReg
+Compiling module work.fifo_w10_d9_A
+Compiling module work.fifo_w10_d10_A_shiftReg
+Compiling module work.fifo_w10_d10_A
+Compiling module work.fifo_w10_d12_A_shiftReg
+Compiling module work.fifo_w10_d12_A
+Compiling module work.fifo_w19_d1_A_shiftReg
+Compiling module work.fifo_w19_d1_A
+Compiling module work.fifo_w8_d32_A_shiftReg
+Compiling module work.fifo_w8_d32_A
+Compiling module work.fifo_w32_d2048_B
+Compiling module work.fifo_w19_d2_A_shiftReg
+Compiling module work.fifo_w19_d2_A
+Compiling module work.fifo_w16_d32_A_shiftReg
+Compiling module work.fifo_w16_d32_A
+Compiling module work.fifo_w32_d8192_B
+Compiling module work.fifo_w8_d8192_B
+Compiling module work.fifo_w64_d8192_B
+Compiling module work.fifo_w64_d32_A
+Compiling module work.fifo_w32_d1_A_shiftReg
+Compiling module work.fifo_w32_d1_A
+Compiling module work.fifo_w64_d2048_B
+Compiling module work.fifo_w19_d3_A_shiftReg
+Compiling module work.fifo_w19_d3_A
+Compiling module work.start_for_filter_0iy_shiftReg
+Compiling module work.start_for_filter_0iy
+Compiling module work.start_for_backgro1iI_shiftReg
+Compiling module work.start_for_backgro1iI
+Compiling module work.start_for_retina_2iS_shiftReg
+Compiling module work.start_for_retina_2iS
+Compiling module work.start_for_select_3i2_shiftReg
+Compiling module work.start_for_select_3i2
+Compiling module work.start_for_thresho4jc_shiftReg
+Compiling module work.start_for_thresho4jc
+Compiling module work.start_for_dilate_5jm_shiftReg
+Compiling module work.start_for_dilate_5jm
+Compiling module work.start_for_erode_z6jw_shiftReg
+Compiling module work.start_for_erode_z6jw
+Compiling module work.start_for_count_n7jG_shiftReg
+Compiling module work.start_for_count_n7jG
+Compiling module work.start_for_enhance8jQ_shiftReg
+Compiling module work.start_for_enhance8jQ
+Compiling module work.start_for_respons9j0_shiftReg
+Compiling module work.start_for_respons9j0
+Compiling module work.start_for_initialbak_shiftReg
+Compiling module work.start_for_initialbak
+Compiling module work.start_for_final_jbbk_shiftReg
+Compiling module work.start_for_final_jbbk
+Compiling module work.start_for_closed_bck_shiftReg
+Compiling module work.start_for_closed_bck
+Compiling module work.retina_quality_hls
+Compiling module work.retina_w2_quality_axis_tb
+Built simulation snapshot w2_quality_axis_sim
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/PLD/retina_fpga/build/w2_quality_axis_sim_02/xsim.dir/w2_quality_axis_sim/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 14 02:46:12 2026...
+
+****** xsim v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/w2_quality_axis_sim/xsim_script.tcl
+# xsim {w2_quality_axis_sim} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+W2_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=00011c04 core=91747 drain=91811 gaps=970 stalls=21747
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=1 words=65536 status=00004001
+W2_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=00021c05 core=91828 drain=91892 gaps=982 stalls=21828
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=2 words=65536 status=00008002
+W2_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=00031c06 core=91638 drain=91702 gaps=965 stalls=21638
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=3 words=65536 status=0000c003
+W2_Q2_QUALITY_AXIS_PROGRESS: case=4 in=170595 out=162049
+W2_ACTUAL_HLS_OBSERVER_PASS: words=262144 cfg=00041c03 core=357818 drain=357882 gaps=3819 stalls=87111
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=4 words=262144 status=00010004
+W2_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=00051c07 core=91904 drain=91971 gaps=980 stalls=21907
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=5 words=65536 status=00014005
+W2_Q2_QUALITY_AXIS_PROGRESS: case=6 in=208073 out=199525
+W2_ACTUAL_HLS_OBSERVER_PASS: words=262144 cfg=00061c03 core=357971 drain=358035 gaps=3833 stalls=87264
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=6 words=262144 status=00018006
+W2_ACTUAL_HLS_OBSERVER_PASS: words=262144 cfg=00071c0b core=357999 drain=358063 gaps=3831 stalls=87292
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=7 words=262144 status=0001c007
+W2_Q2_QUALITY_AXIS_PROGRESS: case=8 in=44976 out=40535
+W2_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=00081c0f core=92022 drain=92086 gaps=965 stalls=22022
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=8 words=65536 status=00020008
+W2_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=00091b0d core=92233 drain=92297 gaps=976 stalls=22233
+W2_Q2_QUALITY_AXIS_FRAME_PASS: case=9 words=65536 status=00024009

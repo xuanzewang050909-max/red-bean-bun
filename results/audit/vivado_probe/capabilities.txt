@@ -1,0 +1,12 @@
+Vivado: 2017.4
+Part: xc7z020clg400-1
+Installed PYNQ boards (before project-local repository): 
+PYNQ boards (after project-local repository): tul.com.tw:pynq-z2:part0:1.0
+IP processing_system7: xilinx.com:ip:processing_system7:5.5
+IP axi_dma: xilinx.com:ip:axi_dma:7.1
+IP axi_vdma: xilinx.com:ip:axi_vdma:6.3
+IP axi_gpio: xilinx.com:ip:axi_gpio:2.0
+IP axi_interconnect: xilinx.com:ip:axi_interconnect:1.7 xilinx.com:ip:axi_interconnect:2.1
+IP proc_sys_reset: xilinx.com:ip:proc_sys_reset:5.0
+IP v_tc: xilinx.com:ip:v_tc:6.1
+IP v_axi4s_vid_out: xilinx.com:ip:v_axi4s_vid_out:4.0

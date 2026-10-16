@@ -1,0 +1,15 @@
+{
+  "status": "VERIFIED_OFFLINE_TRAINING_EVIDENCE_NOT_FPGA",
+  "report_sha256": "8c6df8b5e326410da5cfb4d39d72ec9f50285cd06f0f7ecee4479facd8e80c78",
+  "verifier_sha256": "73a7eb8f06aeeb931ff8576861659253f4297effdb03bf5a6e0f10039dcc9f32",
+  "candidate_masks_verified": 1300,
+  "mask_pixels_verified": 212992000,
+  "independent_final_metric_sets": 7800,
+  "chosen_candidate_pixels_vs_convolution_oracle": 0,
+  "csv_rows_checked": 9100,
+  "selected_candidate": null,
+  "eligible_count": 0,
+  "production_files_unchanged": 492,
+  "new_PL_evidence": false,
+  "heldout_or_VK_decoded": false
+}

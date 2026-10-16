@@ -1,0 +1,328 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_axis_sim_03/retina_detector_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_guard
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/q4d_detector_axis_sim_03/retina_detector_guard.v:100]
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/q4d_detector_axis_sim_03/retina_detector_guard.v:107]
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/q4d_detector_axis_sim_03/retina_detector_guard.v:122]
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/background_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module background_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/Block_proc.v" into library work
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/c7_filter_k_buf_0bLp.v" into library work
+INFO: [VRFC 10-311] analyzing module c7_filter_k_buf_0bLp_ram
+INFO: [VRFC 10-311] analyzing module c7_filter_k_buf_0bLp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/c7_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module c7_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/c7_fork.v" into library work
+INFO: [VRFC 10-311] analyzing module c7_fork
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/c7_join.v" into library work
+INFO: [VRFC 10-311] analyzing module c7_join
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/closed_carrier.v" into library work
+INFO: [VRFC 10-311] analyzing module closed_carrier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/column_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module column_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/count_neighbors.v" into library work
+INFO: [VRFC 10-311] analyzing module count_neighbors
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/dilate_zero.v" into library work
+INFO: [VRFC 10-311] analyzing module dilate_zero
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/enhance_aligned_lut.v" into library work
+INFO: [VRFC 10-311] analyzing module enhance_aligned_lut_rom
+INFO: [VRFC 10-311] analyzing module enhance_aligned_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/enhance_aligned.v" into library work
+INFO: [VRFC 10-311] analyzing module enhance_aligned
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/erode_zero.v" into library work
+INFO: [VRFC 10-311] analyzing module erode_zero
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w1_d16384_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w1_d16384_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w1_d7_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w1_d7_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w1_d7_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d10_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d10_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d10_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d12_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d12_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d12_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d2_A_x_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_x_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_x_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d2_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d4_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d4_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d6_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d6_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d6_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d7_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d7_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d7_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w10_d9_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d9_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d9_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w14_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w14_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w14_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w16_d32_A_x_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_x_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_x_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w16_d32_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w16_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w16_d32768_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32768_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d1_A_x_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_x_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_x_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d1_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d2_A_x_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_x_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_x_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d2_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w19_d3_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d3_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d3_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d1_A_x_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A_x_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A_x_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d1_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d2_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d2048_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2048_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d32_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d32_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d32_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d4096_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d4096_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d6_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d6_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d6_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w32_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w64_d2048_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w64_d2048_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w64_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w64_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w64_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w64_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w8_d16384_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d16384_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w8_d32_A_x.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A_x_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A_x
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w8_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fifo_w8_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/filter_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module filter_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/Filter2D_1.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/Filter2D_k_buf_0_bkb.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D_k_buf_0_bkb_ram
+INFO: [VRFC 10-311] analyzing module Filter2D_k_buf_0_bkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/Filter2D.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/final_join.v" into library work
+INFO: [VRFC 10-311] analyzing module final_join
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/finite_gap_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module finite_gap_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/fork_input.v" into library work
+INFO: [VRFC 10-311] analyzing module fork_input
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/gaussian_round.v" into library work
+INFO: [VRFC 10-311] analyzing module gaussian_round
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/gaussian_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module gaussian_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/initial_fov.v" into library work
+INFO: [VRFC 10-311] analyzing module initial_fov
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/profile_evidence.v" into library work
+INFO: [VRFC 10-311] analyzing module profile_evidence
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/refined_join.v" into library work
+INFO: [VRFC 10-311] analyzing module refined_join
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/response_carrier.v" into library work
+INFO: [VRFC 10-311] analyzing module response_carrier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_c2_support.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_c2_support
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_c5_B_1.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_c5_B_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_c5_B.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_c5_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_c5_e.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_c5_e
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_c5.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_c5
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb2s.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb2s
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb3s.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb3s_DSP48_1
+INFO: [VRFC 10-311] analyzing module retina_detector_hb3s
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb4t.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb4t_DSP48_2
+INFO: [VRFC 10-311] analyzing module retina_detector_hb4t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb5t.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb5t_DSP48_3
+INFO: [VRFC 10-311] analyzing module retina_detector_hb5t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb6t.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb6t_DSP48_4
+INFO: [VRFC 10-311] analyzing module retina_detector_hb6t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb7t.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb7t_DSP48_5
+INFO: [VRFC 10-311] analyzing module retina_detector_hb7t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb8t.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb8t_DSP48_6
+INFO: [VRFC 10-311] analyzing module retina_detector_hb8t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hb9t.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hb9t_DSP48_7
+INFO: [VRFC 10-311] analyzing module retina_detector_hb9t
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hcau.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hcau_DSP48_8
+INFO: [VRFC 10-311] analyzing module retina_detector_hcau
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hcbu.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hcbu_DSP48_9
+INFO: [VRFC 10-311] analyzing module retina_detector_hcbu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_heOg.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_heOg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hls.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hls
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hShg.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hShg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hudo.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hudo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_detector_hyd2.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_detector_hyd2_DSP48_0
+INFO: [VRFC 10-311] analyzing module retina_detector_hyd2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_refined_base_s.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_refined_base_s
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/retina_refined_base.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_refined_base
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/row_filter_l_bordvdy.v" into library work
+INFO: [VRFC 10-311] analyzing module row_filter_l_bordvdy_ram
+INFO: [VRFC 10-311] analyzing module row_filter_l_bordvdy
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/row_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module row_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/seed_flags.v" into library work
+INFO: [VRFC 10-311] analyzing module seed_flags
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/select_response.v" into library work
+INFO: [VRFC 10-311] analyzing module select_response
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/SepFilter2D.v" into library work
+INFO: [VRFC 10-311] analyzing module SepFilter2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/split_words.v" into library work
+INFO: [VRFC 10-311] analyzing module split_words
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_backgro1iI.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_backgro1iI_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_backgro1iI
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_c7_filtcdu.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_c7_filtcdu_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_c7_filtcdu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_c7_joinceu.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_c7_joinceu_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_c7_joinceu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_closed_bck.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_closed_bck_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_closed_bck
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_count_n7jG.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_count_n7jG_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_count_n7jG
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_dilate_5jm.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_dilate_5jm_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_dilate_5jm
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_enhance8jQ.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_enhance8jQ_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_enhance8jQ
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_erode_z6jw.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_erode_z6jw_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_erode_z6jw
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_filter_0iy.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_filter_0iy_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_filter_0iy
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_final_jbbk.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_final_jbbk_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_final_jbbk
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_finite_bFp.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_finite_bFp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_finite_bFp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_gaussiabHp.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_gaussiabHp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_gaussiabHp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_gaussiabIp.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_gaussiabIp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_gaussiabIp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_initialbak.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_initialbak_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_initialbak
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_profilebEo.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_profilebEo_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_profilebEo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_refinedbKp.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_refinedbKp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_refinedbKp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_respons9j0.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_respons9j0_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_respons9j0
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_retina_2iS.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_retina_2iS_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_retina_2iS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_retina_bCo.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_retina_bCo_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_retina_bCo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_retina_bDo.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_retina_bDo_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_retina_bDo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_retina_bGp.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_retina_bGp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_retina_bGp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_retina_ccu.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_retina_ccu_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_retina_ccu
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_row_filxdS.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_row_filxdS_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_row_filxdS
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_seed_flbJp.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_seed_flbJp_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_seed_flbJp
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_select_3i2.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_select_3i2_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_select_3i2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/start_for_thresho4jc.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_thresho4jc_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_thresho4jc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/q4d_detector_hls_03/solution1/syn/verilog/threshold_binary.v" into library work
+INFO: [VRFC 10-311] analyzing module threshold_binary
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/build/q4d_shard_compile_01/retina_q4d_detector_shard_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module retina_q4d_detector_shard_tb

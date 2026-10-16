@@ -1,0 +1,41 @@
+{
+  "status": "ARCHIVED_CPU_EVIDENCE_ONLY",
+  "files": {
+    "dataset_download_manifest.json": {
+      "bytes": 1204,
+      "sha256": "4d00abf6d1cb564f4f29953cf5c55b916a1fbc5c2e863b47d04229edc814bfe2"
+    },
+    "evaluation.json": {
+      "bytes": 64154,
+      "sha256": "4a856c0497e453f22d0637e85bad578dd507f73a83e701b089d97f531b6b8e90"
+    },
+    "evaluation_final.log": {
+      "bytes": 6626,
+      "sha256": "83a9623d9aa34eb7495c5915f909ff6d451be531d0aa802205be5507f91dd010"
+    },
+    "evaluation_report.md": {
+      "bytes": 3955,
+      "sha256": "253aa7b1a9e27ae17b20ce1a4b2872cf516ef542fa4ba553a6bbc76e8267c0e5"
+    },
+    "evaluation_run.log": {
+      "bytes": 6626,
+      "sha256": "83a9623d9aa34eb7495c5915f909ff6d451be531d0aa802205be5507f91dd010"
+    },
+    "host_tests.log": {
+      "bytes": 1978,
+      "sha256": "ba64860e98c7b8441720ba4cbad20d72293b7267399ce1cf219394d342455089"
+    },
+    "host_tests_final.log": {
+      "bytes": 2126,
+      "sha256": "7359991d705c0348098ad0b6747156edf7b3860b9d5d5d5ffdd35f8734a42e56"
+    },
+    "metrics.csv": {
+      "bytes": 42815,
+      "sha256": "16b725fb1a5bca54dc71053e5e856da275cc8f6043a6fa410aedf50ef58212b2"
+    },
+    "training_thresholds.json": {
+      "bytes": 15956,
+      "sha256": "29bed47e73b5db087c661ad08364e56cfade69eec21e5022bd1e43c156b65cb6"
+    }
+  }
+}

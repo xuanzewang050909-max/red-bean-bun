@@ -1,0 +1,22 @@
+{
+  "client_nonce": "mv6jrmgxzw0xj75i1kb",
+  "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+  "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+  "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+  "request_start_ms": 232855.09999999404,
+  "result_received_ms": 238292.09999999404,
+  "images_decoded_ms": 238375.09999999404,
+  "render_done_ms": 238382.09999999404,
+  "visibility": "visible",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+  "loop_id": "mv6jph7q884y90m19m9",
+  "loop_index": 17,
+  "loop_start_ms": 132732.19999998808,
+  "run_id": "faa6c013273d4b12a81ab3d99ebccbcc",
+  "session_id": "4341c09cebe24ec3b169c9d696079162",
+  "request_to_render_ms": 5527.0,
+  "result_received_to_render_ms": 90.0,
+  "browser_actual_fps": null,
+  "evidence_kind": "PYNQ_PL_DMA",
+  "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+}

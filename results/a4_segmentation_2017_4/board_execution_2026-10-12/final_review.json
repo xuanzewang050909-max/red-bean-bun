@@ -1,0 +1,13 @@
+{
+  "status": "PASS_FINAL_A4_BOARD_ARCHIVE_REVIEW",
+  "frames": 61,
+  "recorded_words": 9895936,
+  "direct_raw_words": 983040,
+  "raw_files_verified": 11,
+  "release_files_unchanged": 12,
+  "release_board_status_preserved": "NOT_RUN",
+  "derived_sources_reproduced": 2,
+  "host_archive_tests": 26,
+  "local_links_checked": 125,
+  "scope": "Verified downloaded PYNQ-Z2 fixed algorithm A execution; no final B/HDMI/FPS/medical quality result"
+}

@@ -1,0 +1,51 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/w2_guard_unit_01/retina_quality_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_guard
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/w2_guard_unit_01/retina_quality_guard.v:100]
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/w2_guard_unit_01/retina_quality_guard.v:107]
+WARNING: [VRFC 10-756] identifier final_output is used before its declaration [D:/PLD/retina_fpga/build/w2_guard_unit_01/retina_quality_guard.v:122]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/build/w2_guard_unit_01/retina_quality_guard_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module retina_quality_guard_tb
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe retina_quality_guard_tb -s w2_guard_unit -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.retina_quality_guard_default
+Compiling module work.retina_quality_guard(COUNTER_WID...
+Compiling module work.retina_quality_guard_tb
+Built simulation snapshot w2_guard_unit
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/PLD/retina_fpga/build/w2_guard_unit_01/xsim.dir/w2_guard_unit/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Wed Oct 14 02:42:06 2026...
+
+****** xsim v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/w2_guard_unit/xsim_script.tcl
+# xsim {w2_guard_unit} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+W2_GUARD_REJECTION_PASS: no input handshake for threshold zero/reserved bits
+W2_GUARD_FRAME_PASS: frame=1 words=65536 cfg=10010104 core=87381 drain=87422 gaps=938 stalls=21886
+W2_GUARD_FRAME_PASS: frame=2 words=262144 cfg=1002ff0b core=349525 drain=349566 gaps=3743 stalls=87422
+W2_GUARD_FRAME_PASS: frame=3 words=65536 cfg=10031b0d core=87381 drain=87422 gaps=938 stalls=21886
+W2_GUARD_FRAME_PASS: frame=4 words=65536 cfg=10041d06 core=87381 drain=87422 gaps=938 stalls=21886
+W2_GUARD_FRAME_PASS: frame=5 words=65536 cfg=10051c0f core=87381 drain=87422 gaps=938 stalls=21886
+W2_GUARD_FRAMING_PASS: preserved native counters/TLAST/TKEEP sticky errors
+W2_GUARD_FRAME_PASS: frame=6 words=65536 cfg=ffff1c0f core=87381 drain=87421 gaps=939 stalls=21885
+W2_GUARD_UNIT_PASS: complete_frames=6 checked_words=589824; locked parameters, exact observer clocks, atomic snapshots, saturation, framing and reset; SURROGATE_CORE_ONLY
+$finish called at time : 7869451 ns : File "D:/PLD/retina_fpga/build/w2_guard_unit_01/retina_quality_guard_tb.sv" Line 198
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 14 02:42:14 2026...

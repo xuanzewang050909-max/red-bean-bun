@@ -1,0 +1,35 @@
+{
+  "status": "EXISTING_ROUTED_ESTIMATE_ARCHIVED_NOT_MEASURED",
+  "baseline_bit": {
+    "bytes": 4045680,
+    "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+  },
+  "baseline_manifest": {
+    "bytes": 20000,
+    "sha256": "20719cd3376fa4b1a6ee3464a2f10f20b5f4f1b941b2a63e79dde4da19eff8df"
+  },
+  "routed_checkpoint": {
+    "bytes": 26734537,
+    "sha256": "3e8bbb3c4ac85ca621c82ab850b41378122c3dd3a40b9802be488a8014d5d74f"
+  },
+  "source_report": {
+    "path": "D:\\PLD\\retina_fpga\\build\\q4d_detector_full_02\\q4d_detector.runs\\impl_1\\q4d_detector_wrapper_power_routed.rpt",
+    "bytes": 91534,
+    "sha256": "143ccc08cd504f4d1a6798a003e103adabb1eeeb6e57a2e85fc8ea2ee4c3db3d"
+  },
+  "estimated_watts": {
+    "on_chip_total": 2.572,
+    "dynamic": 2.388,
+    "device_static": 0.184,
+    "PS7": 1.262
+  },
+  "confidence": "Medium",
+  "simulation_activity_file": null,
+  "assumptions": {
+    "ambient_C": 25.0,
+    "airflow_LFM": 250,
+    "effective_TJA_C_W": 11.5
+  },
+  "board_power_measured": false,
+  "scope": "Existing same-directory routed report with matching released bit; no new build or board power measurement. On-chip estimate includes PS7, excludes external DDR, regulators and other board components."
+}

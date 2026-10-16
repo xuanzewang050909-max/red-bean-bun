@@ -1,0 +1,13 @@
+{
+  "status": "PASS_BOARD_SMOKE_17_WORDS_FULL_SUITE_PENDING",
+  "evidence": "smoke_user_screenshot.png",
+  "sha256": "f050e0cf272e32bfcb0762df9db48e76d635b5216f674818722e86737ef61d48",
+  "execution_count": 4,
+  "observed_output": [
+    "OPENING_OFFICIAL_DMA_DRIVER",
+    "DRIVER_READY: starting one 17-word loopback",
+    "PASS 1/1: 17 words, increment",
+    "SMOKE_PASS: all 17 words and both byte counts matched"
+  ],
+  "scope": "Screenshot confirms official DMA driver initialization and one 17-word incremental loopback with comparison. Full 70-transfer suite, medical algorithm and final HDMI overlay remain unverified; raw board JSON/executed Notebook pending."
+}

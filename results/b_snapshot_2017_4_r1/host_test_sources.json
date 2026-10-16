@@ -1,0 +1,37 @@
+{
+  "status": "PASS_29_HOST_TESTS_NO_SKIPS",
+  "log": {
+    "bytes": 5029,
+    "sha256": "48eaed5d0e3f2ee8f50e8086a93cc52e5f3cd09406ae8b630abac863cbf3e9e8"
+  },
+  "sources": {
+    "scripts/b_snapshot_board_test.py": {
+      "bytes": 23025,
+      "sha256": "9b94cc32fe405fff349cb234f21258b99f1aaf59562a6e2974308fa0189ca626"
+    },
+    "scripts/package_b_snapshot.py": {
+      "bytes": 8489,
+      "sha256": "bd056888f569177602f6886f828e8e13a08e81a944d99d7876cb8c76abc2f21e"
+    },
+    "tests/test_b_snapshot.py": {
+      "bytes": 23393,
+      "sha256": "48b37a5f52d1aeada288671bbf44071af558471ccced2c02bd2ff111af338e28"
+    },
+    "notebooks/b_snapshot_compare.ipynb": {
+      "bytes": 3851,
+      "sha256": "fdb017b6cef9e6dbbe07f795c0c509db672aff5338f76997f5d456bf0ed76756"
+    },
+    "docs/b_snapshot_compare_steps.md": {
+      "bytes": 3529,
+      "sha256": "031b74624db2011d8967a53298c00a473b50b4d20f571d17fef35ebe6cc12a06"
+    }
+  },
+  "scope": "CPU copy/pixel equivalence and synthetic lifecycle/timing only; no new board run or measured improvement.",
+  "initial_probe": {
+    "log": {
+      "bytes": 6199,
+      "sha256": "059ef27166185e849457bf30c6e149d00ddbb02a177b7046546cf345ea3e6802"
+    },
+    "reason": "Test double lacked invalidate attribute; explicit mock interface added with create=True. No runtime/official code fix was needed."
+  }
+}

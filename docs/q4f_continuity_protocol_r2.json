@@ -1,0 +1,80 @@
+{
+  "protocol": "Q4F_C8_C7_PROTECTED_DIRECTED_PATHS_R2",
+  "date": "2026-10-15",
+  "baseline": "Frozen C7 d6, threshold112, actual Q4d PL download; A/C2/C5 unchanged",
+  "model_sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6",
+  "train_ids": [
+    "im0001",
+    "im0003",
+    "im0005",
+    "im0077",
+    "im0082",
+    "im0162",
+    "im0235",
+    "im0239",
+    "im0255",
+    "im0319"
+  ],
+  "reused_evaluation_ids_after_selection": [
+    "im0002",
+    "im0004",
+    "im0044",
+    "im0081",
+    "im0139",
+    "im0163",
+    "im0236",
+    "im0240",
+    "im0291",
+    "im0324"
+  ],
+  "sizes": [
+    256,
+    512
+  ],
+  "selection_annotation": "Original training AH only; all 20 images have previously been inspected, no claim of fresh holdout",
+  "high_threshold": 112,
+  "score_offsets": [
+    16,
+    32,
+    48
+  ],
+  "bilateral_margins": [
+    0,
+    1
+  ],
+  "candidate_count": 18,
+  "bright_protection": "max(raw green in replicated17x17)>=192. No additions in protected region. Original Gaussian3 bright core+radius7 band is a subset, with no GT in protection. Baseline predictions preserved exactly.",
+  "fov_protection": "No new pixels within8 pixels of original FOV boundary; baseline C7 pixels preserved",
+  "weak_support": "Only C7 scores plus SAME-direction raw image evidence; no C5 union. Every addition remains outside identical bright/FOV guard.",
+  "connectivity": "Four directions, gap1..3/5/7; both C7 anchors have another seed pixel continuing along path. Every new gap pixel meets C7 low score and SAME-direction raw point minimum>=margin, sum>=2 and both longitudinal5 sums>=5. One simultaneous pass from original seeds; no iteration.",
+  "training_gates": {
+    "each_case_bright_core_and_band_changed_pixels_max": 0,
+    "each_case_removed_C7_pixels_max": 0,
+    "each_case_dice_delta_min": 0,
+    "each_case_thin_recall_delta_min": 0,
+    "each_case_skeleton_recall_delta_min": 0,
+    "each_size_macro_dice_gain_min": 0.005,
+    "each_size_macro_cldice_gain_min": 0.005,
+    "each_size_added_precision_min": 0.5,
+    "512_pooled_thin_recall_gain_min": 0.03,
+    "512_macro_skeleton_recall_gain_min": 0.02
+  },
+  "selection": "Only candidates meeting unchanged r1 gates; highest sum of Dice+clDice, tie shorter paths. Fixed before old heldout/VK; failure retained.",
+  "post_selection_gates": "All40 cases xAH/VK: bright core/band pixel identity and baseline-mask superset; each image nondecreasing Dice, thin/centerline recall and adjacent-edge coverage; each size/split/observer mean clDice nondecreasing; im0324/512 both observers thin and centerline recall strictly improve. Any failure rejects the candidate for next board release, no post-evaluation retune.",
+  "sources": [
+    "software/q4f_bridges.py",
+    "software/q4f_continuity.py",
+    "scripts/evaluate_q4f_bridges.py",
+    "scripts/evaluate_q4f_continuity.py",
+    "tests/test_q4f_bridges.py"
+  ],
+  "resource_preflight": "Reuse C7 features/window and model, C5 and standard DMA/DDR. Extra protect max17 plus <=8 serial3x3 16/32bit window stages; within140BRAM only after actual implementation. RQ81 new identity; retain prior modes and original bytes. No resource/timing PASS from estimates.",
+  "reference": "https://scikit-image.org/docs/stable/api/skimage.filters.html#skimage.filters.apply_hysteresis_threshold",
+  "previous_report_sha256": "51c1a3bfacca3cd2a6f20946e617fc425014fa5f15dd887dee2dad7bd77b8550",
+  "previous_failure": "All24 weak propagation candidates fail precision/whole-Dice; most additions thicken existing false/edge pixels. All bright invariants passed.",
+  "max_gaps": [
+    3,
+    5,
+    7
+  ]
+}

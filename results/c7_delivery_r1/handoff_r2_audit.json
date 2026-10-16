@@ -1,0 +1,10 @@
+{
+  "status": "C7_SOFTWARE_DEMO_VERIFIED_REBOOT_AND_VIDEO_PENDING",
+  "source_commit": "95a0d676640100604542c9ccb24d55e3cbfb9cf8",
+  "files": 438,
+  "generated_rtl_files_verified": 125,
+  "manifest": {
+    "bytes": 71979,
+    "sha256": "ab880afd380eccd5766a15198b6d3c53ab225758896d8204d3dca7adc21002e1"
+  }
+}

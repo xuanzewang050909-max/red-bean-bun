@@ -1,0 +1,227 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 11 03:05:09 2026
+# Process ID: 16832
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -nojournal -log D:\PLD\retina_fpga\results\audit\official_v2.2.1\bd.log -source D:\PLD\retina_fpga\scripts\audit_official_base.tcl -tclargs bd
+# Log file: D:/PLD/retina_fpga/results/audit/official_v2.2.1/bd.log
+# Journal file: 
+#-----------------------------------------------------------
+source {D:\PLD\retina_fpga\scripts\audit_official_base.tcl}
+# set project_root [file normalize [file join [file dirname [info script]] ..]]
+# set work_base [file join $project_root build official_v2.2.1 boards Pynq-Z2 base]
+# set results [file join $project_root results audit official_v2.2.1]
+# file mkdir $results
+# set_param board.repoPaths [list [file join $project_root references board pynq-z2 pynq-z2]]
+# cd $work_base
+# set stage [lindex $argv 0]
+# if {$stage eq "hls"} {
+#     if {[catch {source build_base_ip.tcl} reason opts]} {
+#         puts stderr "OFFICIAL_HLS_FAILED: $reason"
+#         puts stderr [dict get $opts -errorinfo]
+#         exit 1
+#     }
+#     puts "OFFICIAL_HLS_COMPLETE"
+# } elseif {$stage eq "hls-repack"} {
+#     # Project-local workaround ONLY for generated packaging metadata. The
+#     # failed stock attempt stays in hls.log; original HLS scripts/C++ and the
+#     # installed tool are untouched. This is not an installed AMD patch.
+#     cd ../../ip/hls
+#     foreach item {color_convert pixel_pack pixel_unpack trace_cntrl_32 trace_cntrl_64} {
+#         set initial [open [file join $results ${item}_stock_export.log] w]
+#         set failed [catch {exec vivado_hls -f $item/script.tcl 2>@1} output]
+#         puts $initial $output
+#         close $initial
+#         set ipdir [file normalize [file join $item solution1 impl ip]]
+#         set packaging [file join $ipdir run_ippack.tcl]
+#         if {![file exists $packaging]} {error "No packaging script for $item; synthesis failed"}
+#         set fp [open $packaging r]
+#         set generated [read $fp]
+#         close $fp
+#         if {$failed && ![string match "*bad lexical cast*" $output]} {
+#             error "Unexpected failure in $item; see stock_export.log"
+#         }
+#         if {$failed} {
+#             set count [regsub -all -line {^set Revision[ \t]+"[0-9]+"} $generated {set Revision "1"} patched]
+#             if {$count != 1} {error "Unexpected generated revision metadata"}
+#             set fp [open [file join $ipdir run_ippack_audit.tcl] w]
+#             puts -nonewline $fp $patched
+#             close $fp
+#             set previous [pwd]
+#             cd $ipdir
+#             set repack_failed [catch {exec vivado -mode batch -nojournal -log [file join $results ${item}_repack.log] -source run_ippack_audit.tcl 2>@1} repack_output]
+#             cd $previous
+#             if {$repack_failed} {error "Metadata repack failed for $item: $repack_output"}
+#             puts "METADATA_REPACK_COMPLETE: $item, core_revision=1; original RTL unchanged"
+#         }
+#         if {[llength [glob -nocomplain -directory $ipdir *.zip]] == 0} {error "Missing packaged $item"}
+#         file copy -force [file join $item solution1 syn report ${item}_csynth.rpt] [file join $results ${item}_csynth.rpt]
+#         file copy -force $packaging [file join $results ${item}_run_ippack_original.tcl]
+#         if {$failed} {
+#             file copy -force [file join $ipdir run_ippack_audit.tcl] [file join $results ${item}_run_ippack_audit.tcl]
+#         }
+#     }
+#     puts "OFFICIAL_HLS_REPACK_COMPLETE: stock export failed; local metadata workaround verified"
+# } elseif {$stage eq "bd"} {
+#     # Stop at the stock script's explicit implementation boundary. No RTL,
+#     # IP parameters, clocks, addresses, XDC or version check are changed.
+#     set fp [open base.tcl r]
+#     set source_text [read $fp]
+#     close $fp
+#     set boundary [string first "# Additional steps to get to bitstream" $source_text]
+#     if {$boundary < 0} {error "Expected upstream boundary missing"}
+#     if {[catch {uplevel #0 [string range $source_text 0 [expr {$boundary-1}]]} reason opts]} {
+#         puts stderr "OFFICIAL_BD_FAILED: $reason"
+#         puts stderr [dict get $opts -errorinfo]
+#         exit 1
+#     }
+#     if {[llength [get_bd_cells -quiet ps7_0]] != 1} {error "Stock reference was not created"}
+#     validate_bd_design
+#     save_bd_design
+#     write_bd_tcl -force [file join $results reconstructed_bd.tcl]
+#     report_ip_status -file [file join $results ip_status.rpt]
+#     set inventory [open [file join $results ip_inventory.tsv] w]
+#     puts $inventory "instance\tvlnv\tinterfaces\tclock_pins"
+#     foreach cell [lsort [get_bd_cells -hier -filter {TYPE == ip}]] {
+#         set clocks [get_bd_pins -quiet -of_objects $cell -filter {TYPE == clk}]
+#         puts $inventory "$cell\t[get_property VLNV $cell]\t[get_bd_intf_pins -quiet -of_objects $cell]\t$clocks"
+#     }
+#     close $inventory
+#     puts "OFFICIAL_BD_VALIDATED: host-only, no bitstream or board verification"
+# } else {
+#     error "Choose hls, hls-repack or bd"
+# }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/official_v2.2.1/boards/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+INFO: [BD_TCL-3] Currently there is no design <system> in project, so creating one...
+Wrote  : <D:/PLD/retina_fpga/build/official_v2.2.1/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/system/system.bd> 
+INFO: [BD_TCL-4] Making design <system> as current_bd_design.
+INFO: [BD_TCL-5] Currently the variable <design_name> is equal to "system".
+INFO: [BD_TCL-6] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:user:audio_codec_ctrl:1.0 xilinx.com:ip:axi_gpio:2.0 xilinx.com:ip:clk_wiz:5.4 xilinx.com:ip:xlconcat:2.1 xilinx.com:ip:xlconstant:1.1 xilinx.com:ip:xlslice:1.0 xilinx.com:ip:mdm:3.2 xilinx.com:ip:processing_system7:5.5 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:ip:axi_intc:4.1 xilinx.com:user:dff_en_reset_vector:1.0 xilinx.com:ip:axi_iic:2.0 xilinx.com:user:io_switch:1.1 xilinx.com:ip:microblaze:10.0 xilinx.com:ip:axi_bram_ctrl:4.0 xilinx.com:ip:axi_uartlite:2.0 xilinx.com:ip:xadc_wiz:3.3 xilinx.com:ip:axi_quad_spi:3.2 xilinx.com:ip:axi_timer:2.0 xilinx.com:ip:axi_dma:7.1 xilinx.com:ip:axis_data_fifo:1.1 xilinx.com:hls:trace_cntrl_64:1.4 xilinx.com:hls:trace_cntrl_32:1.4 xilinx.com:ip:axi_vdma:6.3 xilinx.com:ip:lmb_v10:3.0 xilinx.com:ip:blk_mem_gen:8.4 xilinx.com:ip:lmb_bram_if_cntlr:4.0 xilinx.com:ip:axis_register_slice:1.1 xilinx.com:hls:color_convert:1.0 xilinx.com:hls:pixel_pack:1.0 xilinx.com:hls:pixel_unpack:1.0 xilinx:user:color_swap:1.0 digilentinc.com:ip:dvi2rgb:1.7 xilinx.com:ip:v_vid_in_axi4s:4.0 xilinx.com:ip:v_tc:6.1 digilentinc.com:ip:axi_dynclk:1.0 digilentinc.com:ip:rgb2dvi:1.2 xilinx.com:ip:v_axi4s_vid_out:4.0  .
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter SUPPORTS_NARROW_BURST on /audio_codec_ctrl_0/S_AXI. It is read-only.
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter MAX_BURST_LENGTH on /audio_codec_ctrl_0/S_AXI. It is read-only.
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter SUPPORTS_NARROW_BURST on /iop_arduino/xadc/s_axi_lite. It is read-only.
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter MAX_BURST_LENGTH on /iop_arduino/xadc/s_axi_lite. It is read-only.
+WARNING: [BD 41-1306] The connection to interface pin /iop_arduino/io_switch/io_data_i is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_arduino/io_switch/io_data_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_arduino/io_switch/io_tri_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_arduino/intr/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_arduino/clk_100M(clk) and /iop_arduino/dff_en_reset_vector_0/clk(undef)
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_1: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_1: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmoda/io_switch/io_data_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmoda/io_switch/io_tri_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmoda/intr/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmoda/io_switch/io_data_i is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmoda/clk_100M(clk) and /iop_pmoda/dff_en_reset_vector_0/clk(undef)
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_2: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_2: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmodb/io_switch/io_data_i is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmodb/io_switch/io_data_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmodb/io_switch/io_tri_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_pmodb/intr/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmodb/clk_100M(clk) and /iop_pmodb/dff_en_reset_vector_0/clk(undef)
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'ss1_i' specified in the portmap, is not found on the block! 
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_3: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_3: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+WARNING: [BD 41-1306] The connection to interface pin /iop_rpi/io_switch/io_data_i is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_rpi/io_switch/io_data_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_rpi/io_switch/io_tri_o is being overridden by the user. This pin will not be connected as a part of interface connection io
+WARNING: [BD 41-1306] The connection to interface pin /iop_rpi/intr/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_rpi/clk_100M(clk) and /iop_rpi/dff_en_reset_vector_0/clk(undef)
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pi/trace_cntrl_64_0/trace_64_TDATA is being overridden by the user. This pin will not be connected as a part of interface connection trace_64
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pi/trace_cntrl_64_0/trace_64_TVALID is being overridden by the user. This pin will not be connected as a part of interface connection trace_64
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pi/trace_cntrl_64_0/trace_64_TKEEP is being overridden by the user. This pin will not be connected as a part of interface connection trace_64
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pi/trace_cntrl_64_0/trace_64_TSTRB is being overridden by the user. This pin will not be connected as a part of interface connection trace_64
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pmodb/trace_cntrl_32_0/trace_32_TDATA is being overridden by the user. This pin will not be connected as a part of interface connection trace_32
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pmodb/trace_cntrl_32_0/trace_32_TVALID is being overridden by the user. This pin will not be connected as a part of interface connection trace_32
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pmodb/trace_cntrl_32_0/trace_32_TKEEP is being overridden by the user. This pin will not be connected as a part of interface connection trace_32
+WARNING: [BD 41-1306] The connection to interface pin /trace_analyzer_pmodb/trace_cntrl_32_0/trace_32_TSTRB is being overridden by the user. This pin will not be connected as a part of interface connection trace_32
+WARNING: [BD 41-1306] The connection to interface pin /video/hdmi_in/frontend/axi_gpio_hdmiin/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1306] The connection to interface pin /video/hdmi_in/frontend/axi_gpio_hdmiin/gpio2_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter SUPPORTS_NARROW_BURST on /video/hdmi_out/frontend/axi_dynclk/s00_axi. It is read-only.
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter MAX_BURST_LENGTH on /video/hdmi_out/frontend/axi_dynclk/s00_axi. It is read-only.
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video/hdmi_out/frontend/axi_dynclk/LOCKED_O(undef) and /video/hdmi_out/frontend/rgb2dvi_0/aRst_n(rst)
+WARNING: [BD 41-1306] The connection to interface pin /video/hdmi_out/frontend/hdmi_out_hpd_video/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+WARNING: [BD 41-1306] The connection to interface pin /system_interrupts/irq is being overridden by the user. This pin will not be connected as a part of interface connection interrupt
+WARNING: [BD 41-1731] Type mismatch between connected pins: /ps7_0/IRQ_F2P(intr) and /system_interrupts/irq(undef)
+WARNING: [BD 41-1306] The connection to interface pin /ps7_0/GPIO_O is being overridden by the user. This pin will not be connected as a part of interface connection GPIO_0
+Wrote  : <D:/PLD/retina_fpga/build/official_v2.2.1/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/system/system.bd> 
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_direct 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_arduino/spi_subsystem/spi_shared 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmoda/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_pmodb/spi 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_1 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+INFO: [xilinx.com:ip:axi_quad_spi:3.2-1] /iop_rpi/spi_subsystem/spi_0 
+                   #######################################################################################
+                   INFO: AXI Quad SPI core's AXI Lite Clock and EXT SPI CLK are synchronous to each other.
+                   ########################################################################################
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_G(8:0): int8 against /video/hdmi_out/frontend video_in-TDATA: p1(8:0): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_B(16:8): int8 against /video/hdmi_out/frontend video_in-TDATA: p2(16:8): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_R(24:16): int8 against /video/hdmi_out/frontend video_in-TDATA: p3(24:16): int8.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_dynclk_0_PXL_CLK_5X_O 
+validate_bd_design: Time (s): cpu = 00:01:29 ; elapsed = 00:01:34 . Memory (MB): peak = 1321.434 ; gain = 63.316
+Wrote  : <D:/PLD/retina_fpga/build/official_v2.2.1/boards/Pynq-Z2/base/base/base.srcs/sources_1/bd/system/system.bd> 
+save_bd_design: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1349.391 ; gain = 27.957
+INFO: [BD 5-148] Tcl file written out <D:/PLD/retina_fpga/results/audit/official_v2.2.1/reconstructed_bd.tcl>.
+
+OFFICIAL_BD_VALIDATED: host-only, no bitstream or board verification
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 03:07:21 2026...

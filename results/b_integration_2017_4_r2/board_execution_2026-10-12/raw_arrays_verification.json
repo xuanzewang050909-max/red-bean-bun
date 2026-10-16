@@ -1,0 +1,104 @@
+[
+  {
+    "name": "a4_output_stare_256_mode1.npy",
+    "shape": [
+      256,
+      256
+    ],
+    "dtype": "uint32",
+    "words": 65536,
+    "file_sha256": "a75fe9093456fc5e64510585ca4d5986fbe295ebcb76efdf72dab6f82b5eb4b0",
+    "word_sha256": "a30cfd23432434ce3c0c23506c20f37062ab319332e7198b8f21a465fbea84b4",
+    "mismatched_words": 0,
+    "mask_byte_values": [
+      0,
+      255
+    ],
+    "final_mask_outside_fov_pixels": null
+  },
+  {
+    "name": "a4_output_stare_256_mode2.npy",
+    "shape": [
+      256,
+      256
+    ],
+    "dtype": "uint32",
+    "words": 65536,
+    "file_sha256": "973e1720c4f45993168b4512b14a6e1fcc416c7597e06a616c3e0ec5f2b0674f",
+    "word_sha256": "180a95b97364155362ad30d6ece71adcad85a52d215418f705e4d2b4004e0907",
+    "mismatched_words": 0,
+    "mask_byte_values": [
+      0,
+      255
+    ],
+    "final_mask_outside_fov_pixels": null
+  },
+  {
+    "name": "a4_output_stare_256_mode3.npy",
+    "shape": [
+      256,
+      256
+    ],
+    "dtype": "uint32",
+    "words": 65536,
+    "file_sha256": "0c07d9ad198f62c420726882c4cd14877f9da18a72925d2e8d6b09407b944770",
+    "word_sha256": "57d2c84e5a4cac2355fd5f7c4654f71d9ff81b0ec8047728e5ffa5857197af6f",
+    "mismatched_words": 0,
+    "mask_byte_values": [
+      0,
+      255
+    ],
+    "final_mask_outside_fov_pixels": 0
+  },
+  {
+    "name": "a4_output_stare_512_mode1.npy",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file_sha256": "e3631b505c733a36e5d0926a4178f8952ef202a64965995a766effff67154e8f",
+    "word_sha256": "78162255acbf9c1d832f38ede2f23951d6458e5c1ac2f37b9c3a14a6d94cfcfe",
+    "mismatched_words": 0,
+    "mask_byte_values": [
+      0,
+      255
+    ],
+    "final_mask_outside_fov_pixels": null
+  },
+  {
+    "name": "a4_output_stare_512_mode2.npy",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file_sha256": "699051e2f1395f7ed641d71e4d1d7d2c53ea4b24b5b23474db30c0b06bc64b2d",
+    "word_sha256": "8d0f14ae8989e90266cb5ae9daeda85150b30d55bc8b20b9092b4f1058dbd631",
+    "mismatched_words": 0,
+    "mask_byte_values": [
+      0,
+      255
+    ],
+    "final_mask_outside_fov_pixels": null
+  },
+  {
+    "name": "a4_output_stare_512_mode3.npy",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file_sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b",
+    "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+    "mismatched_words": 0,
+    "mask_byte_values": [
+      0,
+      255
+    ],
+    "final_mask_outside_fov_pixels": 0
+  }
+]

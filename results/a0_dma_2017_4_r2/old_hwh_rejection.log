@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\check_a0_hwh.py", line 81, in <module>
+    main()
+  File "D:\PLD\retina_fpga\scripts\check_a0_hwh.py", line 63, in main
+    assert ('const_one', 'dout') in aux_connections, 'ACTIVE_LOW auxiliary reset must be tied HIGH'
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ACTIVE_LOW auxiliary reset must be tied HIGH

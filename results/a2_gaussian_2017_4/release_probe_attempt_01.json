@@ -1,0 +1,8 @@
+{
+  "status": "FAILED_PROBE_ASSUMPTION_NOT_PACKAGE_FAILURE",
+  "board_status": "NOT_RUN",
+  "action": "An initial scratch verification edited cells[1] and expected a code-contract rejection",
+  "observed": "cells[1] is Markdown; the code-only contract correctly accepted the explanation change",
+  "correction": "Select cells by cell_type, explicitly test Markdown acceptance and executable-code rejection",
+  "scope": "Only a temporary copy was edited; the release/hardware files were not changed"
+}

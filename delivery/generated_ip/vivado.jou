@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct 15 02:40:01 2026
+# Process ID: 42064
+# Current directory: D:/PLD/retina_fpga/build/q4d_detector_hls_export_02/solution1/impl/ip
+# Command line: vivado.exe -mode batch -source run_ippack_a4meta.tcl
+# Log file: D:/PLD/retina_fpga/build/q4d_detector_hls_export_02/solution1/impl/ip/vivado.log
+# Journal file: D:/PLD/retina_fpga/build/q4d_detector_hls_export_02/solution1/impl/ip\vivado.jou
+#-----------------------------------------------------------
+source run_ippack_a4meta.tcl

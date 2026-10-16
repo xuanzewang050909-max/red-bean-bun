@@ -1,0 +1,136 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 04:15:54 2026
+# Process ID: 33928
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -nojournal -log results/b_integration_2017_4/reset_build_02.log -source vivado/scripts/simulate_b_reset.tcl -tclargs build/b_integration_04 build/b_reset_sim_02
+# Log file: D:/PLD/retina_fpga/results/b_integration_2017_4/reset_build_02.log
+# Journal file: 
+#-----------------------------------------------------------
+source vivado/scripts/simulate_b_reset.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {$argc != 2} {error "Use candidate-build new-simulation-directory"}
+# set candidate [file normalize [lindex $argv 0]]
+# set out [file normalize [lindex $argv 1]]
+# if {[file exists $out]} {error "New simulation directory required"}
+# set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+# create_project b_reset_sim $out -part xc7z020clg400-1
+# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+# foreach name {reset_100m rst_ps7_0_fclk0 rst_ps7_0_fclk1} {
+#     read_ip [file join $candidate b_integration.srcs sources_1 bd system ip system_${name}_0 system_${name}_0.xci]
+# }
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'system_reset_100m_0' generated file not found 'd:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_reset_100m_0/system_reset_100m_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_reset_100m_0' generated file not found 'd:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_reset_100m_0/system_reset_100m_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_reset_100m_0' generated file not found 'd:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_reset_100m_0/system_reset_100m_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_reset_100m_0' generated file not found 'd:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_reset_100m_0/system_reset_100m_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'system_reset_100m_0' generated file not found 'd:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_reset_100m_0/system_reset_100m_0_sim_netlist.vhdl'. Please regenerate to continue.
+# generate_target simulation [get_ips]
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'system_reset_100m_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'system_rst_ps7_0_fclk0_0'. Target already exists and is up to date.
+INFO: [IP_Flow 19-1706] Not generating 'Simulation' target for IP 'system_rst_ps7_0_fclk1_0'. Target already exists and is up to date.
+# file copy [file join $root tests b_reset_tb.sv] [file join $out reset_tb_used.sv]
+# add_files -fileset sim_1 [file join $out reset_tb_used.sv]
+# set_property top b_reset_tb [get_filesets sim_1]
+# set_property xsim.simulate.runtime 30us [get_filesets sim_1]
+# launch_simulation
+INFO: [Vivado 12-5698] Checking validity of IPs in the design for the 'XSim' simulator...
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim'
+INFO: [Vivado 12-4795] Using compiled simulation libraries for IPs
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [USF-XSim-7] Finding pre-compiled libraries...
+INFO: [USF-XSim-11] File 'E:/vivado/Vivado/2017.4/data/xsim/ip/xsim_ip.ini' copied to run dir:'D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-54] Inspecting design source files for 'b_reset_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L xil_defaultlib -prj b_reset_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/build/b_reset_sim_02/reset_tb_used.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module b_reset_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+"xvhdl --incr --relax -prj b_reset_tb_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk1_0/sim/system_rst_ps7_0_fclk1_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_rst_ps7_0_fclk1_0
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_rst_ps7_0_fclk0_0/sim/system_rst_ps7_0_fclk0_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_rst_ps7_0_fclk0_0
+INFO: [VRFC 10-163] Analyzing VHDL file "D:/PLD/retina_fpga/build/b_integration_04/b_integration.srcs/sources_1/bd/system/ip/system_reset_100m_0/sim/system_reset_100m_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity system_reset_100m_0
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim'
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto c07dec30d1bc44348b85f9c8088b074c --incr --debug typical --relax --mt 2 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot b_reset_tb_behav xil_defaultlib.b_reset_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package ieee.std_logic_arith
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_12.proc_sys_reset [\proc_sys_reset(c_family="zynq",...]
+Compiling architecture system_reset_100m_0_arch of entity xil_defaultlib.system_reset_100m_0 [system_reset_100m_0_default]
+Compiling architecture system_rst_ps7_0_fclk0_0_arch of entity xil_defaultlib.system_rst_ps7_0_fclk0_0 [system_rst_ps7_0_fclk0_0_default]
+Compiling architecture system_rst_ps7_0_fclk1_0_arch of entity xil_defaultlib.system_rst_ps7_0_fclk1_0 [system_rst_ps7_0_fclk1_0_default]
+Compiling module xil_defaultlib.b_reset_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot b_reset_tb_behav
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim/xsim.dir/b_reset_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 12 04:16:06 2026...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 302.957 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'D:/PLD/retina_fpga/build/b_reset_sim_02/b_reset_sim.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "b_reset_tb_behav -key {Behavioral:sim_1:Functional:b_reset_tb} -tclbatch {b_reset_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+source b_reset_tb.tcl
+## current_wave_config
+B_RESET_SIM_PASS: actual three vendor IPs; control/algorithm 100 MHz, video 142.857 MHz; isolation and PS reset
+$finish called at time : 18001 ns : File "D:/PLD/retina_fpga/build/b_reset_sim_02/reset_tb_used.sv" Line 36
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'b_reset_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 30us
+launch_simulation: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 312.426 ; gain = 17.137
+# close_sim
+INFO: [Simtcl 6-16] Simulation closed
+# set f [open [file join $out b_reset_sim.sim sim_1 behav xsim simulate.log] r]
+# set result [read $f];
+# close $f
+# if {[string first "B_RESET_SIM_PASS:" $result] < 0 || [string first "Fatal:" $result] >= 0 || [string first "ERROR:" $result] >= 0} {error "B generated vendor reset test failed"}
+# puts "B_VENDOR_RESET_GATE_PASS"
+B_VENDOR_RESET_GATE_PASS
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 04:16:10 2026...

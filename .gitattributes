@@ -1,0 +1,145 @@
+* text=auto
+*.md text eol=lf
+scripts/** text eol=lf
+software/** text eol=lf
+rtl/** text eol=lf
+tests/retina_point_axis_tb.sv text eol=lf
+tests/test_reference.py text eol=lf
+tests/test_a1_board_runner.py text eol=lf
+tests/test_a1_package_validation.py text eol=lf
+tests/retina_gaussian_axis_tb.sv text eol=lf
+tests/retina_gaussian_hls_tb.cpp text eol=lf
+tests/test_a2_board_runner.py text eol=lf
+tests/test_a2_archive.py text eol=lf
+tests/retina_background_axis_tb.sv text eol=lf
+tests/retina_background_hls_tb.cpp text eol=lf
+tests/test_a3_board_runner.py text eol=lf
+tests/test_a3_archive.py text eol=lf
+tests/retina_segmentation_axis_tb.sv text eol=lf
+tests/retina_segmentation_hls_tb.cpp text eol=lf
+tests/test_a4_board_runner.py text eol=lf
+tests/test_a4_archive.py text eol=lf
+tests/b_reset_tb.sv text eol=lf
+tests/test_b_integration.py text eol=lf
+vivado/scripts/build_b_integration.tcl text eol=lf
+vivado/scripts/simulate_b_reset.tcl text eol=lf
+vivado/constraints/b_integration.xdc text eol=lf
+notebooks/b_integration_check.ipynb text eol=lf
+hls/** text eol=lf
+requirements.txt text eol=lf
+# These Windows-generated sources are recorded byte-for-byte in the release manifest.
+rtl/core/contrast_lut.vh -text !eol
+vivado/scripts/build_a1_point.tcl -text !eol
+vivado/scripts/build_a2_gaussian.tcl -text !eol
+hls/contrast_lut_values.h -text !eol
+notebooks/a2_gaussian_check.ipynb -text !eol
+vivado/scripts/build_a2_hls.tcl text eol=lf
+vivado/scripts/simulate_a2_reset.tcl text eol=lf
+vivado/scripts/build_a3_background.tcl text eol=lf
+vivado/scripts/build_a3_hls.tcl text eol=lf
+vivado/scripts/simulate_a3_reset.tcl text eol=lf
+notebooks/a3_background_check.ipynb text eol=lf
+vivado/scripts/build_a4_segmentation.tcl text eol=lf
+vivado/scripts/build_a4_hls.tcl text eol=lf
+vivado/scripts/simulate_a4_reset.tcl text eol=lf
+notebooks/a4_segmentation_check.ipynb text eol=lf
+vivado/scripts/simulate_a1_reset.tcl text eol=lf
+vivado/scripts/synthesize_point_stage.tcl text eol=lf
+.gitattributes text eol=lf
+.gitignore text eol=lf
+docs/original_development_task.md -text !eol
+# Original references and measured logs must retain their exact byte hashes.
+references/** -text
+results/** -text
+
+# W4b formal browser payload must retain its released byte hashes.
+pynq_w4b/** -text !eol
+ui_w4b/** -text !eol
+tests/test_c7_w4_browser.py text eol=lf
+tests/test_w4b_client.cjs text eol=lf
+
+tests/test_b_video_imports.py text eol=lf
+tests/test_b_archive.py text eol=lf
+tests/test_b_profile.py text eol=lf
+tests/test_b_profile_archive.py text eol=lf
+notebooks/b_performance_profile.ipynb text eol=lf
+tests/test_b_layout.py text eol=lf
+tests/test_b_layout_archive.py text eol=lf
+notebooks/b_layout_compare.ipynb text eol=lf
+tests/test_b_snapshot.py text eol=lf
+notebooks/b_snapshot_compare.ipynb text eol=lf
+tests/test_b_snapshot_archive.py text eol=lf
+docs/browser_contract.json text eol=lf
+pynq_app/** text eol=lf
+ui/** text eol=lf
+notebooks/browser_start.ipynb text eol=lf
+tests/browser_fixtures.py text eol=lf
+tests/test_browser_w1.py text eol=lf
+tests/test_browser_w1_board_archive.py text eol=lf
+docs/q1_bilateral_protocol_r1.json text eol=lf
+tests/test_q1_bilateral.py text eol=lf
+docs/q1_soft_support_protocol_r2.json text eol=lf
+tests/test_q1_soft_support.py text eol=lf
+# W3 runtime bytes and startup ZIP digest are fixed in the delivered manifest.
+pynq_w3/** -text !eol
+ui_w3/** -text !eol
+notebooks/browser_w3_start.ipynb -text !eol
+tests/browser_w3_fixtures.py text eol=lf
+tests/test_browser_w3.py text eol=lf
+tests/test_browser_w3_contract.py text eol=lf
+
+# W4a delivery preserves paired source and ZIP notebook hashes.
+pynq_w4a/** -text !eol
+ui_w4a/** -text !eol
+notebooks/browser_w4a_start.ipynb -text !eol
+tests/browser_w4a_fixtures.py text eol=lf
+tests/test_browser_w4a.py text eol=lf
+tests/test_browser_w4a_png.py text eol=lf
+
+# Q3 protocol and paired startup archive hashes remain byte-exact.
+docs/q3_full_quality_protocol_r1.json -text !eol
+notebooks/q3_quality_start.ipynb -text !eol
+tests/test_q3_quality.py text eol=lf
+docs/q4_refinement_protocol_r1.json -text !eol
+tests/test_q4_refinement.py text eol=lf
+docs/q4_ridge_protocol_r2.json -text !eol
+tests/test_q4_ridge.py text eol=lf
+docs/q4_fusion_protocol_r3.json -text !eol
+tests/test_q4_fusion.py text eol=lf
+docs/q4_gradient_protocol_r4.json -text !eol
+tests/test_q4_gradient.py text eol=lf
+
+docs/q4_profile_audit_protocol_d1.json -text !eol
+tests/test_q4_profile_features.py text eol=lf
+tests/test_q4_profile_statistics.py text eol=lf
+
+# C7 application and startup archive pairing is byte-exact.
+pynq_q4d/** -text !eol
+ui_q4d/** -text !eol
+notebooks/q4d_quality_start.ipynb -text !eol
+
+# W4c release/source pairing is byte-exact.
+dma_bench/** -text !eol
+scripts/package_c7_w4_dma.py -text !eol
+scripts/verify_c7_w4_dma.py -text !eol
+tests/test_c7_w4_dma.py -text !eol
+
+# W5a runtime and frozen tests must retain their released byte hashes.
+pynq_w5a/** -text !eol
+ui_w5a/** -text !eol
+tests/test_c7_w5a.py -text !eol
+tests/test_w5a_controller.cjs -text !eol
+
+# W5b delivery is paired by byte hashes.
+pynq_w5b/** -text !eol
+ui_w5b/** -text !eol
+tests/test_c7_w5b.py text eol=lf
+tests/test_w5b_client.cjs text eol=lf
+
+# Final showcase runtime byte-paired with its release.
+pynq_showcase/** -text !eol
+ui_showcase/** -text !eol
+scripts/showcase_board.py -text !eol
+
+# Preserve published evidence and generated vendor artifacts byte-for-byte.
+* -text

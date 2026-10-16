@@ -1,0 +1,15 @@
+{
+  "source": "https://git.code.sf.net/p/win32diskimager/code",
+  "tag": "v1.0.0",
+  "commit": "faf7aa25ac343b183811115359a18673fa279fae",
+  "files": [
+    {
+      "path": "mainwindow.cpp",
+      "sha256": "cf7123b21ffc5110aee7a49102d5d7beefff3ad9ff3cd1b609ad1dfa18f6f4f7"
+    },
+    {
+      "path": "GPL-2",
+      "sha256": "ab15fd526bd8dd18a9e77ebc139656bf4d33e97fc7238cd11bf60e2b9b8666c6"
+    }
+  ]
+}

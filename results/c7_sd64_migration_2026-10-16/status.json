@@ -1,0 +1,17 @@
+{
+  "status": "MIGRATION_BOOT_AND_EXPANSION_CONFIRMED_BY_SCREENSHOT",
+  "disk_bytes": 63864569856,
+  "root_partition_start_sector": 268288,
+  "root_partition_sectors": 124467200,
+  "ext4_blocks_4k": 15558400,
+  "df_size": "58G",
+  "df_available": "44G",
+  "used_percent": 21,
+  "new_card_pl_smoke": "PASS_8_TASKS",
+  "original_paired_release_hashes": {
+    "c7_showcase.ipynb": "c2913fde0fd707c52126fe7d4b35052f0096d3919d5cadabf3dce470008b65d0",
+    "c7_showcase_r1.zip": "a474e18b330e6a3daddb821113782724e00c2bbfba5008a6ea504a531f412720"
+  },
+  "video": "DEFERRED_BY_USER",
+  "pl_audit": "results/c7_showcase_r1/board_sd64_2026-10-16/verification.json"
+}

@@ -1,0 +1,216 @@
+{
+  "status": "PASS_COMMITTED_SOURCE_AND_IMMUTABLE_RELEASE_PAIRING",
+  "source_commit": "b9cadd3e5329efb1036e00ef45176ac4ebd3dee3",
+  "source_pairs": [
+    {
+      "path": "docs/b_snapshot_compare_steps.md",
+      "workspace": {
+        "bytes": 3529,
+        "sha256": "031b74624db2011d8967a53298c00a473b50b4d20f571d17fef35ebe6cc12a06"
+      },
+      "git_blob": {
+        "bytes": 3529,
+        "sha256": "031b74624db2011d8967a53298c00a473b50b4d20f571d17fef35ebe6cc12a06"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "notebooks/b_snapshot_compare.ipynb",
+      "workspace": {
+        "bytes": 3851,
+        "sha256": "fdb017b6cef9e6dbbe07f795c0c509db672aff5338f76997f5d456bf0ed76756"
+      },
+      "git_blob": {
+        "bytes": 3851,
+        "sha256": "fdb017b6cef9e6dbbe07f795c0c509db672aff5338f76997f5d456bf0ed76756"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "references/PYNQ/v3.0.1/pynq/buffer.py",
+      "workspace": {
+        "bytes": 4676,
+        "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+      },
+      "git_blob": {
+        "bytes": 4676,
+        "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "references/PYNQ/v3.0.1/pynq/lib/dma.py",
+      "workspace": {
+        "bytes": 26228,
+        "sha256": "a7e92fd180d9fa3322e81b49bb4141e08c8f5c8cb685fe608793b46acfe11d49"
+      },
+      "git_blob": {
+        "bytes": 26228,
+        "sha256": "a7e92fd180d9fa3322e81b49bb4141e08c8f5c8cb685fe608793b46acfe11d49"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "references/PYNQ/v3.0.1/pynq/lib/video/dma.py",
+      "workspace": {
+        "bytes": 20367,
+        "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+      },
+      "git_blob": {
+        "bytes": 20367,
+        "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py",
+      "workspace": {
+        "bytes": 12224,
+        "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+      },
+      "git_blob": {
+        "bytes": 12224,
+        "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/a0_dma_board_test.py",
+      "workspace": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "git_blob": {
+        "bytes": 10693,
+        "sha256": "26d3dda2d0d4f42cccf72927fa339f705b27ca7d35cb2a4e79f2b0fd053cc3d7"
+      },
+      "pairing": "PASS_ONLY_HISTORICAL_CRLF_LF_DIFFERENCE"
+    },
+    {
+      "path": "scripts/a1_point_board_test.py",
+      "workspace": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "git_blob": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/a2_gaussian_board_test.py",
+      "workspace": {
+        "bytes": 12265,
+        "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+      },
+      "git_blob": {
+        "bytes": 12265,
+        "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/a3_background_board_test.py",
+      "workspace": {
+        "bytes": 12110,
+        "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+      },
+      "git_blob": {
+        "bytes": 12110,
+        "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/a4_segmentation_board_test.py",
+      "workspace": {
+        "bytes": 13155,
+        "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+      },
+      "git_blob": {
+        "bytes": 13155,
+        "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_integration_board_test.py",
+      "workspace": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "git_blob": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_layout_board_test.py",
+      "workspace": {
+        "bytes": 18759,
+        "sha256": "a45aa2b2aa36d24c065a730b7831fd0a5b22d01f941a35a3b79f6c8727185c7b"
+      },
+      "git_blob": {
+        "bytes": 18759,
+        "sha256": "a45aa2b2aa36d24c065a730b7831fd0a5b22d01f941a35a3b79f6c8727185c7b"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_profile_board_test.py",
+      "workspace": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "git_blob": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_snapshot_board_test.py",
+      "workspace": {
+        "bytes": 23025,
+        "sha256": "9b94cc32fe405fff349cb234f21258b99f1aaf59562a6e2974308fa0189ca626"
+      },
+      "git_blob": {
+        "bytes": 23025,
+        "sha256": "9b94cc32fe405fff349cb234f21258b99f1aaf59562a6e2974308fa0189ca626"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/package_b_snapshot.py",
+      "workspace": {
+        "bytes": 8489,
+        "sha256": "bd056888f569177602f6886f828e8e13a08e81a944d99d7876cb8c76abc2f21e"
+      },
+      "git_blob": {
+        "bytes": 8489,
+        "sha256": "bd056888f569177602f6886f828e8e13a08e81a944d99d7876cb8c76abc2f21e"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "tests/test_b_snapshot.py",
+      "workspace": {
+        "bytes": 23393,
+        "sha256": "48b37a5f52d1aeada288671bbf44071af558471ccced2c02bd2ff111af338e28"
+      },
+      "git_blob": {
+        "bytes": 23393,
+        "sha256": "48b37a5f52d1aeada288671bbf44071af558471ccced2c02bd2ff111af338e28"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    }
+  ],
+  "tests": 29,
+  "skipped": 0,
+  "files": 22,
+  "inherited_files_exact": 18,
+  "board_status": "NOT_RUN",
+  "performance_improvement": "NOT_MEASURED"
+}

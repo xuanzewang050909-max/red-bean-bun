@@ -1,0 +1,15 @@
+--- a/hls/retina_background_hls.hpp
++++ b/hls/retina_segmentation_hls.hpp
+@@ -1,9 +1,9 @@
+-#ifndef RETINA_BACKGROUND_HLS_HPP
+-#define RETINA_BACKGROUND_HLS_HPP
++#ifndef RETINA_SEGMENTATION_HLS_HPP
++#define RETINA_SEGMENTATION_HLS_HPP
+ #include "hls_video.h"
+ #include "hls_stream.h"
+ #include "ap_int.h"
+-void retina_background_hls(hls::stream<ap_uint<32> >& source,
++void retina_segmentation_hls(hls::stream<ap_uint<32> >& source,
+                            hls::stream<ap_uint<32> >& result,
+                            ap_uint<32> control);
+ #endif

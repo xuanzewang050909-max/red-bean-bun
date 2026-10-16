@@ -1,0 +1,27 @@
+{
+  "status": "PASS_A4_ARCHIVER_FROM_UNCHANGED_A3",
+  "base_commit": "b3d4ef316db044e027593d4567a94f637fc15545",
+  "pairs": [
+    {
+      "base": "scripts/archive_a3_board_results.py",
+      "derived": "scripts/archive_a4_board_results.py",
+      "base_sha256": "967567366794f4b264c57afcdb42483cc12e7d69736203c90f35c5603d8a5d2b",
+      "derived_sha256": "d64a3d77c1f2b3b61fe6377e05d5d20745ef6b363f174a3ea8a11cb92d4d43f8",
+      "diff": "a3_to_a4_archive.diff",
+      "diff_sha256": "ddfe2f248ba00278ac8821cf6a60006ed82cc09f660b6cba76140484a7b2e799",
+      "status": "PASS_EXACT_DIFF_REPRODUCTION"
+    },
+    {
+      "base": "tests/test_a3_archive.py",
+      "derived": "tests/test_a4_archive.py",
+      "base_sha256": "f52fce0b7e81245ec02c76196e30892afc47d35963195e9eb68ff5b5f1dfd09f",
+      "derived_sha256": "e3d7da0720f23e9aa3b96fcd5e8518987de68953ab92bb38a95b2b34e80fc4a0",
+      "diff": "a3_to_a4_archive_tests.diff",
+      "diff_sha256": "d0114527a0adfd370a0334f4100d5e516ce5f1197f8c23b39a83cf3f1bda1230",
+      "status": "PASS_EXACT_DIFF_REPRODUCTION"
+    }
+  ],
+  "scope": "Host downloaded-evidence verifier, not a new hardware release",
+  "capture_phase": "FINAL_BEFORE_FIRST_EXECUTION",
+  "draft_history": "archive_tool_drafts retains pre-execution import/manifest naming draft"
+}

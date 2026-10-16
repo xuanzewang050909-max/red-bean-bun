@@ -1,0 +1,46 @@
+test_actual_generated_metadata_and_official_video_derivation (test_b_integration.BMetadataTests.test_actual_generated_metadata_and_official_video_derivation) ... ok
+test_hwh_dma_address_clock_reset_and_video_irq_tampering_rejected (test_b_integration.BMetadataTests.test_hwh_dma_address_clock_reset_and_video_irq_tampering_rejected) ... ok
+test_official_video_config_and_board_ddr_tampering_rejected (test_b_integration.BMetadataTests.test_official_video_config_and_board_ddr_tampering_rejected) ... ok
+test_algorithm_faults_retain_buffers_and_block_next_phase (test_b_integration.BRunnerTests.test_algorithm_faults_retain_buffers_and_block_next_phase) ... ok
+test_bench_failure_keeps_buffers_and_stops_measurements (test_b_integration.BRunnerTests.test_bench_failure_keeps_buffers_and_stops_measurements) ... ok
+test_changed_overlay_blocks_hardware_actions (test_b_integration.BRunnerTests.test_changed_overlay_blocks_hardware_actions) ... ok
+test_color_order_position_and_real_mask_layout (test_b_integration.BRunnerTests.test_color_order_position_and_real_mask_layout) ... ok
+test_complete_measurements_bundle_stays_visual_pending (test_b_integration.BRunnerTests.test_complete_measurements_bundle_stays_visual_pending) ... ERROR
+test_display_benchmark_counts_official_submissions (test_b_integration.BRunnerTests.test_display_benchmark_counts_official_submissions) ... ok
+test_invalid_timing_samples_and_contract (test_b_integration.BRunnerTests.test_invalid_timing_samples_and_contract) ... ok
+test_package_immutable_artifacts_and_mutable_notebook_outputs (test_b_integration.BRunnerTests.test_package_immutable_artifacts_and_mutable_notebook_outputs) ... ok
+test_partial_ledger_cannot_claim_timing_complete (test_b_integration.BRunnerTests.test_partial_ledger_cannot_claim_timing_complete) ... ok
+test_reused_bench_buffers_100_timed_plus_3_warmup (test_b_integration.BRunnerTests.test_reused_bench_buffers_100_timed_plus_3_warmup) ... ok
+test_staged_digital_flow_and_video_ownership (test_b_integration.BRunnerTests.test_staged_digital_flow_and_video_ownership) ... ok
+test_video_fault_retains_display_frame (test_b_integration.BRunnerTests.test_video_fault_retains_display_frame) ... ok
+test_video_status_detects_error_and_stopped_channel (test_b_integration.BRunnerTests.test_video_status_detects_error_and_stopped_channel) ... ok
+
+======================================================================
+ERROR: test_complete_measurements_bundle_stays_visual_pending (test_b_integration.BRunnerTests.test_complete_measurements_bundle_stays_visual_pending)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\tests\test_b_integration.py", line 158, in test_complete_measurements_bundle_stays_visual_pending
+    runner.display_medical_b(context);runner.performance_b(context);runner.finish_b(context)
+                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 295, in finish_b
+    phase(context,'B_CLOSING_OFFICIAL_DISPLAY_AND_PACKAGING',action)
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 49, in phase
+    try: guarded_phase(context,name,action)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\a0_dma_board_test.py", line 173, in guarded_phase
+    action()
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 293, in action
+    for name in names:archive.write(directory/name,arcname=name)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\zipfile\__init__.py", line 1878, in write
+    zinfo = ZipInfo.from_file(filename, arcname,
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\zipfile\__init__.py", line 573, in from_file
+    st = os.stat(filename)
+         ^^^^^^^^^^^^^^^^^
+FileNotFoundError: [WinError 2] ϵͳ�Ҳ���ָ�����ļ���: 'C:\\Users\\Gabriel\\AppData\\Local\\Temp\\tmp87s6xwua\\b_integration_result.json'
+
+----------------------------------------------------------------------
+Ran 16 tests in 14.907s
+
+FAILED (errors=1)

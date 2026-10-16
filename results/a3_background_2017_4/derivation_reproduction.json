@@ -1,0 +1,26 @@
+{
+  "status": "PASS_A3_DERIVATION_REPRODUCTION",
+  "board_status": "NOT_RUN",
+  "checks": [
+    {
+      "file": "scripts/a3_background_board_test.py",
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1",
+      "status": "PASS_EXACT_REPRODUCTION"
+    },
+    {
+      "file": "results/a3_background_2017_4/a2_to_a3_runner.diff",
+      "sha256": "305344984d6d59c085f9e0ff1a93fc9bf3ee0a48c1d74e908f0c4c75a8639b2f",
+      "status": "PASS_EXACT_REPRODUCTION"
+    },
+    {
+      "file": "scripts/package_a3.py",
+      "sha256": "f44a882a2a5254262c00bc2f7216e1292565c60ab56121bc82fd1567026cb779",
+      "status": "PASS_EXACT_REPRODUCTION"
+    },
+    {
+      "file": "results/a3_background_2017_4/a2_to_a3_package.diff",
+      "sha256": "846ada01d36bfce9947e90073894dabe6d6cb8b4f4bdd2f47d4b3e97711bcfc4",
+      "status": "PASS_EXACT_REPRODUCTION"
+    }
+  ]
+}

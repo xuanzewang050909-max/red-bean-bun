@@ -1,0 +1,21 @@
+{
+  "status": "PASS_DOWNLOADED_W2_EXACT_WORDS_AND_OBSERVERS",
+  "frames": 80,
+  "words": 13303808,
+  "bundle": {
+    "bytes": 9572569,
+    "sha256": "359e477392fc2b70f4bc25a64a3f187a669408ef53e0ddc4c589238ea7a9eb37"
+  },
+  "executed_notebook": {
+    "bytes": 355583,
+    "sha256": "33ed5ed439980bc8b3c487514060b5bf599cb3398a01e2e996893975f310b894"
+  },
+  "release_manifest": {
+    "bytes": 2083,
+    "sha256": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035"
+  },
+  "full_dataset_quality": "PENDING_Q3",
+  "browser_fps": null,
+  "pure_dma_transport_ns": null,
+  "scope": "Only supplied board evidence; no full performance/quality acceptance"
+}

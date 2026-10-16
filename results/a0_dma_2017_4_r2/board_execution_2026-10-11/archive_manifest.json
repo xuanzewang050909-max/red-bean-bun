@@ -1,0 +1,24 @@
+{
+  "status": "PASS_BOARD_RECORDS_VERIFIED_AND_ARCHIVED",
+  "verified_host_utc": "2026-10-11T14:16:18.377635+00:00",
+  "files": {
+    "a0_dma_loopback_executed.ipynb": {
+      "source_path": "C:\\Users\\Gabriel\\Downloads\\a0_dma_loopback.ipynb",
+      "bytes": 22670,
+      "sha256": "85262fe3aed9c9d8a2ac91ae376253b9a98d19a179b9f1d4d2554e2d8836f3c6"
+    },
+    "a0_dma_result.json": {
+      "source_path": "C:\\Users\\Gabriel\\Downloads\\a0_dma_result.json",
+      "bytes": 46837,
+      "sha256": "3b3462498487f1f0690729c3ed399ed01ecb1ae2728ba6e0151db4234fbf03fb"
+    }
+  },
+  "source_commit": "cde3be90d2184af067d47b9f2e2bdbd20b37e166",
+  "revision": "r2_auxiliary_reset_fix",
+  "full_transfers": 70,
+  "smoke_transfers": 1,
+  "patterns_recomputed": 71,
+  "board_clock_utc_unverified": "2022-10-22T00:48:21.945996+00:00",
+  "scope": "A0 r2 DMA/FIFO/DDR exact loopback and official PYNQ 3.0.1 driver only",
+  "limits": "Recorded hashes independently checked; raw output buffers were not downloaded. No medical algorithm, final HDMI overlay or real-time FPS proof."
+}

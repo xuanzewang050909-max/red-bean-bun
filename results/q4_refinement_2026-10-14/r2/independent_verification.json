@@ -1,0 +1,12 @@
+{
+  "status": "Q4_OFFLINE_INDEPENDENT_MASK_AND_METRIC_COUNTS_PASS",
+  "matched_masks": 580,
+  "matched_pixels": 95027200,
+  "region_confusion_tables": 3480,
+  "experiment_report_sha256": "e3eba3bde7175607f62044eeb0cd53f6822f3f7a01f5645968f9d9e6b0e4a433",
+  "verifier_sha256": "d251346e77f2878f02990da8b26ce81eb6450afd6a6563d003c39f82338d4a2d",
+  "source_commit": "de22e212f2458977a25cdda9b4a2141834ad7409",
+  "production_files_unchanged": true,
+  "board_execution": false,
+  "candidate_decision": "REJECT_Q4_RIDGE_R2_FOR_PL"
+}

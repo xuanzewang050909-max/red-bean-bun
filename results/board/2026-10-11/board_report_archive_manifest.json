@@ -1,0 +1,76 @@
+{
+  "received_local_date": "2026-10-11",
+  "files": [
+    {
+      "file": "board_environment.json",
+      "source_path": "C:\\Users\\Gabriel\\Downloads\\board_environment.json",
+      "archive_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\board_environment.json",
+      "bytes": 99651,
+      "sha256": "3819e0bebeb80e1a29eac1b71fb6a72da23fd91d11cbc3d582620498d90f7a65",
+      "byte_identical_copy": true
+    },
+    {
+      "file": "hdmi_framebuffer_100_frames.json",
+      "source_path": "C:\\Users\\Gabriel\\Downloads\\hdmi_framebuffer_100_frames.json",
+      "archive_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\hdmi_framebuffer_100_frames.json",
+      "bytes": 106,
+      "sha256": "1f58e171b9a4876fdd368528a1c63ce2482a73d779782d028a58c822e3cc94e2",
+      "byte_identical_copy": true
+    }
+  ],
+  "base_source_comparison": [
+    {
+      "name": "base.bit",
+      "board_sha256": "ecabdcb5d483c75335ab6f043824a2386971c7b0ffd6e3315f24860bf5088eb6",
+      "board_bytes": 4045672,
+      "reference_file": null,
+      "reference_sha256": null,
+      "matches_fixed_v3_0_1_source": null
+    },
+    {
+      "name": "base.hwh",
+      "board_sha256": "cbd90c84f3a46d1eba95dff7ba7d0079812f7e46641a08e2318c9928cd36ce8f",
+      "board_bytes": 4558197,
+      "reference_file": null,
+      "reference_sha256": null,
+      "matches_fixed_v3_0_1_source": null
+    },
+    {
+      "name": "base.tcl",
+      "board_sha256": "e88b88b4b3e2a9c4d0856c37a26ef8550303a3f9ccddfd5c521e3f9d5d8bc8ff",
+      "board_bytes": 250857,
+      "reference_file": "D:\\PLD\\retina_fpga\\references\\PYNQ\\v3.0.1\\boards\\Pynq-Z2\\base\\base.tcl",
+      "reference_sha256": "e88b88b4b3e2a9c4d0856c37a26ef8550303a3f9ccddfd5c521e3f9d5d8bc8ff",
+      "matches_fixed_v3_0_1_source": true
+    },
+    {
+      "name": "build_bitstream.tcl",
+      "board_sha256": "6c42c887af247dd0408acc4feb71e0291e6a5edb445fa5f3a32df45078ef831d",
+      "board_bytes": 1656,
+      "reference_file": "D:\\PLD\\retina_fpga\\references\\PYNQ\\v3.0.1\\boards\\Pynq-Z2\\base\\build_bitstream.tcl",
+      "reference_sha256": "6c42c887af247dd0408acc4feb71e0291e6a5edb445fa5f3a32df45078ef831d",
+      "matches_fixed_v3_0_1_source": true
+    },
+    {
+      "name": "build_ip.tcl",
+      "board_sha256": "72f904ef433041227375df88377b3e4fcae335b6bbb951cb21c2ac68551e1fd6",
+      "board_bytes": 2167,
+      "reference_file": "D:\\PLD\\retina_fpga\\references\\PYNQ\\v3.0.1\\boards\\Pynq-Z2\\base\\build_ip.tcl",
+      "reference_sha256": "72f904ef433041227375df88377b3e4fcae335b6bbb951cb21c2ac68551e1fd6",
+      "matches_fixed_v3_0_1_source": true
+    },
+    {
+      "name": "check_timing.tcl",
+      "board_sha256": "5d26280da8cf07539313884d01f61a44c29be40c00829298acac9ecacae4ab9c",
+      "board_bytes": 560,
+      "reference_file": "D:\\PLD\\retina_fpga\\references\\PYNQ\\v3.0.1\\boards\\Pynq-Z2\\base\\check_timing.tcl",
+      "reference_sha256": "5d26280da8cf07539313884d01f61a44c29be40c00829298acac9ecacae4ab9c",
+      "matches_fixed_v3_0_1_source": true
+    }
+  ],
+  "board_raw_captured_utc": "2022-10-22T00:18:38.324441+00:00",
+  "timestamp_note": "Board clock reports 2022-10-22, not current client date; preserve raw report, do not use this timestamp as demo execution time",
+  "framebuffer_raw_observation": "PENDING_USER_CONFIRMATION",
+  "operator_observation": "User separately confirmed stable static display and normal moving bar; raw JSON placeholder preserved unchanged",
+  "independent_axi_dma_loopback": "NOT_EXECUTED"
+}

@@ -1,0 +1,91 @@
+{
+  "status": "PASS_B_R2_SOFTWARE_RELEASE_GIT_SOURCE_ATTESTATION",
+  "source_commit": "171be60cc10c369416c797fd82c6bc3b55e21211",
+  "captured_utc": "2026-10-12T03:10:13.507997+00:00",
+  "board_status": "NOT_RUN",
+  "release_manifest_sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b",
+  "source_pairs": {
+    "scripts/package_b.py": {
+      "bytes": 17997,
+      "sha256": "c92f53a0f30351f95ed61d84ad76923224563831cc9f62086b3bc1057f284f3c",
+      "git_blob_matches_release_source": true
+    },
+    "scripts/check_b_hardware.py": {
+      "bytes": 11820,
+      "sha256": "6a14ed744eb9175d928172593cfbd23de39bdca2c9456e5cc443e0287c0935c5",
+      "git_blob_matches_release_source": true
+    },
+    "scripts/b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9",
+      "git_blob_matches_release_source": true
+    },
+    "scripts/build_b_notebook.py": {
+      "bytes": 4385,
+      "sha256": "4a31cc52213e8ca316ff427121c785ffaac8ef8fe6cc7d04eb5e8223911f71ff",
+      "git_blob_matches_release_source": true
+    },
+    "tests/test_b_integration.py": {
+      "bytes": 16373,
+      "sha256": "28784c0e92f880ff4ecd1890ae858848b6c42e521b70d7e27441bcec035198c1",
+      "git_blob_matches_release_source": true
+    },
+    "tests/b_reset_tb.sv": {
+      "bytes": 2023,
+      "sha256": "fc230299285d6618666daa70c5498808a006e239b883f32d9cc25bca1ac0bacb",
+      "git_blob_matches_release_source": true
+    },
+    "vivado/scripts/build_b_integration.tcl": {
+      "bytes": 13022,
+      "sha256": "50a8eaa9bc2ca10963b09dfc03b70afd1be563ec9431a283109876971282f080",
+      "git_blob_matches_release_source": true
+    },
+    "vivado/scripts/simulate_b_reset.tcl": {
+      "bytes": 1413,
+      "sha256": "bda1fa7214ba8a418c810f4d536ed2717be892d4f53fa5b8d8d20e7698dbec18",
+      "git_blob_matches_release_source": true
+    },
+    "vivado/constraints/b_integration.xdc": {
+      "bytes": 5469,
+      "sha256": "a8df869b30cf3144c77a616183b62c93aa64aa4f928fe1bd3cdbc725c880e99c",
+      "git_blob_matches_release_source": true
+    },
+    "notebooks/b_integration_check.ipynb": {
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "git_blob_matches_release_source": true
+    },
+    "docs/b_integration_validation_steps.md": {
+      "bytes": 2765,
+      "sha256": "fe4d3a8ba94d9f2f5c231a5362670be6b189f05495ed1983972a7eabbeeb8152",
+      "git_blob_matches_release_source": true
+    },
+    "docs/b_integration_reuse_audit.md": {
+      "bytes": 4556,
+      "sha256": "133cc7613fba4410e4c945757cdad9e1528d01592635426b7bcbfbf9f6d45821",
+      "git_blob_matches_release_source": true
+    },
+    "scripts/package_b_import_fix.py": {
+      "bytes": 6595,
+      "sha256": "18617cbdba1731305661f85d5776bc826a509b9d2153140f14de2a4de8c7b7ac",
+      "git_blob_matches_release_source": true
+    },
+    "scripts/check_b_driver_imports.py": {
+      "bytes": 4688,
+      "sha256": "2bc677f4a6dd096bdfd0101154e4838d1c01f1def6d0d9b16e017edec10b9467",
+      "git_blob_matches_release_source": true
+    },
+    "tests/test_b_video_imports.py": {
+      "bytes": 5497,
+      "sha256": "fb7035d51ff05945ac6a42de447cd698fb8fc9d36f0aa2511acd746ffd1900d8",
+      "git_blob_matches_release_source": true
+    },
+    "docs/b_video_import_recovery_steps.md": {
+      "bytes": 2616,
+      "sha256": "0a7f5ac892c3a5cf294dd197d319f2432fb7639a7bb8a88e0b9c61b938a5097e",
+      "git_blob_matches_release_source": true
+    }
+  },
+  "hardware_rebuilt": false,
+  "scope": "Software-only repair with identical r1 bit/HWH; actual board binding/display/FPS pending"
+}

@@ -1,0 +1,37 @@
+{
+  "status": "HOST_FIXTURE_VALIDATED_NOT_BOARD",
+  "archive": {
+    "bytes": 113162214,
+    "sha256": "53ce6d939eb65553f3c7de79b9f73816b169f8b874be7729cd7cc3b9b7c0820e"
+  },
+  "notebook": {
+    "bytes": 7195,
+    "sha256": "764e30278d4bf8b8f81720a396c1400e330430e35f4dcb4ed379da65f1a57e65"
+  },
+  "tasks": 42,
+  "matched_words": 7667712,
+  "matched_pngs": 198,
+  "threshold_extremes_changed": {
+    "256_C7": true,
+    "256_C2": true,
+    "512_C7": true,
+    "512_C2": true
+  },
+  "automatic_checks": 51,
+  "manual_page_ids": [
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+  ],
+  "ignored_empty_cells": 0,
+  "exclusions": [
+    "No physical Ethernet/power interruption",
+    "No forced real DMA fault",
+    "No new segmentation quality acceptance",
+    "No measured power"
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_SOURCE_WHITESPACE_CHECK",
+  "command": "git -c core.whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol diff --cached --check -- . :(exclude)results/**",
+  "scope": "Tracked project sources and documentation outside results. Original tool logs, generated reports and unified diffs retain raw bytes.",
+  "preserved_first_attempt": "source_whitespace_check_attempt_01.log: unified-diff context and original tool formatting contain expected trailing spaces; no source defect",
+  "board_status": "NOT_RUN"
+}

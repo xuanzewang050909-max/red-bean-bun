@@ -1,0 +1,34 @@
+{
+  "status": "PASS_HOST_ONLY_NO_BOARD_EVIDENCE",
+  "tests": 20,
+  "log": {
+    "bytes": 3065,
+    "sha256": "da43366113533effacf0a422e099f0bfc6ec7df06f5d4f1a05b05429db380a54"
+  },
+  "sources": {
+    "scripts/b_integration_board_test.py": {
+      "bytes": 19365,
+      "sha256": "0d4e6aad7d1f06638cb2b68a5fe98bc16f930fb4ea6a07744200fd1c606c9c59"
+    },
+    "scripts/build_b_notebook.py": {
+      "bytes": 4385,
+      "sha256": "4a31cc52213e8ca316ff427121c785ffaac8ef8fe6cc7d04eb5e8223911f71ff"
+    },
+    "scripts/check_b_hardware.py": {
+      "bytes": 11820,
+      "sha256": "6a14ed744eb9175d928172593cfbd23de39bdca2c9456e5cc443e0287c0935c5"
+    },
+    "scripts/package_b.py": {
+      "bytes": 17997,
+      "sha256": "c92f53a0f30351f95ed61d84ad76923224563831cc9f62086b3bc1057f284f3c"
+    },
+    "notebooks/b_integration_check.ipynb": {
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    },
+    "tests/test_b_integration.py": {
+      "bytes": 16373,
+      "sha256": "28784c0e92f880ff4ecd1890ae858848b6c42e521b70d7e27441bcec035198c1"
+    }
+  }
+}

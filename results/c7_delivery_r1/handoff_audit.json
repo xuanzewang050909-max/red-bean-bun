@@ -1,0 +1,10 @@
+{
+  "status": "INITIAL_C7_HANDOFF_DEMO_BOARD_NOT_RUN",
+  "source_commit": "f62ac40d27403b758e5f01672e5d76e9bb231e41",
+  "files": 422,
+  "generated_rtl_files_verified": 125,
+  "manifest": {
+    "bytes": 69433,
+    "sha256": "8513c089f25fe65b4e36638f47ea03b0b8c75b3204d6d73d66f369ec4628d912"
+  }
+}

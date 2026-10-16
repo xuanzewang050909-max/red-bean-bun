@@ -1,0 +1,101 @@
+{
+  "created_host_utc": "2026-10-11T13:53:10.890928+00:00",
+  "status": "HOST_BUILD_COMPLETE_BOARD_TEST_PENDING",
+  "source_commit": "cde3be90d2184af067d47b9f2e2bdbd20b37e166",
+  "tool": "Vivado 2017.4",
+  "part": "xc7z020clg400-1",
+  "board_part": "tul.com.tw:pynq-z2:part0:1.0",
+  "pcb_revision": null,
+  "target_runtime": "PYNQ 3.0.1",
+  "build_directory": "build\\a0_dma_2017_4_04",
+  "revision": "r2_auxiliary_reset_fix",
+  "sources": {
+    "vivado/scripts/build_minimal_dma.tcl": {
+      "bytes": 8630,
+      "sha256": "8441fd4035bd83bc8601698556043dc6ac36722efbbe0af17fc0fab26a077fd0"
+    },
+    "scripts/a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "scripts/build_a0_notebook.py": {
+      "bytes": 3730,
+      "sha256": "5a33cb6af0da77a46e01d67b5db9397f90f2539a40a471afeac6e710b823ee65"
+    },
+    "scripts/check_a0_hwh.py": {
+      "bytes": 4231,
+      "sha256": "70ce3b9a7fc1f6ba5552e1e7dd6257d515e8b3d9825c515858272ba2ee7287d6"
+    },
+    "scripts/package_a0.py": {
+      "bytes": 8589,
+      "sha256": "6c896d6d69d6acb3fec053d1ff865ba6bade4cbf303e0ee7e6c5931968dd1e68"
+    },
+    "scripts/a0_reset_tb.sv": {
+      "bytes": 2064,
+      "sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8"
+    },
+    "scripts/simulate_a0_reset.tcl": {
+      "bytes": 1279,
+      "sha256": "1d45fe50dd67454086169d41439535c4e3c3c7b55d9f632505a5209659998052"
+    },
+    "tests/test_a0_board_runner.py": {
+      "bytes": 5465,
+      "sha256": "2aa50863f9587cf4b66aa7c47e1c61a8a64a5ed6016127f74f3e91b5d535d469"
+    },
+    "notebooks/a0_dma_loopback.ipynb": {
+      "bytes": 17540,
+      "sha256": "199c5820f650aa310b56e27cdb7629fb6a917844333499c4f7bd83040199a023"
+    }
+  },
+  "board_reference": {
+    "board.xml": {
+      "bytes": 54479,
+      "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae"
+    },
+    "preset.xml": {
+      "bytes": 74492,
+      "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
+    },
+    "part0_pins.xml": {
+      "bytes": 9007,
+      "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f"
+    }
+  },
+  "hwh_parser_reference": "PYNQ v3.0.1 / 93ddd21ab623883590a8c8b07f0b157b2855da4b",
+  "artifacts": {
+    "a0_dma.bit": {
+      "bytes": 4045674,
+      "sha256": "c27921b683d4c2ec2e1a9d01b34b8d128f6557624d887abce43649767d1fd5af"
+    },
+    "a0_dma.hwh": {
+      "bytes": 300147,
+      "sha256": "fa3f7ff7c7d543ca157fcb78d0f2b6af938ce550a49228b23ef4d0eb784f7fde"
+    }
+  },
+  "notebook": {
+    "bytes": 17540,
+    "sha256": "199c5820f650aa310b56e27cdb7629fb6a917844333499c4f7bd83040199a023"
+  },
+  "timing": {
+    "wns_ns": 1.346,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.02,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 3.75,
+    "tpws_ns": 0.0,
+    "pulse_width_failing_endpoints": 0
+  },
+  "reset_simulation": {
+    "status": "PASS_HOST_VENDOR_RESET_SIMULATION",
+    "scope": "Real Vivado 2017.4 proc_sys_reset 5.0 rev12; old aux=0 holds reset, corrected aux=1 releases; PS assert/release verified. Not board proof or unique stall diagnosis.",
+    "xci_sha256": "d86aede751897564f4944730f3b09f4f4d3ff00ae3c5caf0797892e10ca12eb3",
+    "testbench_sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8",
+    "simulate_log_sha256": "3a94ccf540513f2fb1d36fcaba28b5513c7456914bc0bfbad667fd71d7b90393",
+    "simulation_tcl_sha256": "1d45fe50dd67454086169d41439535c4e3c3c7b55d9f632505a5209659998052",
+    "completion": "RESET_SIM_PASS at 10996 ns; RESET_SIMULATION_GATE_PASS"
+  },
+  "test_plan": "70 exact DMA/FIFO loopbacks; short packets, 256/512 frames, increment/random",
+  "scope": "Host implementation + metadata + vendor reset simulation; board DMA, medical algorithm and final HDMI overlay unverified"
+}

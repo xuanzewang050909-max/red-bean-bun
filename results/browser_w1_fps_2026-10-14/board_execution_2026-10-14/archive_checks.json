@@ -1,0 +1,17 @@
+{
+  "status": "ARCHIVE_BYTES_AND_BASELINE_IDENTITY_VERIFIED",
+  "new_session_id": "73cc892efe2b4bb282032f54757be104",
+  "prior_session_id": "4341c09cebe24ec3b169c9d696079162",
+  "metadata_members_preserved": 46,
+  "screenshot_run_id": "8512c74e00174337ae95a95e8b818c68",
+  "all_new_run_inputs_outputs_and_quality_equal_prior_same_config": true,
+  "new_visible_frames": 20,
+  "browser_actual_fps": 0.18717250660482895,
+  "verifier_source_sha256": "7b3c1a62812287209f4f19ad67770999a9fa179b3ec1ed19799f3ba6cf2a3efb",
+  "verifier_source_git_commit": "c989bcfd843e677e680029be0275684fd5d679e5",
+  "strict_verification_exit_code": 0,
+  "allow_incomplete_display_used_for_new_session": false,
+  "production_code_modified": false,
+  "new_algorithm_deployed": false,
+  "final_acceptance_pass": false
+}

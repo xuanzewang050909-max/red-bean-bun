@@ -1,0 +1,71 @@
+--- proven_profile_r2/per_frame_loop
++++ layout_r1/paired_group_loop
+@@ -1,48 +1,46 @@
+-for index in range(WARMUP + COUNT):
++for index in range(33):
+     boundaries = [time.perf_counter_ns()]
+-    if index == WARMUP:
++    if index == 3:
+         loop_start = boundaries[0]
+     context['dma'].recvchannel.transfer(rx)
+     context['dma'].sendchannel.transfer(tx)
+     dma_status = b.wait_both_idle(context['dma'])
+     context['dma'].sendchannel.wait()
+-    context['dma'].recvchannel.wait()  # Original driver invalidates receive memory.
++    context['dma'].recvchannel.wait()
+     boundaries.append(time.perf_counter_ns())
+-    b.require(np.array_equal(rx, expected), 'Profile FPGA word mismatch')
++    b.require(np.array_equal(rx, expected), 'Layout benchmark FPGA word mismatch')
+     boundaries.append(time.perf_counter_ns())
+     send_bytes = int(context['dma'].sendchannel.transferred)
+     recv_bytes = int(context['dma'].recvchannel.transferred)
+-    b.require(send_bytes == recv_bytes == nbytes, 'Profile DMA byte count mismatch')
++    b.require(send_bytes == recv_bytes == 1048576, 'Layout benchmark DMA byte count mismatch')
++    count = 3 + group_index * 33 + index
+     frame_status = int(context['gpio'].channel2.read())
+-    expected_count = index + 2  # One existing 256 smoke frame, then this 512 sequence.
+-    b.require(frame_status == (expected_count | expected_count << 14), 'Profile frame counter/error mismatch')
++    b.require(frame_status == (count | count << 14), 'Layout benchmark frame counter/error mismatch')
+     boundaries.append(time.perf_counter_ns())
+-    image = b.medical_canvas(np.asarray(rx).reshape(SIDE, SIDE), index - WARMUP)
++    image = renderer(np.asarray(rx).reshape(512, 512), index - 3)
+     boundaries.append(time.perf_counter_ns())
+     frame = context['hdmi_out'].newframe()
+     context['display_retained'].append(frame)
+-    b.require(frame.shape == image.shape and frame.dtype == image.dtype and frame.strides == (3840, 3, 1),
+-              'Wrong native display frame layout')
+-    b.require(frame.physical_address % 8 == 0 and
+-              0x100000 <= frame.physical_address <= 0x20000000 - frame.nbytes, 'Invalid video DDR frame')
+-    display_buffer = buffer_info(frame)
++    b.require(frame.shape == (720, 1280, 3) and frame.dtype == np.uint8 and frame.strides == (3840, 3, 1), 'Wrong native video frame')
++    b.require(frame.physical_address % 8 == 0 and 0x100000 <= frame.physical_address <= 0x20000000 - frame.nbytes,
++              'Invalid native video DDR frame')
++    description = p.buffer_info(frame)
+     boundaries.append(time.perf_counter_ns())
+     frame[:] = image
+     boundaries.append(time.perf_counter_ns())
+-    context['hdmi_out'].writeframe(frame)  # Native flush and IRQ wait stay together.
++    context['hdmi_out'].writeframe(frame)
+     b.require(context['display_retained'].pop() is frame, 'Display ownership ledger changed')
+     boundaries.append(time.perf_counter_ns())
+     vdma_status = b.video_status(context)
+     boundaries.append(time.perf_counter_ns())
+     output_hash = hashlib.sha256(np.asarray(rx).tobytes()).hexdigest()
+     boundaries.append(time.perf_counter_ns())
+-    row = {'index': index, 'warmup': index < WARMUP, 'words': words,
+-           'send_bytes': send_bytes, 'recv_bytes': recv_bytes, 'frame_status': frame_status,
+-           'dma_status': dma_status, 'vdma_status': vdma_status, 'display_buffer': display_buffer,
++    row = {'index': index, 'warmup': index < 3, 'frame_count': count, 'frame_status': frame_status,
++           'words': 262144, 'send_bytes': send_bytes, 'recv_bytes': recv_bytes,
++           'dma_status': dma_status, 'vdma_status': vdma_status, 'display_buffer': description,
+            'output_sha256': output_hash, 'status': 'PASS_EXACT_SEGMENTATION_WORDS'}
+-    profile['samples'].append(row)
+-    if index >= WARMUP and (index - WARMUP + 1) % 5 == 0:
+-        print('B_PROFILE_PROGRESS: {}/{}'.format(index - WARMUP + 1, COUNT), flush=True)
++    group['samples'].append(row)
++    if index >= 3 and (index - 2) % 5 == 0:
++        print('B_LAYOUT_PROGRESS: {} {}/30'.format(name, index - 2), flush=True)
+     boundaries.append(time.perf_counter_ns())
+-    row.update(boundaries_ns=boundaries, durations_ns=stage_durations(boundaries),
+-               sample_ns=boundaries[-1] - boundaries[0])
++    row.update(boundaries_ns=boundaries, durations_ns=p.stage_durations(boundaries), sample_ns=boundaries[-1] - boundaries[0])

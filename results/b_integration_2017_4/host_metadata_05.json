@@ -1,0 +1,5769 @@
+{
+  "status": "PASS_B_HOST_DERIVATION_AND_OFFICIAL_HWH_PARSER",
+  "board_status": "NOT_RUN",
+  "video_objects_unchanged": 41,
+  "one_generated_adapter_checked": "Exact predicted removal of redundant AXI4-to-LITE converter; preserved register slice and clock/reset nets",
+  "a4_modules_functional_parameters_unchanged": [
+    "axi_dma_0",
+    "point_control",
+    "loopback_fifo",
+    "memory_axi",
+    "reset_100m",
+    "const_one",
+    "const_zero",
+    "point_stage",
+    "segmentation_filter"
+  ],
+  "instance_name_and_gpio_address_changes": {
+    "axi_dma_0": {
+      "Component_Name": {
+        "before": "a4_segmentation_axi_dma_0_0",
+        "after": "system_axi_dma_0_2"
+      }
+    },
+    "point_control": {
+      "C_HIGHADDR": {
+        "before": "0x4120FFFF",
+        "after": "0x43C8FFFF"
+      },
+      "Component_Name": {
+        "before": "a4_segmentation_point_control_0",
+        "after": "system_point_control_0"
+      },
+      "C_BASEADDR": {
+        "before": "0x41200000",
+        "after": "0x43C80000"
+      }
+    },
+    "loopback_fifo": {
+      "Component_Name": {
+        "before": "a4_segmentation_loopback_fifo_0",
+        "after": "system_loopback_fifo_0"
+      }
+    },
+    "memory_axi": {
+      "Component_Name": {
+        "before": "a4_segmentation_memory_axi_0",
+        "after": "system_memory_axi_0"
+      }
+    },
+    "reset_100m": {
+      "Component_Name": {
+        "before": "a4_segmentation_reset_100m_0",
+        "after": "system_reset_100m_0"
+      }
+    },
+    "const_one": {
+      "Component_Name": {
+        "before": "a4_segmentation_const_one_0",
+        "after": "system_const_one_0"
+      }
+    },
+    "const_zero": {
+      "Component_Name": {
+        "before": "a4_segmentation_const_zero_0",
+        "after": "system_const_zero_0"
+      }
+    },
+    "point_stage": {
+      "Component_Name": {
+        "before": "a4_segmentation_point_stage_0",
+        "after": "system_point_stage_0"
+      }
+    },
+    "segmentation_filter": {
+      "Component_Name": {
+        "before": "a4_segmentation_segmentation_filter_0",
+        "after": "system_segmentation_filter_0"
+      }
+    }
+  },
+  "ps_changes": {
+    "PCW_EN_I2C1": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_USE_M_AXI_GP1": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_GPIO_EMIO_GPIO_WIDTH": {
+      "before": "10",
+      "after": null
+    },
+    "PCW_M_AXI_GP1_ENABLE_STATIC_REMAP": {
+      "before": "0",
+      "after": null
+    },
+    "PCW_M_AXI_GP1_THREAD_ID_WIDTH": {
+      "before": "12",
+      "after": null
+    },
+    "PCW_EN_EMIO_GPIO": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_EN_EMIO_I2C1": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_I2C1_BASEADDR": {
+      "before": "0xE0005000",
+      "after": null
+    },
+    "PCW_I2C1_HIGHADDR": {
+      "before": "0xE0005FFF",
+      "after": null
+    },
+    "PCW_I2C1_PERIPHERAL_ENABLE": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_I2C1_I2C1_IO": {
+      "before": "EMIO",
+      "after": null
+    },
+    "PCW_GPIO_EMIO_GPIO_ENABLE": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_M_AXI_GP1_ID_WIDTH": {
+      "before": "12",
+      "after": null
+    },
+    "PCW_M_AXI_GP1_SUPPORT_NARROW_BURST": {
+      "before": "0",
+      "after": null
+    },
+    "PCW_USE_S_AXI_GP0": {
+      "before": "1",
+      "after": "0"
+    },
+    "PCW_P2F_I2C1_INTR": {
+      "before": "0",
+      "after": null
+    },
+    "PCW_S_AXI_GP0_ID_WIDTH": {
+      "before": "6",
+      "after": null
+    },
+    "PCW_GPIO_EMIO_GPIO_IO": {
+      "before": "10",
+      "after": null
+    }
+  },
+  "ip_dict": {
+    "axi_dma_0": {
+      "fullpath": "axi_dma_0",
+      "type": "xilinx.com:ip:axi_dma:7.1",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1077936128,
+      "mem_id": "S_AXI_LITE",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S_AXI_LITE_ADDR_WIDTH": "10",
+        "C_S_AXI_LITE_DATA_WIDTH": "32",
+        "C_DLYTMR_RESOLUTION": "125",
+        "C_PRMRY_IS_ACLK_ASYNC": "0",
+        "C_ENABLE_MULTI_CHANNEL": "0",
+        "C_NUM_MM2S_CHANNELS": "1",
+        "C_NUM_S2MM_CHANNELS": "1",
+        "C_INCLUDE_SG": "0",
+        "C_SG_INCLUDE_STSCNTRL_STRM": "0",
+        "C_SG_USE_STSAPP_LENGTH": "0",
+        "C_SG_LENGTH_WIDTH": "23",
+        "C_M_AXI_SG_ADDR_WIDTH": "32",
+        "C_M_AXI_SG_DATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_STS_TDATA_WIDTH": "32",
+        "C_MICRO_DMA": "0",
+        "C_INCLUDE_MM2S": "1",
+        "C_INCLUDE_MM2S_SF": "1",
+        "C_MM2S_BURST_SIZE": "16",
+        "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+        "C_M_AXI_MM2S_DATA_WIDTH": "64",
+        "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+        "C_INCLUDE_MM2S_DRE": "0",
+        "C_INCLUDE_S2MM": "1",
+        "C_INCLUDE_S2MM_SF": "1",
+        "C_S2MM_BURST_SIZE": "16",
+        "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+        "C_M_AXI_S2MM_DATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+        "C_INCLUDE_S2MM_DRE": "0",
+        "C_FAMILY": "zynq",
+        "Component_Name": "system_axi_dma_0_2",
+        "c_include_sg": "0",
+        "c_enable_multi_channel": "0",
+        "c_num_mm2s_channels": "1",
+        "c_num_s2mm_channels": "1",
+        "c_sg_length_width": "23",
+        "c_dlytmr_resolution": "125",
+        "c_prmry_is_aclk_async": "0",
+        "c_sg_include_stscntrl_strm": "0",
+        "c_micro_dma": "0",
+        "c_include_mm2s": "1",
+        "c_m_axi_mm2s_data_width": "64",
+        "c_m_axis_mm2s_tdata_width": "32",
+        "c_include_mm2s_dre": "0",
+        "c_include_mm2s_sf": "1",
+        "c_mm2s_burst_size": "16",
+        "c_include_s2mm": "1",
+        "c_sg_use_stsapp_length": "0",
+        "c_m_axi_s2mm_data_width": "32",
+        "c_s_axis_s2mm_tdata_width": "32",
+        "c_include_s2mm_dre": "0",
+        "c_include_s2mm_sf": "1",
+        "c_s2mm_burst_size": "16",
+        "c_addr_width": "32",
+        "c_single_interface": "0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x40400000",
+        "C_HIGHADDR": "0x4040FFFF"
+      },
+      "registers": {
+        "MM2S_DMACR": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Control Register",
+          "fields": {
+            "RS": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Reset": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Keyhole": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Cyclic_BD_Enable": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "IOC_IrqEn": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Dly_IrqEn": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Err_IrqEn": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQThreshold": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQDelay": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_DMASR": {
+          "address_offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Status Register",
+          "fields": {
+            "Halted": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "Idle": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIncld": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "DMAIntErr": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "DMASlvErr": {
+              "bit_offset": 5,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "DMADecErr": {
+              "bit_offset": 6,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIntErr": {
+              "bit_offset": 8,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGSlvErr": {
+              "bit_offset": 9,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGDecErr": {
+              "bit_offset": 10,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "IOC_Irq": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-write"
+            },
+            "Dly_Irq": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-write"
+            },
+            "Err_Irq": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-write"
+            },
+            "IRQThresholdSts": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "IRQDelaySts": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "MM2S_CURDESC": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "MM2S DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_CURDESC_MSB": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_TAILDESC": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "MM2S DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_TAILDESC_MSB": {
+          "address_offset": 20,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Source Address Register",
+          "fields": {
+            "Source_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Source Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA_MSB": {
+          "address_offset": 28,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Source Address Register",
+          "fields": {
+            "Source_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Source Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_LENGTH": {
+          "address_offset": 40,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Transfer Length Register",
+          "fields": {
+            "Length": {
+              "bit_offset": 0,
+              "bit_width": 23,
+              "description": "MM2S DMA Transfer Length Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "SG_CTL": {
+          "address_offset": 44,
+          "size": 32,
+          "access": "read-write",
+          "description": "Scatter/Gather User and Cache Control Register",
+          "fields": {
+            "SG_CACHE": {
+              "bit_offset": 0,
+              "bit_width": 4,
+              "description": "Scatter/Gather User and Cache Control Register",
+              "access": "read-write"
+            },
+            "SG_USER": {
+              "bit_offset": 8,
+              "bit_width": 4,
+              "description": "Scatter/Gather User and Cache Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DMACR": {
+          "address_offset": 48,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Control Register",
+          "fields": {
+            "RS": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Reset": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Keyhole": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Cyclic_BD_Enable": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "IOC_IrqEn": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Dly_IrqEn": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Err_IrqEn": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQThreshold": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQDelay": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DMASR": {
+          "address_offset": 52,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Status Register",
+          "fields": {
+            "Halted": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "Idle": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIncld": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "DMAIntErr": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "DMASlvErr": {
+              "bit_offset": 5,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "DMADecErr": {
+              "bit_offset": 6,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIntErr": {
+              "bit_offset": 8,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGSlvErr": {
+              "bit_offset": 9,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGDecErr": {
+              "bit_offset": 10,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "IOC_Irq": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-write"
+            },
+            "Dly_Irq": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-write"
+            },
+            "Err_Irq": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-write"
+            },
+            "IRQThresholdSts": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "IRQDelaySts": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "S2MM_CURDESC": {
+          "address_offset": 56,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "S2MM DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_CURDESC_MSB": {
+          "address_offset": 60,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_TAILDESC": {
+          "address_offset": 64,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "S2MM DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_TAILDESC_MSB": {
+          "address_offset": 68,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DA": {
+          "address_offset": 72,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Destination Address Register",
+          "fields": {
+            "Destination_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM DMA Destination Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DA_MSB": {
+          "address_offset": 76,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Destination Address Register",
+          "fields": {
+            "Destination_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Destination Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_LENGTH": {
+          "address_offset": 88,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Transfer Length Register",
+          "fields": {
+            "Length": {
+              "bit_offset": 0,
+              "bit_width": 23,
+              "description": "S2MM DMA Transfer Length Register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "switches_gpio": {
+      "fullpath": "switches_gpio",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092616192,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "ip2intc_irpt": {
+          "controller": "system_interrupts",
+          "index": 11,
+          "fullpath": "switches_gpio/ip2intc_irpt"
+        }
+      },
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "2",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "1",
+        "C_ALL_INPUTS_2": "0",
+        "C_ALL_OUTPUTS": "0",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "1",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "0",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_switches_gpio_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41200000",
+        "C_HIGHADDR": "0x4120FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 2,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 2,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 2,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 2,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "btns_gpio": {
+      "fullpath": "btns_gpio",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092681728,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "ip2intc_irpt": {
+          "controller": "system_interrupts",
+          "index": 10,
+          "fullpath": "btns_gpio/ip2intc_irpt"
+        }
+      },
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "4",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "1",
+        "C_ALL_INPUTS_2": "0",
+        "C_ALL_OUTPUTS": "0",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "1",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "0",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_btns_gpio_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41210000",
+        "C_HIGHADDR": "0x4121FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 4,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 4,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 4,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 4,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "video/hdmi_in/frontend/axi_gpio_hdmiin": {
+      "fullpath": "video/hdmi_in/frontend/axi_gpio_hdmiin",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092747264,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "ip2intc_irpt": {
+          "controller": "system_interrupts",
+          "index": 4,
+          "fullpath": "video/hdmi_in/frontend/axi_gpio_hdmiin/ip2intc_irpt"
+        }
+      },
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "1",
+        "C_GPIO2_WIDTH": "1",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "1",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "1",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "1",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_axi_gpio_hdmiin_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41220000",
+        "C_HIGHADDR": "0x4122FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 1,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 1,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 1,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 1,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "video/hdmi_out/frontend/hdmi_out_hpd_video": {
+      "fullpath": "video/hdmi_out/frontend/hdmi_out_hpd_video",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092812800,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "ip2intc_irpt": {
+          "controller": "system_interrupts",
+          "index": 5,
+          "fullpath": "video/hdmi_out/frontend/hdmi_out_hpd_video/ip2intc_irpt"
+        }
+      },
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "1",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "0",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "1",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "0",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_hdmi_out_hpd_video_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41230000",
+        "C_HIGHADDR": "0x4123FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 1,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 1,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "rgbleds_gpio": {
+      "fullpath": "rgbleds_gpio",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092878336,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "6",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "0",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "0",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "0",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_rgbleds_gpio_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41240000",
+        "C_HIGHADDR": "0x4124FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 6,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 6,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 6,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 6,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "leds_gpio": {
+      "fullpath": "leds_gpio",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092943872,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "ip2intc_irpt": {
+          "controller": "system_interrupts",
+          "index": 8,
+          "fullpath": "leds_gpio/ip2intc_irpt"
+        }
+      },
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "4",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "0",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "1",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "0",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_leds_gpio_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41250000",
+        "C_HIGHADDR": "0x4125FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 4,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 4,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 4,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 4,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "system_interrupts": {
+      "fullpath": "system_interrupts",
+      "type": "xilinx.com:ip:axi_intc:4.1",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1098907648,
+      "mem_id": "s_axi",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_INSTANCE": "system_system_interrupts_0",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_NUM_INTR_INPUTS": "15",
+        "C_NUM_SW_INTR": "0",
+        "C_KIND_OF_INTR": "0xFFFFFFFF",
+        "C_KIND_OF_EDGE": "0xFFFFFFFF",
+        "C_KIND_OF_LVL": "0xFFFFFFFF",
+        "C_ASYNC_INTR": "0xFFFF9EFF",
+        "C_NUM_SYNC_FF": "2",
+        "C_IVAR_RESET_VALUE": "0x00000010",
+        "C_ENABLE_ASYNC": "0",
+        "C_HAS_IPR": "1",
+        "C_HAS_SIE": "1",
+        "C_HAS_CIE": "1",
+        "C_HAS_IVR": "1",
+        "C_HAS_ILR": "0",
+        "C_IRQ_IS_LEVEL": "1",
+        "C_IRQ_ACTIVE": "0x1",
+        "C_DISABLE_SYNCHRONIZERS": "0",
+        "C_MB_CLK_NOT_CONNECTED": "1",
+        "C_HAS_FAST": "0",
+        "C_EN_CASCADE_MODE": "0",
+        "C_CASCADE_MASTER": "0",
+        "Component_Name": "system_system_interrupts_0",
+        "Sense_of_IRQ_Level_Type": "Active_High",
+        "Sense_of_IRQ_Edge_Type": "Rising",
+        "C_S_AXI_ACLK_FREQ_MHZ": "100.0",
+        "C_PROCESSOR_CLK_FREQ_MHZ": "100.0",
+        "C_IRQ_CONNECTION": "0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "EDK_SPECIAL": "INTR_CTRL",
+        "C_BASEADDR": "0x41800000",
+        "C_HIGHADDR": "0x4180FFFF"
+      },
+      "registers": {
+        "ISR": {
+          "address_offset": 0,
+          "size": 15,
+          "access": "read-write",
+          "description": "Interrupt Status Register",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Interrupt Status Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IPR": {
+          "address_offset": 4,
+          "size": 15,
+          "access": "read-only",
+          "description": "Interrupt Pending Register",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Interrupt Pending Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "IER": {
+          "address_offset": 8,
+          "size": 15,
+          "access": "read-write",
+          "description": "Interrupt Enable Register",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Interrupt Enable Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IAR": {
+          "address_offset": 12,
+          "size": 15,
+          "access": "write-only",
+          "description": "Interrupt Acknowledge Register",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Interrupt Acknowledge Register",
+              "access": "write-only"
+            }
+          }
+        },
+        "SIE": {
+          "address_offset": 16,
+          "size": 15,
+          "access": "read-write",
+          "description": "Set Interrupt Enables",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Set Interrupt Enables",
+              "access": "read-write"
+            }
+          }
+        },
+        "CIE": {
+          "address_offset": 20,
+          "size": 15,
+          "access": "read-write",
+          "description": "Clear Interrupt Enables",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Clear Interrupt Enables",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVR": {
+          "address_offset": 24,
+          "size": 5,
+          "access": "read-only",
+          "description": "Interrupt Vector Register",
+          "fields": {
+            "IVN": {
+              "bit_offset": 0,
+              "bit_width": 5,
+              "description": "Interrupt Vector Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "MER": {
+          "address_offset": 28,
+          "size": 2,
+          "access": "read-write",
+          "description": "Master Enable Register",
+          "fields": {
+            "ME": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "Master Enable Register",
+              "access": "read-write"
+            },
+            "HIE": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "Master Enable Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IMR": {
+          "address_offset": 32,
+          "size": 15,
+          "access": "read-write",
+          "description": "Interrupt Mode Register",
+          "fields": {
+            "INT": {
+              "bit_offset": 0,
+              "bit_width": 15,
+              "description": "Interrupt Mode Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "ILR": {
+          "address_offset": 36,
+          "size": 5,
+          "access": "read-write",
+          "description": "Interrupt Level Register",
+          "fields": {
+            "ILN": {
+              "bit_offset": 0,
+              "bit_width": 5,
+              "description": "Interrupt Level Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[0]": {
+          "address_offset": 256,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 0",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 0",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[1]": {
+          "address_offset": 260,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 1",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 1",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[2]": {
+          "address_offset": 264,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 2",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 2",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[3]": {
+          "address_offset": 268,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 3",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 3",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[4]": {
+          "address_offset": 272,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 4",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 4",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[5]": {
+          "address_offset": 276,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 5",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 5",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[6]": {
+          "address_offset": 280,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 6",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 6",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[7]": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 7",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 7",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[8]": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 8",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 8",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[9]": {
+          "address_offset": 292,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 9",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 9",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[10]": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 10",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 10",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[11]": {
+          "address_offset": 300,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 11",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 11",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[12]": {
+          "address_offset": 304,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 12",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 12",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[13]": {
+          "address_offset": 308,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 13",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 13",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[14]": {
+          "address_offset": 312,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 14",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 14",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[15]": {
+          "address_offset": 316,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 15",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 15",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[16]": {
+          "address_offset": 320,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 16",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 16",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[17]": {
+          "address_offset": 324,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 17",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 17",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[18]": {
+          "address_offset": 328,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 18",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 18",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[19]": {
+          "address_offset": 332,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 19",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 19",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[20]": {
+          "address_offset": 336,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 20",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 20",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[21]": {
+          "address_offset": 340,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 21",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 21",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[22]": {
+          "address_offset": 344,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 22",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 22",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[23]": {
+          "address_offset": 348,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 23",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 23",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[24]": {
+          "address_offset": 352,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 24",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 24",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[25]": {
+          "address_offset": 356,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 25",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 25",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[26]": {
+          "address_offset": 360,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 26",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 26",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[27]": {
+          "address_offset": 364,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 27",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 27",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[28]": {
+          "address_offset": 368,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 28",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 28",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[29]": {
+          "address_offset": 372,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 29",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 29",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[30]": {
+          "address_offset": 376,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 30",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 30",
+              "access": "read-write"
+            }
+          }
+        },
+        "IVAR[31]": {
+          "address_offset": 380,
+          "size": 32,
+          "access": "read-write",
+          "description": "Interrupt Vector Address Register 31",
+          "fields": {
+            "IVA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Interrupt Vector Address Register 31",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "video/axi_vdma": {
+      "fullpath": "video/axi_vdma",
+      "type": "xilinx.com:ip:axi_vdma:6.3",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1124073472,
+      "mem_id": "S_AXI_LITE",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "s2mm_introut": {
+          "controller": "system_interrupts",
+          "index": 0,
+          "fullpath": "video/axi_vdma/s2mm_introut"
+        },
+        "mm2s_introut": {
+          "controller": "system_interrupts",
+          "index": 1,
+          "fullpath": "video/axi_vdma/mm2s_introut"
+        }
+      },
+      "parameters": {
+        "C_S_AXI_LITE_ADDR_WIDTH": "9",
+        "C_S_AXI_LITE_DATA_WIDTH": "32",
+        "C_DLYTMR_RESOLUTION": "125",
+        "C_PRMRY_IS_ACLK_ASYNC": "0",
+        "C_ENABLE_VIDPRMTR_READS": "1",
+        "C_DYNAMIC_RESOLUTION": "1",
+        "C_NUM_FSTORES": "4",
+        "C_USE_FSYNC": "1",
+        "C_USE_MM2S_FSYNC": "0",
+        "C_USE_S2MM_FSYNC": "2",
+        "C_FLUSH_ON_FSYNC": "1",
+        "C_INCLUDE_INTERNAL_GENLOCK": "1",
+        "C_INCLUDE_SG": "0",
+        "C_M_AXI_SG_ADDR_WIDTH": "32",
+        "C_M_AXI_SG_DATA_WIDTH": "32",
+        "C_INCLUDE_MM2S": "1",
+        "C_MM2S_GENLOCK_MODE": "1",
+        "C_MM2S_GENLOCK_NUM_MASTERS": "1",
+        "C_MM2S_GENLOCK_REPEAT_EN": "0",
+        "C_MM2S_SOF_ENABLE": "1",
+        "C_INCLUDE_MM2S_DRE": "0",
+        "C_INCLUDE_MM2S_SF": "0",
+        "C_MM2S_LINEBUFFER_DEPTH": "512",
+        "C_MM2S_LINEBUFFER_THRESH": "4",
+        "C_MM2S_MAX_BURST_LENGTH": "32",
+        "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+        "C_M_AXI_MM2S_DATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_TUSER_BITS": "1",
+        "C_INCLUDE_S2MM": "1",
+        "C_S2MM_GENLOCK_MODE": "0",
+        "C_S2MM_GENLOCK_NUM_MASTERS": "1",
+        "C_S2MM_GENLOCK_REPEAT_EN": "1",
+        "C_S2MM_SOF_ENABLE": "1",
+        "C_INCLUDE_S2MM_DRE": "0",
+        "C_INCLUDE_S2MM_SF": "1",
+        "C_S2MM_LINEBUFFER_DEPTH": "4096",
+        "C_S2MM_LINEBUFFER_THRESH": "4",
+        "C_S2MM_MAX_BURST_LENGTH": "32",
+        "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+        "C_M_AXI_S2MM_DATA_WIDTH": "64",
+        "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_TUSER_BITS": "1",
+        "C_ENABLE_DEBUG_ALL": "0",
+        "C_ENABLE_DEBUG_INFO_0": "0",
+        "C_ENABLE_DEBUG_INFO_1": "0",
+        "C_ENABLE_DEBUG_INFO_2": "0",
+        "C_ENABLE_DEBUG_INFO_3": "0",
+        "C_ENABLE_DEBUG_INFO_4": "0",
+        "C_ENABLE_DEBUG_INFO_5": "0",
+        "C_ENABLE_DEBUG_INFO_6": "1",
+        "C_ENABLE_DEBUG_INFO_7": "1",
+        "C_ENABLE_DEBUG_INFO_8": "0",
+        "C_ENABLE_DEBUG_INFO_9": "0",
+        "C_ENABLE_DEBUG_INFO_10": "0",
+        "C_ENABLE_DEBUG_INFO_11": "0",
+        "C_ENABLE_DEBUG_INFO_12": "0",
+        "C_ENABLE_DEBUG_INFO_13": "0",
+        "C_ENABLE_DEBUG_INFO_14": "1",
+        "C_ENABLE_DEBUG_INFO_15": "1",
+        "C_INSTANCE": "axi_vdma",
+        "C_SELECT_XPM": "0",
+        "C_ENABLE_VERT_FLIP": "0",
+        "C_FAMILY": "zynq",
+        "Component_Name": "system_axi_vdma_0",
+        "c_m_axi_mm2s_data_width": "32",
+        "c_m_axis_mm2s_tdata_width": "32",
+        "c_m_axi_s2mm_data_width": "64",
+        "c_s_axis_s2mm_tdata_width": "32",
+        "c_include_s2mm_dre": "0",
+        "c_include_s2mm_sf": "1",
+        "c_include_mm2s_sf": "0",
+        "c_enable_vidprmtr_reads": "1",
+        "c_num_fstores": "4",
+        "c_use_fsync": "1",
+        "c_use_mm2s_fsync": "0",
+        "c_use_s2mm_fsync": "2",
+        "c_mm2s_sof_enable": "1",
+        "c_s2mm_sof_enable": "1",
+        "c_include_internal_genlock": "1",
+        "c_mm2s_genlock_mode": "1",
+        "c_mm2s_genlock_num_masters": "1",
+        "c_s2mm_genlock_mode": "0",
+        "c_s2mm_genlock_num_masters": "1",
+        "c_mm2s_linebuffer_depth": "512",
+        "c_mm2s_linebuffer_thresh": "4",
+        "c_s2mm_linebuffer_depth": "4096",
+        "c_s2mm_linebuffer_thresh": "4",
+        "c_include_mm2s": "1",
+        "c_mm2s_max_burst_length": "32",
+        "c_include_sg": "0",
+        "c_dlytmr_resolution": "125",
+        "c_prmry_is_aclk_async": "0",
+        "c_dynamic_resolution": "1",
+        "c_s2mm_max_burst_length": "32",
+        "c_include_s2mm": "1",
+        "c_enable_all": "0",
+        "c_enable_mm2s_rst_out": "0",
+        "c_enable_mm2s_buf_empty": "0",
+        "c_enable_mm2s_param_updt": "0",
+        "c_enable_mm2s_fsync_out": "0",
+        "c_enable_tstvec": "0",
+        "c_enable_mm2s_frmstr_reg": "0",
+        "c_enable_mm2s_delay_counter": "1",
+        "c_enable_mm2s_frm_counter": "1",
+        "c_enable_s2mm_rst_out": "0",
+        "c_enable_s2mm_buf_full": "0",
+        "c_enable_s2mm_param_updt": "0",
+        "c_enable_s2mm_fsync_out": "0",
+        "c_enable_s2mm_sts_reg": "0",
+        "c_enable_s2mm_frmstr_reg": "0",
+        "c_enable_s2mm_delay_counter": "1",
+        "c_enable_s2mm_frm_counter": "1",
+        "c_include_mm2s_dre": "0",
+        "c_flush_on_fsync": "1",
+        "c_s2mm_genlock_repeat_en": "1",
+        "c_mm2s_genlock_repeat_en": "0",
+        "c_addr_width": "32",
+        "c_single_interface": "0",
+        "c_enable_vert_flip": "0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43000000",
+        "C_HIGHADDR": "0x4300FFFF"
+      },
+      "registers": {
+        "MM2S_VDMACR": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S VDMA Control Register",
+          "fields": {
+            "RS": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "Circular_Park": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "Reset": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "GenlockEn": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "FrameCntEn": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "GenlockSrc": {
+              "bit_offset": 7,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "RdPntrNum": {
+              "bit_offset": 8,
+              "bit_width": 4,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "FrmCnt_IrqEn": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "DlyCnt_IrqEn": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "Err_IrqEn": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "Repeat_En": {
+              "bit_offset": 15,
+              "bit_width": 1,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "IRQFrameCount": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            },
+            "IRQDelayCount": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "MM2S VDMA Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_VDMASR": {
+          "address_offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S VDMA Status Register",
+          "fields": {
+            "Halted": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-only"
+            },
+            "VDMAIntErr": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-write"
+            },
+            "VDMASlvErr": {
+              "bit_offset": 5,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-only"
+            },
+            "VDMADecErr": {
+              "bit_offset": 6,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-only"
+            },
+            "SOFEarlyErr": {
+              "bit_offset": 7,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-write"
+            },
+            "FrmCnt_Irq": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-write"
+            },
+            "DlyCnt_Irq": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-write"
+            },
+            "Err_Irq": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-write"
+            },
+            "IRQFrameCntSts": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-only"
+            },
+            "IRQDelayCntSts": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "MM2S VDMA Status Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "MM2S_REG_INDEX": {
+          "address_offset": 20,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Register Index",
+          "fields": {
+            "MM2S_Reg_Index": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S Register Index",
+              "access": "read-write"
+            }
+          }
+        },
+        "PARK_PTR_REG": {
+          "address_offset": 40,
+          "size": 32,
+          "access": "read-write",
+          "description": "Park Pointer Register",
+          "fields": {
+            "RdFrmPtrRef": {
+              "bit_offset": 0,
+              "bit_width": 5,
+              "description": "Park Pointer Register",
+              "access": "read-only"
+            },
+            "WrFrmPtrRef": {
+              "bit_offset": 8,
+              "bit_width": 5,
+              "description": "Park Pointer Register",
+              "access": "read-only"
+            },
+            "RdFrmStore": {
+              "bit_offset": 16,
+              "bit_width": 5,
+              "description": "Park Pointer Register",
+              "access": "read-only"
+            },
+            "WrFrmStore": {
+              "bit_offset": 24,
+              "bit_width": 5,
+              "description": "Park Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "VDMA_VERSION": {
+          "address_offset": 44,
+          "size": 32,
+          "access": "read-write",
+          "description": "AXI VDMA Version Register",
+          "fields": {
+            "Xilinx_Internal": {
+              "bit_offset": 0,
+              "bit_width": 16,
+              "description": "AXI VDMA Version Register",
+              "access": "read-only"
+            },
+            "Minor_Version": {
+              "bit_offset": 20,
+              "bit_width": 8,
+              "description": "AXI VDMA Version Register",
+              "access": "read-only"
+            },
+            "Major_Version": {
+              "bit_offset": 28,
+              "bit_width": 4,
+              "description": "AXI VDMA Version Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "S2MM_VDMACR": {
+          "address_offset": 48,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM VDMA Control Register",
+          "fields": {
+            "RS": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "Circular_Park": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "Reset": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "GenlockEn": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "FrameCntEn": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "GenlockSrc": {
+              "bit_offset": 7,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "RdPntrNum": {
+              "bit_offset": 8,
+              "bit_width": 4,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "FrmCnt_IrqEn": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "DlyCnt_IrqEn": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "Err_IrqEn": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "Repeat_En": {
+              "bit_offset": 15,
+              "bit_width": 1,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "IRQFrameCount": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            },
+            "IRQDelayCount": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "S2MM VDMA Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_VDMASR": {
+          "address_offset": 52,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM VDMA Status Register",
+          "fields": {
+            "Halted": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-only"
+            },
+            "VDMAIntErr": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "VDMASlvErr": {
+              "bit_offset": 5,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-only"
+            },
+            "VDMADecErr": {
+              "bit_offset": 6,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-only"
+            },
+            "SOFEarlyErr": {
+              "bit_offset": 7,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "EOLEarlyErr": {
+              "bit_offset": 8,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "SOFLateErr": {
+              "bit_offset": 11,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "FrmCnt_Irq": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "DlyCnt_Irq": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "Err_Irq": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "EOLLateErr": {
+              "bit_offset": 15,
+              "bit_width": 1,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-write"
+            },
+            "IRQFrameCntSts": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-only"
+            },
+            "IRQDelayCntSts": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "S2MM VDMA Status Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "S2MM_VDMA_IRQ_MASK": {
+          "address_offset": 60,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Error Interrupt Mask Register",
+          "fields": {
+            "IRQMaskSOFEarlyErr": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM Error Interrupt Mask Register",
+              "access": "read-write"
+            },
+            "IRQMaskEOLEarlyErr": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "S2MM Error Interrupt Mask Register",
+              "access": "read-write"
+            },
+            "IRQMaskSOFLateErr": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "S2MM Error Interrupt Mask Register",
+              "access": "read-write"
+            },
+            "IRQMaskEOLLateErr": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "S2MM Error Interrupt Mask Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_REG_INDEX": {
+          "address_offset": 68,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Register Index",
+          "fields": {
+            "S2MM_Reg_Index": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM Register Index",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_VSIZE": {
+          "address_offset": 80,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Vertical Size",
+          "fields": {
+            "Vertical_Size": {
+              "bit_offset": 0,
+              "bit_width": 13,
+              "description": "MM2S Vertical Size",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_HSIZE": {
+          "address_offset": 84,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Horizontal Size",
+          "fields": {
+            "Horizontal_Size": {
+              "bit_offset": 0,
+              "bit_width": 16,
+              "description": "MM2S Horizontal Size",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_FRMDLY_STRIDE": {
+          "address_offset": 88,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Frame Delay and Stride",
+          "fields": {
+            "Stride": {
+              "bit_offset": 0,
+              "bit_width": 16,
+              "description": "MM2S Frame Delay and Stride",
+              "access": "read-write"
+            },
+            "Frame_Delay": {
+              "bit_offset": 24,
+              "bit_width": 5,
+              "description": "MM2S Frame Delay and Stride",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA1": {
+          "address_offset": 92,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 1",
+          "fields": {
+            "Start_Address1": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 1",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA2": {
+          "address_offset": 96,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 2",
+          "fields": {
+            "Start_Address2": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 2",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA3": {
+          "address_offset": 100,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 3",
+          "fields": {
+            "Start_Address3": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 3",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA4": {
+          "address_offset": 104,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 4",
+          "fields": {
+            "Start_Address4": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 4",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA5": {
+          "address_offset": 108,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 5",
+          "fields": {
+            "Start_Address5": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 5",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA6": {
+          "address_offset": 112,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 6",
+          "fields": {
+            "Start_Address6": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 6",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA7": {
+          "address_offset": 116,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 7",
+          "fields": {
+            "Start_Address7": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 7",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA8": {
+          "address_offset": 120,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 8",
+          "fields": {
+            "Start_Address8": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 8",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA9": {
+          "address_offset": 124,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 9",
+          "fields": {
+            "Start_Address9": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 9",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA10": {
+          "address_offset": 128,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 10",
+          "fields": {
+            "Start_Address10": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 10",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA11": {
+          "address_offset": 132,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 11",
+          "fields": {
+            "Start_Address11": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 11",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA12": {
+          "address_offset": 136,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 12",
+          "fields": {
+            "Start_Address12": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 12",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA13": {
+          "address_offset": 140,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 13",
+          "fields": {
+            "Start_Address13": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 13",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA14": {
+          "address_offset": 144,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 14",
+          "fields": {
+            "Start_Address14": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 14",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA15": {
+          "address_offset": 148,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 15",
+          "fields": {
+            "Start_Address15": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 15",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA16": {
+          "address_offset": 152,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Start Address Register 16",
+          "fields": {
+            "Start_Address16": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Start Address Register 16",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_VSIZE": {
+          "address_offset": 160,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Vertical Size",
+          "fields": {
+            "Vertical_Size": {
+              "bit_offset": 0,
+              "bit_width": 13,
+              "description": "S2MM Vertical Size",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_HSIZE": {
+          "address_offset": 164,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Horizontal Size",
+          "fields": {
+            "Horizontal_Size": {
+              "bit_offset": 0,
+              "bit_width": 16,
+              "description": "S2MM Horizontal Size",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_FRMDLY_STRIDE": {
+          "address_offset": 168,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Frame Delay and Stride",
+          "fields": {
+            "Stride": {
+              "bit_offset": 0,
+              "bit_width": 16,
+              "description": "S2MM Frame Delay and Stride",
+              "access": "read-write"
+            },
+            "Frame_Delay": {
+              "bit_offset": 24,
+              "bit_width": 5,
+              "description": "S2MM Frame Delay and Stride",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA1": {
+          "address_offset": 172,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 1",
+          "fields": {
+            "Start_Address1": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 1",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA2": {
+          "address_offset": 176,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 2",
+          "fields": {
+            "Start_Address2": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 2",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA3": {
+          "address_offset": 180,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 3",
+          "fields": {
+            "Start_Address3": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 3",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA4": {
+          "address_offset": 184,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 4",
+          "fields": {
+            "Start_Address4": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 4",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA5": {
+          "address_offset": 188,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 5",
+          "fields": {
+            "Start_Address5": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 5",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA6": {
+          "address_offset": 192,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 6",
+          "fields": {
+            "Start_Address6": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 6",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA7": {
+          "address_offset": 196,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 7",
+          "fields": {
+            "Start_Address7": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 7",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA8": {
+          "address_offset": 200,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 8",
+          "fields": {
+            "Start_Address8": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 8",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA9": {
+          "address_offset": 204,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 9",
+          "fields": {
+            "Start_Address9": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 9",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA10": {
+          "address_offset": 208,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 10",
+          "fields": {
+            "Start_Address10": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 10",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA11": {
+          "address_offset": 212,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 11",
+          "fields": {
+            "Start_Address11": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 11",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA12": {
+          "address_offset": 216,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 12",
+          "fields": {
+            "Start_Address12": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 12",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA13": {
+          "address_offset": 220,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 13",
+          "fields": {
+            "Start_Address13": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 13",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA14": {
+          "address_offset": 224,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 14",
+          "fields": {
+            "Start_Address14": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 14",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA15": {
+          "address_offset": 228,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 15",
+          "fields": {
+            "Start_Address15": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 15",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_SA16": {
+          "address_offset": 232,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Start Address Register 16",
+          "fields": {
+            "Start_Address16": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Start Address Register 16",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "video/hdmi_out/frontend/axi_dynclk": {
+      "fullpath": "video/hdmi_out/frontend/axi_dynclk",
+      "type": "digilentinc.com:ip:axi_dynclk:1.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1136721920,
+      "mem_id": "s00_axi",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S00_AXI_DATA_WIDTH": "32",
+        "C_S00_AXI_ADDR_WIDTH": "5",
+        "ADD_BUFMR": "false",
+        "Component_Name": "system_axi_dynclk_0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C10000",
+        "C_HIGHADDR": "0x43C1FFFF"
+      },
+      "registers": {}
+    },
+    "video/hdmi_out/frontend/vtc_out": {
+      "fullpath": "video/hdmi_out/frontend/vtc_out",
+      "type": "xilinx.com:ip:v_tc:6.1",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1136787456,
+      "mem_id": "ctrl",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "irq": {
+          "controller": "system_interrupts",
+          "index": 2,
+          "fullpath": "video/hdmi_out/frontend/vtc_out/irq"
+        }
+      },
+      "parameters": {
+        "C_HAS_AXI4_LITE": "1",
+        "C_HAS_INTC_IF": "0",
+        "C_GEN_INTERLACED": "0",
+        "C_GEN_HACTIVE_SIZE": "1280",
+        "C_GEN_VACTIVE_SIZE": "720",
+        "C_GEN_CPARITY": "0",
+        "C_GEN_FIELDID_POLARITY": "1",
+        "C_GEN_VBLANK_POLARITY": "1",
+        "C_GEN_HBLANK_POLARITY": "1",
+        "C_GEN_VSYNC_POLARITY": "1",
+        "C_GEN_HSYNC_POLARITY": "1",
+        "C_GEN_AVIDEO_POLARITY": "1",
+        "C_GEN_ACHROMA_POLARITY": "1",
+        "C_GEN_VIDEO_FORMAT": "2",
+        "C_GEN_HFRAME_SIZE": "1650",
+        "C_GEN_F0_VFRAME_SIZE": "750",
+        "C_GEN_F1_VFRAME_SIZE": "750",
+        "C_GEN_HSYNC_START": "1390",
+        "C_GEN_HSYNC_END": "1430",
+        "C_GEN_F0_VBLANK_HSTART": "1280",
+        "C_GEN_F0_VBLANK_HEND": "1280",
+        "C_GEN_F0_VSYNC_VSTART": "724",
+        "C_GEN_F0_VSYNC_VEND": "729",
+        "C_GEN_F0_VSYNC_HSTART": "1280",
+        "C_GEN_F0_VSYNC_HEND": "1280",
+        "C_GEN_F1_VBLANK_HSTART": "1280",
+        "C_GEN_F1_VBLANK_HEND": "1280",
+        "C_GEN_F1_VSYNC_VSTART": "724",
+        "C_GEN_F1_VSYNC_VEND": "729",
+        "C_GEN_F1_VSYNC_HSTART": "1280",
+        "C_GEN_F1_VSYNC_HEND": "1280",
+        "C_FSYNC_HSTART0": "0",
+        "C_FSYNC_VSTART0": "0",
+        "C_FSYNC_HSTART1": "0",
+        "C_FSYNC_VSTART1": "0",
+        "C_FSYNC_HSTART2": "0",
+        "C_FSYNC_VSTART2": "0",
+        "C_FSYNC_HSTART3": "0",
+        "C_FSYNC_VSTART3": "0",
+        "C_FSYNC_HSTART4": "0",
+        "C_FSYNC_VSTART4": "0",
+        "C_FSYNC_HSTART5": "0",
+        "C_FSYNC_VSTART5": "0",
+        "C_FSYNC_HSTART6": "0",
+        "C_FSYNC_VSTART6": "0",
+        "C_FSYNC_HSTART7": "0",
+        "C_FSYNC_VSTART7": "0",
+        "C_FSYNC_HSTART8": "0",
+        "C_FSYNC_VSTART8": "0",
+        "C_FSYNC_HSTART9": "0",
+        "C_FSYNC_VSTART9": "0",
+        "C_FSYNC_HSTART10": "0",
+        "C_FSYNC_VSTART10": "0",
+        "C_FSYNC_HSTART11": "0",
+        "C_FSYNC_VSTART11": "0",
+        "C_FSYNC_HSTART12": "0",
+        "C_FSYNC_VSTART12": "0",
+        "C_FSYNC_HSTART13": "0",
+        "C_FSYNC_VSTART13": "0",
+        "C_FSYNC_HSTART14": "0",
+        "C_FSYNC_VSTART14": "0",
+        "C_FSYNC_HSTART15": "0",
+        "C_FSYNC_VSTART15": "0",
+        "C_MAX_PIXELS": "4096",
+        "C_MAX_LINES": "4096",
+        "C_NUM_FSYNCS": "1",
+        "C_INTERLACE_EN": "0",
+        "C_GEN_AUTO_SWITCH": "0",
+        "C_DETECT_EN": "0",
+        "C_SYNC_EN": "0",
+        "C_GENERATE_EN": "1",
+        "C_DET_HSYNC_EN": "1",
+        "C_DET_VSYNC_EN": "1",
+        "C_DET_HBLANK_EN": "1",
+        "C_DET_VBLANK_EN": "1",
+        "C_DET_AVIDEO_EN": "1",
+        "C_DET_ACHROMA_EN": "0",
+        "C_GEN_HSYNC_EN": "1",
+        "C_GEN_VSYNC_EN": "1",
+        "C_GEN_HBLANK_EN": "1",
+        "C_GEN_VBLANK_EN": "1",
+        "C_GEN_AVIDEO_EN": "1",
+        "C_GEN_ACHROMA_EN": "0",
+        "C_GEN_FIELDID_EN": "0",
+        "C_DET_FIELDID_EN": "0",
+        "Component_Name": "system_vtc_out_0",
+        "C_FAMILY": "virtex7",
+        "HAS_AXI4_LITE": "true",
+        "HAS_INTC_IF": "false",
+        "INTERLACE_EN": "false",
+        "SYNC_EN": "false",
+        "max_clocks_per_line": "4096",
+        "max_lines_per_frame": "4096",
+        "VIDEO_MODE": "720p",
+        "FSYNC_HSTART0": "0",
+        "FSYNC_VSTART0": "0",
+        "FSYNC_HSTART1": "0",
+        "FSYNC_VSTART1": "0",
+        "FSYNC_HSTART2": "0",
+        "FSYNC_VSTART2": "0",
+        "FSYNC_HSTART3": "0",
+        "FSYNC_VSTART3": "0",
+        "FSYNC_HSTART4": "0",
+        "FSYNC_VSTART4": "0",
+        "FSYNC_HSTART5": "0",
+        "FSYNC_VSTART5": "0",
+        "FSYNC_HSTART6": "0",
+        "FSYNC_VSTART6": "0",
+        "FSYNC_HSTART7": "0",
+        "FSYNC_VSTART7": "0",
+        "FSYNC_HSTART8": "0",
+        "FSYNC_VSTART8": "0",
+        "FSYNC_HSTART9": "0",
+        "FSYNC_VSTART9": "0",
+        "FSYNC_HSTART10": "0",
+        "FSYNC_VSTART10": "0",
+        "FSYNC_HSTART11": "0",
+        "FSYNC_VSTART11": "0",
+        "FSYNC_HSTART12": "0",
+        "FSYNC_VSTART12": "0",
+        "FSYNC_HSTART13": "0",
+        "FSYNC_VSTART13": "0",
+        "FSYNC_HSTART14": "0",
+        "FSYNC_VSTART14": "0",
+        "FSYNC_HSTART15": "0",
+        "FSYNC_VSTART15": "0",
+        "GEN_F0_VSYNC_VSTART": "724",
+        "GEN_F1_VSYNC_VSTART": "724",
+        "GEN_HACTIVE_SIZE": "1280",
+        "GEN_HSYNC_END": "1430",
+        "GEN_HFRAME_SIZE": "1650",
+        "GEN_F0_VSYNC_HSTART": "1280",
+        "GEN_F1_VSYNC_HSTART": "1280",
+        "GEN_F0_VSYNC_HEND": "1280",
+        "GEN_F1_VSYNC_HEND": "1280",
+        "GEN_F0_VFRAME_SIZE": "750",
+        "GEN_F1_VFRAME_SIZE": "750",
+        "GEN_F0_VSYNC_VEND": "729",
+        "GEN_F1_VSYNC_VEND": "729",
+        "GEN_F0_VBLANK_HEND": "1280",
+        "GEN_F1_VBLANK_HEND": "1280",
+        "GEN_HSYNC_START": "1390",
+        "GEN_VACTIVE_SIZE": "720",
+        "GEN_F0_VBLANK_HSTART": "1280",
+        "GEN_F1_VBLANK_HSTART": "1280",
+        "GEN_ACHROMA_POLARITY": "High",
+        "GEN_HSYNC_POLARITY": "High",
+        "GEN_VSYNC_POLARITY": "High",
+        "GEN_HBLANK_POLARITY": "High",
+        "GEN_AVIDEO_POLARITY": "High",
+        "GEN_VBLANK_POLARITY": "High",
+        "GEN_FIELDID_POLARITY": "High",
+        "GEN_INTERLACED": "false",
+        "GEN_CPARITY": "0",
+        "GEN_VIDEO_FORMAT": "RGB",
+        "horizontal_sync_generation": "true",
+        "enable_detection": "false",
+        "vertical_blank_generation": "true",
+        "GEN_FIELDID_EN": "false",
+        "horizontal_blank_detection": "true",
+        "active_chroma_detection": "false",
+        "horizontal_sync_detection": "true",
+        "enable_generation": "true",
+        "auto_generation_mode": "false",
+        "vertical_sync_generation": "true",
+        "active_chroma_generation": "false",
+        "DET_FIELDID_EN": "false",
+        "vertical_blank_detection": "true",
+        "active_video_generation": "true",
+        "vertical_sync_detection": "true",
+        "horizontal_blank_generation": "true",
+        "active_video_detection": "true",
+        "frame_syncs": "1",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C20000",
+        "C_HIGHADDR": "0x43C2FFFF"
+      },
+      "registers": {}
+    },
+    "video/hdmi_in/frontend/vtc_in": {
+      "fullpath": "video/hdmi_in/frontend/vtc_in",
+      "type": "xilinx.com:ip:v_tc:6.1",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1136852992,
+      "mem_id": "ctrl",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {
+        "irq": {
+          "controller": "system_interrupts",
+          "index": 3,
+          "fullpath": "video/hdmi_in/frontend/vtc_in/irq"
+        }
+      },
+      "parameters": {
+        "C_HAS_AXI4_LITE": "1",
+        "C_HAS_INTC_IF": "1",
+        "C_GEN_INTERLACED": "0",
+        "C_GEN_HACTIVE_SIZE": "1280",
+        "C_GEN_VACTIVE_SIZE": "720",
+        "C_GEN_CPARITY": "0",
+        "C_GEN_FIELDID_POLARITY": "1",
+        "C_GEN_VBLANK_POLARITY": "1",
+        "C_GEN_HBLANK_POLARITY": "1",
+        "C_GEN_VSYNC_POLARITY": "1",
+        "C_GEN_HSYNC_POLARITY": "1",
+        "C_GEN_AVIDEO_POLARITY": "1",
+        "C_GEN_ACHROMA_POLARITY": "1",
+        "C_GEN_VIDEO_FORMAT": "2",
+        "C_GEN_HFRAME_SIZE": "1650",
+        "C_GEN_F0_VFRAME_SIZE": "750",
+        "C_GEN_F1_VFRAME_SIZE": "750",
+        "C_GEN_HSYNC_START": "1390",
+        "C_GEN_HSYNC_END": "1430",
+        "C_GEN_F0_VBLANK_HSTART": "1280",
+        "C_GEN_F0_VBLANK_HEND": "1280",
+        "C_GEN_F0_VSYNC_VSTART": "724",
+        "C_GEN_F0_VSYNC_VEND": "729",
+        "C_GEN_F0_VSYNC_HSTART": "1280",
+        "C_GEN_F0_VSYNC_HEND": "1280",
+        "C_GEN_F1_VBLANK_HSTART": "1280",
+        "C_GEN_F1_VBLANK_HEND": "1280",
+        "C_GEN_F1_VSYNC_VSTART": "724",
+        "C_GEN_F1_VSYNC_VEND": "729",
+        "C_GEN_F1_VSYNC_HSTART": "1280",
+        "C_GEN_F1_VSYNC_HEND": "1280",
+        "C_FSYNC_HSTART0": "0",
+        "C_FSYNC_VSTART0": "0",
+        "C_FSYNC_HSTART1": "0",
+        "C_FSYNC_VSTART1": "0",
+        "C_FSYNC_HSTART2": "0",
+        "C_FSYNC_VSTART2": "0",
+        "C_FSYNC_HSTART3": "0",
+        "C_FSYNC_VSTART3": "0",
+        "C_FSYNC_HSTART4": "0",
+        "C_FSYNC_VSTART4": "0",
+        "C_FSYNC_HSTART5": "0",
+        "C_FSYNC_VSTART5": "0",
+        "C_FSYNC_HSTART6": "0",
+        "C_FSYNC_VSTART6": "0",
+        "C_FSYNC_HSTART7": "0",
+        "C_FSYNC_VSTART7": "0",
+        "C_FSYNC_HSTART8": "0",
+        "C_FSYNC_VSTART8": "0",
+        "C_FSYNC_HSTART9": "0",
+        "C_FSYNC_VSTART9": "0",
+        "C_FSYNC_HSTART10": "0",
+        "C_FSYNC_VSTART10": "0",
+        "C_FSYNC_HSTART11": "0",
+        "C_FSYNC_VSTART11": "0",
+        "C_FSYNC_HSTART12": "0",
+        "C_FSYNC_VSTART12": "0",
+        "C_FSYNC_HSTART13": "0",
+        "C_FSYNC_VSTART13": "0",
+        "C_FSYNC_HSTART14": "0",
+        "C_FSYNC_VSTART14": "0",
+        "C_FSYNC_HSTART15": "0",
+        "C_FSYNC_VSTART15": "0",
+        "C_MAX_PIXELS": "4096",
+        "C_MAX_LINES": "2048",
+        "C_NUM_FSYNCS": "1",
+        "C_INTERLACE_EN": "0",
+        "C_GEN_AUTO_SWITCH": "0",
+        "C_DETECT_EN": "1",
+        "C_SYNC_EN": "0",
+        "C_GENERATE_EN": "0",
+        "C_DET_HSYNC_EN": "1",
+        "C_DET_VSYNC_EN": "1",
+        "C_DET_HBLANK_EN": "0",
+        "C_DET_VBLANK_EN": "0",
+        "C_DET_AVIDEO_EN": "1",
+        "C_DET_ACHROMA_EN": "0",
+        "C_GEN_HSYNC_EN": "1",
+        "C_GEN_VSYNC_EN": "1",
+        "C_GEN_HBLANK_EN": "1",
+        "C_GEN_VBLANK_EN": "1",
+        "C_GEN_AVIDEO_EN": "1",
+        "C_GEN_ACHROMA_EN": "0",
+        "C_GEN_FIELDID_EN": "0",
+        "C_DET_FIELDID_EN": "0",
+        "Component_Name": "system_vtc_in_0",
+        "C_FAMILY": "virtex7",
+        "HAS_AXI4_LITE": "true",
+        "HAS_INTC_IF": "true",
+        "INTERLACE_EN": "false",
+        "SYNC_EN": "false",
+        "max_clocks_per_line": "4096",
+        "max_lines_per_frame": "2048",
+        "VIDEO_MODE": "720p",
+        "FSYNC_HSTART0": "0",
+        "FSYNC_VSTART0": "0",
+        "FSYNC_HSTART1": "0",
+        "FSYNC_VSTART1": "0",
+        "FSYNC_HSTART2": "0",
+        "FSYNC_VSTART2": "0",
+        "FSYNC_HSTART3": "0",
+        "FSYNC_VSTART3": "0",
+        "FSYNC_HSTART4": "0",
+        "FSYNC_VSTART4": "0",
+        "FSYNC_HSTART5": "0",
+        "FSYNC_VSTART5": "0",
+        "FSYNC_HSTART6": "0",
+        "FSYNC_VSTART6": "0",
+        "FSYNC_HSTART7": "0",
+        "FSYNC_VSTART7": "0",
+        "FSYNC_HSTART8": "0",
+        "FSYNC_VSTART8": "0",
+        "FSYNC_HSTART9": "0",
+        "FSYNC_VSTART9": "0",
+        "FSYNC_HSTART10": "0",
+        "FSYNC_VSTART10": "0",
+        "FSYNC_HSTART11": "0",
+        "FSYNC_VSTART11": "0",
+        "FSYNC_HSTART12": "0",
+        "FSYNC_VSTART12": "0",
+        "FSYNC_HSTART13": "0",
+        "FSYNC_VSTART13": "0",
+        "FSYNC_HSTART14": "0",
+        "FSYNC_VSTART14": "0",
+        "FSYNC_HSTART15": "0",
+        "FSYNC_VSTART15": "0",
+        "GEN_F0_VSYNC_VSTART": "724",
+        "GEN_F1_VSYNC_VSTART": "724",
+        "GEN_HACTIVE_SIZE": "1280",
+        "GEN_HSYNC_END": "1430",
+        "GEN_HFRAME_SIZE": "1650",
+        "GEN_F0_VSYNC_HSTART": "1280",
+        "GEN_F1_VSYNC_HSTART": "1280",
+        "GEN_F0_VSYNC_HEND": "1280",
+        "GEN_F1_VSYNC_HEND": "1280",
+        "GEN_F0_VFRAME_SIZE": "750",
+        "GEN_F1_VFRAME_SIZE": "750",
+        "GEN_F0_VSYNC_VEND": "729",
+        "GEN_F1_VSYNC_VEND": "729",
+        "GEN_F0_VBLANK_HEND": "1280",
+        "GEN_F1_VBLANK_HEND": "1280",
+        "GEN_HSYNC_START": "1390",
+        "GEN_VACTIVE_SIZE": "720",
+        "GEN_F0_VBLANK_HSTART": "1280",
+        "GEN_F1_VBLANK_HSTART": "1280",
+        "GEN_ACHROMA_POLARITY": "High",
+        "GEN_HSYNC_POLARITY": "High",
+        "GEN_VSYNC_POLARITY": "High",
+        "GEN_HBLANK_POLARITY": "High",
+        "GEN_AVIDEO_POLARITY": "High",
+        "GEN_VBLANK_POLARITY": "High",
+        "GEN_FIELDID_POLARITY": "High",
+        "GEN_INTERLACED": "false",
+        "GEN_CPARITY": "0",
+        "GEN_VIDEO_FORMAT": "RGB",
+        "horizontal_sync_generation": "true",
+        "enable_detection": "true",
+        "vertical_blank_generation": "true",
+        "GEN_FIELDID_EN": "false",
+        "horizontal_blank_detection": "false",
+        "active_chroma_detection": "false",
+        "horizontal_sync_detection": "true",
+        "enable_generation": "false",
+        "auto_generation_mode": "false",
+        "vertical_sync_generation": "true",
+        "active_chroma_generation": "false",
+        "DET_FIELDID_EN": "false",
+        "vertical_blank_detection": "false",
+        "active_video_generation": "true",
+        "vertical_sync_detection": "true",
+        "horizontal_blank_generation": "true",
+        "active_video_detection": "true",
+        "frame_syncs": "1",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C30000",
+        "C_HIGHADDR": "0x43C3FFFF"
+      },
+      "registers": {}
+    },
+    "video/hdmi_in/pixel_pack": {
+      "fullpath": "video/hdmi_in/pixel_pack",
+      "type": "xilinx.com:hls:pixel_pack:1.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1136918528,
+      "mem_id": "s_axi_AXILiteS",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S_AXI_AXILITES_ADDR_WIDTH": "5",
+        "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+        "Component_Name": "system_pixel_pack_0",
+        "clk_period": "7",
+        "machine": "64",
+        "combinational": "0",
+        "latency": "undef",
+        "II": "x",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_S_AXI_AXILITES_BASEADDR": "0x43C40000",
+        "C_S_AXI_AXILITES_HIGHADDR": "0x43C4FFFF"
+      },
+      "registers": {
+        "mode": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of mode",
+          "fields": {
+            "mode": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Data signal of mode",
+              "access": "write-only"
+            }
+          }
+        },
+        "alpha_V": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of alpha_V",
+          "fields": {
+            "alpha_V": {
+              "bit_offset": 0,
+              "bit_width": 8,
+              "description": "Data signal of alpha_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 8,
+              "bit_width": 24,
+              "description": "Data signal of alpha_V",
+              "access": "read-only"
+            }
+          }
+        }
+      }
+    },
+    "video/hdmi_in/color_convert": {
+      "fullpath": "video/hdmi_in/color_convert",
+      "type": "xilinx.com:hls:color_convert:1.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1136984064,
+      "mem_id": "s_axi_AXILiteS",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S_AXI_AXILITES_ADDR_WIDTH": "7",
+        "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+        "Component_Name": "system_color_convert_1",
+        "clk_period": "7",
+        "machine": "64",
+        "combinational": "0",
+        "latency": "6",
+        "II": "1",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_S_AXI_AXILITES_BASEADDR": "0x43C50000",
+        "C_S_AXI_AXILITES_HIGHADDR": "0x43C5FFFF"
+      },
+      "registers": {
+        "c1_c1_V": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c1_c1_V",
+          "fields": {
+            "c1_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c1_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c1_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c1_c2_V": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c1_c2_V",
+          "fields": {
+            "c1_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c1_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c1_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c1_c3_V": {
+          "address_offset": 32,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c1_c3_V",
+          "fields": {
+            "c1_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c1_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c1_c3_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c2_c1_V": {
+          "address_offset": 40,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c2_c1_V",
+          "fields": {
+            "c2_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c2_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c2_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c2_c2_V": {
+          "address_offset": 48,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c2_c2_V",
+          "fields": {
+            "c2_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c2_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c2_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c2_c3_V": {
+          "address_offset": 56,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c2_c3_V",
+          "fields": {
+            "c2_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c2_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c2_c3_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c3_c1_V": {
+          "address_offset": 64,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c3_c1_V",
+          "fields": {
+            "c3_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c3_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c3_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c3_c2_V": {
+          "address_offset": 72,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c3_c2_V",
+          "fields": {
+            "c3_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c3_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c3_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c3_c3_V": {
+          "address_offset": 80,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c3_c3_V",
+          "fields": {
+            "c3_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c3_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c3_c3_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "bias_c1_V": {
+          "address_offset": 88,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of bias_c1_V",
+          "fields": {
+            "bias_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of bias_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of bias_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "bias_c2_V": {
+          "address_offset": 96,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of bias_c2_V",
+          "fields": {
+            "bias_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of bias_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of bias_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "bias_c3_V": {
+          "address_offset": 104,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of bias_c3_V",
+          "fields": {
+            "bias_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of bias_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of bias_c3_V",
+              "access": "read-only"
+            }
+          }
+        }
+      }
+    },
+    "video/hdmi_out/color_convert": {
+      "fullpath": "video/hdmi_out/color_convert",
+      "type": "xilinx.com:hls:color_convert:1.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1137049600,
+      "mem_id": "s_axi_AXILiteS",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S_AXI_AXILITES_ADDR_WIDTH": "7",
+        "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+        "Component_Name": "system_color_convert_0",
+        "clk_period": "7",
+        "machine": "64",
+        "combinational": "0",
+        "latency": "6",
+        "II": "1",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_S_AXI_AXILITES_BASEADDR": "0x43C60000",
+        "C_S_AXI_AXILITES_HIGHADDR": "0x43C6FFFF"
+      },
+      "registers": {
+        "c1_c1_V": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c1_c1_V",
+          "fields": {
+            "c1_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c1_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c1_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c1_c2_V": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c1_c2_V",
+          "fields": {
+            "c1_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c1_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c1_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c1_c3_V": {
+          "address_offset": 32,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c1_c3_V",
+          "fields": {
+            "c1_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c1_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c1_c3_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c2_c1_V": {
+          "address_offset": 40,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c2_c1_V",
+          "fields": {
+            "c2_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c2_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c2_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c2_c2_V": {
+          "address_offset": 48,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c2_c2_V",
+          "fields": {
+            "c2_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c2_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c2_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c2_c3_V": {
+          "address_offset": 56,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c2_c3_V",
+          "fields": {
+            "c2_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c2_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c2_c3_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c3_c1_V": {
+          "address_offset": 64,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c3_c1_V",
+          "fields": {
+            "c3_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c3_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c3_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c3_c2_V": {
+          "address_offset": 72,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c3_c2_V",
+          "fields": {
+            "c3_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c3_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c3_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "c3_c3_V": {
+          "address_offset": 80,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of c3_c3_V",
+          "fields": {
+            "c3_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of c3_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of c3_c3_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "bias_c1_V": {
+          "address_offset": 88,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of bias_c1_V",
+          "fields": {
+            "bias_c1_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of bias_c1_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of bias_c1_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "bias_c2_V": {
+          "address_offset": 96,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of bias_c2_V",
+          "fields": {
+            "bias_c2_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of bias_c2_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of bias_c2_V",
+              "access": "read-only"
+            }
+          }
+        },
+        "bias_c3_V": {
+          "address_offset": 104,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of bias_c3_V",
+          "fields": {
+            "bias_c3_V": {
+              "bit_offset": 0,
+              "bit_width": 10,
+              "description": "Data signal of bias_c3_V",
+              "access": "write-only"
+            },
+            "RESERVED": {
+              "bit_offset": 10,
+              "bit_width": 22,
+              "description": "Data signal of bias_c3_V",
+              "access": "read-only"
+            }
+          }
+        }
+      }
+    },
+    "video/hdmi_out/pixel_unpack": {
+      "fullpath": "video/hdmi_out/pixel_unpack",
+      "type": "xilinx.com:hls:pixel_unpack:1.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1137115136,
+      "mem_id": "s_axi_AXILiteS",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S_AXI_AXILITES_ADDR_WIDTH": "5",
+        "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+        "Component_Name": "system_pixel_unpack_0",
+        "clk_period": "7",
+        "machine": "64",
+        "combinational": "0",
+        "latency": "undef",
+        "II": "x",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_S_AXI_AXILITES_BASEADDR": "0x43C70000",
+        "C_S_AXI_AXILITES_HIGHADDR": "0x43C7FFFF"
+      },
+      "registers": {
+        "mode": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "write-only",
+          "description": "Data signal of mode",
+          "fields": {
+            "mode": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Data signal of mode",
+              "access": "write-only"
+            }
+          }
+        }
+      }
+    },
+    "point_control": {
+      "fullpath": "point_control",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1137180672,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "32",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "1",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "0",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "1",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_point_control_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C80000",
+        "C_HIGHADDR": "0x43C8FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "ps7_0": {
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_EN_EMIO_PJTAG": "0",
+        "C_EN_EMIO_ENET0": "0",
+        "C_EN_EMIO_ENET1": "0",
+        "C_EN_EMIO_TRACE": "0",
+        "C_INCLUDE_TRACE_BUFFER": "0",
+        "C_TRACE_BUFFER_FIFO_SIZE": "128",
+        "USE_TRACE_DATA_EDGE_DETECTOR": "0",
+        "C_TRACE_PIPELINE_WIDTH": "8",
+        "C_TRACE_BUFFER_CLOCK_DELAY": "12",
+        "C_EMIO_GPIO_WIDTH": "64",
+        "C_INCLUDE_ACP_TRANS_CHECK": "0",
+        "C_USE_DEFAULT_ACP_USER_VAL": "0",
+        "C_S_AXI_ACP_ARUSER_VAL": "31",
+        "C_S_AXI_ACP_AWUSER_VAL": "31",
+        "C_M_AXI_GP0_ID_WIDTH": "12",
+        "C_M_AXI_GP0_ENABLE_STATIC_REMAP": "0",
+        "C_M_AXI_GP1_ID_WIDTH": "12",
+        "C_M_AXI_GP1_ENABLE_STATIC_REMAP": "0",
+        "C_S_AXI_GP0_ID_WIDTH": "6",
+        "C_S_AXI_GP1_ID_WIDTH": "6",
+        "C_S_AXI_ACP_ID_WIDTH": "3",
+        "C_S_AXI_HP0_ID_WIDTH": "6",
+        "C_S_AXI_HP0_DATA_WIDTH": "64",
+        "C_S_AXI_HP1_ID_WIDTH": "6",
+        "C_S_AXI_HP1_DATA_WIDTH": "64",
+        "C_S_AXI_HP2_ID_WIDTH": "6",
+        "C_S_AXI_HP2_DATA_WIDTH": "64",
+        "C_S_AXI_HP3_ID_WIDTH": "6",
+        "C_S_AXI_HP3_DATA_WIDTH": "64",
+        "C_M_AXI_GP0_THREAD_ID_WIDTH": "12",
+        "C_M_AXI_GP1_THREAD_ID_WIDTH": "12",
+        "C_NUM_F2P_INTR_INPUTS": "1",
+        "C_IRQ_F2P_MODE": "DIRECT",
+        "C_DQ_WIDTH": "32",
+        "C_DQS_WIDTH": "4",
+        "C_DM_WIDTH": "4",
+        "C_MIO_PRIMITIVE": "54",
+        "C_TRACE_INTERNAL_WIDTH": "2",
+        "C_USE_AXI_NONSECURE": "0",
+        "C_USE_M_AXI_GP0": "1",
+        "C_USE_M_AXI_GP1": "0",
+        "C_USE_S_AXI_GP0": "0",
+        "C_USE_S_AXI_GP1": "0",
+        "C_USE_S_AXI_HP0": "1",
+        "C_USE_S_AXI_HP1": "0",
+        "C_USE_S_AXI_HP2": "1",
+        "C_USE_S_AXI_HP3": "0",
+        "C_USE_S_AXI_ACP": "0",
+        "C_PS7_SI_REV": "PRODUCTION",
+        "C_FCLK_CLK0_BUF": "TRUE",
+        "C_FCLK_CLK1_BUF": "TRUE",
+        "C_FCLK_CLK2_BUF": "TRUE",
+        "C_FCLK_CLK3_BUF": "TRUE",
+        "C_PACKAGE_NAME": "clg400",
+        "C_GP0_EN_MODIFIABLE_TXN": "1",
+        "C_GP1_EN_MODIFIABLE_TXN": "1",
+        "PCW_DDR_RAM_BASEADDR": "0x00100000",
+        "PCW_DDR_RAM_HIGHADDR": "0x1FFFFFFF",
+        "PCW_UART0_BASEADDR": "0xE0000000",
+        "PCW_UART0_HIGHADDR": "0xE0000FFF",
+        "PCW_UART1_BASEADDR": "0xE0001000",
+        "PCW_UART1_HIGHADDR": "0xE0001FFF",
+        "PCW_I2C0_BASEADDR": "0xE0004000",
+        "PCW_I2C0_HIGHADDR": "0xE0004FFF",
+        "PCW_I2C1_BASEADDR": "0xE0005000",
+        "PCW_I2C1_HIGHADDR": "0xE0005FFF",
+        "PCW_SPI0_BASEADDR": "0xE0006000",
+        "PCW_SPI0_HIGHADDR": "0xE0006FFF",
+        "PCW_SPI1_BASEADDR": "0xE0007000",
+        "PCW_SPI1_HIGHADDR": "0xE0007FFF",
+        "PCW_CAN0_BASEADDR": "0xE0008000",
+        "PCW_CAN0_HIGHADDR": "0xE0008FFF",
+        "PCW_CAN1_BASEADDR": "0xE0009000",
+        "PCW_CAN1_HIGHADDR": "0xE0009FFF",
+        "PCW_GPIO_BASEADDR": "0xE000A000",
+        "PCW_GPIO_HIGHADDR": "0xE000AFFF",
+        "PCW_ENET0_BASEADDR": "0xE000B000",
+        "PCW_ENET0_HIGHADDR": "0xE000BFFF",
+        "PCW_ENET1_BASEADDR": "0xE000C000",
+        "PCW_ENET1_HIGHADDR": "0xE000CFFF",
+        "PCW_SDIO0_BASEADDR": "0xE0100000",
+        "PCW_SDIO0_HIGHADDR": "0xE0100FFF",
+        "PCW_SDIO1_BASEADDR": "0xE0101000",
+        "PCW_SDIO1_HIGHADDR": "0xE0101FFF",
+        "PCW_USB0_BASEADDR": "0xE0102000",
+        "PCW_USB0_HIGHADDR": "0xE0102fff",
+        "PCW_USB1_BASEADDR": "0xE0103000",
+        "PCW_USB1_HIGHADDR": "0xE0103fff",
+        "PCW_TTC0_BASEADDR": "0xE0104000",
+        "PCW_TTC0_HIGHADDR": "0xE0104fff",
+        "PCW_TTC1_BASEADDR": "0xE0105000",
+        "PCW_TTC1_HIGHADDR": "0xE0105fff",
+        "PCW_FCLK_CLK0_BUF": "TRUE",
+        "PCW_FCLK_CLK1_BUF": "TRUE",
+        "PCW_FCLK_CLK2_BUF": "TRUE",
+        "PCW_FCLK_CLK3_BUF": "TRUE",
+        "PCW_UIPARAM_DDR_FREQ_MHZ": "525",
+        "PCW_UIPARAM_DDR_BANK_ADDR_COUNT": "3",
+        "PCW_UIPARAM_DDR_ROW_ADDR_COUNT": "15",
+        "PCW_UIPARAM_DDR_COL_ADDR_COUNT": "10",
+        "PCW_UIPARAM_DDR_CL": "7",
+        "PCW_UIPARAM_DDR_CWL": "6",
+        "PCW_UIPARAM_DDR_T_RCD": "13.125",
+        "PCW_UIPARAM_DDR_T_RP": "13.125",
+        "PCW_UIPARAM_DDR_T_RC": "50.625",
+        "PCW_UIPARAM_DDR_T_RAS_MIN": "35.0",
+        "PCW_UIPARAM_DDR_T_FAW": "40.0",
+        "PCW_UIPARAM_DDR_AL": "0",
+        "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0": "0.040",
+        "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1": "0.058",
+        "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2": "-0.009",
+        "PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3": "-0.033",
+        "PCW_UIPARAM_DDR_BOARD_DELAY0": "0.223",
+        "PCW_UIPARAM_DDR_BOARD_DELAY1": "0.212",
+        "PCW_UIPARAM_DDR_BOARD_DELAY2": "0.085",
+        "PCW_UIPARAM_DDR_BOARD_DELAY3": "0.092",
+        "PCW_UIPARAM_DDR_DQS_0_LENGTH_MM": "15.6",
+        "PCW_UIPARAM_DDR_DQS_1_LENGTH_MM": "18.8",
+        "PCW_UIPARAM_DDR_DQS_2_LENGTH_MM": "0",
+        "PCW_UIPARAM_DDR_DQS_3_LENGTH_MM": "0",
+        "PCW_UIPARAM_DDR_DQ_0_LENGTH_MM": "16.5",
+        "PCW_UIPARAM_DDR_DQ_1_LENGTH_MM": "18",
+        "PCW_UIPARAM_DDR_DQ_2_LENGTH_MM": "0",
+        "PCW_UIPARAM_DDR_DQ_3_LENGTH_MM": "0",
+        "PCW_UIPARAM_DDR_CLOCK_0_LENGTH_MM": "25.8",
+        "PCW_UIPARAM_DDR_CLOCK_1_LENGTH_MM": "25.8",
+        "PCW_UIPARAM_DDR_CLOCK_2_LENGTH_MM": "0",
+        "PCW_UIPARAM_DDR_CLOCK_3_LENGTH_MM": "0",
+        "PCW_UIPARAM_DDR_DQS_0_PACKAGE_LENGTH": "105.056",
+        "PCW_UIPARAM_DDR_DQS_1_PACKAGE_LENGTH": "66.904",
+        "PCW_UIPARAM_DDR_DQS_2_PACKAGE_LENGTH": "89.1715",
+        "PCW_UIPARAM_DDR_DQS_3_PACKAGE_LENGTH": "113.63",
+        "PCW_UIPARAM_DDR_DQ_0_PACKAGE_LENGTH": "98.503",
+        "PCW_UIPARAM_DDR_DQ_1_PACKAGE_LENGTH": "68.5855",
+        "PCW_UIPARAM_DDR_DQ_2_PACKAGE_LENGTH": "90.295",
+        "PCW_UIPARAM_DDR_DQ_3_PACKAGE_LENGTH": "103.977",
+        "PCW_UIPARAM_DDR_CLOCK_0_PACKAGE_LENGTH": "80.4535",
+        "PCW_UIPARAM_DDR_CLOCK_1_PACKAGE_LENGTH": "80.4535",
+        "PCW_UIPARAM_DDR_CLOCK_2_PACKAGE_LENGTH": "80.4535",
+        "PCW_UIPARAM_DDR_CLOCK_3_PACKAGE_LENGTH": "80.4535",
+        "PCW_UIPARAM_DDR_DQS_0_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQS_1_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQS_2_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQS_3_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQ_0_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQ_1_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQ_2_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_DQ_3_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_CLOCK_0_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_CLOCK_1_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_CLOCK_2_PROPOGATION_DELAY": "160",
+        "PCW_UIPARAM_DDR_CLOCK_3_PROPOGATION_DELAY": "160",
+        "PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_0": "0.040",
+        "PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_1": "0.058",
+        "PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_2": "-0.009",
+        "PCW_PACKAGE_DDR_DQS_TO_CLK_DELAY_3": "-0.033",
+        "PCW_PACKAGE_DDR_BOARD_DELAY0": "0.223",
+        "PCW_PACKAGE_DDR_BOARD_DELAY1": "0.212",
+        "PCW_PACKAGE_DDR_BOARD_DELAY2": "0.085",
+        "PCW_PACKAGE_DDR_BOARD_DELAY3": "0.092",
+        "PCW_CPU_CPU_6X4X_MAX_RANGE": "667",
+        "PCW_CRYSTAL_PERIPHERAL_FREQMHZ": "50",
+        "PCW_APU_PERIPHERAL_FREQMHZ": "650",
+        "PCW_DCI_PERIPHERAL_FREQMHZ": "10.159",
+        "PCW_QSPI_PERIPHERAL_FREQMHZ": "200",
+        "PCW_SMC_PERIPHERAL_FREQMHZ": "100",
+        "PCW_USB0_PERIPHERAL_FREQMHZ": "60",
+        "PCW_USB1_PERIPHERAL_FREQMHZ": "60",
+        "PCW_SDIO_PERIPHERAL_FREQMHZ": "50",
+        "PCW_UART_PERIPHERAL_FREQMHZ": "100",
+        "PCW_SPI_PERIPHERAL_FREQMHZ": "166.666666",
+        "PCW_CAN_PERIPHERAL_FREQMHZ": "100",
+        "PCW_CAN0_PERIPHERAL_FREQMHZ": "-1",
+        "PCW_CAN1_PERIPHERAL_FREQMHZ": "-1",
+        "PCW_I2C_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_WDT_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_TTC_PERIPHERAL_FREQMHZ": "50",
+        "PCW_TTC0_CLK0_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_TTC0_CLK1_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_TTC0_CLK2_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_TTC1_CLK0_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_TTC1_CLK1_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_TTC1_CLK2_PERIPHERAL_FREQMHZ": "133.333333",
+        "PCW_PCAP_PERIPHERAL_FREQMHZ": "200",
+        "PCW_TPIU_PERIPHERAL_FREQMHZ": "200",
+        "PCW_FPGA0_PERIPHERAL_FREQMHZ": "100",
+        "PCW_FPGA1_PERIPHERAL_FREQMHZ": "142",
+        "PCW_FPGA2_PERIPHERAL_FREQMHZ": "200",
+        "PCW_FPGA3_PERIPHERAL_FREQMHZ": "100",
+        "PCW_ACT_APU_PERIPHERAL_FREQMHZ": "650.000000",
+        "PCW_UIPARAM_ACT_DDR_FREQ_MHZ": "525.000000",
+        "PCW_ACT_DCI_PERIPHERAL_FREQMHZ": "10.096154",
+        "PCW_ACT_QSPI_PERIPHERAL_FREQMHZ": "200.000000",
+        "PCW_ACT_SMC_PERIPHERAL_FREQMHZ": "10.000000",
+        "PCW_ACT_ENET0_PERIPHERAL_FREQMHZ": "125.000000",
+        "PCW_ACT_ENET1_PERIPHERAL_FREQMHZ": "10.000000",
+        "PCW_ACT_USB0_PERIPHERAL_FREQMHZ": "60",
+        "PCW_ACT_USB1_PERIPHERAL_FREQMHZ": "60",
+        "PCW_ACT_SDIO_PERIPHERAL_FREQMHZ": "50.000000",
+        "PCW_ACT_UART_PERIPHERAL_FREQMHZ": "100.000000",
+        "PCW_ACT_SPI_PERIPHERAL_FREQMHZ": "10.000000",
+        "PCW_ACT_CAN_PERIPHERAL_FREQMHZ": "10.000000",
+        "PCW_ACT_CAN0_PERIPHERAL_FREQMHZ": "23.8095",
+        "PCW_ACT_CAN1_PERIPHERAL_FREQMHZ": "23.8095",
+        "PCW_ACT_I2C_PERIPHERAL_FREQMHZ": "50",
+        "PCW_ACT_WDT_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_ACT_TTC_PERIPHERAL_FREQMHZ": "50",
+        "PCW_ACT_PCAP_PERIPHERAL_FREQMHZ": "200.000000",
+        "PCW_ACT_TPIU_PERIPHERAL_FREQMHZ": "200.000000",
+        "PCW_ACT_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+        "PCW_ACT_FPGA1_PERIPHERAL_FREQMHZ": "142.857132",
+        "PCW_ACT_FPGA2_PERIPHERAL_FREQMHZ": "200.000000",
+        "PCW_ACT_FPGA3_PERIPHERAL_FREQMHZ": "100.000000",
+        "PCW_ACT_TTC0_CLK0_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_ACT_TTC0_CLK1_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_ACT_TTC0_CLK2_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_ACT_TTC1_CLK0_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_ACT_TTC1_CLK1_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_ACT_TTC1_CLK2_PERIPHERAL_FREQMHZ": "108.333336",
+        "PCW_CLK0_FREQ": "100000000",
+        "PCW_CLK1_FREQ": "142857132",
+        "PCW_CLK2_FREQ": "200000000",
+        "PCW_CLK3_FREQ": "100000000",
+        "PCW_OVERRIDE_BASIC_CLOCK": "0",
+        "PCW_CPU_PERIPHERAL_DIVISOR0": "2",
+        "PCW_DDR_PERIPHERAL_DIVISOR0": "2",
+        "PCW_SMC_PERIPHERAL_DIVISOR0": "1",
+        "PCW_QSPI_PERIPHERAL_DIVISOR0": "5",
+        "PCW_SDIO_PERIPHERAL_DIVISOR0": "20",
+        "PCW_UART_PERIPHERAL_DIVISOR0": "10",
+        "PCW_SPI_PERIPHERAL_DIVISOR0": "1",
+        "PCW_CAN_PERIPHERAL_DIVISOR0": "1",
+        "PCW_CAN_PERIPHERAL_DIVISOR1": "1",
+        "PCW_FCLK0_PERIPHERAL_DIVISOR0": "5",
+        "PCW_FCLK1_PERIPHERAL_DIVISOR0": "7",
+        "PCW_FCLK2_PERIPHERAL_DIVISOR0": "5",
+        "PCW_FCLK3_PERIPHERAL_DIVISOR0": "5",
+        "PCW_FCLK0_PERIPHERAL_DIVISOR1": "2",
+        "PCW_FCLK1_PERIPHERAL_DIVISOR1": "1",
+        "PCW_FCLK2_PERIPHERAL_DIVISOR1": "1",
+        "PCW_FCLK3_PERIPHERAL_DIVISOR1": "2",
+        "PCW_ENET0_PERIPHERAL_DIVISOR0": "8",
+        "PCW_ENET1_PERIPHERAL_DIVISOR0": "1",
+        "PCW_ENET0_PERIPHERAL_DIVISOR1": "1",
+        "PCW_ENET1_PERIPHERAL_DIVISOR1": "1",
+        "PCW_TPIU_PERIPHERAL_DIVISOR0": "1",
+        "PCW_DCI_PERIPHERAL_DIVISOR0": "52",
+        "PCW_DCI_PERIPHERAL_DIVISOR1": "2",
+        "PCW_PCAP_PERIPHERAL_DIVISOR0": "5",
+        "PCW_TTC0_CLK0_PERIPHERAL_DIVISOR0": "1",
+        "PCW_TTC0_CLK1_PERIPHERAL_DIVISOR0": "1",
+        "PCW_TTC0_CLK2_PERIPHERAL_DIVISOR0": "1",
+        "PCW_TTC1_CLK0_PERIPHERAL_DIVISOR0": "1",
+        "PCW_TTC1_CLK1_PERIPHERAL_DIVISOR0": "1",
+        "PCW_TTC1_CLK2_PERIPHERAL_DIVISOR0": "1",
+        "PCW_WDT_PERIPHERAL_DIVISOR0": "1",
+        "PCW_ARMPLL_CTRL_FBDIV": "26",
+        "PCW_IOPLL_CTRL_FBDIV": "20",
+        "PCW_DDRPLL_CTRL_FBDIV": "21",
+        "PCW_CPU_CPU_PLL_FREQMHZ": "1300.000",
+        "PCW_IO_IO_PLL_FREQMHZ": "1000.000",
+        "PCW_DDR_DDR_PLL_FREQMHZ": "1050.000",
+        "PCW_SMC_PERIPHERAL_VALID": "0",
+        "PCW_SDIO_PERIPHERAL_VALID": "1",
+        "PCW_SPI_PERIPHERAL_VALID": "0",
+        "PCW_CAN_PERIPHERAL_VALID": "0",
+        "PCW_UART_PERIPHERAL_VALID": "1",
+        "PCW_EN_EMIO_CAN0": "0",
+        "PCW_EN_EMIO_CAN1": "0",
+        "PCW_EN_EMIO_ENET0": "0",
+        "PCW_EN_EMIO_ENET1": "0",
+        "PCW_EN_PTP_ENET0": "0",
+        "PCW_EN_PTP_ENET1": "0",
+        "PCW_EN_EMIO_GPIO": "0",
+        "PCW_EN_EMIO_I2C0": "0",
+        "PCW_EN_EMIO_I2C1": "0",
+        "PCW_EN_EMIO_PJTAG": "0",
+        "PCW_EN_EMIO_SDIO0": "0",
+        "PCW_EN_EMIO_CD_SDIO0": "0",
+        "PCW_EN_EMIO_WP_SDIO0": "0",
+        "PCW_EN_EMIO_SDIO1": "0",
+        "PCW_EN_EMIO_CD_SDIO1": "0",
+        "PCW_EN_EMIO_WP_SDIO1": "0",
+        "PCW_EN_EMIO_SPI0": "0",
+        "PCW_EN_EMIO_SPI1": "0",
+        "PCW_EN_EMIO_UART0": "0",
+        "PCW_EN_EMIO_UART1": "0",
+        "PCW_EN_EMIO_MODEM_UART0": "0",
+        "PCW_EN_EMIO_MODEM_UART1": "0",
+        "PCW_EN_EMIO_TTC0": "0",
+        "PCW_EN_EMIO_TTC1": "0",
+        "PCW_EN_EMIO_WDT": "0",
+        "PCW_EN_EMIO_TRACE": "0",
+        "PCW_USE_AXI_NONSECURE": "0",
+        "PCW_USE_M_AXI_GP0": "1",
+        "PCW_USE_M_AXI_GP1": "0",
+        "PCW_USE_S_AXI_GP0": "0",
+        "PCW_USE_S_AXI_GP1": "0",
+        "PCW_USE_S_AXI_ACP": "0",
+        "PCW_USE_S_AXI_HP0": "1",
+        "PCW_USE_S_AXI_HP1": "0",
+        "PCW_USE_S_AXI_HP2": "1",
+        "PCW_USE_S_AXI_HP3": "0",
+        "PCW_M_AXI_GP0_FREQMHZ": "100",
+        "PCW_M_AXI_GP1_FREQMHZ": "10",
+        "PCW_S_AXI_GP0_FREQMHZ": "10",
+        "PCW_S_AXI_GP1_FREQMHZ": "10",
+        "PCW_S_AXI_ACP_FREQMHZ": "10",
+        "PCW_S_AXI_HP0_FREQMHZ": "142",
+        "PCW_S_AXI_HP1_FREQMHZ": "10",
+        "PCW_S_AXI_HP2_FREQMHZ": "100",
+        "PCW_S_AXI_HP3_FREQMHZ": "10",
+        "PCW_USE_DMA0": "0",
+        "PCW_USE_DMA1": "0",
+        "PCW_USE_DMA2": "0",
+        "PCW_USE_DMA3": "0",
+        "PCW_USE_TRACE": "0",
+        "PCW_TRACE_PIPELINE_WIDTH": "8",
+        "PCW_INCLUDE_TRACE_BUFFER": "0",
+        "PCW_TRACE_BUFFER_FIFO_SIZE": "128",
+        "PCW_USE_TRACE_DATA_EDGE_DETECTOR": "0",
+        "PCW_TRACE_BUFFER_CLOCK_DELAY": "12",
+        "PCW_USE_CROSS_TRIGGER": "0",
+        "PCW_FTM_CTI_IN0": "<Select>",
+        "PCW_FTM_CTI_IN1": "<Select>",
+        "PCW_FTM_CTI_IN2": "<Select>",
+        "PCW_FTM_CTI_IN3": "<Select>",
+        "PCW_FTM_CTI_OUT0": "<Select>",
+        "PCW_FTM_CTI_OUT1": "<Select>",
+        "PCW_FTM_CTI_OUT2": "<Select>",
+        "PCW_FTM_CTI_OUT3": "<Select>",
+        "PCW_USE_DEBUG": "0",
+        "PCW_USE_CR_FABRIC": "1",
+        "PCW_USE_AXI_FABRIC_IDLE": "0",
+        "PCW_USE_DDR_BYPASS": "0",
+        "PCW_USE_FABRIC_INTERRUPT": "1",
+        "PCW_USE_PROC_EVENT_BUS": "0",
+        "PCW_USE_EXPANDED_IOP": "0",
+        "PCW_USE_HIGH_OCM": "0",
+        "PCW_USE_PS_SLCR_REGISTERS": "0",
+        "PCW_USE_EXPANDED_PS_SLCR_REGISTERS": "0",
+        "PCW_USE_CORESIGHT": "0",
+        "PCW_EN_EMIO_SRAM_INT": "0",
+        "PCW_GPIO_EMIO_GPIO_WIDTH": "64",
+        "PCW_GP0_NUM_WRITE_THREADS": "4",
+        "PCW_GP0_NUM_READ_THREADS": "4",
+        "PCW_GP1_NUM_WRITE_THREADS": "4",
+        "PCW_GP1_NUM_READ_THREADS": "4",
+        "PCW_UART0_BAUD_RATE": "115200",
+        "PCW_UART1_BAUD_RATE": "115200",
+        "PCW_EN_4K_TIMER": "0",
+        "PCW_M_AXI_GP0_ID_WIDTH": "12",
+        "PCW_M_AXI_GP0_ENABLE_STATIC_REMAP": "0",
+        "PCW_M_AXI_GP0_SUPPORT_NARROW_BURST": "0",
+        "PCW_M_AXI_GP0_THREAD_ID_WIDTH": "12",
+        "PCW_M_AXI_GP1_ID_WIDTH": "12",
+        "PCW_M_AXI_GP1_ENABLE_STATIC_REMAP": "0",
+        "PCW_M_AXI_GP1_SUPPORT_NARROW_BURST": "0",
+        "PCW_M_AXI_GP1_THREAD_ID_WIDTH": "12",
+        "PCW_S_AXI_GP0_ID_WIDTH": "6",
+        "PCW_S_AXI_GP1_ID_WIDTH": "6",
+        "PCW_S_AXI_ACP_ID_WIDTH": "3",
+        "PCW_INCLUDE_ACP_TRANS_CHECK": "0",
+        "PCW_USE_DEFAULT_ACP_USER_VAL": "0",
+        "PCW_S_AXI_ACP_ARUSER_VAL": "31",
+        "PCW_S_AXI_ACP_AWUSER_VAL": "31",
+        "PCW_S_AXI_HP0_ID_WIDTH": "6",
+        "PCW_S_AXI_HP0_DATA_WIDTH": "64",
+        "PCW_S_AXI_HP1_ID_WIDTH": "6",
+        "PCW_S_AXI_HP1_DATA_WIDTH": "64",
+        "PCW_S_AXI_HP2_ID_WIDTH": "6",
+        "PCW_S_AXI_HP2_DATA_WIDTH": "64",
+        "PCW_S_AXI_HP3_ID_WIDTH": "6",
+        "PCW_S_AXI_HP3_DATA_WIDTH": "64",
+        "PCW_NUM_F2P_INTR_INPUTS": "1",
+        "PCW_EN_DDR": "1",
+        "PCW_EN_SMC": "0",
+        "PCW_EN_QSPI": "1",
+        "PCW_EN_CAN0": "0",
+        "PCW_EN_CAN1": "0",
+        "PCW_EN_ENET0": "1",
+        "PCW_EN_ENET1": "0",
+        "PCW_EN_GPIO": "0",
+        "PCW_EN_I2C0": "1",
+        "PCW_EN_I2C1": "0",
+        "PCW_EN_PJTAG": "0",
+        "PCW_EN_SDIO0": "1",
+        "PCW_EN_SDIO1": "0",
+        "PCW_EN_SPI0": "0",
+        "PCW_EN_SPI1": "0",
+        "PCW_EN_UART0": "1",
+        "PCW_EN_UART1": "0",
+        "PCW_EN_MODEM_UART0": "0",
+        "PCW_EN_MODEM_UART1": "0",
+        "PCW_EN_TTC0": "0",
+        "PCW_EN_TTC1": "0",
+        "PCW_EN_WDT": "0",
+        "PCW_EN_TRACE": "0",
+        "PCW_EN_USB0": "1",
+        "PCW_EN_USB1": "0",
+        "PCW_DQ_WIDTH": "32",
+        "PCW_DQS_WIDTH": "4",
+        "PCW_DM_WIDTH": "4",
+        "PCW_MIO_PRIMITIVE": "54",
+        "PCW_EN_CLK0_PORT": "1",
+        "PCW_EN_CLK1_PORT": "1",
+        "PCW_EN_CLK2_PORT": "1",
+        "PCW_EN_CLK3_PORT": "1",
+        "PCW_EN_RST0_PORT": "1",
+        "PCW_EN_RST1_PORT": "0",
+        "PCW_EN_RST2_PORT": "0",
+        "PCW_EN_RST3_PORT": "0",
+        "PCW_EN_CLKTRIG0_PORT": "0",
+        "PCW_EN_CLKTRIG1_PORT": "0",
+        "PCW_EN_CLKTRIG2_PORT": "0",
+        "PCW_EN_CLKTRIG3_PORT": "0",
+        "PCW_P2F_DMAC_ABORT_INTR": "0",
+        "PCW_P2F_DMAC0_INTR": "0",
+        "PCW_P2F_DMAC1_INTR": "0",
+        "PCW_P2F_DMAC2_INTR": "0",
+        "PCW_P2F_DMAC3_INTR": "0",
+        "PCW_P2F_DMAC4_INTR": "0",
+        "PCW_P2F_DMAC5_INTR": "0",
+        "PCW_P2F_DMAC6_INTR": "0",
+        "PCW_P2F_DMAC7_INTR": "0",
+        "PCW_P2F_SMC_INTR": "0",
+        "PCW_P2F_QSPI_INTR": "0",
+        "PCW_P2F_CTI_INTR": "0",
+        "PCW_P2F_GPIO_INTR": "0",
+        "PCW_P2F_USB0_INTR": "0",
+        "PCW_P2F_ENET0_INTR": "0",
+        "PCW_P2F_SDIO0_INTR": "0",
+        "PCW_P2F_I2C0_INTR": "0",
+        "PCW_P2F_SPI0_INTR": "0",
+        "PCW_P2F_UART0_INTR": "0",
+        "PCW_P2F_CAN0_INTR": "0",
+        "PCW_P2F_USB1_INTR": "0",
+        "PCW_P2F_ENET1_INTR": "0",
+        "PCW_P2F_SDIO1_INTR": "0",
+        "PCW_P2F_I2C1_INTR": "0",
+        "PCW_P2F_SPI1_INTR": "0",
+        "PCW_P2F_UART1_INTR": "0",
+        "PCW_P2F_CAN1_INTR": "0",
+        "PCW_IRQ_F2P_INTR": "1",
+        "PCW_IRQ_F2P_MODE": "DIRECT",
+        "PCW_CORE0_FIQ_INTR": "0",
+        "PCW_CORE0_IRQ_INTR": "0",
+        "PCW_CORE1_FIQ_INTR": "0",
+        "PCW_CORE1_IRQ_INTR": "0",
+        "PCW_VALUE_SILVERSION": "3",
+        "PCW_GP0_EN_MODIFIABLE_TXN": "1",
+        "PCW_GP1_EN_MODIFIABLE_TXN": "1",
+        "PCW_IMPORT_BOARD_PRESET": "None",
+        "PCW_PERIPHERAL_BOARD_PRESET": "None",
+        "PCW_PRESET_BANK0_VOLTAGE": "LVCMOS 3.3V",
+        "PCW_PRESET_BANK1_VOLTAGE": "LVCMOS 1.8V",
+        "PCW_UIPARAM_DDR_ENABLE": "1",
+        "PCW_UIPARAM_DDR_ADV_ENABLE": "0",
+        "PCW_UIPARAM_DDR_MEMORY_TYPE": "DDR 3",
+        "PCW_UIPARAM_DDR_ECC": "Disabled",
+        "PCW_UIPARAM_DDR_BUS_WIDTH": "16 Bit",
+        "PCW_UIPARAM_DDR_BL": "8",
+        "PCW_UIPARAM_DDR_HIGH_TEMP": "Normal (0-85)",
+        "PCW_UIPARAM_DDR_PARTNO": "Custom",
+        "PCW_UIPARAM_DDR_DRAM_WIDTH": "16 Bits",
+        "PCW_UIPARAM_DDR_DEVICE_CAPACITY": "4096 MBits",
+        "PCW_UIPARAM_DDR_SPEED_BIN": "DDR3_1066F",
+        "PCW_UIPARAM_DDR_TRAIN_WRITE_LEVEL": "1",
+        "PCW_UIPARAM_DDR_TRAIN_READ_GATE": "1",
+        "PCW_UIPARAM_DDR_TRAIN_DATA_EYE": "1",
+        "PCW_UIPARAM_DDR_CLOCK_STOP_EN": "0",
+        "PCW_UIPARAM_DDR_USE_INTERNAL_VREF": "0",
+        "PCW_DDR_PRIORITY_WRITEPORT_0": "<Select>",
+        "PCW_DDR_PRIORITY_WRITEPORT_1": "<Select>",
+        "PCW_DDR_PRIORITY_WRITEPORT_2": "<Select>",
+        "PCW_DDR_PRIORITY_WRITEPORT_3": "<Select>",
+        "PCW_DDR_PRIORITY_READPORT_0": "<Select>",
+        "PCW_DDR_PRIORITY_READPORT_1": "<Select>",
+        "PCW_DDR_PRIORITY_READPORT_2": "<Select>",
+        "PCW_DDR_PRIORITY_READPORT_3": "<Select>",
+        "PCW_DDR_PORT0_HPR_ENABLE": "0",
+        "PCW_DDR_PORT1_HPR_ENABLE": "0",
+        "PCW_DDR_PORT2_HPR_ENABLE": "0",
+        "PCW_DDR_PORT3_HPR_ENABLE": "0",
+        "PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+        "PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+        "PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+        "PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+        "PCW_NAND_PERIPHERAL_ENABLE": "0",
+        "PCW_NAND_NAND_IO": "<Select>",
+        "PCW_NAND_GRP_D8_ENABLE": "0",
+        "PCW_NAND_GRP_D8_IO": "<Select>",
+        "PCW_NOR_PERIPHERAL_ENABLE": "0",
+        "PCW_NOR_NOR_IO": "<Select>",
+        "PCW_NOR_GRP_A25_ENABLE": "0",
+        "PCW_NOR_GRP_A25_IO": "<Select>",
+        "PCW_NOR_GRP_CS0_ENABLE": "0",
+        "PCW_NOR_GRP_CS0_IO": "<Select>",
+        "PCW_NOR_GRP_SRAM_CS0_ENABLE": "0",
+        "PCW_NOR_GRP_SRAM_CS0_IO": "<Select>",
+        "PCW_NOR_GRP_CS1_ENABLE": "0",
+        "PCW_NOR_GRP_CS1_IO": "<Select>",
+        "PCW_NOR_GRP_SRAM_CS1_ENABLE": "0",
+        "PCW_NOR_GRP_SRAM_CS1_IO": "<Select>",
+        "PCW_NOR_GRP_SRAM_INT_ENABLE": "0",
+        "PCW_NOR_GRP_SRAM_INT_IO": "<Select>",
+        "PCW_QSPI_PERIPHERAL_ENABLE": "1",
+        "PCW_QSPI_QSPI_IO": "MIO 1 .. 6",
+        "PCW_QSPI_GRP_SINGLE_SS_ENABLE": "1",
+        "PCW_QSPI_GRP_SINGLE_SS_IO": "MIO 1 .. 6",
+        "PCW_QSPI_GRP_SS1_ENABLE": "0",
+        "PCW_QSPI_GRP_SS1_IO": "<Select>",
+        "PCW_SINGLE_QSPI_DATA_MODE": "x4",
+        "PCW_DUAL_STACK_QSPI_DATA_MODE": "<Select>",
+        "PCW_DUAL_PARALLEL_QSPI_DATA_MODE": "<Select>",
+        "PCW_QSPI_GRP_IO1_ENABLE": "0",
+        "PCW_QSPI_GRP_IO1_IO": "<Select>",
+        "PCW_QSPI_GRP_FBCLK_ENABLE": "1",
+        "PCW_QSPI_GRP_FBCLK_IO": "MIO 8",
+        "PCW_QSPI_INTERNAL_HIGHADDRESS": "0xFCFFFFFF",
+        "PCW_ENET0_PERIPHERAL_ENABLE": "1",
+        "PCW_ENET0_ENET0_IO": "MIO 16 .. 27",
+        "PCW_ENET0_GRP_MDIO_ENABLE": "1",
+        "PCW_ENET0_GRP_MDIO_IO": "MIO 52 .. 53",
+        "PCW_ENET_RESET_ENABLE": "0",
+        "PCW_ENET_RESET_SELECT": "<Select>",
+        "PCW_ENET0_RESET_ENABLE": "0",
+        "PCW_ENET0_RESET_IO": "<Select>",
+        "PCW_ENET1_PERIPHERAL_ENABLE": "0",
+        "PCW_ENET1_ENET1_IO": "<Select>",
+        "PCW_ENET1_GRP_MDIO_ENABLE": "0",
+        "PCW_ENET1_GRP_MDIO_IO": "<Select>",
+        "PCW_ENET1_RESET_ENABLE": "0",
+        "PCW_ENET1_RESET_IO": "<Select>",
+        "PCW_SD0_PERIPHERAL_ENABLE": "1",
+        "PCW_SD0_SD0_IO": "MIO 40 .. 45",
+        "PCW_SD0_GRP_CD_ENABLE": "1",
+        "PCW_SD0_GRP_CD_IO": "MIO 47",
+        "PCW_SD0_GRP_WP_ENABLE": "0",
+        "PCW_SD0_GRP_WP_IO": "<Select>",
+        "PCW_SD0_GRP_POW_ENABLE": "0",
+        "PCW_SD0_GRP_POW_IO": "<Select>",
+        "PCW_SD1_PERIPHERAL_ENABLE": "0",
+        "PCW_SD1_SD1_IO": "<Select>",
+        "PCW_SD1_GRP_CD_ENABLE": "0",
+        "PCW_SD1_GRP_CD_IO": "<Select>",
+        "PCW_SD1_GRP_WP_ENABLE": "0",
+        "PCW_SD1_GRP_WP_IO": "<Select>",
+        "PCW_SD1_GRP_POW_ENABLE": "0",
+        "PCW_SD1_GRP_POW_IO": "<Select>",
+        "PCW_UART0_PERIPHERAL_ENABLE": "1",
+        "PCW_UART0_UART0_IO": "MIO 14 .. 15",
+        "PCW_UART0_GRP_FULL_ENABLE": "0",
+        "PCW_UART0_GRP_FULL_IO": "<Select>",
+        "PCW_UART1_PERIPHERAL_ENABLE": "0",
+        "PCW_UART1_UART1_IO": "<Select>",
+        "PCW_UART1_GRP_FULL_ENABLE": "0",
+        "PCW_UART1_GRP_FULL_IO": "<Select>",
+        "PCW_SPI0_PERIPHERAL_ENABLE": "0",
+        "PCW_SPI0_SPI0_IO": "<Select>",
+        "PCW_SPI0_GRP_SS0_ENABLE": "0",
+        "PCW_SPI0_GRP_SS0_IO": "<Select>",
+        "PCW_SPI0_GRP_SS1_ENABLE": "0",
+        "PCW_SPI0_GRP_SS1_IO": "<Select>",
+        "PCW_SPI0_GRP_SS2_ENABLE": "0",
+        "PCW_SPI0_GRP_SS2_IO": "<Select>",
+        "PCW_SPI1_PERIPHERAL_ENABLE": "0",
+        "PCW_SPI1_SPI1_IO": "<Select>",
+        "PCW_SPI1_GRP_SS0_ENABLE": "0",
+        "PCW_SPI1_GRP_SS0_IO": "<Select>",
+        "PCW_SPI1_GRP_SS1_ENABLE": "0",
+        "PCW_SPI1_GRP_SS1_IO": "<Select>",
+        "PCW_SPI1_GRP_SS2_ENABLE": "0",
+        "PCW_SPI1_GRP_SS2_IO": "<Select>",
+        "PCW_CAN0_PERIPHERAL_ENABLE": "0",
+        "PCW_CAN0_CAN0_IO": "<Select>",
+        "PCW_CAN0_GRP_CLK_ENABLE": "0",
+        "PCW_CAN0_GRP_CLK_IO": "<Select>",
+        "PCW_CAN1_PERIPHERAL_ENABLE": "0",
+        "PCW_CAN1_CAN1_IO": "<Select>",
+        "PCW_CAN1_GRP_CLK_ENABLE": "0",
+        "PCW_CAN1_GRP_CLK_IO": "<Select>",
+        "PCW_TRACE_PERIPHERAL_ENABLE": "0",
+        "PCW_TRACE_TRACE_IO": "<Select>",
+        "PCW_TRACE_GRP_2BIT_ENABLE": "0",
+        "PCW_TRACE_GRP_2BIT_IO": "<Select>",
+        "PCW_TRACE_GRP_4BIT_ENABLE": "0",
+        "PCW_TRACE_GRP_4BIT_IO": "<Select>",
+        "PCW_TRACE_GRP_8BIT_ENABLE": "0",
+        "PCW_TRACE_GRP_8BIT_IO": "<Select>",
+        "PCW_TRACE_GRP_16BIT_ENABLE": "0",
+        "PCW_TRACE_GRP_16BIT_IO": "<Select>",
+        "PCW_TRACE_GRP_32BIT_ENABLE": "0",
+        "PCW_TRACE_GRP_32BIT_IO": "<Select>",
+        "PCW_TRACE_INTERNAL_WIDTH": "2",
+        "PCW_WDT_PERIPHERAL_ENABLE": "0",
+        "PCW_WDT_WDT_IO": "<Select>",
+        "PCW_TTC0_PERIPHERAL_ENABLE": "0",
+        "PCW_TTC0_TTC0_IO": "<Select>",
+        "PCW_TTC1_PERIPHERAL_ENABLE": "0",
+        "PCW_TTC1_TTC1_IO": "<Select>",
+        "PCW_PJTAG_PERIPHERAL_ENABLE": "0",
+        "PCW_PJTAG_PJTAG_IO": "<Select>",
+        "PCW_USB0_PERIPHERAL_ENABLE": "1",
+        "PCW_USB0_USB0_IO": "MIO 28 .. 39",
+        "PCW_USB_RESET_ENABLE": "0",
+        "PCW_USB_RESET_SELECT": "<Select>",
+        "PCW_USB0_RESET_ENABLE": "0",
+        "PCW_USB0_RESET_IO": "<Select>",
+        "PCW_USB1_PERIPHERAL_ENABLE": "0",
+        "PCW_USB1_USB1_IO": "<Select>",
+        "PCW_USB1_RESET_ENABLE": "0",
+        "PCW_USB1_RESET_IO": "<Select>",
+        "PCW_I2C0_PERIPHERAL_ENABLE": "1",
+        "PCW_I2C0_I2C0_IO": "MIO 50 .. 51",
+        "PCW_I2C0_GRP_INT_ENABLE": "1",
+        "PCW_I2C0_GRP_INT_IO": "EMIO",
+        "PCW_I2C0_RESET_ENABLE": "0",
+        "PCW_I2C0_RESET_IO": "<Select>",
+        "PCW_I2C1_PERIPHERAL_ENABLE": "0",
+        "PCW_I2C1_I2C1_IO": "<Select>",
+        "PCW_I2C1_GRP_INT_ENABLE": "0",
+        "PCW_I2C1_GRP_INT_IO": "<Select>",
+        "PCW_I2C_RESET_ENABLE": "0",
+        "PCW_I2C_RESET_SELECT": "<Select>",
+        "PCW_I2C1_RESET_ENABLE": "0",
+        "PCW_I2C1_RESET_IO": "<Select>",
+        "PCW_GPIO_PERIPHERAL_ENABLE": "0",
+        "PCW_GPIO_MIO_GPIO_ENABLE": "0",
+        "PCW_GPIO_MIO_GPIO_IO": "<Select>",
+        "PCW_GPIO_EMIO_GPIO_ENABLE": "0",
+        "PCW_GPIO_EMIO_GPIO_IO": "<Select>",
+        "PCW_APU_CLK_RATIO_ENABLE": "6:2:1",
+        "PCW_ENET0_PERIPHERAL_FREQMHZ": "1000 Mbps",
+        "PCW_ENET1_PERIPHERAL_FREQMHZ": "1000 Mbps",
+        "PCW_CPU_PERIPHERAL_CLKSRC": "ARM PLL",
+        "PCW_DDR_PERIPHERAL_CLKSRC": "DDR PLL",
+        "PCW_SMC_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_QSPI_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_SDIO_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_UART_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_SPI_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_CAN_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_FCLK0_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_FCLK1_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_FCLK2_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_FCLK3_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_ENET0_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_ENET1_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_CAN0_PERIPHERAL_CLKSRC": "External",
+        "PCW_CAN1_PERIPHERAL_CLKSRC": "External",
+        "PCW_TPIU_PERIPHERAL_CLKSRC": "External",
+        "PCW_TTC0_CLK0_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_TTC0_CLK1_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_TTC0_CLK2_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_TTC1_CLK0_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_TTC1_CLK1_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_TTC1_CLK2_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_WDT_PERIPHERAL_CLKSRC": "CPU_1X",
+        "PCW_DCI_PERIPHERAL_CLKSRC": "DDR PLL",
+        "PCW_PCAP_PERIPHERAL_CLKSRC": "IO PLL",
+        "PCW_USB_RESET_POLARITY": "Active Low",
+        "PCW_ENET_RESET_POLARITY": "Active Low",
+        "PCW_I2C_RESET_POLARITY": "Active Low",
+        "PCW_MIO_0_PULLUP": "<Select>",
+        "PCW_MIO_0_IOTYPE": "<Select>",
+        "PCW_MIO_0_DIRECTION": "<Select>",
+        "PCW_MIO_0_SLEW": "<Select>",
+        "PCW_MIO_1_PULLUP": "enabled",
+        "PCW_MIO_1_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_1_DIRECTION": "out",
+        "PCW_MIO_1_SLEW": "slow",
+        "PCW_MIO_2_PULLUP": "disabled",
+        "PCW_MIO_2_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_2_DIRECTION": "inout",
+        "PCW_MIO_2_SLEW": "slow",
+        "PCW_MIO_3_PULLUP": "disabled",
+        "PCW_MIO_3_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_3_DIRECTION": "inout",
+        "PCW_MIO_3_SLEW": "slow",
+        "PCW_MIO_4_PULLUP": "disabled",
+        "PCW_MIO_4_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_4_DIRECTION": "inout",
+        "PCW_MIO_4_SLEW": "slow",
+        "PCW_MIO_5_PULLUP": "disabled",
+        "PCW_MIO_5_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_5_DIRECTION": "inout",
+        "PCW_MIO_5_SLEW": "slow",
+        "PCW_MIO_6_PULLUP": "disabled",
+        "PCW_MIO_6_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_6_DIRECTION": "out",
+        "PCW_MIO_6_SLEW": "slow",
+        "PCW_MIO_7_PULLUP": "<Select>",
+        "PCW_MIO_7_IOTYPE": "<Select>",
+        "PCW_MIO_7_DIRECTION": "<Select>",
+        "PCW_MIO_7_SLEW": "<Select>",
+        "PCW_MIO_8_PULLUP": "disabled",
+        "PCW_MIO_8_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_8_DIRECTION": "out",
+        "PCW_MIO_8_SLEW": "slow",
+        "PCW_MIO_9_PULLUP": "<Select>",
+        "PCW_MIO_9_IOTYPE": "<Select>",
+        "PCW_MIO_9_DIRECTION": "<Select>",
+        "PCW_MIO_9_SLEW": "<Select>",
+        "PCW_MIO_10_PULLUP": "<Select>",
+        "PCW_MIO_10_IOTYPE": "<Select>",
+        "PCW_MIO_10_DIRECTION": "<Select>",
+        "PCW_MIO_10_SLEW": "<Select>",
+        "PCW_MIO_11_PULLUP": "<Select>",
+        "PCW_MIO_11_IOTYPE": "<Select>",
+        "PCW_MIO_11_DIRECTION": "<Select>",
+        "PCW_MIO_11_SLEW": "<Select>",
+        "PCW_MIO_12_PULLUP": "<Select>",
+        "PCW_MIO_12_IOTYPE": "<Select>",
+        "PCW_MIO_12_DIRECTION": "<Select>",
+        "PCW_MIO_12_SLEW": "<Select>",
+        "PCW_MIO_13_PULLUP": "<Select>",
+        "PCW_MIO_13_IOTYPE": "<Select>",
+        "PCW_MIO_13_DIRECTION": "<Select>",
+        "PCW_MIO_13_SLEW": "<Select>",
+        "PCW_MIO_14_PULLUP": "enabled",
+        "PCW_MIO_14_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_14_DIRECTION": "in",
+        "PCW_MIO_14_SLEW": "slow",
+        "PCW_MIO_15_PULLUP": "enabled",
+        "PCW_MIO_15_IOTYPE": "LVCMOS 3.3V",
+        "PCW_MIO_15_DIRECTION": "out",
+        "PCW_MIO_15_SLEW": "slow",
+        "PCW_MIO_16_PULLUP": "enabled",
+        "PCW_MIO_16_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_16_DIRECTION": "out",
+        "PCW_MIO_16_SLEW": "slow",
+        "PCW_MIO_17_PULLUP": "enabled",
+        "PCW_MIO_17_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_17_DIRECTION": "out",
+        "PCW_MIO_17_SLEW": "slow",
+        "PCW_MIO_18_PULLUP": "enabled",
+        "PCW_MIO_18_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_18_DIRECTION": "out",
+        "PCW_MIO_18_SLEW": "slow",
+        "PCW_MIO_19_PULLUP": "enabled",
+        "PCW_MIO_19_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_19_DIRECTION": "out",
+        "PCW_MIO_19_SLEW": "slow",
+        "PCW_MIO_20_PULLUP": "enabled",
+        "PCW_MIO_20_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_20_DIRECTION": "out",
+        "PCW_MIO_20_SLEW": "slow",
+        "PCW_MIO_21_PULLUP": "enabled",
+        "PCW_MIO_21_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_21_DIRECTION": "out",
+        "PCW_MIO_21_SLEW": "slow",
+        "PCW_MIO_22_PULLUP": "enabled",
+        "PCW_MIO_22_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_22_DIRECTION": "in",
+        "PCW_MIO_22_SLEW": "slow",
+        "PCW_MIO_23_PULLUP": "enabled",
+        "PCW_MIO_23_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_23_DIRECTION": "in",
+        "PCW_MIO_23_SLEW": "slow",
+        "PCW_MIO_24_PULLUP": "enabled",
+        "PCW_MIO_24_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_24_DIRECTION": "in",
+        "PCW_MIO_24_SLEW": "slow",
+        "PCW_MIO_25_PULLUP": "enabled",
+        "PCW_MIO_25_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_25_DIRECTION": "in",
+        "PCW_MIO_25_SLEW": "slow",
+        "PCW_MIO_26_PULLUP": "enabled",
+        "PCW_MIO_26_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_26_DIRECTION": "in",
+        "PCW_MIO_26_SLEW": "slow",
+        "PCW_MIO_27_PULLUP": "enabled",
+        "PCW_MIO_27_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_27_DIRECTION": "in",
+        "PCW_MIO_27_SLEW": "slow",
+        "PCW_MIO_28_PULLUP": "enabled",
+        "PCW_MIO_28_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_28_DIRECTION": "inout",
+        "PCW_MIO_28_SLEW": "slow",
+        "PCW_MIO_29_PULLUP": "enabled",
+        "PCW_MIO_29_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_29_DIRECTION": "in",
+        "PCW_MIO_29_SLEW": "slow",
+        "PCW_MIO_30_PULLUP": "enabled",
+        "PCW_MIO_30_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_30_DIRECTION": "out",
+        "PCW_MIO_30_SLEW": "slow",
+        "PCW_MIO_31_PULLUP": "enabled",
+        "PCW_MIO_31_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_31_DIRECTION": "in",
+        "PCW_MIO_31_SLEW": "slow",
+        "PCW_MIO_32_PULLUP": "enabled",
+        "PCW_MIO_32_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_32_DIRECTION": "inout",
+        "PCW_MIO_32_SLEW": "slow",
+        "PCW_MIO_33_PULLUP": "enabled",
+        "PCW_MIO_33_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_33_DIRECTION": "inout",
+        "PCW_MIO_33_SLEW": "slow",
+        "PCW_MIO_34_PULLUP": "enabled",
+        "PCW_MIO_34_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_34_DIRECTION": "inout",
+        "PCW_MIO_34_SLEW": "slow",
+        "PCW_MIO_35_PULLUP": "enabled",
+        "PCW_MIO_35_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_35_DIRECTION": "inout",
+        "PCW_MIO_35_SLEW": "slow",
+        "PCW_MIO_36_PULLUP": "enabled",
+        "PCW_MIO_36_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_36_DIRECTION": "in",
+        "PCW_MIO_36_SLEW": "slow",
+        "PCW_MIO_37_PULLUP": "enabled",
+        "PCW_MIO_37_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_37_DIRECTION": "inout",
+        "PCW_MIO_37_SLEW": "slow",
+        "PCW_MIO_38_PULLUP": "enabled",
+        "PCW_MIO_38_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_38_DIRECTION": "inout",
+        "PCW_MIO_38_SLEW": "slow",
+        "PCW_MIO_39_PULLUP": "enabled",
+        "PCW_MIO_39_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_39_DIRECTION": "inout",
+        "PCW_MIO_39_SLEW": "slow",
+        "PCW_MIO_40_PULLUP": "enabled",
+        "PCW_MIO_40_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_40_DIRECTION": "inout",
+        "PCW_MIO_40_SLEW": "slow",
+        "PCW_MIO_41_PULLUP": "enabled",
+        "PCW_MIO_41_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_41_DIRECTION": "inout",
+        "PCW_MIO_41_SLEW": "slow",
+        "PCW_MIO_42_PULLUP": "enabled",
+        "PCW_MIO_42_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_42_DIRECTION": "inout",
+        "PCW_MIO_42_SLEW": "slow",
+        "PCW_MIO_43_PULLUP": "enabled",
+        "PCW_MIO_43_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_43_DIRECTION": "inout",
+        "PCW_MIO_43_SLEW": "slow",
+        "PCW_MIO_44_PULLUP": "enabled",
+        "PCW_MIO_44_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_44_DIRECTION": "inout",
+        "PCW_MIO_44_SLEW": "slow",
+        "PCW_MIO_45_PULLUP": "enabled",
+        "PCW_MIO_45_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_45_DIRECTION": "inout",
+        "PCW_MIO_45_SLEW": "slow",
+        "PCW_MIO_46_PULLUP": "<Select>",
+        "PCW_MIO_46_IOTYPE": "<Select>",
+        "PCW_MIO_46_DIRECTION": "<Select>",
+        "PCW_MIO_46_SLEW": "<Select>",
+        "PCW_MIO_47_PULLUP": "enabled",
+        "PCW_MIO_47_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_47_DIRECTION": "in",
+        "PCW_MIO_47_SLEW": "slow",
+        "PCW_MIO_48_PULLUP": "<Select>",
+        "PCW_MIO_48_IOTYPE": "<Select>",
+        "PCW_MIO_48_DIRECTION": "<Select>",
+        "PCW_MIO_48_SLEW": "<Select>",
+        "PCW_MIO_49_PULLUP": "<Select>",
+        "PCW_MIO_49_IOTYPE": "<Select>",
+        "PCW_MIO_49_DIRECTION": "<Select>",
+        "PCW_MIO_49_SLEW": "<Select>",
+        "PCW_MIO_50_PULLUP": "enabled",
+        "PCW_MIO_50_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_50_DIRECTION": "inout",
+        "PCW_MIO_50_SLEW": "slow",
+        "PCW_MIO_51_PULLUP": "enabled",
+        "PCW_MIO_51_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_51_DIRECTION": "inout",
+        "PCW_MIO_51_SLEW": "slow",
+        "PCW_MIO_52_PULLUP": "enabled",
+        "PCW_MIO_52_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_52_DIRECTION": "out",
+        "PCW_MIO_52_SLEW": "slow",
+        "PCW_MIO_53_PULLUP": "enabled",
+        "PCW_MIO_53_IOTYPE": "LVCMOS 1.8V",
+        "PCW_MIO_53_DIRECTION": "inout",
+        "PCW_MIO_53_SLEW": "slow",
+        "preset": "None",
+        "PCW_UIPARAM_GENERATE_SUMMARY": "NA",
+        "PCW_MIO_TREE_PERIPHERALS": "unassigned#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#unassigned#Quad SPI Flash#unassigned#unassigned#unassigned#unassigned#unassigned#UART 0#UART 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#Enet 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#SD 0#SD 0#SD 0#SD 0#SD 0#SD 0#unassigned#SD 0#unassigned#unassigned#I2C 0#I2C 0#Enet 0#Enet 0",
+        "PCW_MIO_TREE_SIGNALS": "unassigned#qspi0_ss_b#qspi0_io[0]#qspi0_io[1]#qspi0_io[2]#qspi0_io[3]/HOLD_B#qspi0_sclk#unassigned#qspi_fbclk#unassigned#unassigned#unassigned#unassigned#unassigned#rx#tx#tx_clk#txd[0]#txd[1]#txd[2]#txd[3]#tx_ctl#rx_clk#rxd[0]#rxd[1]#rxd[2]#rxd[3]#rx_ctl#data[4]#dir#stp#nxt#data[0]#data[1]#data[2]#data[3]#clk#data[5]#data[6]#data[7]#clk#cmd#data[0]#data[1]#data[2]#data[3]#unassigned#cd#unassigned#unassigned#scl#sda#mdc#mdio",
+        "PCW_PS7_SI_REV": "PRODUCTION",
+        "PCW_FPGA_FCLK0_ENABLE": "1",
+        "PCW_FPGA_FCLK1_ENABLE": "1",
+        "PCW_FPGA_FCLK2_ENABLE": "1",
+        "PCW_FPGA_FCLK3_ENABLE": "1",
+        "PCW_NOR_SRAM_CS0_T_TR": "1",
+        "PCW_NOR_SRAM_CS0_T_PC": "1",
+        "PCW_NOR_SRAM_CS0_T_WP": "1",
+        "PCW_NOR_SRAM_CS0_T_CEOE": "1",
+        "PCW_NOR_SRAM_CS0_T_WC": "11",
+        "PCW_NOR_SRAM_CS0_T_RC": "11",
+        "PCW_NOR_SRAM_CS0_WE_TIME": "0",
+        "PCW_NOR_SRAM_CS1_T_TR": "1",
+        "PCW_NOR_SRAM_CS1_T_PC": "1",
+        "PCW_NOR_SRAM_CS1_T_WP": "1",
+        "PCW_NOR_SRAM_CS1_T_CEOE": "1",
+        "PCW_NOR_SRAM_CS1_T_WC": "11",
+        "PCW_NOR_SRAM_CS1_T_RC": "11",
+        "PCW_NOR_SRAM_CS1_WE_TIME": "0",
+        "PCW_NOR_CS0_T_TR": "1",
+        "PCW_NOR_CS0_T_PC": "1",
+        "PCW_NOR_CS0_T_WP": "1",
+        "PCW_NOR_CS0_T_CEOE": "1",
+        "PCW_NOR_CS0_T_WC": "11",
+        "PCW_NOR_CS0_T_RC": "11",
+        "PCW_NOR_CS0_WE_TIME": "0",
+        "PCW_NOR_CS1_T_TR": "1",
+        "PCW_NOR_CS1_T_PC": "1",
+        "PCW_NOR_CS1_T_WP": "1",
+        "PCW_NOR_CS1_T_CEOE": "1",
+        "PCW_NOR_CS1_T_WC": "11",
+        "PCW_NOR_CS1_T_RC": "11",
+        "PCW_NOR_CS1_WE_TIME": "0",
+        "PCW_NAND_CYCLES_T_RR": "1",
+        "PCW_NAND_CYCLES_T_AR": "1",
+        "PCW_NAND_CYCLES_T_CLR": "1",
+        "PCW_NAND_CYCLES_T_WP": "1",
+        "PCW_NAND_CYCLES_T_REA": "1",
+        "PCW_NAND_CYCLES_T_WC": "11",
+        "PCW_NAND_CYCLES_T_RC": "11",
+        "PCW_SMC_CYCLE_T0": "NA",
+        "PCW_SMC_CYCLE_T1": "NA",
+        "PCW_SMC_CYCLE_T2": "NA",
+        "PCW_SMC_CYCLE_T3": "NA",
+        "PCW_SMC_CYCLE_T4": "NA",
+        "PCW_SMC_CYCLE_T5": "NA",
+        "PCW_SMC_CYCLE_T6": "NA",
+        "PCW_PACKAGE_NAME": "clg400",
+        "PCW_PLL_BYPASSMODE_ENABLE": "0",
+        "Component_Name": "system_ps7_0_0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x00000000",
+        "C_HIGHADDR": "0x1FFFFFFF"
+      },
+      "type": "xilinx.com:ip:processing_system7:5.5"
+    }
+  },
+  "clock_dict": {
+    "0": {
+      "enable": 1,
+      "divisor0": 5,
+      "divisor1": 2
+    },
+    "1": {
+      "enable": 1,
+      "divisor0": 7,
+      "divisor1": 1
+    },
+    "2": {
+      "enable": 1,
+      "divisor0": 5,
+      "divisor1": 1
+    },
+    "3": {
+      "enable": 1,
+      "divisor0": 5,
+      "divisor1": 2
+    }
+  },
+  "interrupt_controllers": {
+    "system_interrupts": {
+      "parent": "",
+      "index": 0,
+      "raw_irq": 61
+    }
+  },
+  "interrupt_pins": {
+    "video/xlconcat_0/In0": {
+      "controller": "system_interrupts",
+      "index": 0,
+      "fullpath": "video/xlconcat_0/In0"
+    },
+    "video/axi_vdma/s2mm_introut": {
+      "controller": "system_interrupts",
+      "index": 0,
+      "fullpath": "video/axi_vdma/s2mm_introut"
+    },
+    "video/axi_vdma/mm2s_introut": {
+      "controller": "system_interrupts",
+      "index": 1,
+      "fullpath": "video/axi_vdma/mm2s_introut"
+    },
+    "video/xlconcat_0/In1": {
+      "controller": "system_interrupts",
+      "index": 1,
+      "fullpath": "video/xlconcat_0/In1"
+    },
+    "video/xlconcat_0/In2": {
+      "controller": "system_interrupts",
+      "index": 2,
+      "fullpath": "video/xlconcat_0/In2"
+    },
+    "video/hdmi_out/frontend/vtc_out/irq": {
+      "controller": "system_interrupts",
+      "index": 2,
+      "fullpath": "video/hdmi_out/frontend/vtc_out/irq"
+    },
+    "video/hdmi_in/frontend/vtc_in/irq": {
+      "controller": "system_interrupts",
+      "index": 3,
+      "fullpath": "video/hdmi_in/frontend/vtc_in/irq"
+    },
+    "video/xlconcat_0/In3": {
+      "controller": "system_interrupts",
+      "index": 3,
+      "fullpath": "video/xlconcat_0/In3"
+    },
+    "video/hdmi_in/frontend/axi_gpio_hdmiin/ip2intc_irpt": {
+      "controller": "system_interrupts",
+      "index": 4,
+      "fullpath": "video/hdmi_in/frontend/axi_gpio_hdmiin/ip2intc_irpt"
+    },
+    "video/xlconcat_0/In4": {
+      "controller": "system_interrupts",
+      "index": 4,
+      "fullpath": "video/xlconcat_0/In4"
+    },
+    "video/hdmi_out/frontend/hdmi_out_hpd_video/ip2intc_irpt": {
+      "controller": "system_interrupts",
+      "index": 5,
+      "fullpath": "video/hdmi_out/frontend/hdmi_out_hpd_video/ip2intc_irpt"
+    },
+    "video/xlconcat_0/In5": {
+      "controller": "system_interrupts",
+      "index": 5,
+      "fullpath": "video/xlconcat_0/In5"
+    },
+    "concat_interrupts/In1": {
+      "controller": "system_interrupts",
+      "index": 7,
+      "fullpath": "concat_interrupts/In1"
+    },
+    "concat_interrupts/In2": {
+      "controller": "system_interrupts",
+      "index": 7,
+      "fullpath": "concat_interrupts/In2"
+    },
+    "const_zero/dout": {
+      "controller": "system_interrupts",
+      "index": 7,
+      "fullpath": "const_zero/dout"
+    },
+    "reset_100m/mb_debug_sys_rst": {
+      "controller": "system_interrupts",
+      "index": 7,
+      "fullpath": "reset_100m/mb_debug_sys_rst"
+    },
+    "concat_interrupts/In3": {
+      "controller": "system_interrupts",
+      "index": 8,
+      "fullpath": "concat_interrupts/In3"
+    },
+    "leds_gpio/ip2intc_irpt": {
+      "controller": "system_interrupts",
+      "index": 8,
+      "fullpath": "leds_gpio/ip2intc_irpt"
+    },
+    "zero_iop_irq/dout": {
+      "controller": "system_interrupts",
+      "index": 9,
+      "fullpath": "zero_iop_irq/dout"
+    },
+    "concat_interrupts/In4": {
+      "controller": "system_interrupts",
+      "index": 9,
+      "fullpath": "concat_interrupts/In4"
+    },
+    "btns_gpio/ip2intc_irpt": {
+      "controller": "system_interrupts",
+      "index": 10,
+      "fullpath": "btns_gpio/ip2intc_irpt"
+    },
+    "concat_interrupts/In5": {
+      "controller": "system_interrupts",
+      "index": 10,
+      "fullpath": "concat_interrupts/In5"
+    },
+    "switches_gpio/ip2intc_irpt": {
+      "controller": "system_interrupts",
+      "index": 11,
+      "fullpath": "switches_gpio/ip2intc_irpt"
+    },
+    "concat_interrupts/In6": {
+      "controller": "system_interrupts",
+      "index": 11,
+      "fullpath": "concat_interrupts/In6"
+    }
+  },
+  "hwh": {
+    "bytes": 1131176,
+    "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+  },
+  "bd": {
+    "bytes": 644609,
+    "sha256": "ab31702159fde9f691d8454c93f8bb82c21e2397a0dbf9e2ad5f2fd7ffabc879"
+  },
+  "original_bd": {
+    "bytes": 2034948,
+    "sha256": "d2ebe6e5dfcbfd84d0daf2e8b97d7234f6315d2c0a2a94a3bc5dafb5db02a5e7"
+  },
+  "parser": {
+    "bytes": 24267,
+    "sha256": "bbb9ffebc4d01a52c6e8b5265aeb70b25e99ee8fb6a30dd0cb20cbbc081e2f27"
+  },
+  "limit": "Host parser uses architecture constants only; real video driver construction and display require board execution"
+}

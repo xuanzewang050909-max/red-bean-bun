@@ -1,0 +1,18 @@
+test_all_offsets_and_replicated_edges_match_scalar (test_q1_bilateral.BilateralTests.test_all_offsets_and_replicated_edges_match_scalar) ... ok
+test_constant_has_no_support_including_margin_zero (test_q1_bilateral.BilateralTests.test_constant_has_no_support_including_margin_zero) ... ok
+test_dark_line_crossing_bright_region_preserved (test_q1_bilateral.BilateralTests.test_dark_line_crossing_bright_region_preserved) ... ok
+test_direction_and_width_union_rotation_reflection (test_q1_bilateral.BilateralTests.test_direction_and_width_union_rotation_reflection) ... ok
+test_empty_diagnostics_are_null_not_perfect_recall (test_q1_bilateral.BilateralTests.test_empty_diagnostics_are_null_not_perfect_recall) ... ok
+test_horizontal_vertical_and_diagonal_steps_rejected (test_q1_bilateral.BilateralTests.test_horizontal_vertical_and_diagonal_steps_rejected) ... ok
+test_majority_does_not_accept_single_dark_dot (test_q1_bilateral.BilateralTests.test_majority_does_not_accept_single_dark_dot) ... ok
+test_original_postprocessing_fov_and_subset (test_q1_bilateral.BilateralTests.test_original_postprocessing_fov_and_subset) ... ok
+test_preregistered_grid_and_bad_inputs (test_q1_bilateral.BilateralTests.test_preregistered_grid_and_bad_inputs) ... ok
+test_quality_gate_rejects_recall_damage_despite_dice_gain (test_q1_bilateral.BilateralTests.test_quality_gate_rejects_recall_damage_despite_dice_gain) ... ok
+test_reader_never_decodes_heldout_members (test_q1_bilateral.BilateralTests.test_reader_never_decodes_heldout_members) ... ok
+test_signed_extremes_and_exact_threshold (test_q1_bilateral.BilateralTests.test_signed_extremes_and_exact_threshold) ... ok
+test_thin_lines_in_four_directions_preserved (test_q1_bilateral.BilateralTests.test_thin_lines_in_four_directions_preserved) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 0.160s
+
+OK

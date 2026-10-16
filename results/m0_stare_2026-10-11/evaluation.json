@@ -1,0 +1,1728 @@
+{
+  "status": "PASS_CPU_REFERENCE_EVALUATION_ONLY_NOT_FPGA",
+  "source": "https://cecas.clemson.edu/~ahoover/stare/probing/index.html",
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0"
+  },
+  "split": {
+    "train": [
+      "im0001",
+      "im0003",
+      "im0005",
+      "im0077",
+      "im0082",
+      "im0162",
+      "im0235",
+      "im0239",
+      "im0255",
+      "im0319"
+    ],
+    "heldout": [
+      "im0002",
+      "im0004",
+      "im0044",
+      "im0081",
+      "im0139",
+      "im0163",
+      "im0236",
+      "im0240",
+      "im0291",
+      "im0324"
+    ]
+  },
+  "selection_rule": "B only if 512 training AH macro Dice exceeds A by >0.01; otherwise prefer cheaper A; heldout never selects parameters",
+  "chosen_algorithm": "A",
+  "thresholds": {
+    "A_256": 28,
+    "B_256": 48,
+    "A_512": 28,
+    "B_512": 36
+  },
+  "summary": [
+    {
+      "size": 256,
+      "algorithm": "A",
+      "split": "train",
+      "observer": "ah",
+      "threshold": 28,
+      "macro_dice": 0.5270623377897047,
+      "macro_iou": 0.3645269667584398,
+      "macro_precision": 0.44346872380333063,
+      "macro_recall": 0.6711753140607897,
+      "worst_sample": "im0003"
+    },
+    {
+      "size": 256,
+      "algorithm": "A",
+      "split": "train",
+      "observer": "vk",
+      "threshold": 28,
+      "macro_dice": 0.5239960318499876,
+      "macro_iou": 0.3622687302836365,
+      "macro_precision": 0.5255934746070121,
+      "macro_recall": 0.5573875131963826,
+      "worst_sample": "im0003"
+    },
+    {
+      "size": 256,
+      "algorithm": "A",
+      "split": "heldout",
+      "observer": "ah",
+      "threshold": 28,
+      "macro_dice": 0.4800286981506221,
+      "macro_iou": 0.3239608614631994,
+      "macro_precision": 0.4017286176619915,
+      "macro_recall": 0.6187246721625261,
+      "worst_sample": "im0291"
+    },
+    {
+      "size": 256,
+      "algorithm": "A",
+      "split": "heldout",
+      "observer": "vk",
+      "threshold": 28,
+      "macro_dice": 0.4768441933335831,
+      "macro_iou": 0.3219954916644021,
+      "macro_precision": 0.47138632747138753,
+      "macro_recall": 0.5049929777800182,
+      "worst_sample": "im0004"
+    },
+    {
+      "size": 256,
+      "algorithm": "B",
+      "split": "train",
+      "observer": "ah",
+      "threshold": 48,
+      "macro_dice": 0.46696262277286615,
+      "macro_iou": 0.31271983614140064,
+      "macro_precision": 0.38540539289911946,
+      "macro_recall": 0.6118634744819699,
+      "worst_sample": "im0319"
+    },
+    {
+      "size": 256,
+      "algorithm": "B",
+      "split": "train",
+      "observer": "vk",
+      "threshold": 48,
+      "macro_dice": 0.4540674038716225,
+      "macro_iou": 0.30134352030590117,
+      "macro_precision": 0.4445748084050982,
+      "macro_recall": 0.49678864469317274,
+      "worst_sample": "im0319"
+    },
+    {
+      "size": 256,
+      "algorithm": "B",
+      "split": "heldout",
+      "observer": "ah",
+      "threshold": 48,
+      "macro_dice": 0.3841381204395772,
+      "macro_iou": 0.24916487985185737,
+      "macro_precision": 0.32704201158484136,
+      "macro_recall": 0.49775439614536515,
+      "worst_sample": "im0004"
+    },
+    {
+      "size": 256,
+      "algorithm": "B",
+      "split": "heldout",
+      "observer": "vk",
+      "threshold": 48,
+      "macro_dice": 0.37413766156541917,
+      "macro_iou": 0.24085009046709221,
+      "macro_precision": 0.3790229710250891,
+      "macro_recall": 0.3955378147771996,
+      "worst_sample": "im0004"
+    },
+    {
+      "size": 512,
+      "algorithm": "A",
+      "split": "train",
+      "observer": "ah",
+      "threshold": 28,
+      "macro_dice": 0.6058152102733783,
+      "macro_iou": 0.4413262318138558,
+      "macro_precision": 0.5370120908063731,
+      "macro_recall": 0.7086878383388676,
+      "worst_sample": "im0003"
+    },
+    {
+      "size": 512,
+      "algorithm": "A",
+      "split": "train",
+      "observer": "vk",
+      "threshold": 28,
+      "macro_dice": 0.572880788984602,
+      "macro_iou": 0.4079838432734048,
+      "macro_precision": 0.6075012167941797,
+      "macro_recall": 0.568510333084953,
+      "worst_sample": "im0003"
+    },
+    {
+      "size": 512,
+      "algorithm": "A",
+      "split": "heldout",
+      "observer": "ah",
+      "threshold": 28,
+      "macro_dice": 0.5384705109030941,
+      "macro_iou": 0.37756110674176135,
+      "macro_precision": 0.49791022213336705,
+      "macro_recall": 0.609233574724868,
+      "worst_sample": "im0004"
+    },
+    {
+      "size": 512,
+      "algorithm": "A",
+      "split": "heldout",
+      "observer": "vk",
+      "threshold": 28,
+      "macro_dice": 0.5050574417027509,
+      "macro_iou": 0.3463142092108523,
+      "macro_precision": 0.5592555294347565,
+      "macro_recall": 0.47690947722141336,
+      "worst_sample": "im0004"
+    },
+    {
+      "size": 512,
+      "algorithm": "B",
+      "split": "train",
+      "observer": "ah",
+      "threshold": 36,
+      "macro_dice": 0.5399769616601484,
+      "macro_iou": 0.3765960395234328,
+      "macro_precision": 0.4408259652384724,
+      "macro_recall": 0.7113022125987079,
+      "worst_sample": "im0319"
+    },
+    {
+      "size": 512,
+      "algorithm": "B",
+      "split": "train",
+      "observer": "vk",
+      "threshold": 36,
+      "macro_dice": 0.5260054145806483,
+      "macro_iou": 0.3640796087403578,
+      "macro_precision": 0.5043633546536732,
+      "macro_recall": 0.5769157602227424,
+      "worst_sample": "im0319"
+    },
+    {
+      "size": 512,
+      "algorithm": "B",
+      "split": "heldout",
+      "observer": "ah",
+      "threshold": 36,
+      "macro_dice": 0.45722239795750036,
+      "macro_iou": 0.30793753380873357,
+      "macro_precision": 0.4009984262761739,
+      "macro_recall": 0.5666680671495944,
+      "worst_sample": "im0004"
+    },
+    {
+      "size": 512,
+      "algorithm": "B",
+      "split": "heldout",
+      "observer": "vk",
+      "threshold": 36,
+      "macro_dice": 0.4363147563808723,
+      "macro_iou": 0.289859691369574,
+      "macro_precision": 0.45580764483181413,
+      "macro_recall": 0.4435211107799509,
+      "worst_sample": "im0004"
+    }
+  ],
+  "timings": {
+    "im0001_256": {
+      "A_feature_cpu_seconds": 0.0018119000014849007,
+      "B_feature_cpu_seconds": 0.004446599996299483
+    },
+    "im0001_512": {
+      "A_feature_cpu_seconds": 0.009856800010311417,
+      "B_feature_cpu_seconds": 0.034962000005180016
+    },
+    "im0002_256": {
+      "A_feature_cpu_seconds": 0.001672900005360134,
+      "B_feature_cpu_seconds": 0.004141000012168661
+    },
+    "im0002_512": {
+      "A_feature_cpu_seconds": 0.011602300000959076,
+      "B_feature_cpu_seconds": 0.03496340000128839
+    },
+    "im0003_256": {
+      "A_feature_cpu_seconds": 0.0015480000001844019,
+      "B_feature_cpu_seconds": 0.0046279999951366335
+    },
+    "im0003_512": {
+      "A_feature_cpu_seconds": 0.01024090001010336,
+      "B_feature_cpu_seconds": 0.03585390000080224
+    },
+    "im0004_256": {
+      "A_feature_cpu_seconds": 0.0014496000076178461,
+      "B_feature_cpu_seconds": 0.0036995999980717897
+    },
+    "im0004_512": {
+      "A_feature_cpu_seconds": 0.009926500002620742,
+      "B_feature_cpu_seconds": 0.03616399999009445
+    },
+    "im0005_256": {
+      "A_feature_cpu_seconds": 0.001983299996936694,
+      "B_feature_cpu_seconds": 0.0045132000086596236
+    },
+    "im0005_512": {
+      "A_feature_cpu_seconds": 0.010310500001651235,
+      "B_feature_cpu_seconds": 0.03549969999585301
+    },
+    "im0044_256": {
+      "A_feature_cpu_seconds": 0.0014261000033002347,
+      "B_feature_cpu_seconds": 0.004048899994813837
+    },
+    "im0044_512": {
+      "A_feature_cpu_seconds": 0.009561999992001802,
+      "B_feature_cpu_seconds": 0.033631700003752485
+    },
+    "im0077_256": {
+      "A_feature_cpu_seconds": 0.0013149000005796552,
+      "B_feature_cpu_seconds": 0.004160700002103113
+    },
+    "im0077_512": {
+      "A_feature_cpu_seconds": 0.01012819999596104,
+      "B_feature_cpu_seconds": 0.03312739999091718
+    },
+    "im0081_256": {
+      "A_feature_cpu_seconds": 0.0013959999923827127,
+      "B_feature_cpu_seconds": 0.0038706000050297007
+    },
+    "im0081_512": {
+      "A_feature_cpu_seconds": 0.010254200009512715,
+      "B_feature_cpu_seconds": 0.03380950000428129
+    },
+    "im0082_256": {
+      "A_feature_cpu_seconds": 0.0015512999962083995,
+      "B_feature_cpu_seconds": 0.004083699997863732
+    },
+    "im0082_512": {
+      "A_feature_cpu_seconds": 0.01026909999200143,
+      "B_feature_cpu_seconds": 0.03520560001197737
+    },
+    "im0139_256": {
+      "A_feature_cpu_seconds": 0.001560699995025061,
+      "B_feature_cpu_seconds": 0.004177399998297915
+    },
+    "im0139_512": {
+      "A_feature_cpu_seconds": 0.011242199994740076,
+      "B_feature_cpu_seconds": 0.036927299996023066
+    },
+    "im0162_256": {
+      "A_feature_cpu_seconds": 0.001625500008231029,
+      "B_feature_cpu_seconds": 0.003998700005467981
+    },
+    "im0162_512": {
+      "A_feature_cpu_seconds": 0.011961500000325032,
+      "B_feature_cpu_seconds": 0.03950050000275951
+    },
+    "im0163_256": {
+      "A_feature_cpu_seconds": 0.0012925000046379864,
+      "B_feature_cpu_seconds": 0.003913799999281764
+    },
+    "im0163_512": {
+      "A_feature_cpu_seconds": 0.014057899999897927,
+      "B_feature_cpu_seconds": 0.04110330001276452
+    },
+    "im0235_256": {
+      "A_feature_cpu_seconds": 0.0014509999891743064,
+      "B_feature_cpu_seconds": 0.004106499996851198
+    },
+    "im0235_512": {
+      "A_feature_cpu_seconds": 0.012557499998365529,
+      "B_feature_cpu_seconds": 0.0421902000089176
+    },
+    "im0236_256": {
+      "A_feature_cpu_seconds": 0.0013995000044815242,
+      "B_feature_cpu_seconds": 0.0044286000047577545
+    },
+    "im0236_512": {
+      "A_feature_cpu_seconds": 0.012754299998050556,
+      "B_feature_cpu_seconds": 0.040004700000281446
+    },
+    "im0239_256": {
+      "A_feature_cpu_seconds": 0.001739700004691258,
+      "B_feature_cpu_seconds": 0.004272499994840473
+    },
+    "im0239_512": {
+      "A_feature_cpu_seconds": 0.012836800000513904,
+      "B_feature_cpu_seconds": 0.04155120000359602
+    },
+    "im0240_256": {
+      "A_feature_cpu_seconds": 0.0014630000077886507,
+      "B_feature_cpu_seconds": 0.004280900000594556
+    },
+    "im0240_512": {
+      "A_feature_cpu_seconds": 0.012735399999655783,
+      "B_feature_cpu_seconds": 0.04073649999918416
+    },
+    "im0255_256": {
+      "A_feature_cpu_seconds": 0.003654499989352189,
+      "B_feature_cpu_seconds": 0.011784400005126372
+    },
+    "im0255_512": {
+      "A_feature_cpu_seconds": 0.013157599998521619,
+      "B_feature_cpu_seconds": 0.04134640000120271
+    },
+    "im0291_256": {
+      "A_feature_cpu_seconds": 0.003920799994375557,
+      "B_feature_cpu_seconds": 0.012463899998692796
+    },
+    "im0291_512": {
+      "A_feature_cpu_seconds": 0.013271300005726516,
+      "B_feature_cpu_seconds": 0.040410099987639114
+    },
+    "im0319_256": {
+      "A_feature_cpu_seconds": 0.0014491000038105994,
+      "B_feature_cpu_seconds": 0.004295999999158084
+    },
+    "im0319_512": {
+      "A_feature_cpu_seconds": 0.013071900000795722,
+      "B_feature_cpu_seconds": 0.04881059999752324
+    },
+    "im0324_256": {
+      "A_feature_cpu_seconds": 0.0028901000041514635,
+      "B_feature_cpu_seconds": 0.009504799993010238
+    },
+    "im0324_512": {
+      "A_feature_cpu_seconds": 0.01857840000593569,
+      "B_feature_cpu_seconds": 0.04145010000502225
+    }
+  },
+  "mappings": {
+    "im0001_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0001.ppm.gz",
+        "ah": "im0001.ah.ppm.gz",
+        "vk": "im0001.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7",
+        "ah": "446eb61780e82160c02ad895bf9393a2829f73819d0576e2605976c2a5f6cb27",
+        "vk": "408ba08964cf6a79afed4769f8bbf6c00afd8fd808f4730345736c1727b91ac1"
+      },
+      "fov_pixels": 51370,
+      "ah_pixels_outside_fov": 7,
+      "vk_pixels_outside_fov": 6
+    },
+    "im0001_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0001.ppm.gz",
+        "ah": "im0001.ah.ppm.gz",
+        "vk": "im0001.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7",
+        "ah": "446eb61780e82160c02ad895bf9393a2829f73819d0576e2605976c2a5f6cb27",
+        "vk": "408ba08964cf6a79afed4769f8bbf6c00afd8fd808f4730345736c1727b91ac1"
+      },
+      "fov_pixels": 211527,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0002_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0002.ppm.gz",
+        "ah": "im0002.ah.ppm.gz",
+        "vk": "im0002.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "a54e11ae0b07fd53e9fdd198836ed43b9df3b1946f18540c6f823552b3292b7a",
+        "ah": "013739e1cf1de77cf6c54950e77dc15c275db840cb05d0dddcb1bf3036be7acf",
+        "vk": "695d8868e60f130f72eb994c80bf5fe35a20323953e8f72aa972ff0581d2a4d5"
+      },
+      "fov_pixels": 50290,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 1
+    },
+    "im0002_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0002.ppm.gz",
+        "ah": "im0002.ah.ppm.gz",
+        "vk": "im0002.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "a54e11ae0b07fd53e9fdd198836ed43b9df3b1946f18540c6f823552b3292b7a",
+        "ah": "013739e1cf1de77cf6c54950e77dc15c275db840cb05d0dddcb1bf3036be7acf",
+        "vk": "695d8868e60f130f72eb994c80bf5fe35a20323953e8f72aa972ff0581d2a4d5"
+      },
+      "fov_pixels": 207202,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0003_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0003.ppm.gz",
+        "ah": "im0003.ah.ppm.gz",
+        "vk": "im0003.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "40a728bec1a8d0c5df92f36909d8727494b8be57d17bc9295fae00f463cbcd62",
+        "ah": "c528c1c93b3643be53e7e40d5a73552ff9efec40406d1a06e66c9dd56487b401",
+        "vk": "9f0a1251dfd1ecb95e28ba9c118fb2921c3f81ba8a473973c6f70cc51f1b4b36"
+      },
+      "fov_pixels": 51572,
+      "ah_pixels_outside_fov": 1,
+      "vk_pixels_outside_fov": 1
+    },
+    "im0003_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0003.ppm.gz",
+        "ah": "im0003.ah.ppm.gz",
+        "vk": "im0003.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "40a728bec1a8d0c5df92f36909d8727494b8be57d17bc9295fae00f463cbcd62",
+        "ah": "c528c1c93b3643be53e7e40d5a73552ff9efec40406d1a06e66c9dd56487b401",
+        "vk": "9f0a1251dfd1ecb95e28ba9c118fb2921c3f81ba8a473973c6f70cc51f1b4b36"
+      },
+      "fov_pixels": 212294,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0004_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0004.ppm.gz",
+        "ah": "im0004.ah.ppm.gz",
+        "vk": "im0004.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "8f08b795f7d87d1e069b3793bf4d49b2dfd407f229bf0bbadc192e5e728d468e",
+        "ah": "f70526b319d4258ec5889562227a66605719d132d74b5c555040f02800ab3c98",
+        "vk": "4bbd3a5b8c91dfab7861e3b5e0c4e7bbe177fe2ca1d6d85a29d47c23eea0be8e"
+      },
+      "fov_pixels": 50697,
+      "ah_pixels_outside_fov": 12,
+      "vk_pixels_outside_fov": 9
+    },
+    "im0004_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0004.ppm.gz",
+        "ah": "im0004.ah.ppm.gz",
+        "vk": "im0004.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "8f08b795f7d87d1e069b3793bf4d49b2dfd407f229bf0bbadc192e5e728d468e",
+        "ah": "f70526b319d4258ec5889562227a66605719d132d74b5c555040f02800ab3c98",
+        "vk": "4bbd3a5b8c91dfab7861e3b5e0c4e7bbe177fe2ca1d6d85a29d47c23eea0be8e"
+      },
+      "fov_pixels": 208604,
+      "ah_pixels_outside_fov": 13,
+      "vk_pixels_outside_fov": 9
+    },
+    "im0005_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0005.ppm.gz",
+        "ah": "im0005.ah.ppm.gz",
+        "vk": "im0005.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "efc1ab7e2c3cdaa1144a13a56626a77272982a11a0c38306881a51d53b671b7b",
+        "ah": "940fb5fa4566ec8c8e7e442d95b78f7746b18c7539c24be6614bce9e90a4e24d",
+        "vk": "b5c4ea1cb7c5216412a2ae99145bcc7331b5d055fb9214b93dcee4b959fc7f37"
+      },
+      "fov_pixels": 43167,
+      "ah_pixels_outside_fov": 43,
+      "vk_pixels_outside_fov": 56
+    },
+    "im0005_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0005.ppm.gz",
+        "ah": "im0005.ah.ppm.gz",
+        "vk": "im0005.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "efc1ab7e2c3cdaa1144a13a56626a77272982a11a0c38306881a51d53b671b7b",
+        "ah": "940fb5fa4566ec8c8e7e442d95b78f7746b18c7539c24be6614bce9e90a4e24d",
+        "vk": "b5c4ea1cb7c5216412a2ae99145bcc7331b5d055fb9214b93dcee4b959fc7f37"
+      },
+      "fov_pixels": 179748,
+      "ah_pixels_outside_fov": 56,
+      "vk_pixels_outside_fov": 66
+    },
+    "im0044_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0044.ppm.gz",
+        "ah": "im0044.ah.ppm.gz",
+        "vk": "im0044.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "4a241a7f5747a473f772f25cee3f35af7335ce79a361b20d9c907b6e3489adef",
+        "ah": "e4abef1d3e6752b8806e2f1bb5283c81354d68875f1df9a5c73cbaa473ea0340",
+        "vk": "da7b69b3495b6c7daa073756df7029e59a79b66260f328928eab2726db07ebc8"
+      },
+      "fov_pixels": 51597,
+      "ah_pixels_outside_fov": 6,
+      "vk_pixels_outside_fov": 16
+    },
+    "im0044_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0044.ppm.gz",
+        "ah": "im0044.ah.ppm.gz",
+        "vk": "im0044.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "4a241a7f5747a473f772f25cee3f35af7335ce79a361b20d9c907b6e3489adef",
+        "ah": "e4abef1d3e6752b8806e2f1bb5283c81354d68875f1df9a5c73cbaa473ea0340",
+        "vk": "da7b69b3495b6c7daa073756df7029e59a79b66260f328928eab2726db07ebc8"
+      },
+      "fov_pixels": 212295,
+      "ah_pixels_outside_fov": 11,
+      "vk_pixels_outside_fov": 35
+    },
+    "im0077_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0077.ppm.gz",
+        "ah": "im0077.ah.ppm.gz",
+        "vk": "im0077.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "ca6ff1067d6f203e11cd5e56fe2f3dd5f773e8fe9bca28957aa6f552e457aa68",
+        "ah": "ce11c63d5a7c970efec1e99982e85885d80147a076f6017100703f3e2518fdfb",
+        "vk": "45b16107a22a39054c4db11ab8b9997c8e322f452a638ee054456151bd30ec3e"
+      },
+      "fov_pixels": 42838,
+      "ah_pixels_outside_fov": 171,
+      "vk_pixels_outside_fov": 218
+    },
+    "im0077_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0077.ppm.gz",
+        "ah": "im0077.ah.ppm.gz",
+        "vk": "im0077.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "ca6ff1067d6f203e11cd5e56fe2f3dd5f773e8fe9bca28957aa6f552e457aa68",
+        "ah": "ce11c63d5a7c970efec1e99982e85885d80147a076f6017100703f3e2518fdfb",
+        "vk": "45b16107a22a39054c4db11ab8b9997c8e322f452a638ee054456151bd30ec3e"
+      },
+      "fov_pixels": 178946,
+      "ah_pixels_outside_fov": 191,
+      "vk_pixels_outside_fov": 235
+    },
+    "im0081_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0081.ppm.gz",
+        "ah": "im0081.ah.ppm.gz",
+        "vk": "im0081.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "b89230c17c57905abe011ab3db923f39018aefefb7d6cb4dc0037f7bc941ec21",
+        "ah": "76863894a476165711494f039cc50ce0ed13bb15d6181ba6ef35ed9de12015b9",
+        "vk": "d9627f87b0aa831e3e8cd0f3b5e1ac899a7e1443027fff33900db7627f5cb7ab"
+      },
+      "fov_pixels": 50455,
+      "ah_pixels_outside_fov": 5,
+      "vk_pixels_outside_fov": 7
+    },
+    "im0081_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0081.ppm.gz",
+        "ah": "im0081.ah.ppm.gz",
+        "vk": "im0081.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "b89230c17c57905abe011ab3db923f39018aefefb7d6cb4dc0037f7bc941ec21",
+        "ah": "76863894a476165711494f039cc50ce0ed13bb15d6181ba6ef35ed9de12015b9",
+        "vk": "d9627f87b0aa831e3e8cd0f3b5e1ac899a7e1443027fff33900db7627f5cb7ab"
+      },
+      "fov_pixels": 207864,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0082_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0082.ppm.gz",
+        "ah": "im0082.ah.ppm.gz",
+        "vk": "im0082.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "1380247b09648ca54638ca0565270731cd9240f6468f02b32a8ded01f30407b3",
+        "ah": "1590c7b19eb239f44aca619d2416c4d941bd0e827b1efe80ad4c7f65e3d13ab3",
+        "vk": "b7158db0ce64eda38098fd06a37479beb55e5c83befe5124964b13091db360d8"
+      },
+      "fov_pixels": 41825,
+      "ah_pixels_outside_fov": 158,
+      "vk_pixels_outside_fov": 231
+    },
+    "im0082_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0082.ppm.gz",
+        "ah": "im0082.ah.ppm.gz",
+        "vk": "im0082.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "1380247b09648ca54638ca0565270731cd9240f6468f02b32a8ded01f30407b3",
+        "ah": "1590c7b19eb239f44aca619d2416c4d941bd0e827b1efe80ad4c7f65e3d13ab3",
+        "vk": "b7158db0ce64eda38098fd06a37479beb55e5c83befe5124964b13091db360d8"
+      },
+      "fov_pixels": 174281,
+      "ah_pixels_outside_fov": 166,
+      "vk_pixels_outside_fov": 249
+    },
+    "im0139_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0139.ppm.gz",
+        "ah": "im0139.ah.ppm.gz",
+        "vk": "im0139.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "edad825ea5c4f36fa2a77c45d12c6a76b3e46201e212d09cce119fccd556bb12",
+        "ah": "5e5489ef59009b09fe342247394842a48ebfe828e9fa40bfda2f93b36ed4d276",
+        "vk": "3fcbf0c23f86fc4bf5d216e18cd928431ff9b6d412d97b33c63d660201679b88"
+      },
+      "fov_pixels": 51391,
+      "ah_pixels_outside_fov": 11,
+      "vk_pixels_outside_fov": 24
+    },
+    "im0139_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0139.ppm.gz",
+        "ah": "im0139.ah.ppm.gz",
+        "vk": "im0139.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "edad825ea5c4f36fa2a77c45d12c6a76b3e46201e212d09cce119fccd556bb12",
+        "ah": "5e5489ef59009b09fe342247394842a48ebfe828e9fa40bfda2f93b36ed4d276",
+        "vk": "3fcbf0c23f86fc4bf5d216e18cd928431ff9b6d412d97b33c63d660201679b88"
+      },
+      "fov_pixels": 211775,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0162_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0162.ppm.gz",
+        "ah": "im0162.ah.ppm.gz",
+        "vk": "im0162.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "c24a19e616880f6485124334e9dc0edd3561982532209bdec5e4614f73fcb460",
+        "ah": "aa6d159b6eb2af5dd1df33e3211319f15cf8aece970d89bc615c90659d057643",
+        "vk": "fd4a32a1e0637bf990ecdff30944352aad435995ded8b296adf54103c6be1e91"
+      },
+      "fov_pixels": 41580,
+      "ah_pixels_outside_fov": 42,
+      "vk_pixels_outside_fov": 87
+    },
+    "im0162_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0162.ppm.gz",
+        "ah": "im0162.ah.ppm.gz",
+        "vk": "im0162.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "c24a19e616880f6485124334e9dc0edd3561982532209bdec5e4614f73fcb460",
+        "ah": "aa6d159b6eb2af5dd1df33e3211319f15cf8aece970d89bc615c90659d057643",
+        "vk": "fd4a32a1e0637bf990ecdff30944352aad435995ded8b296adf54103c6be1e91"
+      },
+      "fov_pixels": 173331,
+      "ah_pixels_outside_fov": 51,
+      "vk_pixels_outside_fov": 118
+    },
+    "im0163_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0163.ppm.gz",
+        "ah": "im0163.ah.ppm.gz",
+        "vk": "im0163.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "42d57875ff12a366d2a748a0f520a4bd587d5e0c03e69a16b025cf790e6b7f19",
+        "ah": "7e5117e80d36e2ca97af3ec482c7cf1f9a3a9c4c81075aed74991a1cdb6eceda",
+        "vk": "a3ba368e41a031f104b66e07803304f9134e81de70094302eb661b61e075434e"
+      },
+      "fov_pixels": 41402,
+      "ah_pixels_outside_fov": 40,
+      "vk_pixels_outside_fov": 58
+    },
+    "im0163_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0163.ppm.gz",
+        "ah": "im0163.ah.ppm.gz",
+        "vk": "im0163.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "42d57875ff12a366d2a748a0f520a4bd587d5e0c03e69a16b025cf790e6b7f19",
+        "ah": "7e5117e80d36e2ca97af3ec482c7cf1f9a3a9c4c81075aed74991a1cdb6eceda",
+        "vk": "a3ba368e41a031f104b66e07803304f9134e81de70094302eb661b61e075434e"
+      },
+      "fov_pixels": 172052,
+      "ah_pixels_outside_fov": 21,
+      "vk_pixels_outside_fov": 42
+    },
+    "im0235_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0235.ppm.gz",
+        "ah": "im0235.ah.ppm.gz",
+        "vk": "im0235.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "a84a4c36f18d88d84c6203a8a8fddc4c430295a9399a7eb007ab77a5528f81d7",
+        "ah": "2925be4334b2812fde2a4e3c369706b516a8149405c58e8341eb2dadf9cd240c",
+        "vk": "d16bf449f08bde05cbed5ffbce30c5cd297bc97318ccc3ead6459109c335199d"
+      },
+      "fov_pixels": 40403,
+      "ah_pixels_outside_fov": 148,
+      "vk_pixels_outside_fov": 212
+    },
+    "im0235_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0235.ppm.gz",
+        "ah": "im0235.ah.ppm.gz",
+        "vk": "im0235.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "a84a4c36f18d88d84c6203a8a8fddc4c430295a9399a7eb007ab77a5528f81d7",
+        "ah": "2925be4334b2812fde2a4e3c369706b516a8149405c58e8341eb2dadf9cd240c",
+        "vk": "d16bf449f08bde05cbed5ffbce30c5cd297bc97318ccc3ead6459109c335199d"
+      },
+      "fov_pixels": 167935,
+      "ah_pixels_outside_fov": 188,
+      "vk_pixels_outside_fov": 265
+    },
+    "im0236_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0236.ppm.gz",
+        "ah": "im0236.ah.ppm.gz",
+        "vk": "im0236.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "e7fd0f7970a7095ff651be323d74fabd38ca1147ff80c69ba3464afee1c65d58",
+        "ah": "c3604b671f8a2cd82358b21505bbe08d1996b6ea056e1f1c196e9f9e90a838d9",
+        "vk": "a1533afd23e232883a9896732beae0ba7c6f7d188dee1a9cf8ee414d5a80cc74"
+      },
+      "fov_pixels": 40595,
+      "ah_pixels_outside_fov": 142,
+      "vk_pixels_outside_fov": 200
+    },
+    "im0236_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0236.ppm.gz",
+        "ah": "im0236.ah.ppm.gz",
+        "vk": "im0236.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "e7fd0f7970a7095ff651be323d74fabd38ca1147ff80c69ba3464afee1c65d58",
+        "ah": "c3604b671f8a2cd82358b21505bbe08d1996b6ea056e1f1c196e9f9e90a838d9",
+        "vk": "a1533afd23e232883a9896732beae0ba7c6f7d188dee1a9cf8ee414d5a80cc74"
+      },
+      "fov_pixels": 168886,
+      "ah_pixels_outside_fov": 182,
+      "vk_pixels_outside_fov": 253
+    },
+    "im0239_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0239.ppm.gz",
+        "ah": "im0239.ah.ppm.gz",
+        "vk": "im0239.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "55c91fde2b49e9d82ca632acaf16ffe2bc0f1405bc186ee4a069aaf38f9de68a",
+        "ah": "fde526db023aff34ba9b1dfe2fe81fd7e1845087b9da7b98aa11d89c73ca44d1",
+        "vk": "6ffbdad862f1474ae0d8acb04134c4c7726ff1293ea8d4983b5b1529dfac957b"
+      },
+      "fov_pixels": 44600,
+      "ah_pixels_outside_fov": 81,
+      "vk_pixels_outside_fov": 104
+    },
+    "im0239_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0239.ppm.gz",
+        "ah": "im0239.ah.ppm.gz",
+        "vk": "im0239.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "55c91fde2b49e9d82ca632acaf16ffe2bc0f1405bc186ee4a069aaf38f9de68a",
+        "ah": "fde526db023aff34ba9b1dfe2fe81fd7e1845087b9da7b98aa11d89c73ca44d1",
+        "vk": "6ffbdad862f1474ae0d8acb04134c4c7726ff1293ea8d4983b5b1529dfac957b"
+      },
+      "fov_pixels": 185688,
+      "ah_pixels_outside_fov": 62,
+      "vk_pixels_outside_fov": 73
+    },
+    "im0240_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0240.ppm.gz",
+        "ah": "im0240.ah.ppm.gz",
+        "vk": "im0240.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "98e24f203d3e7db2454c9f3aa5f224bea4faa1be1c713fc65a4dd0f36ea0972a",
+        "ah": "ff0432627d9dbb7e09b60fcf73f0f6e880958b7627778694b030cd2cb812ccdb",
+        "vk": "88daaa34569efa8c24dc2970bb58696d1d07f614e5da60be83c5e4a2c7110e64"
+      },
+      "fov_pixels": 50322,
+      "ah_pixels_outside_fov": 12,
+      "vk_pixels_outside_fov": 26
+    },
+    "im0240_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0240.ppm.gz",
+        "ah": "im0240.ah.ppm.gz",
+        "vk": "im0240.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "98e24f203d3e7db2454c9f3aa5f224bea4faa1be1c713fc65a4dd0f36ea0972a",
+        "ah": "ff0432627d9dbb7e09b60fcf73f0f6e880958b7627778694b030cd2cb812ccdb",
+        "vk": "88daaa34569efa8c24dc2970bb58696d1d07f614e5da60be83c5e4a2c7110e64"
+      },
+      "fov_pixels": 206965,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 7
+    },
+    "im0255_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0255.ppm.gz",
+        "ah": "im0255.ah.ppm.gz",
+        "vk": "im0255.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "219ebcb02c57f83c0f9741584a41372f0b0bc396867b72d36575949a77424e9d",
+        "ah": "2640925ff1999461a96735c21d37c5dc85ce3f2afd2d3b5027255c46755789ee",
+        "vk": "b0d99061268c6cfd35903cbc46f1ac7cdc03708ff1032dd469d24abb8282ea35"
+      },
+      "fov_pixels": 50753,
+      "ah_pixels_outside_fov": 15,
+      "vk_pixels_outside_fov": 17
+    },
+    "im0255_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0255.ppm.gz",
+        "ah": "im0255.ah.ppm.gz",
+        "vk": "im0255.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "219ebcb02c57f83c0f9741584a41372f0b0bc396867b72d36575949a77424e9d",
+        "ah": "2640925ff1999461a96735c21d37c5dc85ce3f2afd2d3b5027255c46755789ee",
+        "vk": "b0d99061268c6cfd35903cbc46f1ac7cdc03708ff1032dd469d24abb8282ea35"
+      },
+      "fov_pixels": 208537,
+      "ah_pixels_outside_fov": 7,
+      "vk_pixels_outside_fov": 13
+    },
+    "im0291_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0291.ppm.gz",
+        "ah": "im0291.ah.ppm.gz",
+        "vk": "im0291.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "c8bfb834e0e7403a07dad3d29299d8031a539ae3d0ceb6c0fbb08196b0b980ee",
+        "ah": "7ef5f6452759231dba69139ec7f71a8921eff54f779b6a64aebe030d3cf70efd",
+        "vk": "66b381197c1fe0483ef4bf85fb513975b7e9eaa853062d770010713d70a2f4b5"
+      },
+      "fov_pixels": 50774,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0291_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0291.ppm.gz",
+        "ah": "im0291.ah.ppm.gz",
+        "vk": "im0291.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "c8bfb834e0e7403a07dad3d29299d8031a539ae3d0ceb6c0fbb08196b0b980ee",
+        "ah": "7ef5f6452759231dba69139ec7f71a8921eff54f779b6a64aebe030d3cf70efd",
+        "vk": "66b381197c1fe0483ef4bf85fb513975b7e9eaa853062d770010713d70a2f4b5"
+      },
+      "fov_pixels": 208810,
+      "ah_pixels_outside_fov": 0,
+      "vk_pixels_outside_fov": 0
+    },
+    "im0319_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0319.ppm.gz",
+        "ah": "im0319.ah.ppm.gz",
+        "vk": "im0319.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "f055a781b610639e3568ae1672533c80a9d2a577b6d04b688073451bc336f184",
+        "ah": "942221822f850cb3cb7bf19401911f439e1c7ae0e41560023aea71c4b6e63030",
+        "vk": "892f8329223a704a3f2888cb3215072623ed2b6a5bb8bd94d59ffc910e1f8023"
+      },
+      "fov_pixels": 43564,
+      "ah_pixels_outside_fov": 31,
+      "vk_pixels_outside_fov": 45
+    },
+    "im0319_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0319.ppm.gz",
+        "ah": "im0319.ah.ppm.gz",
+        "vk": "im0319.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "f055a781b610639e3568ae1672533c80a9d2a577b6d04b688073451bc336f184",
+        "ah": "942221822f850cb3cb7bf19401911f439e1c7ae0e41560023aea71c4b6e63030",
+        "vk": "892f8329223a704a3f2888cb3215072623ed2b6a5bb8bd94d59ffc910e1f8023"
+      },
+      "fov_pixels": 181264,
+      "ah_pixels_outside_fov": 2,
+      "vk_pixels_outside_fov": 21
+    },
+    "im0324_256": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 256,
+        "nominal_scale": 0.3657142857142857,
+        "resized_width": 256,
+        "resized_height": 221,
+        "pad_left": 0,
+        "pad_top": 17,
+        "pad_right": 0,
+        "pad_bottom": 18,
+        "effective_scale_x": 0.3657142857142857,
+        "effective_scale_y": 0.3652892561983471,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0324.ppm.gz",
+        "ah": "im0324.ah.ppm.gz",
+        "vk": "im0324.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "69aaf774cec605849cba4d20bc07cec50206c3e6b39133fc69e74e466f02a9a8",
+        "ah": "6cb56d6730609639bd6df4a77e0c457b04a2de4108520e044ff4c59362a3429c",
+        "vk": "9a1c8974598d84044f9492dfbd80bf91ef87fbf30f83bd50cc5260407e1ed705"
+      },
+      "fov_pixels": 43613,
+      "ah_pixels_outside_fov": 15,
+      "vk_pixels_outside_fov": 51
+    },
+    "im0324_512": {
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "source_members": {
+        "image": "im0324.ppm.gz",
+        "ah": "im0324.ah.ppm.gz",
+        "vk": "im0324.vk.ppm.gz"
+      },
+      "source_hashes": {
+        "image": "69aaf774cec605849cba4d20bc07cec50206c3e6b39133fc69e74e466f02a9a8",
+        "ah": "6cb56d6730609639bd6df4a77e0c457b04a2de4108520e044ff4c59362a3429c",
+        "vk": "9a1c8974598d84044f9492dfbd80bf91ef87fbf30f83bd50cc5260407e1ed705"
+      },
+      "fov_pixels": 180989,
+      "ah_pixels_outside_fov": 8,
+      "vk_pixels_outside_fov": 43
+    }
+  },
+  "gt_boundary": "GT used only for offline training threshold selection and final evaluation; not accepted by features/segment/pack_input",
+  "source_files": {
+    "software\\preprocessing.py": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18",
+    "software\\reference.py": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e",
+    "software\\metrics.py": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99",
+    "scripts\\evaluate_stare.py": "18fdd6116efe3c1a7fff2d176c8e37987f7c6d2d35340086871d03c079580193"
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "audit_date": "2026-10-12",
+  "board_availability": "received_boot_base_gpio_hdmi_vdma_verified",
+  "user_evidence": "User screenshots and reports confirm Linux shell, PYNQ 3.0.1, Jupyter/Base GPIO, correct static HDMI pattern, 30-second stability and 100-frame output submission with normal visible motion",
+  "pcb_revision": null,
+  "pynq_version": "3.0.1",
+  "deployment_baseline": {
+    "board": "Pynq-Z2",
+    "pynq_tag": "v3.0.1",
+    "pynq_commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+    "required_vivado_for_official_base": "2022.1",
+    "status": "Measured v3.0.1 Base retained; user approved Vivado 2017.4 A0 and v2.2.1-derived B compatibility validation; 2022.1 installation deferred; PCB revision pending"
+  },
+  "tests": [
+    {
+      "id": "board_boot",
+      "status": "PASS_USER_SCREENSHOT",
+      "executed": true,
+      "evidence": "results/board/2026-10-11/pynq_uart_shell_user_photo.png",
+      "scope": "Linux serial shell reached; full boot log not captured"
+    },
+    {
+      "id": "jupyter_base_overlay",
+      "status": "PASS_MIXED_USER_EVIDENCE",
+      "executed": true,
+      "evidence": "results/board/2026-10-11/jupyter_home_user_photo.png",
+      "subtests": {
+        "jupyter_access_login": "PASS_USER_SCREENSHOT",
+        "base_overlay_load": "PASS_USER_REPORTED_GPIO_DEMO"
+      },
+      "base_evidence": "results/board/2026-10-11/gpio_base_check.md"
+    },
+    {
+      "id": "official_hdmi_output",
+      "status": "PASS_USER_PHOTO_AND_REPORT",
+      "executed": true,
+      "evidence": "results/board/2026-10-11/hdmi_output_check.md",
+      "scope": "720p60 BGR24 static color/position pattern and 30-second stability confirmed; initial mismatch retained as historical, cause unknown",
+      "subtests": {
+        "visible_color_bars": "PASS_SIGNAL_VISIBLE_ONLY",
+        "requested_bar_layout": "PASS_LATEST_USER_PHOTO_EARLIER_MISMATCH_RETAINED",
+        "solid_red_frame": "PASS_USER_PHOTO",
+        "reported_mode_shape_strides": "PASS_USER_SCREENSHOT_SOFTWARE_CONFIGURATION",
+        "stability_30_seconds": "PASS_USER_REPORTED",
+        "position_markers": "PASS_USER_PHOTO_VISUAL_CHECK"
+      },
+      "reported_configuration": {
+        "width": 1280,
+        "height": 720,
+        "bits_per_pixel": 24,
+        "fps": 60,
+        "shape": [
+          720,
+          1280,
+          3
+        ],
+        "dtype": "uint8",
+        "strides": [
+          3840,
+          3,
+          1
+        ]
+      }
+    },
+    {
+      "id": "official_gpio_led",
+      "status": "PASS_USER_REPORTED",
+      "executed": true,
+      "evidence": "results/board/2026-10-11/gpio_base_check.md",
+      "scope": "Official copied button/LED demo; user confirms expected physical response"
+    },
+    {
+      "id": "official_video_framebuffer",
+      "status": "PASS_USER_SCREENSHOT_AND_REPORT",
+      "executed": true,
+      "scope": "Official output VDMA, 100 frames submitted and expected motion observed; not per-frame integrity or HDMI RX validation",
+      "evidence": "results/board/2026-10-11/hdmi_output_check.md",
+      "submitted_frames": 100,
+      "completion_output": "Submitted 100 frames."
+    },
+    {
+      "id": "independent_dma_loopback",
+      "status": "PASS_R2_RAW_BOARD_RECORDS_VERIFIED_AND_ARCHIVED",
+      "executed": true,
+      "evidence": "results/a0_dma_2017_4_r2/board_execution_2026-10-11/verification_report.md",
+      "scope": "A0 r2 official DMA/FIFO/DDR exact loopback: 1 smoke + 70 full transfers; executed Notebook and raw JSON archived byte-for-byte, matching release/source and independently regenerated pattern hashes. No medical algorithm/final HDMI/FPS validation.",
+      "first_attempt_history": {
+        "status": "FAIL_FIRST_BOARD_ATTEMPT_SYSTEM_UNRESPONSIVE_RESET_WIRING_DEFECT",
+        "evidence": "results/a0_dma_2017_4/reset_failure_2026-10-11/failure_record.md",
+        "scope": "Notebook execution initiated; no completed transfers confirmed. Network timeout and user-reported unresponsive UART; active-low auxiliary reset tied 0 in first A0 build. Exact stall instruction not captured."
+      }
+    }
+  ],
+  "host_checks": {
+    "vivado_2017_4_xc7z020_synthesis_place_route_probe": "PASS_HOST_ONLY",
+    "xsim_probe_256_vectors": "PASS_HOST_ONLY_AFTER_TIMESCALE_FIX",
+    "official_v2_2_1_hls_stock_export": "FAIL_REVISION_OVERFLOW",
+    "official_v2_2_1_hls_local_metadata_repack": "PASS_WORK_COPY_ONLY",
+    "official_v2_2_1_base_bd_validation": "PASS_WITH_ORIGINAL_WARNINGS",
+    "official_base_full_synthesis_implementation_bitstream": "NOT_EXECUTED",
+    "retina_algorithm_rtl": "A1_POINT_STAGE_SIM_AND_BITSTREAM_PASS_HOST_ONLY_FULL_SEGMENTATION_PENDING",
+    "a0_vivado_2017_4_implementation_bitstream": "FIRST_BUILD_TIMING_PASSED_BUT_RESET_FUNCTIONAL_DEFECT_FOUND",
+    "a0_pynq_3_0_1_hwh_parser": "FIRST_CHECK_INCOMPLETE_AUX_RESET_NOT_VALIDATED",
+    "a0_runner_fault_tests": "PASS_HOST_FAKE_DMA_ONLY_4_TESTS",
+    "a0_r2_vivado_2017_4_implementation_bitstream": "PASS_HOST_ONLY",
+    "a0_r2_pynq_3_0_1_hwh_parser": "PASS_HOST_ONLY_AUXILIARY_RESET_CONNECTION_CHECKED",
+    "a0_r2_vendor_reset_simulation": "PASS_HOST_ONLY_OLD_FAULT_REPRODUCED_PS_RESET_RELEASE_VERIFIED",
+    "a0_r2_runner_fault_tests": "PASS_HOST_FAKE_DMA_ONLY_6_TESTS",
+    "a0_r2_board_record_validation": "PASS_71_PATTERN_HASHES_METADATA_AND_UNCHANGED_EXECUTED_NOTEBOOK",
+    "m0_stare_cpu_reference": "PASS_REAL_DATA_CPU_ONLY",
+    "a1_point_2017_4_implementation": "PASS_HOST_BUILD_AND_BOARD_17_POINT_FRAMES_ARCHIVED",
+    "a1_board_record_validation": "PASS_17_PATTERN_HASHES_BYTES_COUNTERS_AND_UNCHANGED_EXECUTABLE_NOTEBOOK"
+  },
+  "sd_image_release": "PYNQ-Z2 v3.0.1 (image identity and running package version confirmed)",
+  "pynq_version_evidence": "results/board/2026-10-11/pynq_version_ip_user_photo.png: python3 import pynq, pynq.__version__ output",
+  "board_reported_ipv4": [
+    "192.168.2.99"
+  ],
+  "network_reachability": "PASS_USER_BROWSER_SCREENSHOT",
+  "jupyter_url": "http://192.168.2.99:9090/tree",
+  "hdmi_hardware": "Correct static display, reported stable 30 seconds, and normal 100-frame moving-bar observation confirmed",
+  "runtime_artifact_archive": "Executed HDMI notebook and raw board environment/framebuffer JSON archived byte-for-byte with hashes; GPIO execution evidenced by screenshot/report, original official source retained",
+  "hdmi_cleanup": "PASS_ARCHIVED_NOTEBOOK_CLOSE_COMPLETION_OUTPUT",
+  "hdmi_executed_notebook": {
+    "path": "results/board/2026-10-11/hdmi_output_check_executed.ipynb",
+    "sha256": "42af16d86e5892961f65c77574c6db955e716bd50d4a0c01a7212f369a17967a",
+    "bytes": 7629,
+    "manifest": "results/board/2026-10-11/hdmi_notebook_archive_manifest.json"
+  },
+  "board_environment_collection": {
+    "status": "PASS_RAW_REPORT_ARCHIVED",
+    "evidence": "results/board/2026-10-11/board_environment_capture_user_screenshot.png",
+    "python_version": "3.10.4",
+    "kernel_release": "5.15.19-xilinx-v2022.1",
+    "memtotal_kb": 505428,
+    "software_visible_ip_count": 21,
+    "raw_json_archived": true,
+    "report_path": "results/board/2026-10-11/board_environment.json",
+    "source_comparison": "Four Tcl SHA256 hashes match fixed official v3.0.1 Z2 source; bit/HWH hashes recorded without independent binary reference"
+  },
+  "board_clock": "RAW_REPORT_2022_10_22_NOT_SYNCHRONIZED_TO_CURRENT_DATE",
+  "development_route": {
+    "user_approved": "existing Vivado 2017.4 first",
+    "a0": "TUL Z2 preset + installed standard AXI DMA/FIFO; PYNQ 3.0.1 runtime",
+    "b_candidate": "official Pynq-Z2 v2.2.1 / 3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3 with runtime compatibility verification",
+    "vivado_2022_1": "DEFERRED_FALLBACK",
+    "evidence": "results/a0_dma_2017_4/build_report.md"
+  },
+  "a0_recovery": "First A0 reset defect retained as failed history; power-cycle recovered. Corrected r2 precheck/load/smoke/full suite passed; raw board execution records verified and archived.",
+  "a0_r2": {
+    "status": "PASS_BOARD_RECORDS_VERIFIED_AND_ARCHIVED",
+    "evidence": "results/a0_dma_2017_4_r2/build_report.md",
+    "deployment": "build/deploy/a0_dma_2017_4_r2",
+    "scope": "A0 r2 official DMA/FIFO/DDR exact loopback: 1 smoke + 70 full transfers; executed Notebook and raw JSON archived byte-for-byte, matching release/source and independently regenerated pattern hashes. No medical algorithm/final HDMI/FPS validation.",
+    "precheck_evidence": "results/a0_dma_2017_4_r2/board_precheck_2026-10-11/record.json",
+    "load_evidence": "results/a0_dma_2017_4_r2/board_load_2026-10-11/record.json",
+    "smoke_evidence": "results/a0_dma_2017_4_r2/board_smoke_2026-10-11/record.json",
+    "full_suite_evidence": "results/a0_dma_2017_4_r2/board_full_2026-10-11/record.json",
+    "raw_archive_manifest": "results/a0_dma_2017_4_r2/board_execution_2026-10-11/archive_manifest.json",
+    "board_verification_report": "results/a0_dma_2017_4_r2/board_execution_2026-10-11/verification_report.md"
+  },
+  "m0": {
+    "status": "PASS_CPU_REFERENCE_ONLY",
+    "chosen_algorithm": "A",
+    "evidence": "results/m0_stare_2026-10-11/evaluation_report.md",
+    "heldout_512_ah_macro_dice": 0.5384705109030941
+  },
+  "a1": {
+    "host_status": "PASS_BUILD_METADATA_RTL_AND_VENDOR_RESET_SIMULATION",
+    "board_status": "PASS_BOARD_RECORDS_VERIFIED_AND_ARCHIVED",
+    "evidence": "results/a1_point_2017_4/build_report.md",
+    "manifest": "results/a1_point_2017_4_r2/release_manifest.json",
+    "scope": "Diagnostic bypass/green/direct LUT(G) exact 17 frames verified on PYNQ-Z2; no Gaussian, vessel segmentation, final HDMI integration or FPS validation",
+    "raw_archive_manifest": "results/a1_point_2017_4_r2/board_execution_2026-10-12/archive_manifest.json",
+    "board_verification_report": "results/a1_point_2017_4_r2/board_execution_2026-10-12/verification_report.md",
+    "frames_verified": 17,
+    "precheck_failure_history": "results/a1_point_2017_4_r2/failure_record.json",
+    "host_manifest_r1": "results/a1_point_2017_4/release_manifest.json"
+  }
+}

@@ -1,0 +1,10 @@
+test_constant_has_no_line_edge_or_coherence (tests.test_q4_profile_features.ProfileFeatureTests.test_constant_has_no_line_edge_or_coherence) ... ok
+test_dark_line_and_step_have_different_paired_edge_costs (tests.test_q4_profile_features.ProfileFeatureTests.test_dark_line_and_step_have_different_paired_edge_costs) ... ok
+test_integer_features_match_independent_spatial_sum_oracle (tests.test_q4_profile_features.ProfileFeatureTests.test_integer_features_match_independent_spatial_sum_oracle) ... ok
+test_invalid_input_and_non_square_tiny_images (tests.test_q4_profile_features.ProfileFeatureTests.test_invalid_input_and_non_square_tiny_images) ... ok
+test_kernels_zero_dc_and_symmetry (tests.test_q4_profile_features.ProfileFeatureTests.test_kernels_zero_dc_and_symmetry) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.300s
+
+OK

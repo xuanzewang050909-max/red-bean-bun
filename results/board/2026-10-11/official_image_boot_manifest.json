@@ -1,0 +1,33 @@
+{
+  "scope": "Read-only PC IMG inspection, not SD write verification",
+  "fat_type": "FAT16   ",
+  "boot_partition_offset": 4096,
+  "files": [
+    {
+      "short_name": "BOOT.BIN",
+      "size": 1087568,
+      "sha256": "3fcdd4303567d75ac1e7be96c4a93816acb6c150f6facbf1f123d729a5bd5def"
+    },
+    {
+      "short_name": "BOOT.PY",
+      "size": 991,
+      "sha256": "b2653ef809c3271231c78772342c2be728d39686a877d3c6fe8cdabfd4ac1d42"
+    },
+    {
+      "short_name": "BOOT.SCR",
+      "size": 2776,
+      "sha256": "7013e14923fbe461c4ecd745214fcafcb0ffaddb10865f9135cd8624637359f4"
+    },
+    {
+      "short_name": "IMAGE.UB",
+      "size": 6464328,
+      "sha256": "1cbbd556d8416cb8e5ae3025a6df2fd11b226707dc4a1491cc6382dfbee2ab1f"
+    },
+    {
+      "short_name": "REVISION",
+      "size": 83,
+      "sha256": "4890cc0639e8f20a0fd5ce4610f6cbc227a01a7589e847f7810bf68c80be6b19",
+      "content": "Release 2022_10_22 93ddd21\nBoard 2022_10_22 93ddd21 https://github.com/Xilinx/PYNQ\n"
+    }
+  ]
+}

@@ -1,0 +1,1426 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 11 20:51:27 2026
+# Process ID: 34408
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -nojournal -log build/a0_initial.log -source vivado/scripts/build_minimal_dma.tcl -tclargs build/a0_dma_2017_4_01 full
+# Log file: D:/PLD/retina_fpga/build/a0_initial.log
+# Journal file: 
+#-----------------------------------------------------------
+source vivado/scripts/build_minimal_dma.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne "2017.4"} {error "This baseline is verified only with Vivado 2017.4"}
+# if {[llength $argv] != 2} {error "Expected new output directory and bd|full"}
+# set out [file normalize [lindex $argv 0]]
+# set stage [lindex $argv 1]
+# if {$stage ni {bd full}} {error "Invalid stage"}
+# if {[file exists $out]} {error "Refusing to overwrite existing build directory: $out"}
+# file mkdir $out
+# set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+# create_project a0_dma $out -part xc7z020clg400-1
+# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+# set_property target_language Verilog [current_project]
+# create_bd_design a0_dma
+Wrote  : <D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/a0_dma.bd> 
+# create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 ps7_0
+# apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 \
+#     -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable"} \
+#     [get_bd_cells ps7_0]
+# set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_USE_S_AXI_HP0 {1} \
+#     CONFIG.PCW_S_AXI_HP0_DATA_WIDTH {64} CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} \
+#     CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells ps7_0]
+CRITICAL WARNING: [PSU-1]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_0 has negative value -0.051 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-2]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_1 has negative value -0.006 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-3]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_2 has negative value -0.009 . PS DDR interfaces might fail when entering negative DQS skew values. 
+CRITICAL WARNING: [PSU-4]  Parameter : PCW_UIPARAM_DDR_DQS_TO_CLK_DELAY_3 has negative value -0.033 . PS DDR interfaces might fail when entering negative DQS skew values. 
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+# set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_include_mm2s {1} \
+#     CONFIG.c_include_s2mm {1} CONFIG.c_sg_length_width {23} \
+#     CONFIG.c_m_axi_mm2s_data_width {64} CONFIG.c_m_axis_mm2s_tdata_width {32} \
+#     CONFIG.c_m_axi_s2mm_data_width {64} CONFIG.c_s_axis_s2mm_tdata_width {32} \
+#     CONFIG.c_include_mm2s_dre {0} CONFIG.c_include_s2mm_dre {0} \
+#     CONFIG.c_mm2s_burst_size {16} CONFIG.c_s2mm_burst_size {16}] [get_bd_cells axi_dma_0]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter c_s_axis_s2mm_tdata_width on /axi_dma_0. It is read-only.
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 loopback_fifo
+# set_property -dict [list CONFIG.TDATA_NUM_BYTES {4} CONFIG.FIFO_DEPTH {1024} \
+#     CONFIG.HAS_TKEEP {1} CONFIG.HAS_TLAST {1} CONFIG.IS_ACLK_ASYNC {0}] [get_bd_cells loopback_fifo]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 control_axi
+# set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {1}] [get_bd_cells control_axi]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 memory_axi
+# set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells memory_axi]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 reset_100m
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+# set_property CONFIG.C_EXT_RESET_HIGH {0} [get_bd_cells reset_100m]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter C_EXT_RESET_HIGH on /reset_100m. It is read-only.
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_one
+# set_property CONFIG.CONST_VAL {1} [get_bd_cells const_one]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_zero
+# set_property CONFIG.CONST_VAL {0} [get_bd_cells const_zero]
+# foreach {a b} {
+#     ps7_0/M_AXI_GP0 control_axi/S00_AXI
+#     control_axi/M00_AXI axi_dma_0/S_AXI_LITE
+#     axi_dma_0/M_AXI_MM2S memory_axi/S00_AXI
+#     axi_dma_0/M_AXI_S2MM memory_axi/S01_AXI
+#     memory_axi/M00_AXI ps7_0/S_AXI_HP0
+#     axi_dma_0/M_AXIS_MM2S loopback_fifo/S_AXIS
+#     loopback_fifo/M_AXIS axi_dma_0/S_AXIS_S2MM
+# } {connect_bd_intf_net [get_bd_intf_pins $a] [get_bd_intf_pins $b]}
+# set clk [get_bd_pins ps7_0/FCLK_CLK0]
+# foreach pin {
+#     ps7_0/M_AXI_GP0_ACLK ps7_0/S_AXI_HP0_ACLK
+#     control_axi/ACLK control_axi/S00_ACLK control_axi/M00_ACLK
+#     memory_axi/ACLK memory_axi/S00_ACLK memory_axi/S01_ACLK memory_axi/M00_ACLK
+#     axi_dma_0/s_axi_lite_aclk axi_dma_0/m_axi_mm2s_aclk axi_dma_0/m_axi_s2mm_aclk
+#     loopback_fifo/s_axis_aclk reset_100m/slowest_sync_clk
+# } {connect_bd_net $clk [get_bd_pins $pin]}
+# connect_bd_net [get_bd_pins ps7_0/FCLK_RESET0_N] [get_bd_pins reset_100m/ext_reset_in]
+# connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins reset_100m/dcm_locked]
+# connect_bd_net [get_bd_pins const_zero/dout] [get_bd_pins reset_100m/aux_reset_in] [get_bd_pins reset_100m/mb_debug_sys_rst]
+# foreach pin {
+#     control_axi/ARESETN control_axi/S00_ARESETN control_axi/M00_ARESETN
+#     memory_axi/ARESETN memory_axi/S00_ARESETN memory_axi/S01_ARESETN memory_axi/M00_ARESETN
+# } {connect_bd_net [get_bd_pins reset_100m/interconnect_aresetn] [get_bd_pins $pin]}
+# foreach pin {axi_dma_0/axi_resetn loopback_fifo/s_axis_aresetn} {
+#     connect_bd_net [get_bd_pins reset_100m/peripheral_aresetn] [get_bd_pins $pin]
+# }
+# assign_bd_address
+</ps7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_MM2S> at <0x00000000 [ 512M ]>
+</ps7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_S2MM> at <0x00000000 [ 512M ]>
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </ps7_0/Data> at <0x40400000 [ 64K ]>
+# set dma_seg [get_bd_addr_segs -of_objects [get_bd_addr_spaces ps7_0/Data] -filter {NAME =~ *axi_dma_0*}]
+# if {[llength $dma_seg] != 1} {error "Expected exactly one DMA control address segment"}
+# set_property offset 0x40400000 $dma_seg
+# set_property range 64K $dma_seg
+# validate_bd_design
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter C_M_AXI_S2MM_DATA_WIDTH(64) on '/axi_dma_0' with propagated value(32). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_M_AXI_GP0_FREQMHZ(10) on '/ps7_0' with propagated value(100). Command ignored
+WARNING: [BD 41-702] Propagation TCL tries to overwrite USER strength parameter PCW_S_AXI_HP0_FREQMHZ(10) on '/ps7_0' with propagated value(100). Command ignored
+# save_bd_design
+Wrote  : <D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/a0_dma.bd> 
+# write_bd_tcl -force [file join $out reconstructed_bd.tcl]
+INFO: [BD 5-148] Tcl file written out <D:/PLD/retina_fpga/build/a0_dma_2017_4_01/reconstructed_bd.tcl>.
+
+# report_ip_status -file [file join $out ip_status.rpt]
+# set fp [open [file join $out configuration.txt] w]
+# puts $fp "Vivado [version -short]; part [get_property PART [current_project]]; board [get_property BOARD_PART [current_project]]"
+# foreach cell {ps7_0 axi_dma_0 loopback_fifo reset_100m} {
+#     puts $fp "\n$cell [get_property VLNV [get_bd_cells $cell]]"
+#     foreach prop [lsort [list_property [get_bd_cells $cell]]] {
+#         if {[string match CONFIG.* $prop]} {puts $fp "$prop=[get_property $prop [get_bd_cells $cell]]"}
+#     }
+# }
+# foreach seg [get_bd_addr_segs -hier] {puts $fp "$seg offset=[get_property OFFSET $seg] range=[get_property RANGE $seg]"}
+# close $fp
+# puts "A0_BD_VALIDATED (host only, board test pending)"
+A0_BD_VALIDATED (host only, board test pending)
+# if {$stage eq "bd"} {exit 0}
+# set bd_file [get_files */a0_dma.bd]
+# generate_target all $bd_file
+INFO: [BD 41-1662] The design 'a0_dma.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'memory_axi_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'memory_axi_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'memory_axi_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+VHDL Output written to : D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'memory_axi_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'memory_axi_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'memory_axi_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+VHDL Output written to : D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/sim/a0_dma.v
+VHDL Output written to : D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/hdl/a0_dma_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block loopback_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100m .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_one .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_axi/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_auto_pc_1/a0_dma_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_axi/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_auto_pc_0/a0_dma_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block control_axi/s00_couplers/auto_pc .
+Exporting to file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/hw_handoff/a0_dma.hwh
+Generated Block Design Tcl file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/hw_handoff/a0_dma_bd.tcl
+Generated Hardware Definition File D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.hwdef
+generate_target: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 594.344 ; gain = 135.746
+# set wrapper [make_wrapper -files $bd_file -top]
+# add_files -norecurse $wrapper
+# set_property top a0_dma_wrapper [current_fileset]
+# update_compile_order -fileset sources_1
+# launch_runs synth_1 -jobs 4
+[Sun Oct 11 20:51:50 2026] Launched a0_dma_ps7_0_0_synth_1, a0_dma_loopback_fifo_0_synth_1, a0_dma_reset_100m_0_synth_1, a0_dma_const_one_0_synth_1, a0_dma_const_zero_0_synth_1, a0_dma_xbar_0_synth_1, a0_dma_axi_dma_0_0_synth_1, a0_dma_auto_pc_1_synth_1, a0_dma_auto_pc_0_synth_1...
+Run output will be captured here:
+a0_dma_ps7_0_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_ps7_0_0_synth_1/runme.log
+a0_dma_loopback_fifo_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_loopback_fifo_0_synth_1/runme.log
+a0_dma_reset_100m_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_reset_100m_0_synth_1/runme.log
+a0_dma_const_one_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_const_one_0_synth_1/runme.log
+a0_dma_const_zero_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_const_zero_0_synth_1/runme.log
+a0_dma_xbar_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_xbar_0_synth_1/runme.log
+a0_dma_axi_dma_0_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_axi_dma_0_0_synth_1/runme.log
+a0_dma_auto_pc_1_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_auto_pc_1_synth_1/runme.log
+a0_dma_auto_pc_0_synth_1: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/a0_dma_auto_pc_0_synth_1/runme.log
+[Sun Oct 11 20:51:50 2026] Launched synth_1...
+Run output will be captured here: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/runme.log
+# wait_on_run synth_1
+[Sun Oct 11 20:51:50 2026] Waiting for synth_1 to finish...
+
+*** Running vivado
+    with args -log a0_dma_wrapper.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source a0_dma_wrapper.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source a0_dma_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+Command: synth_design -top a0_dma_wrapper -part xc7z020clg400-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 11492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 437.895 ; gain = 104.281
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'a0_dma_wrapper' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/hdl/a0_dma_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'a0_dma' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:13]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_axi_dma_0_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_axi_dma_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_axi_dma_0_0' (1#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_axi_dma_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_dma_0' of module 'a0_dma_axi_dma_0_0' requires 64 connections, but only 59 given [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:216]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_const_one_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_const_one_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_const_one_0' (2#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_const_one_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_const_zero_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_const_zero_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_const_zero_0' (3#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_const_zero_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_control_axi_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:545]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_1VUGDMS' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1946]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_auto_pc_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_auto_pc_0' (4#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'a0_dma_auto_pc_0' requires 59 connections, but only 56 given [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:2177]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_1VUGDMS' (5#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1946]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_control_axi_0' (6#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:545]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_loopback_fifo_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_loopback_fifo_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_loopback_fifo_0' (7#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_loopback_fifo_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'loopback_fifo' of module 'a0_dma_loopback_fifo_0' requires 15 connections, but only 12 given [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:341]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_memory_axi_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:845]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_162N3RV' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1437]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_auto_pc_1' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_auto_pc_1' (8#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_auto_pc_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_162N3RV' (9#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1437]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_18FXZRE' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1842]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_18FXZRE' (10#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1842]
+INFO: [Synth 8-638] synthesizing module 's01_couplers_imp_3YI7DN' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:2236]
+INFO: [Synth 8-256] done synthesizing module 's01_couplers_imp_3YI7DN' (11#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:2236]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_xbar_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_xbar_0' (12#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_arready' does not match port width (2) of module 'a0_dma_xbar_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1408]
+WARNING: [Synth 8-689] width (64) of port connection 's_axi_rdata' does not match port width (128) of module 'a0_dma_xbar_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1425]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rlast' does not match port width (2) of module 'a0_dma_xbar_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1426]
+WARNING: [Synth 8-689] width (2) of port connection 's_axi_rresp' does not match port width (4) of module 'a0_dma_xbar_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1428]
+WARNING: [Synth 8-689] width (1) of port connection 's_axi_rvalid' does not match port width (2) of module 'a0_dma_xbar_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1429]
+WARNING: [Synth 8-350] instance 'xbar' of module 'a0_dma_xbar_0' requires 78 connections, but only 76 given [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:1358]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_memory_axi_0' (13#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:845]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_ps7_0_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_ps7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_ps7_0_0' (14#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_ps7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'ps7_0' of module 'a0_dma_ps7_0_0' requires 110 connections, but only 104 given [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:430]
+INFO: [Synth 8-638] synthesizing module 'a0_dma_reset_100m_0' [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_reset_100m_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_reset_100m_0' (15#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/realtime/a0_dma_reset_100m_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'reset_100m' of module 'a0_dma_reset_100m_0' requires 10 connections, but only 7 given [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:535]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma' (16#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/synth/a0_dma.v:13]
+INFO: [Synth 8-256] done synthesizing module 'a0_dma_wrapper' (17#1) [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/hdl/a0_dma_wrapper.v:12]
+WARNING: [Synth 8-3331] design s01_couplers_imp_3YI7DN has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_3YI7DN has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_3YI7DN has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_3YI7DN has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_18FXZRE has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_18FXZRE has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_18FXZRE has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_18FXZRE has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_bid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_bid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_bid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_bid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_bid[1]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_rid[5]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_rid[4]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_rid[3]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_rid[2]
+WARNING: [Synth 8-3331] design m00_couplers_imp_162N3RV has unconnected port M_AXI_rid[1]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1VUGDMS has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1VUGDMS has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design a0_dma_control_axi_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design a0_dma_control_axi_0 has unconnected port ARESETN
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.156 ; gain = 155.543
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 489.156 ; gain = 155.543
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc] for cell 'a0_dma_i/ps7_0'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc] for cell 'a0_dma_i/ps7_0'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp10/a0_dma_axi_dma_0_0_in_context.xdc] for cell 'a0_dma_i/axi_dma_0'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp10/a0_dma_axi_dma_0_0_in_context.xdc] for cell 'a0_dma_i/axi_dma_0'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp11/a0_dma_loopback_fifo_0_in_context.xdc] for cell 'a0_dma_i/loopback_fifo'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp11/a0_dma_loopback_fifo_0_in_context.xdc] for cell 'a0_dma_i/loopback_fifo'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp12/a0_dma_reset_100m_0_in_context.xdc] for cell 'a0_dma_i/reset_100m'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp12/a0_dma_reset_100m_0_in_context.xdc] for cell 'a0_dma_i/reset_100m'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp13/a0_dma_const_one_0_in_context.xdc] for cell 'a0_dma_i/const_one'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp13/a0_dma_const_one_0_in_context.xdc] for cell 'a0_dma_i/const_one'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp14/a0_dma_const_zero_0_in_context.xdc] for cell 'a0_dma_i/const_zero'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp14/a0_dma_const_zero_0_in_context.xdc] for cell 'a0_dma_i/const_zero'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp15/a0_dma_xbar_0_in_context.xdc] for cell 'a0_dma_i/memory_axi/xbar'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp15/a0_dma_xbar_0_in_context.xdc] for cell 'a0_dma_i/memory_axi/xbar'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp16/a0_dma_auto_pc_1_in_context.xdc] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp16/a0_dma_auto_pc_1_in_context.xdc] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp17/a0_dma_auto_pc_0_in_context.xdc] for cell 'a0_dma_i/control_axi/s00_couplers/auto_pc'
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp17/a0_dma_auto_pc_0_in_context.xdc] for cell 'a0_dma_i/control_axi/s00_couplers/auto_pc'
+Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 792.668 ; gain = 0.051
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'a0_dma_i/loopback_fifo' at clock pin 's_axis_aclk' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 794.168 ; gain = 460.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 794.168 ; gain = 460.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 2).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 3).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 4).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[10]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 5).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 6).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[11]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 7).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 8).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[12]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 9).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 10).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[13]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 11).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 12).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[14]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 13).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 14).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 15).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 16).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 17).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 18).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 19).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 20).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[4]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 21).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 22).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[5]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 23).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 24).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[6]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 25).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 26).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[7]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 27).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 28).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[8]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 29).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 30).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_addr[9]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 31).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 32).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 33).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 34).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 35).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 36).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ba[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 37).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 38).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cas_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 39).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cke. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 40).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cke. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 41).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 42).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_cs_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 43).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 44).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_p. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 45).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 46).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ck_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 47).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 48).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 49).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 50).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 51).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 52).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 53).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 54).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dm[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 55).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 56).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 57).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 58).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 59).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 60).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 61).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 62).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_p[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 63).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 64).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 65).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 66).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 67).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 68).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 69).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 70).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dqs_n[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 71).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 72).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 73).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 74).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[10]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 75).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 76).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[11]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 77).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 78).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[12]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 79).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 80).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[13]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 81).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 82).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[14]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 83).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 84).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[15]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 85).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 86).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[16]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 87).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 88).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[17]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 89).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 90).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[18]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 91).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 92).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[19]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 93).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 94).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 95).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 96).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[20]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 97).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 98).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[21]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 99).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 100).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[22]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 101).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 102).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[23]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 103).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 104).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[24]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 105).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 106).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[25]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 107).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 108).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[26]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 109).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 110).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[27]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 111).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 112).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[28]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 113).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 114).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[29]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 115).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 116).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 117).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 118).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[30]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 119).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 120).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[31]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 121).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 122).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 123).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 124).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[4]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 125).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 126).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[5]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 127).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 128).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[6]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 129).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 130).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[7]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 131).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 132).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[8]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 133).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 134).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_dq[9]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 135).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 136).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_reset_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 137).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_odt. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 138).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_odt. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 139).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 140).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_ras_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 141).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 142).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrn. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 143).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 144).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ddr_vrp. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 145).
+Applied set_property IO_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 146).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for DDR_we_n. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 147).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 148).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[0]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 149).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 150).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[10]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 151).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 152).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[11]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 153).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 154).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[12]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 155).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 156).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[13]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 157).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 158).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[14]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 159).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 160).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[15]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 161).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 162).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[16]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 163).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 164).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[17]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 165).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 166).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[18]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 167).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 168).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[19]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 169).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 170).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[1]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 171).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 172).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[20]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 173).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 174).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[21]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 175).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 176).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[22]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 177).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 178).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[23]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 179).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 180).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[24]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 181).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 182).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[25]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 183).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 184).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[26]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 185).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 186).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[27]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 187).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 188).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[28]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 189).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 190).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[29]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 191).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 192).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[2]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 193).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 194).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[30]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 195).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 196).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[31]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 197).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 198).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[32]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 199).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 200).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[33]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 201).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 202).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[34]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 203).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 204).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[35]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 205).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 206).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[36]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 207).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 208).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[37]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 209).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 210).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[38]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 211).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 212).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[39]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 213).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 214).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[3]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 215).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 216).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[40]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 217).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 218).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[41]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 219).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 220).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[42]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 221).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 222).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[43]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 223).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 224).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[44]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 225).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 226).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[45]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 227).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 228).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[46]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 229).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 230).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[47]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 231).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 232).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[48]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 233).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 234).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[49]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 235).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 236).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[4]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 237).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 238).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[50]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 239).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 240).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[51]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 241).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 242).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[52]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 243).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 244).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[53]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 245).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 246).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[5]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 247).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 248).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[6]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 249).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 250).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[7]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 251).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 252).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[8]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 253).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 254).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_mio[9]. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 255).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 256).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_clk. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 257).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 258).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_porb. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 259).
+Applied set_property IO_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 260).
+Applied set_property CLOCK_BUFFER_TYPE = NONE for FIXED_IO_ps_srstb. (constraint file  D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/.Xil/Vivado-39604-LAPTOP-DPJT23TC/dcp9/a0_dma_ps7_0_0_in_context.xdc, line 261).
+Applied set_property DONT_TOUCH = true for a0_dma_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/axi_dma_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/const_one. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/const_zero. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/control_axi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/control_axi/s00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/loopback_fifo. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/memory_axi. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/memory_axi/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/memory_axi/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/ps7_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for a0_dma_i/reset_100m. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 794.168 ; gain = 460.555
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 794.168 ; gain = 460.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_ARESETN
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_bid[5]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_bid[4]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_bid[3]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_bid[2]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_bid[1]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_rid[5]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_rid[4]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_rid[3]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_rid[2]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port M00_AXI_rid[1]
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S00_ACLK
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S00_ARESETN
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S01_ACLK
+WARNING: [Synth 8-3331] design a0_dma_memory_axi_0 has unconnected port S01_ARESETN
+WARNING: [Synth 8-3331] design a0_dma_control_axi_0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design a0_dma_control_axi_0 has unconnected port ARESETN
+WARNING: [Synth 8-3331] design a0_dma_control_axi_0 has unconnected port M00_ACLK
+WARNING: [Synth 8-3331] design a0_dma_control_axi_0 has unconnected port M00_ARESETN
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 794.168 ; gain = 460.555
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'a0_dma_i/ps7_0/FCLK_CLK0' to pin 'a0_dma_i/ps7_0/bbstub_FCLK_CLK0/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 834.484 ; gain = 500.871
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 834.707 ; gain = 501.094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------+----------+
+|      |BlackBox name          |Instances |
++------+-----------------------+----------+
+|1     |a0_dma_auto_pc_0       |         1|
+|2     |a0_dma_xbar_0          |         1|
+|3     |a0_dma_auto_pc_1       |         1|
+|4     |a0_dma_axi_dma_0_0     |         1|
+|5     |a0_dma_const_one_0     |         1|
+|6     |a0_dma_const_zero_0    |         1|
+|7     |a0_dma_loopback_fifo_0 |         1|
+|8     |a0_dma_ps7_0_0         |         1|
+|9     |a0_dma_reset_100m_0    |         1|
++------+-----------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------+------+
+|      |Cell                   |Count |
++------+-----------------------+------+
+|1     |a0_dma_auto_pc_0       |     1|
+|2     |a0_dma_auto_pc_1       |     1|
+|3     |a0_dma_axi_dma_0_0     |     1|
+|4     |a0_dma_const_one_0     |     1|
+|5     |a0_dma_const_zero_0    |     1|
+|6     |a0_dma_loopback_fifo_0 |     1|
+|7     |a0_dma_ps7_0_0         |     1|
+|8     |a0_dma_reset_100m_0    |     1|
+|9     |a0_dma_xbar_0          |     1|
++------+-----------------------+------+
+
+Report Instance Areas: 
++------+-------------------+-------------------------+------+
+|      |Instance           |Module                   |Cells |
++------+-------------------+-------------------------+------+
+|1     |top                |                         |  1538|
+|2     |  a0_dma_i         |a0_dma                   |  1538|
+|3     |    control_axi    |a0_dma_control_axi_0     |   177|
+|4     |      s00_couplers |s00_couplers_imp_1VUGDMS |   177|
+|5     |    memory_axi     |a0_dma_memory_axi_0      |   619|
+|6     |      m00_couplers |m00_couplers_imp_162N3RV |   265|
++------+-------------------+-------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 20 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 845.164 ; gain = 206.539
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 845.164 ; gain = 511.551
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+48 Infos, 62 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 862.402 ; gain = 535.691
+INFO: [Common 17-1381] The checkpoint 'D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/synth_1/a0_dma_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file a0_dma_wrapper_utilization_synth.rpt -pb a0_dma_wrapper_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 862.402 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 20:54:03 2026...
+[Sun Oct 11 20:54:06 2026] synth_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:02:16 . Memory (MB): peak = 594.781 ; gain = 0.438
+# if {[get_property PROGRESS [get_runs synth_1]] ne "100%"} {error "Synthesis failed; inspect run log"}
+# launch_runs impl_1 -to_step write_bitstream -jobs 4
+[Sun Oct 11 20:54:08 2026] Launched impl_1...
+Run output will be captured here: D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/runme.log
+# wait_on_run impl_1
+[Sun Oct 11 20:54:08 2026] Waiting for impl_1 to finish...
+
+*** Running vivado
+    with args -log a0_dma_wrapper.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source a0_dma_wrapper.tcl -notrace
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source a0_dma_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+Command: link_design -top a0_dma_wrapper -part xc7z020clg400-1
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_axi_dma_0_0/a0_dma_axi_dma_0_0.dcp' for cell 'a0_dma_i/axi_dma_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_const_one_0/a0_dma_const_one_0.dcp' for cell 'a0_dma_i/const_one'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_const_zero_0/a0_dma_const_zero_0.dcp' for cell 'a0_dma_i/const_zero'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_loopback_fifo_0/a0_dma_loopback_fifo_0.dcp' for cell 'a0_dma_i/loopback_fifo'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_ps7_0_0/a0_dma_ps7_0_0.dcp' for cell 'a0_dma_i/ps7_0'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_reset_100m_0/a0_dma_reset_100m_0.dcp' for cell 'a0_dma_i/reset_100m'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_auto_pc_0/a0_dma_auto_pc_0.dcp' for cell 'a0_dma_i/control_axi/s00_couplers/auto_pc'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_xbar_0/a0_dma_xbar_0.dcp' for cell 'a0_dma_i/memory_axi/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_auto_pc_1/a0_dma_auto_pc_1.dcp' for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 124 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_ps7_0_0/a0_dma_ps7_0_0.xdc] for cell 'a0_dma_i/ps7_0/inst'
+Finished Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_ps7_0_0/a0_dma_ps7_0_0.xdc] for cell 'a0_dma_i/ps7_0/inst'
+Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_axi_dma_0_0/a0_dma_axi_dma_0_0.xdc] for cell 'a0_dma_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_axi_dma_0_0/a0_dma_axi_dma_0_0.xdc] for cell 'a0_dma_i/axi_dma_0/U0'
+Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_loopback_fifo_0/a0_dma_loopback_fifo_0/a0_dma_loopback_fifo_0.xdc] for cell 'a0_dma_i/loopback_fifo/inst'
+Finished Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_loopback_fifo_0/a0_dma_loopback_fifo_0/a0_dma_loopback_fifo_0.xdc] for cell 'a0_dma_i/loopback_fifo/inst'
+Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_reset_100m_0/a0_dma_reset_100m_0_board.xdc] for cell 'a0_dma_i/reset_100m/U0'
+Finished Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_reset_100m_0/a0_dma_reset_100m_0_board.xdc] for cell 'a0_dma_i/reset_100m/U0'
+Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_reset_100m_0/a0_dma_reset_100m_0.xdc] for cell 'a0_dma_i/reset_100m/U0'
+Finished Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_reset_100m_0/a0_dma_reset_100m_0.xdc] for cell 'a0_dma_i/reset_100m/U0'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_axi_dma_0_0/a0_dma_axi_dma_0_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_loopback_fifo_0/a0_dma_loopback_fifo_0.dcp'
+INFO: [Project 1-538] Using original IP XDC constraints instead of the XDC constraints in dcp 'd:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_auto_pc_1/a0_dma_auto_pc_1.dcp'
+Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_axi_dma_0_0/a0_dma_axi_dma_0_0_clocks.xdc] for cell 'a0_dma_i/axi_dma_0/U0'
+Finished Parsing XDC File [d:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.srcs/sources_1/bd/a0_dma/ip/a0_dma_axi_dma_0_0/a0_dma_axi_dma_0_0_clocks.xdc] for cell 'a0_dma_i/axi_dma_0/U0'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+all_registers: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1293.922 ; gain = 567.492
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl] for cell 'a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gnsckt_wrst.rst_wr_reg2_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'a0_dma_i/loopback_fifo/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_sync_rst.tcl] for cell 'a0_dma_i/loopback_fifo/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/rstblk/ngwrdrst.grst.g7serrst.gsckt_wrst.xpm_cdc_sync_rst_inst_wrst'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+Finished Sourcing Tcl File [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_fifo/tcl/xpm_fifo_rst.tcl] for cell 'a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 5 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+link_design completed successfully
+link_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1293.984 ; gain = 966.852
+Command: opt_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command opt_design
+
+Starting DRC Task
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Project 1-461] DRC finished with 0 Errors
+INFO: [Project 1-462] Please refer to the DRC report (report_drc) for more information.
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.262 . Memory (MB): peak = 1293.984 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Starting Logic Optimization Task
+
+Phase 1 Retarget
+INFO: [Opt 31-138] Pushed 2 inverter(s) to 12 load pin(s).
+INFO: [Opt 31-49] Retargeted 0 cell(s).
+Phase 1 Retarget | Checksum: 1549a2e82
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.268 . Memory (MB): peak = 1303.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Retarget created 7 cells and removed 73 cells
+
+Phase 2 Constant propagation
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Phase 2 Constant propagation | Checksum: 13c16e468
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.379 . Memory (MB): peak = 1303.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Constant propagation created 38 cells and removed 252 cells
+
+Phase 3 Sweep
+Phase 3 Sweep | Checksum: 108243011
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.661 . Memory (MB): peak = 1303.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Sweep created 0 cells and removed 709 cells
+
+Phase 4 BUFG optimization
+Phase 4 BUFG optimization | Checksum: 108243011
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.750 . Memory (MB): peak = 1303.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase BUFG optimization created 0 cells and removed 0 cells
+
+Phase 5 Shift Register Optimization
+Phase 5 Shift Register Optimization | Checksum: 108243011
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.922 . Memory (MB): peak = 1303.637 ; gain = 0.000
+INFO: [Opt 31-389] Phase Shift Register Optimization created 0 cells and removed 0 cells
+
+Starting Connectivity Check Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1303.637 ; gain = 0.000
+Ending Logic Optimization Task | Checksum: 1377515ba
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:01 . Memory (MB): peak = 1303.637 ; gain = 0.000
+
+Starting Power Optimization Task
+INFO: [Pwropt 34-132] Skipping clock gating for clocks with a period < 2.00 ns.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-9] Applying IDT optimizations ...
+INFO: [Pwropt 34-10] Applying ODC optimizations ...
+INFO: [Physopt 32-619] Estimated Timing Summary | WNS=2.387 | TNS=0.000 |
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+
+
+Starting PowerOpt Patch Enables Task
+INFO: [Pwropt 34-162] WRITE_MODE attribute of 2 BRAM(s) out of a total of 6 has been updated to save power. Run report_power_opt to get a complete listing of the BRAMs updated.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Pwropt 34-201] Structural ODC has moved 2 WE to EN ports
+Number of BRAM Ports augmented: 6 newly gated: 2 Total Ports: 12
+Ending PowerOpt Patch Enables Task | Checksum: 17facac31
+
+Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.164 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Ending Power Optimization Task | Checksum: 17facac31
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1537.211 ; gain = 233.574
+INFO: [Common 17-83] Releasing license: Implementation
+45 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+opt_design completed successfully
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/a0_dma_wrapper_opt.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file a0_dma_wrapper_drc_opted.rpt -pb a0_dma_wrapper_drc_opted.pb -rpx a0_dma_wrapper_drc_opted.rpx
+Command: report_drc -file a0_dma_wrapper_drc_opted.rpt -pb a0_dma_wrapper_drc_opted.pb -rpx a0_dma_wrapper_drc_opted.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/a0_dma_wrapper_drc_opted.rpt.
+report_drc completed successfully
+INFO: [Chipscope 16-241] No debug cores found in the current design.
+Before running the implement_debug_core command, either use the Set Up Debug wizard (GUI mode)
+or use the create_debug_core and connect_debug_core Tcl commands to insert debug cores into the design.
+Command: place_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+Running DRC as a precondition to command place_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+Starting Placer Task
+INFO: [Place 30-611] Multithreading enabled for place_design using a maximum of 2 CPUs
+
+Phase 1 Placer Initialization
+
+Phase 1.1 Placer Initialization Netlist Sorting
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 1.1 Placer Initialization Netlist Sorting | Checksum: a557e3b4
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.014 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Phase 1.2 IO Placement/ Clock Placement/ Build Placer Device | Checksum: 57fb9aa8
+
+Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 1.3 Build Placer Netlist Model
+Phase 1.3 Build Placer Netlist Model | Checksum: 11d82ed23
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 1.4 Constrain Clocks/Macros
+Phase 1.4 Constrain Clocks/Macros | Checksum: 11d82ed23
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 1 Placer Initialization | Checksum: 11d82ed23
+
+Time (s): cpu = 00:00:03 ; elapsed = 00:00:02 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 2 Global Placement
+Phase 2 Global Placement | Checksum: deae0736
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3 Detail Placement
+
+Phase 3.1 Commit Multi Column Macros
+Phase 3.1 Commit Multi Column Macros | Checksum: deae0736
+
+Time (s): cpu = 00:00:05 ; elapsed = 00:00:04 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3.2 Commit Most Macros & LUTRAMs
+Phase 3.2 Commit Most Macros & LUTRAMs | Checksum: 1016d04a7
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3.3 Area Swap Optimization
+Phase 3.3 Area Swap Optimization | Checksum: e1c2fa3f
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3.4 Pipeline Register Optimization
+Phase 3.4 Pipeline Register Optimization | Checksum: 68394263
+
+Time (s): cpu = 00:00:06 ; elapsed = 00:00:04 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3.5 Small Shape Detail Placement
+Phase 3.5 Small Shape Detail Placement | Checksum: 9b96f3e6
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3.6 Re-assign LUT pins
+Phase 3.6 Re-assign LUT pins | Checksum: 14d321402
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3.7 Pipeline Register Optimization
+Phase 3.7 Pipeline Register Optimization | Checksum: 14d321402
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 3 Detail Placement | Checksum: 14d321402
+
+Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 4 Post Placement Optimization and Clean-Up
+
+Phase 4.1 Post Commit Optimization
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+
+Phase 4.1.1 Post Placement Optimization
+Post Placement Optimization Initialization | Checksum: 21bbe4351
+
+Phase 4.1.1.1 BUFG Insertion
+INFO: [Physopt 32-721] Multithreading enabled for phys_opt_design using a maximum of 2 CPUs
+INFO: [Place 46-31] BUFG insertion identified 0 candidate nets, 0 success, 0 skipped for placement/routing, 0 skipped for timing, 0 skipped for netlist change reason.
+Phase 4.1.1.1 BUFG Insertion | Checksum: 21bbe4351
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Place 30-746] Post Placement Timing Summary WNS=2.508. For the most accurate timing information please run report_timing.
+Phase 4.1.1 Post Placement Optimization | Checksum: 180999177
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 4.1 Post Commit Optimization | Checksum: 180999177
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 4.2 Post Placement Cleanup
+Phase 4.2 Post Placement Cleanup | Checksum: 180999177
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 4.3 Placer Reporting
+Phase 4.3 Placer Reporting | Checksum: 180999177
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 4.4 Final Placement Cleanup
+Phase 4.4 Final Placement Cleanup | Checksum: e30e9ac1
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 4 Post Placement Optimization and Clean-Up | Checksum: e30e9ac1
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Ending Placer Task | Checksum: d1305546
+
+Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Common 17-83] Releasing license: Implementation
+67 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+place_design completed successfully
+place_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.225 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/a0_dma_wrapper_placed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_io -file a0_dma_wrapper_io_placed.rpt
+report_io: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file a0_dma_wrapper_utilization_placed.rpt -pb a0_dma_wrapper_utilization_placed.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.034 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_control_sets -verbose -file a0_dma_wrapper_control_sets_placed.rpt
+report_control_sets: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command route_design
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 4-198] DRC finished with 0 Errors
+INFO: [Vivado_Tcl 4-199] Please refer to the DRC report (report_drc) for more information.
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+Checksum: PlaceDB: bbbcfa2e ConstDB: 0 ShapeSum: 15735b18 RouteDB: 0
+
+Phase 1 Build RT Design
+Phase 1 Build RT Design | Checksum: 41300744
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Post Restoration Checksum: NetGraph: 15eb2733 NumContArr: 2b44e011 Constraints: 0 Timing: 0
+
+Phase 2 Router Initialization
+
+Phase 2.1 Create Timer
+Phase 2.1 Create Timer | Checksum: 41300744
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 2.2 Fix Topology Constraints
+Phase 2.2 Fix Topology Constraints | Checksum: 41300744
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 2.3 Pre Route Cleanup
+Phase 2.3 Pre Route Cleanup | Checksum: 41300744
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:11 . Memory (MB): peak = 1537.211 ; gain = 0.000
+ Number of Nodes with overlaps = 0
+
+Phase 2.4 Update Timing
+Phase 2.4 Update Timing | Checksum: 195a876d3
+
+Time (s): cpu = 00:00:13 ; elapsed = 00:00:12 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.653  | TNS=0.000  | WHS=-0.354 | THS=-120.916|
+
+Phase 2 Router Initialization | Checksum: 2026aec3b
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 3 Initial Routing
+Phase 3 Initial Routing | Checksum: 1b032ca5d
+
+Time (s): cpu = 00:00:14 ; elapsed = 00:00:12 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 4 Rip-up And Reroute
+
+Phase 4.1 Global Iteration 0
+ Number of Nodes with overlaps = 455
+ Number of Nodes with overlaps = 8
+ Number of Nodes with overlaps = 1
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.614  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.1 Global Iteration 0 | Checksum: dde3753b
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 4.2 Global Iteration 1
+ Number of Nodes with overlaps = 3
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.329  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 4.2 Global Iteration 1 | Checksum: eaa5c6ba
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 4 Rip-up And Reroute | Checksum: eaa5c6ba
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 5 Delay and Skew Optimization
+
+Phase 5.1 Delay CleanUp
+Phase 5.1 Delay CleanUp | Checksum: eaa5c6ba
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 5.2 Clock Skew Optimization
+Phase 5.2 Clock Skew Optimization | Checksum: eaa5c6ba
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 5 Delay and Skew Optimization | Checksum: eaa5c6ba
+
+Time (s): cpu = 00:00:15 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 6 Post Hold Fix
+
+Phase 6.1 Hold Fix Iter
+
+Phase 6.1.1 Update Timing
+Phase 6.1.1 Update Timing | Checksum: ef87efec
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=2.444  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+Phase 6.1 Hold Fix Iter | Checksum: 1076841d1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Phase 6 Post Hold Fix | Checksum: 1076841d1
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 7 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.977115 %
+  Global Horizontal Routing Utilization  = 1.13869 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 7 Route finalize | Checksum: 118b7b5db
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 8 Verifying routed nets
+
+ Verification completed successfully
+Phase 8 Verifying routed nets | Checksum: 118b7b5db
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 9 Depositing Routes
+Phase 9 Depositing Routes | Checksum: cae784c5
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Phase 10 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=2.444  | TNS=0.000  | WHS=0.010  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 10 Post Router Timing | Checksum: cae784c5
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Route 35-16] Router Completed Successfully
+
+Time (s): cpu = 00:00:16 ; elapsed = 00:00:13 . Memory (MB): peak = 1537.211 ; gain = 0.000
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+84 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:18 ; elapsed = 00:00:14 . Memory (MB): peak = 1537.211 ; gain = 0.000
+Writing placer database...
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Write XDEF Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.280 . Memory (MB): peak = 1537.211 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/a0_dma_wrapper_routed.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_drc -file a0_dma_wrapper_drc_routed.rpt -pb a0_dma_wrapper_drc_routed.pb -rpx a0_dma_wrapper_drc_routed.rpx
+Command: report_drc -file a0_dma_wrapper_drc_routed.rpt -pb a0_dma_wrapper_drc_routed.pb -rpx a0_dma_wrapper_drc_routed.rpx
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/a0_dma_wrapper_drc_routed.rpt.
+report_drc completed successfully
+INFO: [runtcl-4] Executing : report_methodology -file a0_dma_wrapper_methodology_drc_routed.rpt -pb a0_dma_wrapper_methodology_drc_routed.pb -rpx a0_dma_wrapper_methodology_drc_routed.rpx
+Command: report_methodology -file a0_dma_wrapper_methodology_drc_routed.rpt -pb a0_dma_wrapper_methodology_drc_routed.pb -rpx a0_dma_wrapper_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Coretcl 2-1520] The results of Report Methodology are in file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/a0_dma.runs/impl_1/a0_dma_wrapper_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [runtcl-4] Executing : report_power -file a0_dma_wrapper_power_routed.rpt -pb a0_dma_wrapper_power_summary_routed.pb -rpx a0_dma_wrapper_power_routed.rpx
+Command: report_power -file a0_dma_wrapper_power_routed.rpt -pb a0_dma_wrapper_power_summary_routed.pb -rpx a0_dma_wrapper_power_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+WARNING: [Power 33-332] Found switching activity that implies high-fanout reset nets being asserted for excessive periods of time which may result in inaccurate power analysis.
+Resolution: To review and fix problems, please run Power Constraints Advisor in the GUI from Tools > Power Constraints Advisor or run report_power with the -advisory option to generate a text report.
+96 Infos, 1 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [runtcl-4] Executing : report_route_status -file a0_dma_wrapper_route_status.rpt -pb a0_dma_wrapper_route_status.pb
+INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file a0_dma_wrapper_timing_summary_routed.rpt -rpx a0_dma_wrapper_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [runtcl-4] Executing : report_incremental_reuse -file a0_dma_wrapper_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-545] No incremental reuse to report, no incremental placement and routing data was found.
+INFO: [runtcl-4] Executing : report_clock_utilization -file a0_dma_wrapper_clock_utilization_routed.rpt
+WARNING: [Memdata 28-167] Found XPM memory block a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst with a P_MEMORY_PRIMITIVE property set to auto. A value of block is required. You will not be able to use the updatemem program to update the bitstream with new data for the a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_XD_FIFO/NON_BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst block.
+INFO: [Memdata 28-208] The XPM instance: <a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <a0_dma_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+INFO: [Memdata 28-208] The XPM instance: <a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst> is part of IP: <a0_dma_i/axi_dma_0>. This XPM instance will be excluded from the .mmi because updatemem is prohibited from making changes to an XPM that is part of an IP.
+Command: write_bitstream -force a0_dma_wrapper.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7z020'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+WARNING: [DRC RTSTAT-10] No routable loads: 19 net(s) have no routable loads. The problem bus(es) and/or net(s) are a0_dma_i/loopback_fifo/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, a0_dma_i/loopback_fifo/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, a0_dma_i/loopback_fifo/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_i, a0_dma_i/loopback_fifo/inst/gen_fifo_generator.fifo_generator_inst/inst_fifo_gen/gaxis_fifo.gaxisf.axisf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_WRITE.write_addr_inst/USE_BURSTS.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i, a0_dma_i/memory_axi/m00_couplers/auto_pc/inst/gen_axi4_axi3.axi3_conv_inst/USE_READ.USE_SPLIT_R.read_addr_inst/USE_R_CHANNEL.cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/grss.rsts/ram_empty_i... and (the first 15 of 19 listed).
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-165] writefirst: Synchronous clocking is detected for BRAM (a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_1) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_MM2S_FULL.I_MM2S_FULL_WRAPPER/GEN_INCLUDE_MM2S_SF.I_RD_SF/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [DRC REQP-181] writefirst: Synchronous clocking is detected for BRAM (a0_dma_i/axi_dma_0/U0/I_PRMRY_DATAMOVER/GEN_S2MM_FULL.I_S2MM_FULL_WRAPPER/GEN_ENABLE_INDET_BTT_SF.I_INDET_BTT/I_DATA_FIFO/BLK_MEM.I_SYNC_FIFOGEN_FIFO/xpm_fifo_instance.xpm_fifo_sync_inst/xpm_fifo_base_inst/gen_sdpram.xpm_memory_base_inst/gen_wr_a.gen_word_narrow.mem_reg_0) in SDP mode with WRITE_FIRST write-mode. This is the preferred mode for best power characteristics, however it may exhibit address collisions if the same address appears on both read and write ports resulting in unknown or corrupted read data. It is suggested to confirm via simulation that an address collision never occurs and if so it is suggested to try and avoid this situation. If address collisions cannot be avoided, the write-mode may be set to READ_FIRST which guarantees that the read data is the prior contents of the memory at the cost of additional power in the design. See the FPGA Memory Resources User Guide for additional information.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 1 Warnings, 4 Advisories
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Project 1-821] Please set project.enableDesignId to be 'true'.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./a0_dma_wrapper.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-120] WebTalk data collection is mandatory when using a WebPACK part without a full Vivado license. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+119 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:10 ; elapsed = 00:00:14 . Memory (MB): peak = 2008.199 ; gain = 447.359
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 20:55:18 2026...
+[Sun Oct 11 20:55:23 2026] impl_1 finished
+wait_on_run: Time (s): cpu = 00:00:00 ; elapsed = 00:01:15 . Memory (MB): peak = 594.781 ; gain = 0.000
+# if {[get_property PROGRESS [get_runs impl_1]] ne "100%"} {error "Implementation failed; inspect run log"}
+# open_run impl_1
+INFO: [Netlist 29-17] Analyzing 100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [D:/PLD/retina_fpga/.Xil/Vivado-34408-LAPTOP-DPJT23TC/dcp2/a0_dma_wrapper_board.xdc]
+Finished Parsing XDC File [D:/PLD/retina_fpga/.Xil/Vivado-34408-LAPTOP-DPJT23TC/dcp2/a0_dma_wrapper_board.xdc]
+Parsing XDC File [D:/PLD/retina_fpga/.Xil/Vivado-34408-LAPTOP-DPJT23TC/dcp2/a0_dma_wrapper_early.xdc]
+Finished Parsing XDC File [D:/PLD/retina_fpga/.Xil/Vivado-34408-LAPTOP-DPJT23TC/dcp2/a0_dma_wrapper_early.xdc]
+Parsing XDC File [D:/PLD/retina_fpga/.Xil/Vivado-34408-LAPTOP-DPJT23TC/dcp2/a0_dma_wrapper_late.xdc]
+INFO: [Timing 38-35] Done setting XDC timing constraints. [E:/vivado/Vivado/2017.4/data/ip/xpm/xpm_cdc/tcl/xpm_cdc_async_rst.tcl:2]
+Finished Parsing XDC File [D:/PLD/retina_fpga/.Xil/Vivado-34408-LAPTOP-DPJT23TC/dcp2/a0_dma_wrapper_late.xdc]
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1489.430 ; gain = 10.496
+Restored from archive | CPU: 1.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.322 . Memory (MB): peak = 1489.430 ; gain = 10.496
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8 instances were transformed.
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 4 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 1 instances
+  SRLC32E => SRL16E: 3 instances
+
+open_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 1489.488 ; gain = 894.707
+# report_timing_summary -warn_on_violation -file [file join $out timing_summary.rpt]
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+# report_utilization -file [file join $out utilization.rpt]
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.256 . Memory (MB): peak = 1511.645 ; gain = 8.242
+# report_drc -file [file join $out drc.rpt]
+Command: report_drc -file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/drc.rpt
+INFO: [IP_Flow 19-1839] IP Catalog is up to date.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Coretcl 2-168] The results of DRC are in file D:/PLD/retina_fpga/build/a0_dma_2017_4_01/drc.rpt.
+report_drc completed successfully
+# report_clocks -file [file join $out clocks.rpt]
+# set setup_paths [get_timing_paths -delay_type max -max_paths 1]
+# set hold_paths [get_timing_paths -delay_type min -max_paths 1]
+# if {[llength $setup_paths] == 0 || [llength $hold_paths] == 0} {error "Missing timing paths"}
+# if {[get_property SLACK $setup_paths] < 0 || [get_property SLACK $hold_paths] < 0} {error "Timing violation; artifact not released"}
+# set hwh [glob -nocomplain [file join $out a0_dma.srcs sources_1 bd a0_dma hw_handoff *.hwh]]
+# if {[llength $hwh] != 1} {error "Expected one generated HWH: $hwh"}
+# file mkdir [file join $out deploy]
+# file copy [file join $out a0_dma.runs impl_1 a0_dma_wrapper.bit] [file join $out deploy a0_dma.bit]
+# file copy [lindex $hwh 0] [file join $out deploy a0_dma.hwh]
+# puts "A0_BITSTREAM_GENERATED_TIMING_CHECKED (host only; not board DMA PASS)"
+A0_BITSTREAM_GENERATED_TIMING_CHECKED (host only; not board DMA PASS)
+# exit 0
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 20:55:36 2026...

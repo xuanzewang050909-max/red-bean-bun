@@ -1,0 +1,60 @@
+{
+  "status": "PASS_ASSEMBLED_PACKAGE_PYTHON_3_10_AND_ORIGINAL_BYTE_PAIRING",
+  "board_status": "NOT_RUN",
+  "files": 17,
+  "code_cells": 6,
+  "package": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code_sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201",
+    "current_notebook_sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "new_sources": {
+    "scripts/b_profile_board_test.py": {
+      "bytes": 16730,
+      "sha256": "5a693dece2ca6b5ad8afb09712dc16653aac3c04db0d0b1d33a9c78de3cd8211"
+    },
+    "scripts/package_b_profile.py": {
+      "bytes": 7330,
+      "sha256": "8ad2c9e8aa50c1e055a24834c93732449b2db11c23a944d2601a58712235cb26"
+    },
+    "tests/test_b_profile.py": {
+      "bytes": 17645,
+      "sha256": "794c062c7532fd370ce6a5604357a4e55ff2bdc159fad021dd52c77b0773e6ac"
+    },
+    "notebooks/b_performance_profile.ipynb": {
+      "bytes": 3607,
+      "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7"
+    },
+    "docs/b_performance_profile_steps.md": {
+      "bytes": 3550,
+      "sha256": "24e0a511a03f9269c94051578619b22ea86104ef9aa3b740a4fa27238dc354fa"
+    }
+  },
+  "unchanged_original_files": [
+    "a0_dma_board_test.py",
+    "a1_point_board_test.py",
+    "a2_gaussian_board_test.py",
+    "a3_background_board_test.py",
+    "a4_segmentation_board_test.py",
+    "b_integration.bit",
+    "b_integration.hwh",
+    "b_integration_board_test.py",
+    "b_integration_check.ipynb",
+    "b_manifest.json",
+    "stare_im0001_256.npy",
+    "stare_im0001_512.npy",
+    "\u4f7f\u7528\u8bf4\u660e.txt"
+  ],
+  "release_manifest": {
+    "bytes": 5511,
+    "sha256": "d279a61716d9f54af7609a19439e08c6df9c0d252504144e5dbd741b39e39ceb"
+  },
+  "scope": "Host only; no new board timing or optimization claim"
+}

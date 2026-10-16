@@ -1,0 +1,12 @@
+{
+  "scope": "HOST_TEST_ONLY_NOT_BOARD",
+  "session_id": "6d15da76224e42e1bbfa439d2e9f79ce",
+  "url": "http://127.0.0.1:8098/",
+  "completed_runs": 24,
+  "continuous_runs": 20,
+  "stale_current_export_disabled": true,
+  "browser_console_errors_and_warnings": [],
+  "download_path": "C:\\Users\\Gabriel\\Downloads\\HOST_TEST_browser_session_6d15da76224e42e1bbfa439d2e9f79ce.zip",
+  "canvas_pixel_capture": "Unavailable: read-only browser DOM scope does not expose getContext. No client pixel-hash claim.",
+  "visual_screenshot": "host_preview_final.jpg"
+}

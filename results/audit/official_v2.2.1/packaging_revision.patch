@@ -1,0 +1,55 @@
+--- color_convert_run_ippack_original.tcl
++++ color_convert_run_ippack_audit.tcl
+@@ -61,7 +61,7 @@
+ set IPName      "color_convert"
+ set Version     "1.0"
+ set DisplayName "Color Convert"
+-set Revision    "2610110303"
++set Revision "1"
+ set Description "Color conversion for 24-bit AXI video stream"
+ set Device      "zynq"
+ set Taxonomy    "/VIVADO_HLS_IP"
+--- pixel_pack_run_ippack_original.tcl
++++ pixel_pack_run_ippack_audit.tcl
+@@ -61,7 +61,7 @@
+ set IPName      "pixel_pack"
+ set Version     "1.0"
+ set DisplayName "Pixel Pack"
+-set Revision    "2610110303"
++set Revision "1"
+ set Description "Pixel Packing from 24-bit to 32-bit"
+ set Device      "zynq"
+ set Taxonomy    "/VIVADO_HLS_IP"
+--- pixel_unpack_run_ippack_original.tcl
++++ pixel_unpack_run_ippack_audit.tcl
+@@ -61,7 +61,7 @@
+ set IPName      "pixel_unpack"
+ set Version     "1.0"
+ set DisplayName "Pixel Unpack"
+-set Revision    "2610110303"
++set Revision "1"
+ set Description "Pixel Unpacking from 32-bit to 24-bit"
+ set Device      "zynq"
+ set Taxonomy    "/VIVADO_HLS_IP"
+--- trace_cntrl_32_run_ippack_original.tcl
++++ trace_cntrl_32_run_ippack_audit.tcl
+@@ -61,7 +61,7 @@
+ set IPName      "trace_cntrl_32"
+ set Version     "1.4"
+ set DisplayName "Trace Analyzer Controller with 32 Bits Data"
+-set Revision    "2610110303"
++set Revision "1"
+ set Description "Controller for the trace analyzer with 32-bit data"
+ set Device      "zynq"
+ set Taxonomy    "/VIVADO_HLS_IP"
+--- trace_cntrl_64_run_ippack_original.tcl
++++ trace_cntrl_64_run_ippack_audit.tcl
+@@ -61,7 +61,7 @@
+ set IPName      "trace_cntrl_64"
+ set Version     "1.4"
+ set DisplayName "Trace Analyzer Controller with 64 Bits Data"
+-set Revision    "2610110304"
++set Revision "1"
+ set Description "Controller for the trace analyzer with 64-bit data"
+ set Device      "zynq"
+ set Taxonomy    "/VIVADO_HLS_IP"

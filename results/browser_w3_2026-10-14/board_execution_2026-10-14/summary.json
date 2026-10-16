@@ -1,0 +1,140 @@
+{
+  "session_id": "56f410c025a744b9b764ca549f756aad",
+  "verified_runs": 31,
+  "matched_words": 7340032,
+  "matched_png_images": 147,
+  "matched_png_values": 65273856,
+  "visible_20_frame_loop_verified": true,
+  "loop": {
+    "native_runs": 20,
+    "hidden_indices": [],
+    "warmup_frames": 0,
+    "scope": "W3 recorded diagnostic loop; not formal 3-warmup/100-frame performance",
+    "server_latency_ms": {
+      "pl_core_frame_ms": {
+        "n": 20,
+        "mean": 3.0230905,
+        "median": 3.02267,
+        "p95": 3.0251235000000003,
+        "minimum": 3.02264,
+        "maximum": 3.02538,
+        "percentile_method": "linear"
+      },
+      "observer_readback_ms": {
+        "n": 20,
+        "mean": 1.30099035,
+        "median": 1.251689,
+        "p95": 1.4477076,
+        "minimum": 1.220504,
+        "maximum": 1.496739,
+        "percentile_method": "linear"
+      },
+      "dma_transaction_ms": {
+        "n": 20,
+        "mean": 6.8872031499999995,
+        "median": 5.014828,
+        "p95": 11.65554885,
+        "minimum": 4.716333,
+        "maximum": 11.740153,
+        "percentile_method": "linear"
+      },
+      "inference_ms": {
+        "n": 20,
+        "mean": 32.904869149999996,
+        "median": 33.184073999999995,
+        "p95": 42.238173100000004,
+        "minimum": 25.715624,
+        "maximum": 45.989668,
+        "percentile_method": "linear"
+      },
+      "cpu_snapshot_ms": {
+        "n": 20,
+        "mean": 7.5083062,
+        "median": 6.799775,
+        "p95": 9.73459295,
+        "minimum": 6.711231,
+        "maximum": 10.581859,
+        "percentile_method": "linear"
+      },
+      "input_read_ms": {
+        "n": 20,
+        "mean": 87.51503725,
+        "median": 87.1473135,
+        "p95": 92.1308179,
+        "minimum": 85.618831,
+        "maximum": 93.526043,
+        "percentile_method": "linear"
+      },
+      "raw_save_ms": {
+        "n": 20,
+        "mean": 147.4454245,
+        "median": 146.296834,
+        "p95": 152.25721930000003,
+        "minimum": 141.575108,
+        "maximum": 173.062073,
+        "percentile_method": "linear"
+      },
+      "evaluation_ms": {
+        "n": 20,
+        "mean": 155.72330125000002,
+        "median": 154.8582305,
+        "p95": 164.02045435,
+        "minimum": 150.242923,
+        "maximum": 164.088006,
+        "percentile_method": "linear"
+      },
+      "png_encoding_ms": {
+        "n": 20,
+        "mean": 4421.4098198,
+        "median": 4338.442787,
+        "p95": 4748.84053695,
+        "minimum": 4283.892738,
+        "maximum": 4796.256632,
+        "percentile_method": "linear"
+      },
+      "worker_result_ms": {
+        "n": 20,
+        "mean": 4943.783482749999,
+        "median": 4863.702153,
+        "p95": 5280.2430308,
+        "minimum": 4793.646436,
+        "maximum": 5327.294152,
+        "percentile_method": "linear"
+      },
+      "queue_wait_ms": {
+        "n": 20,
+        "mean": 7.563632,
+        "median": 7.110129000000001,
+        "p95": 7.847425750000007,
+        "minimum": 6.750917,
+        "maximum": 16.937686,
+        "percentile_method": "linear"
+      }
+    },
+    "mean_png_fraction_of_worker_time": 0.8942523205761752,
+    "visible_request_latency_ms": {
+      "n": 20,
+      "mean": 5153.07500000298,
+      "median": 5061.149999991059,
+      "p95": 5511.190000022948,
+      "minimum": 4937.699999988079,
+      "maximum": 5531.9000000059605,
+      "percentile_method": "linear"
+    },
+    "visible_result_to_render_ms": {
+      "n": 20,
+      "mean": 87.85499999672174,
+      "median": 88.95000000298023,
+      "p95": 93.6099999949336,
+      "minimum": 80.09999999403954,
+      "maximum": 93.80000001192093,
+      "percentile_method": "linear"
+    },
+    "entire_loop_duration_ms": 103349.30000001192,
+    "browser_actual_fps": 0.1935184853694964,
+    "display_fps_valid": true,
+    "pl_core_measured_per_run": true,
+    "pure_dma_transport_ns": null,
+    "browser_time_scope": "Client monotonic double-rAF approximation; hidden requests excluded from latency statistics, any hidden interval invalidates entire-loop visible FPS"
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "status": "PASS_ALL_14_RAW_FILE_HASHES_AND_FOUR_ORIGINAL_INPUT_BYTES",
+  "file_count": 14,
+  "files": {
+    "b_snapshot_compare_executed.ipynb": {
+      "bytes": 306793,
+      "sha256": "37addb6bac5d58bf210da1319b07e1cd5239374a85938cde46ca58e6752c5bd9"
+    },
+    "b_snapshot_bundle.zip": {
+      "bytes": 2262125,
+      "sha256": "e296d0ff30da959de26bf27ec12edc1f8853a56b7b16f8007d5cd27e003b602f"
+    },
+    "b_snapshot_result.json": {
+      "bytes": 229893,
+      "sha256": "961c51cb056299e08b7b53de30cb9c3fe1847f61ab889c4ece1e78eea723957c"
+    },
+    "b_snapshot_dma_512.npy": {
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "b_snapshot_cpu_512.npy": {
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "b_snapshot_direct_final_512.npy": {
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "b_snapshot_snapshot_final_512.npy": {
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "b_color_pattern.png": {
+      "bytes": 4378,
+      "sha256": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492"
+    },
+    "b_snapshot_reference.png": {
+      "bytes": 222467,
+      "sha256": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d"
+    },
+    "b_snapshot_cpu.png": {
+      "bytes": 222467,
+      "sha256": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d"
+    },
+    "b_snapshot_direct_final.png": {
+      "bytes": 222468,
+      "sha256": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084"
+    },
+    "b_snapshot_snapshot_final.png": {
+      "bytes": 222468,
+      "sha256": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084"
+    },
+    "monitor_color_photo.jpg": {
+      "bytes": 51937,
+      "sha256": "6dd365cbaed840b8dcc021e05e56efc8b52f6b14251d8ffcf5c6da53505230cb"
+    },
+    "monitor_medical_photo.jpg": {
+      "bytes": 159720,
+      "sha256": "e52387516da4d15ba9571fc08fbd55805d7211a22926c1b50223efd546f37813"
+    }
+  },
+  "original_inputs": {
+    "b_snapshot_compare_executed.ipynb": {
+      "path": "C:\\Users\\Gabriel\\Downloads\\b_snapshot_compare.ipynb",
+      "matches_raw": true,
+      "bytes": 306793,
+      "sha256": "37addb6bac5d58bf210da1319b07e1cd5239374a85938cde46ca58e6752c5bd9"
+    },
+    "b_snapshot_bundle.zip": {
+      "path": "C:\\Users\\Gabriel\\Downloads\\b_snapshot_bundle.zip",
+      "matches_raw": true,
+      "bytes": 2262125,
+      "sha256": "e296d0ff30da959de26bf27ec12edc1f8853a56b7b16f8007d5cd27e003b602f"
+    },
+    "monitor_color_photo.jpg": {
+      "path": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-95bb157d-d683-44d1-9b5a-244bc1a0b510.jpg",
+      "matches_raw": true,
+      "bytes": 51937,
+      "sha256": "6dd365cbaed840b8dcc021e05e56efc8b52f6b14251d8ffcf5c6da53505230cb"
+    },
+    "monitor_medical_photo.jpg": {
+      "path": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-bdcf6d45-da01-454d-b2ec-2f81f0ab86c5.jpg",
+      "matches_raw": true,
+      "bytes": 159720,
+      "sha256": "e52387516da4d15ba9571fc08fbd55805d7211a22926c1b50223efd546f37813"
+    }
+  },
+  "tracked_json_identical": true,
+  "original_visual_status": "PENDING_USER_OBSERVATION",
+  "release_board_status": "NOT_RUN",
+  "release_performance_improvement": "NOT_MEASURED",
+  "board_clock_utc_unverified": "2022-10-22T21:45:24.812897+00:00"
+}

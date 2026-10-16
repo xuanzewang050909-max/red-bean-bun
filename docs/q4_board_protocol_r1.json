@@ -1,0 +1,63 @@
+{
+  "split": {
+    "train": [
+      "im0001",
+      "im0003",
+      "im0005",
+      "im0077",
+      "im0082",
+      "im0162",
+      "im0235",
+      "im0239",
+      "im0255",
+      "im0319"
+    ],
+    "heldout": [
+      "im0002",
+      "im0004",
+      "im0044",
+      "im0081",
+      "im0139",
+      "im0163",
+      "im0236",
+      "im0240",
+      "im0291",
+      "im0324"
+    ]
+  },
+  "sizes": [
+    256,
+    512
+  ],
+  "threshold": 28,
+  "mode": "final",
+  "png_profile": "fast",
+  "revision": "q4_c5_experimental_r1",
+  "algorithms": [
+    "A",
+    "C2",
+    "C5"
+  ],
+  "candidate": {
+    "id": "C5_l5_9_r8_m1_a4_g3",
+    "lengths": [
+      5,
+      9
+    ],
+    "ratio": 8,
+    "retain_margin": 1,
+    "add_margin": 4,
+    "gap": 3
+  },
+  "decision_commit": "237d58d",
+  "scope": "Fixed optional tradeoff; old strict FAIL retained. Reused benchmark, not new independent holdout. No tuning on heldout/VK.",
+  "original_strict_failures": [
+    "A28:256:bright_band_recall",
+    "A28:512:bright_band_recall",
+    "256:bright_recall",
+    "256:bridge_added_precision",
+    "512:bright_recall",
+    "512:bridge_added_precision"
+  ],
+  "acceptance": "Exact PL words/parameters required; actual quality and visual tradeoffs audited after download; no automatic overall quality PASS."
+}

@@ -1,0 +1,48 @@
+{
+  "status": "PASS_HOST_ASSEMBLED_PACKAGE_VALIDATION",
+  "board_status": "NOT_RUN",
+  "checks": [
+    {
+      "case": "actual_ten_file_package",
+      "result": "PASS_VALID"
+    },
+    {
+      "case": "saved_execution_metadata_outputs",
+      "result": "PASS_VALID"
+    },
+    {
+      "case": "markdown_only_change",
+      "result": "PASS_VALID_BY_CODE_CONTRACT"
+    },
+    {
+      "case": "changed_executable_code",
+      "result": "PASS_REJECTED",
+      "error": "Notebook code mismatch"
+    },
+    {
+      "case": "altered_a2_gaussian.bit",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a2_gaussian.bit"
+    },
+    {
+      "case": "altered_a2_gaussian.hwh",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a2_gaussian.hwh"
+    },
+    {
+      "case": "altered_a2_gaussian_board_test.py",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: a2_gaussian_board_test.py"
+    },
+    {
+      "case": "altered_stare_im0001_512.npy",
+      "result": "PASS_REJECTED",
+      "error": "Package mismatch: stare_im0001_512.npy"
+    },
+    {
+      "case": "withdrawn_first_hardware_build",
+      "result": "PASS_REJECTED",
+      "error": "Changed hardware source: vivado/scripts/build_a2_gaussian.tcl"
+    }
+  ]
+}

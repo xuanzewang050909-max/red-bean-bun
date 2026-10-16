@@ -1,0 +1,2312 @@
+{
+  "revision": "browser_w4a_png_r1_lossless_profile",
+  "board_status": "NOT_RUN",
+  "phase": "Q3_20_IMAGE_COLLECTION_PENDING_REAL_BOARD",
+  "baseline_manifest": {
+    "bytes": 2083,
+    "sha256": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035"
+  },
+  "images": {
+    "im0001": {
+      "256": {
+        "input": "inputs/im0001_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0001_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4"
+            }
+          },
+          "VK": {
+            "path": "labels/im0001_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+        }
+      },
+      "512": {
+        "input": "inputs/im0001_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0001_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+            }
+          },
+          "VK": {
+            "path": "labels/im0001_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+        }
+      }
+    },
+    "im0002": {
+      "256": {
+        "input": "inputs/im0002_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "3c9243960b5795d8f48ce5de91de06b9f0525d85686cfe284a4df3cddd0319bc",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0002_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0"
+            }
+          },
+          "VK": {
+            "path": "labels/im0002_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a"
+        }
+      },
+      "512": {
+        "input": "inputs/im0002_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0002_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7"
+            }
+          },
+          "VK": {
+            "path": "labels/im0002_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+        }
+      }
+    },
+    "im0003": {
+      "256": {
+        "input": "inputs/im0003_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "ba542f4627ca0fe49ce1058f8922a76d35e95f0d3ec1d11f87e9decf8589dff3",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0003_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "bf6b3b672c74687c33383a9b6212eb01942afff445c179989cbb7d75b204581d"
+            }
+          },
+          "VK": {
+            "path": "labels/im0003_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "9ebf49fad2799c8822dd1d83fd945a7e3c4b03dd5352288b5d18a55792b0ea82"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "72fb6bf19facf1f1154f4d4a253fb31ca61ec991a7eded85d37ace46c1ba6f57"
+        }
+      },
+      "512": {
+        "input": "inputs/im0003_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "5a0f1b8adba7a417fdd4b4c04da8f9f4a20ed07c46f4320efb691ca8618394e8",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0003_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "e63fb219f7eadbf9deff7605d09045e917f7dde3e4c2d901cc2ff34a12588112"
+            }
+          },
+          "VK": {
+            "path": "labels/im0003_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "83b24ac6ad92c128867456ccdd7cac63eb4fadcdd6fb56da17fa2c3c84228427"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "8d7cfbad2291daf4f41d0314c494a74c7f21df8c1b05fbb0206901dbd0a6d19d"
+        }
+      }
+    },
+    "im0004": {
+      "256": {
+        "input": "inputs/im0004_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "53be63c48ae1dfc9cb48cdca9b9251e7f3c14ed22cdf4a2c4175b91e93f4933e",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0004_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "98a45869690b91f7de4d15193a547890dc8037960188b6caeadf12011acace6c"
+            }
+          },
+          "VK": {
+            "path": "labels/im0004_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "2e4da406c6ff90faf23397e7fa83e28ffa48addc9dbc73193d67aa05552ed51e"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "ea3ae66777e62737a4f7e9ddd461ad17191a6f86302fb620c5c745ecdbee819d"
+        }
+      },
+      "512": {
+        "input": "inputs/im0004_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "6fd3926203498f6986ccc602fa1a5a780176edcbcc11cc917c503391f17dea52",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0004_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "a0be8b1b2e6983b39590da315d3033a8ace83881b50f4e85d28eaebf8aa6a188"
+            }
+          },
+          "VK": {
+            "path": "labels/im0004_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "f75bfa2afd007bba60d5affd782543bdaf0c9f59aabeb860f93546ae7d57004b"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "67d338170cbd5a0c397505d42b6510a0558982b57f8ebf1ac97ab9e537957693"
+        }
+      }
+    },
+    "im0005": {
+      "256": {
+        "input": "inputs/im0005_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "8b009f31dbebe95e88a471369846529b5e5657dca7f32a8b6b1f9a28feaca406",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0005_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "ae074628a111e40ef652bb703b4cd9820caa187cd881ad71d2888e837a78299e"
+            }
+          },
+          "VK": {
+            "path": "labels/im0005_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "59d723da31f4ab340327eceb21426b94b1d39123c85d0d0cf4cd37fd5f63d652"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "4dc3b8f15d05e2bce5140f6714fc605c06aebe6f146d0d9ca00498cad0c0c9ec"
+        }
+      },
+      "512": {
+        "input": "inputs/im0005_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "32b705365107ebb9cdd950f8a4234c894ccf8a5f477451bcf1ce28dd69cff178",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0005_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "76d53a68bd33b1997b46818ef661331d0dbe804e70368d4c5cde7ce76ad11965"
+            }
+          },
+          "VK": {
+            "path": "labels/im0005_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "aa2182d8c41db618ee4f7eb7e55f7a2e231e65f87a049541008c41a363ebba88"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "607e97600a8f7f6a56af48414c949b29a6f767e39b9328e3a945524991b01a97"
+        }
+      }
+    },
+    "im0044": {
+      "256": {
+        "input": "inputs/im0044_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "fd502a2ce85d339facf21da0575c184ecb44ca7fc20a97e120e701903d5c4edd",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0044_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "afb6cff129c9d191cc3780022969ca16a2794892aa8fb9226a5d17dbb057069d"
+            }
+          },
+          "VK": {
+            "path": "labels/im0044_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "1ed97e8f76a7d31b4f416b25546afbba3e3ffcec17d8310c1d68998616c4a3df"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "b84f6d77fc7c7ffa118455a4ffc8297140f951b5a4a2215c58b066f2b9045b45"
+        }
+      },
+      "512": {
+        "input": "inputs/im0044_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "fae2bb8ca029b162b04af98a358e87d0f04c2b87b355530d4cb491f9c15fa322",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0044_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "fa6f98ea2577509e6d2698768843f01fd293b11cbca1384a1bcc395182edfe63"
+            }
+          },
+          "VK": {
+            "path": "labels/im0044_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "ae9dfd8ebfd9ebeedcdf3f5c70ae0dfebe8b630281106a5194c11493c182d8c7"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "7ecb201a1420a517e9f877b8f33949653873754c47a6a1d2f6dba118ace12a0d"
+        }
+      }
+    },
+    "im0077": {
+      "256": {
+        "input": "inputs/im0077_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "157d6a02dfa9f3f99f94ef6330966b97d42140e4064a1d4d424a4962109c6b97",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0077_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "37cc11976c76e90d2112f485e5d8b164833a0b0ffa8e37532b18047f93f27cb9"
+            }
+          },
+          "VK": {
+            "path": "labels/im0077_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "ec133afad113550cdb68991fe2dc92be957ab13b2ebbea9c04e2e023d02cec7b"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "11be949b837b291ea2ff53152968837f6ba64935b482325e345f87c97ab13370"
+        }
+      },
+      "512": {
+        "input": "inputs/im0077_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "08b287d78fd7594a9cd1660477b526963eaf7539230e5b8fbbb510b890aec134",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0077_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "47cac59f4b4158b6bed57bf1f89689ce6c1c83f1f1ec39d2de843c5bb8f4aaa5"
+            }
+          },
+          "VK": {
+            "path": "labels/im0077_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "4978b3a1d5cab31cce16a04e873a75b06a232d644a3bf2e7969c21c5cfb88ff9"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "9e6b99144844c183315b6694e9d848da71cc4550d65ae05e5236e0493480eb9b"
+        }
+      }
+    },
+    "im0081": {
+      "256": {
+        "input": "inputs/im0081_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "5b4bc1acfed977156fa5a725d3da51d5188df1e88cad0ea6e87f69612004f3c7",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0081_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "b733f912c810580ac549e0d660abaa717435e98653afb84fa3fff6ac3c839eeb"
+            }
+          },
+          "VK": {
+            "path": "labels/im0081_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "84509820197d9032db20caf81a529e3b1163cf657984ff3f17d485ccb521f801"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "d7165ee17ec26f8068ecc028d1d6662e64c9819c83c93feb0a10112c73c96208"
+        }
+      },
+      "512": {
+        "input": "inputs/im0081_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "689199d51d972951ca1b7aff027e8d5de10b39910aa1b1bcd89600448d92ae06",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0081_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "c88222c9cc3913f71eb26cc260a6da20d3a1cec376f703948ba09b7bc24da63e"
+            }
+          },
+          "VK": {
+            "path": "labels/im0081_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "d048b21052ad2105353c8542ab714fb115ab17f1967b0e6dcd362b9196ab345c"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "c9263b82145c45b5565798d86528f67d7f192dd2a9124de6fb17bc696ff34230"
+        }
+      }
+    },
+    "im0082": {
+      "256": {
+        "input": "inputs/im0082_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "57edaf3620aac339828a06a80b358b402a1f762a9e6a1b81446b063983cc5f2c",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0082_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "442ffadcc1b91dd1f0d7a129eef2483155ffb293e723101d1dd7d805bc7df47c"
+            }
+          },
+          "VK": {
+            "path": "labels/im0082_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "ead666fc1b843c550f086c1aca733dcbdeec40e7e061c1c054ae251f7cb864d3"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "78de1858abc1d99e353f9320d6c54d9418a28fd5c48bfc503722ba7e46f7e8a4"
+        }
+      },
+      "512": {
+        "input": "inputs/im0082_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "2082d6cb4276e1121e149e814dd5f7b8792c91e4af8484d230b30c9873fa038a",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0082_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "7a228824f105936955b954f935daa38683a27db5145af702d01541befb1ec650"
+            }
+          },
+          "VK": {
+            "path": "labels/im0082_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "dd1b33eca34e90f8f919a06b9934562f893f82b48d647e669cd851873a304d6a"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "91ae7cc398269482f0cebc8fc4e53d2e731b3ca451ff9179d36c061d459d9708"
+        }
+      }
+    },
+    "im0139": {
+      "256": {
+        "input": "inputs/im0139_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "37c1685d2c3c20a757d1705b2641d50d050737c12b103dd02866ba195dc10c2d",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0139_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "2aaad783302127c9c3bbb286b0493e6dac0b53eb718879efa0c6f21a837e6621"
+            }
+          },
+          "VK": {
+            "path": "labels/im0139_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "d9cd63806ae62b238721f35c656a83f6949a33f1ade5870589ef2d18dfaf6120"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "367f81e8a6e43f507d53e61f2ffe0bcd71d3b6c9f425dd631f9484c012ea2499"
+        }
+      },
+      "512": {
+        "input": "inputs/im0139_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "9630033028dde96fb37e28df845260125d46d440a9c7594dfb1e1e4abe53d937",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0139_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "89d8afe507a7b662deb1e9a2545225c47c941607ffb96f1b962bfb692d5dea44"
+            }
+          },
+          "VK": {
+            "path": "labels/im0139_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "774123398c00a153b0105f7cf286922eb574113d894aa2d70a718a94af9d5266"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "20d777f7079f4b577b410a93a1803e94a03383484793787215b2e34a80f4944d"
+        }
+      }
+    },
+    "im0162": {
+      "256": {
+        "input": "inputs/im0162_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "2308ba0bc46b51501e016767dba42b16b07cfcbd9451da22e1e230ed3f4c165c",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0162_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "3dccaac1b866a192ccf6b78dad70572d0d56c5cf4e24e0f6d4fba3e908a59b32"
+            }
+          },
+          "VK": {
+            "path": "labels/im0162_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "0c6f67c0af307f1d3fa30b6063c9c0dad6a0174ab162178967281c16c6bf1e1a"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "becb9685766ea716c31f8dc92b4b805f87772f156da167e99a92e2ed1c4c562d"
+        }
+      },
+      "512": {
+        "input": "inputs/im0162_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "02077136d2ae12bb60c45eb62781608497b41fe26c32d6415b661d74151a9301",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0162_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "b00ce1c965c1e3c692e096f15fd119b43f981cae16a0a26bc4f0ba470bc0a4a4"
+            }
+          },
+          "VK": {
+            "path": "labels/im0162_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "03a2e1544ec5d779e4a2bc04fe79c2f21194e18c467df32b565e9e27a3432102"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "dbf3f1f202e333bce3c4c5a75e167438fcf6687d5bab6c096975b8c24906909b"
+        }
+      }
+    },
+    "im0163": {
+      "256": {
+        "input": "inputs/im0163_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "54b92175ffb68b62184c700951183da7efc7db53860686d6c8e0574f4bbde37e",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0163_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "c513b7c5f1ee5ab627bf5872cd3095af375b749d07d5f3bcb4aefa580623cae6"
+            }
+          },
+          "VK": {
+            "path": "labels/im0163_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "a7c53714c10a7eb55e92baf2c16c1883f3b3360a787959f4346ddc7c266ffdc7"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "5fdfa0e2032d7eeaceabbff8b586ec11e1404c0546a097ad5f91b5f4f92e46a7"
+        }
+      },
+      "512": {
+        "input": "inputs/im0163_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "33e4122a9df17f35a639a867067608403d4b70a44dffdd1106c7ce9ee0fd5b3d",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0163_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "57bcaa84c39f672867e90848d0b8a46887609c2f88cb011c338981ca56d2ccfb"
+            }
+          },
+          "VK": {
+            "path": "labels/im0163_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "0989a55803c3d523aa3a5567b0f502734e7c6af7ba8696a060aba661fbf8fbc0"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "777844b30dc75d1a103d3744cf95aaf48d1ddb839e2df95431115fd563d9e633"
+        }
+      }
+    },
+    "im0235": {
+      "256": {
+        "input": "inputs/im0235_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "223e5d904ca513d3864209adab3ca9fe729430bc7a52b09735221a50c8c86431",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0235_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "f51308c8177aefadea04021f222fb11ab08f5a1368e28920dfc28dd1b8aced53"
+            }
+          },
+          "VK": {
+            "path": "labels/im0235_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "afac0a58039909e55e67359d4adb7a1f0a18f4cd7abec7927847b4fdd0eb312f"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "357d00e275777098e73faa8c769fe81e36bbf445ed3c99e41bc175164f9a9bf9"
+        }
+      },
+      "512": {
+        "input": "inputs/im0235_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "7efc0634884b6a76383f2c3925150a56e858e856b5f39091a5c75f4f3bb8be1c",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0235_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "cff2302b1bd7c09273db7dd927afe831bbe4cd71cae5731feccf409c9d2c7839"
+            }
+          },
+          "VK": {
+            "path": "labels/im0235_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "4e29ec54e1ac1a8ad161f949859c85b9c113094d1473b8c6d70309d072df39e2"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "3f6142f73b1c8ada122325e488586325d301e6baacc7620a2a542327bd0533fd"
+        }
+      }
+    },
+    "im0236": {
+      "256": {
+        "input": "inputs/im0236_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "df121b64a0b56d3b0f63fa16ada757f26c6c0cb1c956c1936b03e1cc9f6e6dcf",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0236_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "d943bc90d6e833758d31991c63fcb3e9450a05d6e0486782f91be056b8fcdc88"
+            }
+          },
+          "VK": {
+            "path": "labels/im0236_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "381951577ccbbbc09bbb7dfc99943e94f328c93fe88465bc6ac64d637dc27165"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "078a0294636067cb3f111eac11ad967ec339aa6847a5d2c55252af374e76ec17"
+        }
+      },
+      "512": {
+        "input": "inputs/im0236_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "3f47fc8418e36ed98708f17a64aec8f4944a5ec3e88b42a4de9716f890f92ba5",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0236_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "f1d0e00e553efa2cb37994cdee05855f26a752aae985fb2945ab16efb6a8d099"
+            }
+          },
+          "VK": {
+            "path": "labels/im0236_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "34c1ea3cdf8a1dfcec989e0b74a84d6194c1a5f6911d276abcbd450a98a05978"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "fd088e238b28375902b2274305b57f8b8637c903aecb695c81bf9cb53aaa6603"
+        }
+      }
+    },
+    "im0239": {
+      "256": {
+        "input": "inputs/im0239_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "6655ede54384bdc394776272a0d9cd764c746b4a1ec1114febcf2c8057cc37d1",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0239_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "c9eb1afc97530aa5ae506413d649c4ed9d4386e0e0d220b8271413a6d389d725"
+            }
+          },
+          "VK": {
+            "path": "labels/im0239_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "0903ed3d4b8b65e04b33b35975bee03014f390a2ca77de53033c04584ea19a86"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "3f55c1b90c6c7b32d26a97af16db9d09e89d4ed62ab740d35fc8b1c2f629f143"
+        }
+      },
+      "512": {
+        "input": "inputs/im0239_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "f8ef21f43d1e60bdababf64c774c6716120c0cb021711568d1b4d9d7f0db0d0b",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0239_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "8cf1936073c6df1eb7e3fc190a136540456c829be3ddac4d11912f7e36224728"
+            }
+          },
+          "VK": {
+            "path": "labels/im0239_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "e87537eb0d31b82595aeb1db372484aba93e9cf51b14844108692d49d7a246bc"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "466c8dc4b19293bc89bb7ba299ab567263c904c9a98dc973abe5868162b0c53f"
+        }
+      }
+    },
+    "im0240": {
+      "256": {
+        "input": "inputs/im0240_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "aacec1e2d260fe553f72bfc721e1eca18bc3caaa6556d8822c85e51c0c54d1a9",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0240_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "42f67b439c4545c3f01a957eb51a1f917b10885204b8b43d5719e4e14903bbc1"
+            }
+          },
+          "VK": {
+            "path": "labels/im0240_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "cad2ec80ed92a6d2a8fb3f7d1121bed310546670fb0685e0ba12e1ff8c7ecb2e"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "b31460d5fc45b2e88d06d2524b5c76a0692adf9694594947f80481bc089bb303"
+        }
+      },
+      "512": {
+        "input": "inputs/im0240_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "fe6ca6da7242f9c73a8569da11ed5983d4ace3468f82cfa811342ba71dd47bd9",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0240_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "520aa93cce443a33ecede5ad9eb8162c678842fa0355f6020584025974cde657"
+            }
+          },
+          "VK": {
+            "path": "labels/im0240_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "0775f80d85fb78b89ac005ecdf7954c21de628685e9dbef701f763167ff05070"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "0d24807024af54f73677fd83ba1a3221949493f460e91f4f56cf12c4be74be3e"
+        }
+      }
+    },
+    "im0255": {
+      "256": {
+        "input": "inputs/im0255_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "b25820ae66e60f8582360919a7b8f5157769cae5bf838bbc358d0b511e3f2b82",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0255_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "ae9b6054b93a11eadf07ee5a597a2c084e34c383ce0f280163457e7c4d78f90d"
+            }
+          },
+          "VK": {
+            "path": "labels/im0255_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "9d58631af99ac15ef6b3b0cc72e7034a153c1611127dc53ccf66aafe4ece70de"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "1d3888f77191b7be365bcd39969e340988b8a28ffb9215da772f4b925e039b2f"
+        }
+      },
+      "512": {
+        "input": "inputs/im0255_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "b42f7372def003a540b0132e513e76fa0c7b3defe9f48a48b8004da3282ddb7a",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0255_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "01534af012dec8a428266c451fb50f826c69f9573a2945f4b8c7d1f4b833ab0b"
+            }
+          },
+          "VK": {
+            "path": "labels/im0255_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "24e349567d3b0aad6805f0ffc7aece2441675f763cfcc22684ef512696e731c1"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "2a031ba8e16e52e6b4a46921797f4f0c4c32bcf034023dc02fa9f49f20616d0e"
+        }
+      }
+    },
+    "im0291": {
+      "256": {
+        "input": "inputs/im0291_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "f9bdecbf82243566c0f7b8920d8dcad92bf3c5c46ff34e31168eed0646d0e4e6",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0291_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "b1cc49c2d03b45651355587c5cec511c26896633605e09e12b02f9660981fdf2"
+            }
+          },
+          "VK": {
+            "path": "labels/im0291_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "a86878d9b535d0c1af4f43155452a198102848be9ff6ed1bb6da174246acc575"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "d6ec1152b65bf7a02cf40ba3bf337c6a8263856246ade5f5eff1da1b39be77dc"
+        }
+      },
+      "512": {
+        "input": "inputs/im0291_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "38ae63c03cd1e2ebbb4995d809b8f8078e1837a628b12fb47c0c55d46f9737e0",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0291_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "3c5ffbac02ca66fa8ab302b0b1eb970866d5bd1d7b56f8c00ccfb778ed0c8ccd"
+            }
+          },
+          "VK": {
+            "path": "labels/im0291_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "afe570033345377a90d28400be9b1176f071db166b6e79937ce42179d13e118d"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "dcf44539e9e7751098b8a46c65d126270425afa174448a762de019c35f334296"
+        }
+      }
+    },
+    "im0319": {
+      "256": {
+        "input": "inputs/im0319_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "37b908f9583b01729347f9b341f7923bd7dd7e205eb14ec3745cb6dd3e02a534",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0319_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "514fd116c0874e6289528a70f1af9b2a838a56576ac780e85647789d623ac990"
+            }
+          },
+          "VK": {
+            "path": "labels/im0319_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "ce8b799d804ee0263ccc68762957f6f89276dcdd7cef797e638ebc5e48bc55c6"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "6d4786939ad7a9b8a9159f7549734f3d2f8eb5ad2d631957c70145e482323101"
+        }
+      },
+      "512": {
+        "input": "inputs/im0319_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "37cbe7bf97565556e4661f70fb44063255d0ce384fc71ff66e345cd56ae41c44",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0319_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "a1445df8bd2c20c5af4a56a0dc866ccdea7cba26a8dc168b6e47f4d9e71a637d"
+            }
+          },
+          "VK": {
+            "path": "labels/im0319_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "aca49d32bfeb300335919794eae62e0b5c315e5a25817139804dd1dde13077de"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "492f2928fd82058ca82f82b052b10a6a0f545b988afce7e7678a9461e0d25b65"
+        }
+      }
+    },
+    "im0324": {
+      "256": {
+        "input": "inputs/im0324_256.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "465501d9b5c5742f7d2573b678ae71ec9fc0bb294edffefd04f069d6b9aebba4",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0324_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "40317ab0c76205c5c3fa233be2f18a18e07886433ec585480ba67815a7c1eb05"
+            }
+          },
+          "VK": {
+            "path": "labels/im0324_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "e54e467f5e6bd694892587f93476cde0a044026fb8f6fa4f50a59eb3c19f0b43"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "df6de4852d28be929b0497ce4eadea20a44ac6754751f9169cc0269f04a8804a"
+        }
+      },
+      "512": {
+        "input": "inputs/im0324_512.npy",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "input_word_sha256": "a06d509bed95c572a7619b927c55e563936ce498f305c55d3362e25bba367811",
+        "evaluation_only": {
+          "AH": {
+            "path": "labels/im0324_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "8eed40a8a6beef9e49e69d40dd98bf7a4829d5d23ed3492e9c36faf849ff6b0a"
+            }
+          },
+          "VK": {
+            "path": "labels/im0324_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "148b4cc96b571c3b12f4ce017007fd6bbdc7dcb016e204f0bdbcee1b089b92b7"
+            }
+          }
+        },
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "cf478ba3bfd160f253e19bed352c214e8cbb6b7be8095b24c9d2eb4ee7da366f"
+        }
+      }
+    }
+  },
+  "modes": {
+    "bypass": 0,
+    "threshold_candidate": 1,
+    "closed_candidate": 2,
+    "final": 3
+  },
+  "algorithms": [
+    "A",
+    "C2"
+  ],
+  "threshold_range": [
+    1,
+    255
+  ],
+  "png_profiles": {
+    "baseline": {},
+    "fast": {
+      "compress_level": 1
+    }
+  },
+  "candidate": "C2_l9_d12345_m1_p28",
+  "artifacts": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "inputs/im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "inputs/im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "inputs/im0002_256.npy": {
+      "bytes": 262272,
+      "sha256": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a"
+    },
+    "inputs/im0002_512.npy": {
+      "bytes": 1048704,
+      "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+    },
+    "inputs/im0003_256.npy": {
+      "bytes": 262272,
+      "sha256": "72fb6bf19facf1f1154f4d4a253fb31ca61ec991a7eded85d37ace46c1ba6f57"
+    },
+    "inputs/im0003_512.npy": {
+      "bytes": 1048704,
+      "sha256": "8d7cfbad2291daf4f41d0314c494a74c7f21df8c1b05fbb0206901dbd0a6d19d"
+    },
+    "inputs/im0004_256.npy": {
+      "bytes": 262272,
+      "sha256": "ea3ae66777e62737a4f7e9ddd461ad17191a6f86302fb620c5c745ecdbee819d"
+    },
+    "inputs/im0004_512.npy": {
+      "bytes": 1048704,
+      "sha256": "67d338170cbd5a0c397505d42b6510a0558982b57f8ebf1ac97ab9e537957693"
+    },
+    "inputs/im0005_256.npy": {
+      "bytes": 262272,
+      "sha256": "4dc3b8f15d05e2bce5140f6714fc605c06aebe6f146d0d9ca00498cad0c0c9ec"
+    },
+    "inputs/im0005_512.npy": {
+      "bytes": 1048704,
+      "sha256": "607e97600a8f7f6a56af48414c949b29a6f767e39b9328e3a945524991b01a97"
+    },
+    "inputs/im0044_256.npy": {
+      "bytes": 262272,
+      "sha256": "b84f6d77fc7c7ffa118455a4ffc8297140f951b5a4a2215c58b066f2b9045b45"
+    },
+    "inputs/im0044_512.npy": {
+      "bytes": 1048704,
+      "sha256": "7ecb201a1420a517e9f877b8f33949653873754c47a6a1d2f6dba118ace12a0d"
+    },
+    "inputs/im0077_256.npy": {
+      "bytes": 262272,
+      "sha256": "11be949b837b291ea2ff53152968837f6ba64935b482325e345f87c97ab13370"
+    },
+    "inputs/im0077_512.npy": {
+      "bytes": 1048704,
+      "sha256": "9e6b99144844c183315b6694e9d848da71cc4550d65ae05e5236e0493480eb9b"
+    },
+    "inputs/im0081_256.npy": {
+      "bytes": 262272,
+      "sha256": "d7165ee17ec26f8068ecc028d1d6662e64c9819c83c93feb0a10112c73c96208"
+    },
+    "inputs/im0081_512.npy": {
+      "bytes": 1048704,
+      "sha256": "c9263b82145c45b5565798d86528f67d7f192dd2a9124de6fb17bc696ff34230"
+    },
+    "inputs/im0082_256.npy": {
+      "bytes": 262272,
+      "sha256": "78de1858abc1d99e353f9320d6c54d9418a28fd5c48bfc503722ba7e46f7e8a4"
+    },
+    "inputs/im0082_512.npy": {
+      "bytes": 1048704,
+      "sha256": "91ae7cc398269482f0cebc8fc4e53d2e731b3ca451ff9179d36c061d459d9708"
+    },
+    "inputs/im0139_256.npy": {
+      "bytes": 262272,
+      "sha256": "367f81e8a6e43f507d53e61f2ffe0bcd71d3b6c9f425dd631f9484c012ea2499"
+    },
+    "inputs/im0139_512.npy": {
+      "bytes": 1048704,
+      "sha256": "20d777f7079f4b577b410a93a1803e94a03383484793787215b2e34a80f4944d"
+    },
+    "inputs/im0162_256.npy": {
+      "bytes": 262272,
+      "sha256": "becb9685766ea716c31f8dc92b4b805f87772f156da167e99a92e2ed1c4c562d"
+    },
+    "inputs/im0162_512.npy": {
+      "bytes": 1048704,
+      "sha256": "dbf3f1f202e333bce3c4c5a75e167438fcf6687d5bab6c096975b8c24906909b"
+    },
+    "inputs/im0163_256.npy": {
+      "bytes": 262272,
+      "sha256": "5fdfa0e2032d7eeaceabbff8b586ec11e1404c0546a097ad5f91b5f4f92e46a7"
+    },
+    "inputs/im0163_512.npy": {
+      "bytes": 1048704,
+      "sha256": "777844b30dc75d1a103d3744cf95aaf48d1ddb839e2df95431115fd563d9e633"
+    },
+    "inputs/im0235_256.npy": {
+      "bytes": 262272,
+      "sha256": "357d00e275777098e73faa8c769fe81e36bbf445ed3c99e41bc175164f9a9bf9"
+    },
+    "inputs/im0235_512.npy": {
+      "bytes": 1048704,
+      "sha256": "3f6142f73b1c8ada122325e488586325d301e6baacc7620a2a542327bd0533fd"
+    },
+    "inputs/im0236_256.npy": {
+      "bytes": 262272,
+      "sha256": "078a0294636067cb3f111eac11ad967ec339aa6847a5d2c55252af374e76ec17"
+    },
+    "inputs/im0236_512.npy": {
+      "bytes": 1048704,
+      "sha256": "fd088e238b28375902b2274305b57f8b8637c903aecb695c81bf9cb53aaa6603"
+    },
+    "inputs/im0239_256.npy": {
+      "bytes": 262272,
+      "sha256": "3f55c1b90c6c7b32d26a97af16db9d09e89d4ed62ab740d35fc8b1c2f629f143"
+    },
+    "inputs/im0239_512.npy": {
+      "bytes": 1048704,
+      "sha256": "466c8dc4b19293bc89bb7ba299ab567263c904c9a98dc973abe5868162b0c53f"
+    },
+    "inputs/im0240_256.npy": {
+      "bytes": 262272,
+      "sha256": "b31460d5fc45b2e88d06d2524b5c76a0692adf9694594947f80481bc089bb303"
+    },
+    "inputs/im0240_512.npy": {
+      "bytes": 1048704,
+      "sha256": "0d24807024af54f73677fd83ba1a3221949493f460e91f4f56cf12c4be74be3e"
+    },
+    "inputs/im0255_256.npy": {
+      "bytes": 262272,
+      "sha256": "1d3888f77191b7be365bcd39969e340988b8a28ffb9215da772f4b925e039b2f"
+    },
+    "inputs/im0255_512.npy": {
+      "bytes": 1048704,
+      "sha256": "2a031ba8e16e52e6b4a46921797f4f0c4c32bcf034023dc02fa9f49f20616d0e"
+    },
+    "inputs/im0291_256.npy": {
+      "bytes": 262272,
+      "sha256": "d6ec1152b65bf7a02cf40ba3bf337c6a8263856246ade5f5eff1da1b39be77dc"
+    },
+    "inputs/im0291_512.npy": {
+      "bytes": 1048704,
+      "sha256": "dcf44539e9e7751098b8a46c65d126270425afa174448a762de019c35f334296"
+    },
+    "inputs/im0319_256.npy": {
+      "bytes": 262272,
+      "sha256": "6d4786939ad7a9b8a9159f7549734f3d2f8eb5ad2d631957c70145e482323101"
+    },
+    "inputs/im0319_512.npy": {
+      "bytes": 1048704,
+      "sha256": "492f2928fd82058ca82f82b052b10a6a0f545b988afce7e7678a9461e0d25b65"
+    },
+    "inputs/im0324_256.npy": {
+      "bytes": 262272,
+      "sha256": "df6de4852d28be929b0497ce4eadea20a44ac6754751f9169cc0269f04a8804a"
+    },
+    "inputs/im0324_512.npy": {
+      "bytes": 1048704,
+      "sha256": "cf478ba3bfd160f253e19bed352c214e8cbb6b7be8095b24c9d2eb4ee7da366f"
+    },
+    "labels/im0001_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4"
+    },
+    "labels/im0001_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070"
+    },
+    "labels/im0001_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+    },
+    "labels/im0001_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+    },
+    "labels/im0002_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0"
+    },
+    "labels/im0002_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a"
+    },
+    "labels/im0002_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7"
+    },
+    "labels/im0002_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873"
+    },
+    "labels/im0003_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "bf6b3b672c74687c33383a9b6212eb01942afff445c179989cbb7d75b204581d"
+    },
+    "labels/im0003_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "9ebf49fad2799c8822dd1d83fd945a7e3c4b03dd5352288b5d18a55792b0ea82"
+    },
+    "labels/im0003_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "e63fb219f7eadbf9deff7605d09045e917f7dde3e4c2d901cc2ff34a12588112"
+    },
+    "labels/im0003_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "83b24ac6ad92c128867456ccdd7cac63eb4fadcdd6fb56da17fa2c3c84228427"
+    },
+    "labels/im0004_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "98a45869690b91f7de4d15193a547890dc8037960188b6caeadf12011acace6c"
+    },
+    "labels/im0004_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "2e4da406c6ff90faf23397e7fa83e28ffa48addc9dbc73193d67aa05552ed51e"
+    },
+    "labels/im0004_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "a0be8b1b2e6983b39590da315d3033a8ace83881b50f4e85d28eaebf8aa6a188"
+    },
+    "labels/im0004_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "f75bfa2afd007bba60d5affd782543bdaf0c9f59aabeb860f93546ae7d57004b"
+    },
+    "labels/im0005_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "ae074628a111e40ef652bb703b4cd9820caa187cd881ad71d2888e837a78299e"
+    },
+    "labels/im0005_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "59d723da31f4ab340327eceb21426b94b1d39123c85d0d0cf4cd37fd5f63d652"
+    },
+    "labels/im0005_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "76d53a68bd33b1997b46818ef661331d0dbe804e70368d4c5cde7ce76ad11965"
+    },
+    "labels/im0005_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "aa2182d8c41db618ee4f7eb7e55f7a2e231e65f87a049541008c41a363ebba88"
+    },
+    "labels/im0044_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "afb6cff129c9d191cc3780022969ca16a2794892aa8fb9226a5d17dbb057069d"
+    },
+    "labels/im0044_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "1ed97e8f76a7d31b4f416b25546afbba3e3ffcec17d8310c1d68998616c4a3df"
+    },
+    "labels/im0044_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "fa6f98ea2577509e6d2698768843f01fd293b11cbca1384a1bcc395182edfe63"
+    },
+    "labels/im0044_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "ae9dfd8ebfd9ebeedcdf3f5c70ae0dfebe8b630281106a5194c11493c182d8c7"
+    },
+    "labels/im0077_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "37cc11976c76e90d2112f485e5d8b164833a0b0ffa8e37532b18047f93f27cb9"
+    },
+    "labels/im0077_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "ec133afad113550cdb68991fe2dc92be957ab13b2ebbea9c04e2e023d02cec7b"
+    },
+    "labels/im0077_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "47cac59f4b4158b6bed57bf1f89689ce6c1c83f1f1ec39d2de843c5bb8f4aaa5"
+    },
+    "labels/im0077_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "4978b3a1d5cab31cce16a04e873a75b06a232d644a3bf2e7969c21c5cfb88ff9"
+    },
+    "labels/im0081_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "b733f912c810580ac549e0d660abaa717435e98653afb84fa3fff6ac3c839eeb"
+    },
+    "labels/im0081_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "84509820197d9032db20caf81a529e3b1163cf657984ff3f17d485ccb521f801"
+    },
+    "labels/im0081_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "c88222c9cc3913f71eb26cc260a6da20d3a1cec376f703948ba09b7bc24da63e"
+    },
+    "labels/im0081_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "d048b21052ad2105353c8542ab714fb115ab17f1967b0e6dcd362b9196ab345c"
+    },
+    "labels/im0082_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "442ffadcc1b91dd1f0d7a129eef2483155ffb293e723101d1dd7d805bc7df47c"
+    },
+    "labels/im0082_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "ead666fc1b843c550f086c1aca733dcbdeec40e7e061c1c054ae251f7cb864d3"
+    },
+    "labels/im0082_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "7a228824f105936955b954f935daa38683a27db5145af702d01541befb1ec650"
+    },
+    "labels/im0082_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "dd1b33eca34e90f8f919a06b9934562f893f82b48d647e669cd851873a304d6a"
+    },
+    "labels/im0139_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "2aaad783302127c9c3bbb286b0493e6dac0b53eb718879efa0c6f21a837e6621"
+    },
+    "labels/im0139_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "d9cd63806ae62b238721f35c656a83f6949a33f1ade5870589ef2d18dfaf6120"
+    },
+    "labels/im0139_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "89d8afe507a7b662deb1e9a2545225c47c941607ffb96f1b962bfb692d5dea44"
+    },
+    "labels/im0139_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "774123398c00a153b0105f7cf286922eb574113d894aa2d70a718a94af9d5266"
+    },
+    "labels/im0162_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "3dccaac1b866a192ccf6b78dad70572d0d56c5cf4e24e0f6d4fba3e908a59b32"
+    },
+    "labels/im0162_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "0c6f67c0af307f1d3fa30b6063c9c0dad6a0174ab162178967281c16c6bf1e1a"
+    },
+    "labels/im0162_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "b00ce1c965c1e3c692e096f15fd119b43f981cae16a0a26bc4f0ba470bc0a4a4"
+    },
+    "labels/im0162_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "03a2e1544ec5d779e4a2bc04fe79c2f21194e18c467df32b565e9e27a3432102"
+    },
+    "labels/im0163_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "c513b7c5f1ee5ab627bf5872cd3095af375b749d07d5f3bcb4aefa580623cae6"
+    },
+    "labels/im0163_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "a7c53714c10a7eb55e92baf2c16c1883f3b3360a787959f4346ddc7c266ffdc7"
+    },
+    "labels/im0163_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "57bcaa84c39f672867e90848d0b8a46887609c2f88cb011c338981ca56d2ccfb"
+    },
+    "labels/im0163_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "0989a55803c3d523aa3a5567b0f502734e7c6af7ba8696a060aba661fbf8fbc0"
+    },
+    "labels/im0235_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "f51308c8177aefadea04021f222fb11ab08f5a1368e28920dfc28dd1b8aced53"
+    },
+    "labels/im0235_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "afac0a58039909e55e67359d4adb7a1f0a18f4cd7abec7927847b4fdd0eb312f"
+    },
+    "labels/im0235_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "cff2302b1bd7c09273db7dd927afe831bbe4cd71cae5731feccf409c9d2c7839"
+    },
+    "labels/im0235_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "4e29ec54e1ac1a8ad161f949859c85b9c113094d1473b8c6d70309d072df39e2"
+    },
+    "labels/im0236_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "d943bc90d6e833758d31991c63fcb3e9450a05d6e0486782f91be056b8fcdc88"
+    },
+    "labels/im0236_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "381951577ccbbbc09bbb7dfc99943e94f328c93fe88465bc6ac64d637dc27165"
+    },
+    "labels/im0236_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "f1d0e00e553efa2cb37994cdee05855f26a752aae985fb2945ab16efb6a8d099"
+    },
+    "labels/im0236_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "34c1ea3cdf8a1dfcec989e0b74a84d6194c1a5f6911d276abcbd450a98a05978"
+    },
+    "labels/im0239_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "c9eb1afc97530aa5ae506413d649c4ed9d4386e0e0d220b8271413a6d389d725"
+    },
+    "labels/im0239_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "0903ed3d4b8b65e04b33b35975bee03014f390a2ca77de53033c04584ea19a86"
+    },
+    "labels/im0239_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "8cf1936073c6df1eb7e3fc190a136540456c829be3ddac4d11912f7e36224728"
+    },
+    "labels/im0239_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "e87537eb0d31b82595aeb1db372484aba93e9cf51b14844108692d49d7a246bc"
+    },
+    "labels/im0240_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "42f67b439c4545c3f01a957eb51a1f917b10885204b8b43d5719e4e14903bbc1"
+    },
+    "labels/im0240_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "cad2ec80ed92a6d2a8fb3f7d1121bed310546670fb0685e0ba12e1ff8c7ecb2e"
+    },
+    "labels/im0240_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "520aa93cce443a33ecede5ad9eb8162c678842fa0355f6020584025974cde657"
+    },
+    "labels/im0240_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "0775f80d85fb78b89ac005ecdf7954c21de628685e9dbef701f763167ff05070"
+    },
+    "labels/im0255_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "ae9b6054b93a11eadf07ee5a597a2c084e34c383ce0f280163457e7c4d78f90d"
+    },
+    "labels/im0255_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "9d58631af99ac15ef6b3b0cc72e7034a153c1611127dc53ccf66aafe4ece70de"
+    },
+    "labels/im0255_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "01534af012dec8a428266c451fb50f826c69f9573a2945f4b8c7d1f4b833ab0b"
+    },
+    "labels/im0255_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "24e349567d3b0aad6805f0ffc7aece2441675f763cfcc22684ef512696e731c1"
+    },
+    "labels/im0291_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "b1cc49c2d03b45651355587c5cec511c26896633605e09e12b02f9660981fdf2"
+    },
+    "labels/im0291_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "a86878d9b535d0c1af4f43155452a198102848be9ff6ed1bb6da174246acc575"
+    },
+    "labels/im0291_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "3c5ffbac02ca66fa8ab302b0b1eb970866d5bd1d7b56f8c00ccfb778ed0c8ccd"
+    },
+    "labels/im0291_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "afe570033345377a90d28400be9b1176f071db166b6e79937ce42179d13e118d"
+    },
+    "labels/im0319_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "514fd116c0874e6289528a70f1af9b2a838a56576ac780e85647789d623ac990"
+    },
+    "labels/im0319_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "ce8b799d804ee0263ccc68762957f6f89276dcdd7cef797e638ebc5e48bc55c6"
+    },
+    "labels/im0319_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "a1445df8bd2c20c5af4a56a0dc866ccdea7cba26a8dc168b6e47f4d9e71a637d"
+    },
+    "labels/im0319_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "aca49d32bfeb300335919794eae62e0b5c315e5a25817139804dd1dde13077de"
+    },
+    "labels/im0324_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "40317ab0c76205c5c3fa233be2f18a18e07886433ec585480ba67815a7c1eb05"
+    },
+    "labels/im0324_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "e54e467f5e6bd694892587f93476cde0a044026fb8f6fa4f50a59eb3c19f0b43"
+    },
+    "labels/im0324_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "8eed40a8a6beef9e49e69d40dd98bf7a4829d5d23ed3492e9c36faf849ff6b0a"
+    },
+    "labels/im0324_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "148b4cc96b571c3b12f4ce017007fd6bbdc7dcb016e204f0bdbcee1b089b92b7"
+    },
+    "pynq_w4a/__init__.py": {
+      "bytes": 85,
+      "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+    },
+    "pynq_w4a/evaluation.py": {
+      "bytes": 1912,
+      "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+    },
+    "pynq_w4a/hardware.py": {
+      "bytes": 12701,
+      "sha256": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a"
+    },
+    "pynq_w4a/launch.py": {
+      "bytes": 4611,
+      "sha256": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b"
+    },
+    "pynq_w4a/protocol.py": {
+      "bytes": 5402,
+      "sha256": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab"
+    },
+    "pynq_w4a/quality_observer.py": {
+      "bytes": 4929,
+      "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+    },
+    "pynq_w4a/service.py": {
+      "bytes": 28566,
+      "sha256": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee"
+    },
+    "ui/app.js": {
+      "bytes": 13617,
+      "sha256": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55"
+    },
+    "ui/index.html": {
+      "bytes": 6431,
+      "sha256": "0325aea6642189cce1cacdffbd5bf3a0b7c33a63e4476e7eb5198b24f93ef230"
+    },
+    "ui/style.css": {
+      "bytes": 5073,
+      "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+    },
+    "w2_manifest.json": {
+      "bytes": 2083,
+      "sha256": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035"
+    },
+    "w2_quality.bit": {
+      "bytes": 4045678,
+      "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+    },
+    "w2_quality.hwh": {
+      "bytes": 379601,
+      "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+    }
+  },
+  "provenance": {
+    "W3_board_verification": {
+      "bytes": 134650,
+      "sha256": "f2d69bc3b0857e6562d0ecaf768705e0e8f50e1fa34096e7081fba4d3904afcf"
+    },
+    "W1_manifest": {
+      "bytes": 17166,
+      "sha256": "ba641b74d460786bfea54b9bc57dee280798bfdb745f4cba993f67caf67a675f"
+    }
+  },
+  "scope": "W4a runtime reused; Q3 fixed 80 quality frames plus separate manual previews. No golden/CPU medical implementation shipped.",
+  "ps_role": "Read input/DDR/DMA/control; snapshot actual PL; unpack/score/display/export. No PS vessel computation.",
+  "hardware": {
+    "resources": {
+      "Slice LUTs": 11835.0,
+      "Slice Registers": 11591.0,
+      "Block RAM Tile": 57.5,
+      "DSPs": 1.0
+    },
+    "wns_ns": 0.909,
+    "whs_ns": 0.009
+  }
+}

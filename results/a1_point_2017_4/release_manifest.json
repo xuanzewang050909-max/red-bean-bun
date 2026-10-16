@@ -1,0 +1,84 @@
+{
+  "revision": "a1_point_r1",
+  "host_status": "PASS_HOST_BUILD_METADATA_RTL_AND_VENDOR_RESET_SIMULATION",
+  "board_status": "NOT_RUN",
+  "vivado": "2017.4",
+  "pynq_target": "3.0.1",
+  "scope": "Diagnostic point-stage only; no Gaussian, segmentation or HDMI",
+  "build_directory": "D:\\PLD\\retina_fpga\\build\\a1_point_02",
+  "source_files": {
+    "rtl\\core\\retina_point_axis.v": {
+      "bytes": 4174,
+      "sha256": "4691aedce8949e8a69123f491b8cdcb742538df1bd6170a128581819346d8f15"
+    },
+    "rtl\\core\\contrast_lut.vh": {
+      "bytes": 10268,
+      "sha256": "735866f64a1597847ba58307b1611f45118c149c44d22a1408230cde01fe5ddd"
+    },
+    "tests\\retina_point_axis_tb.sv": {
+      "bytes": 8151,
+      "sha256": "614cd77f8c1d106995d6fd850a4bdf36033476dcc845925ea78b57b49274b8c2"
+    },
+    "vivado\\scripts\\build_a1_point.tcl": {
+      "bytes": 10214,
+      "sha256": "108acbfd8872d0598f14db5f188adc4097b81fcdbaf5a30cf83348fd7cd35349"
+    },
+    "scripts\\derive_a1_tcl.py": {
+      "bytes": 3825,
+      "sha256": "2e73c3ab66f11a472e2c9ebbce31794d6959a1686a040b0bf4549ec9ceeb5240"
+    },
+    "scripts\\run_point_simulation.ps1": {
+      "bytes": 1304,
+      "sha256": "b8406cd36e1c828805956918eb652f4220d76d6256e7926800c2b317ad72d2fb"
+    },
+    "vivado\\scripts\\simulate_a1_reset.tcl": {
+      "bytes": 1475,
+      "sha256": "ccec8e8dbd4cbe3b8cbc53238a5dba00fbf73971ef1ce4e7cfee722b35171239"
+    },
+    "scripts\\a0_reset_tb.sv": {
+      "bytes": 2064,
+      "sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8"
+    },
+    "scripts\\package_a1.py": {
+      "bytes": 7546,
+      "sha256": "1f5e329cb79866458482f7fcfc4ae6c9ed65761b2012100921d48dffbdb5bb44"
+    }
+  },
+  "artifacts": {
+    "a1_point.bit": {
+      "bytes": 4045676,
+      "sha256": "b1aa476219a423a5eecf7967f6d9f029fb013503176ed8bd068d0206ab743938"
+    },
+    "a1_point.hwh": {
+      "bytes": 336062,
+      "sha256": "6219f6e292df98a962f9f392e274bb5040bcb72c7aba426e6fb6df2d666fb6c6"
+    },
+    "a1_point_check.ipynb": {
+      "bytes": 3339,
+      "sha256": "69e1203a503506f572639b8ed1f85e0c18e07a5ad18e71c31ce88f81d177012a"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 9034,
+      "sha256": "c78b5d284d8bf6e4b65fd85d1740b5cf0922dd5ff231184193a0146614449164"
+    },
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "\u4f7f\u7528\u8bf4\u660e.txt": {
+      "bytes": 3460,
+      "sha256": "1187f707b4d6e6b32d604727ba510f2f9bb75721cff6d9a459b3b5a23852a267"
+    }
+  },
+  "reviewed_warning": "Inherited read-only aux polarity setter warning; propagated C_AUX_RESET_HIGH=0, constant-one wiring and actual vendor reset simulation independently checked",
+  "gpio_parameters": {
+    "C_IS_DUAL": 1,
+    "C_GPIO_WIDTH": 32,
+    "C_GPIO2_WIDTH": 32,
+    "C_ALL_OUTPUTS": 1,
+    "C_ALL_INPUTS_2": 1,
+    "C_INTERRUPT_PRESENT": 0
+  },
+  "gpio_address": "0x41200000",
+  "dma_address": "0x40400000"
+}

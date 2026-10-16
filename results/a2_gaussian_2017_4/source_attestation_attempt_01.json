@@ -1,0 +1,6 @@
+{
+  "status": "INITIAL_EXACT_CHECK_FOUND_INHERITED_LINE_ENDINGS",
+  "observed": "Initial exact check found CRLF in the inherited A0 helper working copy, with LF in its existing Git blob; the A1 helper matches exactly",
+  "resolution": "New hardware/source files require exact bytes. Only these two unchanged inherited helpers permit explicitly recorded CRLF to LF equivalence; released helper files still require original exact SHA256",
+  "package_changed": false
+}

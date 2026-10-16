@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Wed Oct 14 17:21:21 2026
+# Process ID: 75848
+# Current directory: D:/PLD/retina_fpga/build/q4_guard_sim_01
+# Command line: xsim.exe -mode tcl -source {xsim.dir/q4_guard_unit/xsim_script.tcl}
+# Log file: D:/PLD/retina_fpga/build/q4_guard_sim_01/xsim.log
+# Journal file: D:/PLD/retina_fpga/build/q4_guard_sim_01\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/q4_guard_unit/xsim_script.tcl
+# xsim {q4_guard_unit} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+Q4_GUARD_REJECTION_PASS: no input handshake for threshold zero/reserved bits
+Q4_GUARD_FRAME_PASS: frame=1 words=65536 cfg=10010104 core=87380 drain=87421 gaps=938 stalls=21885
+Q4_GUARD_FRAME_PASS: frame=2 words=262144 cfg=1002ff1b core=349525 drain=349566 gaps=3743 stalls=87422
+Q4_GUARD_FRAME_PASS: frame=3 words=65536 cfg=10031b1d core=87381 drain=87422 gaps=938 stalls=21886
+Q4_GUARD_FRAME_PASS: frame=4 words=65536 cfg=10041d06 core=87381 drain=87422 gaps=938 stalls=21886
+Q4_GUARD_FRAME_PASS: frame=5 words=65536 cfg=10051c1f core=87381 drain=87422 gaps=938 stalls=21886
+Q4_GUARD_FRAMING_PASS: preserved native counters/TLAST/TKEEP sticky errors
+Q4_GUARD_FRAME_PASS: frame=6 words=65536 cfg=ffff1c1f core=87381 drain=87421 gaps=939 stalls=21885
+Q4_GUARD_UNIT_PASS: complete_frames=6 checked_words=589824; locked parameters, exact observer clocks, atomic snapshots, saturation, framing and reset; SURROGATE_CORE_ONLY
+$finish called at time : 7869771 ns : File "D:/PLD/retina_fpga/build/q4_guard_sim_01/retina_refined_guard_tb.sv" Line 201
+exit 0
+INFO: [Common 17-206] Exiting xsim at Wed Oct 14 17:21:30 2026...

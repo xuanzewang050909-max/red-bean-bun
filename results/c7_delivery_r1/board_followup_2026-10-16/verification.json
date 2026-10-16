@@ -1,0 +1,25 @@
+{
+  "status": "C7_DEMO_BOARD_RECORDS_VERIFIED_VIDEO_REVIEW_SEPARATE",
+  "tasks": 7,
+  "matched_words": 1835008,
+  "matched_pngs": 31,
+  "boot": {
+    "boot_id": "c2634331-1374-4425-abee-f3683293b844",
+    "uptime_seconds": 150.2,
+    "scope": "Boot identity recorded; physical restart confirmed by user/video only"
+  },
+  "archive": {
+    "bytes": 10610177,
+    "sha256": "2dd33b1102c866944563bcf86f53ef8a0f8b18d712d52d8ad1fed926d58664d9"
+  },
+  "notebook": {
+    "bytes": 15941,
+    "sha256": "46250a181beb407db883addd778a9759e4fe5b063ad0a4c0d2da94e39c5880e0"
+  },
+  "ignored_empty_cells": 1,
+  "exclusions": [
+    "Physical restart/video requires separate human evidence",
+    "Not forced power/network/DMA-fault recovery",
+    "Not a new FPS or quality benchmark"
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "date_beijing": "2026-10-12",
+  "base_commit": "3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3",
+  "a4_source_commit": "b3d4ef316db044e027593d4567a94f637fc15545",
+  "board_status": "NOT_RUN",
+  "files": {
+    "references\\PYNQ\\v2.2.1\\boards\\Pynq-Z2\\base\\vivado\\constraints\\top.xdc": {
+      "bytes": 13935,
+      "sha256": "db87a1e340fca6aa75740b311a22fbb8aa571dafe9c3cb94acbdb322129d8ef9"
+    },
+    "vivado\\constraints\\b_integration.xdc": {
+      "bytes": 6274,
+      "sha256": "f1332d080be733a1ffc7c86c734002a8125945409904ceaa25f7cf8357359e36"
+    },
+    "build\\official_v2.2.1\\boards\\Pynq-Z2\\base\\base\\base.srcs\\sources_1\\bd\\system\\system.bd": {
+      "bytes": 2034948,
+      "sha256": "d2ebe6e5dfcbfd84d0daf2e8b97d7234f6315d2c0a2a94a3bc5dafb5db02a5e7"
+    },
+    "vivado\\scripts\\build_b_integration.tcl": {
+      "bytes": 10261,
+      "sha256": "51a5df8082b5e718fb6eda9fff6a126365a5ef2ca7b772278b41ea2f89c8020a"
+    },
+    "rtl\\core\\retina_gaussian_guard.v": {
+      "bytes": 5052,
+      "sha256": "18b887b3ad2e0b4b458d7610172bb94596fe26441a181dfd5ba4867704ba7c51"
+    },
+    "build\\a4_hls_02\\solution1\\impl\\ip\\component.xml": {
+      "bytes": 75538,
+      "sha256": "613c621fb80a1d617b25fb394c561bf6cb39cc447f8c307b796f6462dab64ecd"
+    }
+  }
+}

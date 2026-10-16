@@ -1,0 +1,34 @@
+{
+  "dma_bench/__init__.py": {
+    "bytes": 77,
+    "sha256": "587403d0938f46c49f861e4c1e51c9f72b6dabca6c309a0df216dcd0dde08052"
+  },
+  "dma_bench/board.py": {
+    "bytes": 7803,
+    "sha256": "6ecba3d0a98f7e510b7e0e8f9229214f1ef2ebe4e372cf23a030416fadab45ae"
+  },
+  "dma_bench/common.py": {
+    "bytes": 3823,
+    "sha256": "05a85cf0ee921ab4f4a33e26f84535412eb3589f5465faa9dde261d097172e74"
+  },
+  "scripts/package_c7_w4_dma.py": {
+    "bytes": 4892,
+    "sha256": "cbb95e1cc733945956d60bbcc14ae06c0951fdd0248cc0c45b59e3f1d05e2fce"
+  },
+  "scripts/verify_c7_w4_dma.py": {
+    "bytes": 6920,
+    "sha256": "2bdc918848ec9505aad7839da5ae4a8a82bddb5c4eab2c012d055318189eba83"
+  },
+  "tests/test_c7_w4_dma.py": {
+    "bytes": 11399,
+    "sha256": "66c6283f871c56a791b0baac9ff187bbeb30f9f6190ac08ea9d75c615d386c50"
+  },
+  "docs/c7_w4_dma_protocol.md": {
+    "bytes": 3292,
+    "sha256": "0a352b6a3f271fed3e8a3db31b6791a9f0cf39ef1bc53277a2a90a5b0048fc73"
+  },
+  "docs/c7_w4_dma_steps.md": {
+    "bytes": 2806,
+    "sha256": "3ded594a28ebd489b521de8a7dd1254c0e0dbbe730a79f780e7affc4330386dd"
+  }
+}

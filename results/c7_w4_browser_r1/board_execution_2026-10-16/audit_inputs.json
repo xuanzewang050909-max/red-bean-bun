@@ -1,0 +1,65 @@
+{
+  "status": "AUDIT_INPUTS_RECORDED_NOT_A_PASS",
+  "source_commit": "2bec1ab27cab385c3bb2a2756df8b90415c9a7a6",
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "sources": {
+    "scripts/verify_c7_w4_browser.py": {
+      "bytes": 12877,
+      "sha256": "2615c4393b16f9814f1ad461d573291ad99f9f8f0b177df8cd3bf2a07c4ea8da"
+    },
+    "scripts/verify_w4b_run.py": {
+      "bytes": 16237,
+      "sha256": "29f436ed4f40cf32844a4d1e0a523e5a207573652e1bba261329cc85b8e6d3b8"
+    },
+    "scripts/verify_c7_w4_results.py": {
+      "bytes": 11433,
+      "sha256": "07387e10fbe57aaf56d3bfcb8a3cead3924ea2093679951851abb243bba289f1"
+    },
+    "scripts/prepare_q4d_detector_vectors.py": {
+      "bytes": 4733,
+      "sha256": "513370de23141a19ca07513831686db2c72e7fcb3ceb2a255c9f365c3711b1af"
+    },
+    "scripts/prepare_q4_refined_vectors.py": {
+      "bytes": 7232,
+      "sha256": "51c63e4879d78606cdf548a211b174ed21af06c144cc64059f1546563b201b2e"
+    },
+    "software/q4d_features.py": {
+      "bytes": 5255,
+      "sha256": "afd2f3491db348516ee201fe52834092f9e476cd00417a1a77343170591d96e0"
+    },
+    "software/q4d_forest.py": {
+      "bytes": 2063,
+      "sha256": "8f20551af2d014959e6bd79358ead7e28a18e87f1060ce7094813746659b0274"
+    },
+    "software/models/c7_d6_r1.json": {
+      "bytes": 62706,
+      "sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6"
+    },
+    "build/deploy/c7_w4_browser_r1/package/w4b_manifest.json": {
+      "bytes": 20719,
+      "sha256": "d0c93f12d32bc4c5fded74aabdf8a30cd24df881dd639a4326129d7ef4a10d8d"
+    },
+    "build/deploy/c7_w4_browser_r1/package/browser_manifest.json": {
+      "bytes": 86460,
+      "sha256": "7ba63b7efa2f8fbbe8e0402c9c0f1cb524bf6df2edc2e516b6feaa60f707501b"
+    }
+  },
+  "originals": {
+    "status": "ORIGINALS_COPIED_AUDIT_PENDING",
+    "files": {
+      "c7_w4_browser_results.zip": {
+        "source": "C:\\Users\\Gabriel\\Downloads\\c7_w4_browser_results.zip",
+        "bytes": 523401529,
+        "sha256": "25f12c98e8d344c42c4de2d2b41547405e3efa03368471125a62696a1feaa2ef"
+      },
+      "c7_w4_browser.ipynb": {
+        "source": "C:\\Users\\Gabriel\\Downloads\\c7_w4_browser.ipynb",
+        "bytes": 11980,
+        "sha256": "42716d2baf9738d98a9e4bf043d32f2325cf2e0ccb3aa60865a846cf4367a5e7"
+      }
+    }
+  },
+  "screenshot_last_run_id": "e06716a4bfdd4825907ab4f92e7d9977",
+  "board_clock_dates_unverified": true
+}

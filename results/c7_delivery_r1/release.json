@@ -1,0 +1,18 @@
+{
+  "status": "BOARD_NOT_RUN",
+  "files": {
+    "c7_delivery_demo.ipynb": {
+      "bytes": 10430,
+      "sha256": "a70e69dbd321a98ef036f7ffcde8369ccf93a5a0e61575cbc909881939408a5e"
+    },
+    "c7_w5b_interaction_r1.zip": {
+      "bytes": 14765792,
+      "sha256": "6a489f9c721b40d2dbd7435bbb0c0704ee3f6844cc2f4a551181529f2b1e5fa2"
+    }
+  },
+  "distinct_new_tests": 2,
+  "existing_tests_rerun_not_new": 2,
+  "host_full_word_comparison": 1835008,
+  "host_pngs": 31,
+  "unchanged_w5b_zip": true
+}

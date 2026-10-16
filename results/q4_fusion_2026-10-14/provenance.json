@@ -1,0 +1,846 @@
+{
+  "source_commit": "d154eca23b5671da1a97d6943d3f1146e64825ce",
+  "source_sha256": {
+    "software/q4_refinement.py": "f5001864dc3ecc7b7dbb6489ae8717c7ca19752ae399cf58969a8db972ac3e0a",
+    "software/continuity_metrics.py": "28799bed8bac4fe8c9854336162ef46c6252fd36ce2333c8470457336641d530",
+    "scripts/evaluate_q4_refinement.py": "1e53249abe5f2bdd9eb8a7600a6fb35627a774d8eded4799cd337510e317e875",
+    "tests/test_q4_refinement.py": "083529d0df9f9b5a0574031c337adbebd6c29bc3d237788eb49095825cd923da",
+    "scripts/evaluate_q1_bilateral.py": "0824a5740e39b359e7835f2fbbfe38d54e2abbeb09f6eb81c2e413219018db72",
+    "software/q1_bilateral.py": "eba1c349dab9a57134a05844b20c8ccd6d51e19cc6a4b69604d23a880ae5aba1",
+    "software/reference.py": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e",
+    "software/preprocessing.py": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18",
+    "software/metrics.py": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99",
+    "software/q4_ridge.py": "33cfde8b296d1112cdbfa288d8c64b2d8c24653ba64cbbb99cd1487f56738e6e",
+    "scripts/evaluate_q4_ridge.py": "9b7e52c6b6bc568129026a5e7ae9b6b599edea470e4bf2f22f20d836a7fd55ce",
+    "tests/test_q4_ridge.py": "3425edc598bf17a449b594eff89fc09a8bb4875e201a59d7426e3e9c899a808c",
+    "software/q4_fusion.py": "f555efd6f1f3dc8b9a55660d8996d2174ac17e4384350fb657933f2ae45367c4",
+    "scripts/evaluate_q4_fusion.py": "a3f4bf2c0891d72c96045fb892f91fb4ff338e4cdb7171fbb5529aed43531b62",
+    "tests/test_q4_fusion.py": "87cb4a11194ca8f7451a5ac199c000ddb80741b2114ccee99a3c78bb77aaaead",
+    "scripts/verify_q4_training.py": "f585f52be22be94e002256adeb9c2379deb62e64475ce87fc8f75029a5d3864d",
+    "scripts/verify_q4_fusion.py": "706cdda699aa15049cc98a5dd45cac7f2526c05910c2cb70387ff24486b53afc",
+    "docs/q4_fusion_protocol_r3.json": "1136de9727eb3469da6d0e0d10ae0ee625137743dfcbd917fb71dbf08a94e4b2"
+  },
+  "protocol": {
+    "protocol": "Q4_FUSION_R3",
+    "status": "PREREGISTERED_BEFORE_CANDIDATE_SCORING",
+    "train_ids": [
+      "im0001",
+      "im0003",
+      "im0005",
+      "im0077",
+      "im0082",
+      "im0162",
+      "im0235",
+      "im0239",
+      "im0255",
+      "im0319"
+    ],
+    "heldout_ids": [
+      "im0002",
+      "im0004",
+      "im0044",
+      "im0081",
+      "im0139",
+      "im0163",
+      "im0236",
+      "im0240",
+      "im0291",
+      "im0324"
+    ],
+    "selection": "AH_TRAIN_ONLY",
+    "old_heldout_previously_seen": "Q3 and user screenshots; no new candidate predictions or selection on these images, no fresh independent-test claim",
+    "sizes": [
+      256,
+      512
+    ],
+    "candidates": [
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r4_m0_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r4_m0_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r4_m0_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r4_m0_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r4_m0_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r4_m1_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r4_m1_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r4_m1_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r4_m1_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r4_m1_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r8_m0_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r8_m0_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r8_m0_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r8_m0_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_r8_m0_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r8_m1_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r8_m1_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r8_m1_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r8_m1_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_r8_m1_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r4_m0_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r4_m0_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r4_m0_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r4_m0_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r4_m0_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r4_m1_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r4_m1_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r4_m1_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r4_m1_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 4,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r4_m1_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r8_m0_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r8_m0_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r8_m0_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r8_m0_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 0,
+        "id": "C5_l5_9_15_r8_m0_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r8_m1_noadd",
+        "add_margin": 0,
+        "gap": 0
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r8_m1_a2_g1",
+        "add_margin": 2,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r8_m1_a2_g3",
+        "add_margin": 2,
+        "gap": 3
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r8_m1_a4_g1",
+        "add_margin": 4,
+        "gap": 1
+      },
+      {
+        "lengths": [
+          5,
+          9,
+          15
+        ],
+        "ratio": 8,
+        "retain_margin": 1,
+        "id": "C5_l5_9_15_r8_m1_a4_g3",
+        "add_margin": 4,
+        "gap": 3
+      }
+    ],
+    "source_files": [
+      "software/q4_refinement.py",
+      "software/continuity_metrics.py",
+      "scripts/evaluate_q4_refinement.py",
+      "tests/test_q4_refinement.py",
+      "scripts/evaluate_q1_bilateral.py",
+      "software/q1_bilateral.py",
+      "software/reference.py",
+      "software/preprocessing.py",
+      "software/metrics.py",
+      "software/q4_ridge.py",
+      "scripts/evaluate_q4_ridge.py",
+      "tests/test_q4_ridge.py",
+      "software/q4_fusion.py",
+      "scripts/evaluate_q4_fusion.py",
+      "tests/test_q4_fusion.py",
+      "scripts/verify_q4_training.py",
+      "scripts/verify_q4_fusion.py"
+    ],
+    "frozen_sha256": {
+      "software/reference.py": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e",
+      "software/preprocessing.py": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18",
+      "software/metrics.py": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99",
+      "results/m0_stare_2026-10-11/evaluation.json": "4a856c0497e453f22d0637e85bad578dd507f73a83e701b089d97f531b6b8e90",
+      "data/raw/stare/stare-images.tar": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433",
+      "data/raw/stare/labels-ah.tar": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f",
+      "results/q3_quality_r1/board_execution_2026-10-14/verification.json": "28050f33b489c6f40df6a8ca764df16bd1a13e2f2c0f9d41996ec9b926b6d734"
+    },
+    "Q3_verification": "results/q3_quality_r1/board_execution_2026-10-14/verification.json",
+    "skeleton_library_version": "0.26.0",
+    "unchanged_A28_gates": {
+      "512_macro_dice_gain_min": 0.01,
+      "256_macro_dice_loss_max": 0.005,
+      "each_size_macro_recall_loss_max": 0.02,
+      "each_image_each_size_recall_loss_max": 0.05,
+      "each_size_thin_proxy_pooled_recall_loss_max": 0.03,
+      "each_size_bright_band_pooled_recall_loss_max": 0.05,
+      "512_bright_band_pooled_fp_reduction_min": 0.1,
+      "empty_region_policy": "report null recall if no GT positives; no claim of protection from an empty set",
+      "ranking_after_all_gates": "descending 512 AH macro Dice, then fewer distance filters, shorter length, lower margin, lower penalty, candidate ID",
+      "no_eligible_candidate": "REJECT_R2_FAMILY_FOR_PL; preserve all runs, do not relax gates; next revision requires its own preregistration"
+    },
+    "new_C2_gates": {
+      "each_size_dice_loss_max": 0.002,
+      "each_size_macro_recall_loss_max": 0.01,
+      "each_size_bright_recall_loss_max": 0.02,
+      "512_thin_recall_gain_min": 0.01,
+      "512_cldice_gain_min": 0.01,
+      "512_bright_fp_reduction_min": 0.1,
+      "each_image_skeleton_recall_loss_max": 0.03,
+      "added_pixel_precision_min": 0.8
+    },
+    "ranking": "After ALL old and new gates: descending 512 train AH macro Dice, smaller maximum gap, candidate ID; zero eligible => reject, no relaxed gates",
+    "processing": {
+      "threshold": 28,
+      "length_sets": [
+        [
+          5,
+          9
+        ],
+        [
+          5,
+          9,
+          15
+        ]
+      ],
+      "flanks": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "directions": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "image": "Unchanged Gaussian3 green BEFORE LUT saturation; labels never enter algorithm",
+      "integer_bounds": "Each signed flank sum +/-3825 at length15, stored int16; ratio products int32; positive count uint8. Source samples independently replicate on both axes.",
+      "retention": "For each length/direction/distance require min(L-C,R-C)>=max(1,length*retain_margin) and max<=ratio*min. OR every scale/direction/distance, intersect original C2 final mask and original FOV. ratio4/8; retain_margin0/1. No new global mask replacement.",
+      "addition": "For each selected scale and each direction OR distances passing balanced flank mean>=add_margin2/4, central left and right strictly brighter than center, and >=2/3 of centerline samples have both flanks strictly brighter. AND selected scales within same direction; widths may differ across scales. Use this weak support at both endpoints and all gap pixels.",
+      "connection": "One pass of original bridge_gaps with max gap1 or3; two retained ORIGINAL C2 endpoints, interiors absent and supported, all within original FOV. Newly added pixels cannot seed another connection. Gap0 ablation has no additions.",
+      "output": "Retained C2 final mask OR audited supported gap pixels, no further dilation/closing. C2 enhancement and original output remain untouched. CPU study only.",
+      "scope_limit": "Four directions, short gaps and finite scales cannot guarantee recovery of unseen full branches, large or curved discontinuities. These limitations are measured, not assumed solved."
+    },
+    "evaluation": {
+      "regions": "UNCHANGED Q1/Q3 diagnostic regions and FOV, full_image, bright_core, bright_band, thin_label_proxy, fov_edge",
+      "cldice": "Zhang skimage skeletons inside original FOV; topology precision=pred skeleton in GT/pred skeleton; recall=GT skeleton in pred/GT skeleton; harmonic mean. Empty GT=null. No tolerance dilation. Not complete topology proof.",
+      "adjacent_edge_coverage": "GT skeleton 8-neighbor undirected edges, covered iff both endpoints inside prediction. Local continuity proxy only, not global connectivity.",
+      "bridges": "Gate all pixels added relative to retained C2 seed, including restoration of a removed C2 pixel; separately record full C2-relative additions/removals. Same added precision>=0.8 gate. No post-connection morphology. Links retain original both-end/interior annotation audit.",
+      "cross_validation": "Finite train AH screen only; all per-image results retained. No heldout/VK new-candidate decode/score. No nested or fresh external validation claim."
+    },
+    "required_followup": [
+      "Independent integer oracle for selected candidate",
+      "Q4b actual generated RTL/100MHz resources/timing/reset/backpressure",
+      "Q4c real PYNQ full original20/AH+VK comparison and continuity; reused benchmark explicitly",
+      "Original formal W4 performance and W5 unchanged"
+    ],
+    "hardware_status": "NOT_IMPLEMENTED",
+    "board_performance": null,
+    "references": [
+      "https://doi.org/10.1016/j.compbiomed.2015.09.008",
+      "https://arxiv.org/abs/2003.07311",
+      "https://scikit-image.org/docs/0.26.x/api/skimage.morphology.html#skimage.morphology.skeletonize",
+      "https://doi.org/10.1016/j.patcog.2012.08.009"
+    ],
+    "rationale": "All 53 r1/r2 candidates rejected. Replacement sacrifices recall; unbounded replacement additions have low precision. Preserve C2-supported structure, retain using any short/long balanced response, but connect only finite two-end gaps supported at every selected scale and the central pixel. No new GT-dependent processing.",
+    "prior_experiment": "results/q4_refinement_2026-10-14/r2/training_report.json",
+    "reference_scope": "Multi-scale motivation only; custom finite integer bilateral fusion, not reproduction of published MSLD and no transfer of published accuracy."
+  },
+  "started_utc": "2026-10-14T03:44:39.955128+00:00",
+  "location": "WINDOWS_OFFLINE_CPU_NOT_PL",
+  "decoded_train_ids": [
+    "im0001",
+    "im0003",
+    "im0005",
+    "im0077",
+    "im0082",
+    "im0162",
+    "im0235",
+    "im0239",
+    "im0255",
+    "im0319"
+  ],
+  "decoded_heldout_ids_this_experiment": [],
+  "VK_opened_this_experiment": false,
+  "old_heldout_previously_seen_in_Q3": true,
+  "protected_before": {
+    "pynq_app/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "pynq_app/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "pynq_app/hardware.py": "8a228dbec14cbaa3f7774c52240c06a1870e1fd5c2dc55ff222bafb0ca11287d",
+    "pynq_app/launch.py": "f80d85c540be305d0206a9bf1e7d846f1526654dbdcac84d3c6c5222064aaced",
+    "pynq_app/protocol.py": "1f540ee7c70e73b90eca064ad532b67bc5bf89743ef4a9f9e2c05e26a05e409a",
+    "pynq_app/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "pynq_app/service.py": "0374acc30bcf55f08b0bb341654569c81b1d6fadcee32bb8ac2158059525e5dc",
+    "pynq_w3/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "pynq_w3/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "pynq_w3/hardware.py": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a",
+    "pynq_w3/launch.py": "e72970625e55bfe97148f64996c2d2da4e413320454d4bf100c9715f8257cba3",
+    "pynq_w3/protocol.py": "11787772b31b766ed174b5a365d2452356aaa9bb88a547087988c3b98e0ebc18",
+    "pynq_w3/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "pynq_w3/service.py": "2d5d93f0f1e31ad5f8c3a9d12bdee351b14cb87e3cee051916c0e3bfd6ed4d9e",
+    "pynq_w4a/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "pynq_w4a/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "pynq_w4a/hardware.py": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a",
+    "pynq_w4a/launch.py": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b",
+    "pynq_w4a/protocol.py": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab",
+    "pynq_w4a/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "pynq_w4a/service.py": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee",
+    "ui/app.js": "481254f329ae938f4fed9440bf59638ddba501ec76f5f4e886bc8afc939249c5",
+    "ui/index.html": "379b6448cffe8adec0f3876d75c07fa9c5361c46f7fff1e2e8a83a8ecb490045",
+    "ui/style.css": "587b0500163935a71b536ccd61c902bac5130e6d468762510be9d6d6dacbdd5f",
+    "ui_w3/app.js": "ef1e766f6370857760624e689398795c64387285fab92832ef3b7e5b7154ff7d",
+    "ui_w3/index.html": "c0d8a2b2704e041b16503fc5b2d7d064d7dbc32384bbdff7684a486e926cc73b",
+    "ui_w3/style.css": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579",
+    "ui_w4a/app.js": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55",
+    "ui_w4a/index.html": "e083dd94ad18b8b0f56f0bde32d4d95a16ae7689aa340e4335fc61af110150b1",
+    "ui_w4a/style.css": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579",
+    "build/deploy/w2_quality_2017_4_r1/a0_dma_board_test.py": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e",
+    "build/deploy/w2_quality_2017_4_r1/a1_point_board_test.py": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990",
+    "build/deploy/w2_quality_2017_4_r1/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "build/deploy/w2_quality_2017_4_r1/w2_manifest.json": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality.bit": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality.hwh": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality_board_test.py": "921eacbb256801e83bcfd440a0d7f6751220f8d5047dc5b5ca848ffef254eda4",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality_check.ipynb": "f5f9b45e1cdbc31f7c8cc7b848ba66f7bd8cb7ef9f1fadd77bdc275c86e69a52",
+    "build/deploy/w2_quality_2017_4_r1/w2_vectors.json": "123103cb2c8bf9c838aa23911d9690bae998512f295124e5d43656f40ae6b56b",
+    "build/deploy/w2_quality_2017_4_r1/w2_vectors.npz": "7890e664c58a7f9d69a6573c07763021ed3fab6096f8dfadcba247ee1945602b",
+    "build/deploy/w2_quality_2017_4_r1/使用说明.txt": "667721a781210fa1447a6e99b2ab525b4756ce1f158224ec98541bfa73c52105",
+    "build/deploy/q3_full_quality_r1/a0_dma_board_test.py": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e",
+    "build/deploy/q3_full_quality_r1/browser_manifest.json": "699a9d92e3a422536bd00f16295afe1d696b1b44e6a8e5e4660ac1a841ce31a6",
+    "build/deploy/q3_full_quality_r1/inputs/im0001_256.npy": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b",
+    "build/deploy/q3_full_quality_r1/inputs/im0001_512.npy": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9",
+    "build/deploy/q3_full_quality_r1/inputs/im0002_256.npy": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a",
+    "build/deploy/q3_full_quality_r1/inputs/im0002_512.npy": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510",
+    "build/deploy/q3_full_quality_r1/inputs/im0003_256.npy": "72fb6bf19facf1f1154f4d4a253fb31ca61ec991a7eded85d37ace46c1ba6f57",
+    "build/deploy/q3_full_quality_r1/inputs/im0003_512.npy": "8d7cfbad2291daf4f41d0314c494a74c7f21df8c1b05fbb0206901dbd0a6d19d",
+    "build/deploy/q3_full_quality_r1/inputs/im0004_256.npy": "ea3ae66777e62737a4f7e9ddd461ad17191a6f86302fb620c5c745ecdbee819d",
+    "build/deploy/q3_full_quality_r1/inputs/im0004_512.npy": "67d338170cbd5a0c397505d42b6510a0558982b57f8ebf1ac97ab9e537957693",
+    "build/deploy/q3_full_quality_r1/inputs/im0005_256.npy": "4dc3b8f15d05e2bce5140f6714fc605c06aebe6f146d0d9ca00498cad0c0c9ec",
+    "build/deploy/q3_full_quality_r1/inputs/im0005_512.npy": "607e97600a8f7f6a56af48414c949b29a6f767e39b9328e3a945524991b01a97",
+    "build/deploy/q3_full_quality_r1/inputs/im0044_256.npy": "b84f6d77fc7c7ffa118455a4ffc8297140f951b5a4a2215c58b066f2b9045b45",
+    "build/deploy/q3_full_quality_r1/inputs/im0044_512.npy": "7ecb201a1420a517e9f877b8f33949653873754c47a6a1d2f6dba118ace12a0d",
+    "build/deploy/q3_full_quality_r1/inputs/im0077_256.npy": "11be949b837b291ea2ff53152968837f6ba64935b482325e345f87c97ab13370",
+    "build/deploy/q3_full_quality_r1/inputs/im0077_512.npy": "9e6b99144844c183315b6694e9d848da71cc4550d65ae05e5236e0493480eb9b",
+    "build/deploy/q3_full_quality_r1/inputs/im0081_256.npy": "d7165ee17ec26f8068ecc028d1d6662e64c9819c83c93feb0a10112c73c96208",
+    "build/deploy/q3_full_quality_r1/inputs/im0081_512.npy": "c9263b82145c45b5565798d86528f67d7f192dd2a9124de6fb17bc696ff34230",
+    "build/deploy/q3_full_quality_r1/inputs/im0082_256.npy": "78de1858abc1d99e353f9320d6c54d9418a28fd5c48bfc503722ba7e46f7e8a4",
+    "build/deploy/q3_full_quality_r1/inputs/im0082_512.npy": "91ae7cc398269482f0cebc8fc4e53d2e731b3ca451ff9179d36c061d459d9708",
+    "build/deploy/q3_full_quality_r1/inputs/im0139_256.npy": "367f81e8a6e43f507d53e61f2ffe0bcd71d3b6c9f425dd631f9484c012ea2499",
+    "build/deploy/q3_full_quality_r1/inputs/im0139_512.npy": "20d777f7079f4b577b410a93a1803e94a03383484793787215b2e34a80f4944d",
+    "build/deploy/q3_full_quality_r1/inputs/im0162_256.npy": "becb9685766ea716c31f8dc92b4b805f87772f156da167e99a92e2ed1c4c562d",
+    "build/deploy/q3_full_quality_r1/inputs/im0162_512.npy": "dbf3f1f202e333bce3c4c5a75e167438fcf6687d5bab6c096975b8c24906909b",
+    "build/deploy/q3_full_quality_r1/inputs/im0163_256.npy": "5fdfa0e2032d7eeaceabbff8b586ec11e1404c0546a097ad5f91b5f4f92e46a7",
+    "build/deploy/q3_full_quality_r1/inputs/im0163_512.npy": "777844b30dc75d1a103d3744cf95aaf48d1ddb839e2df95431115fd563d9e633",
+    "build/deploy/q3_full_quality_r1/inputs/im0235_256.npy": "357d00e275777098e73faa8c769fe81e36bbf445ed3c99e41bc175164f9a9bf9",
+    "build/deploy/q3_full_quality_r1/inputs/im0235_512.npy": "3f6142f73b1c8ada122325e488586325d301e6baacc7620a2a542327bd0533fd",
+    "build/deploy/q3_full_quality_r1/inputs/im0236_256.npy": "078a0294636067cb3f111eac11ad967ec339aa6847a5d2c55252af374e76ec17",
+    "build/deploy/q3_full_quality_r1/inputs/im0236_512.npy": "fd088e238b28375902b2274305b57f8b8637c903aecb695c81bf9cb53aaa6603",
+    "build/deploy/q3_full_quality_r1/inputs/im0239_256.npy": "3f55c1b90c6c7b32d26a97af16db9d09e89d4ed62ab740d35fc8b1c2f629f143",
+    "build/deploy/q3_full_quality_r1/inputs/im0239_512.npy": "466c8dc4b19293bc89bb7ba299ab567263c904c9a98dc973abe5868162b0c53f",
+    "build/deploy/q3_full_quality_r1/inputs/im0240_256.npy": "b31460d5fc45b2e88d06d2524b5c76a0692adf9694594947f80481bc089bb303",
+    "build/deploy/q3_full_quality_r1/inputs/im0240_512.npy": "0d24807024af54f73677fd83ba1a3221949493f460e91f4f56cf12c4be74be3e",
+    "build/deploy/q3_full_quality_r1/inputs/im0255_256.npy": "1d3888f77191b7be365bcd39969e340988b8a28ffb9215da772f4b925e039b2f",
+    "build/deploy/q3_full_quality_r1/inputs/im0255_512.npy": "2a031ba8e16e52e6b4a46921797f4f0c4c32bcf034023dc02fa9f49f20616d0e",
+    "build/deploy/q3_full_quality_r1/inputs/im0291_256.npy": "d6ec1152b65bf7a02cf40ba3bf337c6a8263856246ade5f5eff1da1b39be77dc",
+    "build/deploy/q3_full_quality_r1/inputs/im0291_512.npy": "dcf44539e9e7751098b8a46c65d126270425afa174448a762de019c35f334296",
+    "build/deploy/q3_full_quality_r1/inputs/im0319_256.npy": "6d4786939ad7a9b8a9159f7549734f3d2f8eb5ad2d631957c70145e482323101",
+    "build/deploy/q3_full_quality_r1/inputs/im0319_512.npy": "492f2928fd82058ca82f82b052b10a6a0f545b988afce7e7678a9461e0d25b65",
+    "build/deploy/q3_full_quality_r1/inputs/im0324_256.npy": "df6de4852d28be929b0497ce4eadea20a44ac6754751f9169cc0269f04a8804a",
+    "build/deploy/q3_full_quality_r1/inputs/im0324_512.npy": "cf478ba3bfd160f253e19bed352c214e8cbb6b7be8095b24c9d2eb4ee7da366f",
+    "build/deploy/q3_full_quality_r1/labels/im0001_256_AH.npy": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4",
+    "build/deploy/q3_full_quality_r1/labels/im0001_256_VK.npy": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070",
+    "build/deploy/q3_full_quality_r1/labels/im0001_512_AH.npy": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba",
+    "build/deploy/q3_full_quality_r1/labels/im0001_512_VK.npy": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0",
+    "build/deploy/q3_full_quality_r1/labels/im0002_256_AH.npy": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0",
+    "build/deploy/q3_full_quality_r1/labels/im0002_256_VK.npy": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a",
+    "build/deploy/q3_full_quality_r1/labels/im0002_512_AH.npy": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7",
+    "build/deploy/q3_full_quality_r1/labels/im0002_512_VK.npy": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873",
+    "build/deploy/q3_full_quality_r1/labels/im0003_256_AH.npy": "bf6b3b672c74687c33383a9b6212eb01942afff445c179989cbb7d75b204581d",
+    "build/deploy/q3_full_quality_r1/labels/im0003_256_VK.npy": "9ebf49fad2799c8822dd1d83fd945a7e3c4b03dd5352288b5d18a55792b0ea82",
+    "build/deploy/q3_full_quality_r1/labels/im0003_512_AH.npy": "e63fb219f7eadbf9deff7605d09045e917f7dde3e4c2d901cc2ff34a12588112",
+    "build/deploy/q3_full_quality_r1/labels/im0003_512_VK.npy": "83b24ac6ad92c128867456ccdd7cac63eb4fadcdd6fb56da17fa2c3c84228427",
+    "build/deploy/q3_full_quality_r1/labels/im0004_256_AH.npy": "98a45869690b91f7de4d15193a547890dc8037960188b6caeadf12011acace6c",
+    "build/deploy/q3_full_quality_r1/labels/im0004_256_VK.npy": "2e4da406c6ff90faf23397e7fa83e28ffa48addc9dbc73193d67aa05552ed51e",
+    "build/deploy/q3_full_quality_r1/labels/im0004_512_AH.npy": "a0be8b1b2e6983b39590da315d3033a8ace83881b50f4e85d28eaebf8aa6a188",
+    "build/deploy/q3_full_quality_r1/labels/im0004_512_VK.npy": "f75bfa2afd007bba60d5affd782543bdaf0c9f59aabeb860f93546ae7d57004b",
+    "build/deploy/q3_full_quality_r1/labels/im0005_256_AH.npy": "ae074628a111e40ef652bb703b4cd9820caa187cd881ad71d2888e837a78299e",
+    "build/deploy/q3_full_quality_r1/labels/im0005_256_VK.npy": "59d723da31f4ab340327eceb21426b94b1d39123c85d0d0cf4cd37fd5f63d652",
+    "build/deploy/q3_full_quality_r1/labels/im0005_512_AH.npy": "76d53a68bd33b1997b46818ef661331d0dbe804e70368d4c5cde7ce76ad11965",
+    "build/deploy/q3_full_quality_r1/labels/im0005_512_VK.npy": "aa2182d8c41db618ee4f7eb7e55f7a2e231e65f87a049541008c41a363ebba88",
+    "build/deploy/q3_full_quality_r1/labels/im0044_256_AH.npy": "afb6cff129c9d191cc3780022969ca16a2794892aa8fb9226a5d17dbb057069d",
+    "build/deploy/q3_full_quality_r1/labels/im0044_256_VK.npy": "1ed97e8f76a7d31b4f416b25546afbba3e3ffcec17d8310c1d68998616c4a3df",
+    "build/deploy/q3_full_quality_r1/labels/im0044_512_AH.npy": "fa6f98ea2577509e6d2698768843f01fd293b11cbca1384a1bcc395182edfe63",
+    "build/deploy/q3_full_quality_r1/labels/im0044_512_VK.npy": "ae9dfd8ebfd9ebeedcdf3f5c70ae0dfebe8b630281106a5194c11493c182d8c7",
+    "build/deploy/q3_full_quality_r1/labels/im0077_256_AH.npy": "37cc11976c76e90d2112f485e5d8b164833a0b0ffa8e37532b18047f93f27cb9",
+    "build/deploy/q3_full_quality_r1/labels/im0077_256_VK.npy": "ec133afad113550cdb68991fe2dc92be957ab13b2ebbea9c04e2e023d02cec7b",
+    "build/deploy/q3_full_quality_r1/labels/im0077_512_AH.npy": "47cac59f4b4158b6bed57bf1f89689ce6c1c83f1f1ec39d2de843c5bb8f4aaa5",
+    "build/deploy/q3_full_quality_r1/labels/im0077_512_VK.npy": "4978b3a1d5cab31cce16a04e873a75b06a232d644a3bf2e7969c21c5cfb88ff9",
+    "build/deploy/q3_full_quality_r1/labels/im0081_256_AH.npy": "b733f912c810580ac549e0d660abaa717435e98653afb84fa3fff6ac3c839eeb",
+    "build/deploy/q3_full_quality_r1/labels/im0081_256_VK.npy": "84509820197d9032db20caf81a529e3b1163cf657984ff3f17d485ccb521f801",
+    "build/deploy/q3_full_quality_r1/labels/im0081_512_AH.npy": "c88222c9cc3913f71eb26cc260a6da20d3a1cec376f703948ba09b7bc24da63e",
+    "build/deploy/q3_full_quality_r1/labels/im0081_512_VK.npy": "d048b21052ad2105353c8542ab714fb115ab17f1967b0e6dcd362b9196ab345c",
+    "build/deploy/q3_full_quality_r1/labels/im0082_256_AH.npy": "442ffadcc1b91dd1f0d7a129eef2483155ffb293e723101d1dd7d805bc7df47c",
+    "build/deploy/q3_full_quality_r1/labels/im0082_256_VK.npy": "ead666fc1b843c550f086c1aca733dcbdeec40e7e061c1c054ae251f7cb864d3",
+    "build/deploy/q3_full_quality_r1/labels/im0082_512_AH.npy": "7a228824f105936955b954f935daa38683a27db5145af702d01541befb1ec650",
+    "build/deploy/q3_full_quality_r1/labels/im0082_512_VK.npy": "dd1b33eca34e90f8f919a06b9934562f893f82b48d647e669cd851873a304d6a",
+    "build/deploy/q3_full_quality_r1/labels/im0139_256_AH.npy": "2aaad783302127c9c3bbb286b0493e6dac0b53eb718879efa0c6f21a837e6621",
+    "build/deploy/q3_full_quality_r1/labels/im0139_256_VK.npy": "d9cd63806ae62b238721f35c656a83f6949a33f1ade5870589ef2d18dfaf6120",
+    "build/deploy/q3_full_quality_r1/labels/im0139_512_AH.npy": "89d8afe507a7b662deb1e9a2545225c47c941607ffb96f1b962bfb692d5dea44",
+    "build/deploy/q3_full_quality_r1/labels/im0139_512_VK.npy": "774123398c00a153b0105f7cf286922eb574113d894aa2d70a718a94af9d5266",
+    "build/deploy/q3_full_quality_r1/labels/im0162_256_AH.npy": "3dccaac1b866a192ccf6b78dad70572d0d56c5cf4e24e0f6d4fba3e908a59b32",
+    "build/deploy/q3_full_quality_r1/labels/im0162_256_VK.npy": "0c6f67c0af307f1d3fa30b6063c9c0dad6a0174ab162178967281c16c6bf1e1a",
+    "build/deploy/q3_full_quality_r1/labels/im0162_512_AH.npy": "b00ce1c965c1e3c692e096f15fd119b43f981cae16a0a26bc4f0ba470bc0a4a4",
+    "build/deploy/q3_full_quality_r1/labels/im0162_512_VK.npy": "03a2e1544ec5d779e4a2bc04fe79c2f21194e18c467df32b565e9e27a3432102",
+    "build/deploy/q3_full_quality_r1/labels/im0163_256_AH.npy": "c513b7c5f1ee5ab627bf5872cd3095af375b749d07d5f3bcb4aefa580623cae6",
+    "build/deploy/q3_full_quality_r1/labels/im0163_256_VK.npy": "a7c53714c10a7eb55e92baf2c16c1883f3b3360a787959f4346ddc7c266ffdc7",
+    "build/deploy/q3_full_quality_r1/labels/im0163_512_AH.npy": "57bcaa84c39f672867e90848d0b8a46887609c2f88cb011c338981ca56d2ccfb",
+    "build/deploy/q3_full_quality_r1/labels/im0163_512_VK.npy": "0989a55803c3d523aa3a5567b0f502734e7c6af7ba8696a060aba661fbf8fbc0",
+    "build/deploy/q3_full_quality_r1/labels/im0235_256_AH.npy": "f51308c8177aefadea04021f222fb11ab08f5a1368e28920dfc28dd1b8aced53",
+    "build/deploy/q3_full_quality_r1/labels/im0235_256_VK.npy": "afac0a58039909e55e67359d4adb7a1f0a18f4cd7abec7927847b4fdd0eb312f",
+    "build/deploy/q3_full_quality_r1/labels/im0235_512_AH.npy": "cff2302b1bd7c09273db7dd927afe831bbe4cd71cae5731feccf409c9d2c7839",
+    "build/deploy/q3_full_quality_r1/labels/im0235_512_VK.npy": "4e29ec54e1ac1a8ad161f949859c85b9c113094d1473b8c6d70309d072df39e2",
+    "build/deploy/q3_full_quality_r1/labels/im0236_256_AH.npy": "d943bc90d6e833758d31991c63fcb3e9450a05d6e0486782f91be056b8fcdc88",
+    "build/deploy/q3_full_quality_r1/labels/im0236_256_VK.npy": "381951577ccbbbc09bbb7dfc99943e94f328c93fe88465bc6ac64d637dc27165",
+    "build/deploy/q3_full_quality_r1/labels/im0236_512_AH.npy": "f1d0e00e553efa2cb37994cdee05855f26a752aae985fb2945ab16efb6a8d099",
+    "build/deploy/q3_full_quality_r1/labels/im0236_512_VK.npy": "34c1ea3cdf8a1dfcec989e0b74a84d6194c1a5f6911d276abcbd450a98a05978",
+    "build/deploy/q3_full_quality_r1/labels/im0239_256_AH.npy": "c9eb1afc97530aa5ae506413d649c4ed9d4386e0e0d220b8271413a6d389d725",
+    "build/deploy/q3_full_quality_r1/labels/im0239_256_VK.npy": "0903ed3d4b8b65e04b33b35975bee03014f390a2ca77de53033c04584ea19a86",
+    "build/deploy/q3_full_quality_r1/labels/im0239_512_AH.npy": "8cf1936073c6df1eb7e3fc190a136540456c829be3ddac4d11912f7e36224728",
+    "build/deploy/q3_full_quality_r1/labels/im0239_512_VK.npy": "e87537eb0d31b82595aeb1db372484aba93e9cf51b14844108692d49d7a246bc",
+    "build/deploy/q3_full_quality_r1/labels/im0240_256_AH.npy": "42f67b439c4545c3f01a957eb51a1f917b10885204b8b43d5719e4e14903bbc1",
+    "build/deploy/q3_full_quality_r1/labels/im0240_256_VK.npy": "cad2ec80ed92a6d2a8fb3f7d1121bed310546670fb0685e0ba12e1ff8c7ecb2e",
+    "build/deploy/q3_full_quality_r1/labels/im0240_512_AH.npy": "520aa93cce443a33ecede5ad9eb8162c678842fa0355f6020584025974cde657",
+    "build/deploy/q3_full_quality_r1/labels/im0240_512_VK.npy": "0775f80d85fb78b89ac005ecdf7954c21de628685e9dbef701f763167ff05070",
+    "build/deploy/q3_full_quality_r1/labels/im0255_256_AH.npy": "ae9b6054b93a11eadf07ee5a597a2c084e34c383ce0f280163457e7c4d78f90d",
+    "build/deploy/q3_full_quality_r1/labels/im0255_256_VK.npy": "9d58631af99ac15ef6b3b0cc72e7034a153c1611127dc53ccf66aafe4ece70de",
+    "build/deploy/q3_full_quality_r1/labels/im0255_512_AH.npy": "01534af012dec8a428266c451fb50f826c69f9573a2945f4b8c7d1f4b833ab0b",
+    "build/deploy/q3_full_quality_r1/labels/im0255_512_VK.npy": "24e349567d3b0aad6805f0ffc7aece2441675f763cfcc22684ef512696e731c1",
+    "build/deploy/q3_full_quality_r1/labels/im0291_256_AH.npy": "b1cc49c2d03b45651355587c5cec511c26896633605e09e12b02f9660981fdf2",
+    "build/deploy/q3_full_quality_r1/labels/im0291_256_VK.npy": "a86878d9b535d0c1af4f43155452a198102848be9ff6ed1bb6da174246acc575",
+    "build/deploy/q3_full_quality_r1/labels/im0291_512_AH.npy": "3c5ffbac02ca66fa8ab302b0b1eb970866d5bd1d7b56f8c00ccfb778ed0c8ccd",
+    "build/deploy/q3_full_quality_r1/labels/im0291_512_VK.npy": "afe570033345377a90d28400be9b1176f071db166b6e79937ce42179d13e118d",
+    "build/deploy/q3_full_quality_r1/labels/im0319_256_AH.npy": "514fd116c0874e6289528a70f1af9b2a838a56576ac780e85647789d623ac990",
+    "build/deploy/q3_full_quality_r1/labels/im0319_256_VK.npy": "ce8b799d804ee0263ccc68762957f6f89276dcdd7cef797e638ebc5e48bc55c6",
+    "build/deploy/q3_full_quality_r1/labels/im0319_512_AH.npy": "a1445df8bd2c20c5af4a56a0dc866ccdea7cba26a8dc168b6e47f4d9e71a637d",
+    "build/deploy/q3_full_quality_r1/labels/im0319_512_VK.npy": "aca49d32bfeb300335919794eae62e0b5c315e5a25817139804dd1dde13077de",
+    "build/deploy/q3_full_quality_r1/labels/im0324_256_AH.npy": "40317ab0c76205c5c3fa233be2f18a18e07886433ec585480ba67815a7c1eb05",
+    "build/deploy/q3_full_quality_r1/labels/im0324_256_VK.npy": "e54e467f5e6bd694892587f93476cde0a044026fb8f6fa4f50a59eb3c19f0b43",
+    "build/deploy/q3_full_quality_r1/labels/im0324_512_AH.npy": "8eed40a8a6beef9e49e69d40dd98bf7a4829d5d23ed3492e9c36faf849ff6b0a",
+    "build/deploy/q3_full_quality_r1/labels/im0324_512_VK.npy": "148b4cc96b571c3b12f4ce017007fd6bbdc7dcb016e204f0bdbcee1b089b92b7",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/hardware.py": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/launch.py": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/protocol.py": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/service.py": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee",
+    "build/deploy/q3_full_quality_r1/q3_board.py": "36295c0e42ed2bf32dbf819bfda6b856aba91002856d996114dcdb8b25e8dadb",
+    "build/deploy/q3_full_quality_r1/q3_manifest.json": "f85ef540f5d3d795b88093ec9535e90ea224476554ae99667131e4d0700bde80",
+    "build/deploy/q3_full_quality_r1/q3_protocol.json": "299809fefe67d0f565a53135388fb12aefc7d2e5a794f3c8eac082e8bf221d52",
+    "build/deploy/q3_full_quality_r1/ui/app.js": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55",
+    "build/deploy/q3_full_quality_r1/ui/index.html": "0325aea6642189cce1cacdffbd5bf3a0b7c33a63e4476e7eb5198b24f93ef230",
+    "build/deploy/q3_full_quality_r1/ui/style.css": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579",
+    "build/deploy/q3_full_quality_r1/w2_manifest.json": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035",
+    "build/deploy/q3_full_quality_r1/w2_quality.bit": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b",
+    "build/deploy/q3_full_quality_r1/w2_quality.hwh": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "opencv": "5.0.0",
+    "skimage": "0.26.0"
+  }
+}

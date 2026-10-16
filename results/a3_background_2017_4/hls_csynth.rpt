@@ -1,0 +1,184 @@
+
+
+================================================================
+== Vivado HLS Report for 'retina_background_hls'
+================================================================
+* Date:           Mon Oct 12 02:05:14 2026
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        a3_hls_01
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.46|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+--------+-----+--------+----------+
+    |    Latency   |   Interval   | Pipeline |
+    | min |   max  | min |   max  |   Type   |
+    +-----+--------+-----+--------+----------+
+    |  262|  524309|  255|  524293| dataflow |
+    +-----+--------+-----+--------+----------+
+
+    + Detail: 
+        * Instance: 
+        +--------------------+-----------------+-----+--------+-----+--------+---------+
+        |                    |                 |    Latency   |   Interval   | Pipeline|
+        |      Instance      |      Module     | min |   max  | min |   max  |   Type  |
+        +--------------------+-----------------+-----+--------+-----+--------+---------+
+        |background_sum_U0   |background_sum   |  254|  273926|  254|  273926|   none  |
+        |filter_sum_U0       |filter_sum       |  162|  267282|  162|  267282|   none  |
+        |join_words_U0       |join_words       |    2|  524292|    2|  524292|   none  |
+        |enhance_aligned_U0  |enhance_aligned  |    2|  524291|    2|  524291|   none  |
+        |split_words_U0      |split_words      |    2|  524289|    2|  524289|   none  |
+        |Block_proc_U0       |Block_proc       |    0|       0|    0|       0|   none  |
+        +--------------------+-----------------+-----+--------+-----+--------+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     76|
+|FIFO             |       24|      -|     376|   1286|
+|Instance         |       19|      1|    2743|   7125|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     36|
+|Register         |        -|      -|       6|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |       43|      1|    3125|   8523|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |       15|   ~0  |       2|     16|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +--------------------+-----------------+---------+-------+------+------+
+    |      Instance      |      Module     | BRAM_18K| DSP48E|  FF  |  LUT |
+    +--------------------+-----------------+---------+-------+------+------+
+    |Block_proc_U0       |Block_proc       |        0|      0|     3|   111|
+    |background_sum_U0   |background_sum   |       15|      0|  1707|  4567|
+    |enhance_aligned_U0  |enhance_aligned  |        1|      0|   183|   263|
+    |filter_sum_U0       |filter_sum       |        3|      0|   449|  1477|
+    |join_words_U0       |join_words       |        0|      1|   287|   467|
+    |split_words_U0      |split_words      |        0|      0|   114|   240|
+    +--------------------+-----------------+---------+-------+------+------+
+    |Total               |                 |       19|      1|  2743|  7125|
+    +--------------------+-----------------+---------+-------+------+------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +-------------------------+---------+-----+-----+------+-----+---------+
+    |           Name          | BRAM_18K|  FF | LUT | Depth| Bits| Size:D*B|
+    +-------------------------+---------+-----+-----+------+-----+---------+
+    |box_sums_data_stream_U   |        0|    8|   42|    32|   16|      512|
+    |centers_V_V_U            |       16|  122|  449|  8192|   32|   262144|
+    |control_V_c_U            |        0|    5|   44|     5|   32|      160|
+    |count_cast_cast_loc_1_U  |        0|    5|   31|     2|   19|       38|
+    |count_cast_cast_loc_2_U  |        0|    5|   31|     1|   19|       19|
+    |count_cast_cast_loc_s_U  |        0|    5|   31|     2|   19|       38|
+    |enhanced_centers_V_V_U   |        4|  108|  313|  8192|    8|    65536|
+    |enhanced_cols_V_c_U      |        0|    5|   22|     4|   10|       40|
+    |enhanced_data_stream_U   |        0|    8|   31|    32|    8|      256|
+    |enhanced_rows_V_c_U      |        0|    5|   22|     4|   10|       40|
+    |gaussian_sums_data_s_U   |        0|    8|   42|    32|   16|      512|
+    |green_cols_V_c_U         |        0|    5|   22|     2|   10|       20|
+    |green_data_stream_0_U    |        0|    8|   31|    32|    8|      256|
+    |green_rows_V_c_U         |        0|    5|   22|     2|   10|       20|
+    |original_V_V_U           |        4|   74|  153|  2048|   32|    65536|
+    +-------------------------+---------+-----+-----+------+-----+---------+
+    |Total                    |       24|  376| 1286| 18582|  249|   395127|
+    +-------------------------+---------+-----+-----+------+-----+---------+
+
+    * Expression: 
+    +---------------------------------+----------+-------+---+----+------------+------------+
+    |          Variable Name          | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +---------------------------------+----------+-------+---+----+------------+------------+
+    |Block_proc_U0_ap_ready_count     |     +    |      0|  0|  10|           2|           1|
+    |split_words_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |Block_proc_U0_ap_start           |    and   |      0|  0|   8|           1|           1|
+    |Block_proc_U0_start_full_n       |    and   |      0|  0|   8|           1|           1|
+    |ap_idle                          |    and   |      0|  0|   8|           1|           1|
+    |ap_sync_ready                    |    and   |      0|  0|   8|           1|           1|
+    |split_words_U0_ap_start          |    and   |      0|  0|   8|           1|           1|
+    |ap_sync_Block_proc_U0_ap_ready   |    or    |      0|  0|   8|           1|           1|
+    |ap_sync_split_words_U0_ap_ready  |    or    |      0|  0|   8|           1|           1|
+    +---------------------------------+----------+-------+---+----+------------+------------+
+    |Total                            |          |      0|  0|  76|          11|           9|
+    +---------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------------------+----+-----------+-----+-----------+
+    |                 Name                | LUT| Input Size| Bits| Total Bits|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Block_proc_U0_ap_ready_count         |   9|          2|    2|          4|
+    |ap_sync_reg_Block_proc_U0_ap_ready   |   9|          2|    1|          2|
+    |ap_sync_reg_split_words_U0_ap_ready  |   9|          2|    1|          2|
+    |split_words_U0_ap_ready_count        |   9|          2|    2|          4|
+    +-------------------------------------+----+-----------+-----+-----------+
+    |Total                                |  36|          8|    6|         12|
+    +-------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------------------+---+----+-----+-----------+
+    |                 Name                | FF| LUT| Bits| Const Bits|
+    +-------------------------------------+---+----+-----+-----------+
+    |Block_proc_U0_ap_ready_count         |  2|   0|    2|          0|
+    |ap_sync_reg_Block_proc_U0_ap_ready   |  1|   0|    1|          0|
+    |ap_sync_reg_split_words_U0_ap_ready  |  1|   0|    1|          0|
+    |split_words_U0_ap_ready_count        |  2|   0|    2|          0|
+    +-------------------------------------+---+----+-----+-----------+
+    |Total                                |  6|   0|    6|          0|
+    +-------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+-----------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |     Source Object     |    C Type    |
++-------------------+-----+-----+------------+-----------------------+--------------+
+|source_V_V_TDATA   |  in |   32|    axis    |       source_V_V      |    pointer   |
+|source_V_V_TVALID  |  in |    1|    axis    |       source_V_V      |    pointer   |
+|source_V_V_TREADY  | out |    1|    axis    |       source_V_V      |    pointer   |
+|result_V_V_TDATA   | out |   32|    axis    |       result_V_V      |    pointer   |
+|result_V_V_TVALID  | out |    1|    axis    |       result_V_V      |    pointer   |
+|result_V_V_TREADY  |  in |    1|    axis    |       result_V_V      |    pointer   |
+|control_V          |  in |   32|   ap_none  |       control_V       |    scalar    |
+|ap_clk             |  in |    1| ap_ctrl_hs | retina_background_hls | return value |
+|ap_rst_n           |  in |    1| ap_ctrl_hs | retina_background_hls | return value |
+|ap_done            | out |    1| ap_ctrl_hs | retina_background_hls | return value |
+|ap_start           |  in |    1| ap_ctrl_hs | retina_background_hls | return value |
+|ap_ready           | out |    1| ap_ctrl_hs | retina_background_hls | return value |
+|ap_idle            | out |    1| ap_ctrl_hs | retina_background_hls | return value |
++-------------------+-----+-----+------------+-----------------------+--------------+
+

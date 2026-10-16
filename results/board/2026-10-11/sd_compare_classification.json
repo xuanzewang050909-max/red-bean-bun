@@ -1,0 +1,42 @@
+{
+  "result": "SYSTEM_PAYLOAD_MATCH_WITH_WINDOWS_BOOT_FILESYSTEM_METADATA_CHANGES",
+  "scope": "Exact full image byte equality FAILED; Linux partition exact equality PASS; all five boot file hashes PASS; MBR and gaps unchanged",
+  "classifications": [
+    {
+      "sectors": [
+        23,
+        159
+      ],
+      "interpretation": "FAT1/FAT2 allocate previously free clusters 1850, 1851, 1852 as EOF; identical changes in both FAT copies"
+    },
+    {
+      "sectors": [
+        288
+      ],
+      "interpretation": "Root directory: existing file last-access dates change from 2022-10-22 to 2026-10-11, plus new System Volume Information directory entries"
+    },
+    {
+      "sectors": [
+        15104
+      ],
+      "cluster": 1850,
+      "interpretation": "New System Volume Information directory"
+    },
+    {
+      "sectors": [
+        15112
+      ],
+      "cluster": 1851,
+      "interpretation": "New WPSettings.dat file, 12 bytes"
+    },
+    {
+      "sectors": [
+        15120
+      ],
+      "cluster": 1852,
+      "interpretation": "New IndexerVolumeGuid file, 76 bytes"
+    }
+  ],
+  "source_report": "sd_compare_result.json",
+  "board_boot": "NOT_YET_TESTED_WITH_NEW_IMAGE"
+}

@@ -1,0 +1,135 @@
+{
+  "scope": "Host-only derivative; no new hardware rebuild; original sources unchanged",
+  "files": [
+    {
+      "from": "pynq_app\\__init__.py",
+      "to": "pynq_w3\\__init__.py",
+      "old": {
+        "bytes": 85,
+        "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+      },
+      "new": {
+        "bytes": 85,
+        "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+      },
+      "byte_identical": true
+    },
+    {
+      "from": "pynq_app\\evaluation.py",
+      "to": "pynq_w3\\evaluation.py",
+      "old": {
+        "bytes": 1912,
+        "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+      },
+      "new": {
+        "bytes": 1912,
+        "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+      },
+      "byte_identical": true
+    },
+    {
+      "from": "pynq_app\\hardware.py",
+      "to": "pynq_w3\\hardware.py",
+      "old": {
+        "bytes": 10588,
+        "sha256": "8a228dbec14cbaa3f7774c52240c06a1870e1fd5c2dc55ff222bafb0ca11287d"
+      },
+      "new": {
+        "bytes": 12701,
+        "sha256": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a"
+      },
+      "byte_identical": false
+    },
+    {
+      "from": "pynq_app\\launch.py",
+      "to": "pynq_w3\\launch.py",
+      "old": {
+        "bytes": 4579,
+        "sha256": "f80d85c540be305d0206a9bf1e7d846f1526654dbdcac84d3c6c5222064aaced"
+      },
+      "new": {
+        "bytes": 4602,
+        "sha256": "e72970625e55bfe97148f64996c2d2da4e413320454d4bf100c9715f8257cba3"
+      },
+      "byte_identical": false
+    },
+    {
+      "from": "pynq_app\\protocol.py",
+      "to": "pynq_w3\\protocol.py",
+      "old": {
+        "bytes": 4959,
+        "sha256": "1f540ee7c70e73b90eca064ad532b67bc5bf89743ef4a9f9e2c05e26a05e409a"
+      },
+      "new": {
+        "bytes": 5046,
+        "sha256": "11787772b31b766ed174b5a365d2452356aaa9bb88a547087988c3b98e0ebc18"
+      },
+      "byte_identical": false
+    },
+    {
+      "from": "pynq_app\\quality_observer.py",
+      "to": "pynq_w3\\quality_observer.py",
+      "old": {
+        "bytes": 4929,
+        "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+      },
+      "new": {
+        "bytes": 4929,
+        "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+      },
+      "byte_identical": true
+    },
+    {
+      "from": "pynq_app\\service.py",
+      "to": "pynq_w3\\service.py",
+      "old": {
+        "bytes": 26176,
+        "sha256": "0374acc30bcf55f08b0bb341654569c81b1d6fadcee32bb8ac2158059525e5dc"
+      },
+      "new": {
+        "bytes": 26949,
+        "sha256": "2d5d93f0f1e31ad5f8c3a9d12bdee351b14cb87e3cee051916c0e3bfd6ed4d9e"
+      },
+      "byte_identical": false
+    },
+    {
+      "from": "ui\\app.js",
+      "to": "ui_w3\\app.js",
+      "old": {
+        "bytes": 11726,
+        "sha256": "481254f329ae938f4fed9440bf59638ddba501ec76f5f4e886bc8afc939249c5"
+      },
+      "new": {
+        "bytes": 12969,
+        "sha256": "ef1e766f6370857760624e689398795c64387285fab92832ef3b7e5b7154ff7d"
+      },
+      "byte_identical": false
+    },
+    {
+      "from": "ui\\index.html",
+      "to": "ui_w3\\index.html",
+      "old": {
+        "bytes": 5602,
+        "sha256": "379b6448cffe8adec0f3876d75c07fa9c5361c46f7fff1e2e8a83a8ecb490045"
+      },
+      "new": {
+        "bytes": 6052,
+        "sha256": "c0d8a2b2704e041b16503fc5b2d7d064d7dbc32384bbdff7684a486e926cc73b"
+      },
+      "byte_identical": false
+    },
+    {
+      "from": "ui\\style.css",
+      "to": "ui_w3\\style.css",
+      "old": {
+        "bytes": 5073,
+        "sha256": "587b0500163935a71b536ccd61c902bac5130e6d468762510be9d6d6dacbdd5f"
+      },
+      "new": {
+        "bytes": 5073,
+        "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+      },
+      "byte_identical": false
+    }
+  ]
+}

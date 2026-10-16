@@ -1,0 +1,40 @@
+{
+  "w3_host_tests_01.log": {
+    "bytes": 6453,
+    "sha256": "fb3d349f04ac7ce58555a4e93d13688f2e4801e877a3ea4d7ada704c0c7a72f3"
+  },
+  "w3_host_tests_02.log": {
+    "bytes": 4884,
+    "sha256": "8430cceced2b3e9c239e5bf8b167c886cf1dbd45f6e1b6a7d33d5912b4b3c173"
+  },
+  "w3_contract_tests_01.log": {
+    "bytes": 886,
+    "sha256": "bc4a95e3fcbacb4ec027c64fbe171f31b3adb6c5b27f21053e43fc170c4251b3"
+  },
+  "w3_host_tests_final.log": {
+    "bytes": 6390,
+    "sha256": "1c92a751b489197f35f47f9a2bd1ea1b9e32bbdde254de28049acb1f44c12bd5"
+  },
+  "HOST_TEST_browser_session_f64b16a3d498465098184f3bd1353e61.zip": {
+    "local_path": "D:\\PLD\\retina_fpga\\build\\browser_w3_ui_qa\\HOST_TEST_browser_session_f64b16a3d498465098184f3bd1353e61.zip",
+    "bytes": 34762069,
+    "sha256": "ecbcd65697fe6688154c6cd2c2c14f834c54cff19eec030c7e861110cf541b5e",
+    "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD"
+  },
+  "HOST_TEST_browser_session_f182c45ae6fe43678a77a204c06a453f.zip": {
+    "local_path": "D:\\PLD\\retina_fpga\\build\\browser_w3_ui_qa\\HOST_TEST_browser_session_f182c45ae6fe43678a77a204c06a453f.zip",
+    "bytes": 31729824,
+    "sha256": "a9e5c9e3a05871a7c2fde6f5e2cdd5250e501dadca0added53a6201d84ff9e4e",
+    "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD"
+  },
+  "HOST_TEST_final_page.png": {
+    "local_path": "D:\\PLD\\retina_fpga\\build\\browser_w3_ui_qa\\HOST_TEST_final_page.png",
+    "bytes": 180281,
+    "sha256": "976dc889e35def06d995994774260c9b4d0148a87bb44911c58f17e5dfb0d571",
+    "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD"
+  },
+  "HOST_TEST_preview_metadata.json": {
+    "bytes": 224,
+    "sha256": "65f3a0519d079ea0618a91c01a171b79e6a9ef4a7101f5bcc59ff822fccc9c98"
+  }
+}

@@ -1,0 +1,2 @@
+PRE_VALIDATION_DERIVATION_DRAFTS_NOT_FINAL
+Final source reproduction uses derivation_evidence.json and the numbered derivation_*.diff files in the parent directory.

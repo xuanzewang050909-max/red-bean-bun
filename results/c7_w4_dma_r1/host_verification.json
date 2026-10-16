@@ -1,0 +1,57 @@
+{
+  "status": "HOST_CHECKS_PASS_BOARD_NOT_RUN",
+  "unit_tests": 10,
+  "hwh_metadata_check": 1,
+  "repeated_test_runs_not_counted_twice": true,
+  "host_full_flow": {
+    "transfers": 619,
+    "words": 101253137,
+    "groups": 6,
+    "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD"
+  },
+  "faults": [
+    "allocation",
+    "alignment",
+    "overlap",
+    "corrupt",
+    "bytes",
+    "dma_error",
+    "free",
+    "overlay",
+    "timeout"
+  ],
+  "official_methods": "Unmodified _SDMAChannel AST from pinned PYNQ 3.0.1 executed with test MMIO/buffers; exact original A0 helper.",
+  "verifier_fixture": "Temporary metadata-modified synthetic parser fixture, not board evidence; unmodified HOST archive rejected; changed timing rejected. Fixtures removed with TemporaryDirectory.",
+  "baseline_C7_artifacts_unchanged": 137,
+  "release": {
+    "status": "HOST_PACKAGE_BOARD_NOT_RUN",
+    "embedded_files": 8,
+    "files": {
+      "c7_w4_dma.ipynb": {
+        "bytes": 6079,
+        "sha256": "7ce057c798b0babb90e465f7fbc7411f6b9947256d8ff25fc1e659180165af48"
+      },
+      "c7_w4_dma_r1.zip": {
+        "bytes": 151257,
+        "sha256": "1689996caa0133c5cc496a98e3b6b54cae8f74de248b238517d20a3bd02a7d3d"
+      }
+    }
+  },
+  "logs": {
+    "host_checks_01.log": {
+      "bytes": 1085,
+      "sha256": "fc9bc732a5bb4ae112fd26a36ba731e24a3190138009704ef35d59b1da45c5ff"
+    },
+    "host_checks_final.log": {
+      "bytes": 1085,
+      "sha256": "68ca1143e2b83699c76caa8c6b8323cbd67a2fa93c826a72e068fbdf1a8a56ae"
+    }
+  },
+  "metadata_check": {
+    "bytes": 62182,
+    "sha256": "487401a4682ea585b6dce368597ef24a5fa135f93a665a2be7d6b0170560c43e"
+  },
+  "board_status": "BOARD_NOT_RUN",
+  "hardware_rebuilt": false,
+  "measured_latency_ns": null
+}

@@ -1,0 +1,2101 @@
+{
+  "status": "W1_NUMERIC_AND_FUNCTIONAL_EVIDENCE_VERIFIED_DISPLAY_FPS_PENDING",
+  "session_id": "4341c09cebe24ec3b169c9d696079162",
+  "coverage": {
+    "image_ids": [
+      "im0001",
+      "im0002"
+    ],
+    "modes": [
+      "final",
+      "threshold_candidate"
+    ],
+    "sides": [
+      256,
+      512
+    ]
+  },
+  "prior_bringup_reverified": null,
+  "archive": {
+    "bytes": 34745192,
+    "sha256": "fd6be8ab85ca18a541f4d54d7d71783399153c7b1f29db4b7fe331cbd207bdbb"
+  },
+  "notebook": {
+    "bytes": 11762,
+    "sha256": "4a0a7fcdbcd061f972e0a9a1efeebb79d5aaef9b9411be62f31cd645fcbad6b2"
+  },
+  "verified_runs": 24,
+  "matched_words": 6094848,
+  "matched_png_images": 120,
+  "matched_png_values": 54853632,
+  "browser_observations": 24,
+  "runs": [
+    {
+      "run_id": "c029b7d00fb646efaf2093fc4dcb10b7",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jn36eu7jzu5ndlie",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 104104,
+        "dma_transaction_ns": 4634757,
+        "cpu_snapshot_ns": 6809028,
+        "inference_ns": 36433981,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7204947,
+        "input_read_ns": 90793453,
+        "raw_save_ns": 147247914,
+        "evaluation_ns": 163394018,
+        "png_encoding_ns": 4375808160,
+        "worker_result_ns": 4909649802
+      },
+      "frame_status_before": 0,
+      "frame_status_after": 16385,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "bd3cbeb99be74e5b98280d5417dff256",
+      "request": {
+        "image_id": "im0002",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jo1mtm7qo8ekx3am",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+      "output_sha256": "6b3e5dcd0870076ee81f6e6adcb2b1545d766401ec3a870cf5856177937fff79",
+      "timing_ns": {
+        "config_ns": 81563,
+        "dma_transaction_ns": 4691317,
+        "cpu_snapshot_ns": 6828461,
+        "inference_ns": 44278529,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7280683,
+        "input_read_ns": 86860886,
+        "raw_save_ns": 145072049,
+        "evaluation_ns": 157023840,
+        "png_encoding_ns": 4535754264,
+        "worker_result_ns": 5068801014
+      },
+      "frame_status_before": 16385,
+      "frame_status_after": 32770,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 20338,
+        "fov_pixels": 207202,
+        "vessel_area_fraction": 0.09815542321020067,
+        "annotations": {
+          "AH": {
+            "tp": 7508,
+            "fp": 12830,
+            "fn": 7575,
+            "tn": 179289,
+            "dice": 0.42392930747296803,
+            "iou": 0.26897861211621826,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 6915,
+            "fp": 13423,
+            "fn": 5662,
+            "tn": 181202,
+            "dice": 0.42017317332523163,
+            "iou": 0.26596153846153847,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "02319235cab8402184eba23ac406b66e",
+      "request": {
+        "image_id": "im0002",
+        "side": 512,
+        "threshold": 28,
+        "mode": "threshold_candidate",
+        "client_nonce": "mv6joksie5x94ltstw",
+        "algorithm": "A",
+        "mode_code": 1
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+      "output_sha256": "10d112554847592aca99f497849ec568da10ca368d4a58cb76969a5050619117",
+      "timing_ns": {
+        "config_ns": 79785,
+        "dma_transaction_ns": 4703280,
+        "cpu_snapshot_ns": 6712911,
+        "inference_ns": 42095569,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7296338,
+        "input_read_ns": 85516142,
+        "raw_save_ns": 125101261,
+        "evaluation_ns": 151398148,
+        "png_encoding_ns": 4876337894,
+        "worker_result_ns": 5377247100
+      },
+      "frame_status_before": 32770,
+      "frame_status_after": 49155,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 20108,
+        "fov_pixels": 207202,
+        "vessel_area_fraction": 0.09704539531471704,
+        "annotations": {
+          "AH": {
+            "tp": 7494,
+            "fp": 12614,
+            "fn": 7589,
+            "tn": 179505,
+            "dice": 0.42590435054417325,
+            "iou": 0.2705708199443983,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 6898,
+            "fp": 13210,
+            "fn": 5679,
+            "tn": 181415,
+            "dice": 0.42208964356738565,
+            "iou": 0.2674991274673285,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "fcb5f45121354400a6e6fafca5af1b1f",
+      "request": {
+        "image_id": "im0001",
+        "side": 256,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6joxokcfp765dsmgv",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 65536,
+      "matched_png_images": 5,
+      "matched_png_values": 589824,
+      "input_sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+      "output_sha256": "57d2c84e5a4cac2355fd5f7c4654f71d9ff81b0ec8047728e5ffa5857197af6f",
+      "timing_ns": {
+        "config_ns": 86769,
+        "dma_transaction_ns": 2411225,
+        "cpu_snapshot_ns": 1215723,
+        "inference_ns": 14990339,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7027354,
+        "input_read_ns": 22667145,
+        "raw_save_ns": 35474400,
+        "evaluation_ns": 49655932,
+        "png_encoding_ns": 1131955217,
+        "worker_result_ns": 1281383641
+      },
+      "frame_status_before": 49155,
+      "frame_status_after": 65540,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 8467,
+        "fov_pixels": 51370,
+        "vessel_area_fraction": 0.16482382713646096,
+        "annotations": {
+          "AH": {
+            "tp": 2559,
+            "fp": 5908,
+            "fn": 1947,
+            "tn": 40956,
+            "dice": 0.3945116781006706,
+            "iou": 0.24572690608795852,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 2777,
+            "fp": 5690,
+            "fn": 2542,
+            "tn": 40361,
+            "dice": 0.4028724793268533,
+            "iou": 0.2522481605958761,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "24b76a0d91d242528c892f968bc4e338",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jph7qnph2ykcqzoa",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 85532,
+        "dma_transaction_ns": 9458547,
+        "cpu_snapshot_ns": 6890554,
+        "inference_ns": 32912178,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6977858,
+        "input_read_ns": 88729446,
+        "raw_save_ns": 144040474,
+        "evaluation_ns": 155253938,
+        "png_encoding_ns": 4373318153,
+        "worker_result_ns": 4892100227
+      },
+      "frame_status_before": 65540,
+      "frame_status_after": 81925,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "3c23f8943a22407d8922da67dfc348c7",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jpl5aakq05sumqgi",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 79434,
+        "dma_transaction_ns": 4714714,
+        "cpu_snapshot_ns": 11575156,
+        "inference_ns": 32525507,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7318677,
+        "input_read_ns": 86165421,
+        "raw_save_ns": 147825089,
+        "evaluation_ns": 153743126,
+        "png_encoding_ns": 4449290609,
+        "worker_result_ns": 4969675352
+      },
+      "frame_status_before": 81925,
+      "frame_status_after": 98310,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "8f0d6a41e42f446581dab69fd87cd486",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jpv7nk1ihacvw1fa",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 84683,
+        "dma_transaction_ns": 4799981,
+        "cpu_snapshot_ns": 6893508,
+        "inference_ns": 27821803,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6852991,
+        "input_read_ns": 87847852,
+        "raw_save_ns": 147271273,
+        "evaluation_ns": 153161243,
+        "png_encoding_ns": 4812642368,
+        "worker_result_ns": 5321042392
+      },
+      "frame_status_before": 98310,
+      "frame_status_after": 114695,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "f85bd9ad6ea148ad9808a3ed96a74e19",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jpzizjaufq1y1wmd",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 84030,
+        "dma_transaction_ns": 4782000,
+        "cpu_snapshot_ns": 9323859,
+        "inference_ns": 31803532,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6884043,
+        "input_read_ns": 87631871,
+        "raw_save_ns": 150692750,
+        "evaluation_ns": 156591945,
+        "png_encoding_ns": 4809243950,
+        "worker_result_ns": 5328661875
+      },
+      "frame_status_before": 114695,
+      "frame_status_after": 131080,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "9d3c07b9ddeb40cf94a66a2c7232e500",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jq3s24timwld15bm",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 86480,
+        "dma_transaction_ns": 4763114,
+        "cpu_snapshot_ns": 10164345,
+        "inference_ns": 33553576,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6897262,
+        "input_read_ns": 87891661,
+        "raw_save_ns": 144520320,
+        "evaluation_ns": 159485815,
+        "png_encoding_ns": 4791742485,
+        "worker_result_ns": 5309947660
+      },
+      "frame_status_before": 131080,
+      "frame_status_after": 147465,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "e72eec04f37e461a9ff109b850a6169e",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jqbqouaubsi1nfum",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 89052,
+        "dma_transaction_ns": 7135415,
+        "cpu_snapshot_ns": 6833385,
+        "inference_ns": 34495600,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7022701,
+        "input_read_ns": 88018566,
+        "raw_save_ns": 149226455,
+        "evaluation_ns": 181891729,
+        "png_encoding_ns": 4419440707,
+        "worker_result_ns": 4963614497
+      },
+      "frame_status_before": 147465,
+      "frame_status_after": 163850,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "e3bdf88d738449c5b5a470044d8e3902",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jqfruuxmim0udio",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 79539,
+        "dma_transaction_ns": 4704037,
+        "cpu_snapshot_ns": 12157993,
+        "inference_ns": 31389520,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7221132,
+        "input_read_ns": 85605280,
+        "raw_save_ns": 143437588,
+        "evaluation_ns": 154628714,
+        "png_encoding_ns": 4795146885,
+        "worker_result_ns": 5303308540
+      },
+      "frame_status_before": 163850,
+      "frame_status_after": 180235,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "7ea47eb3d106432f905404b8640d0b1f",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jqk2v609vvtyiz7x",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 83261,
+        "dma_transaction_ns": 4782455,
+        "cpu_snapshot_ns": 9202634,
+        "inference_ns": 28616566,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7002178,
+        "input_read_ns": 88394283,
+        "raw_save_ns": 153934954,
+        "evaluation_ns": 156795027,
+        "png_encoding_ns": 4769859901,
+        "worker_result_ns": 5289771549
+      },
+      "frame_status_before": 180235,
+      "frame_status_after": 196620,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "bb8bddc7674642c98035c13d2e3cb284",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jqodbeigf2e3an9c",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 89662,
+        "dma_transaction_ns": 11187249,
+        "cpu_snapshot_ns": 6746855,
+        "inference_ns": 32600609,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6813341,
+        "input_read_ns": 87618246,
+        "raw_save_ns": 151766591,
+        "evaluation_ns": 156484886,
+        "png_encoding_ns": 4697484024,
+        "worker_result_ns": 5218661476
+      },
+      "frame_status_before": 196620,
+      "frame_status_after": 213005,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "aa0ec44ef8914a4fbe934f9e76919f3f",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jqskhhk0a7dvy3cd",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 84646,
+        "dma_transaction_ns": 9080376,
+        "cpu_snapshot_ns": 6911477,
+        "inference_ns": 30731987,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6976652,
+        "input_read_ns": 87758763,
+        "raw_save_ns": 150749348,
+        "evaluation_ns": 156224307,
+        "png_encoding_ns": 4781531230,
+        "worker_result_ns": 5306774903
+      },
+      "frame_status_before": 213005,
+      "frame_status_after": 229390,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "3143b17707ba4361bfffa1bf7f438504",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jqwuy5r747iajyjn",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 84517,
+        "dma_transaction_ns": 14519477,
+        "cpu_snapshot_ns": 6780135,
+        "inference_ns": 36432234,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6873600,
+        "input_read_ns": 87955040,
+        "raw_save_ns": 147479434,
+        "evaluation_ns": 156407759,
+        "png_encoding_ns": 4679313009,
+        "worker_result_ns": 5200197081
+      },
+      "frame_status_before": 229390,
+      "frame_status_after": 245775,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "671c64b1ab31406db31e5288e6dfeb58",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jr11ke318ywbvdub",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 87145,
+        "dma_transaction_ns": 4842677,
+        "cpu_snapshot_ns": 6774406,
+        "inference_ns": 33936572,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7015144,
+        "input_read_ns": 88148111,
+        "raw_save_ns": 143961372,
+        "evaluation_ns": 155666757,
+        "png_encoding_ns": 4372890431,
+        "worker_result_ns": 4890712965
+      },
+      "frame_status_before": 245775,
+      "frame_status_after": 262160,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "2bb725c3550149aebaf8829dc269344d",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jr4ylfulcl763z1",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 81883,
+        "dma_transaction_ns": 8154185,
+        "cpu_snapshot_ns": 6913268,
+        "inference_ns": 40540160,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7408541,
+        "input_read_ns": 89207729,
+        "raw_save_ns": 140434781,
+        "evaluation_ns": 151759176,
+        "png_encoding_ns": 4839457611,
+        "worker_result_ns": 5358465500
+      },
+      "frame_status_before": 262160,
+      "frame_status_after": 278545,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "864d4d73449343579572e59b294e1ec8",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jr992nm2ziguf2de",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 88018,
+        "dma_transaction_ns": 5140559,
+        "cpu_snapshot_ns": 9127544,
+        "inference_ns": 30163550,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6891963,
+        "input_read_ns": 87694812,
+        "raw_save_ns": 145053576,
+        "evaluation_ns": 157002867,
+        "png_encoding_ns": 4757490645,
+        "worker_result_ns": 5270419408
+      },
+      "frame_status_before": 278545,
+      "frame_status_after": 294930,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "3710ed99c7284ebf8fcc1cdd505d0d28",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jrdp8wmuvtaujdus",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 85440,
+        "dma_transaction_ns": 4752406,
+        "cpu_snapshot_ns": 9126843,
+        "inference_ns": 29870123,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6838074,
+        "input_read_ns": 87719772,
+        "raw_save_ns": 145278880,
+        "evaluation_ns": 154783433,
+        "png_encoding_ns": 4812718319,
+        "worker_result_ns": 5326734718
+      },
+      "frame_status_before": 294930,
+      "frame_status_after": 311315,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "70657662cfb2496fa5ffa1ab33d0ce65",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jrieadxlvamiuytp",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 80806,
+        "dma_transaction_ns": 5226757,
+        "cpu_snapshot_ns": 9113083,
+        "inference_ns": 29991120,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7121415,
+        "input_read_ns": 86242246,
+        "raw_save_ns": 141130074,
+        "evaluation_ns": 154307716,
+        "png_encoding_ns": 4554036437,
+        "worker_result_ns": 5056903260
+      },
+      "frame_status_before": 311315,
+      "frame_status_after": 327700,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "faa6c013273d4b12a81ab3d99ebccbcc",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jrmgxzw0xj75i1kb",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 154461,
+        "dma_transaction_ns": 9175267,
+        "cpu_snapshot_ns": 6840209,
+        "inference_ns": 31528424,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7166326,
+        "input_read_ns": 85443716,
+        "raw_save_ns": 145841268,
+        "evaluation_ns": 152113231,
+        "png_encoding_ns": 4812609371,
+        "worker_result_ns": 5320199924
+      },
+      "frame_status_before": 327700,
+      "frame_status_after": 344085,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "2231e0ed602640c588cc52985ab19366",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jrqqv7btmu1gmv23",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 101188,
+        "dma_transaction_ns": 4756763,
+        "cpu_snapshot_ns": 9048246,
+        "inference_ns": 31346018,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7056215,
+        "input_read_ns": 89136831,
+        "raw_save_ns": 144760302,
+        "evaluation_ns": 163292153,
+        "png_encoding_ns": 4831876350,
+        "worker_result_ns": 5355382522
+      },
+      "frame_status_before": 344085,
+      "frame_status_after": 360470,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "f923ea97c1b64140bf2a7812ec8c1cca",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jrv06k2415ygsafd",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 87299,
+        "dma_transaction_ns": 4854979,
+        "cpu_snapshot_ns": 6738560,
+        "inference_ns": 26079434,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 6887821,
+        "input_read_ns": 88224788,
+        "raw_save_ns": 148740498,
+        "evaluation_ns": 152646541,
+        "png_encoding_ns": 4384229409,
+        "worker_result_ns": 4895793624
+      },
+      "frame_status_before": 360470,
+      "frame_status_after": 376855,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    },
+    {
+      "run_id": "28c603df754f4f9988485e53fd149fa8",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "mode": "final",
+        "client_nonce": "mv6jryzlc70rir7mjz7",
+        "algorithm": "A",
+        "mode_code": 3
+      },
+      "matched_words": 262144,
+      "matched_png_images": 5,
+      "matched_png_values": 2359296,
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "timing_ns": {
+        "config_ns": 81440,
+        "dma_transaction_ns": 4707107,
+        "cpu_snapshot_ns": 10836960,
+        "inference_ns": 30532375,
+        "pl_core_frame_ns": null,
+        "pl_core_cycles": null,
+        "pure_dma_transport_ns": null,
+        "queue_wait_ns": 7022271,
+        "input_read_ns": 85582098,
+        "raw_save_ns": 140994449,
+        "evaluation_ns": 152622449,
+        "png_encoding_ns": 4346060769,
+        "worker_result_ns": 4846744719
+      },
+      "frame_status_before": 376855,
+      "frame_status_after": 393240,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      }
+    }
+  ],
+  "observations": [
+    {
+      "client_nonce": "mv6jn36eu7jzu5ndlie",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 21228.59999999404,
+      "result_received_ms": 26233.40000000596,
+      "images_decoded_ms": 26315.09999999404,
+      "render_done_ms": 26341.69999998808,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": null,
+      "loop_index": null,
+      "loop_start_ms": null,
+      "run_id": "c029b7d00fb646efaf2093fc4dcb10b7",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5113.0999999940395,
+      "result_received_to_render_ms": 108.2999999821186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jo1mtm7qo8ekx3am",
+      "config_id": "9f0f1cea0191108558c9f7b5b4214a269ca4c871b1b362b0e03a89c3eca8742b",
+      "input_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+      "output_sha256": "6b3e5dcd0870076ee81f6e6adcb2b1545d766401ec3a870cf5856177937fff79",
+      "request_start_ms": 65883.69999998808,
+      "result_received_ms": 71040.40000000596,
+      "images_decoded_ms": 71116.59999999404,
+      "render_done_ms": 71129.29999998212,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": null,
+      "loop_index": null,
+      "loop_start_ms": null,
+      "run_id": "bd3cbeb99be74e5b98280d5417dff256",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5245.5999999940395,
+      "result_received_to_render_ms": 88.89999997615814,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6joksie5x94ltstw",
+      "config_id": "277d174aa515d5be70e669096fe40dc38cc8489e0fa78dc61730fff37f0874d9",
+      "input_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+      "output_sha256": "10d112554847592aca99f497849ec568da10ca368d4a58cb76969a5050619117",
+      "request_start_ms": 90712.29999998212,
+      "result_received_ms": 96194.09999999404,
+      "images_decoded_ms": 96282.09999999404,
+      "render_done_ms": 96291.40000000596,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": null,
+      "loop_index": null,
+      "loop_start_ms": null,
+      "run_id": "02319235cab8402184eba23ac406b66e",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5579.100000023842,
+      "result_received_to_render_ms": 97.30000001192093,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6joxokcfp765dsmgv",
+      "config_id": "61cbe8d1cf2dab2e674593fad2881ed3681d8b7f98928a72a4a4fc1a87316126",
+      "input_sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+      "output_sha256": "57d2c84e5a4cac2355fd5f7c4654f71d9ff81b0ec8047728e5ffa5857197af6f",
+      "request_start_ms": 107418.59999999404,
+      "result_received_ms": 109664.79999998212,
+      "images_decoded_ms": 109715.29999998212,
+      "render_done_ms": 118946.69999998808,
+      "visibility": "hidden",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": null,
+      "loop_index": null,
+      "loop_start_ms": null,
+      "run_id": "fcb5f45121354400a6e6fafca5af1b1f",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 11528.09999999404,
+      "result_received_to_render_ms": 9281.90000000596,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jph7qnph2ykcqzoa",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 132732.19999998808,
+      "result_received_ms": 137717.79999998212,
+      "images_decoded_ms": 137798.29999998212,
+      "render_done_ms": 137813.09999999404,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 1,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "24b76a0d91d242528c892f968bc4e338",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5080.9000000059605,
+      "result_received_to_render_ms": 95.30000001192093,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jpl5aakq05sumqgi",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 137828.29999998212,
+      "result_received_ms": 143677.90000000596,
+      "images_decoded_ms": 143768.69999998808,
+      "render_done_ms": 150854.90000000596,
+      "visibility": "hidden",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 2,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "3c23f8943a22407d8922da67dfc348c7",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 13026.600000023842,
+      "result_received_to_render_ms": 7177.0,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jpv7nk1ihacvw1fa",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 150873.40000000596,
+      "result_received_ms": 156354.90000000596,
+      "images_decoded_ms": 156439.69999998808,
+      "render_done_ms": 156450.5,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 3,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "8f0d6a41e42f446581dab69fd87cd486",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5577.0999999940395,
+      "result_received_to_render_ms": 95.59999999403954,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jpzizjaufq1y1wmd",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 156465.59999999404,
+      "result_received_ms": 161859.69999998808,
+      "images_decoded_ms": 161947.40000000596,
+      "render_done_ms": 161957.69999998808,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 4,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "f85bd9ad6ea148ad9808a3ed96a74e19",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5492.0999999940395,
+      "result_received_to_render_ms": 98.0,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jq3s24timwld15bm",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 161976.09999999404,
+      "result_received_ms": 167674,
+      "images_decoded_ms": 167764,
+      "render_done_ms": 172277.69999998808,
+      "visibility": "hidden",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 5,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "9d3c07b9ddeb40cf94a66a2c7232e500",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 10301.59999999404,
+      "result_received_to_render_ms": 4603.699999988079,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jqbqouaubsi1nfum",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 172294.59999999404,
+      "result_received_ms": 177416.5,
+      "images_decoded_ms": 177497.79999998212,
+      "render_done_ms": 177504.40000000596,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 6,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "e72eec04f37e461a9ff109b850a6169e",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5209.800000011921,
+      "result_received_to_render_ms": 87.90000000596046,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jqfruuxmim0udio",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 177520.29999998212,
+      "result_received_ms": 182988.5,
+      "images_decoded_ms": 183072.59999999404,
+      "render_done_ms": 183083.40000000596,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 7,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "e3bdf88d738449c5b5a470044d8e3902",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5563.100000023842,
+      "result_received_to_render_ms": 94.90000000596046,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jqk2v609vvtyiz7x",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 183101.59999999404,
+      "result_received_ms": 188549.09999999404,
+      "images_decoded_ms": 188634.29999998212,
+      "render_done_ms": 188645.90000000596,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 8,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "7ea47eb3d106432f905404b8640d0b1f",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5544.300000011921,
+      "result_received_to_render_ms": 96.80000001192093,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jqodbeigf2e3an9c",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 188660.69999998808,
+      "result_received_ms": 193988.90000000596,
+      "images_decoded_ms": 194073,
+      "render_done_ms": 194087.69999998808,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 9,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "bb8bddc7674642c98035c13d2e3cb284",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5427.0,
+      "result_received_to_render_ms": 98.7999999821186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jqskhhk0a7dvy3cd",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 194102.90000000596,
+      "result_received_ms": 199550.19999998808,
+      "images_decoded_ms": 199638.79999998212,
+      "render_done_ms": 199648.69999998808,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 10,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "aa0ec44ef8914a4fbe934f9e76919f3f",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5545.799999982119,
+      "result_received_to_render_ms": 98.5,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jqwuy5r747iajyjn",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 199664.09999999404,
+      "result_received_ms": 204974.5,
+      "images_decoded_ms": 205057.79999998212,
+      "render_done_ms": 205070.09999999404,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 11,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "3143b17707ba4361bfffa1bf7f438504",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5406.0,
+      "result_received_to_render_ms": 95.59999999403954,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jr11ke318ywbvdub",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 205086,
+      "result_received_ms": 210061.29999998212,
+      "images_decoded_ms": 210136.5,
+      "render_done_ms": 210147.09999999404,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 12,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "671c64b1ab31406db31e5288e6dfeb58",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5061.0999999940395,
+      "result_received_to_render_ms": 85.80000001192093,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jr4ylfulcl763z1",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 210163.09999999404,
+      "result_received_ms": 215613.5,
+      "images_decoded_ms": 215695.79999998212,
+      "render_done_ms": 215709.29999998212,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 13,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "2bb725c3550149aebaf8829dc269344d",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5546.199999988079,
+      "result_received_to_render_ms": 95.7999999821186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jr992nm2ziguf2de",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 215724.59999999404,
+      "result_received_ms": 221380.40000000596,
+      "images_decoded_ms": 221464.59999999404,
+      "render_done_ms": 221472,
+      "visibility": "hidden",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 14,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "864d4d73449343579572e59b294e1ec8",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5747.4000000059605,
+      "result_received_to_render_ms": 91.59999999403954,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jrdp8wmuvtaujdus",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 221489.90000000596,
+      "result_received_ms": 227473,
+      "images_decoded_ms": 227552.40000000596,
+      "render_done_ms": 227560.79999998212,
+      "visibility": "hidden",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 15,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "3710ed99c7284ebf8fcc1cdd505d0d28",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 6070.899999976158,
+      "result_received_to_render_ms": 87.7999999821186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jrieadxlvamiuytp",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 227576.69999998808,
+      "result_received_ms": 232748.90000000596,
+      "images_decoded_ms": 232828.40000000596,
+      "render_done_ms": 232840.5,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 16,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "70657662cfb2496fa5ffa1ab33d0ce65",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5263.800000011921,
+      "result_received_to_render_ms": 91.59999999403954,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jrmgxzw0xj75i1kb",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 232855.09999999404,
+      "result_received_ms": 238292.09999999404,
+      "images_decoded_ms": 238375.09999999404,
+      "render_done_ms": 238382.09999999404,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 17,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "faa6c013273d4b12a81ab3d99ebccbcc",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5527.0,
+      "result_received_to_render_ms": 90.0,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jrqqv7btmu1gmv23",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 238396.90000000596,
+      "result_received_ms": 243810.5,
+      "images_decoded_ms": 243894.29999998212,
+      "render_done_ms": 243900.79999998212,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 18,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "2231e0ed602640c588cc52985ab19366",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5503.899999976158,
+      "result_received_to_render_ms": 90.2999999821186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jrv06k2415ygsafd",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 243916.40000000596,
+      "result_received_ms": 248953,
+      "images_decoded_ms": 249033.69999998808,
+      "render_done_ms": 249062.79999998212,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 19,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "f923ea97c1b64140bf2a7812ec8c1cca",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 5146.399999976158,
+      "result_received_to_render_ms": 109.7999999821186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    },
+    {
+      "client_nonce": "mv6jryzlc70rir7mjz7",
+      "config_id": "146450505ae9b3c72a7275ea9859570b864ae90f550e14c2d0836ca37d71ee17",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "request_start_ms": 249079.09999999404,
+      "result_received_ms": 253985.29999998212,
+      "images_decoded_ms": 254063.79999998212,
+      "render_done_ms": 254071.90000000596,
+      "visibility": "visible",
+      "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+      "loop_id": "mv6jph7q884y90m19m9",
+      "loop_index": 20,
+      "loop_start_ms": 132732.19999998808,
+      "run_id": "28c603df754f4f9988485e53fd149fa8",
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "request_to_render_ms": 4992.800000011921,
+      "result_received_to_render_ms": 86.60000002384186,
+      "browser_actual_fps": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+    }
+  ],
+  "lifecycle": {
+    "execution_counts": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "markers": [
+      "PACKAGE_BYTES_PASS:",
+      "BROWSER_PRECHECK_PASS:",
+      "BROWSER_SERVICE_READY:",
+      "BROWSER_RECORDS_READY:",
+      "BROWSER_SERVICE_CLOSED_IDLE:"
+    ],
+    "initial_status": {
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "service_state": "READY",
+      "hardware_state": "IDLE",
+      "overlay_downloads": 1,
+      "last_completed_frame_status": 0,
+      "active_run_id": null,
+      "pending": 0,
+      "completed": 0,
+      "accepted": 0,
+      "run_limit": 200,
+      "retained_buffer_count": 0,
+      "error": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+    },
+    "export_status": {
+      "session_id": "4341c09cebe24ec3b169c9d696079162",
+      "service_state": "READY",
+      "hardware_state": "IDLE",
+      "overlay_downloads": 1,
+      "last_completed_frame_status": 393240,
+      "active_run_id": null,
+      "pending": 0,
+      "completed": 24,
+      "accepted": 24,
+      "run_limit": 200,
+      "retained_buffer_count": 0,
+      "error": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+    },
+    "clean_close_printed": true
+  },
+  "display_loops": {
+    "mv6jph7q884y90m19m9": {
+      "index": 20,
+      "start": 132732.19999998808,
+      "render": 254071.90000000596,
+      "visible": false,
+      "hidden_indices": [
+        2,
+        5,
+        14,
+        15
+      ],
+      "verified_fps": null
+    }
+  },
+  "visible_20_frame_loop_verified": false,
+  "numeric_and_functional_evidence_verified": true,
+  "final_acceptance_pass": false,
+  "pl_core_frame_ns": null,
+  "pure_dma_transport_ns": null,
+  "formal_20_image_quality_pass": false,
+  "adjustable_threshold_pass": false,
+  "full_performance_pass": false
+}

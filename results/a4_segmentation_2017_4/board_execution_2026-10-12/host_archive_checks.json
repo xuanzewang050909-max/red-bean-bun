@@ -1,0 +1,36 @@
+{
+  "status": "PASS_HOST_A4_ARCHIVE_CHECKS",
+  "test_count": 26,
+  "positive_tests": 3,
+  "rejection_tests": 23,
+  "actual_raw_corruption_subcases": 12,
+  "log": {
+    "path": "../host_archive_checks.log",
+    "encoding": "utf-8-sig",
+    "bytes": 3322,
+    "sha256": "1b19fe1a21afd618b025c7d115d735e77e1fbc7fcd77603a7ec9949682238e55"
+  },
+  "sources": {
+    "scripts/archive_a4_board_results.py": {
+      "bytes": 19806,
+      "sha256": "d64a3d77c1f2b3b61fe6377e05d5d20745ef6b363f174a3ea8a11cb92d4d43f8"
+    },
+    "tests/test_a4_archive.py": {
+      "bytes": 12221,
+      "sha256": "e3d7da0720f23e9aa3b96fcd5e8518987de68953ab92bb38a95b2b34e80fc4a0"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "scripts/a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "scripts/a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    }
+  },
+  "limits": "Host evidence and tamper tests; no new board execution, no new HDMI/FPS/medical quality result"
+}

@@ -1,0 +1,17 @@
+test_algorithm_faults_retain_buffers_and_block_next_phase (test_b_integration.BRunnerTests.test_algorithm_faults_retain_buffers_and_block_next_phase) ... ok
+test_bench_failure_keeps_buffers_and_stops_measurements (test_b_integration.BRunnerTests.test_bench_failure_keeps_buffers_and_stops_measurements) ... ok
+test_changed_overlay_blocks_hardware_actions (test_b_integration.BRunnerTests.test_changed_overlay_blocks_hardware_actions) ... ok
+test_color_order_position_and_real_mask_layout (test_b_integration.BRunnerTests.test_color_order_position_and_real_mask_layout) ... ok
+test_display_benchmark_counts_official_submissions (test_b_integration.BRunnerTests.test_display_benchmark_counts_official_submissions) ... ok
+test_invalid_timing_samples_and_contract (test_b_integration.BRunnerTests.test_invalid_timing_samples_and_contract) ... ok
+test_package_immutable_artifacts_and_mutable_notebook_outputs (test_b_integration.BRunnerTests.test_package_immutable_artifacts_and_mutable_notebook_outputs) ... ok
+test_partial_ledger_cannot_claim_timing_complete (test_b_integration.BRunnerTests.test_partial_ledger_cannot_claim_timing_complete) ... ok
+test_reused_bench_buffers_100_timed_plus_3_warmup (test_b_integration.BRunnerTests.test_reused_bench_buffers_100_timed_plus_3_warmup) ... ok
+test_staged_digital_flow_and_video_ownership (test_b_integration.BRunnerTests.test_staged_digital_flow_and_video_ownership) ... ok
+test_video_fault_retains_display_frame (test_b_integration.BRunnerTests.test_video_fault_retains_display_frame) ... ok
+test_video_status_detects_error_and_stopped_channel (test_b_integration.BRunnerTests.test_video_status_detects_error_and_stopped_channel) ... ok
+
+----------------------------------------------------------------------
+Ran 12 tests in 5.779s
+
+OK

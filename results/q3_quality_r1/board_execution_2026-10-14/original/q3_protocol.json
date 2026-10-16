@@ -1,0 +1,155 @@
+{
+  "protocol": "Q3_FULL_DATASET_REAL_PL_R1",
+  "status": "FROZEN_BEFORE_Q3_COLLECTION",
+  "board_status": "NOT_RUN",
+  "candidate": {
+    "id": "C2_l9_d12345_m1_p28",
+    "length": 9,
+    "distances": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "margin": 1,
+    "persistence": "none",
+    "penalty": 28
+  },
+  "baseline": {
+    "algorithm": "A",
+    "threshold": 28,
+    "fov": "UNCHANGED_M0",
+    "postprocessing": "UNCHANGED_M0"
+  },
+  "threshold": 28,
+  "mode": "final",
+  "png_profile": "fast",
+  "sizes": [
+    256,
+    512
+  ],
+  "algorithms": [
+    "A",
+    "C2"
+  ],
+  "split": {
+    "train": [
+      "im0001",
+      "im0003",
+      "im0005",
+      "im0077",
+      "im0082",
+      "im0162",
+      "im0235",
+      "im0239",
+      "im0255",
+      "im0319"
+    ],
+    "heldout": [
+      "im0002",
+      "im0004",
+      "im0044",
+      "im0081",
+      "im0139",
+      "im0163",
+      "im0236",
+      "im0240",
+      "im0291",
+      "im0324"
+    ]
+  },
+  "annotations": [
+    "AH",
+    "VK"
+  ],
+  "diagnostic_regions": {
+    "whole_original_fov": "original M0 RGB-only FOV",
+    "full_image": "all pixels, includes original FOV-excluded labels",
+    "bright_core": "Gaussian3(G)>=192 AND original FOV",
+    "bright_band": "15x15 square dilation(bright_core) minus bright_core, inside original FOV; all image locations, not a selected crop",
+    "thin_label_proxy": "AH AND 5x5 AH sum<=10 AND 3x3 AH sum<=6 AND FOV; diagnostic only, not a clinical vessel-width label",
+    "fov_edge": "FOV minus constant-zero 15x15 erosion(FOV); evaluation only"
+  },
+  "comparison_gates": {
+    "512_macro_dice_gain_min": 0.01,
+    "256_macro_dice_loss_max": 0.005,
+    "each_size_macro_recall_loss_max": 0.02,
+    "each_image_each_size_recall_loss_max": 0.05,
+    "each_size_thin_proxy_pooled_recall_loss_max": 0.03,
+    "each_size_bright_band_pooled_recall_loss_max": 0.05,
+    "512_bright_band_pooled_fp_reduction_min": 0.1,
+    "empty_region_policy": "report null recall if no GT positives; no claim of protection from an empty set",
+    "ranking_after_all_gates": "descending 512 AH macro Dice, then fewer distance filters, shorter length, lower margin, lower penalty, candidate ID",
+    "no_eligible_candidate": "REJECT_R2_FAMILY_FOR_PL; preserve all runs, do not relax gates; next revision requires its own preregistration"
+  },
+  "gate_scope": "Apply unchanged Q1 numeric protection/gain gates separately to training AH, heldout AH, training VK, heldout VK; no pooled-all substitute for heldout. Report failures, no post-hoc retuning. Passing quality gates is not clinical acceptance.",
+  "order": "sorted image_id, then 256/512, then A/C2; 80 unique real PL frames; optional browser preview tasks excluded from fixed cohort",
+  "metrics": [
+    "Dice",
+    "IoU",
+    "precision",
+    "recall",
+    "tp",
+    "fp",
+    "fn",
+    "tn",
+    "vessel_area_fraction"
+  ],
+  "summaries": [
+    "per_image",
+    "macro_fov",
+    "pooled_regions",
+    "train_and_heldout_separate",
+    "AH_and_VK_separate"
+  ],
+  "retuning": "Forbidden on Q3 heldout/VK. Preserve frozen A28 and C2. Report losses and failures without deleting cases.",
+  "timing": "Collect core (includes stream stalls), DMA transaction and complete inference per frame. Batch throughput is not browser FPS. Manual browser observations separate. Pure DMA and formal repeated performance remain pending.",
+  "frozen_files": {
+    "docs/q1_soft_support_protocol_r2.json": {
+      "bytes": 4626,
+      "sha256": "e1559f5d64d71a93b9a06a7d8e4f6101539de1bdf91758663362177c86e56a83"
+    },
+    "results/q1_quality_2026-10-14/selected_candidate.json": {
+      "bytes": 6449,
+      "sha256": "867ebcd623b8f9e5a721e95ebbefc2237aeac5df2eb2a2d85d07aee4c14c20b9"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "software/preprocessing.py": {
+      "bytes": 4255,
+      "sha256": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18"
+    },
+    "software/metrics.py": {
+      "bytes": 844,
+      "sha256": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99"
+    },
+    "results/m0_stare_2026-10-11/evaluation.json": {
+      "bytes": 64154,
+      "sha256": "4a856c0497e453f22d0637e85bad578dd507f73a83e701b089d97f531b6b8e90"
+    },
+    "data/raw/stare/stare-images.tar": {
+      "bytes": 18674176,
+      "sha256": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433"
+    },
+    "data/raw/stare/labels-ah.tar": {
+      "bytes": 241664,
+      "sha256": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f"
+    },
+    "data/raw/stare/labels-vk.tar": {
+      "bytes": 333824,
+      "sha256": "47474a701536b0cfdb369fdce012be36141e9f44d80387f0179446b5cb0f5576"
+    },
+    "build/deploy/w2_quality_2017_4_r1/w2_quality.bit": {
+      "bytes": 4045678,
+      "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+    },
+    "build/deploy/w2_quality_2017_4_r1/w2_quality.hwh": {
+      "bytes": 379601,
+      "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+    }
+  },
+  "remaining": "W4 full CPU comparison, independent pure DMA, 3 warm+100 measured x3 configurations x3 repeats, resource/power, W5 >=30min and >=1000 frames, final report and video."
+}

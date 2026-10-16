@@ -1,0 +1,32 @@
+{
+  "scope": "Preserved real development failures; none are counted as valid FPGA outputs or board tests",
+  "board_status": "NOT_RUN",
+  "failures": [
+    {
+      "stage": "HLS first export",
+      "evidence": "hls_attempt_01.log",
+      "cause": "Vivado HLS 2017.4 generated date-derived Revision 2610120205 overflows a signed integer in packaging",
+      "resolution": "Reuse A2 workaround: only generated Revision metadata changed to 1. Original Tcl, exact diff and successful ip_packaging_fixed_02.log retained. Compiler/vendor library/RTL untouched.",
+      "csim_scope": "The 12-frame 1376256-word C simulation in this log passed before export failure; export did not pass"
+    },
+    {
+      "stage": "First separate packaging invocation",
+      "evidence": ["ip_packaging_console_01.log", "ip_packaging_fixed_01.log"],
+      "cause": "Relative preparatory paths were used in IP working directory rather than repository root; patched source was not found",
+      "resolution": "Ran preparatory script in repository root, then packaging in the actual IP directory; successful console_02/fixed_02 logs preserved"
+    },
+    {
+      "stage": "First generated RTL simulation",
+      "evidence": ["axis_simulation_attempt_01.log", "build/a3_axis_sim_01/xsim.log"],
+      "cause": "Old XSim did not resolve dynamic task string file names; vectors were not read. An apparent first-frame PASS could compare unknown values, and the second frame failed.",
+      "resolution": "Use fixed literal file names, initialize arrays to unknown and require all input/golden words to be known. Entire simulation rerun in a new directory; 13 complete cases and 1441792 known output words passed in axis_simulation_attempt_02.log.",
+      "withdrawn": "All PASS markers from attempt_01 are invalid and are excluded from coverage"
+    },
+    {
+      "stage": "First and second host runner regression",
+      "evidence": ["host_runner_tests_01.log", "host_runner_tests_02.log"],
+      "cause": "Host Python environment has no IPython display module; first stub fix did not span the repeated-call assertion",
+      "resolution": "Stub only display in the host test for all relevant calls. Real board program still uses IPython. Seven A3 tests passed in host_runner_tests_03.log; full suite passed 58 tests in host_runner_tests_final.log. Mocked data never constitute board evidence."
+    }
+  ]
+}

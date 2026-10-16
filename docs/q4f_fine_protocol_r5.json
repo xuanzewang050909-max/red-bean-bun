@@ -1,0 +1,123 @@
+{
+  "protocol": "Q4F_C8_PROTECTED_FINE_ANGLE_RESIDUAL_R5",
+  "date": "2026-10-15",
+  "baseline": "Frozen C7 d6, threshold112, actual Q4d PL download; A/C2/C5 unchanged",
+  "model_sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6",
+  "train_ids": [
+    "im0001",
+    "im0003",
+    "im0005",
+    "im0077",
+    "im0082",
+    "im0162",
+    "im0235",
+    "im0239",
+    "im0255",
+    "im0319"
+  ],
+  "reused_evaluation_ids_after_selection": [
+    "im0002",
+    "im0004",
+    "im0044",
+    "im0081",
+    "im0139",
+    "im0163",
+    "im0236",
+    "im0240",
+    "im0291",
+    "im0324"
+  ],
+  "sizes": [
+    256,
+    512
+  ],
+  "selection_annotation": "Original training AH only; all 20 images have previously been inspected, no claim of fresh holdout",
+  "high_threshold": 112,
+  "candidate_count": 8,
+  "bright_protection": "max(raw green in replicated17x17)>=192. No additions in protected region. Original Gaussian3 bright core+radius7 band is a subset, with no GT in protection. Baseline predictions preserved exactly.",
+  "fov_protection": "No new pixels within8 pixels of original FOV boundary; baseline C7 pixels preserved",
+  "weak_support": "Residual integer forest score>=candidate threshold outside original bright/FOV protection; original C7 mask preserved. No C5 union, no geometric dilation.",
+  "connectivity": "No added morphology: preserve C7 and protected regions; detector itself must recover fine paths. All original strict gates unchanged.",
+  "training_gates": {
+    "each_case_bright_core_and_band_changed_pixels_max": 0,
+    "each_case_removed_C7_pixels_max": 0,
+    "each_case_dice_delta_min": 0,
+    "each_case_thin_recall_delta_min": 0,
+    "each_case_skeleton_recall_delta_min": 0,
+    "each_size_macro_dice_gain_min": 0.005,
+    "each_size_macro_cldice_gain_min": 0.005,
+    "each_size_added_precision_min": 0.5,
+    "512_pooled_thin_recall_gain_min": 0.03,
+    "512_macro_skeleton_recall_gain_min": 0.02
+  },
+  "selection": "Only unchanged hard-gate eligible grouped candidates; rank Dice+clDice then smaller trees. Final fit on original train AH only. Freeze model before old heldout/VK; no later retune.",
+  "post_selection_gates": "All40 cases xAH/VK: bright core/band pixel identity and baseline-mask superset; each image nondecreasing Dice, thin/centerline recall and adjacent-edge coverage; each size/split/observer mean clDice nondecreasing; im0324/512 both observers thin and centerline recall strictly improve. Any failure rejects the candidate for next board release, no post-evaluation retune.",
+  "sources": [
+    "software/q4f_fine_features.py",
+    "software/q4f_residual.py",
+    "software/q4f_continuity.py",
+    "scripts/train_q4f_fine.py",
+    "scripts/evaluate_q4f_continuity.py",
+    "tests/test_q4f_fine_features.py"
+  ],
+  "resource_preflight": "Preserve C7, reuse windows. New residual forest may require serialized BRAM tree traversal for8 trees depth<=12; no fully-unrolled fit assumption. Longer PL latency acceptable only if explicitly measured and reported. Actual Z2 resource and timing required.",
+  "reference": "https://scikit-image.org/docs/stable/api/skimage.filters.html#skimage.filters.apply_hysteresis_threshold",
+  "trees": [
+    8
+  ],
+  "depths": [
+    10,
+    12
+  ],
+  "thresholds": [
+    64,
+    96,
+    128,
+    160
+  ],
+  "min_samples_leaf": 8,
+  "negative_samples_per_case": 16384,
+  "random_seed": 850,
+  "folds": [
+    [
+      "im0001",
+      "im0003"
+    ],
+    [
+      "im0005",
+      "im0077"
+    ],
+    [
+      "im0082",
+      "im0162"
+    ],
+    [
+      "im0235",
+      "im0239"
+    ],
+    [
+      "im0255",
+      "im0319"
+    ]
+  ],
+  "previous_reports": {
+    "q4f_continuity_r1": "51c1a3bfacca3cd2a6f20946e617fc425014fa5f15dd887dee2dad7bd77b8550",
+    "q4f_continuity_r2": "3254502b3f786f9c10eee980f7061243172e59153caca8425802eeca92ae0f84",
+    "q4f_residual_paths_r4": "aa17328f8709d67921de835877f5aa5958c7b3d9dd6c8877994fac41d00acfd2"
+  },
+  "reason": "R4 low residual-score propagation still fails precision; current4 direction and integer-gray means can discard oblique/subgray evidence. Add finer directions and fractional contrast with fixed2 training-only brightness transforms; test original images using original grouped split.",
+  "feature_schema": "R3 55 features plus24 exact 1/16-gray contrasts/imbalance from16 raster directions, L5/9/15 within19x19. Signed14bit, integer half-away rounding and first-direction ties. No GT/IDs/coordinates input to inference.",
+  "fitting": "Original training AH only; both augmentations of an image remain in same fold. Identity and floor((3*g+2)/4)+32 clipped. Original geometry/labels unchanged. C7 base remains fixed and recomputed on augmented images. No synthetic image can count as actual board evidence.",
+  "augmentations": [
+    [
+      1,
+      1,
+      0
+    ],
+    [
+      3,
+      4,
+      32
+    ]
+  ]
+}

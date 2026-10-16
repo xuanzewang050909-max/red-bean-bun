@@ -1,0 +1,13 @@
+test_csv_quality_must_still_match_recomputed_real_mask (test_browser_w1_board_archive.BoardArchiveRegression.test_csv_quality_must_still_match_recomputed_real_mask) ... ok
+test_missing_close_output_cannot_prove_clean_lifecycle (test_browser_w1_board_archive.BoardArchiveRegression.test_missing_close_output_cannot_prove_clean_lifecycle) ... ok
+test_partial_audit_cannot_accept_host_preview_as_board (test_browser_w1_board_archive.BoardArchiveRegression.test_partial_audit_cannot_accept_host_preview_as_board) ... ok
+test_partial_audit_keeps_all_numeric_checks_and_missing_display_pending (test_browser_w1_board_archive.BoardArchiveRegression.test_partial_audit_keeps_all_numeric_checks_and_missing_display_pending) ... ok
+test_partial_audit_rejects_corrupted_csv_latency (test_browser_w1_board_archive.BoardArchiveRegression.test_partial_audit_rejects_corrupted_csv_latency) ... ok
+test_partial_audit_rejects_invented_fps_after_hidden_frame (test_browser_w1_board_archive.BoardArchiveRegression.test_partial_audit_rejects_invented_fps_after_hidden_frame) ... ok
+test_strict_audit_still_rejects_hidden_display_loop (test_browser_w1_board_archive.BoardArchiveRegression.test_strict_audit_still_rejects_hidden_display_loop) ... ok
+test_supplement_must_be_new_native_session_not_reexport (test_browser_w1_board_archive.BoardArchiveRegression.test_supplement_must_be_new_native_session_not_reexport) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 26.026s
+
+OK

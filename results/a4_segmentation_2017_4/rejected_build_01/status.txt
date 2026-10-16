@@ -1,0 +1,2 @@
+REJECTED_RTL_DEADLOCK_NOT_RELEASED
+Timing success alone is insufficient. This build is preserved as failure evidence only.

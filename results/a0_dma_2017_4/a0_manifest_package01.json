@@ -1,0 +1,79 @@
+{
+  "created_host_utc": "2026-10-11T13:05:59.936568+00:00",
+  "status": "HOST_BUILD_COMPLETE_BOARD_TEST_PENDING",
+  "source_commit": "03aed9534c51db17a621cfe927ec6606ff30cd20",
+  "tool": "Vivado 2017.4",
+  "part": "xc7z020clg400-1",
+  "board_part": "tul.com.tw:pynq-z2:part0:1.0",
+  "pcb_revision": null,
+  "target_runtime": "PYNQ 3.0.1",
+  "build_directory": "build\\a0_dma_2017_4_03",
+  "sources": {
+    "vivado/scripts/build_minimal_dma.tcl": {
+      "bytes": 8325,
+      "sha256": "2f7ad0b1cb6e795c9574343f7e3be50cc4d01ef7ae4a16cb271bb37e18b1e314"
+    },
+    "scripts/a0_dma_board_test.py": {
+      "bytes": 8124,
+      "sha256": "35c8a75b2c7f1e48978c3f003cabd1173ec7519346f3f51178ce95bbbbb97d9f"
+    },
+    "scripts/build_a0_notebook.py": {
+      "bytes": 3226,
+      "sha256": "5aaaa21a4b0ee05ba5ab4be156382a0bb34393622554dc294b9c93a028bd77de"
+    },
+    "scripts/check_a0_hwh.py": {
+      "bytes": 3589,
+      "sha256": "7da76c074d02581af164f1796e7faf826aa4293bcbe2c7ee224e4a71ec2b188a"
+    },
+    "scripts/package_a0.py": {
+      "bytes": 6742,
+      "sha256": "9601f43adf45e4c89859ae1803da9f5d3c8fbe5a49179f3b6afd738860d221ec"
+    },
+    "notebooks/a0_dma_loopback.ipynb": {
+      "bytes": 13246,
+      "sha256": "b78b1a4e3252cf60401e6bfb5dbd2beaebe5d23f5c1e8c97459051f53ff2f868"
+    }
+  },
+  "board_reference": {
+    "board.xml": {
+      "bytes": 54479,
+      "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae"
+    },
+    "preset.xml": {
+      "bytes": 74492,
+      "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
+    },
+    "part0_pins.xml": {
+      "bytes": 9007,
+      "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f"
+    }
+  },
+  "hwh_parser_reference": "PYNQ v3.0.1 / 93ddd21ab623883590a8c8b07f0b157b2855da4b",
+  "artifacts": {
+    "a0_dma.bit": {
+      "bytes": 4045674,
+      "sha256": "9f83090d3ce5d90f34aef32c4b788f09873a4f8c579510bec6a6875d01dfc94c"
+    },
+    "a0_dma.hwh": {
+      "bytes": 300149,
+      "sha256": "0c139cd9ffec89b8f4229adde9084d90d8dec13e61f4821e8b6a76426040ab12"
+    }
+  },
+  "notebook": {
+    "bytes": 13246,
+    "sha256": "b78b1a4e3252cf60401e6bfb5dbd2beaebe5d23f5c1e8c97459051f53ff2f868"
+  },
+  "timing": {
+    "wns_ns": 1.346,
+    "tns_ns": 0.0,
+    "setup_failing_endpoints": 0,
+    "whs_ns": 0.02,
+    "ths_ns": 0.0,
+    "hold_failing_endpoints": 0,
+    "wpws_ns": 3.75,
+    "tpws_ns": 0.0,
+    "pulse_width_failing_endpoints": 0
+  },
+  "test_plan": "70 exact DMA/FIFO loopbacks; short packets, 256/512 frames, increment/random",
+  "scope": "Host implementation + metadata only; board DMA, medical algorithm and final HDMI overlay unverified"
+}

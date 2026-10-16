@@ -1,0 +1,4 @@
+# Host CPU reference only. Do not install these versions into the PYNQ image.
+numpy==2.5.4
+Pillow==12.3.0
+opencv-python-headless==5.0.0.93

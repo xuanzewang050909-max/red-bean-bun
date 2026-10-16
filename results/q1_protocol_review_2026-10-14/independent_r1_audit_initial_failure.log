@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\audit_q1_r1_trial.py", line 143, in <module>
+    main()
+  File "D:\PLD\retina_fpga\scripts\audit_q1_r1_trial.py", line 70, in main
+    require(grid == report['candidates'] and set(images) == set(annotations) == set(train), 'Grid or training split changed')
+  File "D:\PLD\retina_fpga\scripts\audit_q1_r1_trial.py", line 22, in require
+    raise ValueError(message)
+ValueError: Grid or training split changed

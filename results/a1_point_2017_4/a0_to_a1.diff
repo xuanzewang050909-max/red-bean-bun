@@ -1,0 +1,139 @@
+--- proven_A0_r2/build_minimal_dma.tcl
++++ A1/build_a1_point.tcl
+@@ -1,6 +1,7 @@
+-# A0 standard-IP DMA loopback for PYNQ-Z2, Vivado 2017.4.
++# A1 standard-IP DMA loopback for PYNQ-Z2, Vivado 2017.4.
+ # Board preset: immutable TUL board files in references/board.
+-# No HDMI/algorithm RTL; no hardware programming. Output goes to a new build dir.
++# Pointwise diagnostic RTL only; no HDMI/full vessel analysis or programming.
++# Derived reproducibly by scripts/derive_a1_tcl.py; A0 baseline is unchanged.
+ # Usage: vivado -mode batch -source this.tcl -tclargs <new-output-dir> bd|full
+ set root [file normalize [file join [file dirname [info script]] ../..]]
+ if {[version -short] ne "2017.4"} {error "This baseline is verified only with Vivado 2017.4"}
+@@ -12,16 +13,25 @@
+ file mkdir $out
+ file copy [info script] [file join $out build_script_used.tcl]
+ set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+-create_project a0_dma $out -part xc7z020clg400-1
++create_project a1_point $out -part xc7z020clg400-1
+ set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+ set_property target_language Verilog [current_project]
+-create_bd_design a0_dma
++add_files -norecurse [list [file join $root rtl core retina_point_axis.v] [file join $root rtl core contrast_lut.vh]]
++set_property include_dirs [list [file join $root rtl core]] [current_fileset]
++update_compile_order -fileset sources_1
++create_bd_design a1_point
++create_bd_cell -type module -reference retina_point_axis point_stage
++create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 point_control
++set_property -dict [list CONFIG.C_GPIO_WIDTH {32} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_DOUT_DEFAULT {0x00000000} \
++    CONFIG.C_IS_DUAL {1} CONFIG.C_GPIO2_WIDTH {32} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_INTERRUPT_PRESENT {0}] [get_bd_cells point_control]
++connect_bd_net [get_bd_pins point_control/gpio_io_o] [get_bd_pins point_stage/cfg_control]
++connect_bd_net [get_bd_pins point_stage/status_word] [get_bd_pins point_control/gpio2_io_i]
+ create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 ps7_0
+ apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 \
+     -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable"} \
+     [get_bd_cells ps7_0]
+ set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_USE_S_AXI_HP0 {1} \
+-    CONFIG.PCW_S_AXI_HP0_DATA_WIDTH {64} CONFIG.PCW_FPGA0_PERIPHERAL_FREQMHZ {100} \
++    CONFIG.PCW_S_AXI_HP0_DATA_WIDTH {64} CONFIG.PCW_FPGA1_PERIPHERAL_FREQMHZ {100} \
+     CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells ps7_0]
+ # The board preset predates propagate-only frequency fields and sets their
+ # VALUE_SRC to USER (10 MHz). Release those two derived fields for propagation.
+@@ -40,7 +50,7 @@
+ set_property -dict [list CONFIG.TDATA_NUM_BYTES {4} CONFIG.FIFO_DEPTH {1024} \
+     CONFIG.HAS_TKEEP {1} CONFIG.HAS_TLAST {1} CONFIG.IS_ACLK_ASYNC {0}] [get_bd_cells loopback_fifo]
+ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 control_axi
+-set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {1}] [get_bd_cells control_axi]
++set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {2}] [get_bd_cells control_axi]
+ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 memory_axi
+ set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells memory_axi]
+ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 reset_100m
+@@ -55,16 +65,19 @@
+ foreach {a b} {
+     ps7_0/M_AXI_GP0 control_axi/S00_AXI
+     control_axi/M00_AXI axi_dma_0/S_AXI_LITE
++    control_axi/M01_AXI point_control/S_AXI
+     axi_dma_0/M_AXI_MM2S memory_axi/S00_AXI
+     axi_dma_0/M_AXI_S2MM memory_axi/S01_AXI
+     memory_axi/M00_AXI ps7_0/S_AXI_HP0
+-    axi_dma_0/M_AXIS_MM2S loopback_fifo/S_AXIS
++    axi_dma_0/M_AXIS_MM2S point_stage/S_AXIS
++    point_stage/M_AXIS loopback_fifo/S_AXIS
+     loopback_fifo/M_AXIS axi_dma_0/S_AXIS_S2MM
+ } {connect_bd_intf_net [get_bd_intf_pins $a] [get_bd_intf_pins $b]}
+ set clk [get_bd_pins ps7_0/FCLK_CLK0]
+ foreach pin {
+     ps7_0/M_AXI_GP0_ACLK ps7_0/S_AXI_HP0_ACLK
+-    control_axi/ACLK control_axi/S00_ACLK control_axi/M00_ACLK
++    control_axi/ACLK control_axi/S00_ACLK control_axi/M00_ACLK control_axi/M01_ACLK
++    point_control/s_axi_aclk point_stage/aclk
+     memory_axi/ACLK memory_axi/S00_ACLK memory_axi/S01_ACLK memory_axi/M00_ACLK
+     axi_dma_0/s_axi_lite_aclk axi_dma_0/m_axi_mm2s_aclk axi_dma_0/m_axi_s2mm_aclk
+     loopback_fifo/s_axis_aclk reset_100m/slowest_sync_clk
+@@ -77,18 +90,22 @@
+ connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins reset_100m/aux_reset_in]
+ connect_bd_net [get_bd_pins const_zero/dout] [get_bd_pins reset_100m/mb_debug_sys_rst]
+ foreach pin {
+-    control_axi/ARESETN control_axi/S00_ARESETN control_axi/M00_ARESETN
++    control_axi/ARESETN control_axi/S00_ARESETN control_axi/M00_ARESETN control_axi/M01_ARESETN
+     memory_axi/ARESETN memory_axi/S00_ARESETN memory_axi/S01_ARESETN memory_axi/M00_ARESETN
+ } {connect_bd_net [get_bd_pins reset_100m/interconnect_aresetn] [get_bd_pins $pin]}
+-foreach pin {axi_dma_0/axi_resetn loopback_fifo/s_axis_aresetn} {
++foreach pin {axi_dma_0/axi_resetn loopback_fifo/s_axis_aresetn point_stage/aresetn point_control/s_axi_aresetn} {
+     connect_bd_net [get_bd_pins reset_100m/peripheral_aresetn] [get_bd_pins $pin]
+ }
+-# A0 uses bounded polling. IRQ outputs intentionally unconnected, not software-enabled.
++# A1 uses bounded polling. IRQ outputs intentionally unconnected, not software-enabled.
+ assign_bd_address
+ set dma_seg [get_bd_addr_segs -of_objects [get_bd_addr_spaces ps7_0/Data] -filter {NAME =~ *axi_dma_0*}]
+ if {[llength $dma_seg] != 1} {error "Expected exactly one DMA control address segment"}
+ set_property offset 0x40400000 $dma_seg
+ set_property range 64K $dma_seg
++set gpio_seg [get_bd_addr_segs -of_objects [get_bd_addr_spaces ps7_0/Data] -filter {NAME =~ *point_control*}]
++if {[llength $gpio_seg] != 1} {error "Expected one GPIO control segment"}
++set_property offset 0x41200000 $gpio_seg
++set_property range 64K $gpio_seg
+ validate_bd_design
+ foreach {pin prop expected} {
+     reset_100m CONFIG.C_EXT_RESET_HIGH 0
+@@ -107,7 +124,7 @@
+ report_ip_status -file [file join $out ip_status.rpt]
+ set fp [open [file join $out configuration.txt] w]
+ puts $fp "Vivado [version -short]; part [get_property PART [current_project]]; board [get_property BOARD_PART [current_project]]"
+-foreach cell {ps7_0 axi_dma_0 loopback_fifo reset_100m} {
++foreach cell {ps7_0 axi_dma_0 loopback_fifo reset_100m point_control point_stage} {
+     puts $fp "\n$cell [get_property VLNV [get_bd_cells $cell]]"
+     foreach prop [lsort [list_property [get_bd_cells $cell]]] {
+         if {[string match CONFIG.* $prop]} {puts $fp "$prop=[get_property $prop [get_bd_cells $cell]]"}
+@@ -115,13 +132,13 @@
+ }
+ foreach seg [get_bd_addr_segs -hier] {puts $fp "$seg offset=[get_property OFFSET $seg] range=[get_property RANGE $seg]"}
+ close $fp
+-puts "A0_BD_VALIDATED (host only, board test pending)"
++puts "A1_BD_VALIDATED (host only, board test pending)"
+ if {$stage eq "bd"} {exit 0}
+-set bd_file [get_files */a0_dma.bd]
++set bd_file [get_files */a1_point.bd]
+ generate_target all $bd_file
+ set wrapper [make_wrapper -files $bd_file -top]
+ add_files -norecurse $wrapper
+-set_property top a0_dma_wrapper [current_fileset]
++set_property top a1_point_wrapper [current_fileset]
+ update_compile_order -fileset sources_1
+ launch_runs synth_1 -jobs 4
+ wait_on_run synth_1
+@@ -138,10 +155,10 @@
+ set hold_paths [get_timing_paths -delay_type min -max_paths 1]
+ if {[llength $setup_paths] == 0 || [llength $hold_paths] == 0} {error "Missing timing paths"}
+ if {[get_property SLACK $setup_paths] < 0 || [get_property SLACK $hold_paths] < 0} {error "Timing violation; artifact not released"}
+-set hwh [glob -nocomplain [file join $out a0_dma.srcs sources_1 bd a0_dma hw_handoff *.hwh]]
++set hwh [glob -nocomplain [file join $out a1_point.srcs sources_1 bd a1_point hw_handoff *.hwh]]
+ if {[llength $hwh] != 1} {error "Expected one generated HWH: $hwh"}
+ file mkdir [file join $out deploy]
+-file copy [file join $out a0_dma.runs impl_1 a0_dma_wrapper.bit] [file join $out deploy a0_dma.bit]
+-file copy [lindex $hwh 0] [file join $out deploy a0_dma.hwh]
+-puts "A0_BITSTREAM_GENERATED_TIMING_CHECKED (host only; not board DMA PASS)"
++file copy [file join $out a1_point.runs impl_1 a1_point_wrapper.bit] [file join $out deploy a1_point.bit]
++file copy [lindex $hwh 0] [file join $out deploy a1_point.hwh]
++puts "A1_BITSTREAM_GENERATED_TIMING_CHECKED (host only; not board point-stage PASS)"
+ exit 0

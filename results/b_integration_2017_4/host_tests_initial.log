@@ -1,0 +1,46 @@
+test_actual_generated_metadata_and_official_video_derivation (test_b_integration.BMetadataTests.test_actual_generated_metadata_and_official_video_derivation) ... ok
+test_hwh_dma_address_clock_reset_and_video_irq_tampering_rejected (test_b_integration.BMetadataTests.test_hwh_dma_address_clock_reset_and_video_irq_tampering_rejected) ... ok
+test_official_video_config_and_board_ddr_tampering_rejected (test_b_integration.BMetadataTests.test_official_video_config_and_board_ddr_tampering_rejected) ... ok
+test_algorithm_faults_retain_buffers_and_block_next_phase (test_b_integration.BRunnerTests.test_algorithm_faults_retain_buffers_and_block_next_phase) ... ok
+test_bench_failure_keeps_buffers_and_stops_measurements (test_b_integration.BRunnerTests.test_bench_failure_keeps_buffers_and_stops_measurements) ... ok
+test_changed_overlay_blocks_hardware_actions (test_b_integration.BRunnerTests.test_changed_overlay_blocks_hardware_actions) ... ok
+test_color_order_position_and_real_mask_layout (test_b_integration.BRunnerTests.test_color_order_position_and_real_mask_layout) ... ok
+test_display_benchmark_counts_official_submissions (test_b_integration.BRunnerTests.test_display_benchmark_counts_official_submissions) ... ok
+test_invalid_timing_samples_and_contract (test_b_integration.BRunnerTests.test_invalid_timing_samples_and_contract) ... ok
+test_package_immutable_artifacts_and_mutable_notebook_outputs (test_b_integration.BRunnerTests.test_package_immutable_artifacts_and_mutable_notebook_outputs) ... ok
+test_partial_ledger_cannot_claim_timing_complete (test_b_integration.BRunnerTests.test_partial_ledger_cannot_claim_timing_complete) ... ok
+test_reused_bench_buffers_100_timed_plus_3_warmup (test_b_integration.BRunnerTests.test_reused_bench_buffers_100_timed_plus_3_warmup) ... ERROR
+test_staged_digital_flow_and_video_ownership (test_b_integration.BRunnerTests.test_staged_digital_flow_and_video_ownership) ... ok
+test_video_fault_retains_display_frame (test_b_integration.BRunnerTests.test_video_fault_retains_display_frame) ... ok
+test_video_status_detects_error_and_stopped_channel (test_b_integration.BRunnerTests.test_video_status_detects_error_and_stopped_channel) ... ok
+test_all_modes_match_independent_m0_and_keep_verified_a3_features (test_a4_board_runner.SegmentationRunnerTests.test_all_modes_match_independent_m0_and_keep_verified_a3_features) ... ok
+test_exact_threshold_boundary_and_initial_fov (test_a4_board_runner.SegmentationRunnerTests.test_exact_threshold_boundary_and_initial_fov) ... ok
+test_faults_retain_buffers_and_block_full_suite (test_a4_board_runner.SegmentationRunnerTests.test_faults_retain_buffers_and_block_full_suite) ... ok
+test_final_fov_zero_full_and_outer_boundary (test_a4_board_runner.SegmentationRunnerTests.test_final_fov_zero_full_and_outer_boundary) ... ok
+test_fixed_artifacts_and_code_contract_allow_save_metadata_only (test_a4_board_runner.SegmentationRunnerTests.test_fixed_artifacts_and_code_contract_allow_save_metadata_only) ... ok
+test_full_61_frame_suite_frees_only_completed_buffers (test_a4_board_runner.SegmentationRunnerTests.test_full_61_frame_suite_frees_only_completed_buffers) ... ok
+test_invalid_size_mode_rejected_before_memory_or_hardware_access (test_a4_board_runner.SegmentationRunnerTests.test_invalid_size_mode_rejected_before_memory_or_hardware_access) ... ok
+test_isolated_candidate_removed_and_masks_binary (test_a4_board_runner.SegmentationRunnerTests.test_isolated_candidate_removed_and_masks_binary) ... ok
+test_preview_uses_actual_saved_bytes_and_preserves_binary_mask_and_bundle (test_a4_board_runner.SegmentationRunnerTests.test_preview_uses_actual_saved_bytes_and_preserves_binary_mask_and_bundle) ... ok
+
+======================================================================
+ERROR: test_reused_bench_buffers_100_timed_plus_3_warmup (test_b_integration.BRunnerTests.test_reused_bench_buffers_100_timed_plus_3_warmup)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\tests\test_b_integration.py", line 115, in test_reused_bench_buffers_100_timed_plus_3_warmup
+    with contextlib.redirect_stdout(io.StringIO()):summary=runner.measure_group(context,256,False)
+                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 254, in measure_group
+    summary=timing_summary(samples)
+            ^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 211, in timing_summary
+    require(samples.size>0 and np.all(np.isfinite(samples)) and np.all(samples>0),'Invalid monotonic timing samples')
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 27, in require
+    if not value: raise RuntimeError(message)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Invalid monotonic timing samples
+
+----------------------------------------------------------------------
+Ran 24 tests in 13.065s
+
+FAILED (errors=1)

@@ -1,0 +1,109 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2017.4/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Gabriel' on host 'laptop-dpjt23tc' (Windows NT_amd64 version 6.2) on Sun Oct 11 03:03:29 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls'
+INFO: [HLS 200-10] Creating and opening project 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/pixel_unpack'.
+INFO: [HLS 200-10] Adding design file 'pixel_unpack/pixel_unpack.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'pixel_unpack/pixel_unpack_test.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [SYN 201-201] Setting up clock 'control' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'pixel_unpack/pixel_unpack.cpp' ...
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.340 ; gain = 46.672
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 101.359 ; gain = 46.691
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 110.992 ; gain = 56.324
+INFO: [HLS 200-10] Checking synthesizability ...
+WARNING: [SYNCHK 200-23] pixel_unpack/pixel_unpack.cpp:44: variable-indexed range selection may cause suboptimal QoR.
+INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 115.188 ; gain = 60.520
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'stream_out_24.data.V' (pixel_unpack/pixel_unpack.cpp:25).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'stream_in_32.data.V' (pixel_unpack/pixel_unpack.cpp:25).
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (pixel_unpack/pixel_unpack.cpp:38) in function 'pixel_unpack' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-3' (pixel_unpack/pixel_unpack.cpp:71) in function 'pixel_unpack' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-4' (pixel_unpack/pixel_unpack.cpp:88) in function 'pixel_unpack' for pipelining.
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-5' (pixel_unpack/pixel_unpack.cpp:105) in function 'pixel_unpack' for pipelining.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.1' (pixel_unpack/pixel_unpack.cpp:43) in function 'pixel_unpack' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-1.2' (pixel_unpack/pixel_unpack.cpp:49) in function 'pixel_unpack' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-3.1' (pixel_unpack/pixel_unpack.cpp:77) in function 'pixel_unpack' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-4.1' (pixel_unpack/pixel_unpack.cpp:94) in function 'pixel_unpack' completely.
+INFO: [XFORM 203-501] Unrolling loop 'Loop-5.1' (pixel_unpack/pixel_unpack.cpp:111) in function 'pixel_unpack' completely.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 141.227 ; gain = 86.559
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 141.973 ; gain = 87.305
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'pixel_unpack' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'pixel_unpack'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 5'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 4'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 2, Final II = 2, Depth = 3.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 3'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 5.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 4, Final II = 4, Depth = 8.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.756 seconds; current allocated memory: 90.744 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.044 seconds; current allocated memory: 91.179 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'pixel_unpack'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_in_32_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/stream_out_24_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'pixel_unpack/mode' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'pixel_unpack' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'mode' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Generated clock port 'control' for AXI-Lite bundle 'AXILiteS'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'pixel_unpack'.
+INFO: [HLS 200-111]  Elapsed time: 0.083 seconds; current allocated memory: 92.611 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 144.449 ; gain = 89.781
+INFO: [SYSC 207-301] Generating SystemC RTL for pixel_unpack.
+INFO: [VHDL 208-304] Generating VHDL RTL for pixel_unpack.
+INFO: [VLOG 209-307] Generating Verilog RTL for pixel_unpack.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2610110303 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 918)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 03:03:40 2026...
+ERROR: [IMPL 213-28] Failed to generate IP.
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 10.935 seconds; peak allocated memory: 92.611 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sun Oct 11 03:03:40 2026...
+child process exited abnormally

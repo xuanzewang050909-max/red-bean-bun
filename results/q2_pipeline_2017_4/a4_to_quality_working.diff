@@ -1,0 +1,120 @@
+--- original_A4
++++ quality_working
+@@ -1,6 +1,6 @@
+-// A4 derives board-verified A3; all image windows use unmodified vendor code.
+-// Installed HLS headers, line buffers and frame guard are not modified.
+-#include "retina_segmentation_hls.hpp"
++// Q2 WORKING PIPELINE: derived from the immutable board-verified A4.
++// C2 support and dynamic threshold are not yet a paired production overlay.
++#include "retina_quality_hls.hpp"
+ 
+ typedef hls::Mat<512,512,HLS_8UC1> GreenImage;
+ typedef hls::Mat<512,512,HLS_16UC1> SumImage;
+@@ -35,7 +35,7 @@
+ 
+ static void response_carrier(SumImage& sums, hls::stream<ap_uint<32> >& centers,
+                              hls::stream<ap_uint<8> >& enhanced_centers,
+-                             GreenImage& responses, hls::stream<ap_uint<64> >& aligned,
++                             hls::stream<ap_uint<64> >& aligned,
+                              int count) {
+     for(int i=0;i<count;++i) {
+ #pragma HLS PIPELINE II=1
+@@ -51,16 +51,13 @@
+         carrier.range(31,0)=word;
+         carrier.range(39,32)=enhanced;
+         carrier.range(47,40)=response;
+-        hls::Scalar<1,unsigned char> value;
+-        value.val[0]=response;
+-        responses.write(value);
+         aligned.write(carrier);
+     }
+ }
+ 
+ // A separate aligned enhanced stream avoids recomputing Gaussian on the PS.
+ static void enhance_aligned(SumImage& sums, hls::stream<ap_uint<32> >& original,
+-                            GreenImage& enhanced, hls::stream<ap_uint<32> >& centers,
++                            GreenImage& enhanced, GreenImage& support_input, hls::stream<ap_uint<32> >& centers,
+                             hls::stream<ap_uint<8> >& enhanced_centers, int count) {
+     for(int i=0;i<count;++i) {
+ #pragma HLS PIPELINE II=1
+@@ -74,14 +71,34 @@
+         hls::Scalar<1,unsigned char> value;
+         value.val[0]=lut[gaussian];
+         enhanced.write(value);
++        support_input.write(value);
+         centers.write(word);
+         enhanced_centers.write(ap_uint<8>(value.val[0]));
+     }
+ }
+ 
+-static void threshold_binary(GreenImage& responses, GreenImage& binary) {
+-    // Vendor BINARY uses >; 27 implements the frozen >=28 specification.
+-    hls::Threshold(responses,binary,(unsigned char)27,(unsigned char)1,HLS_THRESH_BINARY);
++static void select_response(GreenImage& support,
++                             hls::stream<ap_uint<64> >& original,
++                             GreenImage& responses,hls::stream<ap_uint<64> >& selected,
++                             int count,ap_uint<1> use_c2) {
++    for(int i=0;i<count;++i) {
++#pragma HLS PIPELINE II=1
++        hls::Scalar<1,unsigned char> evidence=support.read();
++        ap_uint<64> carrier=original.read();
++        ap_uint<8> response=carrier.range(47,40);
++        if(use_c2 && !evidence.val[0])
++            response=response>=28 ? ap_uint<8>(response-28) : ap_uint<8>(0);
++        carrier.range(47,40)=response;
++        hls::Scalar<1,unsigned char> value;
++        value.val[0]=response;
++        responses.write(value);
++        selected.write(carrier);
++    }
++}
++
++static void threshold_binary(GreenImage& responses,GreenImage& binary,ap_uint<8> threshold) {
++    // Working ABI requires threshold 1..255. W2 must reject zero before START.
++    hls::Threshold(responses,binary,(unsigned char)(threshold-1),(unsigned char)1,HLS_THRESH_BINARY);
+ }
+ 
+ static void initial_fov(GreenImage& binary, hls::stream<ap_uint<64> >& aligned,
+@@ -159,7 +176,7 @@
+     }
+ }
+ 
+-void retina_segmentation_hls(hls::stream<ap_uint<32> >& source,
++void retina_quality_hls(hls::stream<ap_uint<32> >& source,
+                              hls::stream<ap_uint<32> >& result, ap_uint<32> control) {
+ #pragma HLS INTERFACE axis port=source
+ #pragma HLS INTERFACE axis port=result
+@@ -169,11 +186,16 @@
+     int side=control[2] ? 256 : 512;
+     int count=side*side;
+     GreenImage green(side,side),enhanced(side,side),responses(side,side),binary(side,side);
++    GreenImage support_input(side,side),support(side,side);
+     GreenImage initial(side,side),dilated(side,side),closed(side,side),count_input(side,side),counts(side,side);
+     SumImage gaussian_sums(side,side),box_sums(side,side);
+     hls::stream<ap_uint<32> > original,centers;
+     hls::stream<ap_uint<8> > enhanced_centers;
+-    hls::stream<ap_uint<64> > aligned_response,aligned_initial,aligned_closed;
++    hls::stream<ap_uint<64> > original_response,aligned_response,aligned_initial,aligned_closed;
++#pragma HLS STREAM variable=original_response depth=8192
++#pragma HLS RESOURCE variable=original_response core=FIFO_BRAM
++#pragma HLS STREAM variable=support_input.data_stream depth=32
++#pragma HLS STREAM variable=support.data_stream depth=32
+ #pragma HLS STREAM variable=original depth=2048
+ #pragma HLS RESOURCE variable=original core=FIFO_BRAM
+ #pragma HLS STREAM variable=centers depth=8192
+@@ -198,10 +220,12 @@
+ #pragma HLS STREAM variable=counts.data_stream depth=32
+     split_words(source,green,original,count);
+     filter_sum(green,gaussian_sums);
+-    enhance_aligned(gaussian_sums,original,enhanced,centers,enhanced_centers,count);
++    enhance_aligned(gaussian_sums,original,enhanced,support_input,centers,enhanced_centers,count);
+     background_sum(enhanced,box_sums);
+-    response_carrier(box_sums,centers,enhanced_centers,responses,aligned_response,count);
+-    threshold_binary(responses,binary);
++    response_carrier(box_sums,centers,enhanced_centers,original_response,count);
++    retina_c2_support(support_input,support);
++    select_response(support,original_response,responses,aligned_response,count,control[3]);
++    threshold_binary(responses,binary,control.range(15,8));
+     initial_fov(binary,aligned_response,initial,aligned_initial,count);
+     dilate_zero(initial,dilated);
+     erode_zero(dilated,closed);

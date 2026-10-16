@@ -1,0 +1,13 @@
+test_complete_pairs_parameters_warmup_and_twenty_frames (test_q4_archive_coverage.CoverageTests.test_complete_pairs_parameters_warmup_and_twenty_frames) ... ok
+test_diagnostic_incomplete_is_explicit_and_extra_manual_runs_preserved (test_q4_archive_coverage.CoverageTests.test_diagnostic_incomplete_is_explicit_and_extra_manual_runs_preserved) ... ok
+test_missing_pair_or_threshold_is_rejected_even_with_full_loop (test_q4_archive_coverage.CoverageTests.test_missing_pair_or_threshold_is_rejected_even_with_full_loop) ... ok
+test_unrelated_algorithm_loop_or_hidden_warmup_cannot_pass (test_q4_archive_coverage.CoverageTests.test_unrelated_algorithm_loop_or_hidden_warmup_cannot_pass) ... ok
+test_current_upload_notebook_extracts_exact_package_and_rejects_rerun (test_q4_archive_coverage.NotebookTests.test_current_upload_notebook_extracts_exact_package_and_rejects_rerun) ... ok
+test_current_upload_tamper_rejected_before_extract_or_hardware (test_q4_archive_coverage.NotebookTests.test_current_upload_tamper_rejected_before_extract_or_hardware) ... ok
+test_reference_mismatch_stops_collection_preserves_actual_output_and_no_retry (test_q4_batch.BatchTests.test_reference_mismatch_stops_collection_preserves_actual_output_and_no_retry) ... Executing <Task pending name='Task-1' coro=<BatchTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_q4_batch.py:38> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.140 seconds
+ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 0.802s
+
+OK

@@ -1,0 +1,38 @@
+{
+  "pynq": "3.0.1",
+  "python": "3.10.4",
+  "kernel": "5.15.19-xilinx-v2022.1",
+  "machine": "armv7l",
+  "board_clock_utc_unverified": "2022-10-24T07:10:51.106168+00:00",
+  "runtime_driver_sources": {
+    "DMA": {
+      "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/lib/dma.py",
+      "bytes": 26228,
+      "sha256": "a7e92fd180d9fa3322e81b49bb4141e08c8f5c8cb685fe608793b46acfe11d49"
+    },
+    "AxiGPIO": {
+      "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/lib/axigpio.py",
+      "bytes": 10935,
+      "sha256": "bb386977825c5c36ee4e5ed814331c1f3105858135fc581362d01e9955d21f27"
+    },
+    "allocate": {
+      "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/buffer.py",
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+    },
+    "Overlay": {
+      "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py",
+      "bytes": 39749,
+      "sha256": "949bbd3a1d296b487702f4c49013de24c3d6eb44da9fb2ebe1ada70d054237d7"
+    }
+  },
+  "runtime_fclk0_mhz_register_readback": 100.0,
+  "drivers": {
+    "dma": "pynq.lib.dma.DMA",
+    "control": "pynq.lib.axigpio.AxiGPIO",
+    "observer": "pynq.lib.axigpio.AxiGPIO"
+  },
+  "numpy": "1.21.5",
+  "Pillow": "9.0.1",
+  "tornado": "6.1"
+}

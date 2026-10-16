@@ -1,0 +1,13 @@
+{
+  "status": "PASS_EXPECTED_VISIBLE_LAYOUT_ON_SUPPLIED_PHOTOGRAPHS",
+  "client_received_date": "2026-10-12",
+  "color_photo": "monitor_color_photo.jpg",
+  "color_observation": "Blue, green, red panels in order with white outer border and central position cross match the saved reference.",
+  "medical_photo": "monitor_medical_photo.jpg",
+  "medical_observation": "Left raw-green grayscale fundus, right green candidate overlay, original captions and white progress marker correspond to the actual saved FPGA output display.",
+  "comparison_reference": "b_profile_display.png",
+  "numeric_reference_verification": "Separate independent array/pixel/BGR/Notebook checks passed.",
+  "original_board_visual_status": "PENDING_USER_OBSERVATION",
+  "original_json_modified": false,
+  "limits": "Static visible regions only. Some far-right screen area is near the photograph boundary. No calibrated scan Hz, continuous animation/FPS/flicker, or medical-quality assertion."
+}

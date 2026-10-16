@@ -1,0 +1,23 @@
+{
+  "status": "USER_REPORTED_COMPLETE_AWAITING_ORIGINALS",
+  "screenshot": {
+    "path": "D:\\PLD\\retina_c7_system\\build\\board_results\\c7_w4_browser_2026-10-16_pending\\user_completion.png",
+    "bytes": 498600,
+    "sha256": "fc6b969a104a360c38eae4c47432cfaa4ed24753c12414a137be305c52b6ae2e"
+  },
+  "visible_marker": "W4B_BROWSER_COMPLETE",
+  "claimed_real_tasks": 309,
+  "source": "User screenshot and downloaded statement; not independently audited archive",
+  "missing_files": [
+    "c7_w4_browser_results.zip",
+    "c7_w4_browser.ipynb"
+  ],
+  "searched_roots": [
+    "C:/Users/Gabriel/Downloads",
+    "C:/Users/Gabriel/Desktop",
+    "C:/Users/Gabriel/Documents"
+  ],
+  "browser_default_download": "C:/Users/Gabriel/Downloads",
+  "audit_status": "NOT_RUN_NO_ARCHIVE",
+  "next": "Locate downloaded originals or complete old Notebook export; do not rerun formal browser collection"
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS_19_ARCHIVE_TOOL_HOST_CHECKS",
+  "tested_host_utc_recorded_after_run": "2026-10-11T17:55:10.706535+00:00",
+  "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -p test_a2_archive.py -v",
+  "observed_tests_run": 19,
+  "positive_checks": 2,
+  "negative_checks": 17,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "pillow": "12.3.0",
+  "limits": "Real downloaded A2 evidence was checked offline. Negative checks mutate temporary in-memory copies; no new board run or real package/source modification.",
+  "sources": {
+    "scripts/archive_a2_board_results.py": {
+      "sha256": "84753309b63030067d2ddc88c69df78c7991e3b467d7cf45443a51e42ec06755"
+    },
+    "tests/test_a2_archive.py": {
+      "sha256": "5db3c7e44ff3efa0a290c0df25e4bbc5b67e4561a2dd6cc8519942bae6d10476"
+    },
+    "software/reference.py": {
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    }
+  },
+  "archive_copy_check": "PASS_ALL_9_RAW_FILE_SHA256_AND_TWO_DOWNLOADED_ORIGINALS",
+  "original_json_copy_check": "PASS_EXACT_BYTES"
+}

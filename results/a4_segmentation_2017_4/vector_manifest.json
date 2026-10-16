@@ -1,0 +1,204 @@
+[
+  {
+    "case": 1,
+    "side": 256,
+    "mode": 0,
+    "pattern": "gradient",
+    "input_sha256": "79a848ddc8404189a91a5ed51281cad2dea0b4fe8b03ab4e4214d22ae8cf8469",
+    "expected_sha256": "79a848ddc8404189a91a5ed51281cad2dea0b4fe8b03ab4e4214d22ae8cf8469",
+    "labels_used": false
+  },
+  {
+    "case": 2,
+    "side": 256,
+    "mode": 1,
+    "pattern": "random",
+    "input_sha256": "c88d5096d5bba29b98528c4b0f7dc6d806a7cef6cdf239868fd5a1c27f697edb",
+    "expected_sha256": "8274345fb4af356b9025d255b299b0e3d75020970871e65a93444906615ca5cb",
+    "labels_used": false
+  },
+  {
+    "case": 3,
+    "side": 256,
+    "mode": 2,
+    "pattern": "gradient",
+    "input_sha256": "79a848ddc8404189a91a5ed51281cad2dea0b4fe8b03ab4e4214d22ae8cf8469",
+    "expected_sha256": "e3ac6d24f09c2104bc2e21f422db2ecc1fc32a5a53e485eefb134427653aee58",
+    "labels_used": false
+  },
+  {
+    "case": 4,
+    "side": 512,
+    "mode": 3,
+    "pattern": "random",
+    "input_sha256": "6bbf0dbf0761d6c004d481cf5131d0d7830e044f01e4c74b5d75e61b82253b04",
+    "expected_sha256": "955e3e47adf04c4a0caacf840658d1db5269638e154a3eca6d5aeb1dff614d77",
+    "labels_used": false
+  },
+  {
+    "case": 5,
+    "side": 256,
+    "mode": 1,
+    "pattern": "impulse",
+    "input_sha256": "fec0e1830a81ab67c75f4c82c1ff90960e780f099db6e004159160aff61a666c",
+    "expected_sha256": "f90159fea4c3fe8e106cd8e08389c825035009d8eb24a1e998a15a6a63f0c34c",
+    "labels_used": false
+  },
+  {
+    "case": 6,
+    "side": 256,
+    "mode": 2,
+    "pattern": "checker",
+    "input_sha256": "3bcca91a7114a0d7da52262e73bb52db391a78699b5003e1a16fccb75b3a5e89",
+    "expected_sha256": "c3b0ace468a14d92559a2c4e83da7f085a7f811cd0e159ef83561973b1ffb482",
+    "labels_used": false
+  },
+  {
+    "case": 7,
+    "side": 256,
+    "mode": 3,
+    "pattern": "white",
+    "input_sha256": "462df765c8055a2c96be8d5bb1fc59846fea246c5261bf71ba36c4f9657ecb7f",
+    "expected_sha256": "94a640d4bea7efac5c6d5a54175ee33abb2a211330722442d729f89c168f67ef",
+    "labels_used": false
+  },
+  {
+    "case": 8,
+    "side": 256,
+    "mode": 3,
+    "pattern": "black",
+    "input_sha256": "a43ecfd9a84ff29b8cfead259d692d688fddd5ba8cd7a0d0f4800af03b0b3b86",
+    "expected_sha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "labels_used": false
+  },
+  {
+    "case": 9,
+    "side": 512,
+    "mode": 3,
+    "pattern": "vessel_stripes",
+    "input_sha256": "6a987e0d0573cfc5041723f38ed638bc5d5db9f7c55d9f0352537b5a08e65051",
+    "expected_sha256": "897d71aab9922c13355844cf1ea44234c5d83507617788a84f2b1c0ece309d9d",
+    "labels_used": false
+  },
+  {
+    "case": 10,
+    "side": 256,
+    "mode": 3,
+    "pattern": "stare",
+    "input_sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+    "expected_sha256": "57d2c84e5a4cac2355fd5f7c4654f71d9ff81b0ec8047728e5ffa5857197af6f",
+    "labels_used": false,
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 256,
+      "nominal_scale": 0.3657142857142857,
+      "resized_width": 256,
+      "resized_height": 221,
+      "pad_left": 0,
+      "pad_top": 17,
+      "pad_right": 0,
+      "pad_bottom": 18,
+      "effective_scale_x": 0.3657142857142857,
+      "effective_scale_y": 0.3652892561983471,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    },
+    "raw_rgb_member": "im0001.ppm.gz",
+    "raw_rgb_member_sha256": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7"
+  },
+  {
+    "case": 11,
+    "side": 512,
+    "mode": 3,
+    "pattern": "stare",
+    "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+    "expected_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+    "labels_used": false,
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 512,
+      "nominal_scale": 0.7314285714285714,
+      "resized_width": 512,
+      "resized_height": 443,
+      "pad_left": 0,
+      "pad_top": 34,
+      "pad_right": 0,
+      "pad_bottom": 35,
+      "effective_scale_x": 0.7314285714285714,
+      "effective_scale_y": 0.7322314049586777,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    },
+    "raw_rgb_member": "im0001.ppm.gz",
+    "raw_rgb_member_sha256": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7"
+  },
+  {
+    "case": 12,
+    "side": 256,
+    "mode": 3,
+    "pattern": "fov_zero",
+    "input_sha256": "260a12af92b9b305f01df80e82c1279a9c84b94cf381e7ae38be155b5021703d",
+    "expected_sha256": "731525f621479559ed4aefa751a39093b777788a94e2d95b6673b4252cc4a3f8",
+    "labels_used": false
+  },
+  {
+    "case": 13,
+    "side": 512,
+    "mode": 3,
+    "pattern": "fov_edge",
+    "input_sha256": "6fafc20552ec2fa8e3078424633fe4061a75df6a99a405efff1182b328760fd9",
+    "expected_sha256": "fd45c6f9821bc9b321382b6e1c83cdd374897e5783bd6b2a0b5aef550f2768b7",
+    "labels_used": false
+  },
+  {
+    "case": 14,
+    "side": 256,
+    "mode": 3,
+    "pattern": "broken_line",
+    "input_sha256": "b989da40d064af41f17a3d6ec62a4e37ac87fa17e5a8ce36062aced95ab27f7d",
+    "expected_sha256": "42f5df9773f95fa5d78eb87d7b2a45c6f59b03205a77f0aa8c630f5f3610c3a6",
+    "labels_used": false
+  },
+  {
+    "case": 15,
+    "side": 256,
+    "mode": 3,
+    "pattern": "isolated",
+    "input_sha256": "496c5b0a589c64ddf4df77000536288e0380ce24c7eae46b66fc715340eefd50",
+    "expected_sha256": "2d85b30b21a3704e19fce050e687b437ca24cf56d5fcc818a18869d53887f538",
+    "labels_used": false
+  },
+  {
+    "case": 16,
+    "side": 256,
+    "mode": 3,
+    "pattern": "impulse",
+    "input_sha256": "fec0e1830a81ab67c75f4c82c1ff90960e780f099db6e004159160aff61a666c",
+    "expected_sha256": "831c8e8665d59a5e853ddbcff77d962a23479217d12c6ca56ec7e5fb97718704",
+    "labels_used": false
+  },
+  {
+    "case": 17,
+    "side": 256,
+    "mode": 3,
+    "pattern": "random",
+    "input_sha256": "5fa52c898fa3df186fd0ef18c96bc097ea8733b905b111b0d1df5f1a6776909b",
+    "expected_sha256": "029f93ab83dd7a813b6ffbfda103b4279d5465cae3b9e4dc30906a79f95d33fe",
+    "labels_used": false
+  },
+  {
+    "case": 18,
+    "side": 256,
+    "mode": 3,
+    "pattern": "black",
+    "input_sha256": "a43ecfd9a84ff29b8cfead259d692d688fddd5ba8cd7a0d0f4800af03b0b3b86",
+    "expected_sha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+    "labels_used": false
+  }
+]

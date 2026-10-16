@@ -1,0 +1,26 @@
+{
+  "status": "ARCHIVE_VERIFIER_SOURCES_RECORDED",
+  "host_checks": 29,
+  "source_files": {
+    "scripts/archive_b_board_results.py": {
+      "bytes": 19618,
+      "sha256": "b7141ea9ee4a2fb51d67f3b357106d5cd38527889f3b1da6f9178b556791ce5b"
+    },
+    "scripts/archive_a4_board_results.py": {
+      "bytes": 19806,
+      "sha256": "d64a3d77c1f2b3b61fe6377e05d5d20745ef6b363f174a3ea8a11cb92d4d43f8"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "tests/test_b_archive.py": {
+      "bytes": 8614,
+      "sha256": "56ebd53d40240bf66625bca6840412ce6d0ffed946883e53b491d00785b7f4e2"
+    }
+  },
+  "test_log": {
+    "bytes": 3019,
+    "sha256": "86d2f66c5850fd27fc8868d953e2551fa8ba0ce3a940245bb31ac41f48ad187f"
+  }
+}

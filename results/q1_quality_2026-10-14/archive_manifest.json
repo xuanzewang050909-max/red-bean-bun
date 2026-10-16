@@ -1,0 +1,66 @@
+{
+  "status": "ARCHIVED_CPU_RESEARCH_NOT_BOARD_EVIDENCE",
+  "client_date": "2026-10-14",
+  "files": {
+    "host_tests_26.log": {
+      "bytes": 3861,
+      "sha256": "c7f97f5b19e8240de9064a1ae766a2b40f63d924cf5e855184a32ea637d3c1b8"
+    },
+    "r1/execution.log": {
+      "bytes": 1279,
+      "sha256": "d70010c7d782a50ef1d0dce8782160c53c36c0fac91320cb6343771cd396821f"
+    },
+    "r1/metrics.csv": {
+      "bytes": 1230919,
+      "sha256": "f850baec2f246763250b85598f70cef6da3fd789ba006bd61c96718845f04992"
+    },
+    "r1/protocol_snapshot.json": {
+      "bytes": 100243,
+      "sha256": "c37c0a39bdb543198d24ce506be215149516b064fa6f84cd8700dc2100f3cd46"
+    },
+    "r1/training_report.json": {
+      "bytes": 3751798,
+      "sha256": "8c6df8b5e326410da5cfb4d39d72ec9f50285cd06f0f7ecee4479facd8e80c78"
+    },
+    "r1/verification.json": {
+      "bytes": 586,
+      "sha256": "1addfc916aa60bf78aa52b3ebed71b52ab675f818eceeeb709838db2eaa748f9"
+    },
+    "r1/verification.log": {
+      "bytes": 1079,
+      "sha256": "15a8db61ae9a17c5327ef5c15c9f65e8a99f2f70c544560c390fe975a84d8382"
+    },
+    "r2/execution.log": {
+      "bytes": 1405,
+      "sha256": "e8883c34cb34801b7784827c486c30bd2f7d7ef9a5a70fcf6c5c9faddb889ade"
+    },
+    "r2/metrics.csv": {
+      "bytes": 631229,
+      "sha256": "d1f3a1d1dd26bd4c79f35f4760fd19eb4f40008e2ea203a08b68ae1d8bac9063"
+    },
+    "r2/protocol_snapshot.json": {
+      "bytes": 100813,
+      "sha256": "98f179a9c9fbd9f71091d53d157bb264fd24f813ed2e99c4c7b4c1b1a51fc753"
+    },
+    "r2/training_report.json": {
+      "bytes": 1908063,
+      "sha256": "1c40c681382a8c2ee8909fdd549464bcb46ef0a8eeb1d7c1f848eacdf6ca1347"
+    },
+    "r2/verification.json": {
+      "bytes": 774,
+      "sha256": "50a40646f5a87689f0c8a594fe639a834a53abf2aad74dc206779eb0b04b2d6e"
+    },
+    "r2/verification.log": {
+      "bytes": 1203,
+      "sha256": "237957f923ca17d51f3d0767c4c90462775775b03f3277bc6c6481a902c5f8e4"
+    },
+    "selected_candidate.json": {
+      "bytes": 6449,
+      "sha256": "867ebcd623b8f9e5a721e95ebbefc2237aeac5df2eb2a2d85d07aee4c14c20b9"
+    },
+    "training_review.md": {
+      "bytes": 5703,
+      "sha256": "fd384613daf926abb3a545cb24e6dbe8902f11a2003f632d8e8793efca408b1d"
+    }
+  }
+}

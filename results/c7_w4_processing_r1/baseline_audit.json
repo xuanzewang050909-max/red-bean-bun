@@ -1,0 +1,55 @@
+{
+  "status": "C7_BASELINE_BYTE_AUDIT_PASS",
+  "unchanged_c7_files": 138,
+  "protected_old_files": 179,
+  "protected_missing": [],
+  "protected_changed": [],
+  "hardware_manifest": {
+    "revision": "q4d_rq71_c7_experimental_r1",
+    "board_status": "NOT_RUN",
+    "hardware_clock_hz": 100000000,
+    "observer_identity": 1381054257,
+    "candidate": {
+      "id": "C7_d6_8trees_r1",
+      "trees": 8,
+      "max_depth": 6,
+      "recommended_score_threshold": 112,
+      "features": 36,
+      "model_sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6"
+    },
+    "routed_gate": {
+      "bytes": 48756,
+      "sha256": "5035fda207673a17f64098adb0dcc9d794e766acff19a8c5b6c88deb52bb4d2c"
+    },
+    "artifacts": {
+      "q4d_detector.bit": {
+        "bytes": 4045680,
+        "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+      },
+      "q4d_detector.hwh": {
+        "bytes": 379665,
+        "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+      },
+      "a0_dma_board_test.py": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "pynq_q4d/quality_observer.py": {
+        "bytes": 5088,
+        "sha256": "b3321acdb8d8cc961e32c0d36cf530093477346bf98cbbcf2190ebc94eb81086"
+      }
+    },
+    "resources": {
+      "Slice LUTs": 38373.0,
+      "Slice Registers": 24833.0,
+      "Block RAM Tile": 97.5,
+      "DSPs": 30.0
+    },
+    "wns_ns": 0.107,
+    "whs_ns": 0.026
+  },
+  "baseline_commit": "793e1f9914081ec7f2837fd43bced8d4af09dfea",
+  "r1_status": "",
+  "r2_status": "",
+  "runtime_scope": "No new RTL/bit; reuse same trusted C7. New W4 performance BOARD_NOT_RUN."
+}

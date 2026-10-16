@@ -1,0 +1,114 @@
+{
+  "status": "W4B_BOARD_BROWSER_DATA_VERIFIED",
+  "source_verification": {
+    "bytes": 13102,
+    "sha256": "9dbdb57145cf4cd74e2393b884a6f70ecf48d0d657e30dc354582ab5765f6aa9"
+  },
+  "session_status": {
+    "session_id": "ad91547ff308484c96bb040fd68d9121",
+    "service_state": "CLOSED",
+    "hardware_state": "IDLE",
+    "overlay_downloads": 1,
+    "last_completed_frame_status": 5062965,
+    "active_run_id": null,
+    "pending": 0,
+    "completed": 309,
+    "accepted": 309,
+    "run_limit": 309,
+    "retained_buffer_count": 0,
+    "error": null,
+    "evidence_kind": "PYNQ_PL_DMA",
+    "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+  },
+  "screenshot_last_run_matches": true,
+  "aggregate_timing": {
+    "pl_core_frame_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 3.03961,
+      "mean": 3.0403231666666666,
+      "p95": 3.0425805
+    },
+    "dma_transaction_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 5.3795045,
+      "mean": 7.101648679999999,
+      "p95": 11.13013875
+    },
+    "inference_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 32.093695,
+      "mean": 36.83928053,
+      "p95": 38.26684590000001
+    },
+    "input_read_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 87.9204185,
+      "mean": 88.18311584,
+      "p95": 91.79145425
+    },
+    "raw_save_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 144.461108,
+      "mean": 147.09359781,
+      "p95": 152.8572517
+    },
+    "evaluation_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 157.4246955,
+      "mean": 158.17278183333335,
+      "p95": 165.98819615
+    },
+    "array_decode_overlay_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 182.5110275,
+      "mean": 184.72846950333334,
+      "p95": 195.5540861
+    },
+    "png_fromarray_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 16.409744,
+      "mean": 17.023851873333335,
+      "p95": 20.54623
+    },
+    "png_save_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 708.823433,
+      "mean": 722.6185733733333,
+      "p95": 735.5565248500001
+    },
+    "png_file_hash_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 29.046665,
+      "mean": 30.01016258,
+      "p95": 35.65277755
+    },
+    "file_inventory_hash_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 99.163532,
+      "mean": 99.95969724666666,
+      "p95": 106.16266854999999
+    },
+    "worker_result_ns": {
+      "unit": "ms",
+      "n": 300,
+      "median": 1468.555847,
+      "mean": 1489.8829725,
+      "p95": 1523.174432
+    }
+  },
+  "units_note": "Raw record fields ending _ns are nanoseconds. verification.json server_groups latency_statistics values are milliseconds (verifier divides by 1e6). Browser groups are milliseconds and FPS.",
+  "preserved_original_evidence": true,
+  "original_board_acceptance_marker_left_unchanged": true,
+  "scope": "Formal fixed im0001/512/C7/T112/final/fast foreground browser measurement, not W4c/W5/quality pass"
+}

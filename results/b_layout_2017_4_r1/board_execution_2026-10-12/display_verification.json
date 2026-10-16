@@ -1,0 +1,27 @@
+{
+  "status": "PASS_FULL_CANVAS_PAIRS_GEOMETRY_ACTUAL_GATE_FINAL_AND_NOTEBOOK",
+  "pixel_gate_mismatched_pixels": 0,
+  "final_pair_mismatched_pixels": 0,
+  "pixels_per_canvas": 921600,
+  "actual_markers": [
+    0,
+    99,
+    100
+  ],
+  "geometry_markers": [
+    0,
+    99,
+    100,
+    -1
+  ],
+  "pixel_gate_png_bytes_identical": true,
+  "final_png_bytes_identical": true,
+  "png_sha256": {
+    "b_color_pattern.png": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492",
+    "b_layout_reference.png": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d",
+    "b_layout_cached.png": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d",
+    "b_layout_original_final.png": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084",
+    "b_layout_cached_final.png": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084"
+  },
+  "limit": "Caption rectangles excluded only from host independent-font reconstruction; original/cached pairs and final versus actual gate compared over every pixel including captions. Photos reviewed separately."
+}

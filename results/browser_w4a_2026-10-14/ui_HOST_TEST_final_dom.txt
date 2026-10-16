@@ -1,0 +1,101 @@
+- banner:
+  - paragraph: PYNQ-Z2 / ETHERNET / W4a
+  - heading "眼底影像 FPGA 实验" [level=1]
+  - paragraph: 原图、增强、血管候选与叠加来自同一次任务。A/C2 与阈值由 FPGA 锁存执行；每帧回读核对。
+  - text: READY / IDLE
+  - generic: 完成 50 / 200 · 待执行 0
+- generic: 主机测试预览 · 使用软件测试替身，所有图像和计时均不是本次实体板结果。
+- main:
+  - region "FPGA 参数":
+    - text: 眼底图像
+    - combobox "眼底图像":
+      - option "im0001 · STARE" [selected]
+      - option "im0002 · STARE"
+    - text: 处理尺寸
+    - combobox "处理尺寸":
+      - option "512 × 512" [selected]
+      - option "256 × 256"
+    - text: PL 算法
+    - combobox "PL 算法":
+      - option "C2 · 双侧支持" [selected]
+      - option "A · 原始基线"
+    - text: PL 处理模式
+    - combobox "PL 处理模式":
+      - option "最终掩膜 · 模式 3" [selected]
+      - option "闭运算候选 · 模式 2"
+      - option "初始阈值候选 · 模式 1"
+      - option "输入旁路 · 模式 0"
+    - text: 分割阈值
+    - spinbutton "分割阈值 1–255；点击运行写入 PL": "28"
+    - generic: 1–255；点击运行写入 PL
+    - text: 图像传输方案
+    - combobox "图像传输方案":
+      - option "原方案 · 默认 PNG"
+      - option "快速候选 · 无损 PNG" [selected]
+    - button "运行 FPGA"
+    - button "预热 3 帧 + 测量 20 帧"
+    - button "停止后续请求" [disabled]
+    - paragraph: 本轮比较两种 PS 无损图像传输设置，算法保持不变，提速待测。A 为原基线；C2 为亮区误检改进候选。更换图像、算法或阈值后点击运行，会重新发送至 PL。旁路模式没有增强或分割结果。叠加滑块仅页面显示；导出叠加 PNG 固定 65%。
+  - heading "当前结果" [level=2]
+  - generic: im0001 · 512 × 512 · 同一任务 0c644a7373
+  - text: 叠加透明度（仅显示）
+  - slider "叠加透明度（仅显示）": "65"
+  - status: 65%
+  - region "同帧图像":
+    - article:
+      - heading "原始眼底 RGB 同一输入" [level=3]:
+        - text: 原始眼底 RGB
+        - generic: 同一输入
+    - article:
+      - heading "FPGA 增强 PL 输出" [level=3]:
+        - text: FPGA 增强
+        - generic: PL 输出
+    - article:
+      - heading "血管候选掩膜 PL 输出" [level=3]:
+        - text: 血管候选掩膜
+        - generic: PL 输出
+    - article:
+      - heading "血管叠加 实际掩膜" [level=3]:
+        - text: 血管叠加
+        - generic: 实际掩膜
+  - region "评价与性能":
+    - heading "血管面积 / 有效 FOV" [level=3]
+    - strong: 10.33%
+    - generic: 21,861 / 211,527 像素 · PS 计数
+    - heading "Dice / IoU" [level=3]
+    - strong: AH 0.522 / 0.353 · VK 0.505 / 0.338
+    - generic: 当前帧 Dice / IoU；不是整体质量验收
+    - heading "PL 核心窗口" [level=3]
+    - strong: 2.622 ms
+    - generic: 硬件周期；包含流式等待
+    - heading "DMA 事务" [level=3]
+    - strong: 519.64 ms
+    - generic: 含流式 PL 运算，不能当作纯搬运
+    - heading "完整推理" [level=3]
+    - strong: 520.51 ms
+    - generic: 配置 → DMA 完成 → 普通 CPU 快照
+    - heading "请求 → 浏览器绘制" [level=3]
+    - strong: 675.4 ms
+    - generic: 客户端单调时钟，双 rAF 近似
+    - heading "实际展示 FPS" [level=3]
+    - strong: 1.51 FPS
+    - generic: 连续新任务的完整请求 / 解码 / 绘制
+  - heading "运行证据" [level=2]
+  - status: 任务完成，原始 DMA 数组和分段记录已保存。连续帧 20 / 20。
+  - button "导出当前任务"
+  - button "导出本次会话"
+  - term: 任务 / 配置
+  - definition: 0c644a7373114f8f8cdaed6568627717 / fc075bf2f048c039 · im0001, 512, C2, mode 3, T=28, fast
+  - term: 真实收发
+  - definition: 发送 1,048,576 B / 接收 1,048,576 B · PL 帧计数 50 · 已核对实际锁存参数 / 标记 / 序号
+  - term: 输入 / 输出 SHA
+  - definition: 542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5 / 0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62
+  - term: 硬件实际参数
+  - definition: C2 / T=28 / 512 / 模式 3 / 帧标记 50 · 与本次请求一致
+  - term: PL 周期 / 纯 DMA 搬运
+  - definition: 262,244 周期 @ 100 MHz；流出完成 262,274 周期；纯 DMA 搬运未测
+  - term: PS 分段耗时
+  - definition: fast · 解包/叠加 6.0 ms；PIL 转换 0.6 ms；PNG 编码及写入 20.9 ms；PNG 哈希 1.0 ms；文件清单哈希 2.8 ms
+  - term: 质量范围
+  - definition: 当前图像与当前模式的候选结果，不代表留出集整体医学精度验收。可见眼底边界、亮区响应属于现有算法结果。
+- contentinfo: W4a · 真实 PL / DDR / DMA → Python → 浏览器。无 HDMI 依赖。关闭页面不取消在途 DMA；遇到 FAULT 保留启动 Notebook 和缓冲引用。

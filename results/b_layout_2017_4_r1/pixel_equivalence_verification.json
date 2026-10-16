@@ -1,0 +1,55 @@
+{
+  "status": "PASS_HOST_FULL_CANVAS_EQUALITY_ON_EARLIER_DOWNLOADED_FPGA_ARRAY",
+  "source": {
+    "path": "build\\board_results\\b_profile_2026-10-12\\b_profile_output_512.npy",
+    "bytes": 1048704,
+    "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+  },
+  "checks": [
+    {
+      "marker": 0,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "d75003138c41a5fbdb1d93f2ae975fe93bb158e1ff511d56b296e8acb7654af8"
+    },
+    {
+      "marker": 1,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "804df162e274c5aab6a7ba76aee5c3ae146ff86ea3592ccd5e21d403c97d5cda"
+    },
+    {
+      "marker": 29,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "1616c024f1055d6ec16a89ad67e2bd7f50ee2daaa0442ecb855b46ba4a3b3627"
+    },
+    {
+      "marker": 99,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "2e88995338ee6d1e4741a044fb4636cb98e11c4693c5e1d7b7bab9b5293376ef"
+    },
+    {
+      "marker": 100,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "d75003138c41a5fbdb1d93f2ae975fe93bb158e1ff511d56b296e8acb7654af8"
+    },
+    {
+      "marker": -1,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "2e88995338ee6d1e4741a044fb4636cb98e11c4693c5e1d7b7bab9b5293376ef"
+    }
+  ],
+  "source_array_unchanged": true,
+  "ordinary_cpu_cache_bytes": 7626752,
+  "scope": "Earlier downloaded actual FPGA output rendered on host only; new board same-font pixel gate still NOT_RUN. No host/board speedup claimed."
+}

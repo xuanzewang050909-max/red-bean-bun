@@ -1,0 +1,452 @@
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm06_couplers_imp')
++++ B
+@@ -296,7 +296,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m06_regslice_5",
++                  "system_m06_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_mem_intercon_imp', 'm00_couplers_imp')
++++ B
+@@ -156,7 +156,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_auto_pc_11",
++                  "system_auto_pc_1",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm08_couplers_imp')
++++ B
+@@ -134,7 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m08_regslice_2",
++                  "system_m08_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp', 'hdmi_out_imp')
++++ B
+@@ -500,7 +500,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_color_convert_1",
++                  "system_color_convert_0",
+                   []
+                 ]
+               ]
+@@ -608,7 +608,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_axis_register_slice_0_1",
++                  "system_axis_register_slice_0_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm00_couplers_imp')
++++ B
+@@ -134,7 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m00_regslice_6",
++                  "system_m00_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm04_couplers_imp')
++++ B
+@@ -134,7 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m04_regslice_5",
++                  "system_m04_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp', 'axi_interconnect_0_imp')
++++ B
+@@ -1751,7 +1751,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_xbar_9",
++                  "system_xbar_1",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm05_couplers_imp')
++++ B
+@@ -134,7 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m05_regslice_5",
++                  "system_m05_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 's00_couplers_imp')
++++ B
+@@ -29,21 +29,6 @@
+               [
+                 [
+                   "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+-                  "auto_pc"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}portRef",
+-                  "aclk"
+-                ]
+-              ],
+-              "",
+-              []
+-            ],
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}internalPortReference",
+-              [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+                   "s00_regslice"
+                 ],
+                 [
+@@ -83,21 +68,6 @@
+               [
+                 [
+                   "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+-                  "auto_pc"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}portRef",
+-                  "aresetn"
+-                ]
+-              ],
+-              "",
+-              []
+-            ],
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}internalPortReference",
+-              [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+                   "s00_regslice"
+                 ],
+                 [
+@@ -137,7 +107,7 @@
+                 ],
+                 [
+                   "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}name",
+-                  "axi_protocol_converter"
++                  "axi_register_slice"
+                 ],
+                 [
+                   "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}vendor",
+@@ -156,28 +126,6 @@
+               [],
+               "",
+               [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}configurableElementValue",
+-                  [
+-                    [
+-                      "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}referenceId",
+-                      "MI_PROTOCOL"
+-                    ]
+-                  ],
+-                  "AXI4LITE",
+-                  []
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}configurableElementValue",
+-                  [
+-                    [
+-                      "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}referenceId",
+-                      "SI_PROTOCOL"
+-                    ]
+-                  ],
+-                  "AXI4",
+-                  []
+-                ],
+                 [
+                   "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}configurableElementValue",
+                   [
+@@ -186,61 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_auto_pc_10",
+-                  []
+-                ]
+-              ]
+-            ],
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}instanceName",
+-              [],
+-              "auto_pc",
+-              []
+-            ]
+-          ]
+-        ],
+-        [
+-          "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentInstance",
+-          [],
+-          "",
+-          [
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+-              [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}library",
+-                  "ip"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}name",
+-                  "axi_register_slice"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}vendor",
+-                  "xilinx.com"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}version",
+-                  "2.1"
+-                ]
+-              ],
+-              "",
+-              []
+-            ],
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}configurableElementValues",
+-              [],
+-              "",
+-              [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}configurableElementValue",
+-                  [
+-                    [
+-                      "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}referenceId",
+-                      "bd:xciName"
+-                    ]
+-                  ],
+-                  "system_s00_regslice_6",
++                  "system_s00_regslice_0",
+                   []
+                 ]
+               ]
+@@ -265,7 +159,7 @@
+           [
+             [
+               "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}interfaceRef",
+-              "M_AXI/auto_pc_to_s00_couplers"
++              "M_AXI/s00_regslice_to_s00_couplers"
+             ]
+           ],
+           "",
+@@ -279,7 +173,7 @@
+                 ],
+                 [
+                   "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+-                  "auto_pc"
++                  "s00_regslice"
+                 ]
+               ],
+               "",
+@@ -320,51 +214,7 @@
+       "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}interconnections",
+       [],
+       "",
+-      [
+-        [
+-          "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}interconnection",
+-          [],
+-          "",
+-          [
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}activeInterface",
+-              [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}busRef",
+-                  "M_AXI"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+-                  "s00_regslice"
+-                ]
+-              ],
+-              "",
+-              []
+-            ],
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}activeInterface",
+-              [
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}busRef",
+-                  "S_AXI"
+-                ],
+-                [
+-                  "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}componentRef",
+-                  "auto_pc"
+-                ]
+-              ],
+-              "",
+-              []
+-            ],
+-            [
+-              "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}name",
+-              [],
+-              "s00_regslice_to_auto_pc",
+-              []
+-            ]
+-          ]
+-        ]
+-      ]
++      []
+     ],
+     [
+       "{http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009}library",
+
+--- ('design', 'BlockDiagram/system_imp/video_imp', 'axi_mem_intercon_imp')
++++ B
+@@ -599,7 +599,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_xbar_10",
++                  "system_xbar_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/hdmi_out_imp', 'frontend_imp')
++++ B
+@@ -915,7 +915,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_color_swap_0_1",
++                  "system_color_swap_0_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_mem_intercon_imp', 's01_couplers_imp')
++++ B
+@@ -156,7 +156,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_auto_us_1",
++                  "system_auto_us_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm09_couplers_imp')
++++ B
+@@ -134,7 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m09_regslice_2",
++                  "system_m09_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/hdmi_in_imp', 'frontend_imp')
++++ B
+@@ -978,7 +978,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_color_swap_0_0",
++                  "system_color_swap_0_1",
+                   []
+                 ],
+                 [
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm02_couplers_imp')
++++ B
+@@ -296,7 +296,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m02_regslice_6",
++                  "system_m02_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm01_couplers_imp')
++++ B
+@@ -296,7 +296,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m01_regslice_6",
++                  "system_m01_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm07_couplers_imp')
++++ B
+@@ -296,7 +296,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m07_regslice_5",
++                  "system_m07_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp/axi_interconnect_0_imp', 'm03_couplers_imp')
++++ B
+@@ -134,7 +134,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_m03_regslice_6",
++                  "system_m03_regslice_0",
+                   []
+                 ]
+               ]
+
+--- ('design', 'BlockDiagram/system_imp/video_imp', 'hdmi_in_imp')
++++ B
+@@ -695,7 +695,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_color_convert_0",
++                  "system_color_convert_1",
+                   []
+                 ]
+               ]
+@@ -803,7 +803,7 @@
+                       "bd:xciName"
+                     ]
+                   ],
+-                  "system_axis_register_slice_0_0",
++                  "system_axis_register_slice_0_1",
+                   []
+                 ]
+               ]

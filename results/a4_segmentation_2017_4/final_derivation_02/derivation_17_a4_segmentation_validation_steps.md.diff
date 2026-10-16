@@ -1,0 +1,123 @@
+--- a/docs/a3_background_validation_steps.md
++++ b/docs/a4_segmentation_validation_steps.md
+@@ -1,65 +1,82 @@
+-# A3 局部背景与血管响应：按顺序执行
++# A4完整固定分割算法：零基础板卡验证步骤
+ 
+-电脑继续使用Windows；板卡使用已经验证的PYNQ3.0.1。MicroUSB供电与网线保持连接，PuTTY为COM9/115200，网页为 `http://192.168.2.99:9090/tree`。A2通过记录已经归档，无需再运行。
++本套件适用已验证的PYNQ-Z2、PYNQ 3.0.1及本次Vivado 2017.4生成工程。Windows电脑无需安装Linux。现在验证阈值、闭运算、孤点过滤和最终眼底区域过滤，与A3已验证的高斯/增强/背景/响应组成完整固定算法A。
+ 
+-## 1. 结束已完成的旧测试
++## 1. 结束旧测试
+ 
+-在旧A2 Notebook菜单选择 File → Close and Halt。如果网页已关闭，在Jupyter首页的Running页找到旧A2，点Shutdown。此操作适用于上一轮已经完成、DMA空闲的状态。不要重新运行旧A0/A1/A2或HDMI测试。
++保持板卡供电和网线连接，PuTTY仍用COM9、115200。旧A3的Notebook和ZIP已经下载后，在浏览器打开 `http://192.168.2.99:9090/tree`，点首页的 **Running** 标签，找到已完成的A3 Notebook，点其 **Shutdown**。仅关闭浏览器标签不会关闭内核。完成的旧A0/A1/A2测试内核若仍运行，也在这里关闭；保留原文件。不要点击页面右上方Quit。
+ 
+-## 2. 建文件夹、上传文件
++此处只适用于已经顺利完成、没有正在传输数据的旧测试；若旧测试还报错或卡住，请保留现场并反馈。
+ 
+-回到Jupyter文件列表，右上角 New → Folder。勾选新目录，点Rename，改名为 `retina_a3_r1`，进入该目录。点Upload，在Windows文件选择窗口的地址栏粘贴：
++## 2. 创建新文件夹并上传12个文件
+ 
+-`D:\PLD\retina_fpga\build\deploy\a3_background_2017_4_r1`
++1. 回到 **Files** 标签，点 **New → Folder**。
++2. 勾选新建文件夹，点 **Rename**，改为 `retina_a4_r1`。如果已有这个名称，使用一个新名称，例如 `retina_a4_r1_2`，避免覆盖旧结果。
++3. 点击文件夹名称进入。Windows文件资源管理器打开 `D:\PLD\retina_fpga\build\deploy\a4_segmentation_2017_4_r1`。
++4. 浏览器点 **Upload**，选择该目录内全部12个文件。每个文件右侧出现蓝色 **Upload** 按钮时，分别点击完成上传。
+ 
+-选择全部11个文件。文件出现于网页待上传列表后，逐条点Upload完成上传。不要只上传Notebook。
++上传后应有以下文件，文件名保持原样：
+ 
+-|文件|用途|
+-|---|---|
+-|a3_background.bit、a3_background.hwh|配套FPGA配置与硬件说明|
+-|a3_manifest.json|版本与文件校验清单|
+-|a3_background_check.ipynb|本次操作页面|
+-|a3_background_board_test.py|本阶段测试程序|
+-|a2_gaussian_board_test.py、a1_point_board_test.py、a0_dma_board_test.py|复用参考比对、等待和错误保留；导入这些文件不会加载旧工程|
+-|stare_im0001_256.npy、stare_im0001_512.npy|真实RGB生成的输入和FOV，不含血管人工标注|
+-|使用说明.txt|本指南及许可声明|
++```text
++a4_segmentation.bit
++a4_segmentation.hwh
++a4_segmentation_board_test.py
++a3_background_board_test.py
++a2_gaussian_board_test.py
++a1_point_board_test.py
++a0_dma_board_test.py
++a4_segmentation_check.ipynb
++a4_manifest.json
++stare_im0001_256.npy
++stare_im0001_512.npy
++使用说明.txt
++```
+ 
+-## 3. 打开Notebook，逐框运行
++五个Python文件都有依赖用途，请全部上传。两份眼底输入只有原RGB和FOV，不含血管人工标注。
+ 
+-点击 `a3_background_check.ipynb`。每次点击一个代码框，按Shift+Enter。当前框左边 `In [*]` 表示运行中；变成 `In [数字]` 且没有红色报错才表示结束。不要点击Run All。
++## 3. 依次运行六个代码框
+ 
+-|代码框|完成标志|
+-|---|---|
+-|1. 准备函数|In [数字]，无红色报错；没有PASS打印也正常|
+-|2. 检查文件|`A3_PRECHECK_PASS`；FPGA未改变|
+-|3. 加载|`A3_LOAD_PASS`；显示器可能无信号|
+-|4. 首帧验证|`A3_SMOKE_PASS`；网页正常，PuTTY按回车仍出现提示符|
+-|5. 完整验证|不断出现`BACKGROUND_FRAME_PASS`，最后出现`A3 BACKGROUND PASS: 45 complete frames matched`|
+-|6. 查看FPGA结果并打包|显示四幅眼底图，出现`A3_RESULTS_READY`|
++点击 `a4_segmentation_check.ipynb`。等右上角Python 3内核启动完毕。只选灰色代码框，按 **Shift+Enter**。每框左侧从 `In [*]` 回到 `In [数字]`、无红色报错，并满足下表标志后再选下一框。不要选择Run All，也不要重复运行已经完成的框。
+ 
+-第5框包含首帧之外的44帧，每帧检查实际DMA数据、收发字节数、输入/输出帧计数与错误标志。测试包含256/512尺寸、多模式、随机/渐变/黑白/棋盘/边角脉冲/暗条纹/取整和真实眼底输入。
++| 代码框 | 完成时应看到 | 接下来 |
++|---|---|---|
++| 1. 准备函数 | `In [数字]`，没有红色报错；不打印PASS正常 | 运行第2框 |
++| 2. 检查文件 | `A4_PRECHECK_PASS` | 运行第3框 |
++| 3. 加载 | `A4_LOAD_PASS` | 运行第4框 |
++| 4. 首帧验证 | `A4_SMOKE_PASS` | 切到PuTTY按回车，仍有提示符后运行第5框 |
++| 5. 完整验证 | 连续出现 `SEGMENTATION_FRAME_PASS`，最终 `A4 SEGMENTATION PASS: 61 complete frames matched` | 等左侧恢复数字后运行第6框 |
++| 6. 查看结果并打包 | 四张图及 `A4_RESULTS_READY` | 保存、下载记录 |
+ 
+-第6框从实际FPGA返回并已经比对通过的512×512数组提取四个字节，依次显示原始绿色、亮度增强、15×15背景、暗结构响应。响应图中血管等较暗结构通常变亮；它尚未经过阈值、形态学和FOV最终过滤，因此不是完整分割。网页显示无需HDMI；下一阶段再加入剩余算法。
++第5框会继续验证60帧，与第4框合计61帧、9,895,936个32位输出字；包含256×256和512×512、四种模式、随机/渐变/黑白/条纹/边角/精确阈值/FOV/孤点/断线及真实眼底图。
+ 
+-若出现红色报错，或一分钟没有新输出，停在当前框并保留截图。不要重复运行、重启内核、释放缓冲或切换Overlay。反馈当前报错与PuTTY是否响应；软件等待限时只在硬件总线访问能返回时有效。
++四幅预览依次为原始绿色通道、亮度增强、**黑白血管候选掩膜**、灰度响应。第三图采用最近邻缩放，保持二值；第四图仍是灰度中间结果。网页预览由已逐字核对的真实DMA返回数组生成。
+ 
+-## 4. 保存并下载两份记录
++加载A4后HDMI显示器可能提示无信号，本阶段在网页查看结果。最终同时包含算法与HDMI的B工程另行整合。
+ 
+-按Ctrl+S保存。菜单 File → Download as → Notebook，下载执行后的 `a3_background_check.ipynb`。回到同一目录文件列表，下载 `a3_results_bundle.zip`。ZIP含原JSON、四份真实STARE输出数组与预览图。两份文件均下载到电脑后反馈“已下载”，项目会独立核验并归档。
++若红色报错，或一分钟没有新进展，停在当前框，保留输出并反馈。不要重复运行、释放缓冲、重启这个内核或切换Overlay。软件超时只有在硬件总线访问能返回时才有效。
+ 
+-测试前发布清单中的板级状态保留NOT_RUN；主机仿真、实现通过与实体板运行通过分开记录。本套件没有测FPS，也没有包含最终HDMI整合。
++## 4. 保存并下载两份文件
+ 
+-## 输出诊断规格
++1. 在Notebook按 **Ctrl+S**。
++2. 菜单 **File → Download as → Notebook**，将运行后的 `a4_segmentation_check.ipynb` 下载到Windows电脑。
++3. 回到该文件夹的文件列表，勾选新生成的 `a4_results_bundle.zip`，点 **Download**。ZIP包含原JSON、六份实际STARE输出数组和预览图。
++4. 两份文件下载完成后反馈“已下载”。项目会独立核验返回数据、记录和发布版本，再记录板测状态。
+ 
+-输入32位字从低到高为B/G/R/FOV；GPIO配置bits[1:0]为模式，bit2选择256（1）或512（0）。模式0返回原输入；模式1返回原G/增强/0/FOV，等同A2模式3；模式2返回原G/增强/背景/FOV；模式3返回原G/增强/背景/响应。模式3高字节不再表示FOV，保持与CPU特征定义相同。
++发布清单中的板测状态保持NOT_RUN，只有真实板卡运行且归档复核完成，才记录算法A板测通过。数值一致性通过不等于医学分割质量达到要求；本次未测最终B工程和FPS。板上日期未校准，原始时间保留。
+ 
+-背景为复制边界的225样本总和一次取整 `(sum+112)//225`；响应为 `clip(4*(background-enhanced),0,255)`。帧适配、标准DMA与官方驱动原样复用。
++## 固定算法及诊断规格
++
++输入32位字从低到高为B/G/R/FOV，FOV仅为0或1。GPIO bits[1:0]为模式，bit2选择256（1）或512（0）。模式0返回原输入；模式1输出原G/增强/初始掩膜/响应；模式2输出原G/增强/闭运算掩膜/响应；模式3输出原G/增强/最终掩膜/响应。每个掩膜字节只为0或255。
++
++Gaussian 3×3复制边界、`(sum+8)>>4`；固定LUT；15×15复制边界均值`(sum+112)//225`；响应`clip(4*(background-enhanced),0,255)`；阈值`response>=28`并初始FOV过滤；3×3 CROSS先膨胀再腐蚀，边界外填0；3×3复制边界邻域计数含中心，保留计数≥2的闭运算像素；最终再与FOV相与。阈值和处理顺序沿用已冻结M0选择，不通过看测试图改参数。
++
++PS/DDR/DMA/FIFO/GPIO/100MHz/reset、帧适配器、官方PYNQ驱动沿用已验证A3。阈值、形态学、邻域窗口复用本机未修改的厂商库。本包仅作本地研发数值验证。
+ 
+ ## 许可与本地数据
+ 
+-PYNQ官方API/驱动版权和BSD 3-Clause原件保存在项目references中；本包的测试包装脚本为项目新增。PS/DMA/GPIO/FIFO/reset及HLS生成物受本机AMD/Xilinx工具/IP条款约束，安装库源码未随包分发。STARE原RGB来源为Clemson STARE im0001，仅作本地研究验证；数据与输入包不公开提交，未假定其公开再分发许可。本包不含血管人工标注。
++PYNQ官方API/驱动版权和BSD 3-Clause原件保存在项目references中；本包测试包装脚本为项目新增。PS/DMA/GPIO/FIFO/reset及HLS生成物受本机AMD/Xilinx工具/IP条款约束，安装库源码未随包分发。STARE原RGB来源为Clemson STARE im0001，仅作本地研究验证；数据与输入包不公开提交，未假定其公开再分发许可。本包不含人工血管标注。
+ 
+-Filter2D/BoxFilter所用厂商hls_video_imgproc.h注明部分代码源自OpenCV。以下保留其嵌入的版权、条件及免责声明：
++Filter2D/BoxFilter/morp_opr所用厂商hls_video_imgproc.h注明部分代码源自OpenCV。以下保留其嵌入的版权、条件及免责声明：
+ 
+ ```text
+ Copyright (C) 2000-2008, Intel Corporation, all rights reserved.

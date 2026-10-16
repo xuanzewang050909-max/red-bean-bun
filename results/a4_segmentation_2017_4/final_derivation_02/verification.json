@@ -1,0 +1,125 @@
+{
+  "status": "PASS_A4_DERIVATION_REPRODUCTION",
+  "base_commit": "cd0ad6a",
+  "checks": [
+    {
+      "file": "hls/retina_segmentation_hls.cpp",
+      "bytes": 9252,
+      "sha256": "856767221754e0460cef66eb7d07d28e9f1113a92a53affc48521f1e14daf0fa",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "hls/retina_segmentation_hls.hpp",
+      "bytes": 321,
+      "sha256": "70b6b8d2907778049dc25eb4a675cc486a3b9fc00079bae6d15b2484ef39d9ab",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "tests/retina_segmentation_hls_tb.cpp",
+      "bytes": 5927,
+      "sha256": "4ca0ee1678e84c6188ba268b1c99bc7f78023292480fdeca69cdc38e408e4c20",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "tests/retina_segmentation_axis_tb.sv",
+      "bytes": 9159,
+      "sha256": "ddb897324b91dfa6670c1c8a95a96cf08cd56611be8034a253384490e6d4a734",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/a4_segmentation_board_test.py",
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/prepare_a4_vectors.py",
+      "bytes": 3379,
+      "sha256": "bed8caf8c2c15b842b8ea2d6ca4d6e56e1d097a6ea3547d30066ffd900aa9da0",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/run_segmentation_simulation.ps1",
+      "bytes": 1835,
+      "sha256": "b546a1d764ea72b00253427a147c2c26babfc026054f93c97dae23200156dea3",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/repack_a4_ip.py",
+      "bytes": 2041,
+      "sha256": "bd3d44f2696fa3625953f958b8ba48f660abf3b64b7af91d9dbdee0f3778950b",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "vivado/scripts/build_a4_hls.tcl",
+      "bytes": 1241,
+      "sha256": "9def1e8d234d94e647693d42bf80ca880a6ea9755f5d5dc873e1003b439cb40e",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "vivado/scripts/build_a4_segmentation.tcl",
+      "bytes": 10931,
+      "sha256": "5074a921f500a2671eacb769d74a1fef0f59f87181fd2b7b5d2c7a55e2e3d956",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "vivado/scripts/simulate_a4_reset.tcl",
+      "bytes": 1508,
+      "sha256": "2e139825e4e002711ecb3d3a4d2afa61c06c021c0cee5c65d77245a74ec502bd",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/build_a4_notebook.py",
+      "bytes": 3789,
+      "sha256": "e8f3ebf8d784ebbe20e080846fac85f643329b79c365c2abb02156ef1daa1f27",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/package_a4.py",
+      "bytes": 24514,
+      "sha256": "2f9ac52cfacb693eab1f7a4f4ca3efda6d37361404ef6112f72b084462b714f7",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/verify_a4_release.py",
+      "bytes": 3691,
+      "sha256": "d89877323d08da14a7db4f90eb370b1657970cd95e5464fb8e4fa8354ba2030d",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "scripts/attest_a4_sources.py",
+      "bytes": 2848,
+      "sha256": "5bdf95aee830c591e1ffb42632f71866e6bfedc91678269ce27b25286f5095a9",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "tests/test_a4_board_runner.py",
+      "bytes": 10341,
+      "sha256": "aa38f813ca280035c0624ceb67d9166a18c7a6eb10da794c7602765f36a19c1b",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    },
+    {
+      "file": "docs/a4_segmentation_validation_steps.md",
+      "bytes": 7626,
+      "sha256": "57d3fe8fc9ad01b5e750033eeaea1c52c23060209c13e35c9ec6c806ef4743d5",
+      "base_unchanged": true,
+      "diff_reproduces_exact_bytes": true
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "protocol": "Q1_BILATERAL_R1",
+  "status": "PREREGISTERED_BEFORE_CANDIDATE_EVALUATION",
+  "execution_location": "WINDOWS_OFFLINE_RESEARCH_ONLY",
+  "train_ids": ["im0001", "im0003", "im0005", "im0077", "im0082", "im0162", "im0235", "im0239", "im0255", "im0319"],
+  "heldout_ids_not_decoded": ["im0002", "im0004", "im0044", "im0081", "im0139", "im0163", "im0236", "im0240", "im0291", "im0324"],
+  "selection_annotation": "AH_TRAIN_ONLY",
+  "vk_decoded_or_scored": false,
+  "sizes": [256, 512],
+  "baseline": {"algorithm": "A", "threshold": 28, "fov": "UNCHANGED_M0", "postprocessing": "UNCHANGED_M0"},
+  "grid": {
+    "lengths": [5, 9],
+    "distance_sets": [[1], [2], [3], [1, 2, 3]],
+    "minimum_mean_contrast": [0, 1, 2, 4],
+    "persistence": ["none", "majority"],
+    "directions_dy_dx": [[0, 1], [1, 0], [1, 1], [1, -1]],
+    "candidate_count": 64
+  },
+  "integer_definition": {
+    "image": "M0 enhanced uint8 = LUT(Gaussian3(raw G))",
+    "sampling": "center=p+t*(dy,dx); flanks=center +/- distance*(-dx,dy); t=-r..r inclusive, r=(length-1)//2",
+    "border": "REPLICATE image coordinates; original evaluation FOV unchanged",
+    "support": "min(sum(left-center), sum(right-center)); int16 exact, no division",
+    "contrast_test": "support>0 for margin0; support>=length*margin otherwise",
+    "persistence_test": "none has no count gate; majority needs at least (length+1)//2 individual locations with BOTH left>center AND right>center",
+    "combination": "OR over the four directions and chosen distances",
+    "segmentation": "set M0 response to 0 where unsupported, then original segment(response,FOV,28); no post-hoc CPU edit of production mask"
+  },
+  "diagnostic_regions": {
+    "whole_original_fov": "original M0 RGB-only FOV",
+    "full_image": "all pixels, includes original FOV-excluded labels",
+    "bright_core": "Gaussian3(G)>=192 AND original FOV",
+    "bright_band": "15x15 square dilation(bright_core) minus bright_core, inside original FOV; all image locations, not a selected crop",
+    "thin_label_proxy": "AH AND 5x5 AH sum<=10 AND 3x3 AH sum<=6 AND FOV; diagnostic only, not a clinical vessel-width label",
+    "fov_edge": "FOV minus constant-zero 15x15 erosion(FOV); evaluation only"
+  },
+  "selection_gates": {
+    "512_macro_dice_gain_min": 0.01,
+    "256_macro_dice_loss_max": 0.005,
+    "each_size_macro_recall_loss_max": 0.02,
+    "each_image_each_size_recall_loss_max": 0.05,
+    "each_size_thin_proxy_pooled_recall_loss_max": 0.03,
+    "each_size_bright_band_pooled_recall_loss_max": 0.05,
+    "512_bright_band_pooled_fp_reduction_min": 0.10,
+    "empty_region_policy": "report null recall if no GT positives; no claim of protection from an empty set",
+    "ranking_after_all_gates": "descending 512 AH macro Dice, then fewer distance filters, shorter length, lower margin, none before majority, candidate ID",
+    "no_eligible_candidate": "REJECT_FAMILY_FOR_PL; preserve all runs; preregister next revision; do not relax gates after results or inspect heldout/VK to tune"
+  },
+  "frozen_source_sha256": {
+    "software/reference.py": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e",
+    "software/preprocessing.py": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18",
+    "software/metrics.py": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99",
+    "results/m0_stare_2026-10-11/evaluation.json": "4a856c0497e453f22d0637e85bad578dd507f73a83e701b089d97f531b6b8e90",
+    "data/raw/stare/stare-images.tar": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433",
+    "data/raw/stare/labels-ah.tar": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f"
+  },
+  "hardware_status": "NOT_IMPLEMENTED_NOT_SIMULATED_NOT_BOARD_TESTED",
+  "adoption_rule": "Training gate is necessary, not sufficient. Q2 needs independent fixed-point/actual RTL and timing/resource evidence; Q3 needs real PL output and original full quality/performance experiments."
+}

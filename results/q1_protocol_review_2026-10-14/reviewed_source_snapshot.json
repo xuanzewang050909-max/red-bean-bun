@@ -1,0 +1,38 @@
+{
+  "source_commit": "1bd73d66a113bf39a767b328b64bc944a78e8013",
+  "snapshot": "D:\\PLD\\retina_fpga\\build\\q1_independent_source_review_2026-10-14",
+  "sources": {
+    "software/__init__.py": {
+      "bytes": 74,
+      "sha256": "5a71130c7904edd46e683ad0c61c8b3cc9c0335b7b75089abbfbe9a3da1cdf24"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "software/preprocessing.py": {
+      "bytes": 4255,
+      "sha256": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18"
+    },
+    "software/metrics.py": {
+      "bytes": 844,
+      "sha256": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99"
+    },
+    "software/q1_bilateral.py": {
+      "bytes": 3341,
+      "sha256": "eba1c349dab9a57134a05844b20c8ccd6d51e19cc6a4b69604d23a880ae5aba1"
+    },
+    "scripts/evaluate_q1_bilateral.py": {
+      "bytes": 15188,
+      "sha256": "ea22a9b22e69c744310658947132d7ea2b94529dfb7e3b9bb763a146f68fbda5"
+    },
+    "tests/test_q1_bilateral.py": {
+      "bytes": 8960,
+      "sha256": "e0ccfb42138d0f2d48da0a11e8d578e47bb2ae7eb3da3b98a594a6a626babaec"
+    },
+    "docs/q1_bilateral_protocol_r1.json": {
+      "bytes": 3963,
+      "sha256": "c535089fb5adaf2402a1601f26a3b99471f482dc4614a564ad53ce9a130d79c9"
+    }
+  }
+}

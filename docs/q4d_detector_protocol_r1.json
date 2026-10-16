@@ -1,0 +1,113 @@
+{
+  "protocol": "Q4D_C7_INTEGER_FEATURE_FOREST_R1",
+  "date": "2026-10-15",
+  "input_experiment": "build/q4_fusion_2026-10-14_r3",
+  "input_report_sha256": "49c633dcbefe1c18947409a2d8b667ca3db08111ddd00fbee8800839798fe284",
+  "train_ids": [
+    "im0001",
+    "im0003",
+    "im0005",
+    "im0077",
+    "im0082",
+    "im0162",
+    "im0235",
+    "im0239",
+    "im0255",
+    "im0319"
+  ],
+  "heldout_ids_not_decoded": [
+    "im0002",
+    "im0004",
+    "im0044",
+    "im0081",
+    "im0139",
+    "im0163",
+    "im0236",
+    "im0240",
+    "im0291",
+    "im0324"
+  ],
+  "folds": [
+    [
+      "im0001",
+      "im0003"
+    ],
+    [
+      "im0005",
+      "im0077"
+    ],
+    [
+      "im0082",
+      "im0162"
+    ],
+    [
+      "im0235",
+      "im0239"
+    ],
+    [
+      "im0255",
+      "im0319"
+    ]
+  ],
+  "sizes": [
+    256,
+    512
+  ],
+  "c5_key": "C5_l5_9_r8_m1_a4_g3",
+  "trees": 8,
+  "depths": [
+    6,
+    8
+  ],
+  "min_samples_leaf": 32,
+  "max_features": 0.75,
+  "vessel_weight": 2,
+  "samples_per_image_size": 32768,
+  "random_seed": 615,
+  "score_thresholds": [
+    64,
+    80,
+    96,
+    112,
+    128
+  ],
+  "sklearn_version": "1.7.2",
+  "postprocessing": "none; score>=threshold AND original FOV, no morphological bridges",
+  "minimum_deltas": {
+    "256": {
+      "dice": 0,
+      "thin_recall": 0,
+      "bright_recall": -0.02,
+      "bright_fp_reduction": 0,
+      "skeleton_recall": 0,
+      "cldice": 0
+    },
+    "512": {
+      "dice": 0,
+      "thin_recall": 0.05,
+      "bright_recall": -0.02,
+      "bright_fp_reduction": 0.3,
+      "skeleton_recall": 0.03,
+      "cldice": 0.02
+    }
+  },
+  "candidate_count": 10,
+  "fitting_scope": "Offline supervision using only original train AH. No GT/image IDs/coordinates passed to feature/inference functions. Grouped folds keep both sizes of a source image together. This extends prior manual parameter selection to small tree fitting within original training split; no board CPU segmentation.",
+  "selection": "Rank by sum of macro Dice+clDice across sizes, prefer meeting minimum deltas. No automatic final acceptance; original strict Q4 gates reported separately before experiment adoption. Best compromise allowed by user but failures preserved.",
+  "sources": [
+    "software/q4d_features.py",
+    "software/q4d_forest.py",
+    "scripts/train_q4d_detector.py",
+    "tests/test_q4d_features.py"
+  ],
+  "references": [
+    "https://pubmed.ncbi.nlm.nih.gov/22736688/",
+    "https://scikit-learn.org/1.7/modules/generated/sklearn.ensemble.RandomForestClassifier.html"
+  ],
+  "pl_preflight": {
+    "feature_window": "17x17 uint8 green, replicate; shared constant-index sums/min/max and signed 10-bit features",
+    "classifier": "8 trees depth<=8, <=2040 internal comparisons, <=2048 uint8 leaves; fixed integer threshold and rounded score",
+    "resource_status": "Analytic size bound only, not synthesis/resource PASS",
+    "reuse": "2017.4 filter_opr Window/line buffers and existing pipeline/DMA; replace/optionally retain C5 after real resource assessment"
+  }
+}

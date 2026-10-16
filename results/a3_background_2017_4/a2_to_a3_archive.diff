@@ -1,0 +1,257 @@
+--- scripts/archive_a2_board_results.py
++++ scripts/archive_a3_board_results.py
+@@ -1,4 +1,4 @@
+-"""Check downloaded A2 evidence against the release and independent M0 model.
++"""Check downloaded A3 evidence against the release and independent M0 model.
+ 
+ Never run notebook code or extract arbitrary ZIP paths. Keep raw retinal images
+ in the ignored local archive; track the original JSON and verification metadata.
+@@ -20,16 +20,16 @@
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(ROOT))
+-from software.reference import LUT, gaussian3
++from software.reference import LUT, box_mean15, gaussian3
+ from a1_point_board_test import notebook_code_hash
+-from a2_gaussian_board_test import validate_a2_package
+-
+-STATUS = "A2_PASS_37_GAUSSIAN_FRAMES_NOT_FULL_SEGMENTATION"
+-RELEASE = ROOT / "results/a2_gaussian_2017_4/release_manifest.json"
+-SOURCE_COMMIT = "f96e3498cfe59628ee6b987a40f2d98d29f05850"
+-ARRAY_NAMES = {f"a2_output_stare_{side}_mode{mode}.npy"
++from a3_background_board_test import validate_a3_package
++
++STATUS = "A3_PASS_45_BACKGROUND_FRAMES_NOT_FULL_SEGMENTATION"
++RELEASE = ROOT / "results/a3_background_2017_4/release_manifest.json"
++SOURCE_COMMIT = "3d203d55e09d483dcb2638e53fa869f89c206d7e"
++ARRAY_NAMES = {f"a3_output_stare_{side}_mode{mode}.npy"
+                for side in (256, 512) for mode in (2, 3)}
+-BUNDLE_NAMES = ARRAY_NAMES | {"a2_gaussian_result.json", "a2_preview.png"}
++BUNDLE_NAMES = ARRAY_NAMES | {"a3_background_result.json", "a3_preview.png"}
+ 
+ 
+ def require(condition, message):
+@@ -53,7 +53,7 @@
+                 {item.filename for item in entries} == BUNDLE_NAMES,
+                 "Missing, duplicate or unexpected ZIP member")
+         require(sum(item.file_size for item in entries) <= 4_000_000,
+-                "Uncompressed ZIP exceeds the A2 evidence limit")
++                "Uncompressed ZIP exceeds the A3 evidence limit")
+         for item in entries:
+             require(not item.is_dir() and not item.flag_bits & 1 and
+                     stat.S_IFMT(item.external_attr >> 16) != stat.S_IFLNK and
+@@ -66,11 +66,13 @@
+ 
+ 
+ def recorded_cases():
+-    return ([(256, 2, "gradient")]
++    return ([(256, 3, "vessel_stripes")]
+             + [(side, mode, pattern) for side in (256, 512) for mode in range(4)
+                for pattern in ("gradient", "random")]
+             + [(side, mode, pattern) for side in (256, 512) for mode in (2, 3)
+-               for pattern in ("checker", "impulse", "black", "white", "stare")])
++               for pattern in ("checker", "impulse", "black", "white", "stare")]
++            + [(side, mode, pattern) for side in (256, 512) for mode in (2, 3)
++               for pattern in ("vessel_stripes", "rounding")])
+ 
+ 
+ def regenerate_input(side, pattern, index, package):
+@@ -91,6 +93,10 @@
+         green = np.zeros((side, side), dtype=np.uint32)
+         positions = [0, side // 2, side - 1]
+         green[np.ix_(positions, positions)] = 255
++    elif pattern == "vessel_stripes":
++        green = np.where((x % 31 < 5) | (y % 43 < 3), 12, 190).astype(np.uint32)
++    elif pattern == "rounding":
++        green = (x * 13 + y * 7 + 9) % 80
+     else:
+         require(pattern in ("black", "white"), "Unknown input pattern")
+         green = np.full((side, side), 255 if pattern == "white" else 0, dtype=np.uint32)
+@@ -102,11 +108,19 @@
+     if mode == 0:
+         return source.copy()
+     green = ((source >> 8) & 255).astype(np.uint8)
+-    # M0 uses nine explicit int32 taps, unlike the runner's separable uint16 sum.
+-    value = green if mode == 1 else gaussian3(green)
+-    if mode == 3:
+-        value = LUT[value]
+-    return green.astype(np.uint32) | (value.astype(np.uint32) << 8) | (source & np.uint32(0xff000000))
++    # M0 uses int32 nine-tap Gaussian and int64 integral box sums independently
++    # of the board runner's separable Gaussian and vendor HLS stream filters.
++    enhanced = LUT[gaussian3(green)]
++    words = green.astype(np.uint32) | (enhanced.astype(np.uint32) << 8)
++    if mode == 1:
++        return words | (source & np.uint32(0xff000000))
++    require(mode in (2, 3), "Unknown diagnostic mode")
++    background = box_mean15(enhanced)
++    words |= background.astype(np.uint32) << 16
++    if mode == 2:
++        return words | (source & np.uint32(0xff000000))
++    response = np.clip((background.astype(np.int16) - enhanced.astype(np.int16)) * 4, 0, 255)
++    return words | (response.astype(np.uint32) << 24)
+ 
+ 
+ def verify_notebook(notebook, report, manifest):
+@@ -118,26 +132,26 @@
+             "Notebook contains an error output")
+     streams = ["".join("".join(out.get("text", [])) for out in cell["outputs"]
+                        if out["output_type"] == "stream") for cell in cells]
+-    markers = ["A2_PRECHECK_PASS: hashes/metadata; FPGA unchanged",
+-               "A2_LOAD_PASS: official drivers and reset state checked",
+-               "A2_SMOKE_PASS: full 256x256 Gaussian frame matched",
+-               "A2 GAUSSIAN PASS: 37 complete frames matched; no full segmentation/HDMI/FPS PASS",
+-               "A2_RESULTS_READY: download a2_results_bundle.zip and executed notebook"]
++    markers = ["A3_PRECHECK_PASS: hashes/metadata; FPGA unchanged",
++               "A3_LOAD_PASS: official drivers and reset state checked",
++               "A3_SMOKE_PASS: full 256x256 background/response frame matched",
++               "A3 BACKGROUND PASS: 45 complete frames matched; no full segmentation/HDMI/FPS PASS",
++               "A3_RESULTS_READY: download a3_results_bundle.zip and executed notebook"]
+     for index, marker in enumerate(markers, start=1):
+         require(streams[index].count(marker) == 1 and "".join(streams).count(marker) == 1,
+                 "Missing, duplicate or misplaced completion marker: " + marker)
+-    expected_lines = [f"GAUSSIAN_FRAME_PASS: {index + 1}/37 {side} mode {mode} {pattern}"
++    expected_lines = [f"BACKGROUND_FRAME_PASS: {index + 1}/45 {side} mode {mode} {pattern}"
+                       for index, (side, mode, pattern) in enumerate(recorded_cases())]
+     actual_lines = [line.strip() for stream in streams for line in stream.splitlines()
+-                    if line.startswith("GAUSSIAN_FRAME_PASS:")]
+-    require(actual_lines == expected_lines, "Notebook frame lines differ from the 37-case contract")
++                    if line.startswith("BACKGROUND_FRAME_PASS:")]
++    require(actual_lines == expected_lines, "Notebook frame lines differ from the 45-case contract")
+     require(expected_lines[0] in streams[3] and all(line in streams[4] for line in expected_lines[1:]),
+             "Frame results appear in the wrong notebook phase")
+     validation = report["package_validation"]
+     require(validation["fixed_artifacts"] == "PASS_EXACT_SHA256" and
+             validation["notebook_code"] == "PASS_CANONICAL_CODE_SHA256" and
+             validation["notebook_code_sha256"] == contract["sha256"] and
+-            validation["original_notebook_sha256"] == manifest["artifacts"]["a2_gaussian_check.ipynb"]["sha256"] and
++            validation["original_notebook_sha256"] == manifest["artifacts"]["a3_background_check.ipynb"]["sha256"] and
+             re.fullmatch(r"[0-9a-f]{64}", validation["current_notebook_sha256"]) is not None,
+             "Board package precheck did not pass")
+     return cells
+@@ -153,12 +167,12 @@
+             "Official DMA/GPIO drivers did not bind")
+     cells = verify_notebook(notebook, report, manifest)
+     cases = recorded_cases()
+-    require(len(report["transfers"]) == len(cases) == 37, "Incomplete frame records")
++    require(len(report["transfers"]) == len(cases) == 45, "Incomplete frame records")
+     verified, arrays, output_arrays = [], [], {}
+     for index, ((side, mode, pattern), record) in enumerate(zip(cases, report["transfers"])):
+         require((record["side"], record["mode"], record["pattern"]) == (side, mode, pattern), "Unexpected frame order")
+         count, nbytes = side * side, side * side * 4
+-        require(record["status"] == "PASS_EXACT_GAUSSIAN_WORDS" and
++        require(record["status"] == "PASS_EXACT_BACKGROUND_WORDS" and
+                 (record["words"], record["send_bytes"], record["recv_bytes"]) == (count, nbytes, nbytes),
+                 "Frame comparison or byte count failed")
+         require(set(record["dma_status"]) == {"mm2s", "s2mm"} and
+@@ -181,7 +195,7 @@
+         if pattern != "stare":
+             require("saved_output" not in record, "Unexpected saved output entry")
+             continue
+-        name = f"a2_output_stare_{side}_mode{mode}.npy"
++        name = f"a3_output_stare_{side}_mode{mode}.npy"
+         require(record["saved_output"] == {"name": name, "sha256": digest(members[name])},
+                 "Raw output file SHA256 mismatch: " + name)
+         raw = np.load(io.BytesIO(members[name]), allow_pickle=False)
+@@ -199,21 +213,23 @@
+ 
+ def decoded_png(data):
+     with Image.open(io.BytesIO(data)) as image:
+-        require(image.format == "PNG" and image.size == (768, 280) and image.mode == "RGB",
++        require(image.format == "PNG" and image.size == (1024, 280) and image.mode == "RGB",
+                 "Unexpected result preview format")
+         return np.asarray(image).copy()
+ 
+ 
+ def verify_preview(cells, report, package, members, output_arrays):
+-    data = members["a2_preview.png"]
+-    require(report["preview"] == {"file": "a2_preview.png", "sha256": digest(data)}, "Preview file hash differs")
++    data = members["a3_preview.png"]
++    require(report["preview"] == {"file": "a3_preview.png", "sha256": digest(data)}, "Preview file hash differs")
+     pixels = decoded_png(data)
+-    raw = regenerate_input(512, "stare", 0, package)
+-    for index, words in enumerate((raw, output_arrays[(512, 2)], output_arrays[(512, 3)])):
+-        green = ((words >> 8) & 255).astype(np.uint8)
+-        pane = np.asarray(Image.fromarray(green).resize((256, 256), Image.Resampling.BICUBIC))
++    # The four panes are the actual mode-3 DMA bytes: raw G, enhancement,
++    # 15x15 background and response; the last byte is not the FOV bit.
++    words = output_arrays[(512, 3)]
++    for index, shift in enumerate((0, 8, 16, 24)):
++        channel = ((words >> shift) & 255).astype(np.uint8)
++        pane = np.asarray(Image.fromarray(channel).resize((256, 256), Image.Resampling.BICUBIC))
+         require(np.array_equal(pixels[24:, index * 256:(index + 1) * 256], np.repeat(pane[:, :, None], 3, axis=2)),
+-                "Preview pane differs from the original/FPGA array")
++                "Preview pane differs from the FPGA diagnostic byte")
+     embedded = [out["data"]["image/png"] for out in cells[5]["outputs"]
+                 if out["output_type"] == "display_data" and "image/png" in out.get("data", {})]
+     require(len(embedded) == 1, "Notebook is missing its unique FPGA result preview")
+@@ -222,7 +238,7 @@
+     require(np.array_equal(decoded_png(base64.b64decode(encoded, validate=True)), pixels),
+             "Notebook preview differs from the archived result PNG")
+     return {"status": "PASS_ARRAY_PANES_AND_NOTEBOOK_PIXELS", "sha256": digest(data),
+-            "size": [768, 280], "panes": 3, "pane_resampling": "BICUBIC",
++            "size": [1024, 280], "panes": 4, "pane_resampling": "BICUBIC",
+             "limits": "Numerical checks use full uint32 arrays, not this resized preview."}
+ 
+ 
+@@ -240,14 +256,14 @@
+     parser.add_argument("--screenshot", type=Path)
+     args = parser.parse_args()
+     require(not args.destination.exists() and not args.raw_destination.exists(), "Refusing to overwrite an archive")
+-    manifest_data = (args.package / "a2_manifest.json").read_bytes()
++    manifest_data = (args.package / "a3_manifest.json").read_bytes()
+     require(manifest_data == RELEASE.read_bytes(), "Package differs from the archived release")
+     manifest = json.loads(manifest_data)
+-    validate_a2_package(args.package, manifest)
+-    require(args.notebook.stat().st_size <= 4_000_000, "Notebook exceeds the A2 evidence limit")
++    validate_a3_package(args.package, manifest)
++    require(args.notebook.stat().st_size <= 4_000_000, "Notebook exceeds the A3 evidence limit")
+     notebook_data = args.notebook.read_bytes()
+     members = read_bundle(args.bundle)
+-    report = json.loads(members["a2_gaussian_result.json"])
++    report = json.loads(members["a3_background_result.json"])
+     checks = verify_records(json.loads(notebook_data), report, manifest, args.package, members)
+     bundle_data = args.bundle.read_bytes()
+     require(read_bundle(args.bundle) == members and bundle_data == args.bundle.read_bytes(),
+@@ -255,7 +271,7 @@
+     # All validation precedes writes. Raw downloaded bytes are preserved unchanged.
+     args.raw_destination.mkdir(parents=True)
+     args.destination.mkdir(parents=True)
+-    raw_files = {"a2_gaussian_check_executed.ipynb": notebook_data, "a2_results_bundle.zip": bundle_data, **members}
++    raw_files = {"a3_background_check_executed.ipynb": notebook_data, "a3_results_bundle.zip": bundle_data, **members}
+     if args.screenshot:
+         raw_files["user_result_screenshot.png"] = args.screenshot.read_bytes()
+     file_records = {}
+@@ -264,26 +280,26 @@
+         target.write_bytes(data)
+         require(target.read_bytes() == data, "Raw archive byte mismatch: " + name)
+         file_records[name] = {"path": str(target.resolve()), "bytes": len(data), "sha256": digest(data)}
+-    target = args.destination / "a2_gaussian_result.json"
+-    target.write_bytes(members["a2_gaussian_result.json"])
+-    require(target.read_bytes() == members["a2_gaussian_result.json"], "Original JSON bytes changed")
++    target = args.destination / "a3_background_result.json"
++    target.write_bytes(members["a3_background_result.json"])
++    require(target.read_bytes() == members["a3_background_result.json"], "Original JSON bytes changed")
+     write_json(args.destination / "independent_frame_verification.json", checks["frames"])
+     write_json(args.destination / "raw_array_verification.json", checks["raw_arrays"])
+     write_json(args.destination / "preview_verification.json", checks["preview"])
+     summary = {"status": "PASS_BOARD_RECORDS_AND_RAW_ARRAYS_VERIFIED_AND_ARCHIVED",
+                "verified_host_utc": datetime.now(timezone.utc).isoformat(), "revision": manifest["revision"],
+                "hardware_source_commit": SOURCE_COMMIT, "release_manifest_sha256": digest(manifest_data),
+-               "board_clock_utc_unverified": report["board_clock_utc_unverified"], "frames_verified": 37,
++               "board_clock_utc_unverified": report["board_clock_utc_unverified"], "frames_verified": 45,
+                "input_words_verified": sum(item["words"] for item in checks["frames"]),
+                "raw_output_words_verified": sum(item["words"] for item in checks["raw_arrays"]),
+                "notebook_code_sha256": notebook_code_hash(json.loads(notebook_data)),
+                "source_paths": {"notebook": str(args.notebook.resolve()), "bundle": str(args.bundle.resolve())},
+                "raw_files": file_records,
+                "local_archive_policy": "Retinal arrays, PNG and output-bearing Notebook stay in ignored build/board_results. Original JSON and hashes are tracked; no dataset redistribution.",
+-               "scope": "Actual PYNQ-Z2 A2: 37 bypass/G/Gaussian/Gaussian+LUT frames, standard DMA/GPIO/DDR, original G and center FOV alignment.",
+-               "limits": "All 37 board output hashes recomputed independently; all 4 saved STARE buffers compared word by word on the host. Other 33 raw buffers are not downloaded. No full vessel segmentation, final HDMI integration, FPS or clinical validation."}
++               "scope": "Actual PYNQ-Z2 A3: 45 bypass/enhanced/background/response frames, standard DMA/GPIO/DDR, original G and center FOV alignment in modes 0-2.",
++               "limits": "All 45 board output hashes recomputed independently; all 4 saved STARE buffers compared word by word on the host. Other 41 raw buffers are not downloaded. No full vessel segmentation, final HDMI integration, FPS or clinical validation."}
+     write_json(args.destination / "archive_manifest.json", summary)
+-    print("A2_PASS_BOARD_RECORDS_AND_RAW_ARRAYS_VERIFIED_AND_ARCHIVED: 37 frames, 5963776 words; 4 raw arrays, 655360 words")
++    print("A3_PASS_BOARD_RECORDS_AND_RAW_ARRAYS_VERIFIED_AND_ARCHIVED: 45 frames, 7274496 words; 4 raw arrays, 655360 words")
+ 
+ 
+ if __name__ == "__main__":

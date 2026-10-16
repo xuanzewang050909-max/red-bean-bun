@@ -1,0 +1,45 @@
+{
+  "captured_utc": "2026-10-11T16:36:18.749050+00:00",
+  "status": "PASS_AUDIT_INTEGRITY_ONLY",
+  "pynq_sources": [
+    {
+      "tag": "v2.2.1",
+      "commit": "3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3",
+      "verified_files": 1417
+    },
+    {
+      "tag": "v3.0.1",
+      "commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+      "verified_files": 958
+    },
+    {
+      "tag": "v3.1.2",
+      "commit": "3c77124d86bab65ac7bb6beb0aa66e13c83508f2",
+      "verified_files": 959
+    }
+  ],
+  "xfopencv_files_verified": 152,
+  "manufacturer_downloads_verified": 4,
+  "xdc_cross_checks": [
+    {
+      "tag": "v2.2.1",
+      "selected_ports_checked": 36,
+      "status": "PASS_STATIC_XDC_ONLY"
+    },
+    {
+      "tag": "v3.0.1",
+      "selected_ports_checked": 36,
+      "status": "PASS_STATIC_XDC_ONLY"
+    },
+    {
+      "tag": "v3.1.2",
+      "selected_ports_checked": 36,
+      "status": "PASS_STATIC_XDC_ONLY"
+    }
+  ],
+  "source_vs_executed_v2_2_1_bd_source_instances": 159,
+  "executed_bd_expanded_leaf_ip_count": 254,
+  "metadata_only_packaging_changes_verified": 5,
+  "local_document_links_checked": 104,
+  "scope": "Does not verify physical PCB, board demos, full overlay implementation or medical algorithms"
+}

@@ -1,0 +1,23 @@
+test_prior_actual_register_fixture (__main__.DownloadVerificationTests.test_prior_actual_register_fixture) ... ok
+test_reject_fake_pure_dma (__main__.DownloadVerificationTests.test_reject_fake_pure_dma) ... ok
+test_reject_mixed_cpu_evidence (__main__.DownloadVerificationTests.test_reject_mixed_cpu_evidence) ... ok
+test_reject_parameter_cycle_counter_corruption (__main__.DownloadVerificationTests.test_reject_parameter_cycle_counter_corruption) ... ok
+test_alternate_order (__main__.ProtocolTests.test_alternate_order) ... ok
+test_freeze_protocol_and_manifest_pin (__main__.ProtocolTests.test_freeze_protocol_and_manifest_pin) ... ok
+test_full_summary_separates_warmups_sizes_and_devices (__main__.ProtocolTests.test_full_summary_separates_warmups_sizes_and_devices) ... ok
+test_incomplete_and_invalid_statistics (__main__.ProtocolTests.test_incomplete_and_invalid_statistics) ... ok
+test_no_cpu_fallback_in_production (__main__.ProtocolTests.test_no_cpu_fallback_in_production) ... ok
+test_statistics_actual_100 (__main__.ProtocolTests.test_statistics_actual_100) ... ok
+test_summary_cannot_accept_partial (__main__.ProtocolTests.test_summary_cannot_accept_partial) ... ok
+test_cpu_branch_never_calls_dma (__main__.SafetyTests.test_cpu_branch_never_calls_dma) ... ok
+test_exception_preserves_reference_and_stops (__main__.SafetyTests.test_exception_preserves_reference_and_stops) ... ok
+test_fault_cannot_measure_or_finish (__main__.SafetyTests.test_fault_cannot_measure_or_finish) ... ok
+test_load_twice_rejected_without_open (__main__.SafetyTests.test_load_twice_rejected_without_open) ... ok
+test_measure_wrong_size_order_rejected (__main__.SafetyTests.test_measure_wrong_size_order_rejected) ... ok
+test_timeout_does_not_cancel_owner (__main__.SafetyTests.test_timeout_does_not_cancel_owner) ... ok
+test_wrong_pixels_saved_then_fail_without_next_call (__main__.SafetyTests.test_wrong_pixels_saved_then_fail_without_next_call) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.083s
+
+OK

@@ -1,0 +1,44 @@
+{
+  "original_package": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+    "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+    "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+  },
+  "saved_notebook": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+    "current_notebook_sha256": "08c7e6f868274eb7151b8b98d7d942c9da23d40a83f5de5b53133bee4b217d03",
+    "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+  },
+  "status": "PASS_SOFTWARE_ONLY_R2_PACKAGE_AND_SAVED_NOTEBOOK",
+  "board_status": "NOT_RUN",
+  "full_package": "D:\\PLD\\retina_fpga\\build\\deploy\\b_integration_2017_4_r2",
+  "patch_package": "D:\\PLD\\retina_fpga\\build\\deploy\\b_video_import_fix_r2",
+  "unchanged_artifacts": [
+    "a0_dma_board_test.py",
+    "a1_point_board_test.py",
+    "a2_gaussian_board_test.py",
+    "a3_background_board_test.py",
+    "a4_segmentation_board_test.py",
+    "b_integration.bit",
+    "b_integration.hwh",
+    "b_integration_check.ipynb",
+    "stare_im0001_256.npy",
+    "stare_im0001_512.npy",
+    "\u4f7f\u7528\u8bf4\u660e.txt"
+  ],
+  "patch_files": {
+    "b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "b_manifest.json": {
+      "bytes": 60640,
+      "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b"
+    }
+  },
+  "scope": "Host package/import checks only; no new FPGA implementation or board display/FPS PASS"
+}

@@ -1,0 +1,6 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+CHECK: ext=1 aux=0 ic=0 per=0 GSR=0
+RESET_FAULT_REPRODUCED: aux=0 holds AXI/DMA reset
+RESET_SIM_PASS: real vendor IP, auxiliary polarity and PS reset verified
+$finish called at time : 10996 ns : File "D:/PLD/retina_fpga/scripts/a0_reset_tb.sv" Line 48

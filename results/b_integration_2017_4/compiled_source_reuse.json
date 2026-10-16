@@ -1,0 +1,774 @@
+{
+  "status": "PASS_FROZEN_A4_AND_OFFICIAL_VIDEO_GENERATED_RTL_BYTE_COMPARISON",
+  "reused_a4_csim_rtl_and_board_evidence": "results/a4_segmentation_2017_4/release_manifest.json and board_execution_2026-10-12; no new algorithm synthesis",
+  "exports": {
+    "a4": {
+      "background_sum.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/background_sum.v",
+        "bytes": 10278,
+        "sha256": "c28faadbb009f705f7b8a5da34168e514d6b6712e1f3d09b68ae16b819e2d972",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/background_sum.v"
+        ]
+      },
+      "Block_proc.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Block_proc.v",
+        "bytes": 24669,
+        "sha256": "70d8fdd3e3a5a1b9b823e785300e4b07b9debd4c3b62ec13f85b04e11526ef95",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Block_proc.v"
+        ]
+      },
+      "closed_carrier.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/closed_carrier.v",
+        "bytes": 14517,
+        "sha256": "68918b8d08226e34e43701de3123e768328f78433fc5f83012eb0da34d5257c4",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/closed_carrier.v"
+        ]
+      },
+      "column_filter.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/column_filter.v",
+        "bytes": 135696,
+        "sha256": "1a69be74c585a09375f6e9f378390b8179bf75dcd59f5fd0b505bf5d718f0fb7",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/column_filter.v"
+        ]
+      },
+      "count_neighbors.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/count_neighbors.v",
+        "bytes": 8662,
+        "sha256": "ced8806c86b88eb4c39b3fb46e5c660d7391f73bb5b4e9ce366a1fb8a3402450",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/count_neighbors.v"
+        ]
+      },
+      "dilate_zero.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/dilate_zero.v",
+        "bytes": 43351,
+        "sha256": "d582140ec4681ff092162188f23ee491d16867a779c85ebcc144ae4d5b5b8f37",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/dilate_zero.v"
+        ]
+      },
+      "enhance_aligned.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned.v",
+        "bytes": 20873,
+        "sha256": "fb53540a3a86f12980484d8bc3f1726d190b62a244514061b8f6647eee1a5cd3",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/enhance_aligned.v"
+        ]
+      },
+      "enhance_aligned_lut.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned_lut.v",
+        "bytes": 1250,
+        "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/enhance_aligned_lut.v"
+        ]
+      },
+      "enhance_aligned_lut_rom.dat": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned_lut_rom.dat",
+        "bytes": 1026,
+        "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ip/system_segmentation_filter_0/hdl/verilog/enhance_aligned_lut_rom.dat"
+        ]
+      },
+      "erode_zero.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/erode_zero.v",
+        "bytes": 44364,
+        "sha256": "4112ca49a842b540573f55583cafc7f8db9672dc81b9cdf779ad94dff7a6bb7d",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/erode_zero.v"
+        ]
+      },
+      "fifo_w10_d11_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d11_A.v",
+        "bytes": 3110,
+        "sha256": "77b3dc66f8d971e5fd0f2f9d6ac2c0905f9ff67c8cb90f9a98c8b8de541f7d42",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d11_A.v"
+        ]
+      },
+      "fifo_w10_d1_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d1_A.v",
+        "bytes": 3100,
+        "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d1_A.v"
+        ]
+      },
+      "fifo_w10_d2_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d2_A.v",
+        "bytes": 3104,
+        "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d2_A.v"
+        ]
+      },
+      "fifo_w10_d4_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d4_A.v",
+        "bytes": 3104,
+        "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d4_A.v"
+        ]
+      },
+      "fifo_w10_d6_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d6_A.v",
+        "bytes": 3104,
+        "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d6_A.v"
+        ]
+      },
+      "fifo_w10_d8_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d8_A.v",
+        "bytes": 3104,
+        "sha256": "4b14a30819e55aa0734169603f8dc80b0b09c6c1e367fe008a7ef3bfccdb91ba",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d8_A.v"
+        ]
+      },
+      "fifo_w10_d9_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d9_A.v",
+        "bytes": 3106,
+        "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d9_A.v"
+        ]
+      },
+      "fifo_w14_d1_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w14_d1_A.v",
+        "bytes": 3100,
+        "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w14_d1_A.v"
+        ]
+      },
+      "fifo_w16_d32_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w16_d32_A.v",
+        "bytes": 3110,
+        "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w16_d32_A.v"
+        ]
+      },
+      "fifo_w19_d1_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d1_A.v",
+        "bytes": 3100,
+        "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d1_A.v"
+        ]
+      },
+      "fifo_w19_d2_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d2_A.v",
+        "bytes": 3104,
+        "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d2_A.v"
+        ]
+      },
+      "fifo_w19_d3_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d3_A.v",
+        "bytes": 3104,
+        "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d3_A.v"
+        ]
+      },
+      "fifo_w32_d12_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d12_A.v",
+        "bytes": 3110,
+        "sha256": "8d7be4e34c2349c43f00483a2ed1d2ec25795732a689cc11eb7951f1b9aa432c",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d12_A.v"
+        ]
+      },
+      "fifo_w32_d2048_B.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d2048_B.v",
+        "bytes": 4145,
+        "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d2048_B.v"
+        ]
+      },
+      "fifo_w32_d8192_B.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d8192_B.v",
+        "bytes": 4145,
+        "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d8192_B.v"
+        ]
+      },
+      "fifo_w64_d2048_B.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w64_d2048_B.v",
+        "bytes": 4145,
+        "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w64_d2048_B.v"
+        ]
+      },
+      "fifo_w64_d32_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w64_d32_A.v",
+        "bytes": 4140,
+        "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w64_d32_A.v"
+        ]
+      },
+      "fifo_w8_d32_A.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w8_d32_A.v",
+        "bytes": 3104,
+        "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w8_d32_A.v"
+        ]
+      },
+      "fifo_w8_d8192_B.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w8_d8192_B.v",
+        "bytes": 4143,
+        "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w8_d8192_B.v"
+        ]
+      },
+      "Filter2D.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D.v",
+        "bytes": 55255,
+        "sha256": "91c1f9020b2a227d49c8bd4a75f7334d96ab45766c64958b59b773eaf65854c5",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D.v"
+        ]
+      },
+      "Filter2D_1.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D_1.v",
+        "bytes": 55768,
+        "sha256": "e60b6df8f85329f2c6f8b757999c6cacfb1b9842209cb193b5564a0fa0a0000a",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D_1.v"
+        ]
+      },
+      "Filter2D_k_buf_0_bkb.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D_k_buf_0_bkb.v",
+        "bytes": 1668,
+        "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D_k_buf_0_bkb.v"
+        ]
+      },
+      "filter_sum.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/filter_sum.v",
+        "bytes": 8570,
+        "sha256": "7b04f5df4463f4e7f0ef52baa326a840e4e5fe84734b42c5cdd51bc44b9b95c5",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/filter_sum.v"
+        ]
+      },
+      "final_join.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/final_join.v",
+        "bytes": 21645,
+        "sha256": "791e66bf1dc82ded2f73d86e501c34d0c0ee2579660dedb4cb88f9e10d5f80db",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/final_join.v"
+        ]
+      },
+      "initial_fov.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/initial_fov.v",
+        "bytes": 16903,
+        "sha256": "c8c68d17694eeb286fb3fbb000909f3646caea4143612ca76fdb4f4b9b9df8e2",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/initial_fov.v"
+        ]
+      },
+      "response_carrier.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/response_carrier.v",
+        "bytes": 24299,
+        "sha256": "a0bfd295ddf799887d74c2dedb806afebb95345be0cd75baa232983028dd5508",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/response_carrier.v"
+        ]
+      },
+      "retina_segmentatieOg.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatieOg.v",
+        "bytes": 1170,
+        "sha256": "d2cfe33fa26d8f6469f7c04d83f5ff798c469fa8f25dcd5d9403c398da41fae1",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatieOg.v"
+        ]
+      },
+      "retina_segmentation_hls.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentation_hls.v",
+        "bytes": 62669,
+        "sha256": "60412b007ed940f195d63cb00bd3effca3a21fff6419b4c83ab4a8108447305f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentation_hls.v"
+        ]
+      },
+      "retina_segmentatiudo.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatiudo.v",
+        "bytes": 2942,
+        "sha256": "a1bd5568dae55a3d2fa29a10d5a1e4779cf5badd260f41d37fae6f23c8e5910d",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatiudo.v"
+        ]
+      },
+      "retina_segmentatiyd2.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatiyd2.v",
+        "bytes": 783,
+        "sha256": "12f2937f1e27daa32c585c75d368243520904644b736b2595d85744c40697294",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatiyd2.v"
+        ]
+      },
+      "row_filter.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/row_filter.v",
+        "bytes": 61065,
+        "sha256": "e3c208ca828962b28c446bb81bb59ea0f05ff742ab22240bc3f8d7b6d788a0bc",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/row_filter.v"
+        ]
+      },
+      "row_filter_l_bordvdy.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/row_filter_l_bordvdy.v",
+        "bytes": 1674,
+        "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/row_filter_l_bordvdy.v"
+        ]
+      },
+      "SepFilter2D.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/SepFilter2D.v",
+        "bytes": 7857,
+        "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/SepFilter2D.v"
+        ]
+      },
+      "split_words.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/split_words.v",
+        "bytes": 17695,
+        "sha256": "be8b50078aabb0c381fa77a5256059150bff769a3524fcd51a1d6a20baac2cc3",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/split_words.v"
+        ]
+      },
+      "start_for_backgroHfu.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_backgroHfu.v",
+        "bytes": 3130,
+        "sha256": "3c5559bbd4c463e87567f8bfc4261af4483810459b638bdcb219cd269b7edc5f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_backgroHfu.v"
+        ]
+      },
+      "start_for_closed_QgW.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_closed_QgW.v",
+        "bytes": 3132,
+        "sha256": "d009712902ab3abe9828fe4592b95f3036dd29c9a461e0f5d57d1727ccfa0002",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_closed_QgW.v"
+        ]
+      },
+      "start_for_count_nLf8.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_count_nLf8.v",
+        "bytes": 3132,
+        "sha256": "94fed373ec61b8c56c8eaecdd43a62ec9809d84eeb79ba6026619f68d2fa5ec2",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_count_nLf8.v"
+        ]
+      },
+      "start_for_dilate_JfO.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_dilate_JfO.v",
+        "bytes": 3130,
+        "sha256": "f29ca6da9bdd4497426158ed8ae3a0f84b13a6e36073341a122439a7b4585864",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_dilate_JfO.v"
+        ]
+      },
+      "start_for_enhanceNgs.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_enhanceNgs.v",
+        "bytes": 3130,
+        "sha256": "f37f4d18e6622de673d009321a76c49ffa189f54e28fa99ea4fd7ae2eb7c60d3",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_enhanceNgs.v"
+        ]
+      },
+      "start_for_erode_zKfY.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_erode_zKfY.v",
+        "bytes": 3132,
+        "sha256": "2966825d49706117829e5b04b677459276d73d614e4aa5afb8946d168f0b091d",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_erode_zKfY.v"
+        ]
+      },
+      "start_for_filter_Gfk.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_filter_Gfk.v",
+        "bytes": 3130,
+        "sha256": "5336252dc8ef2c1576ee4ce2d15cfb90070887104ba8d0c1d973da219be09650",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_filter_Gfk.v"
+        ]
+      },
+      "start_for_final_jMgi.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_final_jMgi.v",
+        "bytes": 3132,
+        "sha256": "e8de0b2de2fe03542f0a0d6b766a2c2cd8cb3615ce65170f77dbd1d3d909d775",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_final_jMgi.v"
+        ]
+      },
+      "start_for_initialPgM.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_initialPgM.v",
+        "bytes": 3130,
+        "sha256": "9bd7a84ddff58e6db2cb3cbdef40ce95518e9a4d3f9df133516f5a4a7d52ef33",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_initialPgM.v"
+        ]
+      },
+      "start_for_responsOgC.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_responsOgC.v",
+        "bytes": 3130,
+        "sha256": "efb1dc33d57958e4a246627444332fa146845a789bb85bcdb6d33f22eb53b330",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_responsOgC.v"
+        ]
+      },
+      "start_for_row_filxdS.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_row_filxdS.v",
+        "bytes": 3126,
+        "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_row_filxdS.v"
+        ]
+      },
+      "start_for_threshoIfE.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_threshoIfE.v",
+        "bytes": 3130,
+        "sha256": "18f626b78dd2e0c8f339c823f38856c1219c8d37d93f6a449c4ca6d30ea4245d",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_threshoIfE.v"
+        ]
+      },
+      "threshold_binary.v": {
+        "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/threshold_binary.v",
+        "bytes": 16688,
+        "sha256": "9126c19602b886486c97b8a5addb947a779d9e54a2a6d691e4ef839a5584cf66",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/threshold_binary.v"
+        ]
+      }
+    },
+    "color_convert": {
+      "color_convert.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert.v",
+        "bytes": 62819,
+        "sha256": "05552688afd691be3caa92889856b9a72e5be40082f9ed76d84964bd225ab0d6",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert.v"
+        ]
+      },
+      "color_convert_AXILiteS_s_axi.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_AXILiteS_s_axi.v",
+        "bytes": 13406,
+        "sha256": "8d7b95b749dfb49d62c47476dc5bf48255d613d3651993a1a20bf24a769904d7",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_AXILiteS_s_axi.v"
+        ]
+      },
+      "color_convert_macbkb.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_macbkb.v",
+        "bytes": 1392,
+        "sha256": "9042bc931e24fb3486f3e77084d75eb54dce3085225f42f954650a9999dce744",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_macbkb.v"
+        ]
+      },
+      "color_convert_maccud.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_maccud.v",
+        "bytes": 1392,
+        "sha256": "745e2b1f3ba431579934de16df1cd3b9781b1745c10cfcb718e7a20bd2ee945b",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_maccud.v"
+        ]
+      }
+    },
+    "pixel_pack": {
+      "pixel_pack.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog/pixel_pack.v",
+        "bytes": 113577,
+        "sha256": "7b9fc53c8220a1b69ebc85b4200de2733a89e52d04f0297a848d43a19f9968ed",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/2ea5/hdl/verilog/pixel_pack.v"
+        ]
+      },
+      "pixel_pack_AXILiteS_s_axi.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog/pixel_pack_AXILiteS_s_axi.v",
+        "bytes": 6356,
+        "sha256": "d583cd2ced0e92b05ae04a00f721ec5a0ac0ca2a1c8dd91c2902beb6b391ef1a",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/2ea5/hdl/verilog/pixel_pack_AXILiteS_s_axi.v"
+        ]
+      }
+    },
+    "pixel_unpack": {
+      "pixel_unpack.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1/impl/ip/hdl/verilog/pixel_unpack.v",
+        "bytes": 79755,
+        "sha256": "ecf22f650a02cbaab238493d91085b045b0d51c3b70555003bcfaa6f646c74e0",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8caf/hdl/verilog/pixel_unpack.v"
+        ]
+      },
+      "pixel_unpack_AXILiteS_s_axi.v": {
+        "source": "build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1/impl/ip/hdl/verilog/pixel_unpack_AXILiteS_s_axi.v",
+        "bytes": 5645,
+        "sha256": "5a49d2dd06dbc57ca6e7749f4f01aa8328cabdbc08860fb3c3026e5922ad097d",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/8caf/hdl/verilog/pixel_unpack_AXILiteS_s_axi.v"
+        ]
+      }
+    },
+    "rgb2dvi_v1_2": {
+      "ClockGen.vhd": {
+        "bytes": 8885,
+        "sha256": "a3ac3a940d9455b342d5217b008502ebeef2da35a2b27a4074eb9ab3c58e6b1b",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/ClockGen.vhd"
+        ]
+      },
+      "DVI_Constants.vhd": {
+        "bytes": 3151,
+        "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/DVI_Constants.vhd"
+        ]
+      },
+      "OutputSERDES.vhd": {
+        "bytes": 8366,
+        "sha256": "6205d58405919d4f899a525256e2cafa725408f6644642755cd0de63e69b286e",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/OutputSERDES.vhd"
+        ]
+      },
+      "rgb2dvi.vhd": {
+        "bytes": 7781,
+        "sha256": "7268a67d557e36200847d494536733026dc7e2ca0980b6d2138fe9bac735f0cc",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/rgb2dvi.vhd"
+        ]
+      },
+      "rgb2dvi.xdc": {
+        "bytes": 292,
+        "sha256": "51b9ac7f1229a2250cddb1d490e45e536dd836eb5c42851f67359c7a5aef6130",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi.xdc"
+        ]
+      },
+      "rgb2dvi_clocks.xdc": {
+        "bytes": 114,
+        "sha256": "d39d2f58a6cf74c30eef3c4b7d37c436359ea3fcfaff3ddcc0a1a69388b73ac8",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc"
+        ]
+      },
+      "rgb2dvi_ooc.xdc": {
+        "bytes": 136,
+        "sha256": "77f9820235b2c3ce1e99d369db4932a76705633eeb5f950908855183931dc1a2",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc"
+        ]
+      },
+      "SyncAsync.vhd": {
+        "bytes": 3727,
+        "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsync.vhd"
+        ]
+      },
+      "SyncAsyncReset.vhd": {
+        "bytes": 3734,
+        "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsyncReset.vhd"
+        ]
+      },
+      "TMDS_Encoder.vhd": {
+        "bytes": 7863,
+        "sha256": "b047a257c1172412d1b354a98e3cc77d013d0f3c1af6ff646233abf8b669c196",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/TMDS_Encoder.vhd"
+        ]
+      }
+    },
+    "dvi2rgb_v1_7": {
+      "ChannelBond.vhd": {
+        "bytes": 6809,
+        "sha256": "9f8359aeb6c1e60cc3cbbc9cf3ddc69895576ef86c032e85e77d0d4fdcf80f3f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/ChannelBond.vhd"
+        ]
+      },
+      "dvi2rgb.vhd": {
+        "bytes": 11324,
+        "sha256": "0116904c3264b246bb15008781e31f3f2ad11fec0f8d8dcc6e2474d4c101177c",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/dvi2rgb.vhd"
+        ]
+      },
+      "dvi2rgb.xdc": {
+        "bytes": 940,
+        "sha256": "2dc9a20273f63cd0cecaa01a6ad2551cfc65460037d8a8ea9f8948f7eab7242a",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ip/system_dvi2rgb_0_0/src/dvi2rgb.xdc"
+        ]
+      },
+      "dvi2rgb_ooc.xdc": {
+        "bytes": 95,
+        "sha256": "0b74ab740aeab92ea0f247b5bbd931e34d4c8cffc5b118eec9f95a2d63b0e8a9",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ip/system_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc"
+        ]
+      },
+      "DVI_Constants.vhd": {
+        "bytes": 3151,
+        "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/DVI_Constants.vhd"
+        ]
+      },
+      "EEPROM_8b.vhd": {
+        "bytes": 8403,
+        "sha256": "db5cede08b24e5c4a3068d9de6e6cd5fc19d5aad2c3245b0da6f2265545ce676",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/EEPROM_8b.vhd"
+        ]
+      },
+      "GlitchFilter.vhd": {
+        "bytes": 3919,
+        "sha256": "914d9844fd56b3d7f4e67720fc9f0ca965dee6c26e8cf7a5822529a34256e8ab",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/GlitchFilter.vhd"
+        ]
+      },
+      "InputSERDES.vhd": {
+        "bytes": 10056,
+        "sha256": "9f28ba82371f70e4597e79648a433343d424de7c55ff48e766944f20b19adb00",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/InputSERDES.vhd"
+        ]
+      },
+      "PhaseAlign.vhd": {
+        "bytes": 14475,
+        "sha256": "6019634663033456653d5415205fd3df21b5527c1390ce5012c0702f38490632",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/PhaseAlign.vhd"
+        ]
+      },
+      "ResyncToBUFG.vhd": {
+        "bytes": 3719,
+        "sha256": "5ede27161ccf2723207c9c55e359cdcf1c9c998cb16fcaa909fdc8d58ff81689",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/ResyncToBUFG.vhd"
+        ]
+      },
+      "SyncAsync.vhd": {
+        "bytes": 3727,
+        "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncAsync.vhd"
+        ]
+      },
+      "SyncAsyncReset.vhd": {
+        "bytes": 3734,
+        "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncAsyncReset.vhd"
+        ]
+      },
+      "SyncBase.vhd": {
+        "bytes": 3854,
+        "sha256": "10dc70c19caa969071c2c0be52c3757a62d15d661f4b1b65b3f76818671e478c",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncBase.vhd"
+        ]
+      },
+      "TMDS_Clocking.vhd": {
+        "bytes": 11908,
+        "sha256": "07ac631d46b6a948a9cceb141fe370a9cd08d3066236d715f139d5c2519fd6ec",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TMDS_Clocking.vhd"
+        ]
+      },
+      "TMDS_Decoder.vhd": {
+        "bytes": 10863,
+        "sha256": "26fa9528105d63a9c85b5dc6f23e64da26ae0258d68c7da61ad63dc279864d47",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TMDS_Decoder.vhd"
+        ]
+      },
+      "TWI_SlaveCtl.vhd": {
+        "bytes": 11349,
+        "sha256": "b1c9a001d8a7bedb2366d9c1d6d0b061de59327b68d6867df887d0cb73f62f2f",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TWI_SlaveCtl.vhd"
+        ]
+      }
+    },
+    "axi_dynclk_v1_0": {
+      "axi_dynclk.vhd": {
+        "bytes": 10008,
+        "sha256": "2b8d2de5d2731fd0b83c06efb0566f83bd64016e699d067e39dc396de681ecaf",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk.vhd"
+        ]
+      },
+      "axi_dynclk_S00_AXI.vhd": {
+        "bytes": 18625,
+        "sha256": "871c0b0a56ad7caefecc844d23faf5af6ad904019c2cdbbb3ef5edc5048495e0",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk_S00_AXI.vhd"
+        ]
+      },
+      "mmcme2_drp.v": {
+        "bytes": 15355,
+        "sha256": "3833e1439bc56a53d682cd4a8c99b6a9d3e6378b9e27667df290f0f8896faeac",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/mmcme2_drp.v"
+        ]
+      }
+    },
+    "color_swap_1.0": {
+      "color_swap.v": {
+        "bytes": 1426,
+        "sha256": "62706648f324e069e0b9021c569272cbf1d3d69b3b2802ff7c12f4f5e0558224",
+        "actual_project_copies": [
+          "b_integration.srcs/sources_1/bd/system/ipshared/fac8/color_swap.v"
+        ]
+      }
+    }
+  },
+  "original_snapshots_unchanged": {
+    "v2.2.1": {
+      "commit": "3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3",
+      "files_checked": 1417,
+      "manifest": {
+        "bytes": 279317,
+        "sha256": "a7bb4b04392da3cf0810f657ccbe747b1ef37f4f067632c7a0fbc3ed61fedb20"
+      }
+    },
+    "v3.0.1": {
+      "commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+      "files_checked": 958,
+      "manifest": {
+        "bytes": 186251,
+        "sha256": "44bbd24ff78b5897ada72b551c9a7520101b771ed221790c956dc5614e526e22"
+      }
+    }
+  },
+  "a4_manifest": {
+    "bytes": 30522,
+    "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "scripts\\c7_demo_board.py": {
+    "bytes": 3871,
+    "sha256": "336416003ae90d14b8e47001efe6ba9d4ded4f5b31612b43a729d0533a73cd01"
+  },
+  "scripts\\package_c7_demo.py": {
+    "bytes": 3349,
+    "sha256": "9c5a7ec9fd0c5ac3ddf494f6f7f35c9af35939b3184a4f153d9f234904782a89"
+  },
+  "scripts\\verify_c7_demo.py": {
+    "bytes": 7148,
+    "sha256": "736077d09785ebecf6a588e8ae8cd2ed0f7ed1095b5b879b307b12986b4d8e49"
+  },
+  "tests\\test_c7_demo.py": {
+    "bytes": 4470,
+    "sha256": "91140b5c8d462240473336d6357167526c17beacc3a9a55258581771f3b1a7bb"
+  }
+}

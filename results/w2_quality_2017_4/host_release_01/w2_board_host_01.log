@@ -1,0 +1,23 @@
+test_all_80_host_transfers_control_observer_timing_and_release (test_w2_board_runner.W2RunnerTests.test_all_80_host_transfers_control_observer_timing_and_release) ... ok
+test_dma_timeout_keeps_both_inflight_buffers (test_w2_board_runner.W2RunnerTests.test_dma_timeout_keeps_both_inflight_buffers) ... ok
+test_output_byte_count_native_and_observer_failures_retain (test_w2_board_runner.W2RunnerTests.test_output_byte_count_native_and_observer_failures_retain) ... ok
+test_partial_allocation_failure_keeps_first_buffer (test_w2_board_runner.W2RunnerTests.test_partial_allocation_failure_keeps_first_buffer) ... ok
+test_phase_order_rejects_before_access (test_w2_board_runner.W2RunnerTests.test_phase_order_rejects_before_access) ... ok
+test_preview_reads_dma_files_and_rejects_corruption_and_reexecution (test_w2_board_runner.W2RunnerTests.test_preview_reads_dma_files_and_rejects_corruption_and_reexecution) ... ERROR
+test_vector_digest_control_and_sequence_fail_before_allocation (test_w2_board_runner.W2RunnerTests.test_vector_digest_control_and_sequence_fail_before_allocation) ... ok
+
+======================================================================
+ERROR: test_preview_reads_dma_files_and_rejects_corruption_and_reexecution (test_w2_board_runner.W2RunnerTests.test_preview_reads_dma_files_and_rejects_corruption_and_reexecution)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\tests\test_w2_board_runner.py", line 132, in test_preview_reads_dma_files_and_rejects_corruption_and_reexecution
+    with self.assertRaises(RuntimeError):runner.finish_w2(context)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\w2_quality_board_test.py", line 175, in finish_w2
+    from IPython.display import display
+ModuleNotFoundError: No module named 'IPython'
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.195s
+
+FAILED (errors=1)

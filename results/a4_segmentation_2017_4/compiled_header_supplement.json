@@ -1,0 +1,17 @@
+{
+  "captured_utc": "2026-10-11T19:07:31.118968+00:00",
+  "captured_phase": "POST_SYNTHESIS_ENUM_HEADER_PROVENANCE",
+  "scope": "Supplement to original reuse_evidence.json; installed headers read only, original audit not replaced",
+  "headers": [
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_imgbase.h",
+      "bytes": 7457,
+      "sha256": "9cbc2b27bd2c6031e65eabdd1957b8746c88a6085f3eb20e1f208930c7f693d0"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_imgbase.h",
+      "bytes": 7498,
+      "sha256": "6e72b2da58c81225dcb22c00e265733f55a9360051bebade56945599696b6337"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+test_export_audit_and_fault_guards (test_c7_demo.DemoTests.test_export_audit_and_fault_guards) ... Executing <Task pending name='Task-1' coro=<LiveHost.asyncSetUp() running at D:\PLD\retina_c7_system\tests\test_c7_w5b.py:87> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.219 seconds
+DEMO_CLOSED_IDLE: {'session_id': '9f6cd3c44d6441058b836777ada11b3f', 'service_state': 'CLOSED', 'hardware_state': 'IDLE', 'overlay_downloads': 1, 'last_completed_frame_status': 114695, 'active_run_id': None, 'pending': 0, 'completed': 7, 'accepted': 7, 'run_limit': 42, 'retained_buffer_count': 0, 'error': None, 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD', 'board_acceptance': 'PENDING_INDEPENDENT_VERIFICATION'}
+DEMO_RESULTS_READY: C:\Users\Gabriel\AppData\Local\Temp\tmpu4bkfm0r\c7_demo_results.zip
+Executing <Task finished name='Task-3' coro=<DemoTests.test_export_audit_and_fault_guards() done, defined at D:\PLD\retina_c7_system\tests\test_c7_demo.py:18> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 8.250 seconds
+ok
+test_complete_35_http_and_seven_manual_full_arrays_exports (test_c7_w5b.LiveHost.test_complete_35_http_and_seven_manual_full_arrays_exports) ... Executing <Task pending name='Task-15' coro=<LiveHost.asyncSetUp() running at D:\PLD\retina_c7_system\tests\test_c7_w5b.py:87> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.157 seconds
+422 POST /api/runs (127.0.0.1) 4.07ms
+422 POST /api/runs (127.0.0.1) 1.04ms
+422 POST /api/runs (127.0.0.1) 3.07ms
+422 POST /api/runs (127.0.0.1) 3.01ms
+422 POST /api/runs (127.0.0.1) 3.11ms
+422 POST /api/runs (127.0.0.1) 1.01ms
+422 POST /api/runs (127.0.0.1) 1.01ms
+422 POST /api/runs (127.0.0.1) 2.02ms
+422 POST /api/runs/3e81fd873d9148308ee571cddf3914fa/browser-timing (127.0.0.1) 2.00ms
+Executing <Task finished name='Task-17' coro=<LiveHost.test_complete_35_http_and_seven_manual_full_arrays_exports() done, defined at D:\PLD\retina_c7_system\tests\test_c7_w5b.py:98> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 43.531 seconds
+Executing <Task finished name='Task-191' coro=<LiveHost.asyncTearDown() done, defined at D:\PLD\retina_c7_system\tests\test_c7_w5b.py:93> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.109 seconds
+ok
+test_timeout_stops_and_retains_no_retry (test_c7_w5b.LiveHost.test_timeout_stops_and_retains_no_retry) ... Executing <Task pending name='Task-195' coro=<LiveHost.asyncSetUp() running at D:\PLD\retina_c7_system\tests\test_c7_w5b.py:87> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.141 seconds
+422 POST /api/runs (127.0.0.1) 1.00ms
+422 POST /api/runs (127.0.0.1) 1.35ms
+422 POST /api/runs (127.0.0.1) 2.38ms
+422 POST /api/runs (127.0.0.1) 1.73ms
+422 POST /api/runs (127.0.0.1) 2.03ms
+422 POST /api/runs (127.0.0.1) 2.34ms
+422 POST /api/runs (127.0.0.1) 1.04ms
+422 POST /api/runs (127.0.0.1) 1.34ms
+ok
+test_frozen_package_and_fresh_extraction (test_c7_demo.NotebookTests.test_frozen_package_and_fresh_extraction) ... ok
+
+----------------------------------------------------------------------
+Ran 4 tests in 102.086s
+
+OK

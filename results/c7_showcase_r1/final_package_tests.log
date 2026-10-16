@@ -1,0 +1,7 @@
+test_notebook_extraction_and_integrity (test_c7_showcase.PackageTests.test_notebook_extraction_and_integrity) ... ok
+test_pair_and_frozen_math (test_c7_showcase.PackageTests.test_pair_and_frozen_math) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.849s
+
+OK

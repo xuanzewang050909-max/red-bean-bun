@@ -1,0 +1,13 @@
+{
+  "status": "HOST_PACKAGE_BOARD_NOT_RUN",
+  "files": {
+    "c7_showcase.ipynb": {
+      "bytes": 6331,
+      "sha256": "c2913fde0fd707c52126fe7d4b35052f0096d3919d5cadabf3dce470008b65d0"
+    },
+    "c7_showcase_r1.zip": {
+      "bytes": 14764066,
+      "sha256": "a474e18b330e6a3daddb821113782724e00c2bbfba5008a6ea504a531f412720"
+    }
+  }
+}

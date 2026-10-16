@@ -1,0 +1,25 @@
+{
+  "status": "HOST_DEMO_FIXTURE_NOT_BOARD",
+  "tasks": 7,
+  "matched_words": 1835008,
+  "matched_pngs": 31,
+  "boot": {
+    "boot_id": "12345678-1234-1234-1234-123456789abc",
+    "uptime_seconds": 20,
+    "scope": "HOST ONLY synthetic boot; not physical restart"
+  },
+  "archive": {
+    "bytes": 12448546,
+    "sha256": "86292f0b9bf3a9fe88bbf93298f819630a6a9ac93cd5b9a2944a90190f2ca487"
+  },
+  "notebook": {
+    "bytes": 10981,
+    "sha256": "915f5b97db6222bfb7b7c4d6146734f6be00618e1d6ad9af248c6d85e55692e2"
+  },
+  "ignored_empty_cells": 0,
+  "exclusions": [
+    "Physical restart/video requires separate human evidence",
+    "Not forced power/network/DMA-fault recovery",
+    "Not a new FPS or quality benchmark"
+  ]
+}

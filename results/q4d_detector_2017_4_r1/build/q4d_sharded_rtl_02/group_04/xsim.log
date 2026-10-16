@@ -1,0 +1,84 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Thu Oct 15 02:54:16 2026
+# Process ID: 44760
+# Current directory: D:/PLD/retina_fpga/build/q4d_sharded_rtl_02/group_04
+# Command line: xsim.exe -mode tcl -source {xsim.dir/q4d_detector_shard/xsim_script.tcl}
+# Log file: D:/PLD/retina_fpga/build/q4d_sharded_rtl_02/group_04/xsim.log
+# Journal file: D:/PLD/retina_fpga/build/q4d_sharded_rtl_02/group_04\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/q4d_detector_shard/xsim_script.tcl
+# xsim {q4d_detector_shard} -maxdeltaid 50000 -testplusarg RANGE_FIRST=7 -testplusarg RANGE_LAST=9 -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+Q4D_SHARD_START: first=7 last=9
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=9510 out=0
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=17594 out=7331
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=25195 out=14919
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=32651 out=22372
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=40175 out=29896
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=47636 out=37357
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=55206 out=44921
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=62685 out=52406
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=70153 out=59875
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=77746 out=67463
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=85260 out=74973
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=92753 out=82471
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=100335 out=90060
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=107800 out=97515
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=115226 out=104944
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=122764 out=112491
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=130286 out=120012
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=137848 out=127568
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=145305 out=135031
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=152905 out=142626
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=160335 out=150051
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=167856 out=157571
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=175427 out=165149
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=182940 out=172656
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=190523 out=180239
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=198023 out=187744
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=205471 out=195187
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=213088 out=202803
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=220566 out=210283
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=228141 out=217859
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=235558 out=225275
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=243012 out=232737
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=250591 out=240321
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=258118 out=247830
+Q4D_DETECTOR_AXIS_PROGRESS: case=1 in=0 out=255387
+Q4D_ACTUAL_HLS_OBSERVER_PASS: words=262144 cfg=0007703b core=358993 drain=359059 gaps=3884 stalls=86587
+Q4D_DETECTOR_AXIS_FRAME_PASS: case=1 words=262144 status=00004001
+Q4D_SHARD_VECTOR_PASS: vector=7 words=262144
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=850 out=0
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=9485 out=4063
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=17039 out=11629
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=24511 out=19108
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=32030 out=26615
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=39594 out=34173
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=46938 out=41518
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=54511 out=49097
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=61933 out=56525
+Q4D_DETECTOR_AXIS_PROGRESS: case=2 in=0 out=64042
+Q4D_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=0008703f core=92928 drain=92996 gaps=982 stalls=22004
+Q4D_DETECTOR_AXIS_FRAME_PASS: case=2 words=65536 status=00008002
+Q4D_SHARD_VECTOR_PASS: vector=8 words=65536
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=7157 out=1903
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=14827 out=9420
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=22305 out=16886
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=29765 out=24353
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=37245 out=31829
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=44777 out=39357
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=52270 out=46851
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=59707 out=54288
+Q4D_DETECTOR_AXIS_PROGRESS: case=3 in=0 out=61841
+Q4D_ACTUAL_HLS_OBSERVER_PASS: words=65536 cfg=0009013f core=92867 drain=92932 gaps=988 stalls=21940
+Q4D_DETECTOR_AXIS_FRAME_PASS: case=3 words=65536 status=0000c003
+Q4D_SHARD_VECTOR_PASS: vector=9 words=65536
+Q4D_SHARD_PASS: first=7 last=9 frames=3 checked=393216; same generated RTL and full scoreboard, paired transitions retained
+$finish called at time : 5450821 ns : File "D:/PLD/retina_fpga/build/q4d_shard_compile_01/retina_q4d_detector_shard_tb.sv" Line 228
+exit 0
+INFO: [Common 17-206] Exiting xsim at Thu Oct 15 03:27:36 2026...

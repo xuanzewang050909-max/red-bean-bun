@@ -1,0 +1,41 @@
+{
+  "status": "REJECT_Q4_GRADIENT_R4_FOR_PL",
+  "candidate_count": 28,
+  "eligible_count": 0,
+  "Q4_total_candidates": 121,
+  "Q4_total_eligible": 0,
+  "host_tests_passed": 35,
+  "new_tests_this_round": 9,
+  "source_commit": "2d2e86fdce355e8dcb7ef6ac51b6565377c482ec",
+  "source_location": "WINDOWS_OFFLINE_CPU_NOT_PL",
+  "new_hardware_status": "NOT_IMPLEMENTED",
+  "user_board_actions_required": false,
+  "production_files_unchanged": true,
+  "preserved_file_count": 179,
+  "failure_counts": {
+    "256:thin_recall": 5,
+    "256:cldice": 15,
+    "256:adjacent_edge_coverage": 7,
+    "512:thin_recall": 24,
+    "512:cldice": 28,
+    "512:adjacent_edge_coverage": 4,
+    "512:bright_fp_reduction": 28,
+    "256:bridge_added_precision": 24,
+    "512:bridge_added_precision": 24
+  },
+  "next_stage": "Q4a: inspect dark-line/edge cross-section separability and long missing paths before a new preregistered detector; no expanded old flank/gap grid",
+  "evidence_sha256": {
+    "error_audit.json": "c2cf3f1bcb04f720ad8b27a90517175066a4b9090438a74b81699624635cfa03",
+    "error_audit_run.log": "4243a1f6362b8a3ef51db0934ebbd80f198c179580c6ba61f8460e8c51408883",
+    "host_environment.txt": "dcfacbc11221bef97189dedb392e022185c9ed836162302265b8fe644b79c254",
+    "host_tests.log": "71ed39ead5ca08d9bc90e324c05c067be6c8b0b55ef0f752271d4600e7f7abf9",
+    "independent_run.log": "308eaaeca6ac1fed2b3ab8aa8db4edbd98d0aef550ded6843f1fa34d1fa87955",
+    "independent_verification.json": "ca594dbe5adb53beb25a111e890a02b28b7c0c9291c7a390a517d692e1491df1",
+    "missing_paths.json": "70c8dd31cf52be22bb840bf1b44136dbda97f5f4f1074e86231ab623879c9e57",
+    "missing_paths_run.log": "3c64d465a534879805f9d591561bd5543cd57df8ced0dca7d106b123a3987281",
+    "provenance.json": "8c48e2858e180a0d35dbd10bc2a7d22ec42651094088771eae8b5a69a2bb713c",
+    "training_report.json": "c9c8ed10675f8dcdeb48bd7d978fc7568855b83690ac74ec66daac444d71f073",
+    "training_review.md": "0ea5f8731ffa44cdbb272bcb42d9d565079e0f4a0fa31fa5ada22cd6d5e43bd2",
+    "training_run.log": "a6d308690ce27044e05dbc4f2601c44483e27ab6c5e70871facdab8bf2a56ffe"
+  }
+}

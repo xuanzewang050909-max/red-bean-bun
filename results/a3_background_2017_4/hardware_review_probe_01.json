@@ -1,0 +1,9 @@
+{
+  "status": "RELEASE_GATE_HELD_FOR_NEW_DRC_REVIEW",
+  "board_status": "NOT_RUN",
+  "trigger": "check_hardware raised ValueError: New DRC warning needs review",
+  "build": "build/a3_background_01",
+  "old_gate": ["RTSTAT-10"],
+  "observed": ["DPIP-1", "DPOP-1", "DPOP-2", "RTSTAT-10"],
+  "resolution": "Three advisories apply only to the generated join_words DSP. Complete 100MHz timing is met, numeric/handshake/reset RTL tests passed. Scope-specific gates and reasoning in drc_review.md retained; no FPGA logic changed."
+}

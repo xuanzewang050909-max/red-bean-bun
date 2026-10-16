@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\prepare_q2_quality_vectors.py", line 97, in <module>
+    main()
+  File "D:\PLD\retina_fpga\scripts\prepare_q2_quality_vectors.py", line 53, in main
+    raise ValueError('Preserve earlier full-pipeline vectors')
+ValueError: Preserve earlier full-pipeline vectors

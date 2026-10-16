@@ -1,0 +1,1200 @@
+{
+  "status": "TRAIN_AH_MISSING_SKELETON_COMPONENT_DIAGNOSTIC_NOT_NEW_SELECTION",
+  "source_report_sha256": "c9c8ed10675f8dcdeb48bd7d978fc7568855b83690ac74ec66daac444d71f073",
+  "script_sha256": "b3aba6373da2dda6297a5580a0274bab9e489a050829aae797bc91548fb66565",
+  "cases": {
+    "im0001_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2408,
+        "missed_pixels": 1033,
+        "bins": {
+          "1": {
+            "components": 83,
+            "pixels": 83
+          },
+          "2-3": {
+            "components": 89,
+            "pixels": 217
+          },
+          "4-7": {
+            "components": 54,
+            "pixels": 273
+          },
+          "8-15": {
+            "components": 20,
+            "pixels": 215
+          },
+          "16+": {
+            "components": 11,
+            "pixels": 245
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2408,
+        "missed_pixels": 1020,
+        "bins": {
+          "1": {
+            "components": 83,
+            "pixels": 83
+          },
+          "2-3": {
+            "components": 84,
+            "pixels": 204
+          },
+          "4-7": {
+            "components": 54,
+            "pixels": 273
+          },
+          "8-15": {
+            "components": 20,
+            "pixels": 215
+          },
+          "16+": {
+            "components": 11,
+            "pixels": 245
+          }
+        }
+      }
+    },
+    "im0001_512": {
+      "C2": {
+        "gt_skeleton_pixels": 5444,
+        "missed_pixels": 1943,
+        "bins": {
+          "1": {
+            "components": 63,
+            "pixels": 63
+          },
+          "2-3": {
+            "components": 81,
+            "pixels": 197
+          },
+          "4-7": {
+            "components": 78,
+            "pixels": 406
+          },
+          "8-15": {
+            "components": 68,
+            "pixels": 701
+          },
+          "16+": {
+            "components": 22,
+            "pixels": 576
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 5444,
+        "missed_pixels": 1911,
+        "bins": {
+          "1": {
+            "components": 57,
+            "pixels": 57
+          },
+          "2-3": {
+            "components": 75,
+            "pixels": 184
+          },
+          "4-7": {
+            "components": 75,
+            "pixels": 393
+          },
+          "8-15": {
+            "components": 68,
+            "pixels": 701
+          },
+          "16+": {
+            "components": 22,
+            "pixels": 576
+          }
+        }
+      }
+    },
+    "im0003_256": {
+      "C2": {
+        "gt_skeleton_pixels": 1886,
+        "missed_pixels": 583,
+        "bins": {
+          "1": {
+            "components": 62,
+            "pixels": 62
+          },
+          "2-3": {
+            "components": 48,
+            "pixels": 112
+          },
+          "4-7": {
+            "components": 40,
+            "pixels": 212
+          },
+          "8-15": {
+            "components": 10,
+            "pixels": 104
+          },
+          "16+": {
+            "components": 5,
+            "pixels": 93
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 1886,
+        "missed_pixels": 575,
+        "bins": {
+          "1": {
+            "components": 60,
+            "pixels": 60
+          },
+          "2-3": {
+            "components": 45,
+            "pixels": 106
+          },
+          "4-7": {
+            "components": 40,
+            "pixels": 212
+          },
+          "8-15": {
+            "components": 10,
+            "pixels": 104
+          },
+          "16+": {
+            "components": 5,
+            "pixels": 93
+          }
+        }
+      }
+    },
+    "im0003_512": {
+      "C2": {
+        "gt_skeleton_pixels": 4258,
+        "missed_pixels": 1118,
+        "bins": {
+          "1": {
+            "components": 36,
+            "pixels": 36
+          },
+          "2-3": {
+            "components": 67,
+            "pixels": 164
+          },
+          "4-7": {
+            "components": 51,
+            "pixels": 276
+          },
+          "8-15": {
+            "components": 32,
+            "pixels": 312
+          },
+          "16+": {
+            "components": 15,
+            "pixels": 330
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 4258,
+        "missed_pixels": 1102,
+        "bins": {
+          "1": {
+            "components": 35,
+            "pixels": 35
+          },
+          "2-3": {
+            "components": 60,
+            "pixels": 145
+          },
+          "4-7": {
+            "components": 52,
+            "pixels": 280
+          },
+          "8-15": {
+            "components": 32,
+            "pixels": 312
+          },
+          "16+": {
+            "components": 15,
+            "pixels": 330
+          }
+        }
+      }
+    },
+    "im0005_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2534,
+        "missed_pixels": 934,
+        "bins": {
+          "1": {
+            "components": 34,
+            "pixels": 34
+          },
+          "2-3": {
+            "components": 62,
+            "pixels": 144
+          },
+          "4-7": {
+            "components": 53,
+            "pixels": 290
+          },
+          "8-15": {
+            "components": 16,
+            "pixels": 172
+          },
+          "16+": {
+            "components": 10,
+            "pixels": 294
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2534,
+        "missed_pixels": 920,
+        "bins": {
+          "1": {
+            "components": 31,
+            "pixels": 31
+          },
+          "2-3": {
+            "components": 57,
+            "pixels": 133
+          },
+          "4-7": {
+            "components": 53,
+            "pixels": 290
+          },
+          "8-15": {
+            "components": 16,
+            "pixels": 172
+          },
+          "16+": {
+            "components": 10,
+            "pixels": 294
+          }
+        }
+      }
+    },
+    "im0005_512": {
+      "C2": {
+        "gt_skeleton_pixels": 5341,
+        "missed_pixels": 1189,
+        "bins": {
+          "1": {
+            "components": 44,
+            "pixels": 44
+          },
+          "2-3": {
+            "components": 60,
+            "pixels": 147
+          },
+          "4-7": {
+            "components": 66,
+            "pixels": 354
+          },
+          "8-15": {
+            "components": 35,
+            "pixels": 367
+          },
+          "16+": {
+            "components": 12,
+            "pixels": 277
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 5341,
+        "missed_pixels": 1162,
+        "bins": {
+          "1": {
+            "components": 46,
+            "pixels": 46
+          },
+          "2-3": {
+            "components": 51,
+            "pixels": 123
+          },
+          "4-7": {
+            "components": 67,
+            "pixels": 358
+          },
+          "8-15": {
+            "components": 34,
+            "pixels": 358
+          },
+          "16+": {
+            "components": 12,
+            "pixels": 277
+          }
+        }
+      }
+    },
+    "im0077_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2492,
+        "missed_pixels": 603,
+        "bins": {
+          "1": {
+            "components": 117,
+            "pixels": 117
+          },
+          "2-3": {
+            "components": 77,
+            "pixels": 175
+          },
+          "4-7": {
+            "components": 27,
+            "pixels": 136
+          },
+          "8-15": {
+            "components": 8,
+            "pixels": 81
+          },
+          "16+": {
+            "components": 4,
+            "pixels": 94
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2492,
+        "missed_pixels": 597,
+        "bins": {
+          "1": {
+            "components": 115,
+            "pixels": 115
+          },
+          "2-3": {
+            "components": 75,
+            "pixels": 171
+          },
+          "4-7": {
+            "components": 27,
+            "pixels": 136
+          },
+          "8-15": {
+            "components": 8,
+            "pixels": 81
+          },
+          "16+": {
+            "components": 4,
+            "pixels": 94
+          }
+        }
+      }
+    },
+    "im0077_512": {
+      "C2": {
+        "gt_skeleton_pixels": 5844,
+        "missed_pixels": 818,
+        "bins": {
+          "1": {
+            "components": 85,
+            "pixels": 85
+          },
+          "2-3": {
+            "components": 64,
+            "pixels": 150
+          },
+          "4-7": {
+            "components": 60,
+            "pixels": 305
+          },
+          "8-15": {
+            "components": 18,
+            "pixels": 198
+          },
+          "16+": {
+            "components": 3,
+            "pixels": 80
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 5844,
+        "missed_pixels": 799,
+        "bins": {
+          "1": {
+            "components": 78,
+            "pixels": 78
+          },
+          "2-3": {
+            "components": 58,
+            "pixels": 138
+          },
+          "4-7": {
+            "components": 60,
+            "pixels": 305
+          },
+          "8-15": {
+            "components": 18,
+            "pixels": 198
+          },
+          "16+": {
+            "components": 3,
+            "pixels": 80
+          }
+        }
+      }
+    },
+    "im0082_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2463,
+        "missed_pixels": 646,
+        "bins": {
+          "1": {
+            "components": 131,
+            "pixels": 131
+          },
+          "2-3": {
+            "components": 89,
+            "pixels": 204
+          },
+          "4-7": {
+            "components": 32,
+            "pixels": 163
+          },
+          "8-15": {
+            "components": 8,
+            "pixels": 83
+          },
+          "16+": {
+            "components": 3,
+            "pixels": 65
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2463,
+        "missed_pixels": 646,
+        "bins": {
+          "1": {
+            "components": 131,
+            "pixels": 131
+          },
+          "2-3": {
+            "components": 89,
+            "pixels": 204
+          },
+          "4-7": {
+            "components": 32,
+            "pixels": 163
+          },
+          "8-15": {
+            "components": 8,
+            "pixels": 83
+          },
+          "16+": {
+            "components": 3,
+            "pixels": 65
+          }
+        }
+      }
+    },
+    "im0082_512": {
+      "C2": {
+        "gt_skeleton_pixels": 5947,
+        "missed_pixels": 1206,
+        "bins": {
+          "1": {
+            "components": 52,
+            "pixels": 52
+          },
+          "2-3": {
+            "components": 94,
+            "pixels": 231
+          },
+          "4-7": {
+            "components": 84,
+            "pixels": 445
+          },
+          "8-15": {
+            "components": 33,
+            "pixels": 333
+          },
+          "16+": {
+            "components": 4,
+            "pixels": 145
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 5947,
+        "missed_pixels": 1183,
+        "bins": {
+          "1": {
+            "components": 50,
+            "pixels": 50
+          },
+          "2-3": {
+            "components": 88,
+            "pixels": 218
+          },
+          "4-7": {
+            "components": 82,
+            "pixels": 437
+          },
+          "8-15": {
+            "components": 33,
+            "pixels": 333
+          },
+          "16+": {
+            "components": 4,
+            "pixels": 145
+          }
+        }
+      }
+    },
+    "im0162_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2812,
+        "missed_pixels": 976,
+        "bins": {
+          "1": {
+            "components": 208,
+            "pixels": 208
+          },
+          "2-3": {
+            "components": 162,
+            "pixels": 388
+          },
+          "4-7": {
+            "components": 52,
+            "pixels": 259
+          },
+          "8-15": {
+            "components": 10,
+            "pixels": 105
+          },
+          "16+": {
+            "components": 1,
+            "pixels": 16
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2812,
+        "missed_pixels": 974,
+        "bins": {
+          "1": {
+            "components": 206,
+            "pixels": 206
+          },
+          "2-3": {
+            "components": 162,
+            "pixels": 388
+          },
+          "4-7": {
+            "components": 52,
+            "pixels": 259
+          },
+          "8-15": {
+            "components": 10,
+            "pixels": 105
+          },
+          "16+": {
+            "components": 1,
+            "pixels": 16
+          }
+        }
+      }
+    },
+    "im0162_512": {
+      "C2": {
+        "gt_skeleton_pixels": 7036,
+        "missed_pixels": 1845,
+        "bins": {
+          "1": {
+            "components": 118,
+            "pixels": 118
+          },
+          "2-3": {
+            "components": 137,
+            "pixels": 339
+          },
+          "4-7": {
+            "components": 143,
+            "pixels": 724
+          },
+          "8-15": {
+            "components": 43,
+            "pixels": 436
+          },
+          "16+": {
+            "components": 11,
+            "pixels": 228
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 7036,
+        "missed_pixels": 1819,
+        "bins": {
+          "1": {
+            "components": 111,
+            "pixels": 111
+          },
+          "2-3": {
+            "components": 130,
+            "pixels": 324
+          },
+          "4-7": {
+            "components": 142,
+            "pixels": 720
+          },
+          "8-15": {
+            "components": 43,
+            "pixels": 436
+          },
+          "16+": {
+            "components": 11,
+            "pixels": 228
+          }
+        }
+      }
+    },
+    "im0235_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2559,
+        "missed_pixels": 856,
+        "bins": {
+          "1": {
+            "components": 87,
+            "pixels": 87
+          },
+          "2-3": {
+            "components": 100,
+            "pixels": 232
+          },
+          "4-7": {
+            "components": 44,
+            "pixels": 212
+          },
+          "8-15": {
+            "components": 21,
+            "pixels": 199
+          },
+          "16+": {
+            "components": 5,
+            "pixels": 126
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2559,
+        "missed_pixels": 852,
+        "bins": {
+          "1": {
+            "components": 85,
+            "pixels": 85
+          },
+          "2-3": {
+            "components": 99,
+            "pixels": 230
+          },
+          "4-7": {
+            "components": 44,
+            "pixels": 212
+          },
+          "8-15": {
+            "components": 21,
+            "pixels": 199
+          },
+          "16+": {
+            "components": 5,
+            "pixels": 126
+          }
+        }
+      }
+    },
+    "im0235_512": {
+      "C2": {
+        "gt_skeleton_pixels": 6017,
+        "missed_pixels": 1486,
+        "bins": {
+          "1": {
+            "components": 65,
+            "pixels": 65
+          },
+          "2-3": {
+            "components": 74,
+            "pixels": 181
+          },
+          "4-7": {
+            "components": 96,
+            "pixels": 503
+          },
+          "8-15": {
+            "components": 33,
+            "pixels": 333
+          },
+          "16+": {
+            "components": 15,
+            "pixels": 404
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 6017,
+        "missed_pixels": 1449,
+        "bins": {
+          "1": {
+            "components": 59,
+            "pixels": 59
+          },
+          "2-3": {
+            "components": 64,
+            "pixels": 154
+          },
+          "4-7": {
+            "components": 95,
+            "pixels": 499
+          },
+          "8-15": {
+            "components": 33,
+            "pixels": 333
+          },
+          "16+": {
+            "components": 15,
+            "pixels": 404
+          }
+        }
+      }
+    },
+    "im0239_256": {
+      "C2": {
+        "gt_skeleton_pixels": 2727,
+        "missed_pixels": 1146,
+        "bins": {
+          "1": {
+            "components": 108,
+            "pixels": 108
+          },
+          "2-3": {
+            "components": 105,
+            "pixels": 249
+          },
+          "4-7": {
+            "components": 52,
+            "pixels": 263
+          },
+          "8-15": {
+            "components": 19,
+            "pixels": 186
+          },
+          "16+": {
+            "components": 8,
+            "pixels": 340
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 2727,
+        "missed_pixels": 1139,
+        "bins": {
+          "1": {
+            "components": 105,
+            "pixels": 105
+          },
+          "2-3": {
+            "components": 103,
+            "pixels": 245
+          },
+          "4-7": {
+            "components": 52,
+            "pixels": 263
+          },
+          "8-15": {
+            "components": 19,
+            "pixels": 186
+          },
+          "16+": {
+            "components": 8,
+            "pixels": 340
+          }
+        }
+      }
+    },
+    "im0239_512": {
+      "C2": {
+        "gt_skeleton_pixels": 6212,
+        "missed_pixels": 1903,
+        "bins": {
+          "1": {
+            "components": 82,
+            "pixels": 82
+          },
+          "2-3": {
+            "components": 70,
+            "pixels": 174
+          },
+          "4-7": {
+            "components": 86,
+            "pixels": 441
+          },
+          "8-15": {
+            "components": 40,
+            "pixels": 419
+          },
+          "16+": {
+            "components": 24,
+            "pixels": 787
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 6212,
+        "missed_pixels": 1862,
+        "bins": {
+          "1": {
+            "components": 74,
+            "pixels": 74
+          },
+          "2-3": {
+            "components": 58,
+            "pixels": 145
+          },
+          "4-7": {
+            "components": 85,
+            "pixels": 437
+          },
+          "8-15": {
+            "components": 40,
+            "pixels": 419
+          },
+          "16+": {
+            "components": 24,
+            "pixels": 787
+          }
+        }
+      }
+    },
+    "im0255_256": {
+      "C2": {
+        "gt_skeleton_pixels": 3291,
+        "missed_pixels": 1362,
+        "bins": {
+          "1": {
+            "components": 119,
+            "pixels": 119
+          },
+          "2-3": {
+            "components": 133,
+            "pixels": 307
+          },
+          "4-7": {
+            "components": 59,
+            "pixels": 299
+          },
+          "8-15": {
+            "components": 34,
+            "pixels": 357
+          },
+          "16+": {
+            "components": 12,
+            "pixels": 280
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 3291,
+        "missed_pixels": 1352,
+        "bins": {
+          "1": {
+            "components": 118,
+            "pixels": 118
+          },
+          "2-3": {
+            "components": 131,
+            "pixels": 302
+          },
+          "4-7": {
+            "components": 58,
+            "pixels": 295
+          },
+          "8-15": {
+            "components": 34,
+            "pixels": 357
+          },
+          "16+": {
+            "components": 12,
+            "pixels": 280
+          }
+        }
+      }
+    },
+    "im0255_512": {
+      "C2": {
+        "gt_skeleton_pixels": 7497,
+        "missed_pixels": 2335,
+        "bins": {
+          "1": {
+            "components": 71,
+            "pixels": 71
+          },
+          "2-3": {
+            "components": 93,
+            "pixels": 224
+          },
+          "4-7": {
+            "components": 149,
+            "pixels": 793
+          },
+          "8-15": {
+            "components": 67,
+            "pixels": 702
+          },
+          "16+": {
+            "components": 24,
+            "pixels": 545
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 7497,
+        "missed_pixels": 2318,
+        "bins": {
+          "1": {
+            "components": 67,
+            "pixels": 67
+          },
+          "2-3": {
+            "components": 90,
+            "pixels": 215
+          },
+          "4-7": {
+            "components": 149,
+            "pixels": 793
+          },
+          "8-15": {
+            "components": 67,
+            "pixels": 699
+          },
+          "16+": {
+            "components": 24,
+            "pixels": 544
+          }
+        }
+      }
+    },
+    "im0319_256": {
+      "C2": {
+        "gt_skeleton_pixels": 1493,
+        "missed_pixels": 864,
+        "bins": {
+          "1": {
+            "components": 37,
+            "pixels": 37
+          },
+          "2-3": {
+            "components": 52,
+            "pixels": 122
+          },
+          "4-7": {
+            "components": 31,
+            "pixels": 159
+          },
+          "8-15": {
+            "components": 16,
+            "pixels": 164
+          },
+          "16+": {
+            "components": 15,
+            "pixels": 382
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 1493,
+        "missed_pixels": 858,
+        "bins": {
+          "1": {
+            "components": 37,
+            "pixels": 37
+          },
+          "2-3": {
+            "components": 50,
+            "pixels": 116
+          },
+          "4-7": {
+            "components": 31,
+            "pixels": 159
+          },
+          "8-15": {
+            "components": 16,
+            "pixels": 164
+          },
+          "16+": {
+            "components": 15,
+            "pixels": 382
+          }
+        }
+      }
+    },
+    "im0319_512": {
+      "C2": {
+        "gt_skeleton_pixels": 3349,
+        "missed_pixels": 1610,
+        "bins": {
+          "1": {
+            "components": 40,
+            "pixels": 40
+          },
+          "2-3": {
+            "components": 47,
+            "pixels": 112
+          },
+          "4-7": {
+            "components": 36,
+            "pixels": 183
+          },
+          "8-15": {
+            "components": 41,
+            "pixels": 408
+          },
+          "16+": {
+            "components": 29,
+            "pixels": 867
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 3349,
+        "missed_pixels": 1596,
+        "bins": {
+          "1": {
+            "components": 38,
+            "pixels": 38
+          },
+          "2-3": {
+            "components": 43,
+            "pixels": 104
+          },
+          "4-7": {
+            "components": 35,
+            "pixels": 179
+          },
+          "8-15": {
+            "components": 41,
+            "pixels": 408
+          },
+          "16+": {
+            "components": 29,
+            "pixels": 867
+          }
+        }
+      }
+    }
+  },
+  "pooled": {
+    "256": {
+      "C2": {
+        "gt_skeleton_pixels": 24665,
+        "missed_pixels": 9003,
+        "bins": {
+          "1": {
+            "components": 986,
+            "pixels": 986
+          },
+          "2-3": {
+            "components": 917,
+            "pixels": 2150
+          },
+          "4-7": {
+            "components": 444,
+            "pixels": 2266
+          },
+          "8-15": {
+            "components": 162,
+            "pixels": 1666
+          },
+          "16+": {
+            "components": 74,
+            "pixels": 1935
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 24665,
+        "missed_pixels": 8933,
+        "bins": {
+          "1": {
+            "components": 971,
+            "pixels": 971
+          },
+          "2-3": {
+            "components": 895,
+            "pixels": 2099
+          },
+          "4-7": {
+            "components": 443,
+            "pixels": 2262
+          },
+          "8-15": {
+            "components": 162,
+            "pixels": 1666
+          },
+          "16+": {
+            "components": 74,
+            "pixels": 1935
+          }
+        }
+      }
+    },
+    "512": {
+      "C2": {
+        "gt_skeleton_pixels": 56945,
+        "missed_pixels": 15453,
+        "bins": {
+          "1": {
+            "components": 656,
+            "pixels": 656
+          },
+          "2-3": {
+            "components": 787,
+            "pixels": 1919
+          },
+          "4-7": {
+            "components": 849,
+            "pixels": 4430
+          },
+          "8-15": {
+            "components": 410,
+            "pixels": 4209
+          },
+          "16+": {
+            "components": 159,
+            "pixels": 4239
+          }
+        }
+      },
+      "C6_r2_union_e3_g3": {
+        "gt_skeleton_pixels": 56945,
+        "missed_pixels": 15201,
+        "bins": {
+          "1": {
+            "components": 615,
+            "pixels": 615
+          },
+          "2-3": {
+            "components": 717,
+            "pixels": 1750
+          },
+          "4-7": {
+            "components": 842,
+            "pixels": 4401
+          },
+          "8-15": {
+            "components": 409,
+            "pixels": 4197
+          },
+          "16+": {
+            "components": 159,
+            "pixels": 4238
+          }
+        }
+      }
+    }
+  },
+  "board_execution": false,
+  "definition": "Eight-connected components of original AH Zhang skeleton pixels missing from prediction, within original FOV.",
+  "limit": "Component size is NOT straight gap length. Components can curve/branch or be entirely missing branches; not proof that any specific connector can recover them. Labels are evaluation-only."
+}

@@ -1,0 +1,9 @@
+{
+  "kind": "HOST_IMPLEMENTATION_FAILURE_NOT_BOARD",
+  "phase": "package_browser_w1",
+  "error": "numpy.exceptions.AxisError: axis 2 is out of bounds for array of dimension 2",
+  "cause": "Original STARE AH/VK members are grayscale. First packager attempted RGB channel reduction.",
+  "correction": "Handle grayscale labels directly and RGB labels by any-channel foreground; labels remain evaluation-only. Original preprocessing, A4 and official driver files unchanged.",
+  "hardware_access": false,
+  "original_failure_preserved": true
+}

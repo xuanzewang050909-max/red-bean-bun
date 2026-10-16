@@ -1,0 +1,34 @@
+{
+  "status": "HOST_REAL_BROWSER_PREVIEW_NOT_BOARD",
+  "browser": "Codex in-app browser",
+  "service_status": {
+    "session_id": "d91b6135dcbf4d5da979b6a6a32fc390",
+    "service_state": "READY",
+    "hardware_state": "IDLE",
+    "overlay_downloads": 1,
+    "last_completed_frame_status": 163850,
+    "active_run_id": null,
+    "pending": 0,
+    "completed": 10,
+    "accepted": 10,
+    "run_limit": 100,
+    "retained_buffer_count": 0,
+    "error": null,
+    "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD",
+    "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+  },
+  "tests": [
+    "20 distinct image options",
+    "8 example options",
+    "Separate function view includes same-input no-GT alias and enables algorithm control",
+    "Single run completed",
+    "Previous image submitted a new task",
+    "Eight-image sequential list completed at im0324",
+    "No browser console errors"
+  ],
+  "screenshot": {
+    "path": "host_browser_preview.jpg",
+    "sha256": "fa5527fa35f5d270233f693e80e7cf3d1e260d81fa64084ff4cdecabeb5af4cc"
+  },
+  "video": "DEFERRED_BY_USER"
+}

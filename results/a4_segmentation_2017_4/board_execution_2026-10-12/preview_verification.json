@@ -1,0 +1,16 @@
+{
+  "status": "PASS_ARRAY_PANES_AND_NOTEBOOK_PIXELS",
+  "sha256": "601e0f695d4f674f35436a244e42cddba7c5e2bb96401bad283900e5d39a4efa",
+  "size": [
+    1024,
+    280
+  ],
+  "panes": 4,
+  "pane_resampling": [
+    "BICUBIC",
+    "BICUBIC",
+    "NEAREST",
+    "BICUBIC"
+  ],
+  "limits": "Numerical checks use full uint32 arrays, not this resized preview."
+}

@@ -1,0 +1,4 @@
+{
+  "status": "FAILED_VERIFICATION",
+  "error": "ValueError: Required visible manual preview missing: {'side': 512, 'mode': 'final', 'png_profile': 'fast', 'image_id': 'im0001', 'algorithm': 'C5', 'threshold': 20}"
+}

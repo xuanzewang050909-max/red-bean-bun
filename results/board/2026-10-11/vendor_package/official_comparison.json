@@ -1,0 +1,30 @@
+{
+  "board.xml": {
+    "byte_equal": true,
+    "xml_structure_equal": true,
+    "archive_fpga_components": [
+      {
+        "name": "part0",
+        "display_name": "pynq-z2",
+        "type": "fpga",
+        "part_name": "xc7z020clg400-1",
+        "pin_map_file": "part0_pins.xml",
+        "vendor": "xilinx",
+        "spec_url": "www.tul.com.tw/ProductsPYNQ-z2"
+      }
+    ]
+  },
+  "preset.xml": {
+    "byte_equal": true,
+    "xml_structure_equal": true,
+    "parameter_differences": {}
+  },
+  "part0_pins.xml": {
+    "byte_equal": true,
+    "xml_structure_equal": true
+  },
+  "xdc": {
+    "byte_equal": true,
+    "text_equal_after_newline_normalization": true
+  }
+}

@@ -1,0 +1,672 @@
+{
+  "status": "REAL_Q4_C5_RESIDUAL_ERRORS_CONFIRMED_NOT_QUALITY_ACCEPTANCE",
+  "archive_sha256": "f9496ba5ca16f00d026e8c7c5a0fa939b44a7328600aa2ea1b56a1b948b6d4a5",
+  "verification_sha256": "8857d94b551734713cbd6bd7ae7d3e7dfd1677dfb25ffa905b5a12a53565a43d",
+  "script_sha256": "0d1985ed39cbfd6226402e29aa17d94a9b32d5bf74e14b1e7ff92be53e16a2f6",
+  "records": {
+    "A": {
+      "run_id": "5f8760b464e24748a5e8843692aedcc5",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa"
+    },
+    "C2": {
+      "run_id": "27dea80453ab4a139d8cb1e5ab81e90e",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62"
+    },
+    "C5": {
+      "run_id": "6dacc0131eeb49248ab24e1116365670",
+      "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+      "output_sha256": "67e6c1befc3448b1964f56d55cbb86671b20976e68173aa96e3969f10bf32555"
+    }
+  },
+  "final_display_run": {
+    "run_id": "9fc1dca6c50e44a989b4b5ef3ccf9fca",
+    "matches_fixed_c5": true
+  },
+  "annotation_sources": {
+    "AH": {
+      "path": "labels/im0001_512_AH.npy",
+      "file": {
+        "bytes": 262272,
+        "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+      }
+    },
+    "VK": {
+      "path": "labels/im0001_512_VK.npy",
+      "file": {
+        "bytes": 262272,
+        "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+      }
+    }
+  },
+  "original_rectangle_xyxy": [
+    180,
+    145,
+    340,
+    385
+  ],
+  "core_rule": "Gaussian3(raw G)>=192 within original rectangle/FOV",
+  "band_rule": "15x15 square dilation(core) minus core within original rectangle/FOV",
+  "metrics": {
+    "A": {
+      "original_fov": {
+        "region_pixels": 211527,
+        "predicted_pixels": 24894,
+        "negative_in_both": 13187,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "precision": 0.4239174098176267,
+            "recall": 0.5831031053155045
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "precision": 0.43926247288503256,
+            "recall": 0.5244352788835068
+          }
+        }
+      },
+      "original_rectangle": {
+        "region_pixels": 38400,
+        "predicted_pixels": 7930,
+        "negative_in_both": 5360,
+        "annotations": {
+          "AH": {
+            "tp": 2149,
+            "fp": 5781,
+            "fn": 702,
+            "tn": 29768,
+            "dice": 0.39866431685372417,
+            "iou": 0.24895736793327156,
+            "precision": 0.27099621689785625,
+            "recall": 0.7537706068046299
+          },
+          "VK": {
+            "tp": 2268,
+            "fp": 5662,
+            "fn": 982,
+            "tn": 29488,
+            "dice": 0.40572450805008947,
+            "iou": 0.2544883303411131,
+            "precision": 0.28600252206809584,
+            "recall": 0.6978461538461539
+          }
+        }
+      },
+      "original_bright_core": {
+        "region_pixels": 2064,
+        "predicted_pixels": 0,
+        "negative_in_both": 0,
+        "annotations": {
+          "AH": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2064,
+            "dice": 1.0,
+            "iou": 1.0,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "VK": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2064,
+            "dice": 1.0,
+            "iou": 1.0,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        }
+      },
+      "original_seven_pixel_square_band": {
+        "region_pixels": 5334,
+        "predicted_pixels": 3225,
+        "negative_in_both": 3108,
+        "annotations": {
+          "AH": {
+            "tp": 92,
+            "fp": 3133,
+            "fn": 10,
+            "tn": 2099,
+            "dice": 0.05530507965133754,
+            "iou": 0.028438948995363214,
+            "precision": 0.028527131782945737,
+            "recall": 0.9019607843137255
+          },
+          "VK": {
+            "tp": 83,
+            "fp": 3142,
+            "fn": 5,
+            "tn": 2104,
+            "dice": 0.05010564443102928,
+            "iou": 0.025696594427244583,
+            "precision": 0.02573643410852713,
+            "recall": 0.9431818181818182
+          }
+        }
+      }
+    },
+    "C2": {
+      "original_fov": {
+        "region_pixels": 211527,
+        "predicted_pixels": 21861,
+        "negative_in_both": 10314,
+        "annotations": {
+          "AH": {
+            "tp": 10424,
+            "fp": 11437,
+            "fn": 7674,
+            "tn": 181992,
+            "dice": 0.5217347781476013,
+            "iou": 0.35293719316065686,
+            "precision": 0.47683088605278806,
+            "recall": 0.575975245883523
+          },
+          "VK": {
+            "tp": 10785,
+            "fp": 11076,
+            "fn": 10066,
+            "tn": 179600,
+            "dice": 0.5050103015545983,
+            "iou": 0.33780186049425254,
+            "precision": 0.49334431178811583,
+            "recall": 0.5172413793103449
+          }
+        }
+      },
+      "original_rectangle": {
+        "region_pixels": 38400,
+        "predicted_pixels": 7062,
+        "negative_in_both": 4512,
+        "annotations": {
+          "AH": {
+            "tp": 2143,
+            "fp": 4919,
+            "fn": 708,
+            "tn": 30630,
+            "dice": 0.43236154544537475,
+            "iou": 0.2758043758043758,
+            "precision": 0.30345511186632684,
+            "recall": 0.7516660820764643
+          },
+          "VK": {
+            "tp": 2249,
+            "fp": 4813,
+            "fn": 1001,
+            "tn": 30337,
+            "dice": 0.4361908456167572,
+            "iou": 0.2789284385464467,
+            "precision": 0.3184650240725007,
+            "recall": 0.692
+          }
+        }
+      },
+      "original_bright_core": {
+        "region_pixels": 2064,
+        "predicted_pixels": 0,
+        "negative_in_both": 0,
+        "annotations": {
+          "AH": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2064,
+            "dice": 1.0,
+            "iou": 1.0,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "VK": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2064,
+            "dice": 1.0,
+            "iou": 1.0,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        }
+      },
+      "original_seven_pixel_square_band": {
+        "region_pixels": 5334,
+        "predicted_pixels": 2598,
+        "negative_in_both": 2491,
+        "annotations": {
+          "AH": {
+            "tp": 89,
+            "fp": 2509,
+            "fn": 13,
+            "tn": 2723,
+            "dice": 0.06592592592592593,
+            "iou": 0.03408655687476063,
+            "precision": 0.034257120862201694,
+            "recall": 0.8725490196078431
+          },
+          "VK": {
+            "tp": 73,
+            "fp": 2525,
+            "fn": 15,
+            "tn": 2721,
+            "dice": 0.054355919583023084,
+            "iou": 0.027937236892460773,
+            "precision": 0.028098537336412627,
+            "recall": 0.8295454545454546
+          }
+        }
+      }
+    },
+    "C5": {
+      "original_fov": {
+        "region_pixels": 211527,
+        "predicted_pixels": 17558,
+        "negative_in_both": 5856,
+        "annotations": {
+          "AH": {
+            "tp": 10548,
+            "fp": 7010,
+            "fn": 7550,
+            "tn": 186419,
+            "dice": 0.5916535786403411,
+            "iou": 0.4201051457702724,
+            "precision": 0.6007517940539925,
+            "recall": 0.5828268316941099
+          },
+          "VK": {
+            "tp": 10908,
+            "fp": 6650,
+            "fn": 9943,
+            "tn": 184026,
+            "dice": 0.5679918769038507,
+            "iou": 0.3966401221773754,
+            "precision": 0.6212552682537874,
+            "recall": 0.5231403769603377
+          }
+        }
+      },
+      "original_rectangle": {
+        "region_pixels": 38400,
+        "predicted_pixels": 6554,
+        "negative_in_both": 3958,
+        "annotations": {
+          "AH": {
+            "tp": 2184,
+            "fp": 4370,
+            "fn": 667,
+            "tn": 31179,
+            "dice": 0.46443381180223287,
+            "iou": 0.30245118404653093,
+            "precision": 0.3332316142813549,
+            "recall": 0.7660470010522623
+          },
+          "VK": {
+            "tp": 2281,
+            "fp": 4273,
+            "fn": 969,
+            "tn": 30877,
+            "dice": 0.4653202774377805,
+            "iou": 0.3032035092383358,
+            "precision": 0.34803173634421725,
+            "recall": 0.7018461538461539
+          }
+        }
+      },
+      "original_bright_core": {
+        "region_pixels": 2064,
+        "predicted_pixels": 0,
+        "negative_in_both": 0,
+        "annotations": {
+          "AH": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2064,
+            "dice": 1.0,
+            "iou": 1.0,
+            "precision": 1.0,
+            "recall": 1.0
+          },
+          "VK": {
+            "tp": 0,
+            "fp": 0,
+            "fn": 0,
+            "tn": 2064,
+            "dice": 1.0,
+            "iou": 1.0,
+            "precision": 1.0,
+            "recall": 1.0
+          }
+        }
+      },
+      "original_seven_pixel_square_band": {
+        "region_pixels": 5334,
+        "predicted_pixels": 2034,
+        "negative_in_both": 1933,
+        "annotations": {
+          "AH": {
+            "tp": 88,
+            "fp": 1946,
+            "fn": 14,
+            "tn": 3286,
+            "dice": 0.08239700374531835,
+            "iou": 0.04296875,
+            "precision": 0.043264503441494594,
+            "recall": 0.8627450980392157
+          },
+          "VK": {
+            "tp": 68,
+            "fp": 1966,
+            "fn": 20,
+            "tn": 3280,
+            "dice": 0.0640904806786051,
+            "iou": 0.033106134371957155,
+            "precision": 0.03343166175024582,
+            "recall": 0.7727272727272727
+          }
+        }
+      }
+    }
+  },
+  "actual_c5_vs_c2_pixel_changes": {
+    "added": {
+      "original_fov": {
+        "pixels": 321,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 186,
+            "labeled_background": 135
+          },
+          "VK": {
+            "labeled_vessel": 188,
+            "labeled_background": 133
+          }
+        }
+      },
+      "original_rectangle": {
+        "pixels": 110,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 43,
+            "labeled_background": 67
+          },
+          "VK": {
+            "labeled_vessel": 40,
+            "labeled_background": 70
+          }
+        }
+      },
+      "original_bright_core": {
+        "pixels": 0,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 0,
+            "labeled_background": 0
+          },
+          "VK": {
+            "labeled_vessel": 0,
+            "labeled_background": 0
+          }
+        }
+      },
+      "original_seven_pixel_square_band": {
+        "pixels": 17,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 0,
+            "labeled_background": 17
+          },
+          "VK": {
+            "labeled_vessel": 0,
+            "labeled_background": 17
+          }
+        }
+      }
+    },
+    "removed": {
+      "original_fov": {
+        "pixels": 4624,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 62,
+            "labeled_background": 4562
+          },
+          "VK": {
+            "labeled_vessel": 65,
+            "labeled_background": 4559
+          }
+        }
+      },
+      "original_rectangle": {
+        "pixels": 618,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 2,
+            "labeled_background": 616
+          },
+          "VK": {
+            "labeled_vessel": 8,
+            "labeled_background": 610
+          }
+        }
+      },
+      "original_bright_core": {
+        "pixels": 0,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 0,
+            "labeled_background": 0
+          },
+          "VK": {
+            "labeled_vessel": 0,
+            "labeled_background": 0
+          }
+        }
+      },
+      "original_seven_pixel_square_band": {
+        "pixels": 581,
+        "annotations": {
+          "AH": {
+            "labeled_vessel": 1,
+            "labeled_background": 580
+          },
+          "VK": {
+            "labeled_vessel": 5,
+            "labeled_background": 576
+          }
+        }
+      }
+    }
+  },
+  "missing_skeleton_components": {
+    "A": {
+      "AH": {
+        "truth_skeleton_pixels": 5444,
+        "missed_pixels": 1930,
+        "missed_pixels_in_components_over_three": 1666,
+        "bins": {
+          "1": {
+            "components": 65,
+            "pixels": 65
+          },
+          "2-3": {
+            "components": 82,
+            "pixels": 199
+          },
+          "4-7": {
+            "components": 78,
+            "pixels": 406
+          },
+          "8-15": {
+            "components": 67,
+            "pixels": 691
+          },
+          "16+": {
+            "components": 22,
+            "pixels": 569
+          }
+        }
+      },
+      "VK": {
+        "truth_skeleton_pixels": 6579,
+        "missed_pixels": 2985,
+        "missed_pixels_in_components_over_three": 2618,
+        "bins": {
+          "1": {
+            "components": 81,
+            "pixels": 81
+          },
+          "2-3": {
+            "components": 115,
+            "pixels": 286
+          },
+          "4-7": {
+            "components": 128,
+            "pixels": 675
+          },
+          "8-15": {
+            "components": 93,
+            "pixels": 978
+          },
+          "16+": {
+            "components": 40,
+            "pixels": 965
+          }
+        }
+      }
+    },
+    "C2": {
+      "AH": {
+        "truth_skeleton_pixels": 5444,
+        "missed_pixels": 1943,
+        "missed_pixels_in_components_over_three": 1683,
+        "bins": {
+          "1": {
+            "components": 63,
+            "pixels": 63
+          },
+          "2-3": {
+            "components": 81,
+            "pixels": 197
+          },
+          "4-7": {
+            "components": 78,
+            "pixels": 406
+          },
+          "8-15": {
+            "components": 68,
+            "pixels": 701
+          },
+          "16+": {
+            "components": 22,
+            "pixels": 576
+          }
+        }
+      },
+      "VK": {
+        "truth_skeleton_pixels": 6579,
+        "missed_pixels": 3004,
+        "missed_pixels_in_components_over_three": 2634,
+        "bins": {
+          "1": {
+            "components": 83,
+            "pixels": 83
+          },
+          "2-3": {
+            "components": 116,
+            "pixels": 287
+          },
+          "4-7": {
+            "components": 128,
+            "pixels": 675
+          },
+          "8-15": {
+            "components": 93,
+            "pixels": 977
+          },
+          "16+": {
+            "components": 40,
+            "pixels": 982
+          }
+        }
+      }
+    },
+    "C5": {
+      "AH": {
+        "truth_skeleton_pixels": 5444,
+        "missed_pixels": 1879,
+        "missed_pixels_in_components_over_three": 1668,
+        "bins": {
+          "1": {
+            "components": 52,
+            "pixels": 52
+          },
+          "2-3": {
+            "components": 64,
+            "pixels": 159
+          },
+          "4-7": {
+            "components": 75,
+            "pixels": 393
+          },
+          "8-15": {
+            "components": 68,
+            "pixels": 700
+          },
+          "16+": {
+            "components": 22,
+            "pixels": 575
+          }
+        }
+      },
+      "VK": {
+        "truth_skeleton_pixels": 6579,
+        "missed_pixels": 2951,
+        "missed_pixels_in_components_over_three": 2623,
+        "bins": {
+          "1": {
+            "components": 73,
+            "pixels": 73
+          },
+          "2-3": {
+            "components": 102,
+            "pixels": 255
+          },
+          "4-7": {
+            "components": 130,
+            "pixels": 686
+          },
+          "8-15": {
+            "components": 91,
+            "pixels": 958
+          },
+          "16+": {
+            "components": 40,
+            "pixels": 979
+          }
+        }
+      }
+    }
+  },
+  "component_limit": "8-connected missing GT skeleton component size is NOT straight gap length; can curve, branch, or be wholly missed.",
+  "figures": {
+    "central_c2_c5_actual.png": "a6a54eca1aeaefb5ba046e9a3128219f9fd9f578475e1ce5999f60c6c7ba8205",
+    "continuity_c2_c5_actual.png": "11185569101aabfc8571ba55c84b02b035b976535d615cc63a151da6c7ba4dfd"
+  },
+  "quality_accepted": false,
+  "new_algorithm_implemented": false,
+  "production_changed": false,
+  "scope": "Post hoc diagnosis of an existing training-image example, not parameter selection. Figures local research only."
+}

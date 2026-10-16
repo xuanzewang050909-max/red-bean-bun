@@ -1,0 +1,194 @@
+A3_M0_RGB_ONLY_VECTORS_PREPARED: 14 cases including reset-interrupted frame
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/rtl/core/retina_gaussian_guard.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_gaussian_guard
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/background_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module background_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/Block_proc.v" into library work
+INFO: [VRFC 10-311] analyzing module Block_proc
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/column_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module column_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/enhance_aligned_lut.v" into library work
+INFO: [VRFC 10-311] analyzing module enhance_aligned_lut_rom
+INFO: [VRFC 10-311] analyzing module enhance_aligned_lut
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/enhance_aligned.v" into library work
+INFO: [VRFC 10-311] analyzing module enhance_aligned
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w10_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w10_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w10_d4_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w10_d4_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w14_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w14_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w14_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w16_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w16_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w19_d1_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d1_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w19_d2_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w19_d2_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w32_d2048_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d2048_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w32_d5_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d5_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w32_d5_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w32_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w32_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w8_d32_A.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A_shiftReg
+INFO: [VRFC 10-311] analyzing module fifo_w8_d32_A
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/fifo_w8_d8192_B.v" into library work
+INFO: [VRFC 10-311] analyzing module fifo_w8_d8192_B
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/filter_sum.v" into library work
+INFO: [VRFC 10-311] analyzing module filter_sum
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/Filter2D_k_buf_0_bkb.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D_k_buf_0_bkb_ram
+INFO: [VRFC 10-311] analyzing module Filter2D_k_buf_0_bkb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/Filter2D.v" into library work
+INFO: [VRFC 10-311] analyzing module Filter2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/join_words.v" into library work
+INFO: [VRFC 10-311] analyzing module join_words
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/retina_background_hls.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_background_hls
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/retina_backgroundeOg.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_backgroundeOg
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/retina_backgroundudo.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_backgroundudo
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/retina_backgroundyd2.v" into library work
+INFO: [VRFC 10-311] analyzing module retina_backgroundyd2_DSP48_0
+INFO: [VRFC 10-311] analyzing module retina_backgroundyd2
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/row_filter_l_bordvdy.v" into library work
+INFO: [VRFC 10-311] analyzing module row_filter_l_bordvdy_ram
+INFO: [VRFC 10-311] analyzing module row_filter_l_bordvdy
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/row_filter.v" into library work
+INFO: [VRFC 10-311] analyzing module row_filter
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/SepFilter2D.v" into library work
+INFO: [VRFC 10-311] analyzing module SepFilter2D
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/split_words.v" into library work
+INFO: [VRFC 10-311] analyzing module split_words
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/start_for_backgroAem.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_backgroAem_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_backgroAem
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/start_for_enhanceCeG.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_enhanceCeG_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_enhanceCeG
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/start_for_filter_zec.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_filter_zec_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_filter_zec
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/start_for_join_woBew.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_join_woBew_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_join_woBew
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/PLD/retina_fpga/build/a3_hls_01/solution1/syn/verilog/start_for_row_filxdS.v" into library work
+INFO: [VRFC 10-311] analyzing module start_for_row_filxdS_shiftReg
+INFO: [VRFC 10-311] analyzing module start_for_row_filxdS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/tests/retina_background_axis_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module retina_background_axis_tb
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe retina_background_axis_tb -s background_axis_sim -mt off 
+Turned off multi-threading.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module work.retina_gaussian_guard
+Compiling module work.Block_proc
+Compiling module work.split_words
+Compiling module work.Filter2D_k_buf_0_bkb_ram
+Compiling module work.Filter2D_k_buf_0_bkb(DataWidth=8...
+Compiling module work.retina_backgroundeOg(ID=1,din0_W...
+Compiling module work.Filter2D
+Compiling module work.filter_sum
+Compiling module work.enhance_aligned_lut_rom
+Compiling module work.enhance_aligned_lut(DataWidth=8,...
+Compiling module work.enhance_aligned
+Compiling module work.retina_backgroundudo(ID=1,din0_W...
+Compiling module work.column_filter
+Compiling module work.row_filter_l_bordvdy_ram
+Compiling module work.row_filter_l_bordvdy(DataWidth=1...
+Compiling module work.row_filter
+Compiling module work.fifo_w14_d1_A_shiftReg
+Compiling module work.fifo_w14_d1_A
+Compiling module work.fifo_w10_d1_A_shiftReg
+Compiling module work.fifo_w10_d1_A
+Compiling module work.start_for_row_filxdS_shiftReg
+Compiling module work.start_for_row_filxdS
+Compiling module work.SepFilter2D
+Compiling module work.background_sum
+Compiling module work.retina_backgroundyd2_DSP48_0
+Compiling module work.retina_backgroundyd2(ID=1,NUM_ST...
+Compiling module work.join_words
+Compiling module work.fifo_w32_d5_A_shiftReg
+Compiling module work.fifo_w32_d5_A
+Compiling module work.fifo_w10_d2_A_shiftReg
+Compiling module work.fifo_w10_d2_A
+Compiling module work.fifo_w10_d4_A_shiftReg
+Compiling module work.fifo_w10_d4_A
+Compiling module work.fifo_w19_d1_A_shiftReg
+Compiling module work.fifo_w19_d1_A
+Compiling module work.fifo_w8_d32_A_shiftReg
+Compiling module work.fifo_w8_d32_A
+Compiling module work.fifo_w32_d2048_B
+Compiling module work.fifo_w19_d2_A_shiftReg
+Compiling module work.fifo_w19_d2_A
+Compiling module work.fifo_w16_d32_A_shiftReg
+Compiling module work.fifo_w16_d32_A
+Compiling module work.fifo_w32_d8192_B
+Compiling module work.fifo_w8_d8192_B
+Compiling module work.start_for_filter_zec_shiftReg
+Compiling module work.start_for_filter_zec
+Compiling module work.start_for_backgroAem_shiftReg
+Compiling module work.start_for_backgroAem
+Compiling module work.start_for_join_woBew_shiftReg
+Compiling module work.start_for_join_woBew
+Compiling module work.start_for_enhanceCeG_shiftReg
+Compiling module work.start_for_enhanceCeG
+Compiling module work.retina_background_hls
+Compiling module work.retina_background_axis_tb
+Built simulation snapshot background_axis_sim
+
+****** Webtalk v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source D:/PLD/retina_fpga/build/a3_axis_sim_02/xsim.dir/background_axis_sim/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 51.691 ; gain = 1.297
+INFO: [Common 17-206] Exiting Webtalk at Mon Oct 12 02:09:49 2026...
+
+****** xsim v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/background_axis_sim/xsim_script.tcl
+# xsim {background_axis_sim} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+BACKGROUND_AXIS_FRAME_PASS: case=1 words=65536 status=00004001
+BACKGROUND_AXIS_FRAME_PASS: case=2 words=65536 status=00008002
+BACKGROUND_AXIS_FRAME_PASS: case=3 words=65536 status=0000c003
+BACKGROUND_AXIS_FRAME_PASS: case=4 words=262144 status=00010004
+BACKGROUND_AXIS_FRAME_PASS: case=5 words=65536 status=00014005
+BACKGROUND_AXIS_FRAME_PASS: case=6 words=65536 status=00018006
+BACKGROUND_AXIS_FRAME_PASS: case=7 words=65536 status=0001c007
+BACKGROUND_AXIS_FRAME_PASS: case=8 words=65536 status=00020008
+BACKGROUND_AXIS_FRAME_PASS: case=9 words=262144 status=00024009
+BACKGROUND_AXIS_FRAME_PASS: case=10 words=65536 status=0002800a
+BACKGROUND_AXIS_FRAME_PASS: case=11 words=262144 status=0002c00b
+BACKGROUND_VALID_PASS: 11 frames, all modes, 256/512, borders, STARE, stripes, random stalls, config lock
+BACKGROUND_AXIS_FRAME_PASS: case=12 words=65536 status=3003000c
+BACKGROUND_BAD_INPUT_PASS: complete-length early TLAST and partial keep flagged
+BACKGROUND_AXIS_FRAME_PASS: case=13 words=65536 status=00004001
+BACKGROUND_AXIS_SIM_PASS: cases=13 checked=1441792; generated vendor RTL, full frames, backpressure, reset recovery
+$finish called at time : 19670700 ns : File "D:/PLD/retina_fpga/tests/retina_background_axis_tb.sv" Line 131
+exit 0
+INFO: [Common 17-206] Exiting xsim at Mon Oct 12 02:14:09 2026...

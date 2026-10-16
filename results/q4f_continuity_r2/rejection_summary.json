@@ -1,0 +1,46 @@
+{
+  "status": "REJECTED_CPU_CANDIDATES_NOT_FOR_BOARD",
+  "count": 18,
+  "selected": null,
+  "bright_changed": 0,
+  "ranges": {
+    "256": {
+      "dice": [
+        -0.0002008578210446199,
+        0.00024258940264842987
+      ],
+      "thin": [
+        0.0015614236509758905,
+        0.003811710677382396
+      ],
+      "cldice": [
+        -0.0007188715966960357,
+        0.0005060032056323216
+      ],
+      "added_precision": [
+        0.31208053691275167,
+        0.38202247191011235
+      ]
+    },
+    "512": {
+      "dice": [
+        0.0005733662401365969,
+        0.0013947531278275527
+      ],
+      "thin": [
+        0.001964763101104827,
+        0.006635101620124373
+      ],
+      "cldice": [
+        0.00039761146702832484,
+        0.0011631851741126242
+      ],
+      "added_precision": [
+        0.5021505376344086,
+        0.5539906103286385
+      ]
+    }
+  },
+  "report_sha256": "3254502b3f786f9c10eee980f7061243172e59153caca8425802eeca92ae0f84",
+  "reason": "Bright protection passed but complete precision/continuity/whole-image gates did not. Original gates and failure lists preserved; no heldout/VK tuning."
+}

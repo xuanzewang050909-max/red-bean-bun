@@ -1,0 +1,194 @@
+{
+  "status": "PASS_INDEPENDENT_RAW_TIMESTAMPS_STAGES_LOOPS_RATIOS_AND_NOTEBOOK",
+  "groups": [
+    {
+      "count": 30,
+      "sum_seconds": 18.71706268,
+      "mean_ms": 623.9020893333334,
+      "median_ms": 623.5230975,
+      "p95_ms": 633.9009067999999,
+      "frames_per_sum_transaction_seconds": 1.6028155973456408,
+      "loop_seconds": 18.722263985,
+      "loop_fps": 1.6023703129085005,
+      "name": "original",
+      "stages": {
+        "dma_transfer": {
+          "sum_ns": 148895717,
+          "mean_ms": 4.9631905666666665,
+          "median_ms": 4.831526,
+          "p95_ms": 5.729523899999999,
+          "share_of_sample_time_percent": 0.7955079252852083
+        },
+        "word_compare": {
+          "sum_ns": 1132700344,
+          "mean_ms": 37.75667813333333,
+          "median_ms": 37.4433695,
+          "p95_ms": 38.859966449999995,
+          "share_of_sample_time_percent": 6.051699261606576
+        },
+        "algorithm_status": {
+          "sum_ns": 3819777,
+          "mean_ms": 0.1273259,
+          "median_ms": 0.127135,
+          "p95_ms": 0.1302676,
+          "share_of_sample_time_percent": 0.02040799384660713
+        },
+        "ps_layout": {
+          "sum_ns": 15852014298,
+          "mean_ms": 528.4004766,
+          "median_ms": 527.7445255,
+          "p95_ms": 535.64509085,
+          "share_of_sample_time_percent": 84.69285255393503
+        },
+        "frame_allocate": {
+          "sum_ns": 24041961,
+          "mean_ms": 0.8013987,
+          "median_ms": 0.802609,
+          "p95_ms": 0.82597175,
+          "share_of_sample_time_percent": 0.128449433605252
+        },
+        "frame_copy": {
+          "sum_ns": 303514047,
+          "mean_ms": 10.1171349,
+          "median_ms": 10.0514275,
+          "p95_ms": 10.48292225,
+          "share_of_sample_time_percent": 1.621590161816993
+        },
+        "display_submit": {
+          "sum_ns": 194384019,
+          "mean_ms": 6.4794673,
+          "median_ms": 6.3189445,
+          "p95_ms": 7.541010249999994,
+          "share_of_sample_time_percent": 1.0385391250931046
+        },
+        "video_status": {
+          "sum_ns": 4152884,
+          "mean_ms": 0.13842946666666667,
+          "median_ms": 0.13711,
+          "p95_ms": 0.15615569999999993,
+          "share_of_sample_time_percent": 0.02218769083055718
+        },
+        "output_hash": {
+          "sum_ns": 1025249496,
+          "mean_ms": 34.1749832,
+          "median_ms": 34.2451665,
+          "p95_ms": 35.3580397,
+          "share_of_sample_time_percent": 5.477619611198524
+        },
+        "record_and_progress": {
+          "sum_ns": 28290137,
+          "mean_ms": 0.9430045666666667,
+          "median_ms": 0.0415325,
+          "p95_ms": 4.59297555,
+          "share_of_sample_time_percent": 0.15114624278215005
+        }
+      },
+      "warmup_frames": 3,
+      "loop_start_ns": 280261093688,
+      "loop_end_ns": 298983357673,
+      "loop_ns": 18722263985,
+      "sample_sum_ns": 18717062680,
+      "loop_unattributed_ns": 5201305
+    },
+    {
+      "count": 30,
+      "sum_seconds": 5.975916192,
+      "mean_ms": 199.1972064,
+      "median_ms": 198.893569,
+      "p95_ms": 203.15499025,
+      "frames_per_sum_transaction_seconds": 5.020150724362769,
+      "loop_seconds": 5.980898871,
+      "loop_fps": 5.015968443382831,
+      "name": "cached",
+      "stages": {
+        "dma_transfer": {
+          "sum_ns": 149883177,
+          "mean_ms": 4.9961059,
+          "median_ms": 4.765385,
+          "p95_ms": 5.74109655,
+          "share_of_sample_time_percent": 2.5081204652878104
+        },
+        "word_compare": {
+          "sum_ns": 1112063944,
+          "mean_ms": 37.06879813333333,
+          "median_ms": 36.8741445,
+          "p95_ms": 37.9510316,
+          "share_of_sample_time_percent": 18.60909538003106
+        },
+        "algorithm_status": {
+          "sum_ns": 3749735,
+          "mean_ms": 0.12499116666666667,
+          "median_ms": 0.1248,
+          "p95_ms": 0.13052039999999998,
+          "share_of_sample_time_percent": 0.06274744958806143
+        },
+        "ps_layout": {
+          "sum_ns": 3154670705,
+          "mean_ms": 105.15569016666667,
+          "median_ms": 105.0233905,
+          "p95_ms": 105.83102034999999,
+          "share_of_sample_time_percent": 52.789741416105855
+        },
+        "frame_allocate": {
+          "sum_ns": 23264672,
+          "mean_ms": 0.7754890666666666,
+          "median_ms": 0.768698,
+          "p95_ms": 0.8183657,
+          "share_of_sample_time_percent": 0.38930719997620744
+        },
+        "frame_copy": {
+          "sum_ns": 297759441,
+          "mean_ms": 9.9253147,
+          "median_ms": 9.8953385,
+          "p95_ms": 10.038526150000001,
+          "share_of_sample_time_percent": 4.9826575780733435
+        },
+        "display_submit": {
+          "sum_ns": 189457275,
+          "mean_ms": 6.3152425,
+          "median_ms": 6.293274,
+          "p95_ms": 6.511911349999999,
+          "share_of_sample_time_percent": 3.1703469210901543
+        },
+        "video_status": {
+          "sum_ns": 3977478,
+          "mean_ms": 0.1325826,
+          "median_ms": 0.1312615,
+          "p95_ms": 0.14038375,
+          "share_of_sample_time_percent": 0.06655846354278992
+        },
+        "output_hash": {
+          "sum_ns": 1012825064,
+          "mean_ms": 33.76083546666667,
+          "median_ms": 33.633138,
+          "p95_ms": 34.31337455,
+          "share_of_sample_time_percent": 16.948448262307892
+        },
+        "record_and_progress": {
+          "sum_ns": 28264701,
+          "mean_ms": 0.9421567,
+          "median_ms": 0.040723,
+          "p95_ms": 4.60211185,
+          "share_of_sample_time_percent": 0.4729768639968236
+        }
+      },
+      "warmup_frames": 3,
+      "loop_start_ns": 301241259411,
+      "loop_end_ns": 307222158282,
+      "loop_ns": 5980898871,
+      "sample_sum_ns": 5975916192,
+      "loop_unattributed_ns": 4982679
+    }
+  ],
+  "comparison": {
+    "original_layout_mean_ms": 528.4004766,
+    "cached_layout_mean_ms": 105.15569016666667,
+    "layout_ratio_original_over_cached": 5.024934701702883,
+    "original_checked_loop_fps": 1.6023703129085005,
+    "cached_checked_loop_fps": 5.015968443382831,
+    "loop_ratio_cached_over_original": 3.1303428445814294,
+    "layout_time_reduction_percent": 80.09924388348543
+  },
+  "cache_initialization_ns": 857850374,
+  "limit": "Sequential original/cached groups, fixed input with full verification/hash/native display. No SD latency, pure PL, CPU algorithm baseline or calibrated scan Hz."
+}

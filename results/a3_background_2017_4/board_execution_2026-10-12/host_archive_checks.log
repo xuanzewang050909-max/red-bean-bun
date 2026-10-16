@@ -1,0 +1,25 @@
+test_actual_downloaded_records_and_all_raw_arrays_match (test_a3_archive.ActualEvidenceTests.test_actual_downloaded_records_and_all_raw_arrays_match) ... ok
+test_changed_background_preview_rejected_even_if_hash_is_updated (test_a3_archive.ActualEvidenceTests.test_changed_background_preview_rejected_even_if_hash_is_updated) ... ok
+test_changed_preview_rejected (test_a3_archive.ActualEvidenceTests.test_changed_preview_rejected) ... ok
+test_changed_raw_word_rejected_even_if_file_hash_is_updated (test_a3_archive.ActualEvidenceTests.test_changed_raw_word_rejected_even_if_file_hash_is_updated) ... ok
+test_code_edit_rejected (test_a3_archive.ActualEvidenceTests.test_code_edit_rejected) ... ok
+test_counter_or_protocol_error_rejected (test_a3_archive.ActualEvidenceTests.test_counter_or_protocol_error_rejected) ... ok
+test_dma_error_rejected (test_a3_archive.ActualEvidenceTests.test_dma_error_rejected) ... ok
+test_error_output_rejected (test_a3_archive.ActualEvidenceTests.test_error_output_rejected) ... ok
+test_incorrect_byte_count_rejected (test_a3_archive.ActualEvidenceTests.test_incorrect_byte_count_rejected) ... ok
+test_notebook_save_metadata_and_markdown_remain_mutable (test_a3_archive.ActualEvidenceTests.test_notebook_save_metadata_and_markdown_remain_mutable) ... ok
+test_overlapping_buffers_rejected (test_a3_archive.ActualEvidenceTests.test_overlapping_buffers_rejected) ... ok
+test_partial_suite_rejected (test_a3_archive.ActualEvidenceTests.test_partial_suite_rejected) ... ok
+test_unchanged_expected_but_wrong_output_hash_rejected (test_a3_archive.ActualEvidenceTests.test_unchanged_expected_but_wrong_output_hash_rejected) ... ok
+test_wrong_release_rejected (test_a3_archive.ActualEvidenceTests.test_wrong_release_rejected) ... ok
+test_wrong_runtime_rejected (test_a3_archive.ActualEvidenceTests.test_wrong_runtime_rejected) ... ok
+test_duplicate_members_rejected (test_a3_archive.BundleBoundaryTests.test_duplicate_members_rejected) ... ok
+test_missing_member_rejected (test_a3_archive.BundleBoundaryTests.test_missing_member_rejected) ... ok
+test_oversized_member_rejected (test_a3_archive.BundleBoundaryTests.test_oversized_member_rejected) ... ok
+test_symlink_rejected (test_a3_archive.BundleBoundaryTests.test_symlink_rejected) ... ok
+test_traversal_member_rejected_without_extraction (test_a3_archive.BundleBoundaryTests.test_traversal_member_rejected_without_extraction) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 2.870s
+
+OK

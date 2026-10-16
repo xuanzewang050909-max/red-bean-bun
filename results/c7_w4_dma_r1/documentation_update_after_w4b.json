@@ -1,0 +1,14 @@
+{
+  "reason": "W4b originals found and independently verified; remove stale missing-download request only.",
+  "path": "docs/c7_w4_dma_steps.md",
+  "previous": {
+    "bytes": 2806,
+    "sha256": "3ded594a28ebd489b521de8a7dd1254c0e0dbbe730a79f780e7affc4330386dd"
+  },
+  "current": {
+    "bytes": 2747,
+    "sha256": "72054a585d2d0d8b49b688ef3195f12ab6b9c603a378653df3e9aaf6757912e8"
+  },
+  "executable_or_release_changes": false,
+  "initial_source_freeze_preserved": true
+}

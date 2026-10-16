@@ -1,0 +1,21 @@
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source {D:\PLD\retina_fpga\vivado\scripts\build_w2_quality.tcl}
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne "2017.4"} {error "This baseline is verified only with Vivado 2017.4"}
+# if {[llength $argv] != 3} {error "Expected new output directory, bd|full and exported HLS IP directory"}
+# set out [file normalize [lindex $argv 0]]
+# set stage [lindex $argv 1]
+# set hls_ip [file normalize [lindex $argv 2]]
+# if {![file exists [file join $hls_ip component.xml]]} {error "Missing exported HLS IP component.xml"}
+Missing exported HLS IP component.xml
+    while executing
+"error "Missing exported HLS IP component.xml""
+    invoked from within
+"if {![file exists [file join $hls_ip component.xml]]} {error "Missing exported HLS IP component.xml"}"
+    (file "D:\PLD\retina_fpga\vivado\scripts\build_w2_quality.tcl" line 12)
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 02:49:46 2026...

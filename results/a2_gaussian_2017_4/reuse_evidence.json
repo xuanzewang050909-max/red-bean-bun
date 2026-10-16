@@ -1,0 +1,30 @@
+{
+  "installed_vivado_hls": "2017.4",
+  "vendor_headers_not_redistributed": true,
+  "headers": [
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls_video.h",
+      "sha256": "d8435040ab58fd7a0e0c4350ec008ac0fc5dd9d8324d9921ac0c728d74d391e3",
+      "bytes": 2677
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_imgproc.h",
+      "sha256": "3cefce5cfab6e00ded0fcb4272176024e795dcc84702938372b1655087346daa",
+      "bytes": 118181
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_types.h",
+      "sha256": "bda9d2a65a94477461c7a439a537a5a340aa3e2b2b878679526821c6e97b4ce8",
+      "bytes": 18743
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_mem.h",
+      "sha256": "87cfad98c6b3359cab79ffc936846601c3893d6244cb9228c325f8fa3d409266",
+      "bytes": 34453
+    }
+  ],
+  "reuse": "Unmodified hls::Filter2D<BORDER_REPLICATE>, hls::Mat, LineBuffer and AXIS interface generation",
+  "kernel": "Integer [1 2 1; 2 4 2; 1 2 1], uint16 full sum then (sum+8)>>4",
+  "xfopencv_not_selected": "Pinned Gaussian computes sigma-based quantized weights; not this exact fixed kernel",
+  "patch_scope": "One generated packaging Revision string changed to 1; installed library/RTL/clock/data path unchanged"
+}

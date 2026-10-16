@@ -1,0 +1,33 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 00:58:30 2026
+# Process ID: 6428
+# Current directory: D:/PLD/retina_fpga/build/a2_axis_sim_02
+# Command line: xsim.exe -mode tcl -source {xsim.dir/gaussian_axis_sim/xsim_script.tcl}
+# Log file: D:/PLD/retina_fpga/build/a2_axis_sim_02/xsim.log
+# Journal file: D:/PLD/retina_fpga/build/a2_axis_sim_02\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/gaussian_axis_sim/xsim_script.tcl
+# xsim {gaussian_axis_sim} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+GAUSSIAN_AXIS_FRAME_PASS: case=1 words=65536 status=00004001
+GAUSSIAN_AXIS_FRAME_PASS: case=2 words=262144 status=00008002
+GAUSSIAN_AXIS_FRAME_PASS: case=3 words=65536 status=0000c003
+GAUSSIAN_AXIS_FRAME_PASS: case=4 words=65536 status=00010004
+GAUSSIAN_AXIS_FRAME_PASS: case=5 words=65536 status=00014005
+GAUSSIAN_AXIS_FRAME_PASS: case=6 words=65536 status=00018006
+GAUSSIAN_AXIS_FRAME_PASS: case=7 words=65536 status=0001c007
+GAUSSIAN_AXIS_FRAME_PASS: case=8 words=65536 status=00020008
+GAUSSIAN_AXIS_FRAME_PASS: case=9 words=262144 status=00024009
+GAUSSIAN_VALID_PASS: 9 frames, all modes, 256/512, corners, STARE, random stalls, config lock
+GAUSSIAN_AXIS_FRAME_PASS: case=10 words=65536 status=3002800a
+GAUSSIAN_BAD_INPUT_PASS: complete-length early TLAST and partial keep flagged
+GAUSSIAN_AXIS_FRAME_PASS: case=11 words=65536 status=00004001
+GAUSSIAN_AXIS_SIM_PASS: cases=11 checked=1114112; generated vendor RTL, full frames, backpressure, reset recovery
+$finish called at time : 14918460 ns : File "D:/PLD/retina_fpga/tests/retina_gaussian_axis_tb.sv" Line 140
+exit 0
+INFO: [Common 17-206] Exiting xsim at Mon Oct 12 01:00:09 2026...

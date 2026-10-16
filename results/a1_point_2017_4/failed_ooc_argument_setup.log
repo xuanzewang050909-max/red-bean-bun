@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 11 23:03:35 2026
+# Process ID: 34984
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -source vivado/scripts/synthesize_point_stage.tcl -tclargs D:/PLD/retina_fpga/build/point_ooc_01 -log D:/PLD/retina_fpga/build/point_ooc_01.log -journal D:/PLD/retina_fpga/build/point_ooc_01.jou
+# Log file: D:/PLD/retina_fpga/vivado.log
+# Journal file: D:/PLD/retina_fpga\vivado.jou
+#-----------------------------------------------------------
+source vivado/scripts/synthesize_point_stage.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne "2017.4"} {error "Tested with Vivado 2017.4 only"}
+# if {$argc != 1} {error "Expected a NEW output directory"}
+Expected a NEW output directory
+    while executing
+"error "Expected a NEW output directory""
+    invoked from within
+"if {$argc != 1} {error "Expected a NEW output directory"}"
+    (file "vivado/scripts/synthesize_point_stage.tcl" line 4)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 23:03:37 2026...

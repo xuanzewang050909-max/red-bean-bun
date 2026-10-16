@@ -1,0 +1,4 @@
+EXCLUDED_ONLY_IN_THIS_PROJECT d:/PLD/retina_fpga/build/b_integration_05/b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc
+RTL_UNCHANGED kGenerateSerialClk=false; MMCM/BUFR auto-derived clocks retained
+USED_IN_SYNTHESIS=0
+USED_IN_IMPLEMENTATION=0

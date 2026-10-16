@@ -1,0 +1,62 @@
+{
+  "status": "HOST_SHOWCASE_FIXTURE_NOT_BOARD",
+  "tasks": 27,
+  "matched_words": 6881280,
+  "matched_pngs": 131,
+  "boot": {
+    "boot_id": "12345678-1234-1234-1234-123456789abc",
+    "uptime_seconds": 1
+  },
+  "archive": {
+    "bytes": 53340307,
+    "sha256": "bec3d1ad025bb60ed5d07df2cde8cbbb3072ec3fc7c93a2ef02d4beaf165d337"
+  },
+  "notebook": {
+    "bytes": 6886,
+    "sha256": "13d4daebbaa0106185861b0a929e46d90c934ccef3462e29cc320c25b2ae03c5"
+  },
+  "ignored_empty_cells": 0,
+  "coverage": {
+    "images_c7_final_t112": [
+      "im0001",
+      "im0002",
+      "im0003",
+      "im0004",
+      "im0005",
+      "im0044",
+      "im0077",
+      "im0081",
+      "im0082",
+      "im0139",
+      "im0162",
+      "im0163",
+      "im0235",
+      "im0236",
+      "im0239",
+      "im0240",
+      "im0255",
+      "im0291",
+      "im0319",
+      "im0324"
+    ],
+    "sides": [
+      256,
+      512
+    ],
+    "visible_frames": 27,
+    "missing_visible_frames": 0,
+    "no_gt": true,
+    "bypass": true,
+    "c2_modes": [
+      1,
+      2
+    ]
+  },
+  "video": "DEFERRED_BY_USER",
+  "exclusions": [
+    "Array verification does not prove a physical power cycle",
+    "Not forced power/network/DMA-fault recovery",
+    "Not a new FPS or quality benchmark",
+    "Navigation gestures require separate user observation; frame identity/order verified here"
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "evidence_kind": "User notebook screenshot; raw board JSON not yet obtained",
+  "pynq_version": "3.0.1",
+  "python_version": "3.10.4",
+  "python_build": "main, Apr 2 2022, 09:04:19; GCC 11.2.0",
+  "kernel_release": "5.15.19-xilinx-v2022.1",
+  "device_tree_model_display": null,
+  "memtotal_kb": 505428,
+  "currently_loaded_software_visible_ip_count": 21,
+  "displayed_base_files": {
+    "base.bit": 4045672,
+    "base.hwh": 4558197,
+    "base.tcl": 250857,
+    "build_bitstream.tcl": 1656,
+    "build_ip.tcl": 2167,
+    "check_timing.tcl": 560
+  },
+  "report_creation_output": "Saved: board_environment.json",
+  "raw_report_archived": false,
+  "hash_transcription_policy": "Full SHA256 strings await raw JSON; not manually reconstructed from line-wrapped screenshot",
+  "pcb_revision": null
+}

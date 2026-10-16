@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 11 21:45:48 2026
+# Process ID: 35176
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -source scripts/simulate_a0_reset.tcl -tclargs build/a0_dma_2017_4_04 build/a0_reset_sim_r5 -log build/a0_reset_sim_r5_vivado.log -journal build/a0_reset_sim_r5_vivado.jou
+# Log file: D:/PLD/retina_fpga/vivado.log
+# Journal file: D:/PLD/retina_fpga\vivado.jou
+#-----------------------------------------------------------
+source scripts/simulate_a0_reset.tcl
+# set root [file normalize [file join [file dirname [info script]] ..]]
+# if {$argc != 2} {error "Usage: simulate_a0_reset.tcl <build-directory> <new-simulation-directory>"}
+Usage: simulate_a0_reset.tcl <build-directory> <new-simulation-directory>
+    while executing
+"error "Usage: simulate_a0_reset.tcl <build-directory> <new-simulation-directory>""
+    invoked from within
+"if {$argc != 2} {error "Usage: simulate_a0_reset.tcl <build-directory> <new-simulation-directory>"}"
+    (file "scripts/simulate_a0_reset.tcl" line 3)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 21:45:50 2026...

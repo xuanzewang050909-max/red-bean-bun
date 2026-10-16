@@ -1,0 +1,150 @@
+{
+  "status": "PASS_B_RELEASE_SOURCE_GIT_ATTESTATION",
+  "captured_utc": "2026-10-11T20:54:11.560539+00:00",
+  "source_commit": "e0641e3297856b0f5f4b32ff7b17edb48638b80a",
+  "a4_source_commit": "b3d4ef316db044e027593d4567a94f637fc15545",
+  "board_status": "NOT_RUN",
+  "release_manifest_sha256": "67c770caddc1b12a7a518cc60895fa3a6e273f0863d4b0187d1dcf743dbf1201",
+  "release_source_pairs": [
+    {
+      "file": "scripts/package_b.py",
+      "bytes": 17997,
+      "sha256": "c92f53a0f30351f95ed61d84ad76923224563831cc9f62086b3bc1057f284f3c",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "scripts/check_b_hardware.py",
+      "bytes": 11820,
+      "sha256": "6a14ed744eb9175d928172593cfbd23de39bdca2c9456e5cc443e0287c0935c5",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "scripts/b_integration_board_test.py",
+      "bytes": 19365,
+      "sha256": "0d4e6aad7d1f06638cb2b68a5fe98bc16f930fb4ea6a07744200fd1c606c9c59",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "scripts/build_b_notebook.py",
+      "bytes": 4385,
+      "sha256": "4a31cc52213e8ca316ff427121c785ffaac8ef8fe6cc7d04eb5e8223911f71ff",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "tests/test_b_integration.py",
+      "bytes": 16373,
+      "sha256": "28784c0e92f880ff4ecd1890ae858848b6c42e521b70d7e27441bcec035198c1",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "tests/b_reset_tb.sv",
+      "bytes": 2023,
+      "sha256": "fc230299285d6618666daa70c5498808a006e239b883f32d9cc25bca1ac0bacb",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "vivado/scripts/build_b_integration.tcl",
+      "bytes": 13022,
+      "sha256": "50a8eaa9bc2ca10963b09dfc03b70afd1be563ec9431a283109876971282f080",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "vivado/scripts/simulate_b_reset.tcl",
+      "bytes": 1413,
+      "sha256": "bda1fa7214ba8a418c810f4d536ed2717be892d4f53fa5b8d8d20e7698dbec18",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "vivado/constraints/b_integration.xdc",
+      "bytes": 5469,
+      "sha256": "a8df869b30cf3144c77a616183b62c93aa64aa4f928fe1bd3cdbc725c880e99c",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "notebooks/b_integration_check.ipynb",
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "docs/b_integration_validation_steps.md",
+      "bytes": 2765,
+      "sha256": "fe4d3a8ba94d9f2f5c231a5362670be6b189f05495ed1983972a7eabbeeb8152",
+      "git_blob_matches_working_and_release_source": true
+    },
+    {
+      "file": "docs/b_integration_reuse_audit.md",
+      "bytes": 4556,
+      "sha256": "133cc7613fba4410e4c945757cdad9e1528d01592635426b7bcbfbf9f6d45821",
+      "git_blob_matches_working_and_release_source": true
+    }
+  ],
+  "unchanged_measured_a4_sources": [
+    {
+      "file": "scripts/a0_dma_board_test.py",
+      "bytes": 10917,
+      "released_source_sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e",
+      "git_blob_sha256": "26d3dda2d0d4f42cccf72927fa339f705b27ca7d35cb2a4e79f2b0fd053cc3d7",
+      "comparison": "INHERITED_A0_CRLF_TO_DECLARED_LF_ONLY; raw released helper matches immutable A4 package exactly",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "scripts/a1_point_board_test.py",
+      "bytes": 11449,
+      "released_source_sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990",
+      "git_blob_sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "scripts/a2_gaussian_board_test.py",
+      "bytes": 12265,
+      "released_source_sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac",
+      "git_blob_sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "scripts/a3_background_board_test.py",
+      "bytes": 12110,
+      "released_source_sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1",
+      "git_blob_sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "scripts/a4_segmentation_board_test.py",
+      "bytes": 13155,
+      "released_source_sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228",
+      "git_blob_sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "rtl/core/retina_gaussian_guard.v",
+      "bytes": 5052,
+      "released_source_sha256": "18b887b3ad2e0b4b458d7610172bb94596fe26441a181dfd5ba4867704ba7c51",
+      "git_blob_sha256": "18b887b3ad2e0b4b458d7610172bb94596fe26441a181dfd5ba4867704ba7c51",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "hls/retina_segmentation_hls.cpp",
+      "bytes": 9252,
+      "released_source_sha256": "856767221754e0460cef66eb7d07d28e9f1113a92a53affc48521f1e14daf0fa",
+      "git_blob_sha256": "856767221754e0460cef66eb7d07d28e9f1113a92a53affc48521f1e14daf0fa",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    },
+    {
+      "file": "hls/contrast_lut_values.h",
+      "bytes": 1023,
+      "released_source_sha256": "4b8f3cf0c1afe53bcaeef9dfcea863eb0eb6e073631993a90864124550a16763",
+      "git_blob_sha256": "4b8f3cf0c1afe53bcaeef9dfcea863eb0eb6e073631993a90864124550a16763",
+      "comparison": "EXACT_BYTES",
+      "a4_git_source_unchanged": true
+    }
+  ],
+  "fixed_reference_git_diff_empty": true,
+  "scope": "Exact source/history proof; only existing declared A0 CRLF-to-LF Git transformation; no physical display/FPS PASS"
+}

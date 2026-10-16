@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 02:07:11 2026
+# Process ID: 40616
+# Current directory: D:/PLD/retina_fpga/build/a3_hls_01/solution1/impl/ip
+# Command line: vivado.exe -mode batch -nojournal -source run_ippack_a3meta.tcl -log D:/PLD/retina_fpga/results/a3_background_2017_4/ip_packaging_fixed_01.log
+# Log file: D:/PLD/retina_fpga/results/a3_background_2017_4/ip_packaging_fixed_01.log
+# Journal file: 
+#-----------------------------------------------------------
+source run_ippack_a3meta.tcl
+couldn't read file "run_ippack_a3meta.tcl": no such file or directory
+INFO: [Common 17-206] Exiting Vivado at Mon Oct 12 02:07:13 2026...

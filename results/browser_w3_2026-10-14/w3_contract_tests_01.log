@@ -1,0 +1,10 @@
+test_exact_w2_pair_observer_and_unchanged_w1_sources (test_browser_w3_contract.ContractTests.test_exact_w2_pair_observer_and_unchanged_w1_sources) ... ok
+test_open_checks_clock_identity_and_reset_before_frames (test_browser_w3_contract.ContractTests.test_open_checks_clock_identity_and_reset_before_frames) ... ok
+test_prior_observer_mismatch_stops_before_allocation (test_browser_w3_contract.ContractTests.test_prior_observer_mismatch_stops_before_allocation) ... ok
+test_response_and_gpio_mutations_are_detected_offline (test_browser_w3_contract.ContractTests.test_response_and_gpio_mutations_are_detected_offline) ... ok
+test_source_release_and_runtime_reference_separation (test_browser_w3_contract.ContractTests.test_source_release_and_runtime_reference_separation) ... ok
+
+----------------------------------------------------------------------
+Ran 5 tests in 0.060s
+
+OK

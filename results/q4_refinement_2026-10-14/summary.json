@@ -1,0 +1,13 @@
+{
+  "host_test_count": 18,
+  "test_log_sha256": "b0b8831a58b7d330aeec094c361b1bb1c466d0224f9ad40f0f10031f995080f8",
+  "new_candidate_count": 53,
+  "selected": null,
+  "new_bitstream": false,
+  "new_board_package": false,
+  "protected_files": 179,
+  "new_candidate_heldout_or_VK_evaluation": false,
+  "Q3_archive_verified": true,
+  "offline_masks_verified": 1140,
+  "offline_pixels_verified": 186777600
+}

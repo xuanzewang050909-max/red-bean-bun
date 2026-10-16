@@ -1,0 +1,257 @@
+{
+  "status": "W4C_DMA_BOARD_DATA_VERIFIED_ONLY",
+  "transfers": 619,
+  "words": 101253137,
+  "archive": {
+    "bytes": 140355907,
+    "sha256": "95cfa1c3ac6f8ef82f9dac59f4693e823d71b2c2edc4d3772d814fd75b7ff689"
+  },
+  "notebook": {
+    "bytes": 53333,
+    "sha256": "b3f3c564dc80f993879de5f4e5d8b5a4d66a495ca939b8357e32e047a16dc804"
+  },
+  "summary": {
+    "status": "COLLECTED_PENDING_INDEPENDENT_AUDIT",
+    "groups": [
+      {
+        "side": 256,
+        "repeat": 1,
+        "metrics": {
+          "transaction_ns": {
+            "n": 100,
+            "median_ns": 2541031.0,
+            "mean_ns": 2549632.64,
+            "p95_ns": 2709042.2,
+            "min_ns": 2358271,
+            "max_ns": 2800160
+          },
+          "submit_to_observed_idle_ns": {
+            "n": 100,
+            "median_ns": 2069505.0,
+            "mean_ns": 2083843.02,
+            "p95_ns": 2234198.75,
+            "min_ns": 1959101,
+            "max_ns": 2352677
+          },
+          "wait_invalidate_ns": {
+            "n": 100,
+            "median_ns": 459806.5,
+            "mean_ns": 465789.62,
+            "p95_ns": 566100.7,
+            "min_ns": 394954,
+            "max_ns": 610493
+          },
+          "snapshot_ns": {
+            "n": 100,
+            "median_ns": 1574215.5,
+            "mean_ns": 1567544.09,
+            "p95_ns": 1843323.25,
+            "min_ns": 1129723,
+            "max_ns": 1949396
+          }
+        },
+        "aggregate_payload_MiB_s": 196.10668303963976
+      },
+      {
+        "side": 256,
+        "repeat": 2,
+        "metrics": {
+          "transaction_ns": {
+            "n": 100,
+            "median_ns": 2527603.0,
+            "mean_ns": 2568913.09,
+            "p95_ns": 2735742.85,
+            "min_ns": 2313108,
+            "max_ns": 8135563
+          },
+          "submit_to_observed_idle_ns": {
+            "n": 100,
+            "median_ns": 2059197.0,
+            "mean_ns": 2114484.43,
+            "p95_ns": 2236707.7,
+            "min_ns": 1925766,
+            "max_ns": 7577416
+          },
+          "wait_invalidate_ns": {
+            "n": 100,
+            "median_ns": 456301.5,
+            "mean_ns": 454428.66,
+            "p95_ns": 544725.3999999999,
+            "min_ns": 385865,
+            "max_ns": 635557
+          },
+          "snapshot_ns": {
+            "n": 100,
+            "median_ns": 1496637.0,
+            "mean_ns": 1435570.07,
+            "p95_ns": 1821649.1,
+            "min_ns": 1122486,
+            "max_ns": 1881514
+          }
+        },
+        "aggregate_payload_MiB_s": 194.63484457545428
+      },
+      {
+        "side": 256,
+        "repeat": 3,
+        "metrics": {
+          "transaction_ns": {
+            "n": 100,
+            "median_ns": 2466898.5,
+            "mean_ns": 2595051.28,
+            "p95_ns": 2742938.75,
+            "min_ns": 2289846,
+            "max_ns": 8945384
+          },
+          "submit_to_observed_idle_ns": {
+            "n": 100,
+            "median_ns": 2030581.5,
+            "mean_ns": 2154809.39,
+            "p95_ns": 2268276.2499999995,
+            "min_ns": 1907982,
+            "max_ns": 8458418
+          },
+          "wait_invalidate_ns": {
+            "n": 100,
+            "median_ns": 440221.5,
+            "mean_ns": 440241.89,
+            "p95_ns": 498938.5,
+            "min_ns": 381864,
+            "max_ns": 668824
+          },
+          "snapshot_ns": {
+            "n": 100,
+            "median_ns": 1141178.5,
+            "mean_ns": 1342084.05,
+            "p95_ns": 1848238.2,
+            "min_ns": 1118726,
+            "max_ns": 2061594
+          }
+        },
+        "aggregate_payload_MiB_s": 192.67441990587562
+      },
+      {
+        "side": 512,
+        "repeat": 1,
+        "metrics": {
+          "transaction_ns": {
+            "n": 100,
+            "median_ns": 4744954.0,
+            "mean_ns": 4762126.92,
+            "p95_ns": 4861372.4,
+            "min_ns": 4687206,
+            "max_ns": 5450818
+          },
+          "submit_to_observed_idle_ns": {
+            "n": 100,
+            "median_ns": 4336098.5,
+            "mean_ns": 4346598.06,
+            "p95_ns": 4428809.35,
+            "min_ns": 4295994,
+            "max_ns": 4752498
+          },
+          "wait_invalidate_ns": {
+            "n": 100,
+            "median_ns": 401756.5,
+            "mean_ns": 415528.86,
+            "p95_ns": 466652.9,
+            "min_ns": 385317,
+            "max_ns": 1142135
+          },
+          "snapshot_ns": {
+            "n": 100,
+            "median_ns": 6540430.5,
+            "mean_ns": 6555820.92,
+            "p95_ns": 6726711.75,
+            "min_ns": 6402886,
+            "max_ns": 8137366
+          }
+        },
+        "aggregate_payload_MiB_s": 419.9804065700962
+      },
+      {
+        "side": 512,
+        "repeat": 2,
+        "metrics": {
+          "transaction_ns": {
+            "n": 100,
+            "median_ns": 4737428.0,
+            "mean_ns": 4759892.21,
+            "p95_ns": 4896029.25,
+            "min_ns": 4675754,
+            "max_ns": 5187859
+          },
+          "submit_to_observed_idle_ns": {
+            "n": 100,
+            "median_ns": 4329237.0,
+            "mean_ns": 4352143.41,
+            "p95_ns": 4460815.9,
+            "min_ns": 4276351,
+            "max_ns": 4675280
+          },
+          "wait_invalidate_ns": {
+            "n": 100,
+            "median_ns": 402905.0,
+            "mean_ns": 407748.8,
+            "p95_ns": 433841.6,
+            "min_ns": 387822,
+            "max_ns": 512579
+          },
+          "snapshot_ns": {
+            "n": 100,
+            "median_ns": 6557313.5,
+            "mean_ns": 6604473.52,
+            "p95_ns": 6775082.9,
+            "min_ns": 6427711,
+            "max_ns": 9117040
+          }
+        },
+        "aggregate_payload_MiB_s": 420.1775821305836
+      },
+      {
+        "side": 512,
+        "repeat": 3,
+        "metrics": {
+          "transaction_ns": {
+            "n": 100,
+            "median_ns": 4774200.0,
+            "mean_ns": 4824559.29,
+            "p95_ns": 4945978.35,
+            "min_ns": 4683286,
+            "max_ns": 7440431
+          },
+          "submit_to_observed_idle_ns": {
+            "n": 100,
+            "median_ns": 4357606.0,
+            "mean_ns": 4403116.73,
+            "p95_ns": 4499779.05,
+            "min_ns": 4290061,
+            "max_ns": 7021859
+          },
+          "wait_invalidate_ns": {
+            "n": 100,
+            "median_ns": 411821.5,
+            "mean_ns": 421442.56,
+            "p95_ns": 446647.44999999995,
+            "min_ns": 388259,
+            "max_ns": 1185520
+          },
+          "snapshot_ns": {
+            "n": 100,
+            "median_ns": 6566319.5,
+            "mean_ns": 6635717.67,
+            "p95_ns": 7037725.449999999,
+            "min_ns": 6452898,
+            "max_ns": 8140732
+          }
+        },
+        "aggregate_payload_MiB_s": 414.54563614659196
+      }
+    ],
+    "scope": "Separate A0 r2: DDR -> MM2S -> AXIS FIFO -> S2MM -> DDR, no C7 core.",
+    "timing": "Host perf_counter_ns: before recv.transfer through both official waits. Includes TX flush, driver, 1ms polling quantization, RX invalidate. Snapshot separately.",
+    "exclusions": "Not on-chip bus cycles, not C7 DMA minus core, not browser FPS or resident system throughput. Allocation/input/poison/RX flush and evidence writes outside transaction.",
+    "board_acceptance": "PENDING_INDEPENDENT_AUDIT"
+  },
+  "scope": "Independent A0 transport; not C7 resident performance or pure silicon cycle timing."
+}

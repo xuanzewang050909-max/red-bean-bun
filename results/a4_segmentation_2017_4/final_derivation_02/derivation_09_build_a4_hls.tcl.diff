@@ -1,0 +1,15 @@
+--- a/vivado/scripts/build_a3_hls.tcl
++++ b/vivado/scripts/build_a4_hls.tcl
+@@ -11,9 +11,9 @@
+ file mkdir [file dirname $out]
+ cd [file dirname $out]
+ open_project [file tail $out]
+-set_top retina_background_hls
+-add_files [file join $root hls retina_background_hls.cpp] -cflags "-I[file join $root hls]"
+-add_files -tb [file join $root tests retina_background_hls_tb.cpp] -cflags "-I[file join $root hls]"
++set_top retina_segmentation_hls
++add_files [file join $root hls retina_segmentation_hls.cpp] -cflags "-I[file join $root hls]"
++add_files -tb [file join $root tests retina_segmentation_hls_tb.cpp] -cflags "-I[file join $root hls]"
+ open_solution solution1
+ set_part xc7z020clg400-1
+ create_clock -period 10 -name default

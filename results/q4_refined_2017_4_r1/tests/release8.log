@@ -1,0 +1,13 @@
+test_all_input_and_gt_bytes_preserved (test_q4_release.ReleaseTests.test_all_input_and_gt_bytes_preserved) ... ok
+test_c5_threshold_and_stage_roles_do_not_fake_visual_changes (test_q4_release.ReleaseTests.test_c5_threshold_and_stage_roles_do_not_fake_visual_changes) ... ok
+test_candidate_training_masks_match_frozen_r3_exactly (test_q4_release.ReleaseTests.test_candidate_training_masks_match_frozen_r3_exactly) ... ok
+test_fixed_inventory_120_unique_requests_and_hashes (test_q4_release.ReleaseTests.test_fixed_inventory_120_unique_requests_and_hashes) ... ok
+test_no_runtime_medical_reference_imports (test_q4_release.ReleaseTests.test_no_runtime_medical_reference_imports) ... ok
+test_rq51_control_bits_and_invalid_controls (test_q4_release.ReleaseTests.test_rq51_control_bits_and_invalid_controls) ... ok
+test_source_quality_reuse_only_top_interfaces_removed (test_q4_release.ReleaseTests.test_source_quality_reuse_only_top_interfaces_removed) ... ok
+test_ui_reuses_rendering_and_labels_experimental_mode (test_q4_release.ReleaseTests.test_ui_reuses_rendering_and_labels_experimental_mode) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 17.751s
+
+OK

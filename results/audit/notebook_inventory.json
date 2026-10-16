@@ -1,0 +1,230 @@
+[
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/board/board_btns_leds.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/board/board_btns_leds.ipynb",
+    "sha256": "88a704f6844170ca23b5e336af828aa1b16b6d1286b942b18377cefedff72d57",
+    "opencv_cpu_functions": [],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/hdmi_introduction.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/hdmi_introduction.ipynb",
+    "sha256": "e104edec930ff366654893c34938bc726ca86a49c54d1d1fff40c4b7c9448a61",
+    "opencv_cpu_functions": [
+      "Laplacian",
+      "cvtColor"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/hdmi_video_pipeline.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/hdmi_video_pipeline.ipynb",
+    "sha256": "788f62b22747a2d31490df08d707b92c7e9870d1314c85b91e2eb2b78a467ac9",
+    "opencv_cpu_functions": [],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_face_detect_hdmi.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_face_detect_hdmi.ipynb",
+    "sha256": "4d7ebe8c0774608f65facdb576ae6a808b3e041e66db217e3ecd0d395071b906",
+    "opencv_cpu_functions": [
+      "CascadeClassifier",
+      "cvtColor",
+      "rectangle"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_face_detect_webcam.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_face_detect_webcam.ipynb",
+    "sha256": "3dd9bae00f8848d290736fffb41e5b5dcc455ff55f99f047192850bed6fce08a",
+    "opencv_cpu_functions": [
+      "CascadeClassifier",
+      "VideoCapture",
+      "cvtColor",
+      "rectangle"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_filters_hdmi.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_filters_hdmi.ipynb",
+    "sha256": "ee24c45328f83c429331c2bfe18e84bd0410ada2ef94e135763df17ee99dedfe",
+    "opencv_cpu_functions": [
+      "Canny",
+      "Laplacian",
+      "cvtColor"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v2.2.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_filters_webcam.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_filters_webcam.ipynb",
+    "sha256": "c188e110cb566b3a2ad631ed9aaca2334cdd96c3d6dec163b2cf50c3820ed69d",
+    "opencv_cpu_functions": [
+      "Canny",
+      "Laplacian",
+      "VideoCapture"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/board/board_btns_leds.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/board/board_btns_leds.ipynb",
+    "sha256": "88a704f6844170ca23b5e336af828aa1b16b6d1286b942b18377cefedff72d57",
+    "opencv_cpu_functions": [],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/hdmi_introduction.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/hdmi_introduction.ipynb",
+    "sha256": "e104edec930ff366654893c34938bc726ca86a49c54d1d1fff40c4b7c9448a61",
+    "opencv_cpu_functions": [
+      "Laplacian",
+      "cvtColor"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/hdmi_video_pipeline.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/hdmi_video_pipeline.ipynb",
+    "sha256": "788f62b22747a2d31490df08d707b92c7e9870d1314c85b91e2eb2b78a467ac9",
+    "opencv_cpu_functions": [],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_face_detect_hdmi.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_face_detect_hdmi.ipynb",
+    "sha256": "4d7ebe8c0774608f65facdb576ae6a808b3e041e66db217e3ecd0d395071b906",
+    "opencv_cpu_functions": [
+      "CascadeClassifier",
+      "cvtColor",
+      "rectangle"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_face_detect_webcam.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_face_detect_webcam.ipynb",
+    "sha256": "3dd9bae00f8848d290736fffb41e5b5dcc455ff55f99f047192850bed6fce08a",
+    "opencv_cpu_functions": [
+      "CascadeClassifier",
+      "VideoCapture",
+      "cvtColor",
+      "rectangle"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_filters_hdmi.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_filters_hdmi.ipynb",
+    "sha256": "ee24c45328f83c429331c2bfe18e84bd0410ada2ef94e135763df17ee99dedfe",
+    "opencv_cpu_functions": [
+      "Canny",
+      "Laplacian",
+      "cvtColor"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.0.1",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_filters_webcam.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_filters_webcam.ipynb",
+    "sha256": "c188e110cb566b3a2ad631ed9aaca2334cdd96c3d6dec163b2cf50c3820ed69d",
+    "opencv_cpu_functions": [
+      "Canny",
+      "Laplacian",
+      "VideoCapture"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/board/board_btns_leds.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/board/board_btns_leds.ipynb",
+    "sha256": "88a704f6844170ca23b5e336af828aa1b16b6d1286b942b18377cefedff72d57",
+    "opencv_cpu_functions": [],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/video/hdmi_introduction.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/hdmi_introduction.ipynb",
+    "sha256": "e104edec930ff366654893c34938bc726ca86a49c54d1d1fff40c4b7c9448a61",
+    "opencv_cpu_functions": [
+      "Laplacian",
+      "cvtColor"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/video/hdmi_video_pipeline.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/hdmi_video_pipeline.ipynb",
+    "sha256": "788f62b22747a2d31490df08d707b92c7e9870d1314c85b91e2eb2b78a467ac9",
+    "opencv_cpu_functions": [],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_face_detect_hdmi.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_face_detect_hdmi.ipynb",
+    "sha256": "4d7ebe8c0774608f65facdb576ae6a808b3e041e66db217e3ecd0d395071b906",
+    "opencv_cpu_functions": [
+      "CascadeClassifier",
+      "cvtColor",
+      "rectangle"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_face_detect_webcam.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_face_detect_webcam.ipynb",
+    "sha256": "3dd9bae00f8848d290736fffb41e5b5dcc455ff55f99f047192850bed6fce08a",
+    "opencv_cpu_functions": [
+      "CascadeClassifier",
+      "VideoCapture",
+      "cvtColor",
+      "rectangle"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_filters_hdmi.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_filters_hdmi.ipynb",
+    "sha256": "ee24c45328f83c429331c2bfe18e84bd0410ada2ef94e135763df17ee99dedfe",
+    "opencv_cpu_functions": [
+      "Canny",
+      "Laplacian",
+      "cvtColor"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  },
+  {
+    "tag": "v3.1.2",
+    "path": "boards/Pynq-Z2/base/notebooks/video/opencv_filters_webcam.ipynb",
+    "canonical_source": "boards/Pynq-Z1/base/notebooks/video/opencv_filters_webcam.ipynb",
+    "sha256": "c188e110cb566b3a2ad631ed9aaca2334cdd96c3d6dec163b2cf50c3820ed69d",
+    "opencv_cpu_functions": [
+      "Canny",
+      "Laplacian",
+      "VideoCapture"
+    ],
+    "status": "Preserved original only; NOT executed locally; waiting for board"
+  }
+]

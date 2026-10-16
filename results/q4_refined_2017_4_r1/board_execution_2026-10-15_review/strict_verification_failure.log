@@ -1,0 +1,15 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\verify_q4_archive.py", line 238, in <module>
+    try: result=verify(args.archive,args.notebook,args.package)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\verify_q4_archive.py", line 222, in verify
+    display=manual_coverage(records,observations,loops,allow_incomplete_display=allow_incomplete_display)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\verify_q4_archive.py", line 47, in manual_coverage
+    thresholds = {str(t): visible_manual(dict(base, image_id='im0001',
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\verify_q4_archive.py", line 42, in visible_manual
+    require(ids, 'Required visible manual preview missing: ' + str(fields))
+  File "D:\PLD\retina_fpga\pynq_q4\protocol.py", line 20, in require
+    raise ValueError(message)
+ValueError: Required visible manual preview missing: {'side': 512, 'mode': 'final', 'png_profile': 'fast', 'image_id': 'im0001', 'algorithm': 'C5', 'threshold': 20}

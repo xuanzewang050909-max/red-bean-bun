@@ -1,0 +1,13 @@
+{
+  "min_disk_free_bytes": 3626737664,
+  "rss_initial_bytes": 80912384,
+  "rss_final_bytes": 84361216,
+  "rss_max_bytes": 84361216,
+  "unique_configurations": 100,
+  "unique_objects": 460,
+  "archive_uncompressed_bytes": 157273829,
+  "side_counts": {
+    "256": 400,
+    "512": 600
+  }
+}

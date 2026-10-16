@@ -1,0 +1,8 @@
+test_all_words_preview_timing_and_observer_reconcile (test_w2_archive.ArchiveTests.test_all_words_preview_timing_and_observer_reconcile) ... ok
+test_changed_notebook_code_rejected (test_w2_archive.ArchiveTests.test_changed_notebook_code_rejected) ... ok
+test_observer_parameter_timing_frame_count_and_completion_tampering_rejected (test_w2_archive.ArchiveTests.test_observer_parameter_timing_frame_count_and_completion_tampering_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 12.209s
+
+OK

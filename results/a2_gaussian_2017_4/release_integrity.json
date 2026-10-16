@@ -1,0 +1,46 @@
+{
+  "status": "PASS_HOST_PACKAGE_AND_SAVED_NOTEBOOK_VALIDATION",
+  "board_status": "NOT_RUN",
+  "package_files": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "a2_gaussian.bit": {
+      "bytes": 4045679,
+      "sha256": "be271814865a28adc4402ff57ec320a2ebf3f81f85342cc0af339eac63181fb0"
+    },
+    "a2_gaussian.hwh": {
+      "bytes": 349997,
+      "sha256": "847637e394b7b1bee166af9a6508a9aca8ad9672ed922e2e566359b27326192f"
+    },
+    "a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "a2_gaussian_check.ipynb": {
+      "bytes": 4005,
+      "sha256": "d65b5b20c626223ba412102912e2c8c9c217a55fc68e95f2468264541854e293"
+    },
+    "a2_manifest.json": {
+      "bytes": 12912,
+      "sha256": "d05d69d3b4735604aa8fdb97822f775352ba4357683ada778305d5bf2658e60e"
+    },
+    "stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "\u4f7f\u7528\u8bf4\u660e.txt": {
+      "bytes": 6236,
+      "sha256": "cbc0e36aeaa5532299fc926a06dabd55f5c669027e5c0fcb6255a95475589598"
+    }
+  }
+}

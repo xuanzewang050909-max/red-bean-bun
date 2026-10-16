@@ -1,0 +1,28 @@
+{
+  "status": "BOARD_RUN_INTERRUPTED_CAUSE_PENDING_DIAGNOSTICS",
+  "source": "User supplied screenshot; no downloaded board arrays or logs received",
+  "visible_error": "Failed to fetch",
+  "last_visible_image": "im0240",
+  "last_visible_run_id": "a5e500d4c02041ec8850d1975c9638ff",
+  "last_visible_pl_frame_counter": 17,
+  "visible_config": {
+    "side": 512,
+    "algorithm": "C7",
+    "mode": 3,
+    "threshold": 112,
+    "png_profile": "fast"
+  },
+  "screenshot_sha256": "f0f446ddcb19f1774596cfd239285192ac5db3636d43a3d1b7a7c46ee9e43531",
+  "facts": [
+    "UI has stopped and labels the images as historical results",
+    "Images are dimmed by stale-result CSS after failure"
+  ],
+  "unconfirmed": [
+    "Which HTTP request failed",
+    "Server/kernel/network/storage/memory/hardware state",
+    "Whether another PL task had been accepted or completed"
+  ],
+  "action": "Preserve current kernel and buffers. Read manager status and latest job summaries only; no new PL requests, retries, resets or reloads.",
+  "quality_or_demo_pass": false,
+  "video": "DEFERRED_BY_USER"
+}

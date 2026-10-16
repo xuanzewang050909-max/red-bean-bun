@@ -1,0 +1,510 @@
+{
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\background_sum.v": {
+    "bytes": 10278,
+    "sha256": "dadee79f5b6dbcdf01f8fe2c0214e2c8c403672dd82b355d879583d8b49d92ac"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Block_proc.v": {
+    "bytes": 7967,
+    "sha256": "805ded7773453fd46ed540564f44e5c8402d0c0b75373881840ed815e31e7720"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_filter.v": {
+    "bytes": 1261143,
+    "sha256": "d553ea3773dfdf838797d9762518efb0aed310714b8ade59b52c39cad6c3f274"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_filter_k_buf_0bLp.v": {
+    "bytes": 1670,
+    "sha256": "a6bbd20db757e544dc42162f5226825ed7549c27aaf2ea6e77cec142bb3b2e52"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_fork.v": {
+    "bytes": 17928,
+    "sha256": "07407b62ac6b54228170e4e0cce2d384b107cc05e07ab56380bf9dd09ef7e6a4"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_join.v": {
+    "bytes": 20787,
+    "sha256": "d50e82a7f59dced19085be472b8065887ea14eeef066ae08c0a63b4eae32a444"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\closed_carrier.v": {
+    "bytes": 14517,
+    "sha256": "2456a429e9e1f6d732ec175e6a5626b99228918fabd6cb6fa2bd35499305fabd"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\column_filter.v": {
+    "bytes": 136481,
+    "sha256": "7c18226d0fa169566a01add3f3716a534cd085cf394f41d4aaf2442f730a6799"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\count_neighbors.v": {
+    "bytes": 8662,
+    "sha256": "389c47e620d088b1f3a6f2f547c35e9fea427666930eae301e60b8c765cc94a1"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\dilate_zero.v": {
+    "bytes": 43559,
+    "sha256": "b8080069854c4beede3279d5cfcc2bc1ab378140223d3300bdd91f76b8c4e6c5"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\enhance_aligned.v": {
+    "bytes": 22146,
+    "sha256": "7159ebbb3d0aee4a080bd4f2bfdef5e2351fe19d089354ef579688d2b1427d93"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\enhance_aligned_lut.v": {
+    "bytes": 1250,
+    "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\erode_zero.v": {
+    "bytes": 44620,
+    "sha256": "2d54ff21e1ddd8eed6065238d0bcedba52a8ace7e493cabe7c1437a22d44dddd"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d10_A.v": {
+    "bytes": 3110,
+    "sha256": "92ae694ff4c25841aaa2ae320d0ed8afdf8b700eb125962b7974cca72d386e30"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d12_A.v": {
+    "bytes": 3110,
+    "sha256": "af7a5341dfb2ce0d310f178d8fb693e9e9d2c30c16d02f134ccaee4634a85364"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d1_A.v": {
+    "bytes": 3100,
+    "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d2_A.v": {
+    "bytes": 3104,
+    "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d2_A_x.v": {
+    "bytes": 3112,
+    "sha256": "cc112adf98e9d1307621f206583c9ee236adaf2ae6b14fae90398bf92be7b76f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d2_A_x_x.v": {
+    "bytes": 3120,
+    "sha256": "50240c2fea55819491eb355d5ba67334e8e0032d978d82f302917b95ece4899f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d4_A.v": {
+    "bytes": 3104,
+    "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d4_A_x.v": {
+    "bytes": 3112,
+    "sha256": "86f0c7fc1712f0728ab8b29ef99f9df83ec54aaff0a29543b8363eddffbe5a9f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d6_A.v": {
+    "bytes": 3104,
+    "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d7_A.v": {
+    "bytes": 3104,
+    "sha256": "7e788023725d4a6f27ae2cf3c9f456c46f13ee3e8cf0bb1354b5e1f8ca11d94e"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d9_A.v": {
+    "bytes": 3106,
+    "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w14_d1_A.v": {
+    "bytes": 3100,
+    "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32768_B.v": {
+    "bytes": 4147,
+    "sha256": "2d9fa1d1f0502160606ad7ea18ce6ca4a7fb0259db0ea955dc6343f0559fabc9"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32_A.v": {
+    "bytes": 3110,
+    "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32_A_x.v": {
+    "bytes": 3118,
+    "sha256": "50bc9db2437234918d64b1a5e25a8601d282456b2a133f2ba86a39073a8e26a2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32_A_x_x.v": {
+    "bytes": 3126,
+    "sha256": "793d430425c7820373d8d69015e7dad1a2c7ec0977ced1013846e14f0472f4d2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d1_A.v": {
+    "bytes": 3100,
+    "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d1_A_x.v": {
+    "bytes": 3108,
+    "sha256": "aed88d36445e864f4b7052865321d1e4654c3f926a19cd3c2c59193a6be29000"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d1_A_x_x.v": {
+    "bytes": 3116,
+    "sha256": "961dcb66c097d16edd965e9b82706a5995d18568c8f1d5aa4693f5844743fdb3"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d2_A.v": {
+    "bytes": 3104,
+    "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d2_A_x.v": {
+    "bytes": 3112,
+    "sha256": "f787f5b7e87a36eb7086c0f6c52449ff5fb95712d8083e293a91fff26c706e8d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d2_A_x_x.v": {
+    "bytes": 3120,
+    "sha256": "810cc5d7180a199659d394e6c38cf7402a420e5dc516687dad52b86c8dac29e8"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d3_A.v": {
+    "bytes": 3104,
+    "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w1_d16384_B.v": {
+    "bytes": 4145,
+    "sha256": "7207612c7f5ea66d81d69b5a91f89b4c2687cafecdac669c21e8eb66e657925f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w1_d7_A.v": {
+    "bytes": 3098,
+    "sha256": "4a8e92948572d683523e59d92e703de345e039cc2c6caba6b70b41845d69de1e"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d1_A.v": {
+    "bytes": 3100,
+    "sha256": "f2c43b40e5e75edb6f924ca2dbfc6e1b965db4b3f643a944e491676efa491d29"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d1_A_x.v": {
+    "bytes": 3108,
+    "sha256": "e3502036cc2e6b8f03bfdc05d9590338b5d287640502b3c6f2d8211db0922218"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d1_A_x_x.v": {
+    "bytes": 3116,
+    "sha256": "75a9858104ddeba0666f206dc75ff3b0b131ae54f9a4f93762a4bedd7871cf52"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d2048_B.v": {
+    "bytes": 4145,
+    "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d2_A.v": {
+    "bytes": 3104,
+    "sha256": "e3bbc15ab31fbff266f0870fd2f834f4233ca1bc20585e848ec9bfcbc6dd3bde"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d2_A_x.v": {
+    "bytes": 3112,
+    "sha256": "b24e2be3118e0a901003587627ae55cf5711c5408d6b20e7ff8a2397e0435c4d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d32_A.v": {
+    "bytes": 3110,
+    "sha256": "80ae8bfee5b405163f5352ca7f1adf7bab28a7483b94f6b55d7af3801e264f90"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d32_A_x.v": {
+    "bytes": 3118,
+    "sha256": "02d8a6d4a63ddc485d87723d550d40f652ebbfcdc26baea0cd22cb422f03883d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d4096_B.v": {
+    "bytes": 4145,
+    "sha256": "7b3a7e14b262f96fd45451165f3879b1564a65baa59d1d7c24119642c86fc292"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d6_A.v": {
+    "bytes": 3104,
+    "sha256": "29d6f5e496bf22e7470d07ccda5b151dc8453af95e8a55d9d8072bbbcfced473"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d8192_B.v": {
+    "bytes": 4145,
+    "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w64_d2048_B.v": {
+    "bytes": 4145,
+    "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w64_d32_A.v": {
+    "bytes": 4140,
+    "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w64_d8192_B.v": {
+    "bytes": 4145,
+    "sha256": "3308b68ac61ffa07980d9df29bfb7abc7848f419d7e61e200a19381909013b50"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d16384_B.v": {
+    "bytes": 4145,
+    "sha256": "1401cf4d09793b92c0ebbadbadaae05c8602d41235e802bd9a312c4a844c1707"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d32_A.v": {
+    "bytes": 3104,
+    "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d32_A_x.v": {
+    "bytes": 3112,
+    "sha256": "35d34f0cb8a2dce856cbb202f0dcce8012afba384aef3d407fc857b9ccbf7c61"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d8192_B.v": {
+    "bytes": 4143,
+    "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Filter2D.v": {
+    "bytes": 55588,
+    "sha256": "f6792a36f70dd50731edc7b67fefcbca14588783018b896f100e8075070088b3"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Filter2D_1.v": {
+    "bytes": 56233,
+    "sha256": "7695ac6990f3dba3485e325f36d5440a69b5aa7adf9b4c20ce63ebfaa7a2ca29"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Filter2D_k_buf_0_bkb.v": {
+    "bytes": 1668,
+    "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\filter_sum.v": {
+    "bytes": 8570,
+    "sha256": "898967798c4e98cd991b716f72e1ee87ef83eaa75c570f47132762a9555e1ed8"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\final_join.v": {
+    "bytes": 18001,
+    "sha256": "42be7de2b1f98dd5a8464e780a557c29496a5f79d6a39eb36339ab70808f5061"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\finite_gap_filter.v": {
+    "bytes": 148491,
+    "sha256": "8c5602fced2da28f05525d7825e8c1505e73c67d6a08a2355933cedc24c5a1a2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fork_input.v": {
+    "bytes": 15171,
+    "sha256": "062144100820ed9d5ca917f8e2038341be8bd64db8c16f4dd40756eed7d763fc"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\gaussian_round.v": {
+    "bytes": 14148,
+    "sha256": "24e06af2eda4da34f1c663590816063470ca39f5b443787cf4458a40da748a15"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\gaussian_sum.v": {
+    "bytes": 8574,
+    "sha256": "6c280180179aa6004cfbcb5bbd77e83967b5c2b9d4eb4721b77c448c98c5b8d5"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\initial_fov.v": {
+    "bytes": 16906,
+    "sha256": "cf0dff76e372eb2fd9e6f2680d726b938ce6015d2b2ac37c614a64e4e8c6df65"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\profile_evidence.v": {
+    "bytes": 1029117,
+    "sha256": "b89df57b0b0da1d8fcd46c7f78482c3e36e50848965f4cd4fe870c593cd16987"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\refined_join.v": {
+    "bytes": 16665,
+    "sha256": "673e62fdd12eadf4578e0952a70bee630737812369b7e82e93be8e1b9130f173"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\response_carrier.v": {
+    "bytes": 23090,
+    "sha256": "91211bc0821fae095dad5647f9a937ff73b2fb30b22dd54c9e8fc38882ea161d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_c2_support.v": {
+    "bytes": 494963,
+    "sha256": "65f753142d92351a79aea6df4d6e6d1c6d4c94050b0634ce620c7044d49f7a5f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5.v": {
+    "bytes": 48433,
+    "sha256": "c0943ca5a2a87f9637357bfd4cf04bc916c76a894cc876b3f7c8c10d3f0ebc74"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5_B.v": {
+    "bytes": 5279,
+    "sha256": "3c522b925b2df6393f6f617ab2661024dcded5b4a9fbd6ad493a5e24e3d0ee4a"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5_B_1.v": {
+    "bytes": 14881,
+    "sha256": "1b77a981f978527ec6ea9f6af8854a17370751742de9affedd19c58785219457"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5_e.v": {
+    "bytes": 7302,
+    "sha256": "8016d742ae4814dfc9d37ca3197e2246b538633d54a52fc5e4d09ebf242b1283"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb2s.v": {
+    "bytes": 3485,
+    "sha256": "06ecc81bc44f3e238e51b32d5eeba18c58f8fdd405e421bfe303731c5d052824"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb3s.v": {
+    "bytes": 1371,
+    "sha256": "2173557ce6d159810425c090020221df232003b3057b0281bf343acf41e7bcae"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb4t.v": {
+    "bytes": 783,
+    "sha256": "262393c29a01ac689a94393e50222649534e18fbc48573a2c273cc93c06c2d43"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb5t.v": {
+    "bytes": 1371,
+    "sha256": "ee00204f7673bc0669755afdff90b0b9f4b8fb0bca8e416c263bc283ee490776"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb6t.v": {
+    "bytes": 1371,
+    "sha256": "fbda4ad1bf492babab379737111d091bc3b980f42136c9014e28e491eec79758"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb7t.v": {
+    "bytes": 783,
+    "sha256": "5725e7505a49b3f5667e029f3160ef6f8a45788a712ddea6f9da569d89ac1cdb"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb8t.v": {
+    "bytes": 1370,
+    "sha256": "d67e896950cac045c2fb8eeeb574ff7a493868d3d0c2d64677617a93863422d8"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb9t.v": {
+    "bytes": 783,
+    "sha256": "798d10efa2ea9b66087e5ca830dc0d4be1e3f30bb14c99a16d67f45ddca7c6b2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hcau.v": {
+    "bytes": 1370,
+    "sha256": "5e76ce16ae267e31d7c9613a1b3951aafd6cf397a6c277075805e1c2992a568b"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hcbu.v": {
+    "bytes": 783,
+    "sha256": "d6017dde910ce4fc6fb4939971dc159e315807cac59d679c84582bf22125a2ed"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_heOg.v": {
+    "bytes": 1170,
+    "sha256": "94c90a872b6909a31787b4bc50648020a8cdde04d0682a0ecc9be8f0144e01b4"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hls.v": {
+    "bytes": 20975,
+    "sha256": "26d1de5b4ce61e31cee06921af9cdc01c37b3c3353cf56fbdb3d7440739a3805"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hShg.v": {
+    "bytes": 3671,
+    "sha256": "359cd1c181ecb813554c3ec448b3df683e5d31ec3723779101626479a24092f8"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hudo.v": {
+    "bytes": 2942,
+    "sha256": "2844f0cb1a5154b770bfe438a1b3363e11885638ee2e3e354466d808755f1168"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hyd2.v": {
+    "bytes": 783,
+    "sha256": "72e674738f7158ac7b0a0c2f1c71c0be8de02ec87b84649478a80827c02a552c"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_refined_base.v": {
+    "bytes": 75889,
+    "sha256": "c64ab2819ed3206de2d524be85ae573697801a5cb2b4ea0f3650efccfda6ea49"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_refined_base_s.v": {
+    "bytes": 31101,
+    "sha256": "122c5e9b8cea4e55f6af794f22703c43eb4ee3eee329547c6e3bd32d3aa5a369"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\row_filter.v": {
+    "bytes": 61276,
+    "sha256": "ad77af808b1657f6a0eb52e635f487fa8ad1b699100f660da7f7cb1cb63c0892"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\row_filter_l_bordvdy.v": {
+    "bytes": 1674,
+    "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\seed_flags.v": {
+    "bytes": 19383,
+    "sha256": "6385f3c1429d096cd1382f712585b1e8d4393a0635cfba17e0d2ddd417a17904"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\select_response.v": {
+    "bytes": 21174,
+    "sha256": "460c02fdc8700435b5f48979ed405cae9d35e777caa8521df11618ec3966266a"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\SepFilter2D.v": {
+    "bytes": 7857,
+    "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\split_words.v": {
+    "bytes": 14143,
+    "sha256": "b7404a137c747ece753a7efd30fc0fb4a1e6200f44c395d388abff5e5b776293"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_backgro1iI.v": {
+    "bytes": 3130,
+    "sha256": "eafefee21e4cecbad6db0461336332b13cb2c90659474c510fb88560a3748feb"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_c7_filtcdu.v": {
+    "bytes": 3130,
+    "sha256": "7455e273a97e4cb42ed3f6d95e6bf06daa97bb4b0adbdcdc66497f78ec2f95eb"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_c7_joinceu.v": {
+    "bytes": 3130,
+    "sha256": "2ef0e96d4204127e299169d2d4d976567839293b833bcce5d2ab975da2f1f14b"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_closed_bck.v": {
+    "bytes": 3132,
+    "sha256": "68125441b6d476eb00fa91dc095582e91d93ff1dac83c4d7a4aabb4850baf1d7"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_count_n7jG.v": {
+    "bytes": 3132,
+    "sha256": "230419c2b7e1c2353398608aac0f048d1341f995ead5a4196fec4e033c5def1f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_dilate_5jm.v": {
+    "bytes": 3132,
+    "sha256": "fcaf4b7fb0d1365e69fa7c551ddd9223f91dc95bf4bde412fafad89351396730"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_enhance8jQ.v": {
+    "bytes": 3130,
+    "sha256": "4a6bc8a3b2dc8a0d2417e1d762d4b712dff120814c2d2e301e94468c4f4ff071"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_erode_z6jw.v": {
+    "bytes": 3132,
+    "sha256": "a522af4702b24ce2b3feabb6c99dbe8a3091dd28c5fa0c992be22fa4e5fb7f4c"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_filter_0iy.v": {
+    "bytes": 3130,
+    "sha256": "f6e25649113cbe7f3433897d5c416a4a05935bd50e425ec0a405a1e4fb9e983f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_final_jbbk.v": {
+    "bytes": 3132,
+    "sha256": "28d69e83a305058d46250024543691698205d25e52fa2764f8d53bae7f643179"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_finite_bFp.v": {
+    "bytes": 3130,
+    "sha256": "d83bbdeb99d7e7eea5ca8f51bd9e35e944a017ccc079b8c22ef075a991c60e7f"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_gaussiabHp.v": {
+    "bytes": 3130,
+    "sha256": "07c0e48d14dafd29018db6ef7aaf116c9a501b17e8964c08f0efb8d0d72c69de"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_gaussiabIp.v": {
+    "bytes": 3130,
+    "sha256": "9cf64bc423b9de58ab0b85c554ae6142a82896f1dc7f22984103c79e377b37c5"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_initialbak.v": {
+    "bytes": 3130,
+    "sha256": "61c481d5eaa5d4ba5edaf013fb80fd7b8131f4394bfe2c5a62b388d0967ed561"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_profilebEo.v": {
+    "bytes": 3130,
+    "sha256": "4f708ea546dd8193949ca4fd67b0895625d0d3d78c9db0ea598f33423eaef9af"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_refinedbKp.v": {
+    "bytes": 3130,
+    "sha256": "d898f6408027f93e9d1b663bf1f8a0cef4d547bf6fcbf6e4c83a64bacbfc6d5d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_respons9j0.v": {
+    "bytes": 3130,
+    "sha256": "957d61e348393d392ad562f3c89c2da681f1d0f42c859fcb1ebab9f430a4cb6a"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_2iS.v": {
+    "bytes": 3130,
+    "sha256": "d89d0765cd3ef640a912ba53888d1efae2422e5fe5421c08333ef1945333eda1"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_bCo.v": {
+    "bytes": 3126,
+    "sha256": "8dbc74a2f806b38a56c0595794d035be64192d321ebdfc993bcdf31c876465a0"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_bDo.v": {
+    "bytes": 3126,
+    "sha256": "73b49f59ebe7099fd62f6a28f7f1e2a8431596f2d8d8a96549d1516168a3014a"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_bGp.v": {
+    "bytes": 3130,
+    "sha256": "2fa6c8fc90ea0ad65c28e35a4893f6f66f6c4ef57616158a6ba1d2214ffc9a4e"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_ccu.v": {
+    "bytes": 3130,
+    "sha256": "bb458899a99bd729e0cfd0406cd1c7b30cb4c3e389d2fac8cf3e998defd93e9d"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_row_filxdS.v": {
+    "bytes": 3126,
+    "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_seed_flbJp.v": {
+    "bytes": 3130,
+    "sha256": "530faea873f464f858750687e8dfbb6e9288608b18da70b6d3b966af6cef85dd"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_select_3i2.v": {
+    "bytes": 3130,
+    "sha256": "b1e6f13e1fb95842fe46974f4eea60e0de270d0cb397d9dbb5b9867c4befab4b"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_thresho4jc.v": {
+    "bytes": 3130,
+    "sha256": "e5ec1b91981d5cefbd60099b63b7337791ff9577df55cf6ab10a77228d5e8e24"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\threshold_binary.v": {
+    "bytes": 19621,
+    "sha256": "0f156fa6b756c9b9d3289c0e7776ba9d9413ce6b16d9262020266a253beea478"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\enhance_aligned_lut_rom.dat": {
+    "bytes": 1026,
+    "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4"
+  },
+  "D:\\PLD\\retina_fpga\\build\\q4d_detector_axis_sim_03\\retina_detector_guard.v": {
+    "bytes": 10163,
+    "sha256": "62f42f39f849557f4ddc91a902bf793dc1b2d620c20da206d55b3a6a3e09c988"
+  },
+  "D:\\PLD\\retina_fpga\\tests\\retina_q4d_detector_shard_tb.sv": {
+    "bytes": 12777,
+    "sha256": "eced455b8415a0eb38fd755f276c37803faf6dec01184faed221d2024f9d65d7"
+  }
+}

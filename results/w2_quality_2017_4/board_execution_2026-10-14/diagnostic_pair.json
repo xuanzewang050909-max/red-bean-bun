@@ -1,0 +1,92 @@
+{
+  "scope": "Actual im0001 training-image DMA diagnostic only; frozen C2 not retuned. Not Q3/full-dataset acceptance.",
+  "frames": [
+    {
+      "index": 74,
+      "algorithm": "A",
+      "threshold": 28,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 24894,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.11768710377398629,
+        "annotations": {
+          "AH": {
+            "tp": 10553,
+            "fp": 14341,
+            "fn": 7545,
+            "tn": 179088,
+            "dice": 0.49092854484555265,
+            "iou": 0.3253182897129998,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10935,
+            "fp": 13959,
+            "fn": 9916,
+            "tn": 176717,
+            "dice": 0.4780850366160236,
+            "iou": 0.31413386957770756,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      },
+      "illustrative_band_pixels": 5334,
+      "band_candidates": 3225,
+      "band_candidates_negative_in_both": 3108,
+      "core_ms": 3.02269,
+      "dma_ms": 4.741587,
+      "inference_ms": 11.57304
+    },
+    {
+      "index": 75,
+      "algorithm": "C2",
+      "threshold": 28,
+      "quality": {
+        "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+        "vessel_pixels": 21861,
+        "fov_pixels": 211527,
+        "vessel_area_fraction": 0.10334850870101689,
+        "annotations": {
+          "AH": {
+            "tp": 10424,
+            "fp": 11437,
+            "fn": 7674,
+            "tn": 181992,
+            "dice": 0.5217347781476013,
+            "iou": 0.35293719316065686,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          },
+          "VK": {
+            "tp": 10785,
+            "fp": 11076,
+            "fn": 10066,
+            "tn": 179600,
+            "dice": 0.5050103015545983,
+            "iou": 0.33780186049425254,
+            "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+          }
+        },
+        "quality_reason": null
+      },
+      "illustrative_band_pixels": 5334,
+      "band_candidates": 2598,
+      "band_candidates_negative_in_both": 2491,
+      "core_ms": 3.02269,
+      "dma_ms": 4.748221,
+      "inference_ms": 11.646953
+    }
+  ],
+  "original_archive": {
+    "bytes": 9572569,
+    "sha256": "359e477392fc2b70f4bc25a64a3f187a669408ef53e0ddc4c589238ea7a9eb37"
+  },
+  "notebook": {
+    "bytes": 355583,
+    "sha256": "33ed5ed439980bc8b3c487514060b5bf599cb3398a01e2e996893975f310b894"
+  },
+  "diagnostic_region": "Original Q0 rectangle x=[180,340),y=[145,385), G3>=192 core and 15x15 dilation minus core in original FOV; not lesion annotation or PL exclusion rule",
+  "board_clock": "Original uncalibrated 2022 timestamp retained",
+  "timing_scope": "Two individual samples; W2 config/DMA/snapshot excludes allocation/file IO/verification. Core includes stream stalls. Pure DMA/browser FPS remain null."
+}

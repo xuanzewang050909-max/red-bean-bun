@@ -1,0 +1,156 @@
+{
+  "revision": "b_profile_r1_stage_timestamps",
+  "board_status": "NOT_RUN",
+  "host_status": "PASS_COMPOSITION_AND_HOST_CONTRACT_TESTS_ONLY",
+  "contract": {
+    "side": 512,
+    "mode": 3,
+    "pattern": "stare",
+    "timed_frames": 30,
+    "warmup_frames": 3,
+    "stages": [
+      "dma_transfer",
+      "word_compare",
+      "algorithm_status",
+      "ps_layout",
+      "frame_allocate",
+      "frame_copy",
+      "display_submit",
+      "video_status",
+      "output_hash",
+      "record_and_progress"
+    ],
+    "clock": "perf_counter_ns",
+    "layout": "unchanged_b_r2_medical_canvas",
+    "driver": "unchanged_official_pynq_3.0.1",
+    "overlay_downloads": 1
+  },
+  "artifacts": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "b_integration.bit": {
+      "bytes": 4045674,
+      "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+    },
+    "b_integration.hwh": {
+      "bytes": 1131176,
+      "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+    },
+    "b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "b_integration_check.ipynb": {
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    },
+    "b_manifest.json": {
+      "bytes": 60640,
+      "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b"
+    },
+    "b_performance_profile.ipynb": {
+      "bytes": 3607,
+      "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7"
+    },
+    "b_profile_board_test.py": {
+      "bytes": 16730,
+      "sha256": "5a693dece2ca6b5ad8afb09712dc16653aac3c04db0d0b1d33a9c78de3cd8211"
+    },
+    "stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "使用说明.txt": {
+      "bytes": 5437,
+      "sha256": "ca555d63231d76b0f6e67705b24d31c626677692d5cf7ac3a5253a6740120c2f"
+    },
+    "分段计时说明.txt": {
+      "bytes": 3550,
+      "sha256": "24e0a511a03f9269c94051578619b22ea86104ef9aa3b740a4fa27238dc354fa"
+    }
+  },
+  "notebook_validation": {
+    "algorithm": "sha256-code-cells-v1",
+    "sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201"
+  },
+  "baseline": {
+    "manifest": "results/b_integration_2017_4_r2/release_manifest.json",
+    "bytes": 60640,
+    "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b",
+    "all_13_original_r2_files_unchanged": true,
+    "hardware_rebuilt": false,
+    "board_timing_evidence": {
+      "path": "results/b_integration_2017_4_r2/board_execution_2026-10-12/timing_verification.json",
+      "bytes": 2259,
+      "sha256": "f720a71f98d4616454184bc6dd3546589a3ffe624cb65d83a77e4ebbc30be1ee"
+    }
+  },
+  "sources": {
+    "scripts/b_profile_board_test.py": {
+      "bytes": 16730,
+      "sha256": "5a693dece2ca6b5ad8afb09712dc16653aac3c04db0d0b1d33a9c78de3cd8211"
+    },
+    "scripts/package_b_profile.py": {
+      "bytes": 7330,
+      "sha256": "8ad2c9e8aa50c1e055a24834c93732449b2db11c23a944d2601a58712235cb26"
+    },
+    "tests/test_b_profile.py": {
+      "bytes": 17645,
+      "sha256": "794c062c7532fd370ce6a5604357a4e55ff2bdc159fad021dd52c77b0773e6ac"
+    },
+    "notebooks/b_performance_profile.ipynb": {
+      "bytes": 3607,
+      "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7"
+    },
+    "docs/b_performance_profile_steps.md": {
+      "bytes": 3550,
+      "sha256": "24e0a511a03f9269c94051578619b22ea86104ef9aa3b740a4fa27238dc354fa"
+    }
+  },
+  "official_driver_sources": {
+    "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+      "bytes": 20367,
+      "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+      "bytes": 12224,
+      "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+    },
+    "references/PYNQ/v3.0.1/pynq/buffer.py": {
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+    }
+  },
+  "official_pynq_commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+  "host_regression": {
+    "tests": 19,
+    "log": {
+      "bytes": 3356,
+      "sha256": "bec6247cc3998d6f016d7e11d6224af096fcbe596c7852f3daca6f840c07ee95"
+    },
+    "scope": "Host fakes for timing attribution and ownership/error handling; never physical board evidence"
+  },
+  "limits": "Stage profiling has not run on the board. No performance improvement, PL-cycle, display-scan-rate or medical-quality PASS. Original B r2 evidence stays separate."
+}

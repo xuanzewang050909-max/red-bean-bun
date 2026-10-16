@@ -1,0 +1,1479 @@
+{
+  "revision": "b_integration_r2_explicit_video_imports",
+  "host_status": "PASS_REUSED_R1_HARDWARE_AND_R2_EXPLICIT_DRIVER_IMPORT_REGRESSION",
+  "board_status": "NOT_RUN",
+  "vivado": "2017.4",
+  "pynq_target": "3.0.1",
+  "scope": "Same B bitstream frozen M0 algorithm A + official HDMI; board digital/display/FPS pending; no clinical quality PASS",
+  "build_directory": "D:\\PLD\\retina_fpga\\build\\b_integration_05",
+  "host_checks": {
+    "wns_ns": 0.341,
+    "whs_ns": 0.008,
+    "wpws_ns": 0.0,
+    "resources": {
+      "Slice LUTs": 15823.0,
+      "Slice Registers": 24316.0,
+      "Block RAM Tile": 46.0,
+      "DSPs": 19.0
+    },
+    "reviewed_drc_warnings": [
+      "DPIP-1",
+      "DPOP-1",
+      "DPOP-2",
+      "RTSTAT-10"
+    ],
+    "board_status": "NOT_RUN",
+    "reviewed_critical_warnings": {},
+    "constraint_derivation": {
+      "original_gpio_hdmi_pin_assignments_unchanged": 36,
+      "rx_period_ns": 8.333333,
+      "external_serial_clock_policy": "Only inapplicable unconditional rgb2dvi_clocks.xdc excluded; actual MMCM/BUFR clocks auto-derived"
+    },
+    "actual_generated_reset_simulation": {
+      "bytes": 272,
+      "sha256": "07d526c103bb57bd485cc14a2df6ddd585dfdf249578ad482368e9eba30c1b8f"
+    },
+    "host_test_count": 20
+  },
+  "reuse_provenance": {
+    "status": "PASS_FROZEN_A4_AND_OFFICIAL_VIDEO_GENERATED_RTL_BYTE_COMPARISON",
+    "reused_a4_csim_rtl_and_board_evidence": "results/a4_segmentation_2017_4/release_manifest.json and board_execution_2026-10-12; no new algorithm synthesis",
+    "exports": {
+      "a4": {
+        "background_sum.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/background_sum.v",
+          "bytes": 10278,
+          "sha256": "c28faadbb009f705f7b8a5da34168e514d6b6712e1f3d09b68ae16b819e2d972",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/background_sum.v"
+          ]
+        },
+        "Block_proc.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Block_proc.v",
+          "bytes": 24669,
+          "sha256": "70d8fdd3e3a5a1b9b823e785300e4b07b9debd4c3b62ec13f85b04e11526ef95",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Block_proc.v"
+          ]
+        },
+        "closed_carrier.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/closed_carrier.v",
+          "bytes": 14517,
+          "sha256": "68918b8d08226e34e43701de3123e768328f78433fc5f83012eb0da34d5257c4",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/closed_carrier.v"
+          ]
+        },
+        "column_filter.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/column_filter.v",
+          "bytes": 135696,
+          "sha256": "1a69be74c585a09375f6e9f378390b8179bf75dcd59f5fd0b505bf5d718f0fb7",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/column_filter.v"
+          ]
+        },
+        "count_neighbors.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/count_neighbors.v",
+          "bytes": 8662,
+          "sha256": "ced8806c86b88eb4c39b3fb46e5c660d7391f73bb5b4e9ce366a1fb8a3402450",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/count_neighbors.v"
+          ]
+        },
+        "dilate_zero.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/dilate_zero.v",
+          "bytes": 43351,
+          "sha256": "d582140ec4681ff092162188f23ee491d16867a779c85ebcc144ae4d5b5b8f37",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/dilate_zero.v"
+          ]
+        },
+        "enhance_aligned.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned.v",
+          "bytes": 20873,
+          "sha256": "fb53540a3a86f12980484d8bc3f1726d190b62a244514061b8f6647eee1a5cd3",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/enhance_aligned.v"
+          ]
+        },
+        "enhance_aligned_lut.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned_lut.v",
+          "bytes": 1250,
+          "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/enhance_aligned_lut.v"
+          ]
+        },
+        "enhance_aligned_lut_rom.dat": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned_lut_rom.dat",
+          "bytes": 1026,
+          "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ip/system_segmentation_filter_0/hdl/verilog/enhance_aligned_lut_rom.dat"
+          ]
+        },
+        "erode_zero.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/erode_zero.v",
+          "bytes": 44364,
+          "sha256": "4112ca49a842b540573f55583cafc7f8db9672dc81b9cdf779ad94dff7a6bb7d",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/erode_zero.v"
+          ]
+        },
+        "fifo_w10_d11_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d11_A.v",
+          "bytes": 3110,
+          "sha256": "77b3dc66f8d971e5fd0f2f9d6ac2c0905f9ff67c8cb90f9a98c8b8de541f7d42",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d11_A.v"
+          ]
+        },
+        "fifo_w10_d1_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d1_A.v",
+          "bytes": 3100,
+          "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d1_A.v"
+          ]
+        },
+        "fifo_w10_d2_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d2_A.v",
+          "bytes": 3104,
+          "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d2_A.v"
+          ]
+        },
+        "fifo_w10_d4_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d4_A.v",
+          "bytes": 3104,
+          "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d4_A.v"
+          ]
+        },
+        "fifo_w10_d6_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d6_A.v",
+          "bytes": 3104,
+          "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d6_A.v"
+          ]
+        },
+        "fifo_w10_d8_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d8_A.v",
+          "bytes": 3104,
+          "sha256": "4b14a30819e55aa0734169603f8dc80b0b09c6c1e367fe008a7ef3bfccdb91ba",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d8_A.v"
+          ]
+        },
+        "fifo_w10_d9_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d9_A.v",
+          "bytes": 3106,
+          "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d9_A.v"
+          ]
+        },
+        "fifo_w14_d1_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w14_d1_A.v",
+          "bytes": 3100,
+          "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w14_d1_A.v"
+          ]
+        },
+        "fifo_w16_d32_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w16_d32_A.v",
+          "bytes": 3110,
+          "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w16_d32_A.v"
+          ]
+        },
+        "fifo_w19_d1_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d1_A.v",
+          "bytes": 3100,
+          "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d1_A.v"
+          ]
+        },
+        "fifo_w19_d2_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d2_A.v",
+          "bytes": 3104,
+          "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d2_A.v"
+          ]
+        },
+        "fifo_w19_d3_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d3_A.v",
+          "bytes": 3104,
+          "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d3_A.v"
+          ]
+        },
+        "fifo_w32_d12_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d12_A.v",
+          "bytes": 3110,
+          "sha256": "8d7be4e34c2349c43f00483a2ed1d2ec25795732a689cc11eb7951f1b9aa432c",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d12_A.v"
+          ]
+        },
+        "fifo_w32_d2048_B.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d2048_B.v",
+          "bytes": 4145,
+          "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d2048_B.v"
+          ]
+        },
+        "fifo_w32_d8192_B.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d8192_B.v",
+          "bytes": 4145,
+          "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d8192_B.v"
+          ]
+        },
+        "fifo_w64_d2048_B.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w64_d2048_B.v",
+          "bytes": 4145,
+          "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w64_d2048_B.v"
+          ]
+        },
+        "fifo_w64_d32_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w64_d32_A.v",
+          "bytes": 4140,
+          "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w64_d32_A.v"
+          ]
+        },
+        "fifo_w8_d32_A.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w8_d32_A.v",
+          "bytes": 3104,
+          "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w8_d32_A.v"
+          ]
+        },
+        "fifo_w8_d8192_B.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w8_d8192_B.v",
+          "bytes": 4143,
+          "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w8_d8192_B.v"
+          ]
+        },
+        "Filter2D.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D.v",
+          "bytes": 55255,
+          "sha256": "91c1f9020b2a227d49c8bd4a75f7334d96ab45766c64958b59b773eaf65854c5",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D.v"
+          ]
+        },
+        "Filter2D_1.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D_1.v",
+          "bytes": 55768,
+          "sha256": "e60b6df8f85329f2c6f8b757999c6cacfb1b9842209cb193b5564a0fa0a0000a",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D_1.v"
+          ]
+        },
+        "Filter2D_k_buf_0_bkb.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D_k_buf_0_bkb.v",
+          "bytes": 1668,
+          "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D_k_buf_0_bkb.v"
+          ]
+        },
+        "filter_sum.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/filter_sum.v",
+          "bytes": 8570,
+          "sha256": "7b04f5df4463f4e7f0ef52baa326a840e4e5fe84734b42c5cdd51bc44b9b95c5",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/filter_sum.v"
+          ]
+        },
+        "final_join.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/final_join.v",
+          "bytes": 21645,
+          "sha256": "791e66bf1dc82ded2f73d86e501c34d0c0ee2579660dedb4cb88f9e10d5f80db",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/final_join.v"
+          ]
+        },
+        "initial_fov.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/initial_fov.v",
+          "bytes": 16903,
+          "sha256": "c8c68d17694eeb286fb3fbb000909f3646caea4143612ca76fdb4f4b9b9df8e2",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/initial_fov.v"
+          ]
+        },
+        "response_carrier.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/response_carrier.v",
+          "bytes": 24299,
+          "sha256": "a0bfd295ddf799887d74c2dedb806afebb95345be0cd75baa232983028dd5508",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/response_carrier.v"
+          ]
+        },
+        "retina_segmentatieOg.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatieOg.v",
+          "bytes": 1170,
+          "sha256": "d2cfe33fa26d8f6469f7c04d83f5ff798c469fa8f25dcd5d9403c398da41fae1",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatieOg.v"
+          ]
+        },
+        "retina_segmentation_hls.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentation_hls.v",
+          "bytes": 62669,
+          "sha256": "60412b007ed940f195d63cb00bd3effca3a21fff6419b4c83ab4a8108447305f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentation_hls.v"
+          ]
+        },
+        "retina_segmentatiudo.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatiudo.v",
+          "bytes": 2942,
+          "sha256": "a1bd5568dae55a3d2fa29a10d5a1e4779cf5badd260f41d37fae6f23c8e5910d",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatiudo.v"
+          ]
+        },
+        "retina_segmentatiyd2.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatiyd2.v",
+          "bytes": 783,
+          "sha256": "12f2937f1e27daa32c585c75d368243520904644b736b2595d85744c40697294",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatiyd2.v"
+          ]
+        },
+        "row_filter.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/row_filter.v",
+          "bytes": 61065,
+          "sha256": "e3c208ca828962b28c446bb81bb59ea0f05ff742ab22240bc3f8d7b6d788a0bc",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/row_filter.v"
+          ]
+        },
+        "row_filter_l_bordvdy.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/row_filter_l_bordvdy.v",
+          "bytes": 1674,
+          "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/row_filter_l_bordvdy.v"
+          ]
+        },
+        "SepFilter2D.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/SepFilter2D.v",
+          "bytes": 7857,
+          "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/SepFilter2D.v"
+          ]
+        },
+        "split_words.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/split_words.v",
+          "bytes": 17695,
+          "sha256": "be8b50078aabb0c381fa77a5256059150bff769a3524fcd51a1d6a20baac2cc3",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/split_words.v"
+          ]
+        },
+        "start_for_backgroHfu.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_backgroHfu.v",
+          "bytes": 3130,
+          "sha256": "3c5559bbd4c463e87567f8bfc4261af4483810459b638bdcb219cd269b7edc5f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_backgroHfu.v"
+          ]
+        },
+        "start_for_closed_QgW.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_closed_QgW.v",
+          "bytes": 3132,
+          "sha256": "d009712902ab3abe9828fe4592b95f3036dd29c9a461e0f5d57d1727ccfa0002",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_closed_QgW.v"
+          ]
+        },
+        "start_for_count_nLf8.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_count_nLf8.v",
+          "bytes": 3132,
+          "sha256": "94fed373ec61b8c56c8eaecdd43a62ec9809d84eeb79ba6026619f68d2fa5ec2",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_count_nLf8.v"
+          ]
+        },
+        "start_for_dilate_JfO.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_dilate_JfO.v",
+          "bytes": 3130,
+          "sha256": "f29ca6da9bdd4497426158ed8ae3a0f84b13a6e36073341a122439a7b4585864",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_dilate_JfO.v"
+          ]
+        },
+        "start_for_enhanceNgs.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_enhanceNgs.v",
+          "bytes": 3130,
+          "sha256": "f37f4d18e6622de673d009321a76c49ffa189f54e28fa99ea4fd7ae2eb7c60d3",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_enhanceNgs.v"
+          ]
+        },
+        "start_for_erode_zKfY.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_erode_zKfY.v",
+          "bytes": 3132,
+          "sha256": "2966825d49706117829e5b04b677459276d73d614e4aa5afb8946d168f0b091d",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_erode_zKfY.v"
+          ]
+        },
+        "start_for_filter_Gfk.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_filter_Gfk.v",
+          "bytes": 3130,
+          "sha256": "5336252dc8ef2c1576ee4ce2d15cfb90070887104ba8d0c1d973da219be09650",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_filter_Gfk.v"
+          ]
+        },
+        "start_for_final_jMgi.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_final_jMgi.v",
+          "bytes": 3132,
+          "sha256": "e8de0b2de2fe03542f0a0d6b766a2c2cd8cb3615ce65170f77dbd1d3d909d775",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_final_jMgi.v"
+          ]
+        },
+        "start_for_initialPgM.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_initialPgM.v",
+          "bytes": 3130,
+          "sha256": "9bd7a84ddff58e6db2cb3cbdef40ce95518e9a4d3f9df133516f5a4a7d52ef33",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_initialPgM.v"
+          ]
+        },
+        "start_for_responsOgC.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_responsOgC.v",
+          "bytes": 3130,
+          "sha256": "efb1dc33d57958e4a246627444332fa146845a789bb85bcdb6d33f22eb53b330",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_responsOgC.v"
+          ]
+        },
+        "start_for_row_filxdS.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_row_filxdS.v",
+          "bytes": 3126,
+          "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_row_filxdS.v"
+          ]
+        },
+        "start_for_threshoIfE.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_threshoIfE.v",
+          "bytes": 3130,
+          "sha256": "18f626b78dd2e0c8f339c823f38856c1219c8d37d93f6a449c4ca6d30ea4245d",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_threshoIfE.v"
+          ]
+        },
+        "threshold_binary.v": {
+          "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/threshold_binary.v",
+          "bytes": 16688,
+          "sha256": "9126c19602b886486c97b8a5addb947a779d9e54a2a6d691e4ef839a5584cf66",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/threshold_binary.v"
+          ]
+        }
+      },
+      "color_convert": {
+        "color_convert.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert.v",
+          "bytes": 62819,
+          "sha256": "05552688afd691be3caa92889856b9a72e5be40082f9ed76d84964bd225ab0d6",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert.v"
+          ]
+        },
+        "color_convert_AXILiteS_s_axi.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_AXILiteS_s_axi.v",
+          "bytes": 13406,
+          "sha256": "8d7b95b749dfb49d62c47476dc5bf48255d613d3651993a1a20bf24a769904d7",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_AXILiteS_s_axi.v"
+          ]
+        },
+        "color_convert_macbkb.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_macbkb.v",
+          "bytes": 1392,
+          "sha256": "9042bc931e24fb3486f3e77084d75eb54dce3085225f42f954650a9999dce744",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_macbkb.v"
+          ]
+        },
+        "color_convert_maccud.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_maccud.v",
+          "bytes": 1392,
+          "sha256": "745e2b1f3ba431579934de16df1cd3b9781b1745c10cfcb718e7a20bd2ee945b",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_maccud.v"
+          ]
+        }
+      },
+      "pixel_pack": {
+        "pixel_pack.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog/pixel_pack.v",
+          "bytes": 113577,
+          "sha256": "7b9fc53c8220a1b69ebc85b4200de2733a89e52d04f0297a848d43a19f9968ed",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/2ea5/hdl/verilog/pixel_pack.v"
+          ]
+        },
+        "pixel_pack_AXILiteS_s_axi.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog/pixel_pack_AXILiteS_s_axi.v",
+          "bytes": 6356,
+          "sha256": "d583cd2ced0e92b05ae04a00f721ec5a0ac0ca2a1c8dd91c2902beb6b391ef1a",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/2ea5/hdl/verilog/pixel_pack_AXILiteS_s_axi.v"
+          ]
+        }
+      },
+      "pixel_unpack": {
+        "pixel_unpack.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1/impl/ip/hdl/verilog/pixel_unpack.v",
+          "bytes": 79755,
+          "sha256": "ecf22f650a02cbaab238493d91085b045b0d51c3b70555003bcfaa6f646c74e0",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8caf/hdl/verilog/pixel_unpack.v"
+          ]
+        },
+        "pixel_unpack_AXILiteS_s_axi.v": {
+          "source": "build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1/impl/ip/hdl/verilog/pixel_unpack_AXILiteS_s_axi.v",
+          "bytes": 5645,
+          "sha256": "5a49d2dd06dbc57ca6e7749f4f01aa8328cabdbc08860fb3c3026e5922ad097d",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/8caf/hdl/verilog/pixel_unpack_AXILiteS_s_axi.v"
+          ]
+        }
+      },
+      "rgb2dvi_v1_2": {
+        "ClockGen.vhd": {
+          "bytes": 8885,
+          "sha256": "a3ac3a940d9455b342d5217b008502ebeef2da35a2b27a4074eb9ab3c58e6b1b",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/ClockGen.vhd"
+          ]
+        },
+        "DVI_Constants.vhd": {
+          "bytes": 3151,
+          "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/DVI_Constants.vhd"
+          ]
+        },
+        "OutputSERDES.vhd": {
+          "bytes": 8366,
+          "sha256": "6205d58405919d4f899a525256e2cafa725408f6644642755cd0de63e69b286e",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/OutputSERDES.vhd"
+          ]
+        },
+        "rgb2dvi.vhd": {
+          "bytes": 7781,
+          "sha256": "7268a67d557e36200847d494536733026dc7e2ca0980b6d2138fe9bac735f0cc",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/rgb2dvi.vhd"
+          ]
+        },
+        "rgb2dvi.xdc": {
+          "bytes": 292,
+          "sha256": "51b9ac7f1229a2250cddb1d490e45e536dd836eb5c42851f67359c7a5aef6130",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi.xdc"
+          ]
+        },
+        "rgb2dvi_clocks.xdc": {
+          "bytes": 114,
+          "sha256": "d39d2f58a6cf74c30eef3c4b7d37c436359ea3fcfaff3ddcc0a1a69388b73ac8",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc"
+          ]
+        },
+        "rgb2dvi_ooc.xdc": {
+          "bytes": 136,
+          "sha256": "77f9820235b2c3ce1e99d369db4932a76705633eeb5f950908855183931dc1a2",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc"
+          ]
+        },
+        "SyncAsync.vhd": {
+          "bytes": 3727,
+          "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsync.vhd"
+          ]
+        },
+        "SyncAsyncReset.vhd": {
+          "bytes": 3734,
+          "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsyncReset.vhd"
+          ]
+        },
+        "TMDS_Encoder.vhd": {
+          "bytes": 7863,
+          "sha256": "b047a257c1172412d1b354a98e3cc77d013d0f3c1af6ff646233abf8b669c196",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/TMDS_Encoder.vhd"
+          ]
+        }
+      },
+      "dvi2rgb_v1_7": {
+        "ChannelBond.vhd": {
+          "bytes": 6809,
+          "sha256": "9f8359aeb6c1e60cc3cbbc9cf3ddc69895576ef86c032e85e77d0d4fdcf80f3f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/ChannelBond.vhd"
+          ]
+        },
+        "dvi2rgb.vhd": {
+          "bytes": 11324,
+          "sha256": "0116904c3264b246bb15008781e31f3f2ad11fec0f8d8dcc6e2474d4c101177c",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/dvi2rgb.vhd"
+          ]
+        },
+        "dvi2rgb.xdc": {
+          "bytes": 940,
+          "sha256": "2dc9a20273f63cd0cecaa01a6ad2551cfc65460037d8a8ea9f8948f7eab7242a",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ip/system_dvi2rgb_0_0/src/dvi2rgb.xdc"
+          ]
+        },
+        "dvi2rgb_ooc.xdc": {
+          "bytes": 95,
+          "sha256": "0b74ab740aeab92ea0f247b5bbd931e34d4c8cffc5b118eec9f95a2d63b0e8a9",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ip/system_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc"
+          ]
+        },
+        "DVI_Constants.vhd": {
+          "bytes": 3151,
+          "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/DVI_Constants.vhd"
+          ]
+        },
+        "EEPROM_8b.vhd": {
+          "bytes": 8403,
+          "sha256": "db5cede08b24e5c4a3068d9de6e6cd5fc19d5aad2c3245b0da6f2265545ce676",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/EEPROM_8b.vhd"
+          ]
+        },
+        "GlitchFilter.vhd": {
+          "bytes": 3919,
+          "sha256": "914d9844fd56b3d7f4e67720fc9f0ca965dee6c26e8cf7a5822529a34256e8ab",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/GlitchFilter.vhd"
+          ]
+        },
+        "InputSERDES.vhd": {
+          "bytes": 10056,
+          "sha256": "9f28ba82371f70e4597e79648a433343d424de7c55ff48e766944f20b19adb00",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/InputSERDES.vhd"
+          ]
+        },
+        "PhaseAlign.vhd": {
+          "bytes": 14475,
+          "sha256": "6019634663033456653d5415205fd3df21b5527c1390ce5012c0702f38490632",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/PhaseAlign.vhd"
+          ]
+        },
+        "ResyncToBUFG.vhd": {
+          "bytes": 3719,
+          "sha256": "5ede27161ccf2723207c9c55e359cdcf1c9c998cb16fcaa909fdc8d58ff81689",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/ResyncToBUFG.vhd"
+          ]
+        },
+        "SyncAsync.vhd": {
+          "bytes": 3727,
+          "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncAsync.vhd"
+          ]
+        },
+        "SyncAsyncReset.vhd": {
+          "bytes": 3734,
+          "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncAsyncReset.vhd"
+          ]
+        },
+        "SyncBase.vhd": {
+          "bytes": 3854,
+          "sha256": "10dc70c19caa969071c2c0be52c3757a62d15d661f4b1b65b3f76818671e478c",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncBase.vhd"
+          ]
+        },
+        "TMDS_Clocking.vhd": {
+          "bytes": 11908,
+          "sha256": "07ac631d46b6a948a9cceb141fe370a9cd08d3066236d715f139d5c2519fd6ec",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TMDS_Clocking.vhd"
+          ]
+        },
+        "TMDS_Decoder.vhd": {
+          "bytes": 10863,
+          "sha256": "26fa9528105d63a9c85b5dc6f23e64da26ae0258d68c7da61ad63dc279864d47",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TMDS_Decoder.vhd"
+          ]
+        },
+        "TWI_SlaveCtl.vhd": {
+          "bytes": 11349,
+          "sha256": "b1c9a001d8a7bedb2366d9c1d6d0b061de59327b68d6867df887d0cb73f62f2f",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TWI_SlaveCtl.vhd"
+          ]
+        }
+      },
+      "axi_dynclk_v1_0": {
+        "axi_dynclk.vhd": {
+          "bytes": 10008,
+          "sha256": "2b8d2de5d2731fd0b83c06efb0566f83bd64016e699d067e39dc396de681ecaf",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk.vhd"
+          ]
+        },
+        "axi_dynclk_S00_AXI.vhd": {
+          "bytes": 18625,
+          "sha256": "871c0b0a56ad7caefecc844d23faf5af6ad904019c2cdbbb3ef5edc5048495e0",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk_S00_AXI.vhd"
+          ]
+        },
+        "mmcme2_drp.v": {
+          "bytes": 15355,
+          "sha256": "3833e1439bc56a53d682cd4a8c99b6a9d3e6378b9e27667df290f0f8896faeac",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/mmcme2_drp.v"
+          ]
+        }
+      },
+      "color_swap_1.0": {
+        "color_swap.v": {
+          "bytes": 1426,
+          "sha256": "62706648f324e069e0b9021c569272cbf1d3d69b3b2802ff7c12f4f5e0558224",
+          "actual_project_copies": [
+            "b_integration.srcs/sources_1/bd/system/ipshared/fac8/color_swap.v"
+          ]
+        }
+      }
+    },
+    "original_snapshots_unchanged": {
+      "v2.2.1": {
+        "commit": "3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3",
+        "files_checked": 1417,
+        "manifest": {
+          "bytes": 279317,
+          "sha256": "a7bb4b04392da3cf0810f657ccbe747b1ef37f4f067632c7a0fbc3ed61fedb20"
+        }
+      },
+      "v3.0.1": {
+        "commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+        "files_checked": 958,
+        "manifest": {
+          "bytes": 186251,
+          "sha256": "44bbd24ff78b5897ada72b551c9a7520101b771ed221790c956dc5614e526e22"
+        }
+      }
+    },
+    "a4_manifest": {
+      "bytes": 30522,
+      "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+    }
+  },
+  "control_addresses": {
+    "axi_dma_0": "0x40400000",
+    "point_control": "0x43c80000",
+    "video/axi_vdma": "0x43000000",
+    "video/hdmi_out/pixel_unpack": "0x43c70000",
+    "video/hdmi_out/color_convert": "0x43c60000",
+    "video/hdmi_out/frontend/axi_dynclk": "0x43c10000",
+    "video/hdmi_out/frontend/vtc_out": "0x43c20000"
+  },
+  "driver_metadata": {
+    "axi_dma_0": {
+      "type": "xilinx.com:ip:axi_dma:7.1",
+      "parameters": {
+        "C_S_AXI_LITE_ADDR_WIDTH": "10",
+        "C_S_AXI_LITE_DATA_WIDTH": "32",
+        "C_DLYTMR_RESOLUTION": "125",
+        "C_PRMRY_IS_ACLK_ASYNC": "0",
+        "C_ENABLE_MULTI_CHANNEL": "0",
+        "C_NUM_MM2S_CHANNELS": "1",
+        "C_NUM_S2MM_CHANNELS": "1",
+        "C_INCLUDE_SG": "0",
+        "C_SG_INCLUDE_STSCNTRL_STRM": "0",
+        "C_SG_USE_STSAPP_LENGTH": "0",
+        "C_SG_LENGTH_WIDTH": "23",
+        "C_M_AXI_SG_ADDR_WIDTH": "32",
+        "C_M_AXI_SG_DATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_STS_TDATA_WIDTH": "32",
+        "C_MICRO_DMA": "0",
+        "C_INCLUDE_MM2S": "1",
+        "C_INCLUDE_MM2S_SF": "1",
+        "C_MM2S_BURST_SIZE": "16",
+        "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+        "C_M_AXI_MM2S_DATA_WIDTH": "64",
+        "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+        "C_INCLUDE_MM2S_DRE": "0",
+        "C_INCLUDE_S2MM": "1",
+        "C_INCLUDE_S2MM_SF": "1",
+        "C_S2MM_BURST_SIZE": "16",
+        "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+        "C_M_AXI_S2MM_DATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+        "C_INCLUDE_S2MM_DRE": "0",
+        "C_FAMILY": "zynq",
+        "Component_Name": "system_axi_dma_0_2",
+        "c_include_sg": "0",
+        "c_enable_multi_channel": "0",
+        "c_num_mm2s_channels": "1",
+        "c_num_s2mm_channels": "1",
+        "c_sg_length_width": "23",
+        "c_dlytmr_resolution": "125",
+        "c_prmry_is_aclk_async": "0",
+        "c_sg_include_stscntrl_strm": "0",
+        "c_micro_dma": "0",
+        "c_include_mm2s": "1",
+        "c_m_axi_mm2s_data_width": "64",
+        "c_m_axis_mm2s_tdata_width": "32",
+        "c_include_mm2s_dre": "0",
+        "c_include_mm2s_sf": "1",
+        "c_mm2s_burst_size": "16",
+        "c_include_s2mm": "1",
+        "c_sg_use_stsapp_length": "0",
+        "c_m_axi_s2mm_data_width": "32",
+        "c_s_axis_s2mm_tdata_width": "32",
+        "c_include_s2mm_dre": "0",
+        "c_include_s2mm_sf": "1",
+        "c_s2mm_burst_size": "16",
+        "c_addr_width": "32",
+        "c_single_interface": "0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x40400000",
+        "C_HIGHADDR": "0x4040FFFF"
+      }
+    },
+    "point_control": {
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "32",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "1",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "0",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "1",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "system_point_control_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C80000",
+        "C_HIGHADDR": "0x43C8FFFF"
+      }
+    },
+    "video/axi_vdma": {
+      "type": "xilinx.com:ip:axi_vdma:6.3",
+      "parameters": {
+        "C_S_AXI_LITE_ADDR_WIDTH": "9",
+        "C_S_AXI_LITE_DATA_WIDTH": "32",
+        "C_DLYTMR_RESOLUTION": "125",
+        "C_PRMRY_IS_ACLK_ASYNC": "0",
+        "C_ENABLE_VIDPRMTR_READS": "1",
+        "C_DYNAMIC_RESOLUTION": "1",
+        "C_NUM_FSTORES": "4",
+        "C_USE_FSYNC": "1",
+        "C_USE_MM2S_FSYNC": "0",
+        "C_USE_S2MM_FSYNC": "2",
+        "C_FLUSH_ON_FSYNC": "1",
+        "C_INCLUDE_INTERNAL_GENLOCK": "1",
+        "C_INCLUDE_SG": "0",
+        "C_M_AXI_SG_ADDR_WIDTH": "32",
+        "C_M_AXI_SG_DATA_WIDTH": "32",
+        "C_INCLUDE_MM2S": "1",
+        "C_MM2S_GENLOCK_MODE": "1",
+        "C_MM2S_GENLOCK_NUM_MASTERS": "1",
+        "C_MM2S_GENLOCK_REPEAT_EN": "0",
+        "C_MM2S_SOF_ENABLE": "1",
+        "C_INCLUDE_MM2S_DRE": "0",
+        "C_INCLUDE_MM2S_SF": "0",
+        "C_MM2S_LINEBUFFER_DEPTH": "512",
+        "C_MM2S_LINEBUFFER_THRESH": "4",
+        "C_MM2S_MAX_BURST_LENGTH": "32",
+        "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+        "C_M_AXI_MM2S_DATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_TUSER_BITS": "1",
+        "C_INCLUDE_S2MM": "1",
+        "C_S2MM_GENLOCK_MODE": "0",
+        "C_S2MM_GENLOCK_NUM_MASTERS": "1",
+        "C_S2MM_GENLOCK_REPEAT_EN": "1",
+        "C_S2MM_SOF_ENABLE": "1",
+        "C_INCLUDE_S2MM_DRE": "0",
+        "C_INCLUDE_S2MM_SF": "1",
+        "C_S2MM_LINEBUFFER_DEPTH": "4096",
+        "C_S2MM_LINEBUFFER_THRESH": "4",
+        "C_S2MM_MAX_BURST_LENGTH": "32",
+        "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+        "C_M_AXI_S2MM_DATA_WIDTH": "64",
+        "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_TUSER_BITS": "1",
+        "C_ENABLE_DEBUG_ALL": "0",
+        "C_ENABLE_DEBUG_INFO_0": "0",
+        "C_ENABLE_DEBUG_INFO_1": "0",
+        "C_ENABLE_DEBUG_INFO_2": "0",
+        "C_ENABLE_DEBUG_INFO_3": "0",
+        "C_ENABLE_DEBUG_INFO_4": "0",
+        "C_ENABLE_DEBUG_INFO_5": "0",
+        "C_ENABLE_DEBUG_INFO_6": "1",
+        "C_ENABLE_DEBUG_INFO_7": "1",
+        "C_ENABLE_DEBUG_INFO_8": "0",
+        "C_ENABLE_DEBUG_INFO_9": "0",
+        "C_ENABLE_DEBUG_INFO_10": "0",
+        "C_ENABLE_DEBUG_INFO_11": "0",
+        "C_ENABLE_DEBUG_INFO_12": "0",
+        "C_ENABLE_DEBUG_INFO_13": "0",
+        "C_ENABLE_DEBUG_INFO_14": "1",
+        "C_ENABLE_DEBUG_INFO_15": "1",
+        "C_INSTANCE": "axi_vdma",
+        "C_SELECT_XPM": "0",
+        "C_ENABLE_VERT_FLIP": "0",
+        "C_FAMILY": "zynq",
+        "Component_Name": "system_axi_vdma_0",
+        "c_m_axi_mm2s_data_width": "32",
+        "c_m_axis_mm2s_tdata_width": "32",
+        "c_m_axi_s2mm_data_width": "64",
+        "c_s_axis_s2mm_tdata_width": "32",
+        "c_include_s2mm_dre": "0",
+        "c_include_s2mm_sf": "1",
+        "c_include_mm2s_sf": "0",
+        "c_enable_vidprmtr_reads": "1",
+        "c_num_fstores": "4",
+        "c_use_fsync": "1",
+        "c_use_mm2s_fsync": "0",
+        "c_use_s2mm_fsync": "2",
+        "c_mm2s_sof_enable": "1",
+        "c_s2mm_sof_enable": "1",
+        "c_include_internal_genlock": "1",
+        "c_mm2s_genlock_mode": "1",
+        "c_mm2s_genlock_num_masters": "1",
+        "c_s2mm_genlock_mode": "0",
+        "c_s2mm_genlock_num_masters": "1",
+        "c_mm2s_linebuffer_depth": "512",
+        "c_mm2s_linebuffer_thresh": "4",
+        "c_s2mm_linebuffer_depth": "4096",
+        "c_s2mm_linebuffer_thresh": "4",
+        "c_include_mm2s": "1",
+        "c_mm2s_max_burst_length": "32",
+        "c_include_sg": "0",
+        "c_dlytmr_resolution": "125",
+        "c_prmry_is_aclk_async": "0",
+        "c_dynamic_resolution": "1",
+        "c_s2mm_max_burst_length": "32",
+        "c_include_s2mm": "1",
+        "c_enable_all": "0",
+        "c_enable_mm2s_rst_out": "0",
+        "c_enable_mm2s_buf_empty": "0",
+        "c_enable_mm2s_param_updt": "0",
+        "c_enable_mm2s_fsync_out": "0",
+        "c_enable_tstvec": "0",
+        "c_enable_mm2s_frmstr_reg": "0",
+        "c_enable_mm2s_delay_counter": "1",
+        "c_enable_mm2s_frm_counter": "1",
+        "c_enable_s2mm_rst_out": "0",
+        "c_enable_s2mm_buf_full": "0",
+        "c_enable_s2mm_param_updt": "0",
+        "c_enable_s2mm_fsync_out": "0",
+        "c_enable_s2mm_sts_reg": "0",
+        "c_enable_s2mm_frmstr_reg": "0",
+        "c_enable_s2mm_delay_counter": "1",
+        "c_enable_s2mm_frm_counter": "1",
+        "c_include_mm2s_dre": "0",
+        "c_flush_on_fsync": "1",
+        "c_s2mm_genlock_repeat_en": "1",
+        "c_mm2s_genlock_repeat_en": "0",
+        "c_addr_width": "32",
+        "c_single_interface": "0",
+        "c_enable_vert_flip": "0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43000000",
+        "C_HIGHADDR": "0x4300FFFF"
+      }
+    },
+    "video/hdmi_out/pixel_unpack": {
+      "type": "xilinx.com:hls:pixel_unpack:1.0",
+      "parameters": {
+        "C_S_AXI_AXILITES_ADDR_WIDTH": "5",
+        "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+        "Component_Name": "system_pixel_unpack_0",
+        "clk_period": "7",
+        "machine": "64",
+        "combinational": "0",
+        "latency": "undef",
+        "II": "x",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_S_AXI_AXILITES_BASEADDR": "0x43C70000",
+        "C_S_AXI_AXILITES_HIGHADDR": "0x43C7FFFF"
+      }
+    },
+    "video/hdmi_out/color_convert": {
+      "type": "xilinx.com:hls:color_convert:1.0",
+      "parameters": {
+        "C_S_AXI_AXILITES_ADDR_WIDTH": "7",
+        "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+        "Component_Name": "system_color_convert_0",
+        "clk_period": "7",
+        "machine": "64",
+        "combinational": "0",
+        "latency": "6",
+        "II": "1",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_S_AXI_AXILITES_BASEADDR": "0x43C60000",
+        "C_S_AXI_AXILITES_HIGHADDR": "0x43C6FFFF"
+      }
+    },
+    "video/hdmi_out/frontend/axi_dynclk": {
+      "type": "digilentinc.com:ip:axi_dynclk:1.0",
+      "parameters": {
+        "C_S00_AXI_DATA_WIDTH": "32",
+        "C_S00_AXI_ADDR_WIDTH": "5",
+        "ADD_BUFMR": "false",
+        "Component_Name": "system_axi_dynclk_0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C10000",
+        "C_HIGHADDR": "0x43C1FFFF"
+      }
+    },
+    "video/hdmi_out/frontend/vtc_out": {
+      "type": "xilinx.com:ip:v_tc:6.1",
+      "parameters": {
+        "C_HAS_AXI4_LITE": "1",
+        "C_HAS_INTC_IF": "0",
+        "C_GEN_INTERLACED": "0",
+        "C_GEN_HACTIVE_SIZE": "1280",
+        "C_GEN_VACTIVE_SIZE": "720",
+        "C_GEN_CPARITY": "0",
+        "C_GEN_FIELDID_POLARITY": "1",
+        "C_GEN_VBLANK_POLARITY": "1",
+        "C_GEN_HBLANK_POLARITY": "1",
+        "C_GEN_VSYNC_POLARITY": "1",
+        "C_GEN_HSYNC_POLARITY": "1",
+        "C_GEN_AVIDEO_POLARITY": "1",
+        "C_GEN_ACHROMA_POLARITY": "1",
+        "C_GEN_VIDEO_FORMAT": "2",
+        "C_GEN_HFRAME_SIZE": "1650",
+        "C_GEN_F0_VFRAME_SIZE": "750",
+        "C_GEN_F1_VFRAME_SIZE": "750",
+        "C_GEN_HSYNC_START": "1390",
+        "C_GEN_HSYNC_END": "1430",
+        "C_GEN_F0_VBLANK_HSTART": "1280",
+        "C_GEN_F0_VBLANK_HEND": "1280",
+        "C_GEN_F0_VSYNC_VSTART": "724",
+        "C_GEN_F0_VSYNC_VEND": "729",
+        "C_GEN_F0_VSYNC_HSTART": "1280",
+        "C_GEN_F0_VSYNC_HEND": "1280",
+        "C_GEN_F1_VBLANK_HSTART": "1280",
+        "C_GEN_F1_VBLANK_HEND": "1280",
+        "C_GEN_F1_VSYNC_VSTART": "724",
+        "C_GEN_F1_VSYNC_VEND": "729",
+        "C_GEN_F1_VSYNC_HSTART": "1280",
+        "C_GEN_F1_VSYNC_HEND": "1280",
+        "C_FSYNC_HSTART0": "0",
+        "C_FSYNC_VSTART0": "0",
+        "C_FSYNC_HSTART1": "0",
+        "C_FSYNC_VSTART1": "0",
+        "C_FSYNC_HSTART2": "0",
+        "C_FSYNC_VSTART2": "0",
+        "C_FSYNC_HSTART3": "0",
+        "C_FSYNC_VSTART3": "0",
+        "C_FSYNC_HSTART4": "0",
+        "C_FSYNC_VSTART4": "0",
+        "C_FSYNC_HSTART5": "0",
+        "C_FSYNC_VSTART5": "0",
+        "C_FSYNC_HSTART6": "0",
+        "C_FSYNC_VSTART6": "0",
+        "C_FSYNC_HSTART7": "0",
+        "C_FSYNC_VSTART7": "0",
+        "C_FSYNC_HSTART8": "0",
+        "C_FSYNC_VSTART8": "0",
+        "C_FSYNC_HSTART9": "0",
+        "C_FSYNC_VSTART9": "0",
+        "C_FSYNC_HSTART10": "0",
+        "C_FSYNC_VSTART10": "0",
+        "C_FSYNC_HSTART11": "0",
+        "C_FSYNC_VSTART11": "0",
+        "C_FSYNC_HSTART12": "0",
+        "C_FSYNC_VSTART12": "0",
+        "C_FSYNC_HSTART13": "0",
+        "C_FSYNC_VSTART13": "0",
+        "C_FSYNC_HSTART14": "0",
+        "C_FSYNC_VSTART14": "0",
+        "C_FSYNC_HSTART15": "0",
+        "C_FSYNC_VSTART15": "0",
+        "C_MAX_PIXELS": "4096",
+        "C_MAX_LINES": "4096",
+        "C_NUM_FSYNCS": "1",
+        "C_INTERLACE_EN": "0",
+        "C_GEN_AUTO_SWITCH": "0",
+        "C_DETECT_EN": "0",
+        "C_SYNC_EN": "0",
+        "C_GENERATE_EN": "1",
+        "C_DET_HSYNC_EN": "1",
+        "C_DET_VSYNC_EN": "1",
+        "C_DET_HBLANK_EN": "1",
+        "C_DET_VBLANK_EN": "1",
+        "C_DET_AVIDEO_EN": "1",
+        "C_DET_ACHROMA_EN": "0",
+        "C_GEN_HSYNC_EN": "1",
+        "C_GEN_VSYNC_EN": "1",
+        "C_GEN_HBLANK_EN": "1",
+        "C_GEN_VBLANK_EN": "1",
+        "C_GEN_AVIDEO_EN": "1",
+        "C_GEN_ACHROMA_EN": "0",
+        "C_GEN_FIELDID_EN": "0",
+        "C_DET_FIELDID_EN": "0",
+        "Component_Name": "system_vtc_out_0",
+        "C_FAMILY": "virtex7",
+        "HAS_AXI4_LITE": "true",
+        "HAS_INTC_IF": "false",
+        "INTERLACE_EN": "false",
+        "SYNC_EN": "false",
+        "max_clocks_per_line": "4096",
+        "max_lines_per_frame": "4096",
+        "VIDEO_MODE": "720p",
+        "FSYNC_HSTART0": "0",
+        "FSYNC_VSTART0": "0",
+        "FSYNC_HSTART1": "0",
+        "FSYNC_VSTART1": "0",
+        "FSYNC_HSTART2": "0",
+        "FSYNC_VSTART2": "0",
+        "FSYNC_HSTART3": "0",
+        "FSYNC_VSTART3": "0",
+        "FSYNC_HSTART4": "0",
+        "FSYNC_VSTART4": "0",
+        "FSYNC_HSTART5": "0",
+        "FSYNC_VSTART5": "0",
+        "FSYNC_HSTART6": "0",
+        "FSYNC_VSTART6": "0",
+        "FSYNC_HSTART7": "0",
+        "FSYNC_VSTART7": "0",
+        "FSYNC_HSTART8": "0",
+        "FSYNC_VSTART8": "0",
+        "FSYNC_HSTART9": "0",
+        "FSYNC_VSTART9": "0",
+        "FSYNC_HSTART10": "0",
+        "FSYNC_VSTART10": "0",
+        "FSYNC_HSTART11": "0",
+        "FSYNC_VSTART11": "0",
+        "FSYNC_HSTART12": "0",
+        "FSYNC_VSTART12": "0",
+        "FSYNC_HSTART13": "0",
+        "FSYNC_VSTART13": "0",
+        "FSYNC_HSTART14": "0",
+        "FSYNC_VSTART14": "0",
+        "FSYNC_HSTART15": "0",
+        "FSYNC_VSTART15": "0",
+        "GEN_F0_VSYNC_VSTART": "724",
+        "GEN_F1_VSYNC_VSTART": "724",
+        "GEN_HACTIVE_SIZE": "1280",
+        "GEN_HSYNC_END": "1430",
+        "GEN_HFRAME_SIZE": "1650",
+        "GEN_F0_VSYNC_HSTART": "1280",
+        "GEN_F1_VSYNC_HSTART": "1280",
+        "GEN_F0_VSYNC_HEND": "1280",
+        "GEN_F1_VSYNC_HEND": "1280",
+        "GEN_F0_VFRAME_SIZE": "750",
+        "GEN_F1_VFRAME_SIZE": "750",
+        "GEN_F0_VSYNC_VEND": "729",
+        "GEN_F1_VSYNC_VEND": "729",
+        "GEN_F0_VBLANK_HEND": "1280",
+        "GEN_F1_VBLANK_HEND": "1280",
+        "GEN_HSYNC_START": "1390",
+        "GEN_VACTIVE_SIZE": "720",
+        "GEN_F0_VBLANK_HSTART": "1280",
+        "GEN_F1_VBLANK_HSTART": "1280",
+        "GEN_ACHROMA_POLARITY": "High",
+        "GEN_HSYNC_POLARITY": "High",
+        "GEN_VSYNC_POLARITY": "High",
+        "GEN_HBLANK_POLARITY": "High",
+        "GEN_AVIDEO_POLARITY": "High",
+        "GEN_VBLANK_POLARITY": "High",
+        "GEN_FIELDID_POLARITY": "High",
+        "GEN_INTERLACED": "false",
+        "GEN_CPARITY": "0",
+        "GEN_VIDEO_FORMAT": "RGB",
+        "horizontal_sync_generation": "true",
+        "enable_detection": "false",
+        "vertical_blank_generation": "true",
+        "GEN_FIELDID_EN": "false",
+        "horizontal_blank_detection": "true",
+        "active_chroma_detection": "false",
+        "horizontal_sync_detection": "true",
+        "enable_generation": "true",
+        "auto_generation_mode": "false",
+        "vertical_sync_generation": "true",
+        "active_chroma_generation": "false",
+        "DET_FIELDID_EN": "false",
+        "vertical_blank_detection": "true",
+        "active_video_generation": "true",
+        "vertical_sync_detection": "true",
+        "horizontal_blank_generation": "true",
+        "active_video_detection": "true",
+        "frame_syncs": "1",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x43C20000",
+        "C_HIGHADDR": "0x43C2FFFF"
+      }
+    }
+  },
+  "test_contract": {
+    "validation_frames": 61,
+    "benchmark_frames": 309,
+    "total_frames": 370,
+    "words": 70647808,
+    "benchmark_groups": [
+      [
+        256,
+        false
+      ],
+      [
+        512,
+        false
+      ],
+      [
+        512,
+        true
+      ]
+    ],
+    "timed_frames_per_group": 100,
+    "warmup_per_group": 3,
+    "display_submissions": 105
+  },
+  "timing_meaning": "Monotonic perf_counter_ns completed transactions and whole checked loops; not PL-only cycles or measured display Hz",
+  "source_files": {
+    "scripts/package_b.py": {
+      "bytes": 17997,
+      "sha256": "c92f53a0f30351f95ed61d84ad76923224563831cc9f62086b3bc1057f284f3c"
+    },
+    "scripts/check_b_hardware.py": {
+      "bytes": 11820,
+      "sha256": "6a14ed744eb9175d928172593cfbd23de39bdca2c9456e5cc443e0287c0935c5"
+    },
+    "scripts/b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "scripts/build_b_notebook.py": {
+      "bytes": 4385,
+      "sha256": "4a31cc52213e8ca316ff427121c785ffaac8ef8fe6cc7d04eb5e8223911f71ff"
+    },
+    "tests/test_b_integration.py": {
+      "bytes": 16373,
+      "sha256": "28784c0e92f880ff4ecd1890ae858848b6c42e521b70d7e27441bcec035198c1"
+    },
+    "tests/b_reset_tb.sv": {
+      "bytes": 2023,
+      "sha256": "fc230299285d6618666daa70c5498808a006e239b883f32d9cc25bca1ac0bacb"
+    },
+    "vivado/scripts/build_b_integration.tcl": {
+      "bytes": 13022,
+      "sha256": "50a8eaa9bc2ca10963b09dfc03b70afd1be563ec9431a283109876971282f080"
+    },
+    "vivado/scripts/simulate_b_reset.tcl": {
+      "bytes": 1413,
+      "sha256": "bda1fa7214ba8a418c810f4d536ed2717be892d4f53fa5b8d8d20e7698dbec18"
+    },
+    "vivado/constraints/b_integration.xdc": {
+      "bytes": 5469,
+      "sha256": "a8df869b30cf3144c77a616183b62c93aa64aa4f928fe1bd3cdbc725c880e99c"
+    },
+    "notebooks/b_integration_check.ipynb": {
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    },
+    "docs/b_integration_validation_steps.md": {
+      "bytes": 2765,
+      "sha256": "fe4d3a8ba94d9f2f5c231a5362670be6b189f05495ed1983972a7eabbeeb8152"
+    },
+    "docs/b_integration_reuse_audit.md": {
+      "bytes": 4556,
+      "sha256": "133cc7613fba4410e4c945757cdad9e1528d01592635426b7bcbfbf9f6d45821"
+    },
+    "scripts/package_b_import_fix.py": {
+      "bytes": 6595,
+      "sha256": "18617cbdba1731305661f85d5776bc826a509b9d2153140f14de2a4de8c7b7ac"
+    },
+    "scripts/check_b_driver_imports.py": {
+      "bytes": 4688,
+      "sha256": "2bc677f4a6dd096bdfd0101154e4838d1c01f1def6d0d9b16e017edec10b9467"
+    },
+    "tests/test_b_video_imports.py": {
+      "bytes": 5497,
+      "sha256": "fb7035d51ff05945ac6a42de447cd698fb8fc9d36f0aa2511acd746ffd1900d8"
+    },
+    "docs/b_video_import_recovery_steps.md": {
+      "bytes": 2616,
+      "sha256": "0a7f5ac892c3a5cf294dd197d319f2432fb7639a7bb8a88e0b9c61b938a5097e"
+    }
+  },
+  "notebook_validation": {
+    "algorithm": "sha256-code-cells-v1",
+    "sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+    "code_cells": 9
+  },
+  "failed_attempts": "failure_record.json preserves incomplete builds, rejected 04 constraints and initial coarse host timer test; only build 05 is supplied",
+  "artifacts": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "b_integration.bit": {
+      "bytes": 4045674,
+      "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+    },
+    "b_integration.hwh": {
+      "bytes": 1131176,
+      "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+    },
+    "b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "b_integration_check.ipynb": {
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    },
+    "stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "使用说明.txt": {
+      "bytes": 5437,
+      "sha256": "ca555d63231d76b0f6e67705b24d31c626677692d5cf7ac3a5253a6740120c2f"
+    }
+  },
+  "hardware_provenance": {
+    "baseline_manifest": "results/b_integration_2017_4/release_manifest.json",
+    "baseline_manifest_sha256": "67c770caddc1b12a7a518cc60895fa3a6e273f0863d4b0187d1dcf743dbf1201",
+    "hardware_rebuilt": false,
+    "policy": "Identical paired bit/HWH, inputs, unchanged A4 helpers, notebook and guide; original build/reset/timing evidence retained"
+  },
+  "software_checks": {
+    "host_test_count": 23,
+    "log": {
+      "bytes": 3610,
+      "sha256": "10e8437bec02fdd47416379dc2cf42b96a6af925bc9c4db0dc18f8ca267c4be0"
+    },
+    "driver_import_check": {
+      "status": "PASS_PINNED_PYNQ_3_0_1_VIDEO_IMPORT_NAMESPACES",
+      "board_status": "NOT_RUN",
+      "runner": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "resolved_imports": [
+        {
+          "module": "pynq.lib.video.common",
+          "symbol": "VideoMode",
+          "source": "references/PYNQ/v3.0.1/pynq/lib/video/common.py"
+        },
+        {
+          "module": "pynq.lib.video.common",
+          "symbol": "PIXEL_BGR",
+          "source": "references/PYNQ/v3.0.1/pynq/lib/video/common.py"
+        },
+        {
+          "module": "pynq.lib.video.dma",
+          "symbol": "AxiVDMA",
+          "source": "references/PYNQ/v3.0.1/pynq/lib/video/dma.py"
+        },
+        {
+          "module": "pynq.lib.video.hierarchies",
+          "symbol": "VideoOut",
+          "source": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py"
+        },
+        {
+          "module": "pynq.lib.video.hierarchies",
+          "symbol": "HDMIWrapper",
+          "source": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py"
+        }
+      ],
+      "official_sources": {
+        "references/PYNQ/v3.0.1/pynq/lib/video/common.py": {
+          "bytes": 3312,
+          "sha256": "2c4d6c2cb3ede0aca97aa2980dec7d5147ce6f4d446635ddd7dd1e894282cbf7"
+        },
+        "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+          "bytes": 20367,
+          "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+        },
+        "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+          "bytes": 12224,
+          "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+        }
+      },
+      "pynq_commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+      "limit": "Source-level Python export validation; installed board driver binding and display still require board execution"
+    },
+    "original_failure_reproduced": true,
+    "limit": "Official initializer export behavior and precheck tested on host; real installed video binding/display remains pending"
+  }
+}

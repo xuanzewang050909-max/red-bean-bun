@@ -1,0 +1,143 @@
+{
+  "status": "PASS_COMMITTED_VERIFIER_SOURCES_ORIGINAL_DOWNLOADS_AND_IMMUTABLE_RELEASE",
+  "source_commit": "3d9503c0667b746f5b89ba53647d73463b232c1c",
+  "source_pairs": [
+    {
+      "path": "scripts/archive_b_layout_results.py",
+      "workspace": {
+        "bytes": 28716,
+        "sha256": "58c3c298da8eb8495495df1ad761cc4f1553cad00841b09e4b6e6b0524f8d9fd"
+      },
+      "git_blob": {
+        "bytes": 28716,
+        "sha256": "58c3c298da8eb8495495df1ad761cc4f1553cad00841b09e4b6e6b0524f8d9fd"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "tests/test_b_layout_archive.py",
+      "workspace": {
+        "bytes": 17965,
+        "sha256": "3660994f008b5081ce582c9a3fcf21cbe2f0d3bbf87abb0da3724590bf2cbc3c"
+      },
+      "git_blob": {
+        "bytes": 17965,
+        "sha256": "3660994f008b5081ce582c9a3fcf21cbe2f0d3bbf87abb0da3724590bf2cbc3c"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/archive_b_profile_results.py",
+      "workspace": {
+        "bytes": 22875,
+        "sha256": "337a2c139f0dbf7e6fab64a301cb1b27ee31f76b5b9a350d1e22ceda1aa7ebc9"
+      },
+      "git_blob": {
+        "bytes": 22875,
+        "sha256": "337a2c139f0dbf7e6fab64a301cb1b27ee31f76b5b9a350d1e22ceda1aa7ebc9"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/archive_b_board_results.py",
+      "workspace": {
+        "bytes": 19618,
+        "sha256": "b7141ea9ee4a2fb51d67f3b357106d5cd38527889f3b1da6f9178b556791ce5b"
+      },
+      "git_blob": {
+        "bytes": 19618,
+        "sha256": "b7141ea9ee4a2fb51d67f3b357106d5cd38527889f3b1da6f9178b556791ce5b"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/archive_a4_board_results.py",
+      "workspace": {
+        "bytes": 19806,
+        "sha256": "d64a3d77c1f2b3b61fe6377e05d5d20745ef6b363f174a3ea8a11cb92d4d43f8"
+      },
+      "git_blob": {
+        "bytes": 19806,
+        "sha256": "d64a3d77c1f2b3b61fe6377e05d5d20745ef6b363f174a3ea8a11cb92d4d43f8"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/a1_point_board_test.py",
+      "workspace": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "git_blob": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/a0_dma_board_test.py",
+      "workspace": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "git_blob": {
+        "bytes": 10693,
+        "sha256": "26d3dda2d0d4f42cccf72927fa339f705b27ca7d35cb2a4e79f2b0fd053cc3d7"
+      },
+      "pairing": "PASS_ONLY_HISTORICAL_CRLF_LF_DIFFERENCE"
+    },
+    {
+      "path": "software/reference.py",
+      "workspace": {
+        "bytes": 3845,
+        "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+      },
+      "git_blob": {
+        "bytes": 3845,
+        "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_layout_board_test.py",
+      "workspace": {
+        "bytes": 18759,
+        "sha256": "a45aa2b2aa36d24c065a730b7831fd0a5b22d01f941a35a3b79f6c8727185c7b"
+      },
+      "git_blob": {
+        "bytes": 18759,
+        "sha256": "a45aa2b2aa36d24c065a730b7831fd0a5b22d01f941a35a3b79f6c8727185c7b"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_profile_board_test.py",
+      "workspace": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "git_blob": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    },
+    {
+      "path": "scripts/b_integration_board_test.py",
+      "workspace": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "git_blob": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "pairing": "PASS_EXACT_BYTES"
+    }
+  ],
+  "tests": 26,
+  "skipped": 0,
+  "raw_files_verified": 11,
+  "raw_notebook_bundle_photos_match_supplied_originals": true,
+  "published_release_and_all_artifact_bytes_unchanged": true
+}

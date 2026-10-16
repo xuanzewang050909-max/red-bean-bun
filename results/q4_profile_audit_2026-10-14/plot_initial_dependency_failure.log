@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\plot_q4_profile_audit.py", line 6, in <module>
+    import matplotlib
+ModuleNotFoundError: No module named 'matplotlib'

@@ -1,0 +1,29 @@
+{
+  "source_url": "https://download.amd.com/opendownload/xlnx/pynq_z2_v3.0.1.zip",
+  "archive": "C:\\Users\\Gabriel\\Downloads\\pynq_z2_v3.0.1.zip",
+  "archive_bytes": 1811523457,
+  "archive_sha256": "ea6372e2d95e241dc7f891d30abc8af2eaf6650c0c16788c27dafba97f41cf8b",
+  "image_path": "D:\\PLD\\retina_fpga\\build\\sd_images\\pynq_z2_v3.0.1.img",
+  "image_bytes": 7858807808,
+  "image_sha256": "f17405d25298a2c5ea23ccf95f868b42b18f819ff9d7fe5d079ac9ef53415861",
+  "zip_crc32": "5aa11e6c",
+  "zip_crc_check": "PASS",
+  "mbr_signature": "55aa",
+  "partitions": [
+    {
+      "index": 1,
+      "type": "0x0c",
+      "start_sector": 8,
+      "sectors": 266240,
+      "size_bytes": 136314880
+    },
+    {
+      "index": 2,
+      "type": "0x83",
+      "start_sector": 268288,
+      "sectors": 15080946,
+      "size_bytes": 7721444352
+    }
+  ],
+  "scope": "Extracted and verified on PC only; no SD card writes; no published vendor SHA256 used"
+}

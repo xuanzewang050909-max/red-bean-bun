@@ -1,0 +1,452 @@
+--- pynq_app\hardware.py
++++ pynq_w3\hardware.py
+@@ -14,6 +14,7 @@
+ import numpy as np
+ 
+ from .protocol import file_info, require, sha
++from .quality_observer import QualityObserver, control_word, check_observer_metadata
+ 
+ 
+ def buffer_info(buffer):
+@@ -47,16 +48,19 @@
+         self.last_status = None
+         self.environment = None
+         self.last_attempt = None
++        self.sequence = 0
+ 
+     def prepare(self):
+         import pynq
+-        from pynq import Overlay, allocate
++        from pynq import Overlay, allocate, Clocks
+         from pynq.lib.dma import DMA
+         from pynq.lib.axigpio import AxiGPIO
+         require(pynq.__version__ == '3.0.1' and platform.machine() in ('armv7l', 'armv7'), 'Use measured PYNQ-Z2 3.0.1')
+         require(self.state == 'NOT_LOADED' and not self.retained, 'Prepare once with no retained buffers')
+-        self.overlay = Overlay(str(self.root / 'a4_segmentation.bit'), download=False)
++        self.overlay = Overlay(str(self.root / 'w2_quality.bit'), download=False)
+         check_metadata(self.overlay)
++        check_observer_metadata(self.overlay.ip_dict['point_observe'])
++        self.clocks = Clocks
+         self.allocate, self.dma_type, self.gpio_type = allocate, DMA, AxiGPIO
+         spec = importlib.util.spec_from_file_location('retina_released_a0_wait', self.root / 'a0_dma_board_test.py')
+         module = importlib.util.module_from_spec(spec)
+@@ -80,6 +84,14 @@
+             self.gpio.channel1.setdirection('out')
+             self.gpio.channel2.setdirection('in')
+             require(int(self.gpio.channel2.read()) == 0, 'Frame state not reset')
++            clock_mhz = float(self.clocks.fclk0_mhz)
++            require(abs(clock_mhz - 100.0) < 0.000001, 'Actual FCLK0 is not 100 MHz')
++            self.environment['runtime_fclk0_mhz_register_readback'] = clock_mhz
++            observe = self.overlay.point_observe
++            require(isinstance(observe, self.gpio_type), 'Official observer GPIO driver did not bind')
++            self.observer = QualityObserver(observe, verified_clock_hz=100000000)
++            require(self.observer.read_word(1) == 0 and self.observer.read_word(4) == 0 and self.observer.read_word(11) == 0, 'Observer not reset')
++            self.environment['drivers'] = {n: type(o).__module__ + '.' + type(o).__name__ for n, o in [('dma', self.dma), ('control', self.gpio), ('observer', observe)]}
+             self.state, self.last_status = 'IDLE', 0
+         except BaseException:
+             self.state = 'FAULT'
+@@ -89,7 +101,7 @@
+         require(threading.get_ident() == self.owner, 'Only the single hardware worker may use DMA')
+         require(self.state == 'IDLE' and not self.retained, 'Hardware is not idle or failure buffers remain')
+         side, mode = request['side'], request['mode_code']
+-        require(side in (256, 512) and mode in (0, 1, 2, 3) and request['threshold'] == 28,
++        require(side in (256, 512) and mode in (0, 1, 2, 3) and type(request['threshold']) is int and 1 <= request['threshold'] <= 255 and request['algorithm'] in ('A', 'C2'),
+                 'Unsupported PL configuration')
+         require(words.dtype == np.uint32 and words.shape == (side, side), 'Wrong input')
+         self.state = 'RUNNING'
+@@ -99,8 +111,9 @@
+             require(self.overlay.is_loaded(), 'Another application changed the loaded Overlay')
+             before = int(self.gpio.channel2.read())
+             require(before >> 28 == 0 and (before & 0x3fff) == ((before >> 14) & 0x3fff), 'Frame state/error mismatch before request')
++            require(self.observer.read_word(4) == self.sequence and self.observer.read_word(1) == (0 if self.sequence == 0 else 2), 'Prior observer state mismatch')
++            control = control_word(side=side, stage=mode, algorithm=request['algorithm'], threshold=request['threshold'], tag=(self.sequence + 1) & 0xffff)
+             marks['config_start_ns'] = time.perf_counter_ns()
+-            control = mode | (4 if side == 256 else 0)
+             self.gpio.channel1.write(control, 0xffffffff)
+             self.last_attempt['requested_control_word'] = control
+             marks['config_end_ns'] = time.perf_counter_ns()
+@@ -140,6 +153,9 @@
+             np.copyto(output, np.asarray(rx).reshape(side, side), casting='no')
+             output.setflags(write=False)
+             marks['snapshot_end_ns'] = time.perf_counter_ns()
++            observed = self.observer.completed(expected_control=control, previous_sequence=self.sequence, expected_words=side * side)
++            marks['observer_end_ns'] = time.perf_counter_ns()
++            require(observed['pl_core_frame_ns'] <= marks['dma_end_ns'] - marks['dma_start_ns'], 'Core exceeds enclosing DMA window')
+             if mode == 0:
+                 require(np.array_equal(output, words), 'Bypass output differs from actual input')
+             else:
+@@ -150,8 +166,9 @@
+                     require(np.all(mask[(words >> 24) == 0] == 0), 'Final PL mask outside FOV')
+             output_sha = sha(output.tobytes())
+             record = {'evidence_kind': self.evidence_kind, 'requested_control_word': control,
+-                      'hardware_latched_parameter_readback': None,
+-                      'config_evidence': 'Host control submission plus completed PL counters; threshold fixed by immutable firmware. No latched readback capability.',
++                      'hardware_latched_parameter_readback': observed,
++                      'applied_parameters': {'algorithm': 'C2' if observed['latched_control'] & 8 else 'A', 'threshold': (observed['latched_control'] >> 8) & 255, 'side': 256 if observed['latched_control'] & 4 else 512, 'mode_code': observed['latched_control'] & 3, 'task_tag': observed['task_tag']},
++                      'config_evidence': 'Atomic completed RQ21 control/tag/sequence and native frame counts match this task.',
+                       'frame_status_before': before, 'frame_status_after': after, 'frame_count': count,
+                       'frame_counter_wrapped': count == 0, 'dma_status': statuses,
+                       'send_bytes': send_bytes, 'recv_bytes': recv_bytes,
+@@ -161,13 +178,14 @@
+                                     'dma_transaction_ns': marks['dma_end_ns'] - marks['dma_start_ns'],
+                                     'cpu_snapshot_ns': marks['snapshot_end_ns'] - marks['snapshot_start_ns'],
+                                     'inference_ns': marks['snapshot_end_ns'] - marks['config_start_ns'],
+-                                    'pl_core_frame_ns': None, 'pl_core_cycles': None, 'pure_dma_transport_ns': None},
+-                      'numeric_validation': 'Structural/raw-channel/binary/FOV checks only; download raw NPY for independent full M0 comparison.',
++                                    'pl_core_frame_ns': observed['pl_core_frame_ns'], 'pl_core_cycles': observed['pl_core_cycles'], 'observer_readback_ns': marks['observer_end_ns'] - marks['snapshot_end_ns'], 'pure_dma_transport_ns': None},
++                      'numeric_validation': 'Structural/raw-channel/binary/FOV checks only; download raw NPY for independent full A/C2 integer comparison.',
+                       'native_cache_policy': 'Unmodified official transfer/wait/flush/invalidate; cacheable flag is not kernel mapping proof.'}
+             rx.freebuffer()
+             require(self.retained.pop() is rx, 'Receive ownership changed')
+             tx.freebuffer()
+             require(self.retained.pop() is tx, 'Send ownership changed')
++            self.sequence = observed['sequence']
+             self.state, self.last_status = 'IDLE', after
+             self.last_attempt['phase'] = 'COMPLETED_AND_RELEASED'
+             return output, record
+--- pynq_app\launch.py
++++ pynq_w3\launch.py
+@@ -20,8 +20,8 @@
+ def prepare(root, port=8090):
+     root = Path(root).resolve()
+     manifest = validate_package(root)
+-    for name in ('pynq_app', 'pynq_app.protocol', 'pynq_app.hardware', 'pynq_app.evaluation', 'pynq_app.service', 'pynq_app.launch'):
+-        relative = 'pynq_app/__init__.py' if name == 'pynq_app' else name.replace('.', '/') + '.py'
++    for name in ('pynq_w3', 'pynq_w3.protocol', 'pynq_w3.hardware', 'pynq_w3.evaluation', 'pynq_w3.service', 'pynq_w3.launch', 'pynq_w3.quality_observer'):
++        relative = 'pynq_w3/__init__.py' if name == 'pynq_w3' else name.replace('.', '/') + '.py'
+         require(Path(sys.modules[name].__file__).resolve() == root / relative and
+                 file_info(root / relative) == manifest['artifacts'][relative], 'Stale imported module: use this fresh package/kernel before FPGA loading')
+     require(platform.python_version_tuple()[:2] == ('3', '10'), 'Use the measured board Python 3.10 runtime')
+@@ -36,7 +36,7 @@
+         hardware.prepare()
+         context['runtime'] = {'numpy': np.__version__, 'Pillow': PIL.__version__, 'tornado': tornado.version,
+                               **hardware.environment}
+-        print('BROWSER_PRECHECK_PASS: original A4 hashes/runtime/metadata checked; FPGA unchanged', flush=True)
++        print('BROWSER_PRECHECK_PASS: paired W2 hashes/runtime/metadata checked; FPGA unchanged', flush=True)
+         print('Runtime:', context['runtime'], flush=True)
+         print('Port reserved:', port, flush=True)
+         return context
+@@ -60,7 +60,7 @@
+         server.add_sockets(context['sockets'])
+         addresses = subprocess.check_output(['hostname', '-I'], text=True).strip()
+         context['addresses'] = addresses.split()
+-        print('BROWSER_SERVICE_READY: A4 loaded once; no frame has been sent yet', flush=True)
++        print('BROWSER_SERVICE_READY: W2 A/C2 loaded once; no frame has been sent yet', flush=True)
+         for address in context['addresses']:
+             print('Open http://' + address + ':' + str(context['port']) + '/', flush=True)
+         print('Session:', manager.session_id, flush=True)
+--- pynq_app\protocol.py
++++ pynq_w3\protocol.py
+@@ -6,7 +6,7 @@
+ 
+ import numpy as np
+ 
+-REVISION = 'browser_a4_w1_r1_fixed28_real_dma'
++REVISION = 'browser_w3_c2_r1_real_parameters_observer'
+ MODES = {'bypass': 0, 'threshold_candidate': 1, 'closed_candidate': 2, 'final': 3}
+ 
+ 
+@@ -38,26 +38,25 @@
+ def validate_package(root):
+     root = Path(root).resolve()
+     manifest = json.loads((root / 'browser_manifest.json').read_bytes())
+-    require(manifest.get('revision') == REVISION and manifest.get('board_status') == 'NOT_RUN', 'Wrong browser release')
+-    expected = {'pynq_app/' + name + '.py' for name in ('__init__', 'protocol', 'hardware', 'evaluation', 'service', 'launch')}
++    require(manifest.get('revision') == REVISION and manifest.get('board_status') == 'NOT_RUN', 'Wrong W3 release')
++    expected = {'pynq_w3/' + name + '.py' for name in ('__init__', 'protocol', 'hardware', 'evaluation', 'service', 'launch', 'quality_observer')}
+     expected.update({'ui/index.html', 'ui/style.css', 'ui/app.js'})
+-    expected.update(manifest['baseline_original_files'])
++    expected.update({'w2_quality.bit', 'w2_quality.hwh', 'w2_manifest.json', 'a0_dma_board_test.py'})
+     for sides in manifest['images'].values():
+         for entry in sides.values():
+             expected.add(entry['input'])
+             expected.update(spec['path'] for spec in entry['evaluation_only'].values())
+-    require(set(manifest['artifacts']) == expected, 'Incomplete/unexpected package inventory')
++    require(set(manifest['artifacts']) == expected, 'Incomplete/unexpected W3 inventory')
+     for name, info in manifest['artifacts'].items():
+-        require(re.fullmatch(r'[A-Za-z0-9_./-]+|使用说明\.txt', name) is not None and
++        require(re.fullmatch(r'[A-Za-z0-9_./-]+', name) is not None and
+                 not name.startswith('/') and '..' not in Path(name).parts, 'Unsafe manifest path')
+         require(file_info(root / name) == info, 'Package mismatch: ' + name)
+-    baseline = json.loads((root / 'a4_manifest.json').read_bytes())
+-    require(file_info(root / 'a4_manifest.json') == manifest['baseline_manifest'], 'A4 release changed')
+-    require(baseline['revision'] == 'a4_segmentation_r1_vendor_morphology', 'Wrong A4 hardware')
+-    for name, info in baseline['artifacts'].items():
+-        require(file_info(root / name) == info, 'Original A4 bytes changed: ' + name)
+-    require(set(manifest['baseline_original_files']) == set(baseline['artifacts']) | {'a4_manifest.json'}, 'Original A4 inventory differs')
+-    require(all(file_info(root / name) == info for name, info in manifest['baseline_original_files'].items()), 'Original 12-file snapshot differs')
++    baseline = json.loads((root / 'w2_manifest.json').read_bytes())
++    require(file_info(root / 'w2_manifest.json') == manifest['baseline_manifest'], 'W2 release changed')
++    require(baseline['revision'] == 'w2_q2_c2_observer_r1' and baseline['hardware_clock_hz'] == 100000000, 'Wrong W2 hardware')
++    for name in ('w2_quality.bit', 'w2_quality.hwh', 'a0_dma_board_test.py'):
++        require(file_info(root / name) == baseline['artifacts'][name], 'Original W2 bytes changed: ' + name)
++    require(file_info(root / 'pynq_w3/quality_observer.py') == baseline['artifacts']['quality_observer.py'], 'Observer source changed')
+     return manifest
+ 
+ 
+@@ -72,18 +71,20 @@
+                 for name, sides in sorted(self.catalog.items())]
+ 
+     def request(self, body):
+-        if not isinstance(body, dict) or set(body) != {'image_id', 'side', 'threshold', 'mode', 'client_nonce'}:
+-            raise RequestError('Required fields: image_id, side, threshold, mode, client_nonce')
++        if not isinstance(body, dict) or set(body) != {'image_id', 'side', 'threshold', 'mode', 'algorithm', 'client_nonce'}:
++            raise RequestError('Required fields: image_id, side, threshold, mode, algorithm, client_nonce')
+         image_id, side, mode, nonce = (body[key] for key in ('image_id', 'side', 'mode', 'client_nonce'))
+         if not isinstance(image_id, str) or image_id not in self.catalog or type(side) is not int or str(side) not in self.catalog[image_id]:
+             raise RequestError('Choose an available image and 256/512 resolution')
+-        if type(body['threshold']) is not int or body['threshold'] != 28:
+-            raise RequestError('This verified A4 firmware supports threshold 28 only')
++        if type(body['threshold']) is not int or not 1 <= body['threshold'] <= 255:
++            raise RequestError('Choose an integer PL threshold from 1 to 255')
+         if not isinstance(mode, str) or mode not in MODES:
+             raise RequestError('Choose an existing PL processing mode; algorithm B is not implemented')
+         if not isinstance(nonce, str) or re.fullmatch(r'[A-Za-z0-9_-]{8,80}', nonce) is None:
+             raise RequestError('Invalid client nonce')
+-        return {**body, 'algorithm': 'A', 'mode_code': MODES[mode]}
++        if body['algorithm'] not in ('A', 'C2'):
++            raise RequestError('Choose algorithm A or C2')
++        return {**body, 'mode_code': MODES[mode]}
+ 
+     def load(self, request):
+         entry = self.catalog[request['image_id']][str(request['side'])]
+--- pynq_app\service.py
++++ pynq_w3\service.py
+@@ -20,7 +20,7 @@
+ from .evaluation import score_completed
+ from .protocol import Inputs, MODES, RequestError, REVISION, file_info, require, rgb_from_input, sha, write_json
+ 
+-MAX_RUNS = 200  # W1 is a bounded bring-up, not the W5 endurance test.
++MAX_RUNS = 200  # W3 is a bounded bring-up, not the W5 endurance test.
+ 
+ 
+ class BusyError(ValueError):
+@@ -65,7 +65,7 @@
+     timing = {**evidence['timing_ns'],
+               'queue_wait_ns': marks['worker_start_ns'] - job['accepted_server_ns'],
+               'input_read_ns': marks['input_ready_ns'] - marks['worker_start_ns'],
+-              'raw_save_ns': marks['raw_saved_ns'] - marks['snapshot_end_ns'],
++              'raw_save_ns': marks['raw_saved_ns'] - marks['observer_end_ns'],
+               'evaluation_ns': marks['evaluation_end_ns'] - marks['raw_saved_ns'],
+               'png_encoding_ns': marks['encoding_end_ns'] - marks['evaluation_end_ns'],
+               'worker_result_ns': marks['worker_result_ready_ns'] - marks['worker_start_ns']}
+@@ -75,7 +75,7 @@
+               'output': {'sha256': evidence['output_sha256'], 'shape': list(output.shape),
+                          'dtype': str(output.dtype), 'words': int(output.size), 'file': files['output_packed.npy']},
+               'quality': quality, 'timing_ns': timing, 'raw_timestamps_ns': marks,
+-              'timing_scope': 'Worker result excludes final JSON publication, HTTP/polling and browser; DMA overlaps PL. Inference includes config/allocation/native DMA/read-only snapshot. Core and pure transport are unavailable.',
++              'timing_scope': 'Worker result excludes final JSON publication, HTTP/polling and browser; DMA overlaps PL. Inference includes config/allocation/native DMA/read-only snapshot. Core comes from the completed hardware snapshot and includes stream stalls; pure transport remains unavailable. Observer GPIO reads are measured separately after the inference snapshot.',
+               'images': {kind: {'url': '/api/runs/' + job['run_id'] + '/images/' + kind, **info}
+                          for kind, info in images.items()}, 'files': files,
+               'browser_timing': None, 'formal_quality_experiment': False}
+@@ -105,13 +105,13 @@
+     def capabilities(self):
+         return {'revision': REVISION, 'session_id': self.session_id,
+                 'evidence_kind': self.hardware.evidence_kind, 'board_acceptance': 'PENDING_INDEPENDENT_VERIFICATION',
+-                'bit': self.manifest['artifacts']['a4_segmentation.bit'],
+-                'hwh': self.manifest['artifacts']['a4_segmentation.hwh'],
+-                'clock_hz': 100000000, 'clock_source': 'Unchanged verified A4 implementation; not a new clock measurement',
+-                'dma_address': '0x40400000', 'gpio_address': '0x41200000',
+-                'algorithm': 'A', 'modes': MODES, 'threshold_choices': [28], 'side_choices': [256, 512],
+-                'runtime_threshold_supported': False, 'core_cycle_readback_supported': False,
+-                'latched_parameter_readback_supported': False, 'algorithm_B_supported': False,
++                'bit': self.manifest['artifacts']['w2_quality.bit'],
++                'hwh': self.manifest['artifacts']['w2_quality.hwh'],
++                'clock_hz': 100000000, 'clock_source': 'Paired W2 100MHz implementation plus live FCLK0 register readback',
++                'dma_address': '0x40400000', 'gpio_address': '0x41200000', 'observer_address': '0x41210000',
++                'algorithms': ['A', 'C2'], 'modes': MODES, 'threshold_range': [1, 255], 'side_choices': [256, 512],
++                'runtime_threshold_supported': True, 'core_cycle_readback_supported': True,
++                'latched_parameter_readback_supported': True, 'algorithm_B_supported': False,
+                 'max_active': 1, 'max_pending': 1, 'session_run_limit': MAX_RUNS,
+                 'timing_notice': 'Client and board absolute clocks cannot be subtracted; double-rAF is an approximate paint marker, not physical display or algorithm 60 FPS.'}
+ 
+@@ -145,7 +145,7 @@
+         if len(self.queue) + (self.active is not None) >= 2:
+             raise BusyError('One active and one pending request already exist')
+         if len(self.jobs) >= MAX_RUNS:
+-            raise BusyError('W1 session reached 200 runs; export records and finish safely')
++            raise BusyError('W3 session reached 200 runs; export records and finish safely')
+         run_id = uuid.uuid4().hex
+         config = {key: request[key] for key in ('algorithm', 'image_id', 'side', 'threshold', 'mode', 'mode_code')}
+         job = {'run_id': run_id, 'session_id': self.session_id, 'request': request,
+@@ -252,14 +252,14 @@
+             if previous is None:
+                 if index != 1 or start != times[0]:
+                     raise RequestError('Display loop must begin at its first request')
+-                previous = {'index': 0, 'start': start, 'render': start, 'all_visible': True}
+-            if index != previous['index'] + 1 or start != previous['start'] or times[0] < previous['render']:
++                previous = {'index': 0, 'start': start, 'render': start, 'all_visible': True, 'config_id': job['config_id']}
++            if index != previous['index'] + 1 or start != previous['start'] or times[0] < previous['render'] or job['config_id'] != previous['config_id']:
+                 raise RequestError('Display loop is nonconsecutive or clock scope changed')
+             visible = previous['all_visible'] and body['visibility'] == 'visible'
+             duration = times[-1] - start
+             if visible and index >= 2 and duration > 0:
+                 fps = index * 1000 / duration
+-            self.loops[loop_id] = {'index': index, 'start': start, 'render': times[-1], 'all_visible': visible}
++            self.loops[loop_id] = {'index': index, 'start': start, 'render': times[-1], 'all_visible': visible, 'config_id': job['config_id']}
+         observation = {**body, 'run_id': run_id, 'session_id': self.session_id,
+                        'request_to_render_ms': times[-1] - times[0],
+                        'result_received_to_render_ms': times[-1] - times[1],
+@@ -272,10 +272,10 @@
+ 
+     def _export(self, run_id):
+         snapshot = {'status': self.status(), 'run_ids': list(self.jobs), 'export_server_ns': time.perf_counter_ns(),
+-                    'scope': 'W1 bring-up only; board acceptance requires independent downloaded-array verification'}
++                    'scope': 'W3 bring-up only; board acceptance requires independent downloaded-array verification'}
+         write_json(self.directory / 'session.json', snapshot)
+         csv_stream = io.StringIO(newline='')
+-        columns = ['run_id', 'image_id', 'side', 'mode', 'threshold', 'dma_transaction_ns', 'inference_ns',
++        columns = ['run_id', 'image_id', 'side', 'mode', 'threshold', 'algorithm', 'dma_transaction_ns', 'inference_ns',
+                    'pl_core_frame_ns', 'pure_dma_transport_ns', 'vessel_area_fraction', 'dice_AH', 'iou_AH',
+                    'dice_VK', 'iou_VK', 'browser_request_to_render_ms', 'browser_actual_fps']
+         writer = csv.DictWriter(csv_stream, fieldnames=columns)
+@@ -284,8 +284,8 @@
+         for job in selected:
+             if job['status'] != 'COMPLETED':
+                 continue
+-            row = {'run_id': job['run_id'], **{key: job['request'][key] for key in ('image_id', 'side', 'mode', 'threshold')},
+-                   **{key: job['timing_ns'][key] for key in columns[5:9]},
++            row = {'run_id': job['run_id'], **{key: job['request'][key] for key in ('image_id', 'side', 'mode', 'threshold', 'algorithm')},
++                   **{key: job['timing_ns'][key] for key in columns[6:10]},
+                    'vessel_area_fraction': job['quality']['vessel_area_fraction']}
+             for label in ('AH', 'VK'):
+                 for metric in ('dice', 'iou'):
+@@ -427,7 +427,7 @@
+             path = await self.manager.export(run_id)
+             self.set_header('Content-Type', 'application/zip')
+             self.set_header('Content-Disposition', 'attachment; filename="' + path.name + '"')
+-            # The W1 session has an explicit run limit; stream without holding its ZIP in RAM.
++            # The W3 session has an explicit run limit; stream without holding its ZIP in RAM.
+             with path.open('rb') as stream:
+                 while True:
+                     chunk = stream.read(65536)
+--- ui\app.js
++++ ui_w3\app.js
+@@ -30,9 +30,11 @@
+   looping = false;
+   el("panels").classList.add("stale");
+   el("selection-state").textContent = "选择已更改；下方为历史结果，点击运行更新";
+-  ["area", "quality", "dma", "inference", "browser", "fps"].forEach(id => el(id).textContent = "—");
++  ["area", "quality", "core", "dma", "inference", "browser", "fps"].forEach(id => el(id).textContent = "—");
+   el("area-detail").textContent = "等待当前选择的 PL 结果";
+   el("quality-detail").textContent = "等待新帧评分；不沿用上一张图的指标";
++  el("applied").textContent = "等待新帧硬件回读";
++  el("observer").textContent = "—";
+   buttons();
+ }
+ function decode(url) {
+@@ -72,17 +74,22 @@
+   const scores = Object.entries(quality.annotations).map(([name, values]) => `${name} ${values.dice.toFixed(3)} / ${values.iou.toFixed(3)}`);
+   el("quality").textContent = scores.length ? scores.join(" · ") : "未评价";
+   el("quality-detail").textContent = scores.length ? "当前帧 Dice / IoU；不是整体质量验收" : quality.quality_reason;
++  el("core").textContent = (timing.pl_core_frame_ns / 1e6).toFixed(3) + " ms";
++  const applied = job.evidence.applied_parameters, observed = job.evidence.hardware_latched_parameter_readback;
++  el("applied").textContent = `${applied.algorithm} / T=${applied.threshold} / ${applied.side} / 模式 ${applied.mode_code} / 帧标记 ${applied.task_tag} · 与本次请求一致`;
++  el("observer").textContent = `${observed.pl_core_cycles.toLocaleString()} 周期 @ 100 MHz；流出完成 ${observed.pl_drain_cycles.toLocaleString()} 周期；纯 DMA 搬运未测`;
+   el("dma").textContent = (timing.dma_transaction_ns / 1e6).toFixed(2) + " ms";
+   el("inference").textContent = (timing.inference_ns / 1e6).toFixed(2) + " ms";
+   el("browser").textContent = "测量中";
+   el("fps").textContent = "—";
+-  el("identity").textContent = `${job.run_id} / ${job.config_id.slice(0, 16)} · ${job.request.image_id}, ${job.request.side}, mode ${job.request.mode_code}, T=28`;
+-  el("bytes").textContent = `发送 ${job.evidence.send_bytes.toLocaleString()} B / 接收 ${job.evidence.recv_bytes.toLocaleString()} B · PL 帧计数 ${job.evidence.frame_count} · GPIO 配置为主机提交，无锁存回读`;
++  el("identity").textContent = `${job.run_id} / ${job.config_id.slice(0, 16)} · ${job.request.image_id}, ${job.request.side}, ${job.request.algorithm}, mode ${job.request.mode_code}, T=${job.request.threshold}`;
++  el("bytes").textContent = `发送 ${job.evidence.send_bytes.toLocaleString()} B / 接收 ${job.evidence.recv_bytes.toLocaleString()} B · PL 帧计数 ${job.evidence.frame_count} · 已核对实际锁存参数 / 标记 / 序号`;
+   el("hashes").textContent = `${job.input.sha256} / ${job.output.sha256}`;
+ }
+ async function runOne(version, loop) {
+-  const request = {image_id: el("image").value, side: Number(el("side").value), threshold: 28,
++  const request = {image_id: el("image").value, side: Number(el("side").value), threshold: Number(el("threshold").value), algorithm: el("algorithm").value,
+                    mode: el("mode").value, client_nonce: nonce()};
++  if (!Number.isInteger(request.threshold) || request.threshold < 1 || request.threshold > 255) throw new Error("阈值必须是 1–255 的整数");
+   const start = performance.now();
+   hiddenDuringRequest = document.visibilityState !== "visible";
+   if (loop && loop.index === 1) loop.start = start;
+@@ -125,6 +132,7 @@
+     visibility: hiddenDuringRequest ? "hidden" : document.visibilityState, user_agent: navigator.userAgent,
+     loop_id: loop ? loop.id : null, loop_index: loop ? loop.index : null, loop_start_ms: loop ? loop.start : null};
+   const timing = await api(`/api/runs/${job.run_id}/browser-timing`, observation);
++  if (version !== selectionVersion) return false;
+   el("browser").textContent = timing.request_to_render_ms.toFixed(1) + " ms";
+   el("fps").textContent = timing.browser_actual_fps === null ? "未形成连续样本" : timing.browser_actual_fps.toFixed(2) + " FPS";
+   message(`任务完成，原始 DMA 数组和分段记录已保存。${loop ? `连续帧 ${loop.index} / 20。` : "可切换图像、尺寸或 PL 模式继续运行。"}`);
+@@ -180,14 +188,14 @@
+     for (const image of catalog.images) {
+       const option = document.createElement("option"); option.value = image.image_id; option.textContent = image.image_id + " · STARE"; el("image").append(option);
+     }
+-    ["image", "side", "mode"].forEach(id => { el(id).disabled = false; el(id).addEventListener("change", changed); });
++    ["image", "side", "mode", "algorithm", "threshold"].forEach(id => { el(id).disabled = false; el(id).addEventListener(id === "threshold" ? "input" : "change", changed); });
+     el("run").addEventListener("click", () => run(false));
+     el("continuous").addEventListener("click", () => run(true));
+     el("stop").addEventListener("click", () => { looping = false; buttons(); message("停止后续请求；当前 DMA 继续正常完成并保存。"); });
+     el("alpha").addEventListener("input", drawOverlay);
+     el("export-run").addEventListener("click", () => download(`/api/runs/${current.run_id}/export`, "browser_run_" + current.run_id + ".zip"));
+     el("export-session").addEventListener("click", () => download("/api/session/export", "browser_session_" + capabilities.session_id + ".zip"));
+-    message("服务就绪。请选择图像和已有 PL 模式，点击运行 FPGA；新浏览器结果仍需独立板级复核。");
++    message("服务就绪。请选择图像、A/C2、阈值及 PL 模式，点击运行 FPGA；新浏览器结果仍需独立板级复核。");
+     await refreshStatus(); setInterval(refreshStatus, 1500); buttons();
+   } catch (error) { message("初始化失败：" + error.message, true); }
+ }
+--- ui\index.html
++++ ui_w3\index.html
+@@ -11,8 +11,8 @@
+ <body>
+   <div class="shell">
+     <header>
+-      <div><p class="eyebrow">PYNQ-Z2 / ETHERNET / W1</p><h1>眼底影像 FPGA 实验</h1>
+-        <p class="intro">原图、增强、血管候选与叠加来自同一次任务。阈值 28 为当前硬件固定值。</p></div>
++      <div><p class="eyebrow">PYNQ-Z2 / ETHERNET / W3</p><h1>眼底影像 FPGA 实验</h1>
++        <p class="intro">原图、增强、血管候选与叠加来自同一次任务。A/C2 与阈值由 FPGA 锁存执行；每帧回读核对。</p></div>
+       <div class="status"><span id="state-dot"></span><span id="state">连接中</span><small id="frame-count">等待服务</small></div>
+     </header>
+     <div id="host-warning" class="warning" hidden>主机测试预览 · 使用软件测试替身，所有图像和计时均不是本次实体板结果。</div>
+@@ -20,14 +20,15 @@
+       <section class="controls card" aria-label="FPGA 参数">
+         <label>眼底图像<select id="image" disabled></select></label>
+         <label>处理尺寸<select id="side" disabled><option value="512">512 × 512</option><option value="256">256 × 256</option></select></label>
++        <label>PL 算法<select id="algorithm" disabled><option value="C2">C2 · 双侧支持</option><option value="A">A · 原始基线</option></select></label>
+         <label class="mode-control">PL 处理模式<select id="mode" disabled>
+           <option value="final">最终掩膜 · 模式 3</option><option value="closed_candidate">闭运算候选 · 模式 2</option>
+           <option value="threshold_candidate">初始阈值候选 · 模式 1</option><option value="bypass">输入旁路 · 模式 0</option>
+         </select></label>
+-        <label class="threshold">分割阈值<input id="threshold" type="number" value="28" disabled><small>固定 28；可调接口待 W2</small></label>
++        <label class="threshold">分割阈值<input id="threshold" type="number" value="28" min="1" max="255" step="1" disabled><small>1–255；点击运行写入 PL</small></label>
+         <div class="actions"><button id="run" class="primary" disabled>运行 FPGA</button>
+           <button id="continuous" disabled>连续运行 20 帧</button><button id="stop" disabled>停止后续请求</button></div>
+-        <p class="control-note">冻结算法 A · 更换图像或模式后点击运行，会重新发送至 PL。旁路模式没有增强或分割结果。叠加滑块仅页面显示；导出叠加 PNG 固定 65%。</p>
++        <p class="control-note">A 为原基线；C2 为亮区误检改进候选。更换图像、算法或阈值后点击运行，会重新发送至 PL。旁路模式没有增强或分割结果。叠加滑块仅页面显示；导出叠加 PNG 固定 65%。</p>
+       </section>
+       <div class="result-line"><h2>当前结果</h2><span id="selection-state">等待第一次 FPGA 计算</span>
+         <label class="alpha-label">叠加透明度（仅显示）<input id="alpha" type="range" min="0" max="100" value="65"><output id="alpha-value">65%</output></label></div>
+@@ -40,6 +41,7 @@
+       <section class="metrics" aria-label="评价与性能">
+         <div class="card metric"><h3>血管面积 / 有效 FOV</h3><strong id="area">—</strong><small id="area-detail">当前 PL 掩膜，PS 计数</small></div>
+         <div class="card metric"><h3>Dice / IoU</h3><strong id="quality">—</strong><small id="quality-detail">AH / VK 仅用于完成后的评价</small></div>
++        <div class="card metric"><h3>PL 核心窗口</h3><strong id="core">—</strong><small>硬件周期；包含流式等待</small></div>
+         <div class="card metric"><h3>DMA 事务</h3><strong id="dma">—</strong><small>含流式 PL 运算，不能当作纯搬运</small></div>
+         <div class="card metric"><h3>完整推理</h3><strong id="inference">—</strong><small>配置 → DMA 完成 → 普通 CPU 快照</small></div>
+         <div class="card metric"><h3>请求 → 浏览器绘制</h3><strong id="browser">—</strong><small>客户端单调时钟，双 rAF 近似</small></div>
+@@ -49,11 +51,11 @@
+         <div><h2>运行证据</h2><p id="message" role="status">正在读取板端能力…</p></div>
+         <div class="evidence-actions"><button id="export-run" disabled>导出当前任务</button><button id="export-session" disabled>导出本次会话</button></div>
+         <dl><dt>任务 / 配置</dt><dd id="identity">—</dd><dt>真实收发</dt><dd id="bytes">—</dd>
+-          <dt>输入 / 输出 SHA</dt><dd id="hashes">—</dd><dt>PL 核心 / 纯 DMA 搬运</dt><dd>未测：原 A4 没有核心周期观测；纯搬运需独立实验。</dd>
++          <dt>输入 / 输出 SHA</dt><dd id="hashes">—</dd><dt>硬件实际参数</dt><dd id="applied">—</dd><dt>PL 周期 / 纯 DMA 搬运</dt><dd id="observer">等待当前帧硬件回读；纯搬运需独立实验。</dd>
+           <dt>质量范围</dt><dd>当前图像与当前模式的候选结果，不代表留出集整体医学精度验收。可见眼底边界、亮区响应属于现有算法结果。</dd></dl>
+       </section>
+     </main>
+-    <footer>W1 · 真实 PL / DDR / DMA → Python → 浏览器。无 HDMI 依赖。关闭页面不取消在途 DMA；遇到 FAULT 保留启动 Notebook 和缓冲引用。</footer>
++    <footer>W3 · 真实 PL / DDR / DMA → Python → 浏览器。无 HDMI 依赖。关闭页面不取消在途 DMA；遇到 FAULT 保留启动 Notebook 和缓冲引用。</footer>
+   </div>
+ </body>
+ </html>
+--- ui\style.css
++++ ui_w3\style.css
+@@ -2,7 +2,7 @@
+ *{box-sizing:border-box}body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 "Segoe UI","Microsoft YaHei",sans-serif}.shell{max-width:1540px;margin:auto;padding:28px 34px 18px}
+ header{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:0 0 24px}.eyebrow{font-size:11px;letter-spacing:2px;margin:0;color:var(--green);font-weight:700}h1{font-size:28px;line-height:1.25;margin:9px 0}h2{font-size:18px;margin:0}h3{font-size:13px;font-weight:600;margin:0}.intro{margin:0;color:var(--muted)}.status{min-width:170px;text-align:right;white-space:nowrap}.status small{display:block;color:var(--muted);font-size:12px;margin-top:5px}#state-dot{display:inline-block;width:9px;height:9px;border-radius:100%;background:#b8c9c1;margin-right:8px}#state-dot.ready{background:#258658}#state-dot.busy{background:#c99424}#state-dot.fault{background:#bb4444}
+ .card{background:var(--white);border:1px solid var(--line);border-radius:12px}.controls{display:flex;flex-wrap:wrap;gap:14px 18px;padding:21px 24px;align-items:flex-start}.controls label{min-width:140px;font-size:12px;color:var(--muted);display:flex;flex-direction:column;gap:6px}.mode-control{flex:1;min-width:240px!important}.threshold{min-width:90px!important}.threshold small{font-size:10px}select,input[type=number]{font:inherit;color:var(--ink);border:1px solid #cad8ce;background:#fbfcfa;border-radius:6px;padding:10px 12px;min-height:41px}.threshold input{width:88px;color:#6d7b75}button{font:600 12px "Segoe UI","Microsoft YaHei",sans-serif;padding:13px 16px;min-height:41px;border:1px solid #b6cebf;border-radius:7px;background:#fff;color:var(--green);cursor:pointer}.primary{background:var(--green);border-color:var(--green);color:white}button:hover:not(:disabled){filter:brightness(.95)}button:disabled{opacity:.46;cursor:default}.actions{display:flex;gap:8px;padding-top:24px;flex-wrap:wrap}.control-note{flex-basis:100%;font-size:12px;color:var(--muted);margin:0}.result-line{display:flex;align-items:center;gap:14px;padding:23px 0 13px}#selection-state{font-size:12px;color:var(--muted)}.alpha-label{margin-left:auto;display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted)}input[type=range]{width:100px;accent-color:var(--green)}output{min-width:30px;text-align:right}
+-.panels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.panels article{padding:14px 13px 13px;overflow:hidden}.panels h3{display:flex;justify-content:space-between;gap:4px;padding:0 2px 11px}.panels h3 span{font-size:10px;font-weight:400;color:var(--muted)}.picture{position:relative;aspect-ratio:1;background:#0e1714;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden}.picture canvas{width:100%;height:100%;object-fit:contain;display:none}.picture .placeholder{font-size:12px;color:#b5c6bc;margin:0}.picture.has-image canvas{display:block}.picture.has-image .placeholder{display:none}#mask{image-rendering:pixelated}.stale canvas{opacity:.35}.metrics{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin:16px 0}.metric{padding:16px 15px;min-height:130px}.metric h3{font-size:11px;color:var(--muted)}.metric strong{display:block;margin:9px 0 8px;font-size:21px;line-height:1.3;font-weight:600;word-break:break-word}.metric small{display:block;font-size:10px;color:var(--muted)}#quality{font-size:16px}
++.panels{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}.panels article{padding:14px 13px 13px;overflow:hidden}.panels h3{display:flex;justify-content:space-between;gap:4px;padding:0 2px 11px}.panels h3 span{font-size:10px;font-weight:400;color:var(--muted)}.picture{position:relative;aspect-ratio:1;background:#0e1714;border-radius:6px;display:flex;align-items:center;justify-content:center;overflow:hidden}.picture canvas{width:100%;height:100%;object-fit:contain;display:none}.picture .placeholder{font-size:12px;color:#b5c6bc;margin:0}.picture.has-image canvas{display:block}.picture.has-image .placeholder{display:none}#mask{image-rendering:pixelated}.stale canvas{opacity:.35}.metrics{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:12px;margin:16px 0}.metric{padding:16px 15px;min-height:130px}.metric h3{font-size:11px;color:var(--muted)}.metric strong{display:block;margin:9px 0 8px;font-size:21px;line-height:1.3;font-weight:600;word-break:break-word}.metric small{display:block;font-size:10px;color:var(--muted)}#quality{font-size:16px}
+ .evidence{padding:20px 24px;display:flex;flex-wrap:wrap;gap:12px}.evidence>div:first-child{flex:1}#message{font-size:12px;color:var(--muted);margin:7px 0 0;white-space:pre-line;overflow-wrap:anywhere}.evidence-actions{display:flex;gap:8px;align-items:flex-start}.evidence dl{width:100%;display:grid;grid-template-columns:170px 1fr;gap:6px 14px;margin:5px 0 0;font-size:11px}.evidence dt{color:var(--muted)}.evidence dd{margin:0;overflow-wrap:anywhere}footer{font-size:11px;color:var(--muted);padding-top:18px}.warning{border:1px solid #e2b466;border-radius:9px;background:#fff3d9;color:#7f4d00;padding:12px 17px;margin:0 0 18px;font-weight:600}.fault-text{color:#a63232!important}
+ @media(max-width:1120px){.metrics{grid-template-columns:repeat(3,minmax(0,1fr))}.actions{padding-top:0}.panels{grid-template-columns:repeat(2,minmax(0,1fr))}.shell{padding:24px}.result-line{flex-wrap:wrap}.alpha-label{margin-left:auto}}
+ @media(max-width:620px){.shell{padding:18px 12px}header{align-items:flex-start;gap:10px}h1{font-size:22px}.intro{font-size:12px}.status{min-width:100px;font-size:12px}.status small{font-size:10px}.controls{padding:16px}.controls label{flex:1;min-width:110px}.mode-control{min-width:100%!important}.threshold{flex:0!important}.panels{gap:8px}.panels article{padding:9px}.panels h3{font-size:11px;flex-direction:column}.metrics{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.evidence{padding:16px}.evidence dl{grid-template-columns:1fr;gap:4px}.evidence dt{margin-top:5px}.alpha-label{margin:0;flex-basis:100%}.metric{padding:12px}.evidence-actions{flex-wrap:wrap}}

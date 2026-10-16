@@ -1,0 +1,39 @@
+test_actual_four_arrays_pixels_68_records_and_copy_cost (test_b_snapshot_archive.ActualEvidence.test_actual_four_arrays_pixels_68_records_and_copy_cost) ... ok
+test_actual_marker_and_geometry_hash_rejected (test_b_snapshot_archive.ActualEvidence.test_actual_marker_and_geometry_hash_rejected) ... ok
+test_all_four_raw_arrays_reject_word_changes_even_with_updated_hashes (test_b_snapshot_archive.ActualEvidence.test_all_four_raw_arrays_reject_word_changes_even_with_updated_hashes) ... ok
+test_archive_preserves_fourteen_original_files_and_refuses_overwrite (test_b_snapshot_archive.ActualEvidence.test_archive_preserves_fourteen_original_files_and_refuses_overwrite) ... ok
+test_comparison_ratio_and_copy_cost_rejected (test_b_snapshot_archive.ActualEvidence.test_comparison_ratio_and_copy_cost_rejected) ... ok
+test_copy_gate_counts_rejected (test_b_snapshot_archive.ActualEvidence.test_copy_gate_counts_rejected) ... ok
+test_copy_interval_cannot_be_subtracted_from_checked_loop (test_b_snapshot_archive.ActualEvidence.test_copy_interval_cannot_be_subtracted_from_checked_loop) ... ok
+test_cpu_storage_ownership_readonly_and_native_attribute_rejected (test_b_snapshot_archive.ActualEvidence.test_cpu_storage_ownership_readonly_and_native_attribute_rejected) ... ok
+test_driver_dma_video_error_and_overlapping_buffers_rejected (test_b_snapshot_archive.ActualEvidence.test_driver_dma_video_error_and_overlapping_buffers_rejected) ... ok
+test_equal_pair_with_wrong_actual_array_panes_rejected (test_b_snapshot_archive.ActualEvidence.test_equal_pair_with_wrong_actual_array_panes_rejected) ... ok
+test_executable_notebook_source_change_rejected (test_b_snapshot_archive.ActualEvidence.test_executable_notebook_source_change_rejected) ... ok
+test_final_canvas_and_color_pattern_rejected (test_b_snapshot_archive.ActualEvidence.test_final_canvas_and_color_pattern_rejected) ... ok
+test_nested_release_and_precheck_validation_rejected (test_b_snapshot_archive.ActualEvidence.test_nested_release_and_precheck_validation_rejected) ... ok
+test_nonempty_or_executed_tail_rejected (test_b_snapshot_archive.ActualEvidence.test_nonempty_or_executed_tail_rejected) ... ok
+test_notebook_embedded_image_rejected (test_b_snapshot_archive.ActualEvidence.test_notebook_embedded_image_rejected) ... ok
+test_notebook_execution_order_and_error_rejected (test_b_snapshot_archive.ActualEvidence.test_notebook_execution_order_and_error_rejected) ... ok
+test_order_frame_counter_and_bytes_rejected (test_b_snapshot_archive.ActualEvidence.test_order_frame_counter_and_bytes_rejected) ... ok
+test_overlay_clock_incomplete_and_pending_record_rejected (test_b_snapshot_archive.ActualEvidence.test_overlay_clock_incomplete_and_pending_record_rejected) ... ok
+test_per_frame_copy_flags_rejected_in_both_groups_and_warmup (test_b_snapshot_archive.ActualEvidence.test_per_frame_copy_flags_rejected_in_both_groups_and_warmup) ... ok
+test_per_frame_output_hash_rejected (test_b_snapshot_archive.ActualEvidence.test_per_frame_output_hash_rejected) ... ok
+test_prefix_input_and_golden_hash_rejected (test_b_snapshot_archive.ActualEvidence.test_prefix_input_and_golden_hash_rejected) ... ok
+test_printed_metrics_rejected (test_b_snapshot_archive.ActualEvidence.test_printed_metrics_rejected) ... ok
+test_raw_shape_dtype_and_endianness_rejected (test_b_snapshot_archive.ActualEvidence.test_raw_shape_dtype_and_endianness_rejected) ... ok
+test_raw_timestamps_type_count_and_reversal_rejected (test_b_snapshot_archive.ActualEvidence.test_raw_timestamps_type_count_and_reversal_rejected) ... ok
+test_saved_array_provenance_rejected (test_b_snapshot_archive.ActualEvidence.test_saved_array_provenance_rejected) ... ok
+test_stage_duration_and_sample_sum_rejected (test_b_snapshot_archive.ActualEvidence.test_stage_duration_and_sample_sum_rejected) ... ok
+test_stage_flags_and_progress_rejected (test_b_snapshot_archive.ActualEvidence.test_stage_flags_and_progress_rejected) ... ok
+test_summary_mean_p95_and_stage_share_rejected (test_b_snapshot_archive.ActualEvidence.test_summary_mean_p95_and_stage_share_rejected) ... ok
+test_total_and_prefix_cpu_captures_rejected (test_b_snapshot_archive.ActualEvidence.test_total_and_prefix_cpu_captures_rejected) ... ok
+test_whole_canvas_pair_including_caption_rejected (test_b_snapshot_archive.ActualEvidence.test_whole_canvas_pair_including_caption_rejected) ... ok
+test_duplicate_and_unexpected_path_rejected (test_b_snapshot_archive.ZipBoundaries.test_duplicate_and_unexpected_path_rejected) ... ok
+test_missing_member_rejected (test_b_snapshot_archive.ZipBoundaries.test_missing_member_rejected) ... ok
+test_oversized_member_rejected (test_b_snapshot_archive.ZipBoundaries.test_oversized_member_rejected) ... ok
+test_symlink_rejected (test_b_snapshot_archive.ZipBoundaries.test_symlink_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 34 tests in 2.946s
+
+OK

@@ -1,0 +1,16 @@
+{
+  "status": "BOARD_INTERRUPTED_SERVICE_NOT_LISTENING_CAUSE_UNCONFIRMED",
+  "evidence": "User terminal screenshot",
+  "localhost_8090": "connection refused",
+  "process_listing": "Jupyter server shown; ipykernel not present in supplied filtered listing",
+  "current_memory_available_mib": 369,
+  "current_disk_available_human": "2.6G",
+  "limitations": [
+    "Post-failure resource readings cannot exclude earlier OOM",
+    "Screenshot does not establish why kernel ended or whether boot changed",
+    "Displayed dmesg tail contains boot-time journal/FAT unclean shutdown warnings; causality not established"
+  ],
+  "next_action": "Independent terminal collector: existing files and OS logs only, no PL/DMA access or retries",
+  "collector": "scripts/collect_c7_showcase_failure.py",
+  "video": "DEFERRED_BY_USER"
+}

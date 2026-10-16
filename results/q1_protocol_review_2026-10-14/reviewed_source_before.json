@@ -1,0 +1,18 @@
+{
+  "docs/q1_bilateral_protocol_r1.json": {
+    "bytes": 3963,
+    "sha256": "c535089fb5adaf2402a1601f26a3b99471f482dc4614a564ad53ce9a130d79c9"
+  },
+  "software/q1_bilateral.py": {
+    "bytes": 3341,
+    "sha256": "eba1c349dab9a57134a05844b20c8ccd6d51e19cc6a4b69604d23a880ae5aba1"
+  },
+  "scripts/evaluate_q1_bilateral.py": {
+    "bytes": 16063,
+    "sha256": "0824a5740e39b359e7835f2fbbfe38d54e2abbeb09f6eb81c2e413219018db72"
+  },
+  "tests/test_q1_bilateral.py": {
+    "bytes": 8960,
+    "sha256": "e0ccfb42138d0f2d48da0a11e8d578e47bb2ae7eb3da3b98a594a6a626babaec"
+  }
+}

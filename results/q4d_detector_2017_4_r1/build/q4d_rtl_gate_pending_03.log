@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\check_q4d_sharded_rtl.py", line 117, in <module>
+    result = check(args.directory)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\check_q4d_sharded_rtl.py", line 80, in check
+    require(completed == planned, 'Full-word checks incomplete: ' + str(folder))
+  File "D:\PLD\retina_fpga\scripts\check_q4d_sharded_rtl.py", line 21, in require
+    raise RuntimeError(message)
+RuntimeError: Full-word checks incomplete: D:\PLD\retina_fpga\build\q4d_sharded_rtl_02\group_03

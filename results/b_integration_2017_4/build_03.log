@@ -1,0 +1,906 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 04:08:45 2026
+# Process ID: 41712
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -nojournal -log results/b_integration_2017_4/build_03.log -source vivado/scripts/build_b_integration.tcl -tclargs build/b_integration_03 full
+# Log file: D:/PLD/retina_fpga/results/b_integration_2017_4/build_03.log
+# Journal file: 
+#-----------------------------------------------------------
+source vivado/scripts/build_b_integration.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne "2017.4" || [llength $argv] != 2} {error "Use Vivado 2017.4: new-output bd|full"}
+# set out [file normalize [lindex $argv 0]]
+# set stage [lindex $argv 1]
+# if {$stage ni {bd full} || [file exists $out]} {error "New build directory and bd|full required"}
+# file mkdir $out
+# file copy [info script] [file join $out build_script_used.tcl]
+# set source_bd [file join $root build official_v2.2.1 boards Pynq-Z2 base base base.srcs sources_1 bd system system.bd]
+# set bd_dir [file join $out b_integration.srcs sources_1 bd system]
+# file copy $source_bd [file join $out original_official_system.bd]
+# set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+# create_project b_integration $out -part xc7z020clg400-1
+# file mkdir $bd_dir
+# file copy $source_bd [file join $bd_dir system.bd]
+# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths [list [file join $root build official_v2.2.1 boards ip] [file join $root build a4_hls_02 solution1 impl ip]] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/official_v2.2.1/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/a4_hls_02/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+# add_files -norecurse [file join $bd_dir system.bd]
+# open_bd_design [file join $bd_dir system.bd]
+Adding cell -- xilinx.com:user:audio_codec_ctrl:1.0 - audio_codec_ctrl_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_audio_codec_ctrl_0_0 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_interconnect_0_0 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_mem_intercon_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - btns_gpio
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_btns_gpio_0 
+Adding cell -- xilinx.com:ip:clk_wiz:5.4 - clk_wiz_10MHz
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_clk_wiz_10MHz_0 
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - concat_interrupts
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_concat_interrupts_0 
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - iop_interrupts
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_iop_interrupts_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - leds_gpio
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_leds_gpio_0 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_logic_1_4 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_arduino_intr_ack
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_arduino_intr_ack_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_arduino_reset
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_arduino_reset_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmoda_intr_ack
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_pmoda_intr_ack_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmoda_reset
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_pmoda_reset_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmodb_intr_ack
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_pmodb_intr_ack_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_pmodb_reset
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_pmodb_reset_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_rpi_intr_ack
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_rpi_intr_ack_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb_iop_rpi_reset
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_iop_rpi_reset_0 
+Adding cell -- xilinx.com:ip:mdm:3.2 - mdm_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mdm_1_0 
+Adding cell -- xilinx.com:ip:xlslice:1.0 - pmoda_rp_pin_sel
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_pmoda_rp_pin_sel_0 
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - ps7_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_ps7_0_0 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_ps7_0_axi_periph_0 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_ps7_0_axi_periph1_0 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_ps7_0_axi_periph_1_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - rgbleds_gpio
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_rgbleds_gpio_0 
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_rst_ps7_0_fclk0_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_rst_ps7_0_fclk1_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_fclk3
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_rst_ps7_0_fclk3_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - switches_gpio
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_switches_gpio_0 
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - system_interrupts
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_system_interrupts_0 
+WARNING: [BD 41-1731] Type mismatch between connected pins: /system_interrupts/irq(undef) and /ps7_0/IRQ_F2P(intr)
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_interconnect_0_1 
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_mem_intercon_1 
+Adding cell -- xilinx.com:ip:axi_vdma:6.3 - axi_vdma
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_vdma_0 
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - proc_sys_reset_pixelclk
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_proc_sys_reset_pixelclk_0 
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_xlconcat_0_0 
+Adding cell -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axis_register_slice_0_1 
+Adding cell -- xilinx.com:hls:color_convert:1.0 - color_convert
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_color_convert_1 
+Adding cell -- xilinx.com:hls:pixel_unpack:1.0 - pixel_unpack
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_pixel_unpack_0 
+Adding cell -- digilentinc.com:ip:axi_dynclk:1.0 - axi_dynclk
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_dynclk_0 
+Adding cell -- xilinx:user:color_swap:1.0 - color_swap_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_color_swap_0_1 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - hdmi_out_hpd_video
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_hdmi_out_hpd_video_0 
+Adding cell -- digilentinc.com:ip:rgb2dvi:1.2 - rgb2dvi_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_rgb2dvi_0_0 
+Adding cell -- xilinx.com:ip:v_axi4s_vid_out:4.0 - v_axi4s_vid_out_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_v_axi4s_vid_out_0_0 
+Adding cell -- xilinx.com:ip:v_tc:6.1 - vtc_out
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_vtc_out_0 
+WARNING: [BD 41-1731] Type mismatch between connected pins: /video/hdmi_out/frontend/axi_dynclk/LOCKED_O(undef) and /video/hdmi_out/frontend/rgb2dvi_0/aRst_n(rst)
+Adding cell -- xilinx.com:ip:axis_register_slice:1.1 - axis_register_slice_0
+Adding cell -- xilinx.com:hls:color_convert:1.0 - color_convert
+Adding cell -- xilinx.com:hls:pixel_pack:1.0 - pixel_pack
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_pixel_pack_0 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - axi_gpio_hdmiin
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_gpio_hdmiin_0 
+Adding cell -- xilinx:user:color_swap:1.0 - color_swap_0
+Adding cell -- digilentinc.com:ip:dvi2rgb:1.7 - dvi2rgb_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_dvi2rgb_0_0 
+Adding cell -- xilinx.com:ip:v_vid_in_axi4s:4.0 - v_vid_in_axi4s_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_v_vid_in_axi4s_0_0 
+Adding cell -- xilinx.com:ip:v_tc:6.1 - vtc_in
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_vtc_in_0 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_xbar_10 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_11 
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_us_1 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_xbar_9 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m09_regslice_2 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m08_regslice_2 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m07_regslice_5 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_cc_3 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m06_regslice_5 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_cc_2 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m05_regslice_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m04_regslice_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m03_regslice_6 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m02_regslice_6 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m01_regslice_6 
+Adding cell -- xilinx.com:ip:axi_clock_converter:2.1 - auto_cc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m00_regslice_6 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_s00_regslice_6 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_10 
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axi_dma_0_1 
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_axis_data_fifo_0_1 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_tkeep_tstrb
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_constant_tkeep_tstrb_1 
+Adding cell -- xilinx.com:hls:trace_cntrl_32:1.4 - trace_cntrl_32_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_trace_cntrl_32_0_0 
+Adding cell -- xilinx.com:ip:axi_dma:7.1 - axi_dma_0
+Adding cell -- xilinx.com:ip:axis_data_fifo:1.1 - axis_data_fifo_0
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_tkeep_tstrb
+Adding cell -- xilinx.com:hls:trace_cntrl_64:1.4 - trace_cntrl_64_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_trace_cntrl_64_0_0 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_xbar_8 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_9 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_xbar_7 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m03_regslice_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m02_regslice_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m01_regslice_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m00_regslice_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_s00_regslice_5 
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_xbar_6 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m07_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_7 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m06_regslice_4 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m05_regslice_4 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m04_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_6 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m03_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_auto_pc_5 
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m02_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m01_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_m00_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_s00_regslice_4 
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_dff_en_reset_vector_0_3 
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_intc_3 
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_intr_3 
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_intr_concat_2 
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_io_switch_3 
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+WARNING: [BD 41-176] The physical port 'ss1_i' specified in the portmap, is not found on the block! 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_logic_1_3 
+Adding cell -- xilinx.com:ip:microblaze:10.0 - mb
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_3 
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - mb_bram_ctrl
+INFO: [BD 41-434] Could not find an IP with XCI file by name: system_mb_bram_ctrl_3 
+INFO: [Common 17-14] Message 'BD 41-434' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - rpi_gpio
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - uartlite
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_rpi/clk_100M(clk) and /iop_rpi/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb4_timer_pwm
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb4_timers_interrupt
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_1
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_0
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m11_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m10_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic_1
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - gpio
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - mb_bram_ctrl
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_1: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_1: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmodb/clk_100M(clk) and /iop_pmodb/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - gpio
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - intr_concat
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - mb_bram_ctrl
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_2: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_2: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_pmoda/clk_100M(clk) and /iop_pmoda/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - arduino_gpio
+Adding cell -- xilinx.com:user:dff_en_reset_vector:1.0 - dff_en_reset_vector_0
+Adding cell -- xilinx.com:ip:axi_iic:2.0 - iic_direct
+Adding cell -- xilinx.com:ip:axi_intc:4.1 - intc
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - interrupt_concat
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - intr
+Adding cell -- xilinx.com:user:io_switch:1.1 - io_switch
+WARNING: [BD 41-176] The physical port 'ss0_i' specified in the portmap, is not found on the block! 
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - logic_1
+Adding cell -- xilinx.com:ip:microblaze:10.0 - mb
+Adding cell -- xilinx.com:ip:axi_bram_ctrl:4.0 - mb_bram_ctrl
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-2] system_mb_bram_ctrl_3: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.0-1] system_mb_bram_ctrl_3: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_clk_wiz_1_100M
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - uartlite
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc
+WARNING: [BD 41-1731] Type mismatch between connected pins: /iop_arduino/clk_100M(clk) and /iop_arduino/dff_en_reset_vector_0/clk(undef)
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_4
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_5
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_6
+Adding cell -- xilinx.com:ip:xlslice:1.0 - mb3_timer_capture_7
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb3_timer_generate
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb3_timer_pwm
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - mb3_timers_interrupt
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_0
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_1
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_2
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_3
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_4
+Adding cell -- xilinx.com:ip:axi_timer:2.0 - timer_5
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_direct
+Adding cell -- xilinx.com:ip:axi_quad_spi:3.2 - spi_shared
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_1
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - tier2_xbar_2
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m16_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m15_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m14_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m13_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m12_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m11_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m10_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m09_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m08_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m07_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m06_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m05_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m04_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m03_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m02_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m01_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - m00_regslice
+Adding cell -- xilinx.com:ip:axi_register_slice:2.1 - s00_regslice
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - dlmb_v10
+Adding cell -- xilinx.com:ip:lmb_v10:3.0 - ilmb_v10
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - lmb_bram
+Adding cell -- xilinx.com:ip:lmb_bram_if_cntlr:4.0 - lmb_bram_if_cntlr
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - concat_pmodb
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - concat_rp
+Adding cell -- xilinx.com:ip:xlconstant:1.1 - constant_8bit_0
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Adding cell -- xilinx.com:ip:axi_dwidth_converter:2.1 - auto_us
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <system> from BD file <D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/system.bd>
+INFO: [BD 41-433] 
+Design successfully migrated to use XCI files...
+open_bd_design: Time (s): cpu = 00:00:20 ; elapsed = 00:00:25 . Memory (MB): peak = 1297.727 ; gain = 988.281
+# write_bd_tcl -force [file join $out original_official_bd.tcl]
+INFO: [BD 5-148] Tcl file written out <D:/PLD/retina_fpga/build/b_integration_03/original_official_bd.tcl>.
+
+WARNING: [BD 5-339] The block design <system> has not been validated, therefore, a block design created using this Tcl file
+<D:/PLD/retina_fpga/build/b_integration_03/original_official_bd.tcl> may result in errors during validation.
+# set keep {ps7_0 video ps7_0_axi_periph rst_ps7_0_fclk0 rst_ps7_0_fclk1 btns_gpio switches_gpio leds_gpio rgbleds_gpio system_interrupts concat_interrupts}
+# set fp [open [file join $out pruning.txt] w]
+# foreach cell [get_bd_cells] {
+#     set name [get_property NAME $cell]
+#     if {$name ni $keep} {puts $fp "DELETE_CELL $name"; delete_bd_objs $cell}
+# }
+# set keep_interfaces {DDR FIXED_IO hdmi_in hdmi_in_ddc hdmi_out sws_2bits btns_4bits leds_4bits rgbleds_6bits}
+# foreach port [get_bd_intf_ports] {
+#     set name [get_property NAME $port]
+#     if {$name ni $keep_interfaces} {puts $fp "DELETE_INTERFACE $name"; delete_bd_objs $port}
+# }
+# foreach port [get_bd_ports] {
+#     set name [get_property NAME $port]
+#     if {$name ni {hdmi_in_hpd hdmi_out_hpd}} {puts $fp "DELETE_PORT $name"; delete_bd_objs $port}
+# }
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_addr, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_ba, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_cas_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_ck_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_ck_p, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_cke, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_cs_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_dm, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_dq, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_dqs_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_dqs_p, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_odt, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_ras_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_reset_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /DDR_we_n, as it is part of interface port /DDR
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /FIXED_IO_ddr_vrn, as it is part of interface port /FIXED_IO
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /FIXED_IO_ddr_vrp, as it is part of interface port /FIXED_IO
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /FIXED_IO_mio, as it is part of interface port /FIXED_IO
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /FIXED_IO_ps_clk, as it is part of interface port /FIXED_IO
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /FIXED_IO_ps_porb, as it is part of interface port /FIXED_IO
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /FIXED_IO_ps_srstb, as it is part of interface port /FIXED_IO
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /btns_4bits_tri_i, as it is part of interface port /btns_4bits
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_clk_n, as it is part of interface port /hdmi_in
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_clk_p, as it is part of interface port /hdmi_in
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_data_n, as it is part of interface port /hdmi_in
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_data_p, as it is part of interface port /hdmi_in
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_ddc_scl_i, as it is part of interface port /hdmi_in_ddc
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_ddc_scl_o, as it is part of interface port /hdmi_in_ddc
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_ddc_scl_t, as it is part of interface port /hdmi_in_ddc
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_ddc_sda_i, as it is part of interface port /hdmi_in_ddc
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_ddc_sda_o, as it is part of interface port /hdmi_in_ddc
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_in_ddc_sda_t, as it is part of interface port /hdmi_in_ddc
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_out_clk_n, as it is part of interface port /hdmi_out
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_out_clk_p, as it is part of interface port /hdmi_out
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_out_data_n, as it is part of interface port /hdmi_out
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /hdmi_out_data_p, as it is part of interface port /hdmi_out
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /leds_4bits_tri_o, as it is part of interface port /leds_4bits
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /rgbleds_6bits_tri_o, as it is part of interface port /rgbleds_6bits
+CRITICAL WARNING: [BD 41-1045] Cannot delete port /sws_2bits_tri_i, as it is part of interface port /sws_2bits
+# close $fp
+# set_property -dict [list CONFIG.PCW_USE_M_AXI_GP1 {0} CONFIG.PCW_USE_S_AXI_GP0 {0} CONFIG.PCW_GPIO_EMIO_GPIO_ENABLE {0} CONFIG.PCW_I2C1_PERIPHERAL_ENABLE {0}] [get_bd_cells ps7_0]
+WARNING: [BD 41-1684] Pin /ps7_0/GPIO_O is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /ps7_0/M_AXI_GP1_ACLK is now disabled. All connections to this pin have been removed. 
+WARNING: [BD 41-1684] Pin /ps7_0/S_AXI_GP0_ACLK is now disabled. All connections to this pin have been removed. 
+# set pin [get_bd_pins ps7_0/S_AXI_HP2_ACLK]
+# disconnect_bd_net [get_bd_nets -of_objects $pin] $pin
+# set_property CONFIG.PCW_S_AXI_HP2_FREQMHZ.VALUE_SRC DEFAULT [get_bd_cells ps7_0]
+# add_files -norecurse [file join $root rtl core retina_gaussian_guard.v]
+# file copy [file join $root rtl core retina_gaussian_guard.v] [file join $out gaussian_guard_used.v]
+# set_property include_dirs [list [file join $root rtl core]] [current_fileset]
+# update_compile_order -fileset sources_1
+# create_bd_cell -type module -reference retina_gaussian_guard point_stage
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_HLS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_HLS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXIS:M_HLS:S_HLS:M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/official_v2.2.1/boards/ip'.
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/a4_hls_02/solution1/impl/ip'.
+# create_bd_cell -type ip -vlnv retinafpga.local:hls:retina_segmentation_hls:1.0 segmentation_filter
+# foreach {a b} {point_stage/hls_control segmentation_filter/control_V point_stage/hls_start segmentation_filter/ap_start segmentation_filter/ap_idle point_stage/hls_idle segmentation_filter/ap_done point_stage/hls_done segmentation_filter/ap_ready point_stage/hls_ready} {connect_bd_net [get_bd_pins $a] [get_bd_pins $b]}
+WARNING: [BD 41-1306] The connection to interface pin /segmentation_filter/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /segmentation_filter/ap_idle is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /segmentation_filter/ap_done is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /segmentation_filter/ap_ready is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 point_control
+# set_property -dict [list CONFIG.C_GPIO_WIDTH {32} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_DOUT_DEFAULT {0x00000000} CONFIG.C_IS_DUAL {1} CONFIG.C_GPIO2_WIDTH {32} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_INTERRUPT_PRESENT {0}] [get_bd_cells point_control]
+# connect_bd_net [get_bd_pins point_control/gpio_io_o] [get_bd_pins point_stage/cfg_control]
+WARNING: [BD 41-1306] The connection to interface pin /point_control/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+# connect_bd_net [get_bd_pins point_stage/status_word] [get_bd_pins point_control/gpio2_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /point_control/gpio2_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+# set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_include_mm2s {1} CONFIG.c_include_s2mm {1} CONFIG.c_sg_length_width {23} CONFIG.c_m_axi_mm2s_data_width {64} CONFIG.c_m_axis_mm2s_tdata_width {32} CONFIG.c_micro_dma {0} CONFIG.c_include_mm2s_dre {0} CONFIG.c_include_s2mm_dre {0} CONFIG.c_mm2s_burst_size {16} CONFIG.c_s2mm_burst_size {16}] [get_bd_cells axi_dma_0]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 loopback_fifo
+# set_property -dict [list CONFIG.TDATA_NUM_BYTES {4} CONFIG.FIFO_DEPTH {1024} CONFIG.HAS_TKEEP {1} CONFIG.HAS_TLAST {1} CONFIG.IS_ACLK_ASYNC {0}] [get_bd_cells loopback_fifo]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 memory_axi
+# set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells memory_axi]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 reset_100m
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_one
+# set_property CONFIG.CONST_VAL {1} [get_bd_cells const_one]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_zero
+# set_property CONFIG.CONST_VAL {0} [get_bd_cells const_zero]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 zero_iop_irq
+# set_property -dict [list CONFIG.CONST_WIDTH {4} CONFIG.CONST_VAL {0}] [get_bd_cells zero_iop_irq]
+# foreach n {1 2} {connect_bd_net [get_bd_pins const_zero/dout] [get_bd_pins concat_interrupts/In$n]}
+# connect_bd_net [get_bd_pins zero_iop_irq/dout] [get_bd_pins concat_interrupts/In4]
+# foreach {a b} {
+#     ps7_0_axi_periph/M03_AXI point_control/S_AXI
+#     ps7_0_axi_periph/M06_AXI axi_dma_0/S_AXI_LITE
+#     axi_dma_0/M_AXI_MM2S memory_axi/S00_AXI
+#     axi_dma_0/M_AXI_S2MM memory_axi/S01_AXI
+#     memory_axi/M00_AXI ps7_0/S_AXI_HP2
+#     axi_dma_0/M_AXIS_MM2S point_stage/S_AXIS
+#     point_stage/M_HLS segmentation_filter/source_V_V
+#     segmentation_filter/result_V_V point_stage/S_HLS
+#     point_stage/M_AXIS loopback_fifo/S_AXIS
+#     loopback_fifo/M_AXIS axi_dma_0/S_AXIS_S2MM
+# } {connect_bd_intf_net [get_bd_intf_pins $a] [get_bd_intf_pins $b]}
+# foreach pin {ps7_0/S_AXI_HP2_ACLK point_control/s_axi_aclk point_stage/aclk segmentation_filter/ap_clk memory_axi/ACLK memory_axi/S00_ACLK memory_axi/S01_ACLK memory_axi/M00_ACLK axi_dma_0/s_axi_lite_aclk axi_dma_0/m_axi_mm2s_aclk axi_dma_0/m_axi_s2mm_aclk loopback_fifo/s_axis_aclk reset_100m/slowest_sync_clk} {connect_bd_net [get_bd_pins ps7_0/FCLK_CLK0] [get_bd_pins $pin]}
+# connect_bd_net [get_bd_pins ps7_0/FCLK_RESET0_N] [get_bd_pins reset_100m/ext_reset_in]
+# connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins reset_100m/dcm_locked]
+# set_property CONFIG.POLARITY ACTIVE_LOW [get_bd_pins reset_100m/aux_reset_in]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter POLARITY on /reset_100m/aux_reset_in. It is read-only.
+# connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins reset_100m/aux_reset_in]
+# connect_bd_net [get_bd_pins const_zero/dout] [get_bd_pins reset_100m/mb_debug_sys_rst]
+# foreach pin {memory_axi/ARESETN memory_axi/S00_ARESETN memory_axi/S01_ARESETN memory_axi/M00_ARESETN} {connect_bd_net [get_bd_pins reset_100m/interconnect_aresetn] [get_bd_pins $pin]}
+# foreach pin {axi_dma_0/axi_resetn loopback_fifo/s_axis_aresetn point_stage/aresetn point_control/s_axi_aresetn segmentation_filter/ap_rst_n} {connect_bd_net [get_bd_pins reset_100m/peripheral_aresetn] [get_bd_pins $pin]}
+# create_bd_addr_seg -range 64K -offset 0x40400000 [get_bd_addr_spaces ps7_0/Data] [get_bd_addr_segs axi_dma_0/S_AXI_LITE/Reg] SEG_algorithm_dma_Reg
+# create_bd_addr_seg -range 64K -offset 0x43C80000 [get_bd_addr_spaces ps7_0/Data] [get_bd_addr_segs point_control/S_AXI/Reg] SEG_algorithm_control_Reg
+# foreach space {axi_dma_0/Data_MM2S axi_dma_0/Data_S2MM} {create_bd_addr_seg -range 0x20000000 -offset 0 [get_bd_addr_spaces $space] [get_bd_addr_segs ps7_0/S_AXI_HP2/HP2_DDR_LOWOCM] SEG_ps7_0_HP2_DDR_LOWOCM}
+# validate_bd_design
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_G(8:0): int8 against /video/hdmi_out/frontend video_in-TDATA: p1(8:0): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_B(16:8): int8 against /video/hdmi_out/frontend video_in-TDATA: p2(16:8): int8.
+INFO: [xilinx.com:ip:v_axi4s_vid_out:4.0-308] /video/hdmi_out/frontend/v_axi4s_vid_out_0 video_in-TDATA: Validating field: rows_0_cols_0_R(24:16): int8 against /video/hdmi_out/frontend video_in-TDATA: p3(24:16): int8.
+WARNING: [xilinx.com:ip:axi_intc:4.1-5] /system_interrupts: Number of interrupt inputs (15) does not match property SENSITIVITY (12 items) - using default interrupt type Rising Edge. Please change this manually if necessary.
+WARNING: [xilinx.com:ip:axi_intc:4.1-13] /system_interrupts: Interrupt output connection Bus is selected, but the interrupt bus interface is not connected to a matching interface. Please consider selecting Single instead.
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_in/frontend/dvi2rgb_0/PixelClk have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_dvi2rgb_0_0_PixelClk 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_dynclk_0_PXL_CLK_O 
+WARNING: [BD 41-927] Following properties on pin /video/hdmi_out/frontend/axi_dynclk/PXL_CLK_5X_O have been updated from connected ip. They may not be synchronized with cell properties. You can set property on pin directly to confirm the value and resolve the warning.
+	CLK_DOMAIN=system_axi_dynclk_0_PXL_CLK_5X_O 
+validate_bd_design: Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1297.727 ; gain = 0.000
+# foreach {cell prop expected} {reset_100m CONFIG.C_EXT_RESET_HIGH 0 reset_100m CONFIG.C_AUX_RESET_HIGH 0 axi_dma_0 CONFIG.c_m_axi_s2mm_data_width 32 ps7_0 CONFIG.PCW_M_AXI_GP0_FREQMHZ 100 ps7_0 CONFIG.PCW_S_AXI_HP2_FREQMHZ 100} {if {[get_property $prop [get_bd_cells $cell]] ne $expected} {error "Unexpected $cell $prop"}}
+# save_bd_design
+WARNING: [BD 41-597] NET <S00_ARESETN_1> has no source
+WARNING: [BD 41-597] NET <S01_ARESETN_1> has no source
+WARNING: [BD 41-597] NET <S02_ARESETN_1> has no source
+WARNING: [BD 41-597] NET <S03_ARESETN_1> has no source
+WARNING: [BD 41-597] NET <SDATA_I_1> has no source
+WARNING: [BD 41-597] NET <audio_codec_ctrl_0_BCLK> has no source
+WARNING: [BD 41-597] NET <audio_codec_ctrl_0_LRCLK> has no source
+WARNING: [BD 41-597] NET <audio_codec_ctrl_0_SDATA_O> has no source
+WARNING: [BD 41-597] NET <audio_codec_ctrl_0_codec_address> has no source
+WARNING: [BD 41-597] NET <clk_wiz_10MHz_clk_out1> has no source
+WARNING: [BD 41-597] NET <concat_pmodb_dout> has no source
+WARNING: [BD 41-597] NET <concat_rp_dout> has no source
+WARNING: [BD 41-597] NET <io_data_i_1_1> has no source
+WARNING: [BD 41-597] NET <iop1_intr_ack_Dout> has no source
+WARNING: [BD 41-597] NET <iop1_iop1_intr_req> has no source
+WARNING: [BD 41-597] NET <iop2_intr_ack_1> has no source
+WARNING: [BD 41-597] NET <iop2_iop2_intr_req> has no source
+WARNING: [BD 41-597] NET <iop2_sw2pmod_data_out> has no source
+WARNING: [BD 41-597] NET <iop2_sw2pmod_tri_out> has no source
+WARNING: [BD 41-597] NET <iop3_io_data_o_1> has no source
+WARNING: [BD 41-597] NET <iop3_io_tri_o_1> has no source
+WARNING: [BD 41-597] NET <iop3_mb3_intr_req> has no source
+WARNING: [BD 41-597] NET <iop4_mb4_intr_req> has no source
+WARNING: [BD 41-597] NET <iop4_sw2rp_data_out> has no source
+WARNING: [BD 41-597] NET <iop4_sw2rp_tri_out> has no source
+WARNING: [BD 41-597] NET <logic_1_dout> has no source
+WARNING: [BD 41-597] NET <mb3_intr_ack_1> has no source
+WARNING: [BD 41-597] NET <mb_1_reset_Dout> has no source
+WARNING: [BD 41-597] NET <mb_2_reset_Dout> has no source
+WARNING: [BD 41-597] NET <mb_3_reset_Dout> has no source
+WARNING: [BD 41-597] NET <mb_iop4_intr_ack_Dout> has no source
+WARNING: [BD 41-597] NET <mb_iop4_reset_Dout> has no source
+WARNING: [BD 41-597] NET <mdm_1_debug_sys_rst> has no source
+WARNING: [BD 41-597] NET <pmod2sw_data_in_1> has no source
+WARNING: [BD 41-597] NET <pmodJB_data_in_1> has no source
+WARNING: [BD 41-597] NET <pmod_io_switch_0_sw2pmod_data_out> has no source
+WARNING: [BD 41-597] NET <pmod_io_switch_0_sw2pmod_tri_out> has no source
+WARNING: [BD 41-597] NET <pmoda_rp_pin_sel_Dout> has no source
+WARNING: [BD 41-597] NET <ps7_0_GPIO_O> has no source
+WARNING: [BD 41-597] NET <rp2sw_data_in_1> has no source
+WARNING: [BD 41-597] NET <rst_ps7_0_fclk3_interconnect_aresetn> has no source
+WARNING: [BD 41-597] NET <rst_ps7_0_fclk3_peripheral_aresetn> has no source
+Wrote  : <D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/system.bd> 
+# write_bd_tcl -force [file join $out reconstructed_bd.tcl]
+INFO: [BD 5-148] Tcl file written out <D:/PLD/retina_fpga/build/b_integration_03/reconstructed_bd.tcl>.
+
+# report_ip_status -file [file join $out ip_status.rpt]
+# set fp [open [file join $out configuration.txt] w]
+# foreach cell [lsort [get_bd_cells -hier -filter {TYPE == ip}]] {puts $fp "$cell [get_property VLNV $cell]"; foreach prop [lsort [list_property $cell]] {if {[string match CONFIG.* $prop]} {puts $fp "$prop=[get_property $prop $cell]"}}}
+# foreach seg [get_bd_addr_segs -hier] {puts $fp "$seg offset=[get_property OFFSET $seg] range=[get_property RANGE $seg]"}
+# close $fp
+# puts "B_BD_VALIDATED_HOST_ONLY"
+B_BD_VALIDATED_HOST_ONLY
+# set bd_file [get_files */system.bd]
+# generate_target all $bd_file
+INFO: [BD 41-1662] The design 'system.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-166] The net:S00_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:S01_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:S02_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:S03_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:SDATA_I_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_BCLK is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_LRCLK is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_SDATA_O is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_codec_address is not connected to a valid source.
+WARNING: [BD 41-166] The net:clk_wiz_10MHz_clk_out1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:concat_pmodb_dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:concat_rp_dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:io_data_i_1_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop1_intr_ack_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop1_iop1_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_intr_ack_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_iop2_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_sw2pmod_data_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_sw2pmod_tri_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop3_io_data_o_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop3_io_tri_o_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop3_mb3_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop4_mb4_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop4_sw2rp_data_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop4_sw2rp_tri_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:logic_1_dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb3_intr_ack_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_1_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_2_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_3_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_iop4_intr_ack_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_iop4_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mdm_1_debug_sys_rst is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmod2sw_data_in_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmodJB_data_in_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmod_io_switch_0_sw2pmod_data_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmod_io_switch_0_sw2pmod_tri_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmoda_rp_pin_sel_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:ps7_0_GPIO_O is not connected to a valid source.
+WARNING: [BD 41-166] The net:rp2sw_data_in_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:rst_ps7_0_fclk3_interconnect_aresetn is not connected to a valid source.
+WARNING: [BD 41-166] The net:rst_ps7_0_fclk3_peripheral_aresetn is not connected to a valid source.
+VHDL Output written to : D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/synth/system.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/video/axi_mem_intercon/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_rid'(1) to net 'auto_pc_to_m00_couplers_RID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/memory_axi/m00_couplers/auto_pc/m_axi_bid'(1) to net 'auto_pc_to_m00_couplers_BID'(6) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_WID'(6) to net 'axi_mem_intercon_M00_AXI_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_ARID'(6) to net 'axi_mem_intercon_M00_AXI_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP0_AWID'(6) to net 'axi_mem_intercon_M00_AXI_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_WID'(6) to net 'axi_mem_intercon_M00_AXI1_WID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_ARID'(6) to net 'axi_mem_intercon_M00_AXI1_ARID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/ps7_0/S_AXI_HP2_AWID'(6) to net 'axi_mem_intercon_M00_AXI1_AWID'(1) - Only lower order bits will be connected.
+WARNING: [BD 41-166] The net:S00_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:S01_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:S02_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:S03_ARESETN_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:SDATA_I_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_BCLK is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_LRCLK is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_SDATA_O is not connected to a valid source.
+WARNING: [BD 41-166] The net:audio_codec_ctrl_0_codec_address is not connected to a valid source.
+WARNING: [BD 41-166] The net:clk_wiz_10MHz_clk_out1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:concat_pmodb_dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:concat_rp_dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:io_data_i_1_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop1_intr_ack_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop1_iop1_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_intr_ack_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_iop2_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_sw2pmod_data_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop2_sw2pmod_tri_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop3_io_data_o_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop3_io_tri_o_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop3_mb3_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop4_mb4_intr_req is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop4_sw2rp_data_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:iop4_sw2rp_tri_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:logic_1_dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb3_intr_ack_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_1_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_2_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_3_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_iop4_intr_ack_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mb_iop4_reset_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:mdm_1_debug_sys_rst is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmod2sw_data_in_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmodJB_data_in_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmod_io_switch_0_sw2pmod_data_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmod_io_switch_0_sw2pmod_tri_out is not connected to a valid source.
+WARNING: [BD 41-166] The net:pmoda_rp_pin_sel_Dout is not connected to a valid source.
+WARNING: [BD 41-166] The net:ps7_0_GPIO_O is not connected to a valid source.
+WARNING: [BD 41-166] The net:rp2sw_data_in_1 is not connected to a valid source.
+WARNING: [BD 41-166] The net:rst_ps7_0_fclk3_interconnect_aresetn is not connected to a valid source.
+WARNING: [BD 41-166] The net:rst_ps7_0_fclk3_peripheral_aresetn is not connected to a valid source.
+VHDL Output written to : D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/sim/system.v
+VHDL Output written to : D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/hdl/system_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block btns_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block concat_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block leds_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rgbleds_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_fclk0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_fclk1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block switches_gpio .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_interrupts .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_vdma .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/proc_sys_reset_pixelclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/axis_register_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/color_convert .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/pixel_unpack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/frontend/axi_dynclk .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/frontend/color_swap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/frontend/hdmi_out_hpd_video .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/frontend/rgb2dvi_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/frontend/v_axi4s_vid_out_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_out/frontend/vtc_out .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/axis_register_slice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/color_convert .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/pixel_pack .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/frontend/axi_gpio_hdmiin .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/frontend/color_swap_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/frontend/dvi2rgb_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/frontend/v_vid_in_axi4s_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/hdmi_in/frontend/vtc_in .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block point_stage .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block segmentation_filter .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block point_control .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_dma_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block loopback_fifo .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block reset_100m .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_one .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block const_zero .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zero_iop_irq .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_axi/xbar .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_pc_3/system_auto_pc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_axi/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_us_2/system_auto_us_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block memory_axi/s01_couplers/auto_us .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_pc_1/system_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_us_0/system_auto_us_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_mem_intercon/s01_couplers/auto_us .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m09_couplers/m09_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m08_couplers/m08_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/m07_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_cc_3/system_auto_cc_3_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m07_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/m06_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_cc_2/system_auto_cc_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m06_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/m02_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_cc_1/system_auto_cc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m02_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/m01_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_cc_0/system_auto_cc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m01_couplers/auto_cc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block video/axi_interconnect_0/s00_couplers/s00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m07_couplers/m07_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m06_couplers/m06_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m05_couplers/m05_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m04_couplers/m04_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m03_couplers/m03_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m02_couplers/m02_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m01_couplers/m01_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/m00_couplers/m00_regslice .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/s00_regslice .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'd:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/ip/system_auto_pc_0/system_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+Exporting to file D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/hw_handoff/system.hwh
+Generated Block Design Tcl file D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/hw_handoff/system_bd.tcl
+Generated Hardware Definition File D:/PLD/retina_fpga/build/b_integration_03/b_integration.srcs/sources_1/bd/system/synth/system.hwdef
+generate_target: Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1362.699 ; gain = 61.801
+# set wrapper [make_wrapper -files $bd_file -top]
+# add_files -norecurse $wrapper
+# set_property top system_wrapper [current_fileset]
+# add_files -fileset constrs_1 -norecurse [file join $root vivado constraints b_integration.xdc]
+# update_compile_order -fileset sources_1
+# if {$stage eq "bd"} {exit 0}
+# launch_runs synth_1 -jobs 4
+[Mon Oct 12 04:09:54 2026] Launched system_btns_gpio_0_synth_1, system_leds_gpio_0_synth_1, system_concat_interrupts_0_synth_1, system_xbar_4_synth_1, system_xbar_1_synth_1, system_axi_vdma_0_synth_1, system_pixel_unpack_0_synth_1, system_axi_dynclk_0_synth_1, system_color_swap_0_0_synth_1, system_color_convert_0_synth_1, system_proc_sys_reset_pixelclk_0_synth_1, system_xlconcat_0_0_synth_1, system_axis_register_slice_0_0_synth_1, system_color_swap_0_1_synth_1, system_dvi2rgb_0_0_synth_1, system_vtc_in_0_synth_1, system_xbar_0_synth_1, system_pixel_pack_0_synth_1, system_v_vid_in_axi4s_0_0_synth_1, system_axi_gpio_hdmiin_0_synth_1, system_rst_ps7_0_fclk1_0_synth_1, system_switches_gpio_0_synth_1, system_system_interrupts_0_synth_1, system_ps7_0_0_synth_1, system_rgbleds_gpio_0_synth_1, system_rst_ps7_0_fclk0_0_synth_1, system_vtc_out_0_synth_1, system_rgb2dvi_0_0_synth_1, system_v_axi4s_vid_out_0_0_synth_1, system_hdmi_out_hpd_video_0_synth_1, system_axis_register_slice_0_1_synth_1, system_color_convert_1_synth_1, system_point_stage_0_synth_1, system_loopback_fifo_0_synth_1, system_auto_us_2_synth_1, system_axi_dma_0_2_synth_1, system_const_one_0_synth_1, system_reset_100m_0_synth_1, system_m06_regslice_0_synth_1, system_const_zero_0_synth_1, system_m09_regslice_0_synth_1, system_point_control_0_synth_1, system_auto_cc_3_synth_1, system_xbar_11_synth_1, system_segmentation_filter_0_synth_1, system_auto_us_0_synth_1, system_m08_regslice_0_synth_1, system_auto_pc_3_synth_1, system_auto_pc_1_synth_1, system_m07_regslice_0_synth_1, system_zero_iop_irq_0_synth_1, system_auto_cc_2_synth_1, system_m05_regslice_0_synth_1, system_m04_regslice_0_synth_1, system_m03_regslice_0_synth_1, system_m02_regslice_0_synth_1, system_m01_regslice_0_synth_1, system_auto_cc_0_synth_1, system_m00_regslice_0_synth_1, system_auto_cc_1_synth_1, system_m07_regslice_1_synth_1, system_m06_regslice_1_synth_1, system_m05_regslice_1_synth_1, system_s00_regslice_0_synth_1, system_s00_regslice_2_synth_1, system_m04_regslice_1_synth_1, system_m00_regslice_2_synth_1, system_m01_regslice_2_synth_1, system_m03_regslice_2_synth_1, system_auto_pc_0_synth_1, system_m02_regslice_2_synth_1...
+Run output will be captured here:
+system_btns_gpio_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_btns_gpio_0_synth_1/runme.log
+system_leds_gpio_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_leds_gpio_0_synth_1/runme.log
+system_concat_interrupts_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_concat_interrupts_0_synth_1/runme.log
+system_xbar_4_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_xbar_4_synth_1/runme.log
+system_xbar_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_xbar_1_synth_1/runme.log
+system_axi_vdma_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_axi_vdma_0_synth_1/runme.log
+system_pixel_unpack_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_pixel_unpack_0_synth_1/runme.log
+system_axi_dynclk_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_axi_dynclk_0_synth_1/runme.log
+system_color_swap_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_color_swap_0_0_synth_1/runme.log
+system_color_convert_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_color_convert_0_synth_1/runme.log
+system_proc_sys_reset_pixelclk_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_proc_sys_reset_pixelclk_0_synth_1/runme.log
+system_xlconcat_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_xlconcat_0_0_synth_1/runme.log
+system_axis_register_slice_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_axis_register_slice_0_0_synth_1/runme.log
+system_color_swap_0_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_color_swap_0_1_synth_1/runme.log
+system_dvi2rgb_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_dvi2rgb_0_0_synth_1/runme.log
+system_vtc_in_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_vtc_in_0_synth_1/runme.log
+system_xbar_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_xbar_0_synth_1/runme.log
+system_pixel_pack_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_pixel_pack_0_synth_1/runme.log
+system_v_vid_in_axi4s_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_v_vid_in_axi4s_0_0_synth_1/runme.log
+system_axi_gpio_hdmiin_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_axi_gpio_hdmiin_0_synth_1/runme.log
+system_rst_ps7_0_fclk1_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_rst_ps7_0_fclk1_0_synth_1/runme.log
+system_switches_gpio_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_switches_gpio_0_synth_1/runme.log
+system_system_interrupts_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_system_interrupts_0_synth_1/runme.log
+system_ps7_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_ps7_0_0_synth_1/runme.log
+system_rgbleds_gpio_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_rgbleds_gpio_0_synth_1/runme.log
+system_rst_ps7_0_fclk0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_rst_ps7_0_fclk0_0_synth_1/runme.log
+system_vtc_out_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_vtc_out_0_synth_1/runme.log
+system_rgb2dvi_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_rgb2dvi_0_0_synth_1/runme.log
+system_v_axi4s_vid_out_0_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_v_axi4s_vid_out_0_0_synth_1/runme.log
+system_hdmi_out_hpd_video_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_hdmi_out_hpd_video_0_synth_1/runme.log
+system_axis_register_slice_0_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_axis_register_slice_0_1_synth_1/runme.log
+system_color_convert_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_color_convert_1_synth_1/runme.log
+system_point_stage_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_point_stage_0_synth_1/runme.log
+system_loopback_fifo_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_loopback_fifo_0_synth_1/runme.log
+system_auto_us_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_us_2_synth_1/runme.log
+system_axi_dma_0_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_axi_dma_0_2_synth_1/runme.log
+system_const_one_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_const_one_0_synth_1/runme.log
+system_reset_100m_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_reset_100m_0_synth_1/runme.log
+system_m06_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m06_regslice_0_synth_1/runme.log
+system_const_zero_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_const_zero_0_synth_1/runme.log
+system_m09_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m09_regslice_0_synth_1/runme.log
+system_point_control_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_point_control_0_synth_1/runme.log
+system_auto_cc_3_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_cc_3_synth_1/runme.log
+system_xbar_11_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_xbar_11_synth_1/runme.log
+system_segmentation_filter_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_segmentation_filter_0_synth_1/runme.log
+system_auto_us_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_us_0_synth_1/runme.log
+system_m08_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m08_regslice_0_synth_1/runme.log
+system_auto_pc_3_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_pc_3_synth_1/runme.log
+system_auto_pc_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_pc_1_synth_1/runme.log
+system_m07_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m07_regslice_0_synth_1/runme.log
+system_zero_iop_irq_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_zero_iop_irq_0_synth_1/runme.log
+system_auto_cc_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_cc_2_synth_1/runme.log
+system_m05_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m05_regslice_0_synth_1/runme.log
+system_m04_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m04_regslice_0_synth_1/runme.log
+system_m03_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m03_regslice_0_synth_1/runme.log
+system_m02_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m02_regslice_0_synth_1/runme.log
+system_m01_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m01_regslice_0_synth_1/runme.log
+system_auto_cc_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_cc_0_synth_1/runme.log
+system_m00_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m00_regslice_0_synth_1/runme.log
+system_auto_cc_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_cc_1_synth_1/runme.log
+system_m07_regslice_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m07_regslice_1_synth_1/runme.log
+system_m06_regslice_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m06_regslice_1_synth_1/runme.log
+system_m05_regslice_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m05_regslice_1_synth_1/runme.log
+system_s00_regslice_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_s00_regslice_0_synth_1/runme.log
+system_s00_regslice_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_s00_regslice_2_synth_1/runme.log
+system_m04_regslice_1_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m04_regslice_1_synth_1/runme.log
+system_m00_regslice_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m00_regslice_2_synth_1/runme.log
+system_m01_regslice_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m01_regslice_2_synth_1/runme.log
+system_m03_regslice_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m03_regslice_2_synth_1/runme.log
+system_auto_pc_0_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_auto_pc_0_synth_1/runme.log
+system_m02_regslice_2_synth_1: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/system_m02_regslice_2_synth_1/runme.log
+[Mon Oct 12 04:09:54 2026] Launched synth_1...
+Run output will be captured here: D:/PLD/retina_fpga/build/b_integration_03/b_integration.runs/synth_1/runme.log
+launch_runs: Time (s): cpu = 00:00:03 ; elapsed = 00:00:08 . Memory (MB): peak = 1362.699 ; gain = 0.000
+# wait_on_run synth_1
+[Mon Oct 12 04:09:54 2026] Waiting for synth_1 to finish...

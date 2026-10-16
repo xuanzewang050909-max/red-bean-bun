@@ -1,0 +1,14 @@
+{
+  "executed_code_cells": 7,
+  "inert_trailing_cells": 1,
+  "canonical_executed_code_sha256": "ffba5e1e79cd6ec1185feb91b0cfd939be0617b5ac2a932328a694badb49c9c2",
+  "executed_source_sha256_before_empty_line_normalization": "44510aebde64cb320d07e0c65ef333c0da787a1d675f27b23cc24802e5c96988",
+  "ignored_single_trailing_empty_lines": [
+    {
+      "code_cell": 3,
+      "extra_trailing_empty_lines": 1
+    }
+  ],
+  "raw_notebook_code_sha256": "16f3556e87e91f1e6c0381b5afdb7618d40d02820c1e50b72c5fc975256be796",
+  "source_policy": "Exact released source, except explicitly recorded single trailing LF; read-only download check only. Runtime/release hash contract unchanged."
+}

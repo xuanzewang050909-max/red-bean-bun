@@ -1,0 +1,11 @@
+{
+  "status": "PASS_BOARD_OVERLAY_LOAD_ONLY_DMA_PENDING",
+  "evidence": "load_user_screenshot.png",
+  "sha256": "90cfa9dd2e9e1a11d21a090365bb9e70938fd2574a41478321e07ac72cd9da0b",
+  "execution_count": 3,
+  "observed_output": [
+    "PROGRAMMING_OVERLAY",
+    "LOAD_PASS: overlay loaded; no DMA transfer yet"
+  ],
+  "scope": "User screenshot confirms load_test completed without displayed errors. Official DMA driver initialization, 17-word smoke and 70-transfer suite still pending."
+}

@@ -1,0 +1,26 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 02:57:52 2026
+# Process ID: 37244
+# Current directory: D:/PLD/retina_fpga/build/a4_axis_sim_01
+# Command line: xsim.exe -mode tcl -source {xsim.dir/segmentation_axis_sim/xsim_script.tcl}
+# Log file: D:/PLD/retina_fpga/build/a4_axis_sim_01/xsim.log
+# Journal file: D:/PLD/retina_fpga/build/a4_axis_sim_01\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/segmentation_axis_sim/xsim_script.tcl
+# xsim {segmentation_axis_sim} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+SEGMENTATION_AXIS_FRAME_PASS: case=1 words=65536 status=00004001
+SEGMENTATION_AXIS_FRAME_PASS: case=2 words=65536 status=00008002
+SEGMENTATION_AXIS_FRAME_PASS: case=3 words=65536 status=0000c003
+Command failed: Simulator command interrupted.
+
+Simulation engine not responding
+The simulator has terminated in an unexpected manner.  Please review the simulation log (xsim.log) for details.
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:13:03 . Memory (MB): peak = 223.891 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Oct 12 03:10:57 2026...

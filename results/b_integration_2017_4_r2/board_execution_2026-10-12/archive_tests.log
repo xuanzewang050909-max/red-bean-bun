@@ -1,0 +1,34 @@
+test_actual_complete_records_raw_arrays_and_timings (test_b_archive.ActualEvidenceTests.test_actual_complete_records_raw_arrays_and_timings) ... ok
+test_changed_code (test_b_archive.ActualEvidenceTests.test_changed_code) ... ok
+test_display_error (test_b_archive.ActualEvidenceTests.test_display_error) ... ok
+test_dma_error (test_b_archive.ActualEvidenceTests.test_dma_error) ... ok
+test_error_output (test_b_archive.ActualEvidenceTests.test_error_output) ... ok
+test_execution_order (test_b_archive.ActualEvidenceTests.test_execution_order) ... ok
+test_fps_cannot_be_changed (test_b_archive.ActualEvidenceTests.test_fps_cannot_be_changed) ... ok
+test_independent_hash_detects_fabricated_golden_and_output (test_b_archive.ActualEvidenceTests.test_independent_hash_detects_fabricated_golden_and_output) ... ok
+test_loop_fps_cannot_be_changed (test_b_archive.ActualEvidenceTests.test_loop_fps_cannot_be_changed) ... ok
+test_mutable_notebook_metadata_and_markdown (test_b_archive.ActualEvidenceTests.test_mutable_notebook_metadata_and_markdown) ... ok
+test_nonofficial_video_binding (test_b_archive.ActualEvidenceTests.test_nonofficial_video_binding) ... ok
+test_notebook_medical_image_missing (test_b_archive.ActualEvidenceTests.test_notebook_medical_image_missing) ... ok
+test_overlapping_ddr (test_b_archive.ActualEvidenceTests.test_overlapping_ddr) ... ok
+test_partial_suite (test_b_archive.ActualEvidenceTests.test_partial_suite) ... ok
+test_raw_array_hash (test_b_archive.ActualEvidenceTests.test_raw_array_hash) ... ok
+test_raw_json_visual_pending_must_remain_original (test_b_archive.ActualEvidenceTests.test_raw_json_visual_pending_must_remain_original) ... ok
+test_raw_timing_sample_not_bound_to_summary (test_b_archive.ActualEvidenceTests.test_raw_timing_sample_not_bound_to_summary) ... ok
+test_reload_cannot_claim_same_overlay (test_b_archive.ActualEvidenceTests.test_reload_cannot_claim_same_overlay) ... ok
+test_submitted_frame_does_not_match_png (test_b_archive.ActualEvidenceTests.test_submitted_frame_does_not_match_png) ... ok
+test_warmup_exclusion (test_b_archive.ActualEvidenceTests.test_warmup_exclusion) ... ok
+test_wrong_frame_counter (test_b_archive.ActualEvidenceTests.test_wrong_frame_counter) ... ok
+test_wrong_release (test_b_archive.ActualEvidenceTests.test_wrong_release) ... ok
+test_wrong_runtime (test_b_archive.ActualEvidenceTests.test_wrong_runtime) ... ok
+test_zero_duration (test_b_archive.ActualEvidenceTests.test_zero_duration) ... ok
+test_duplicate_member (test_b_archive.BundleBoundaryTests.test_duplicate_member) ... ok
+test_missing_member (test_b_archive.BundleBoundaryTests.test_missing_member) ... ok
+test_oversized_json (test_b_archive.BundleBoundaryTests.test_oversized_json) ... ok
+test_symlink (test_b_archive.BundleBoundaryTests.test_symlink) ... ok
+test_traversal_member (test_b_archive.BundleBoundaryTests.test_traversal_member) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 9.590s
+
+OK

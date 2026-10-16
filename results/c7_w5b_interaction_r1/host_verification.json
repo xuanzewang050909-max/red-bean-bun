@@ -1,0 +1,27 @@
+{
+  "status": "HOST_CHECKS_PASS_BOARD_NOT_RUN",
+  "python_tests": 6,
+  "node_vm_checks": 5,
+  "unique_checks": 11,
+  "baseline_files_unchanged": 137,
+  "release": {
+    "status": "HOST_PACKAGE_BOARD_NOT_RUN",
+    "files": {
+      "c7_w5b_interaction.ipynb": {
+        "bytes": 6558,
+        "sha256": "e8fd21bc79e2d832118019f3c93bebf965812a8d1b94a2ee32ab5b872b20c092"
+      },
+      "c7_w5b_interaction_r1.zip": {
+        "bytes": 14765792,
+        "sha256": "6a489f9c721b40d2dbd7435bbb0c0704ee3f6844cc2f4a551181529f2b1e5fa2"
+      }
+    },
+    "embedded_files": 137
+  },
+  "host_coverage": "42 simulated native SDMA operations, HTTP/rejections/queue/manual page observations, full words/PNG and nested export offline audit; timeout retains buffers and cannot retry",
+  "initial_failure": "dev01 mock fixture omitted native owner-thread open: two test failures preserved; corrected fixture, no board failure. dev02/dev03/final checks passed.",
+  "board_status": "BOARD_NOT_RUN",
+  "physical_disconnect": "NOT_RUN",
+  "quality": "UNCHANGED_C7_NOT_FINALLY_ACCEPTED",
+  "power": "NOT_MEASURED_NO_INSTRUMENT"
+}

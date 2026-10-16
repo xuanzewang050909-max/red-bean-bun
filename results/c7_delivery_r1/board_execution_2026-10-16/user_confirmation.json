@@ -1,0 +1,7 @@
+{
+  "date": "2026-10-16",
+  "statement": "没有先正常关机、断电再上电，也没有录视频",
+  "physical_restart": "NOT_PERFORMED",
+  "video": "NOT_RECORDED",
+  "software_demo": "VERIFIED_UNCHANGED"
+}

@@ -1,0 +1,11 @@
+test_complete_pairs_parameters_warmup_and_twenty_frames (test_q4_archive_coverage.CoverageTests.test_complete_pairs_parameters_warmup_and_twenty_frames) ... ok
+test_diagnostic_incomplete_is_explicit_and_extra_manual_runs_preserved (test_q4_archive_coverage.CoverageTests.test_diagnostic_incomplete_is_explicit_and_extra_manual_runs_preserved) ... ok
+test_hidden_parameter_preview_preserves_actual_run_but_reports_incomplete (test_q4_archive_coverage.CoverageTests.test_hidden_parameter_preview_preserves_actual_run_but_reports_incomplete) ... ok
+test_manual_diagnostic_does_not_allow_incomplete_foreground_loop (test_q4_archive_coverage.CoverageTests.test_manual_diagnostic_does_not_allow_incomplete_foreground_loop) ... ok
+test_missing_pair_or_threshold_is_rejected_even_with_full_loop (test_q4_archive_coverage.CoverageTests.test_missing_pair_or_threshold_is_rejected_even_with_full_loop) ... ok
+test_unrelated_algorithm_loop_or_hidden_warmup_cannot_pass (test_q4_archive_coverage.CoverageTests.test_unrelated_algorithm_loop_or_hidden_warmup_cannot_pass) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+OK

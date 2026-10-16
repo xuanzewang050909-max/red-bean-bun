@@ -1,0 +1,257 @@
+{
+  "run_id": "02319235cab8402184eba23ac406b66e",
+  "session_id": "4341c09cebe24ec3b169c9d696079162",
+  "request": {
+    "image_id": "im0002",
+    "side": 512,
+    "threshold": 28,
+    "mode": "threshold_candidate",
+    "client_nonce": "mv6joksie5x94ltstw",
+    "algorithm": "A",
+    "mode_code": 1
+  },
+  "config_id": "277d174aa515d5be70e669096fe40dc38cc8489e0fa78dc61730fff37f0874d9",
+  "status": "COMPLETED",
+  "accepted_server_ns": 89924783710723,
+  "revision": "browser_a4_w1_r1_fixed28_real_dma",
+  "hardware_identity": {
+    "bit": {
+      "bytes": 4045683,
+      "sha256": "ad0754dcd042ad9c787f49a58a857a0f3c34919241b76a1e66dcc6481817179c"
+    },
+    "hwh": {
+      "bytes": 350105,
+      "sha256": "499f81c7165bcf585e96a25fc7e3d32f85e33734ee894ccc1b58ed91e7f1d1ea"
+    }
+  },
+  "evidence_kind": "PYNQ_PL_DMA",
+  "evidence": {
+    "evidence_kind": "PYNQ_PL_DMA",
+    "requested_control_word": 1,
+    "hardware_latched_parameter_readback": null,
+    "config_evidence": "Host control submission plus completed PL counters; threshold fixed by immutable firmware. No latched readback capability.",
+    "frame_status_before": 32770,
+    "frame_status_after": 49155,
+    "frame_count": 3,
+    "frame_counter_wrapped": false,
+    "dma_status": {
+      "mm2s": 4098,
+      "s2mm": 4098
+    },
+    "send_bytes": 1048576,
+    "recv_bytes": 1048576,
+    "buffers": {
+      "tx": {
+        "physical_address": 378535936,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      },
+      "rx": {
+        "physical_address": 380633088,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      }
+    },
+    "output_sha256": "10d112554847592aca99f497849ec568da10ca368d4a58cb76969a5050619117",
+    "raw_timestamps_ns": {
+      "config_start_ns": 89924876731769,
+      "config_end_ns": 89924876811554,
+      "dma_start_ns": 89924907289080,
+      "dma_end_ns": 89924911992360,
+      "snapshot_start_ns": 89924912114427,
+      "snapshot_end_ns": 89924918827338
+    },
+    "timing_ns": {
+      "config_ns": 79785,
+      "dma_transaction_ns": 4703280,
+      "cpu_snapshot_ns": 6712911,
+      "inference_ns": 42095569,
+      "pl_core_frame_ns": null,
+      "pl_core_cycles": null,
+      "pure_dma_transport_ns": null
+    },
+    "numeric_validation": "Structural/raw-channel/binary/FOV checks only; download raw NPY for independent full M0 comparison.",
+    "native_cache_policy": "Unmodified official transfer/wait/flush/invalidate; cacheable flag is not kernel mapping proof."
+  },
+  "input": {
+    "sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+    "file": {
+      "bytes": 1048704,
+      "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+    },
+    "rgb_sha256": "a5e9ba5aa45834867a59115b43d30d1ba540a64c578f60a864ef58149ebc6c25",
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 512,
+      "nominal_scale": 0.7314285714285714,
+      "resized_width": 512,
+      "resized_height": 443,
+      "pad_left": 0,
+      "pad_top": 34,
+      "pad_right": 0,
+      "pad_bottom": 35,
+      "effective_scale_x": 0.7314285714285714,
+      "effective_scale_y": 0.7322314049586777,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    }
+  },
+  "output": {
+    "sha256": "10d112554847592aca99f497849ec568da10ca368d4a58cb76969a5050619117",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file": {
+      "bytes": 1048704,
+      "sha256": "d8d449227253ed303944fe85a685c537f9be2f090990732cad0d9d78480eedae"
+    }
+  },
+  "quality": {
+    "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+    "vessel_pixels": 20108,
+    "fov_pixels": 207202,
+    "vessel_area_fraction": 0.09704539531471704,
+    "annotations": {
+      "AH": {
+        "tp": 7494,
+        "fp": 12614,
+        "fn": 7589,
+        "tn": 179505,
+        "dice": 0.42590435054417325,
+        "iou": 0.2705708199443983,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      },
+      "VK": {
+        "tp": 6898,
+        "fp": 13210,
+        "fn": 5679,
+        "tn": 181415,
+        "dice": 0.42208964356738565,
+        "iou": 0.2674991274673285,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      }
+    },
+    "quality_reason": null
+  },
+  "timing_ns": {
+    "config_ns": 79785,
+    "dma_transaction_ns": 4703280,
+    "cpu_snapshot_ns": 6712911,
+    "inference_ns": 42095569,
+    "pl_core_frame_ns": null,
+    "pl_core_cycles": null,
+    "pure_dma_transport_ns": null,
+    "queue_wait_ns": 7296338,
+    "input_read_ns": 85516142,
+    "raw_save_ns": 125101261,
+    "evaluation_ns": 151398148,
+    "png_encoding_ns": 4876337894,
+    "worker_result_ns": 5377247100
+  },
+  "raw_timestamps_ns": {
+    "worker_start_ns": 89924791007061,
+    "input_ready_ns": 89924876523203,
+    "config_start_ns": 89924876731769,
+    "config_end_ns": 89924876811554,
+    "dma_start_ns": 89924907289080,
+    "dma_end_ns": 89924911992360,
+    "snapshot_start_ns": 89924912114427,
+    "snapshot_end_ns": 89924918827338,
+    "raw_saved_ns": 89925043928599,
+    "evaluation_end_ns": 89925195326747,
+    "encoding_end_ns": 89930071664641,
+    "worker_result_ready_ns": 89930168254161
+  },
+  "timing_scope": "Worker result excludes final JSON publication, HTTP/polling and browser; DMA overlaps PL. Inference includes config/allocation/native DMA/read-only snapshot. Core and pure transport are unavailable.",
+  "images": {
+    "original": {
+      "url": "/api/runs/02319235cab8402184eba23ac406b66e/images/original",
+      "bytes": 277758,
+      "sha256": "b7eff622e9b5cdb8a353bb7b93398f6aee3cc119058f0825307461f26266cb6e"
+    },
+    "enhanced": {
+      "url": "/api/runs/02319235cab8402184eba23ac406b66e/images/enhanced",
+      "bytes": 78158,
+      "sha256": "377b3e51fea162a9748867433f90f9c73a81a9b2076346f2c12fcaaad001cff4"
+    },
+    "mask": {
+      "url": "/api/runs/02319235cab8402184eba23ac406b66e/images/mask",
+      "bytes": 10086,
+      "sha256": "34c983cd9071fb24cf377e00e31a018a017463ac8fcb90e85b92eca8d55c4b0a"
+    },
+    "overlay": {
+      "url": "/api/runs/02319235cab8402184eba23ac406b66e/images/overlay",
+      "bytes": 291763,
+      "sha256": "7b8b385792a0d78d4fc438db7f1905dd77e1aacb17aabd00dbc2803d704eaea9"
+    },
+    "response": {
+      "url": "/api/runs/02319235cab8402184eba23ac406b66e/images/response",
+      "bytes": 57961,
+      "sha256": "195b9cd88ba97f09b2a1844059728c12ebb314b3fbc4cbb0e55abeeaeb674399"
+    }
+  },
+  "files": {
+    "enhanced.png": {
+      "bytes": 78158,
+      "sha256": "377b3e51fea162a9748867433f90f9c73a81a9b2076346f2c12fcaaad001cff4"
+    },
+    "input_packed.npy": {
+      "bytes": 1048704,
+      "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+    },
+    "mask.png": {
+      "bytes": 10086,
+      "sha256": "34c983cd9071fb24cf377e00e31a018a017463ac8fcb90e85b92eca8d55c4b0a"
+    },
+    "original.png": {
+      "bytes": 277758,
+      "sha256": "b7eff622e9b5cdb8a353bb7b93398f6aee3cc119058f0825307461f26266cb6e"
+    },
+    "output_packed.npy": {
+      "bytes": 1048704,
+      "sha256": "d8d449227253ed303944fe85a685c537f9be2f090990732cad0d9d78480eedae"
+    },
+    "overlay.png": {
+      "bytes": 291763,
+      "sha256": "7b8b385792a0d78d4fc438db7f1905dd77e1aacb17aabd00dbc2803d704eaea9"
+    },
+    "response.png": {
+      "bytes": 57961,
+      "sha256": "195b9cd88ba97f09b2a1844059728c12ebb314b3fbc4cbb0e55abeeaeb674399"
+    }
+  },
+  "browser_timing": null,
+  "formal_quality_experiment": false,
+  "overlay_presentation": {
+    "green_rgb": [
+      0,
+      255,
+      0
+    ],
+    "alpha_percent": 65,
+    "rounding": "integer_half_up",
+    "browser_slider": "Presentation only; exported PNG retains fixed 65%"
+  }
+}

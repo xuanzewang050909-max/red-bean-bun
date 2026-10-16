@@ -1,0 +1,166 @@
+{
+  "status": "PASS_POST_ASSEMBLY_IMMUTABLE_ARTIFACTS_AND_ACTUAL_BUS_SKEW",
+  "board_status": "NOT_RUN",
+  "validation": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+    "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+    "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+  },
+  "files": 13,
+  "source_files_current": 12,
+  "bus_skew_summary": [
+    {
+      "corner": "Slow",
+      "requirement_ns": 7.0,
+      "actual_ns": 1.387,
+      "slack_ns": 5.613
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 7.0,
+      "actual_ns": 1.27,
+      "slack_ns": 5.73
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 7.0,
+      "actual_ns": 1.339,
+      "slack_ns": 5.661
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 7.0,
+      "actual_ns": 1.573,
+      "slack_ns": 5.427
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 7.0,
+      "actual_ns": 1.267,
+      "slack_ns": 5.733
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 0.975,
+      "slack_ns": 13.025
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.378,
+      "slack_ns": 12.622
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 0.844,
+      "slack_ns": 19.156
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 1.445,
+      "slack_ns": 18.555
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.033,
+      "slack_ns": 12.967
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.254,
+      "slack_ns": 12.746
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.119,
+      "slack_ns": 12.881
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 0.827,
+      "slack_ns": 19.173
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 1.582,
+      "slack_ns": 18.418
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.116,
+      "slack_ns": 12.884
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.145,
+      "slack_ns": 12.855
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.332,
+      "slack_ns": 12.668
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 0.9,
+      "slack_ns": 19.1
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 1.29,
+      "slack_ns": 18.71
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.439,
+      "slack_ns": 12.561
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 0.996,
+      "slack_ns": 13.004
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.442,
+      "slack_ns": 12.558
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 0.883,
+      "slack_ns": 19.117
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 20.0,
+      "actual_ns": 2.016,
+      "slack_ns": 17.984
+    },
+    {
+      "corner": "Slow",
+      "requirement_ns": 14.0,
+      "actual_ns": 1.019,
+      "slack_ns": 12.981
+    }
+  ],
+  "whitespace_review": "Five inherited vendor RGB pin lines retain trailing blanks, and one EOF blank line remains in B XDC; unchanged directives checked against the pinned official source. All other new source files pass whitespace check."
+}

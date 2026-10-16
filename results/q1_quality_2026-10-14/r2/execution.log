@@ -1,0 +1,21 @@
+Q1_TRAIN_CASE_COMPLETE im0001 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0001 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0003 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0003 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0005 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0005 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0077 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0077 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0082 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0082 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0162 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0162 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0235 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0235 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0239 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0239 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0255 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0255 512 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0319 256 32 candidates plus M0
+Q1_TRAIN_CASE_COMPLETE im0319 512 32 candidates plus M0
+{"status": "CPU_TRAINING_SCREEN_COMPLETE_NOT_PL", "decision": "SELECT_FOR_Q2_FEASIBILITY_ONLY", "selected_candidate": {"id": "C2_l9_d12345_m1_p28", "length": 9, "distances": [1, 2, 3, 4, 5], "margin": 1, "persistence": "none", "penalty": 28}, "eligible_count": 3}

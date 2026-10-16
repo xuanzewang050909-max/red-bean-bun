@@ -1,0 +1,13 @@
+{
+  "state": "COMPLETE",
+  "source": "\\\\.\\PhysicalDrive1",
+  "source_access": "rb (read only)",
+  "card_expected_bytes": 15931539456,
+  "timestamp": "2026-10-11 16:47:49",
+  "image_path": "D:\\PLD\\retina_fpga\\build\\sd_backups\\original_card_20261011.img",
+  "bytes_copied": 15931539456,
+  "percent": 100,
+  "sha256": "d44796135aa498bd63f4294c0742ecfce867eb92314e4597c1366b913d9ab3f7",
+  "verification": "Full destination reread matches source-stream SHA256",
+  "scope": "Full physical card including MBR, both partitions and unallocated bytes; SD untouched"
+}

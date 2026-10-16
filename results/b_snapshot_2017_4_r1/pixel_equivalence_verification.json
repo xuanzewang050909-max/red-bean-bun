@@ -1,0 +1,62 @@
+{
+  "status": "PASS_HOST_WORD_AND_FULL_CANVAS_EQUIVALENCE_ON_DOWNLOADED_REAL_ARRAY",
+  "source": {
+    "path": "build\\board_results\\b_layout_2026-10-12\\a4_output_stare_512_mode3.npy",
+    "bytes": 1048704,
+    "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+  },
+  "words": 262144,
+  "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+  "cpu_storage": {
+    "shape": [
+      262144
+    ],
+    "strides": [
+      4
+    ],
+    "dtype": "uint32",
+    "nbytes": 1048576,
+    "owndata": true,
+    "readonly_between_captures": true,
+    "has_physical_address": false
+  },
+  "input_unchanged": true,
+  "checks": [
+    {
+      "marker": 0,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "d75003138c41a5fbdb1d93f2ae975fe93bb158e1ff511d56b296e8acb7654af8"
+    },
+    {
+      "marker": 29,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "1616c024f1055d6ec16a89ad67e2bd7f50ee2daaa0442ecb855b46ba4a3b3627"
+    },
+    {
+      "marker": 99,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "2e88995338ee6d1e4741a044fb4636cb98e11c4693c5e1d7b7bab9b5293376ef"
+    },
+    {
+      "marker": 100,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "d75003138c41a5fbdb1d93f2ae975fe93bb158e1ff511d56b296e8acb7654af8"
+    },
+    {
+      "marker": -1,
+      "matched_pixels": 921600,
+      "matched_bytes": 2764800,
+      "mismatched_pixels": 0,
+      "sha256_bgr": "2e88995338ee6d1e4741a044fb4636cb98e11c4693c5e1d7b7bab9b5293376ef"
+    }
+  ],
+  "limit": "Host copy/render only. Live DMA copy and actual improvement remain NOT_RUN/NOT_MEASURED."
+}

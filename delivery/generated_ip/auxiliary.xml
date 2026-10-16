@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="retina_detector_hls" xd:componentRef="retina_detector_hls" xd:initiationInterval="1057839" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="all">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="source" xd:originalName="source" xd:direction="in" xd:interfaceRef="source_V_V" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="result" xd:originalName="result" xd:direction="out" xd:interfaceRef="result_V_V" xd:busTypeRef="axis" xd:dataWidth="32"/>
+  <xd:arg xd:name="control" xd:originalName="control" xd:direction="in" xd:interfaceRef="control_V" xd:busTypeRef="register" xd:handshakeRef="ap_none" xd:dataWidth="32" xd:firstOut="2"/>
+  <xd:latencyEstimates xd:best-case="621" xd:worst-case="1057838" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="111270" xd:FF="29971" xd:BRAM="223" xd:DSP="30"/>
+</xd:acceleratorMap>

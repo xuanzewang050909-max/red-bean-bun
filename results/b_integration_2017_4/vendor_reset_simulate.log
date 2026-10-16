@@ -1,0 +1,4 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+B_RESET_SIM_PASS: actual three vendor IPs; control/algorithm 100 MHz, video 142.857 MHz; isolation and PS reset
+$finish called at time : 18001 ns : File "D:/PLD/retina_fpga/build/b_reset_sim_03/reset_tb_used.sv" Line 36

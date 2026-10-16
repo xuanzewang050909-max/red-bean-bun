@@ -1,0 +1,15 @@
+test_all_nonready_or_overflow_flags_rejected (test_w2_quality_observer.ObserverTests.test_all_nonready_or_overflow_flags_rejected) ... ok
+test_dynamic_control_edges_and_invalid_inputs (test_w2_quality_observer.ObserverTests.test_dynamic_control_edges_and_invalid_inputs) ... ok
+test_exact_hardware_snapshot_and_ns (test_w2_quality_observer.ObserverTests.test_exact_hardware_snapshot_and_ns) ... ok
+test_hwh_identity_and_official_gpio_shape_required (test_w2_quality_observer.ObserverTests.test_hwh_identity_and_official_gpio_shape_required) ... ok
+test_inconsistent_cycle_windows_rejected (test_w2_quality_observer.ObserverTests.test_inconsistent_cycle_windows_rejected) ... ok
+test_sequence_wrap_is_explicit (test_w2_quality_observer.ObserverTests.test_sequence_wrap_is_explicit) ... ok
+test_stale_wrong_tag_or_word_counts_rejected (test_w2_quality_observer.ObserverTests.test_stale_wrong_tag_or_word_counts_rejected) ... ok
+test_torn_snapshot_retried_but_not_merged (test_w2_quality_observer.ObserverTests.test_torn_snapshot_retried_but_not_merged) ... ok
+test_unstable_snapshot_bounded_failure (test_w2_quality_observer.ObserverTests.test_unstable_snapshot_bounded_failure) ... ok
+test_wrong_identity_counter_width_and_clock_rejected (test_w2_quality_observer.ObserverTests.test_wrong_identity_counter_width_and_clock_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.001s
+
+OK

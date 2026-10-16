@@ -1,0 +1,95 @@
+{
+  "protocol": {
+    "protocol": "Q4F_C8_PROTECTED_RESIDUAL_DARK_PATHS_R4",
+    "date": "2026-10-15",
+    "baseline": "Frozen C7 d6, threshold112, actual Q4d PL download; A/C2/C5 unchanged",
+    "model_sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6",
+    "train_ids": [
+      "im0001",
+      "im0003",
+      "im0005",
+      "im0077",
+      "im0082",
+      "im0162",
+      "im0235",
+      "im0239",
+      "im0255",
+      "im0319"
+    ],
+    "reused_evaluation_ids_after_selection": [
+      "im0002",
+      "im0004",
+      "im0044",
+      "im0081",
+      "im0139",
+      "im0163",
+      "im0236",
+      "im0240",
+      "im0291",
+      "im0324"
+    ],
+    "sizes": [
+      256,
+      512
+    ],
+    "selection_annotation": "Original training AH only; all 20 images have previously been inspected, no claim of fresh holdout",
+    "high_threshold": 112,
+    "candidate_count": 16,
+    "bright_protection": "max(raw green in replicated17x17)>=192. No additions in protected region. Original Gaussian3 bright core+radius7 band is a subset, with no GT in protection. Baseline predictions preserved exactly.",
+    "fov_protection": "No new pixels within8 pixels of original FOV boundary; baseline C7 pixels preserved",
+    "weak_support": "Frozen R3 d8 grouped score>=64/96 AND SAME-direction point+longitudinal raw support from r2, outside unchanged protection. C7 seed exact, no C5 union.",
+    "connectivity": "Four/eight bounded8-neighbor synchronous stages using only eligible weak ridge pixels.",
+    "training_gates": {
+      "each_case_bright_core_and_band_changed_pixels_max": 0,
+      "each_case_removed_C7_pixels_max": 0,
+      "each_case_dice_delta_min": 0,
+      "each_case_thin_recall_delta_min": 0,
+      "each_case_skeleton_recall_delta_min": 0,
+      "each_size_macro_dice_gain_min": 0.005,
+      "each_size_macro_cldice_gain_min": 0.005,
+      "each_size_added_precision_min": 0.5,
+      "512_pooled_thin_recall_gain_min": 0.03,
+      "512_macro_skeleton_recall_gain_min": 0.02
+    },
+    "selection": "Only unchanged r1 quality-gate eligible; rank whole Dice+clDice then smaller forest/fewer stages. Existing R3 folds reused, report this adaptivity. Freeze full model before old heldout/VK; no later retune.",
+    "post_selection_gates": "All40 cases xAH/VK: bright core/band pixel identity and baseline-mask superset; each image nondecreasing Dice, thin/centerline recall and adjacent-edge coverage; each size/split/observer mean clDice nondecreasing; im0324/512 both observers thin and centerline recall strictly improve. Any failure rejects the candidate for next board release, no post-evaluation retune.",
+    "sources": [
+      "software/q4f_residual_paths.py",
+      "software/q4f_bridges.py",
+      "software/q4f_continuity.py",
+      "scripts/evaluate_q4f_residual_paths.py",
+      "scripts/evaluate_q4f_continuity.py"
+    ],
+    "resource_preflight": "Additional fixed residual forest plus reciprocal normalized features and bounded windows; actual Z2 resources/timing required.",
+    "reference": "https://scikit-image.org/docs/stable/api/skimage.filters.html#skimage.filters.apply_hysteresis_threshold",
+    "trees": [
+      4,
+      8
+    ],
+    "thresholds": [
+      64,
+      96
+    ],
+    "steps": [
+      4,
+      8
+    ],
+    "margins": [
+      0,
+      1
+    ],
+    "previous_report_sha256": "f586da4755e8095bf79e181a1a0820e99270aba852645c2052178c87d4e95f73",
+    "reason": "R3 high confidence adds primarily wider edges; mean512Dice improves up to0.0084 but thin gain<=0.0166 and clDice declines. Use grouped residual confidence at lower thresholds only for image-supported dark ridges connected to original C7, rejecting isolated false detections."
+  },
+  "commit": "791880b08563ce64337e97d5fb303a4ca756c315",
+  "baseline_sha256": "00b84a51599e07f63e44d5db099ecb72be9d432225bb525cf7f38e548684cd9f",
+  "sources": {
+    "software/q4f_residual_paths.py": "f49fd58577ba88108d4777b69600ce0558d17c81340c7b37c9ed04016ce9fd22",
+    "software/q4f_bridges.py": "603e1f6ea02889a1eaee68ff1b79824906c48fc348c01ad4375670e85372ebb5",
+    "software/q4f_continuity.py": "8b2a2819216270dc7a33f7f5bbab8753f2e6fa78c994f383d48312dc3fc53c59",
+    "scripts/evaluate_q4f_residual_paths.py": "c9c311c853495066bd4b0e49a4a3771a994f05040d11116e69c0d97b7291c21a",
+    "scripts/evaluate_q4f_continuity.py": "99fbf69e0ebb3ffedef13e1dd9775542dd68b96e2aa4223d1093889442b7539d"
+  },
+  "VK_opened": false,
+  "reused_evaluation_opened": false
+}

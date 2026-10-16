@@ -1,0 +1,6 @@
+{
+  "status": "PASS_COLOR_AND_REAL_OUTPUT_PANES_MARKER_BGR_HASH_AND_NOTEBOOK_IMAGE",
+  "medical_png_sha256": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084",
+  "color_png_sha256": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492",
+  "limit": "Independent caption rectangles excluded only for platform font differences; full notebook and PNG match. Photographs reviewed separately."
+}

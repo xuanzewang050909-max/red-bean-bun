@@ -1,0 +1,7 @@
+{
+  "source_commit": "1d206a483e75c2b425e790d6718f6fe52892dd09",
+  "release_manifest_sha256": "b27dafc949f96600d01f46a15f68305c6329a225070b606782c17b102726607d",
+  "source_hashes_checked_against_git_index": true,
+  "paired_delivery": "build/deploy/a1_point_2017_4_r1",
+  "board_status": "NOT_RUN"
+}

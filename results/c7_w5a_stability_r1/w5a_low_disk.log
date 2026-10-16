@@ -1,0 +1,10 @@
+D:\PLD\retina_c7_system\scripts\restore_c7_w5a.py:37: SyntaxWarning: invalid escape sequence '\.'
+  if re.fullmatch('[A-Za-z0-9_]+\.(npy|png)',name) is None or target!='objects/'+r['files'][name]['sha256'] or manifest['files'][target]!=r['files'][name]:
+test_low_disk_stops_before_dma (test_c7_w5a.Native.test_low_disk_stops_before_dma) ... Executing <Task pending name='Task-1' coro=<Native.asyncSetUp() running at D:\PLD\retina_c7_system\tests\test_c7_w5a.py:156> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.125 seconds
+Executing <Task finished name='Task-1' coro=<Native.asyncSetUp() done, defined at D:\PLD\retina_c7_system\tests\test_c7_w5a.py:152> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 2.234 seconds
+ok
+
+----------------------------------------------------------------------
+Ran 1 test in 2.400s
+
+OK

@@ -1,0 +1,11 @@
+{
+  "status": "PASS_FINAL_HOST_RELEASE_AND_DOCUMENTATION_REVIEW",
+  "board_status": "NOT_RUN",
+  "package_files": 12,
+  "fixed_artifacts_exact": 11,
+  "git_attested_sources_unchanged": 29,
+  "local_document_links_checked": 110,
+  "host_test_count": 87,
+  "assembled_package_check_count": 16,
+  "scope": "Final host verification of unchanged release bytes and staged source provenance; not board execution, HDMI or FPS"
+}

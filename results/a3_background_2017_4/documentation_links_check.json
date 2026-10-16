@@ -1,0 +1,465 @@
+{
+  "status": "PASS_LOCAL_DOCUMENTATION_LINKS",
+  "links": [
+    {
+      "file": "README.md",
+      "target": "results/a1_point_2017_4_r2/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/a2_gaussian_2017_4/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/m0_stare_2026-10-11/evaluation_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/algorithm_reference.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/a2_gaussian_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/a2_gaussian_2017_4/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/a3_background_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/a3_background_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/a3_background_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/a1_precheck_recovery_steps.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/board_bringup_steps.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "results/a0_dma_2017_4_r2/board_execution_2026-10-11/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/board_reference_audit.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/reuse_matrix.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/environment_report.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/base_overlay_analysis.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/base_ip_inventory.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/board_pin_mapping.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/vivado_architecture.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/demo_validation_plan.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/third_party_notice.md",
+      "exists": true
+    },
+    {
+      "file": "README.md",
+      "target": "docs/original_development_task.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/m0_stare_2026-10-11/evaluation_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a1_point_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a1_point_2017_4_r2/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a0_dma_2017_4_r2/board_execution_2026-10-11/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a0_dma_2017_4_r2/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/board/2026-10-11/board_validation_summary.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/audit/demo_status.json",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "board_pin_mapping.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../scripts/collect_board_environment.py",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "a0_dma_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "environment_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "demo_validation_plan.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/audit/demo_status.json",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "base_overlay_analysis.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "base_ip_inventory.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "reuse_matrix.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "vivado_architecture.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../references/board/download_manifest.json",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "third_party_notice.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/board/2026-10-11/board_environment_reference_check.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "a2_gaussian_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a2_gaussian_2017_4/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a0_dma_2017_4_r2/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "a3_background_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "../results/a3_background_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/board_reference_audit.md",
+      "target": "a3_background_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a1_point_2017_4_r2/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a1_point_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a0_dma_2017_4_r2/board_execution_2026-10-11/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a0_dma_2017_4_r2/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/board/2026-10-11/board_validation_summary.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/board/2026-10-11/board_environment_capture_check.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/environment.json",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/official_v2.2.1/hls.log",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/simulation/xsim.log",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/vivado_probe/capabilities.txt",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/vivado_probe.log",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/board/2026-10-11/official_image_first_boot.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/board/2026-10-11/jupyter_access_check.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/official_v2.2.1/",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/verification.json",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/audit/official_v2.2.1/packaging_revision.patch",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/board/2026-10-11/board_environment_reference_check.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "a2_gaussian_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a2_gaussian_2017_4/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a0_dma_2017_4_r2/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "a3_background_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "docs/environment_report.md",
+      "target": "../results/a3_background_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/m0_stare_2026-10-11/evaluation_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "algorithm_reference.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a1_point_2017_4_r2/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "a2_gaussian_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a2_gaussian_2017_4/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a0_dma_2017_4_r2/board_execution_2026-10-11/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a0_dma_2017_4_r2/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "board_bringup_steps.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "vendor_package_review.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "a2_gaussian_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a2_gaussian_2017_4/board_execution_2026-10-12/verification_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a0_dma_2017_4_r2/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "a3_background_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "../results/a3_background_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/reuse_matrix.md",
+      "target": "a3_background_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "docs/a3_background_reuse_audit.md",
+      "target": "a2_gaussian_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "docs/a3_background_reuse_audit.md",
+      "target": "../results/a3_background_2017_4/build_report.md",
+      "exists": true
+    },
+    {
+      "file": "docs/a3_background_reuse_audit.md",
+      "target": "a3_background_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "results/a3_background_2017_4/build_report.md",
+      "target": "../../docs/a3_background_reuse_audit.md",
+      "exists": true
+    },
+    {
+      "file": "results/a3_background_2017_4/build_report.md",
+      "target": "drc_review.md",
+      "exists": true
+    },
+    {
+      "file": "results/a3_background_2017_4/build_report.md",
+      "target": "../../docs/a3_background_validation_steps.md",
+      "exists": true
+    },
+    {
+      "file": "results/a3_background_2017_4/build_report.md",
+      "target": "failure_record.json",
+      "exists": true
+    }
+  ]
+}

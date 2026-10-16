@@ -1,0 +1,12 @@
+test_all_modes_match_m0_and_mode1_matches_board_verified_a2_mode3 (test_a3_board_runner.BackgroundRunnerTests.test_all_modes_match_m0_and_mode1_matches_board_verified_a2_mode3) ... ok
+test_faults_retain_buffers_and_block_full_suite (test_a3_board_runner.BackgroundRunnerTests.test_faults_retain_buffers_and_block_full_suite) ... ok
+test_fixed_artifacts_and_code_contract_allow_save_metadata_only (test_a3_board_runner.BackgroundRunnerTests.test_fixed_artifacts_and_code_contract_allow_save_metadata_only) ... ok
+test_full_45_frame_suite_frees_only_completed_buffers (test_a3_board_runner.BackgroundRunnerTests.test_full_45_frame_suite_frees_only_completed_buffers) ... ok
+test_invalid_size_mode_rejected_before_memory_or_hardware_access (test_a3_board_runner.BackgroundRunnerTests.test_invalid_size_mode_rejected_before_memory_or_hardware_access) ... ok
+test_preview_uses_actual_saved_bytes_and_protects_earlier_bundle (test_a3_board_runner.BackgroundRunnerTests.test_preview_uses_actual_saved_bytes_and_protects_earlier_bundle) ... ok
+test_response_saturates_both_signs_and_retains_background_for_diagnostics (test_a3_board_runner.BackgroundRunnerTests.test_response_saturates_both_signs_and_retains_background_for_diagnostics) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.510s
+
+OK

@@ -1,0 +1,619 @@
+{
+  "protocol": "Q4_FUSION_R3",
+  "status": "PREREGISTERED_BEFORE_CANDIDATE_SCORING",
+  "train_ids": [
+    "im0001",
+    "im0003",
+    "im0005",
+    "im0077",
+    "im0082",
+    "im0162",
+    "im0235",
+    "im0239",
+    "im0255",
+    "im0319"
+  ],
+  "heldout_ids": [
+    "im0002",
+    "im0004",
+    "im0044",
+    "im0081",
+    "im0139",
+    "im0163",
+    "im0236",
+    "im0240",
+    "im0291",
+    "im0324"
+  ],
+  "selection": "AH_TRAIN_ONLY",
+  "old_heldout_previously_seen": "Q3 and user screenshots; no new candidate predictions or selection on these images, no fresh independent-test claim",
+  "sizes": [
+    256,
+    512
+  ],
+  "candidates": [
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r4_m0_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r4_m0_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r4_m0_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r4_m0_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r4_m0_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r4_m1_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r4_m1_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r4_m1_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r4_m1_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r4_m1_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r8_m0_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r8_m0_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r8_m0_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r8_m0_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_r8_m0_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r8_m1_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r8_m1_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r8_m1_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r8_m1_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_r8_m1_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r4_m0_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r4_m0_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r4_m0_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r4_m0_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r4_m0_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r4_m1_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r4_m1_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r4_m1_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r4_m1_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 4,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r4_m1_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r8_m0_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r8_m0_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r8_m0_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r8_m0_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 0,
+      "id": "C5_l5_9_15_r8_m0_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r8_m1_noadd",
+      "add_margin": 0,
+      "gap": 0
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r8_m1_a2_g1",
+      "add_margin": 2,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r8_m1_a2_g3",
+      "add_margin": 2,
+      "gap": 3
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r8_m1_a4_g1",
+      "add_margin": 4,
+      "gap": 1
+    },
+    {
+      "lengths": [
+        5,
+        9,
+        15
+      ],
+      "ratio": 8,
+      "retain_margin": 1,
+      "id": "C5_l5_9_15_r8_m1_a4_g3",
+      "add_margin": 4,
+      "gap": 3
+    }
+  ],
+  "source_files": [
+    "software/q4_refinement.py",
+    "software/continuity_metrics.py",
+    "scripts/evaluate_q4_refinement.py",
+    "tests/test_q4_refinement.py",
+    "scripts/evaluate_q1_bilateral.py",
+    "software/q1_bilateral.py",
+    "software/reference.py",
+    "software/preprocessing.py",
+    "software/metrics.py",
+    "software/q4_ridge.py",
+    "scripts/evaluate_q4_ridge.py",
+    "tests/test_q4_ridge.py",
+    "software/q4_fusion.py",
+    "scripts/evaluate_q4_fusion.py",
+    "tests/test_q4_fusion.py",
+    "scripts/verify_q4_training.py",
+    "scripts/verify_q4_fusion.py"
+  ],
+  "frozen_sha256": {
+    "software/reference.py": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e",
+    "software/preprocessing.py": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18",
+    "software/metrics.py": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99",
+    "results/m0_stare_2026-10-11/evaluation.json": "4a856c0497e453f22d0637e85bad578dd507f73a83e701b089d97f531b6b8e90",
+    "data/raw/stare/stare-images.tar": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433",
+    "data/raw/stare/labels-ah.tar": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f",
+    "results/q3_quality_r1/board_execution_2026-10-14/verification.json": "28050f33b489c6f40df6a8ca764df16bd1a13e2f2c0f9d41996ec9b926b6d734"
+  },
+  "Q3_verification": "results/q3_quality_r1/board_execution_2026-10-14/verification.json",
+  "skeleton_library_version": "0.26.0",
+  "unchanged_A28_gates": {
+    "512_macro_dice_gain_min": 0.01,
+    "256_macro_dice_loss_max": 0.005,
+    "each_size_macro_recall_loss_max": 0.02,
+    "each_image_each_size_recall_loss_max": 0.05,
+    "each_size_thin_proxy_pooled_recall_loss_max": 0.03,
+    "each_size_bright_band_pooled_recall_loss_max": 0.05,
+    "512_bright_band_pooled_fp_reduction_min": 0.1,
+    "empty_region_policy": "report null recall if no GT positives; no claim of protection from an empty set",
+    "ranking_after_all_gates": "descending 512 AH macro Dice, then fewer distance filters, shorter length, lower margin, lower penalty, candidate ID",
+    "no_eligible_candidate": "REJECT_R2_FAMILY_FOR_PL; preserve all runs, do not relax gates; next revision requires its own preregistration"
+  },
+  "new_C2_gates": {
+    "each_size_dice_loss_max": 0.002,
+    "each_size_macro_recall_loss_max": 0.01,
+    "each_size_bright_recall_loss_max": 0.02,
+    "512_thin_recall_gain_min": 0.01,
+    "512_cldice_gain_min": 0.01,
+    "512_bright_fp_reduction_min": 0.1,
+    "each_image_skeleton_recall_loss_max": 0.03,
+    "added_pixel_precision_min": 0.8
+  },
+  "ranking": "After ALL old and new gates: descending 512 train AH macro Dice, smaller maximum gap, candidate ID; zero eligible => reject, no relaxed gates",
+  "processing": {
+    "threshold": 28,
+    "length_sets": [
+      [
+        5,
+        9
+      ],
+      [
+        5,
+        9,
+        15
+      ]
+    ],
+    "flanks": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "directions": [
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        1
+      ],
+      [
+        1,
+        -1
+      ]
+    ],
+    "image": "Unchanged Gaussian3 green BEFORE LUT saturation; labels never enter algorithm",
+    "integer_bounds": "Each signed flank sum +/-3825 at length15, stored int16; ratio products int32; positive count uint8. Source samples independently replicate on both axes.",
+    "retention": "For each length/direction/distance require min(L-C,R-C)>=max(1,length*retain_margin) and max<=ratio*min. OR every scale/direction/distance, intersect original C2 final mask and original FOV. ratio4/8; retain_margin0/1. No new global mask replacement.",
+    "addition": "For each selected scale and each direction OR distances passing balanced flank mean>=add_margin2/4, central left and right strictly brighter than center, and >=2/3 of centerline samples have both flanks strictly brighter. AND selected scales within same direction; widths may differ across scales. Use this weak support at both endpoints and all gap pixels.",
+    "connection": "One pass of original bridge_gaps with max gap1 or3; two retained ORIGINAL C2 endpoints, interiors absent and supported, all within original FOV. Newly added pixels cannot seed another connection. Gap0 ablation has no additions.",
+    "output": "Retained C2 final mask OR audited supported gap pixels, no further dilation/closing. C2 enhancement and original output remain untouched. CPU study only.",
+    "scope_limit": "Four directions, short gaps and finite scales cannot guarantee recovery of unseen full branches, large or curved discontinuities. These limitations are measured, not assumed solved."
+  },
+  "evaluation": {
+    "regions": "UNCHANGED Q1/Q3 diagnostic regions and FOV, full_image, bright_core, bright_band, thin_label_proxy, fov_edge",
+    "cldice": "Zhang skimage skeletons inside original FOV; topology precision=pred skeleton in GT/pred skeleton; recall=GT skeleton in pred/GT skeleton; harmonic mean. Empty GT=null. No tolerance dilation. Not complete topology proof.",
+    "adjacent_edge_coverage": "GT skeleton 8-neighbor undirected edges, covered iff both endpoints inside prediction. Local continuity proxy only, not global connectivity.",
+    "bridges": "Gate all pixels added relative to retained C2 seed, including restoration of a removed C2 pixel; separately record full C2-relative additions/removals. Same added precision>=0.8 gate. No post-connection morphology. Links retain original both-end/interior annotation audit.",
+    "cross_validation": "Finite train AH screen only; all per-image results retained. No heldout/VK new-candidate decode/score. No nested or fresh external validation claim."
+  },
+  "required_followup": [
+    "Independent integer oracle for selected candidate",
+    "Q4b actual generated RTL/100MHz resources/timing/reset/backpressure",
+    "Q4c real PYNQ full original20/AH+VK comparison and continuity; reused benchmark explicitly",
+    "Original formal W4 performance and W5 unchanged"
+  ],
+  "hardware_status": "NOT_IMPLEMENTED",
+  "board_performance": null,
+  "references": [
+    "https://doi.org/10.1016/j.compbiomed.2015.09.008",
+    "https://arxiv.org/abs/2003.07311",
+    "https://scikit-image.org/docs/0.26.x/api/skimage.morphology.html#skimage.morphology.skeletonize",
+    "https://doi.org/10.1016/j.patcog.2012.08.009"
+  ],
+  "rationale": "All 53 r1/r2 candidates rejected. Replacement sacrifices recall; unbounded replacement additions have low precision. Preserve C2-supported structure, retain using any short/long balanced response, but connect only finite two-end gaps supported at every selected scale and the central pixel. No new GT-dependent processing.",
+  "prior_experiment": "results/q4_refinement_2026-10-14/r2/training_report.json",
+  "reference_scope": "Multi-scale motivation only; custom finite integer bilateral fusion, not reproduction of published MSLD and no transfer of published accuracy."
+}

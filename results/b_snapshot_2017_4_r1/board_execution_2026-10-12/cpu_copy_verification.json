@@ -1,0 +1,21 @@
+{
+  "status": "PASS_ACTUAL_COPY_AND_PER_FRAME_LEDGER",
+  "captures": 34,
+  "prefix_captures": 1,
+  "direct_group_captures": 0,
+  "snapshot_group_captures": 33,
+  "storage": {
+    "shape": [
+      262144
+    ],
+    "strides": [
+      4
+    ],
+    "dtype": "uint32",
+    "nbytes": 1048576,
+    "owndata": true,
+    "readonly_between_captures": true,
+    "has_physical_address": false
+  },
+  "native_policy": "Original recv.wait before ordinary CPU copy; original native buffers/drivers unchanged. Recorded cacheable attribute is not evidence of the kernel mapping."
+}

@@ -1,0 +1,7 @@
+# 首个A2构建撤回记录
+
+日期：2026-10-12。build/a2_gaussian_01可以完成Vivado实现，但单周期hls_start未满足本版厂商DATAFLOW开始握手。首轮实际生成RTL仿真输入停住，未达到帧完成；仿真ROM初始化文件遗漏也保留在同轮日志。
+
+因此该bitstream未交付，也未进行板测；不得因存在bitstream/时序通过而标记功能PASS。原完整构建保留在build/a2_gaussian_01，日志为vivado_build_01.log，失败仿真为axis_simulation_attempt_01.log。
+
+修正为START保持到ap_ready，接入READY并复制原生成ROM初始化文件后，axis_simulation_attempt_02.log通过1114112字核对。修正版重新完整构建为build/a2_gaussian_02，帧适配器原始快照与当前源逐字节相同，发布只选择02。

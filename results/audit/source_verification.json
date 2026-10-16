@@ -1,0 +1,17 @@
+[
+  {
+    "tag": "v2.2.1",
+    "commit": "3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3",
+    "verified_files": 1417
+  },
+  {
+    "tag": "v3.0.1",
+    "commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+    "verified_files": 958
+  },
+  {
+    "tag": "v3.1.2",
+    "commit": "3c77124d86bab65ac7bb6beb0aa66e13c83508f2",
+    "verified_files": 959
+  }
+]

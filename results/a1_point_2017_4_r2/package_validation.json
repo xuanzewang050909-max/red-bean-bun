@@ -1,0 +1,27 @@
+{
+  "original_r2_package": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "43564417f1f5c78a261c4938d29645a902763d800ab53a9463a9f97d790b880b",
+    "current_notebook_sha256": "69e1203a503506f572639b8ed1f85e0c18e07a5ad18e71c31ce88f81d177012a",
+    "original_notebook_sha256": "69e1203a503506f572639b8ed1f85e0c18e07a5ad18e71c31ce88f81d177012a",
+    "policy": "Execution counts, outputs, notebook metadata and Markdown are excluded; all executable code must match"
+  },
+  "simulated_jupyter_save_on_real_package": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "43564417f1f5c78a261c4938d29645a902763d800ab53a9463a9f97d790b880b",
+    "current_notebook_sha256": "d51db424bd81207c95643930628ee34764f1b15ce7233307cd4e402ce55d332f",
+    "original_notebook_sha256": "69e1203a503506f572639b8ed1f85e0c18e07a5ad18e71c31ce88f81d177012a",
+    "policy": "Execution counts, outputs, notebook metadata and Markdown are excluded; all executable code must match"
+  },
+  "host_only": true,
+  "board_status": "NOT_RUN",
+  "patch_files": [
+    "a1_point_board_test.py",
+    "a1_manifest.json"
+  ],
+  "full_package": "D:\\PLD\\retina_fpga\\build\\deploy\\a1_point_2017_4_r2",
+  "patch_package": "D:\\PLD\\retina_fpga\\build\\deploy\\a1_point_precheck_fix_r2",
+  "baseline_manifest_sha256": "b27dafc949f96600d01f46a15f68305c6329a225070b606782c17b102726607d"
+}

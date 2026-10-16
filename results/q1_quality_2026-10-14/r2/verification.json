@@ -1,0 +1,28 @@
+{
+  "status": "VERIFIED_OFFLINE_TRAINING_EVIDENCE_NOT_FPGA",
+  "report_sha256": "1c40c681382a8c2ee8909fdd549464bcb46ef0a8eeb1d7c1f848eacdf6ca1347",
+  "verifier_sha256": "73a7eb8f06aeeb931ff8576861659253f4297effdb03bf5a6e0f10039dcc9f32",
+  "candidate_masks_verified": 660,
+  "mask_pixels_verified": 108134400,
+  "independent_final_metric_sets": 3960,
+  "chosen_candidate_pixels_vs_convolution_oracle": 3276800,
+  "csv_rows_checked": 4620,
+  "selected_candidate": {
+    "id": "C2_l9_d12345_m1_p28",
+    "length": 9,
+    "distances": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "margin": 1,
+    "persistence": "none",
+    "penalty": 28
+  },
+  "eligible_count": 3,
+  "production_files_unchanged": 492,
+  "new_PL_evidence": false,
+  "heldout_or_VK_decoded": false
+}

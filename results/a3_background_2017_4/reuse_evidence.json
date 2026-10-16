@@ -1,0 +1,50 @@
+{
+  "installed_vivado_hls": "2017.4",
+  "vendor_headers_not_redistributed": true,
+  "headers": [
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls_video.h",
+      "bytes": 2677,
+      "sha256": "d8435040ab58fd7a0e0c4350ec008ac0fc5dd9d8324d9921ac0c728d74d391e3"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_imgproc.h",
+      "bytes": 118181,
+      "sha256": "3cefce5cfab6e00ded0fcb4272176024e795dcc84702938372b1655087346daa"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_mem.h",
+      "bytes": 34453,
+      "sha256": "87cfad98c6b3359cab79ffc936846601c3893d6244cb9228c325f8fa3d409266"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_types.h",
+      "bytes": 18743,
+      "sha256": "bda9d2a65a94477461c7a439a537a5a340aa3e2b2b878679526821c6e97b4ce8"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls_video.h",
+      "bytes": 2677,
+      "sha256": "d8435040ab58fd7a0e0c4350ec008ac0fc5dd9d8324d9921ac0c728d74d391e3"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_imgproc.h",
+      "bytes": 118604,
+      "sha256": "714a19e21eec27ad8cfc3f67bff13c7247b19fb61556baeaf09ecbb4fb7356af"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_mem.h",
+      "bytes": 34796,
+      "sha256": "e8f0377e1ffaf6717ec2138ea4de684fb7ef259d95694ccd0b493acfa3ef7822"
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_types.h",
+      "bytes": 18743,
+      "sha256": "bda9d2a65a94477461c7a439a537a5a340aa3e2b2b878679526821c6e97b4ce8"
+    }
+  ],
+  "library_modified": false,
+  "reuse": "Unmodified Filter2D and BoxFilter<15,15,false,BORDER_REPLICATE>, SepFilter2D, Mat/LineBuffer/Window and AXIS generation",
+  "numeric_scope": "A2 Gaussian/LUT retained; uint16 225-sample box sum then (sum+112)//225; signed saturated 4*(background-enhanced)",
+  "patch_scope": "Only one generated Revision string changed to 1; installed library/RTL/clock/PS/DMA unchanged"
+}

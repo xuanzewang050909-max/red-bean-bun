@@ -1,0 +1,15 @@
+test_active_service_rejected_before_hardware (test_c7_w4_dma.Tests.test_active_service_rejected_before_hardware) ... ok
+test_cache_order_and_raw_smoke (test_c7_w4_dma.Tests.test_cache_order_and_raw_smoke) ... ok
+test_corrupt_package_rejected (test_c7_w4_dma.Tests.test_corrupt_package_rejected) ... ok
+test_faults_retain_stop_no_retry (test_c7_w4_dma.Tests.test_faults_retain_stop_no_retry) ... ok
+test_fresh_results_required (test_c7_w4_dma.Tests.test_fresh_results_required) ... ok
+test_full_six_groups_and_independent_rejection (test_c7_w4_dma.Tests.test_full_six_groups_and_independent_rejection) ... ok
+test_order_gate (test_c7_w4_dma.Tests.test_order_gate) ... ok
+test_precheck_no_download_and_single_load (test_c7_w4_dma.Tests.test_precheck_no_download_and_single_load) ... ok
+test_release_pair_and_syntax (test_c7_w4_dma.Tests.test_release_pair_and_syntax) ... ok
+test_timeout_retains_both_buffers (test_c7_w4_dma.Tests.test_timeout_retains_both_buffers) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 43.701s
+
+OK

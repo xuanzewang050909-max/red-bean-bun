@@ -1,0 +1,72 @@
+{
+  "status": "PASS_B_LAYOUT_BOARD_PIXELS_REAL_ARRAY_AND_PAIRED_RAW_TIMESTAMPS",
+  "client_received_date": "2026-10-12",
+  "verified_host_utc": "2026-10-12T10:04:02.400502+00:00",
+  "board_clock_utc_unverified": "2022-10-22T20:19:34.103928+00:00",
+  "revision": "b_layout_r1_cached_titles_and_numpy_canvas",
+  "release_manifest_sha256": "c336dff6d41cf4a49b9774b4c6ac69ba06b5b65d199d6f0de2fd66c7c4617ca7",
+  "overlay_downloads": 1,
+  "frame_records_verified": 68,
+  "input_words_verified": 17629184,
+  "raw_output_words_verified": 262144,
+  "warmup_frames_per_group": 3,
+  "timed_frames_per_group": 30,
+  "files": {
+    "b_layout_compare_executed.ipynb": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_compare_executed.ipynb",
+      "bytes": 306850,
+      "sha256": "10cc16ddbbb90caefdc662ad2a5b04029026631559ffaed7aee25af0a24ff58c"
+    },
+    "b_layout_bundle.zip": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_bundle.zip",
+      "bytes": 1242484,
+      "sha256": "71dbdf1d7f18fab0fba0de596f454803a00b8a526ef2cbb72647c95707771ab0"
+    },
+    "b_layout_result.json": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_result.json",
+      "bytes": 209409,
+      "sha256": "37bb9b0dd3af38d4ee473bef05c6439da5aee14f43e469d2e5d0ae2b8e4c6e15"
+    },
+    "a4_output_stare_512_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\a4_output_stare_512_mode3.npy",
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "b_color_pattern.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_color_pattern.png",
+      "bytes": 4378,
+      "sha256": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492"
+    },
+    "b_layout_reference.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_reference.png",
+      "bytes": 222467,
+      "sha256": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d"
+    },
+    "b_layout_cached.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_cached.png",
+      "bytes": 222467,
+      "sha256": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d"
+    },
+    "b_layout_original_final.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_original_final.png",
+      "bytes": 222468,
+      "sha256": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084"
+    },
+    "b_layout_cached_final.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\b_layout_cached_final.png",
+      "bytes": 222468,
+      "sha256": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084"
+    },
+    "monitor_color_photo.jpg": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\monitor_color_photo.jpg",
+      "bytes": 4661308,
+      "sha256": "05f8305842b99bb633f3e57b850a81b4f0e72d239cd8d93fe06d329830998f90"
+    },
+    "monitor_medical_photo.jpg": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\monitor_medical_photo.jpg",
+      "bytes": 8056251,
+      "sha256": "5125509fe2f4812be9a79a5ec444cfc5e6328a71a2cb6c0bb3afbde058fc4a4a"
+    }
+  },
+  "scope": "Two prefix records plus 66 verified output hash records, one actual saved FPGA array, full PNG pairs and all stage/loop/ratio formulas independently recomputed. Fixed ordered comparison only; no PL-only/SD/CPU/scan-Hz/clinical PASS. Raw JSON visual PENDING and original 2022 clock retained; supplied photos assessed separately."
+}

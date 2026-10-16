@@ -1,0 +1,45 @@
+
+****** xsim v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/segmentation_probe_sim/xsim_script.tcl
+# xsim {segmentation_probe_sim} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+PROBE clocks=1000 in=974 out=0 initial_space=1 closed_space=1 dilated_data=0 closed_data=0 counts_data=0
+PROBE clocks=2000 in=1958 out=0 initial_space=1 closed_space=1 dilated_data=0 closed_data=0 counts_data=0
+PROBE clocks=3000 in=2942 out=0 initial_space=1 closed_space=1 dilated_data=0 closed_data=0 counts_data=0
+PROBE clocks=4000 in=3926 out=0 initial_space=1 closed_space=1 dilated_data=0 closed_data=0 counts_data=0
+PROBE clocks=5000 in=4910 out=0 initial_space=1 closed_space=1 dilated_data=0 closed_data=0 counts_data=0
+PROBE clocks=6000 in=5898 out=0 initial_space=1 closed_space=1 dilated_data=1 closed_data=0 counts_data=0
+PROBE clocks=7000 in=6882 out=0 initial_space=1 closed_space=1 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=8000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=9000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=10000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=11000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=12000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=13000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=14000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=15000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=16000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=17000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=18000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=19000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=20000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=21000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=22000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=23000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=24000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=25000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=26000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=27000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=28000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=29000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE clocks=30000 in=7476 out=0 initial_space=1 closed_space=0 dilated_data=1 closed_data=1 counts_data=0
+PROBE_STOP_30K: diagnosis only, not PASS
+$finish called at time : 300085 ns : File "D:/PLD/retina_fpga/build/a4_axis_probe_01/segmentation_probe_tb.sv" Line 110
+exit 0
+INFO: [Common 17-206] Exiting xsim at Mon Oct 12 03:09:52 2026...

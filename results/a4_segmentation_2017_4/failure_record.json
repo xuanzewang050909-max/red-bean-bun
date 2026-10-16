@@ -1,0 +1,46 @@
+{
+  "board_status": "NOT_RUN",
+  "attempts": [
+    {
+      "attempt": "hls_01_initial_ip_export",
+      "status": "FAILED_EXPORT_ONLY_CSIM_AND_SYNTHESIS_PASSED",
+      "native_exit_code": 0,
+      "reason": "2017.4 generated decimal date Revision 2610120255 overflows signed core_revision; ERROR [IMPL 213-28]",
+      "raw_log": "hls_attempt_01.log",
+      "recovery": "Exact generated Revision string changed to 1, installed headers/RTL/interfaces unchanged; run_ippack_a4meta.tcl exported from actual impl/ip directory",
+      "recovery_log": "ip_packaging_fixed_01.log",
+      "not_counted_as_export_pass": true
+    },
+    {
+      "attempt": "a4_hls_01_axis_01_first_512_frame",
+      "status": "REJECTED_RTL_DEADLOCK_NOT_RELEASED",
+      "evidence": "axis_probe_01.log",
+      "input_index_stalled": 7476,
+      "output_index_stalled": 0,
+      "diagnosis": "aligned_closed FIFO depth1024 becomes full before vendor replicate Filter2D can produce its first 512-wide row. The constant morphology outputs are available, but neighbor count cannot complete initial window. Csim has unbounded streams and did not reveal this finite FIFO deadlock.",
+      "change": "Only project aligned_closed FIFO raised1024->2048; no vendor header or baseline interface changed",
+      "raw_original_axis_log": "axis_simulation_tool_01.log",
+      "first_generated_source_snapshot": "failed_source_01.cpp",
+      "first_build": "build/a4_segmentation_01 retained; not deployable release",
+      "recovery": "Fresh a4_hls_02/a4_axis_sim_02/a4_segmentation_02 builds and full rerun required"
+    },
+    {
+      "attempt": "hls_02_initial_ip_export",
+      "status": "KNOWN_DATE_REVISION_EXPORT_OVERFLOW_CSIM_SYNTHESIS_PASSED",
+      "native_exit_code": 0,
+      "raw_log": "hls_attempt_02.log",
+      "recovery": "ip_export_02 retains exact date Revision-only patch, corrected export log has no ERROR and saves component",
+      "recovery_log": "ip_packaging_fixed_02.log",
+      "csim_frames": 16,
+      "csim_exact_words": 2031616
+    },
+    {
+      "attempt": "host_release_gate_01",
+      "status": "FAILED_PACKAGING_SOFTWARE_NO_RELEASE_CREATED",
+      "error": "ValueError: float conversion of BUSINTERFACES XML",
+      "reason": "Local values variable reused for architecture XML comparisons after timing parse",
+      "recovery": "Rename XML local to architecture_values; retain timing numeric values and rerun all actual release gates",
+      "hardware_or_board_change": false
+    }
+  ]
+}

@@ -1,0 +1,441 @@
+{
+  "revision": "browser_a4_w1_r1_fixed28_real_dma",
+  "board_status": "NOT_RUN",
+  "phase": "W1_FIXED28_PENDING_NEW_BOARD_TEST",
+  "baseline_manifest": {
+    "bytes": 30522,
+    "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+  },
+  "baseline_original_files": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "a4_manifest.json": {
+      "bytes": 30522,
+      "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+    },
+    "a4_segmentation.bit": {
+      "bytes": 4045683,
+      "sha256": "ad0754dcd042ad9c787f49a58a857a0f3c34919241b76a1e66dcc6481817179c"
+    },
+    "a4_segmentation.hwh": {
+      "bytes": 350105,
+      "sha256": "499f81c7165bcf585e96a25fc7e3d32f85e33734ee894ccc1b58ed91e7f1d1ea"
+    },
+    "a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "a4_segmentation_check.ipynb": {
+      "bytes": 4556,
+      "sha256": "8125f1b0d4144d55f8d9801f991e031e985069ddb0baf3b07e294791627d33cd"
+    },
+    "stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "使用说明.txt": {
+      "bytes": 7626,
+      "sha256": "57d3fe8fc9ad01b5e750033eeaea1c52c23060209c13e35c9ec6c806ef4743d5"
+    }
+  },
+  "artifacts": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "a4_manifest.json": {
+      "bytes": 30522,
+      "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+    },
+    "a4_segmentation.bit": {
+      "bytes": 4045683,
+      "sha256": "ad0754dcd042ad9c787f49a58a857a0f3c34919241b76a1e66dcc6481817179c"
+    },
+    "a4_segmentation.hwh": {
+      "bytes": 350105,
+      "sha256": "499f81c7165bcf585e96a25fc7e3d32f85e33734ee894ccc1b58ed91e7f1d1ea"
+    },
+    "a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "a4_segmentation_check.ipynb": {
+      "bytes": 4556,
+      "sha256": "8125f1b0d4144d55f8d9801f991e031e985069ddb0baf3b07e294791627d33cd"
+    },
+    "evaluation_only/im0001_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4"
+    },
+    "evaluation_only/im0001_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070"
+    },
+    "evaluation_only/im0001_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+    },
+    "evaluation_only/im0001_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+    },
+    "evaluation_only/im0002_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0"
+    },
+    "evaluation_only/im0002_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a"
+    },
+    "evaluation_only/im0002_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7"
+    },
+    "evaluation_only/im0002_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873"
+    },
+    "inputs/im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "inputs/im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "inputs/im0002_256.npy": {
+      "bytes": 262272,
+      "sha256": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a"
+    },
+    "inputs/im0002_512.npy": {
+      "bytes": 1048704,
+      "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+    },
+    "pynq_app/__init__.py": {
+      "bytes": 85,
+      "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+    },
+    "pynq_app/evaluation.py": {
+      "bytes": 1912,
+      "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+    },
+    "pynq_app/hardware.py": {
+      "bytes": 10588,
+      "sha256": "8a228dbec14cbaa3f7774c52240c06a1870e1fd5c2dc55ff222bafb0ca11287d"
+    },
+    "pynq_app/launch.py": {
+      "bytes": 4579,
+      "sha256": "f80d85c540be305d0206a9bf1e7d846f1526654dbdcac84d3c6c5222064aaced"
+    },
+    "pynq_app/protocol.py": {
+      "bytes": 4959,
+      "sha256": "1f540ee7c70e73b90eca064ad532b67bc5bf89743ef4a9f9e2c05e26a05e409a"
+    },
+    "pynq_app/service.py": {
+      "bytes": 26176,
+      "sha256": "0374acc30bcf55f08b0bb341654569c81b1d6fadcee32bb8ac2158059525e5dc"
+    },
+    "stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "ui/app.js": {
+      "bytes": 11726,
+      "sha256": "481254f329ae938f4fed9440bf59638ddba501ec76f5f4e886bc8afc939249c5"
+    },
+    "ui/index.html": {
+      "bytes": 5602,
+      "sha256": "379b6448cffe8adec0f3876d75c07fa9c5361c46f7fff1e2e8a83a8ecb490045"
+    },
+    "ui/style.css": {
+      "bytes": 5073,
+      "sha256": "587b0500163935a71b536ccd61c902bac5130e6d468762510be9d6d6dacbdd5f"
+    },
+    "使用说明.txt": {
+      "bytes": 7626,
+      "sha256": "57d3fe8fc9ad01b5e750033eeaea1c52c23060209c13e35c9ec6c806ef4743d5"
+    }
+  },
+  "images": {
+    "im0001": {
+      "256": {
+        "input": "inputs/im0001_256.npy",
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+        },
+        "input_word_sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0001_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "446eb61780e82160c02ad895bf9393a2829f73819d0576e2605976c2a5f6cb27"
+          },
+          "VK": {
+            "path": "evaluation_only/im0001_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "408ba08964cf6a79afed4769f8bbf6c00afd8fd808f4730345736c1727b91ac1"
+          }
+        },
+        "rgb_source_member": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7",
+        "rgb_sha256": "7bf39582f043a1919a72c37e24bc634bef17ff1c190cfc155587e8cee3a91297"
+      },
+      "512": {
+        "input": "inputs/im0001_512.npy",
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+        },
+        "input_word_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0001_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "446eb61780e82160c02ad895bf9393a2829f73819d0576e2605976c2a5f6cb27"
+          },
+          "VK": {
+            "path": "evaluation_only/im0001_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "408ba08964cf6a79afed4769f8bbf6c00afd8fd808f4730345736c1727b91ac1"
+          }
+        },
+        "rgb_source_member": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7",
+        "rgb_sha256": "40e3e886e745feaaec6733f6f3317b038c6171b334c47e491fa60d0d0978f5ef"
+      }
+    },
+    "im0002": {
+      "256": {
+        "input": "inputs/im0002_256.npy",
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a"
+        },
+        "input_word_sha256": "3c9243960b5795d8f48ce5de91de06b9f0525d85686cfe284a4df3cddd0319bc",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0002_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "013739e1cf1de77cf6c54950e77dc15c275db840cb05d0dddcb1bf3036be7acf"
+          },
+          "VK": {
+            "path": "evaluation_only/im0002_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "695d8868e60f130f72eb994c80bf5fe35a20323953e8f72aa972ff0581d2a4d5"
+          }
+        },
+        "rgb_source_member": "a54e11ae0b07fd53e9fdd198836ed43b9df3b1946f18540c6f823552b3292b7a",
+        "rgb_sha256": "510328b024bfe986bf012e277b91725a125be227c5f2ca093d9ac02dc735bc7f"
+      },
+      "512": {
+        "input": "inputs/im0002_512.npy",
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+        },
+        "input_word_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0002_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "013739e1cf1de77cf6c54950e77dc15c275db840cb05d0dddcb1bf3036be7acf"
+          },
+          "VK": {
+            "path": "evaluation_only/im0002_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "695d8868e60f130f72eb994c80bf5fe35a20323953e8f72aa972ff0581d2a4d5"
+          }
+        },
+        "rgb_source_member": "a54e11ae0b07fd53e9fdd198836ed43b9df3b1946f18540c6f823552b3292b7a",
+        "rgb_sha256": "a5e9ba5aa45834867a59115b43d30d1ba540a64c578f60a864ef58149ebc6c25"
+      }
+    }
+  },
+  "modes": {
+    "bypass": 0,
+    "threshold_candidate": 1,
+    "closed_candidate": 2,
+    "final": 3
+  },
+  "threshold": 28,
+  "data_scope": "Two STARE images for W1 bring-up. AH/VK are not PL inputs; not the formal 20-image train/heldout experiment.",
+  "host_preparation_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "Pillow": "12.3.0",
+    "OpenCV": "5.0.0",
+    "tornado": "6.5.10"
+  },
+  "board_dependencies": "Existing measured PYNQ3.0.1 Python3.10, NumPy, Pillow, Tornado>=6.1. Check installed runtime; no automatic pip installs.",
+  "provenance": {
+    "data/raw/stare/stare-images.tar": {
+      "bytes": 18674176,
+      "sha256": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433"
+    },
+    "data/raw/stare/labels-ah.tar": {
+      "bytes": 241664,
+      "sha256": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f"
+    },
+    "data/raw/stare/labels-vk.tar": {
+      "bytes": 333824,
+      "sha256": "47474a701536b0cfdb369fdce012be36141e9f44d80387f0179446b5cb0f5576"
+    },
+    "data/raw/stare/download_manifest.json": {
+      "bytes": 1204,
+      "sha256": "4d00abf6d1cb564f4f29953cf5c55b916a1fbc5c2e863b47d04229edc814bfe2"
+    },
+    "software/preprocessing.py": {
+      "bytes": 4255,
+      "sha256": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/dma.py": {
+      "bytes": 26228,
+      "sha256": "a7e92fd180d9fa3322e81b49bb4141e08c8f5c8cb685fe608793b46acfe11d49"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/axigpio.py": {
+      "bytes": 10935,
+      "sha256": "bb386977825c5c36ee4e5ed814331c1f3105858135fc581362d01e9955d21f27"
+    },
+    "references/PYNQ/v3.0.1/pynq/buffer.py": {
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+    }
+  }
+}

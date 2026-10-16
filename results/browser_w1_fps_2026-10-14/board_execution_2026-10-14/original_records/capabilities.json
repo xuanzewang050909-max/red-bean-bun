@@ -1,0 +1,40 @@
+{
+  "revision": "browser_a4_w1_r1_fixed28_real_dma",
+  "session_id": "73cc892efe2b4bb282032f54757be104",
+  "evidence_kind": "PYNQ_PL_DMA",
+  "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION",
+  "bit": {
+    "bytes": 4045683,
+    "sha256": "ad0754dcd042ad9c787f49a58a857a0f3c34919241b76a1e66dcc6481817179c"
+  },
+  "hwh": {
+    "bytes": 350105,
+    "sha256": "499f81c7165bcf585e96a25fc7e3d32f85e33734ee894ccc1b58ed91e7f1d1ea"
+  },
+  "clock_hz": 100000000,
+  "clock_source": "Unchanged verified A4 implementation; not a new clock measurement",
+  "dma_address": "0x40400000",
+  "gpio_address": "0x41200000",
+  "algorithm": "A",
+  "modes": {
+    "bypass": 0,
+    "threshold_candidate": 1,
+    "closed_candidate": 2,
+    "final": 3
+  },
+  "threshold_choices": [
+    28
+  ],
+  "side_choices": [
+    256,
+    512
+  ],
+  "runtime_threshold_supported": false,
+  "core_cycle_readback_supported": false,
+  "latched_parameter_readback_supported": false,
+  "algorithm_B_supported": false,
+  "max_active": 1,
+  "max_pending": 1,
+  "session_run_limit": 200,
+  "timing_notice": "Client and board absolute clocks cannot be subtracted; double-rAF is an approximate paint marker, not physical display or algorithm 60 FPS."
+}

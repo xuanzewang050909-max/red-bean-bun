@@ -1,0 +1,44 @@
+#-----------------------------------------------------------
+# xsim v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Mon Oct 12 03:14:09 2026
+# Process ID: 39300
+# Current directory: D:/PLD/retina_fpga/build/a4_axis_sim_02
+# Command line: xsim.exe -mode tcl -source {xsim.dir/segmentation_axis_sim/xsim_script.tcl}
+# Log file: D:/PLD/retina_fpga/build/a4_axis_sim_02/xsim.log
+# Journal file: D:/PLD/retina_fpga/build/a4_axis_sim_02\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/segmentation_axis_sim/xsim_script.tcl
+# xsim {segmentation_axis_sim} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+SEGMENTATION_AXIS_FRAME_PASS: case=1 words=65536 status=00004001
+SEGMENTATION_AXIS_FRAME_PASS: case=2 words=65536 status=00008002
+SEGMENTATION_AXIS_FRAME_PASS: case=3 words=65536 status=0000c003
+SEGMENTATION_AXIS_PROGRESS: case=4 in=172180 out=164660
+SEGMENTATION_AXIS_FRAME_PASS: case=4 words=262144 status=00010004
+SEGMENTATION_AXIS_FRAME_PASS: case=5 words=65536 status=00014005
+SEGMENTATION_AXIS_FRAME_PASS: case=6 words=65536 status=00018006
+SEGMENTATION_AXIS_FRAME_PASS: case=7 words=65536 status=0001c007
+SEGMENTATION_AXIS_FRAME_PASS: case=8 words=65536 status=00020008
+SEGMENTATION_AXIS_PROGRESS: case=9 in=5137 out=0
+SEGMENTATION_AXIS_FRAME_PASS: case=9 words=262144 status=00024009
+SEGMENTATION_AXIS_FRAME_PASS: case=10 words=65536 status=0002800a
+SEGMENTATION_AXIS_PROGRESS: case=11 in=44995 out=37460
+SEGMENTATION_AXIS_FRAME_PASS: case=11 words=262144 status=0002c00b
+SEGMENTATION_AXIS_FRAME_PASS: case=12 words=65536 status=0003000c
+SEGMENTATION_AXIS_PROGRESS: case=13 in=83456 out=75923
+SEGMENTATION_AXIS_FRAME_PASS: case=13 words=262144 status=0003400d
+SEGMENTATION_AXIS_FRAME_PASS: case=14 words=65536 status=0003800e
+SEGMENTATION_AXIS_FRAME_PASS: case=15 words=65536 status=0003c00f
+SEGMENTATION_VALID_PASS: 15 frames, all modes, 256/512, zero edges, final FOV, STARE, isolated/broken lines, random stalls, config lock
+SEGMENTATION_AXIS_PROGRESS: case=16 in=53509 out=49557
+SEGMENTATION_AXIS_FRAME_PASS: case=16 words=65536 status=30040010
+SEGMENTATION_BAD_INPUT_PASS: complete-length early TLAST and partial keep flagged
+SEGMENTATION_AXIS_FRAME_PASS: case=17 words=65536 status=00004001
+SEGMENTATION_AXIS_SIM_PASS: cases=17 checked=1900544; generated vendor RTL, full frames, backpressure, reset recovery
+$finish called at time : 26162750 ns : File "D:/PLD/retina_fpga/tests/retina_segmentation_axis_tb.sv" Line 154
+exit 0
+INFO: [Common 17-206] Exiting xsim at Mon Oct 12 03:23:44 2026...

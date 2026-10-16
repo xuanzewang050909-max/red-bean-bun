@@ -1,0 +1,11 @@
+test_corruption_retains_buffers_and_never_reports_pass (test_a0_board_runner.RunnerTests.test_corruption_retains_buffers_and_never_reports_pass) ... ok
+test_failed_smoke_records_stage_and_retains_buffers (test_a0_board_runner.RunnerTests.test_failed_smoke_records_stage_and_retains_buffers) ... ok
+test_full_suite_rejected_before_smoke_without_changing_state (test_a0_board_runner.RunnerTests.test_full_suite_rejected_before_smoke_without_changing_state) ... ok
+test_length_mismatch_retains_buffers (test_a0_board_runner.RunnerTests.test_length_mismatch_retains_buffers) ... ok
+test_success_releases_only_completed_buffers (test_a0_board_runner.RunnerTests.test_success_releases_only_completed_buffers) ... ok
+test_timeout_and_hardware_error_are_bounded (test_a0_board_runner.RunnerTests.test_timeout_and_hardware_error_are_bounded) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.103s
+
+OK

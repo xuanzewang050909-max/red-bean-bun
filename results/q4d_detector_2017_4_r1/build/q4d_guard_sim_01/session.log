@@ -1,0 +1,23 @@
+
+****** xsim v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/q4d_guard/xsim_script.tcl
+# xsim {q4d_guard} -autoloadwcfg -runall -onfinish quit
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+run -all
+Q4D_GUARD_REJECTION_PASS: no input handshake for threshold zero/reserved bits/C5 and C7 dependencies
+Q4D_GUARD_FRAME_PASS: frame=1 words=65536 cfg=10010104 core=87381 drain=87422 gaps=938 stalls=21886
+Q4D_GUARD_FRAME_PASS: frame=2 words=262144 cfg=1002ff1b core=349525 drain=349566 gaps=3743 stalls=87422
+Q4D_GUARD_FRAME_PASS: frame=3 words=65536 cfg=10031b1d core=87381 drain=87422 gaps=938 stalls=21886
+Q4D_GUARD_FRAME_PASS: frame=4 words=65536 cfg=10041d06 core=87381 drain=87422 gaps=938 stalls=21886
+Q4D_GUARD_FRAME_PASS: frame=5 words=65536 cfg=10051c1f core=87381 drain=87422 gaps=938 stalls=21886
+Q4D_GUARD_FRAMING_PASS: preserved native counters/TLAST/TKEEP sticky errors
+Q4D_GUARD_FRAME_PASS: frame=6 words=65536 cfg=ffff703f core=87381 drain=87421 gaps=939 stalls=21885
+Q4D_GUARD_UNIT_PASS: complete_frames=6 checked_words=589824; locked parameters, exact observer clocks, atomic snapshots, saturation, framing and reset; SURROGATE_CORE_ONLY
+$finish called at time : 7870771 ns : File "D:/PLD/retina_fpga/build/q4d_guard_sim_01/retina_detector_guard_tb.sv" Line 210
+exit 0
+INFO: [Common 17-206] Exiting xsim at Thu Oct 15 02:41:35 2026...

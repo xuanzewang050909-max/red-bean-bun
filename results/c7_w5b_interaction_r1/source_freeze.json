@@ -1,0 +1,70 @@
+{
+  "pynq_w5b/evaluation.py": {
+    "bytes": 1912,
+    "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+  },
+  "pynq_w5b/hardware.py": {
+    "bytes": 12913,
+    "sha256": "5b7662c7f9010ce918dd77cfcf59734b0aa95032bf2884b2cd5f71f119a18770"
+  },
+  "pynq_w5b/launch.py": {
+    "bytes": 4619,
+    "sha256": "b3599303cf77e0354a834271c60a6d2e2d8d10483d3be89cea925c409cb7bc50"
+  },
+  "pynq_w5b/protocol.py": {
+    "bytes": 5604,
+    "sha256": "379ad6623f2b1218a2b8b5060466688338aa20c2d6ce0f8903c696fd529acb37"
+  },
+  "pynq_w5b/quality_observer.py": {
+    "bytes": 5088,
+    "sha256": "b3321acdb8d8cc961e32c0d36cf530093477346bf98cbbcf2190ebc94eb81086"
+  },
+  "pynq_w5b/service.py": {
+    "bytes": 29011,
+    "sha256": "828c1f4e445d600e62b248280a3ce275dc90246f022faa79ca6d4a5a8164f17c"
+  },
+  "pynq_w5b/__init__.py": {
+    "bytes": 85,
+    "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+  },
+  "ui_w5b/app.js": {
+    "bytes": 15001,
+    "sha256": "7da9bdf8902bdcbedd4e21c2eb3734cd66e38fd3974752f8aa635daabcd31e5e"
+  },
+  "ui_w5b/index.html": {
+    "bytes": 6689,
+    "sha256": "f9fa461fb8b0c784b6774f17e3597d0363d05522c6c962e2fa661316a0d901af"
+  },
+  "ui_w5b/style.css": {
+    "bytes": 5073,
+    "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+  },
+  "scripts/package_c7_w5b.py": {
+    "bytes": 5700,
+    "sha256": "086346b52d914d6050598329d31a2f3fadc77c3f7247c46381a19553da67539a"
+  },
+  "scripts/w5b_board.py": {
+    "bytes": 12707,
+    "sha256": "ef9a098baf41ac2682953b73db522b204f4e9f5419f8deb670312988d0b932e9"
+  },
+  "scripts/verify_c7_w5b.py": {
+    "bytes": 13367,
+    "sha256": "837f50123b029c5d60c7e44fab755e113383c95e6f62ee72db13873317937fc9"
+  },
+  "scripts/verify_w5b_run.py": {
+    "bytes": 12157,
+    "sha256": "8fce0ac4a997267834b0344b986ff9c0e599869f66c1a642b75054ecd116d0df"
+  },
+  "tests/test_c7_w5b.py": {
+    "bytes": 9926,
+    "sha256": "b580bb142ea2ed979d2e105f99cd2168bccbaa93c1a8651e2dfd5a2525a4c7b4"
+  },
+  "tests/test_w5b_client.cjs": {
+    "bytes": 4572,
+    "sha256": "2455e52a66b7d8ee55a23295117c6493bbfaa607c391f0ebc8e3defcf3877f05"
+  },
+  "docs/c7_w5b_steps.md": {
+    "bytes": 5533,
+    "sha256": "cc3b46147d5a9e717950cfbd25843e8811274b9858c661cc5b9dc647aae4ad0b"
+  }
+}

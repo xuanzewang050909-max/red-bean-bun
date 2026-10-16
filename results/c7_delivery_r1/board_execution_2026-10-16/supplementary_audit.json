@@ -1,0 +1,217 @@
+{
+  "status": "PASSED_BOOT_RUNTIME_COUNTER_EVENT_CROSSCHECK",
+  "boot": {
+    "boot_id": "31d95437-0ec6-4288-affc-ac811d9b68c0",
+    "uptime_seconds": 7582.38,
+    "scope": "Boot identity recorded; physical restart confirmed by user/video only"
+  },
+  "final_state": {
+    "session_id": "d16ecc57ff5c41bfa322367f20762a6c",
+    "service_state": "CLOSED",
+    "hardware_state": "IDLE",
+    "overlay_downloads": 1,
+    "last_completed_frame_status": 114695,
+    "active_run_id": null,
+    "pending": 0,
+    "completed": 7,
+    "accepted": 7,
+    "run_limit": 42,
+    "retained_buffer_count": 0,
+    "error": null,
+    "evidence_kind": "PYNQ_PL_DMA",
+    "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+  },
+  "runs": [
+    {
+      "run_id": "33790d0dc0174e3cba0883abb1a25177",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 112,
+        "algorithm": "C7",
+        "mode": "final",
+        "client_nonce": "mva2nv8wi07i6xuwxc",
+        "png_profile": "fast",
+        "mode_code": 3
+      },
+      "output": {
+        "sha256": "fecc4f581caee421298f5ba264e8d260099b23210044aac0dbe445146da75f8b",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "67967181d6b40a9c54671588b7a7e14c20234602de44dc31d080ecae0950fced"
+        }
+      },
+      "latency_ms": 1883.9000000059605
+    },
+    {
+      "run_id": "20a5ab817e3647f59ec124c5b846cc5a",
+      "request": {
+        "image_id": "im0324_nogt",
+        "side": 512,
+        "threshold": 112,
+        "algorithm": "C7",
+        "mode": "final",
+        "client_nonce": "mva2o9agjfudp2j9py8",
+        "png_profile": "fast",
+        "mode_code": 3
+      },
+      "output": {
+        "sha256": "67d7e20fc4ebd4c8258eb042a802ba91d9a2e7f9707ac3bb516d044c214175b1",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "40a4fd8a66022c840f7c66a598adb4e200b36e5d01cbe53b7c1934b1513d04b1"
+        }
+      },
+      "latency_ms": 1492.5999999940395
+    },
+    {
+      "run_id": "c05f72fd5ff74d44b91e345d5230d98b",
+      "request": {
+        "image_id": "im0324",
+        "side": 512,
+        "threshold": 112,
+        "algorithm": "C7",
+        "mode": "bypass",
+        "client_nonce": "mva2om4vls6z8er97n",
+        "png_profile": "fast",
+        "mode_code": 0
+      },
+      "output": {
+        "sha256": "a06d509bed95c572a7619b927c55e563936ce498f305c55d3362e25bba367811",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "cf478ba3bfd160f253e19bed352c214e8cbb6b7be8095b24c9d2eb4ee7da366f"
+        }
+      },
+      "latency_ms": 763.5
+    },
+    {
+      "run_id": "18eddfd3179c4529b6bd2c48ff929d69",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "algorithm": "C2",
+        "mode": "threshold_candidate",
+        "client_nonce": "mva2ozx3n08wdrxwt",
+        "png_profile": "fast",
+        "mode_code": 1
+      },
+      "output": {
+        "sha256": "446f0c3ce1a7afb43b7dd7a1bb87ecaa9bed436b7cd691d4956009f5ecc10ebc",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "e8906c319735fb9729131ed52844560de9c65f77b060814bab6ba809146efd48"
+        }
+      },
+      "latency_ms": 1613
+    },
+    {
+      "run_id": "56105eb063884695b9e5d71e61b30c4f",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "algorithm": "C2",
+        "mode": "closed_candidate",
+        "client_nonce": "mva2pdprs16jwjsrtr9",
+        "png_profile": "fast",
+        "mode_code": 2
+      },
+      "output": {
+        "sha256": "b9b879ece0bfb350ca110504487c75ac5a1dbf748230fcc0890fc417eeb1755a",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "ce8310f8f9e4f6e42d30469f4f7893e70a03be702e99ee9e5a7cb44572b533c6"
+        }
+      },
+      "latency_ms": 1656.5999999940395
+    },
+    {
+      "run_id": "974fc09f3b4045fa91271068afe5f56a",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 28,
+        "algorithm": "C2",
+        "mode": "final",
+        "client_nonce": "mva2pnraoueh0vzfgno",
+        "png_profile": "fast",
+        "mode_code": 3
+      },
+      "output": {
+        "sha256": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "7bddf3c7e785b31d31053f911f43d35ada70c55075f1e3f4b7d0f4395f96bcd5"
+        }
+      },
+      "latency_ms": 1678.4000000059605
+    },
+    {
+      "run_id": "6514135a64f248418efe394ee44c86ae",
+      "request": {
+        "image_id": "im0001",
+        "side": 512,
+        "threshold": 112,
+        "algorithm": "C7",
+        "mode": "final",
+        "client_nonce": "mva2q8eu4i5i3uw4qyy",
+        "png_profile": "fast",
+        "mode_code": 3
+      },
+      "output": {
+        "sha256": "fecc4f581caee421298f5ba264e8d260099b23210044aac0dbe445146da75f8b",
+        "shape": [
+          512,
+          512
+        ],
+        "dtype": "uint32",
+        "words": 262144,
+        "file": {
+          "bytes": 1048704,
+          "sha256": "67967181d6b40a9c54671588b7a7e14c20234602de44dc31d080ecae0950fced"
+        }
+      },
+      "latency_ms": 1633.800000011921
+    }
+  ],
+  "physical_restart": "AWAITING_USER_CONFIRMATION",
+  "video": "NOT_RECEIVED"
+}

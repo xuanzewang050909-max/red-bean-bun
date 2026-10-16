@@ -1,0 +1,205 @@
+
+
+================================================================
+== Vivado HLS Report for 'retina_refined_hls'
+================================================================
+* Date:           Wed Oct 14 15:57:21 2026
+
+* Version:        2017.4 (Build 2086221 on Fri Dec 15 21:13:33 MST 2017)
+* Project:        q4_refined_hls_02
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|      8.70|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+---------+-----+---------+----------+
+    |    Latency    |    Interval   | Pipeline |
+    | min |   max   | min |   max   |   Type   |
+    +-----+---------+-----+---------+----------+
+    |  620|  1057837|  614|  1057808| dataflow |
+    +-----+---------+-----+---------+----------+
+
+    + Detail: 
+        * Instance: 
+        +-------------------------+----------------------+-----+---------+-----+---------+----------+
+        |                         |                      |    Latency    |    Interval   | Pipeline |
+        |         Instance        |        Module        | min |   max   | min |   max   |   Type   |
+        +-------------------------+----------------------+-----+---------+-----+---------+----------+
+        |profile_evidence_U0      |profile_evidence      |  613|   280837|  613|   280837|   none   |
+        |retina_refined_base_U0   |retina_refined_base   |  602|  1053726|  596|  1053698| dataflow |
+        |finite_gap_filter_U0     |finite_gap_filter     |   25|  1057807|   25|  1057807|   none   |
+        |gaussian_sum_U0          |gaussian_sum          |  162|   267282|  162|   267282|   none   |
+        |seed_flags_U0            |seed_flags            |    2|   524290|    2|   524290|   none   |
+        |refined_join_U0          |refined_join          |    2|   524290|    2|   524290|   none   |
+        |gaussian_round_U0        |gaussian_round        |    2|   524290|    2|   524290|   none   |
+        |fork_input_U0            |fork_input            |    2|   524289|    2|   524289|   none   |
+        |Block_proc_U0            |Block_proc            |    0|        0|    0|        0|   none   |
+        |Block_proc286_U0         |Block_proc286         |    1|        1|    1|        1|   none   |
+        |retina_refined_hls_e_U0  |retina_refined_hls_e  |    0|        0|    0|        0|   none   |
+        +-------------------------+----------------------+-----+---------+-----+---------+----------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       0|     92|
+|FIFO             |       21|      -|     663|   2029|
+|Instance         |      149|      1|   16960|  70463|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|     36|
+|Register         |        -|      -|       6|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |      170|      1|   17629|  72620|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |       60|   ~0  |      16|    136|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+-------+------+-------+
+    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF  |  LUT  |
+    +-------------------------+----------------------+---------+-------+------+-------+
+    |Block_proc_U0            |Block_proc            |        0|      0|     3|    138|
+    |Block_proc286_U0         |Block_proc286         |        0|      0|     4|     66|
+    |finite_gap_filter_U0     |finite_gap_filter     |        6|      0|   787|   3803|
+    |fork_input_U0            |fork_input            |        0|      0|   114|    249|
+    |gaussian_round_U0        |gaussian_round        |        0|      0|    55|    204|
+    |gaussian_sum_U0          |gaussian_sum          |        3|      0|   449|   1649|
+    |profile_evidence_U0      |profile_evidence      |       19|      0|  6094|  34607|
+    |refined_join_U0          |refined_join          |        0|      0|   116|    294|
+    |retina_refined_base_U0   |retina_refined_base   |      121|      1|  9247|  29161|
+    |retina_refined_hls_e_U0  |retina_refined_hls_e  |        0|      0|     3|     44|
+    |seed_flags_U0            |seed_flags            |        0|      0|    88|    248|
+    +-------------------------+----------------------+---------+-------+------+-------+
+    |Total                    |                      |      149|      1| 16960|  70463|
+    +-------------------------+----------------------+---------+-------+------+-------+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------------+---------+-----+-----+-------+-----+---------+
+    |           Name           | BRAM_18K|  FF | LUT | Depth | Bits| Size:D*B|
+    +--------------------------+---------+-----+-----+-------+-----+---------+
+    |aligned_V_V_U             |        8|   90|  252|   4096|   32|   131072|
+    |base_result_V_V_U         |        2|   50|   44|     32|   32|     1024|
+    |base_source_V_V_U         |        2|   50|   44|     32|   32|     1024|
+    |control_V_c34_U           |        0|    5|   44|      1|   32|       32|
+    |control_V_c35_U           |        0|    5|   44|      2|   32|       64|
+    |control_V_c_U             |        0|    5|   44|      1|   32|       32|
+    |count_cast_cast29_lo_1_U  |        0|    5|   31|      2|   19|       38|
+    |count_cast_cast29_lo_2_U  |        0|    5|   31|      2|   19|       38|
+    |count_cast_cast29_lo_3_U  |        0|    5|   31|      1|   19|       19|
+    |count_cast_cast29_lo_U    |        0|    5|   31|      2|   19|       38|
+    |evidence_data_stream_U    |        8|  183|  580|  16384|    8|   131072|
+    |filtered_cols_V_c_U       |        0|    5|   22|      4|   10|       40|
+    |filtered_data_stream_U    |        0|    8|   31|     32|    8|      256|
+    |filtered_rows_V_c_U       |        0|    5|   22|      4|   10|       40|
+    |flags_cols_V_c_U          |        0|    5|   23|      6|   10|       60|
+    |flags_data_stream_0_U     |        0|    8|   31|     32|    8|      256|
+    |flags_rows_V_c_U          |        0|    5|   23|      6|   10|       60|
+    |fov_V_V_U                 |        1|  179|  536|  16384|    1|    16384|
+    |green_cols_V_c_U          |        0|    5|   22|      2|   10|       20|
+    |green_data_stream_0_U     |        0|    8|   31|     32|    8|      256|
+    |green_rows_V_c_U          |        0|    5|   22|      2|   10|       20|
+    |mask_data_stream_0_s_U    |        0|    8|   31|     32|    8|      256|
+    |sums_data_stream_0_s_U    |        0|    8|   42|     32|   16|      512|
+    |val_assign_loc_c_U        |        0|    6|   17|      7|    1|        7|
+    +--------------------------+---------+-----+-----+-------+-----+---------+
+    |Total                     |       21|  663| 2029|  37130|  386|   282620|
+    +--------------------------+---------+-----+-----+-------+-----+---------+
+
+    * Expression: 
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |               Variable Name              | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |fork_input_U0_ap_ready_count              |     +    |      0|  0|  10|           2|           1|
+    |retina_refined_hls_e_U0_ap_ready_count    |     +    |      0|  0|  10|           2|           1|
+    |Block_proc_U0_start_full_n                |    and   |      0|  0|   8|           1|           1|
+    |ap_idle                                   |    and   |      0|  0|   8|           1|           1|
+    |ap_sync_ready                             |    and   |      0|  0|   8|           1|           1|
+    |fork_input_U0_ap_start                    |    and   |      0|  0|   8|           1|           1|
+    |fork_input_U0_start_full_n                |    and   |      0|  0|   8|           1|           1|
+    |retina_refined_hls_e_U0_ap_start          |    and   |      0|  0|   8|           1|           1|
+    |retina_refined_hls_e_U0_start_full_n      |    and   |      0|  0|   8|           1|           1|
+    |ap_sync_fork_input_U0_ap_ready            |    or    |      0|  0|   8|           1|           1|
+    |ap_sync_retina_refined_hls_e_U0_ap_ready  |    or    |      0|  0|   8|           1|           1|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+    |Total                                     |          |      0|  0|  92|          13|          11|
+    +------------------------------------------+----------+-------+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |                     Name                     | LUT| Input Size| Bits| Total Bits|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_fork_input_U0_ap_ready            |   9|          2|    1|          2|
+    |ap_sync_reg_retina_refined_hls_e_U0_ap_ready  |   9|          2|    1|          2|
+    |fork_input_U0_ap_ready_count                  |   9|          2|    2|          4|
+    |retina_refined_hls_e_U0_ap_ready_count        |   9|          2|    2|          4|
+    +----------------------------------------------+----+-----------+-----+-----------+
+    |Total                                         |  36|          8|    6|         12|
+    +----------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+---+----+-----+-----------+
+    |                     Name                     | FF| LUT| Bits| Const Bits|
+    +----------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_fork_input_U0_ap_ready            |  1|   0|    1|          0|
+    |ap_sync_reg_retina_refined_hls_e_U0_ap_ready  |  1|   0|    1|          0|
+    |fork_input_U0_ap_ready_count                  |  2|   0|    2|          0|
+    |retina_refined_hls_e_U0_ap_ready_count        |  2|   0|    2|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+    |Total                                         |  6|   0|    6|          0|
+    +----------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------------+-----+-----+------------+--------------------+--------------+
+|     RTL Ports     | Dir | Bits|  Protocol  |    Source Object   |    C Type    |
++-------------------+-----+-----+------------+--------------------+--------------+
+|source_V_V_TDATA   |  in |   32|    axis    |     source_V_V     |    pointer   |
+|source_V_V_TVALID  |  in |    1|    axis    |     source_V_V     |    pointer   |
+|source_V_V_TREADY  | out |    1|    axis    |     source_V_V     |    pointer   |
+|result_V_V_TDATA   | out |   32|    axis    |     result_V_V     |    pointer   |
+|result_V_V_TVALID  | out |    1|    axis    |     result_V_V     |    pointer   |
+|result_V_V_TREADY  |  in |    1|    axis    |     result_V_V     |    pointer   |
+|control_V          |  in |   32|   ap_none  |      control_V     |    scalar    |
+|ap_clk             |  in |    1| ap_ctrl_hs | retina_refined_hls | return value |
+|ap_rst_n           |  in |    1| ap_ctrl_hs | retina_refined_hls | return value |
+|ap_done            | out |    1| ap_ctrl_hs | retina_refined_hls | return value |
+|ap_start           |  in |    1| ap_ctrl_hs | retina_refined_hls | return value |
+|ap_ready           | out |    1| ap_ctrl_hs | retina_refined_hls | return value |
+|ap_idle            | out |    1| ap_ctrl_hs | retina_refined_hls | return value |
++-------------------+-----+-----+------------+--------------------+--------------+
+

@@ -1,0 +1,42 @@
+{
+  "status": {
+    "session_id": "73cc892efe2b4bb282032f54757be104",
+    "service_state": "READY",
+    "hardware_state": "IDLE",
+    "overlay_downloads": 1,
+    "last_completed_frame_status": 327700,
+    "active_run_id": null,
+    "pending": 0,
+    "completed": 20,
+    "accepted": 20,
+    "run_limit": 200,
+    "retained_buffer_count": 0,
+    "error": null,
+    "evidence_kind": "PYNQ_PL_DMA",
+    "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+  },
+  "run_ids": [
+    "1ad4eb218ee040039a9ab1fc50f63ca3",
+    "0e8a8cad17564ea4a676079ad5490555",
+    "5dd2caa5e6f74add9a744353564c269f",
+    "7a1bb158c96a4521ad2becd5ba5142b3",
+    "9ada2fbf5dac4cf19c9264b19e3f9d1b",
+    "cc7d1aad021141adb1fb5d8eaceeee7d",
+    "025aca5eaf4643f6b0a8c74f08e1d23d",
+    "5769ba87fb124b34bc2c3e8c9cd33310",
+    "80bbdc2589e74844879aff4dfcb9e4de",
+    "b6af6afea0274f61803e850f10b85a65",
+    "33a9366517b2486495c9d525c0c897a3",
+    "d0e71460ce2c4bf09c49efbfcaa348da",
+    "e146b63e3f3b4cdba94ff04333a59a42",
+    "2ad4879ba7564cfe84bda1918f1be345",
+    "d81f0b93f49849b4838a950bcfd8d552",
+    "cb156cfba561498a837ea759a8ccd5ee",
+    "2d0df909346b4c2cb94205b6791e76ae",
+    "55d571ef519b4eff8c9cb0d02820dae0",
+    "b7b8888d43954960a26122a4715ea658",
+    "8512c74e00174337ae95a95e8b818c68"
+  ],
+  "export_server_ns": 117504408093281,
+  "scope": "W1 bring-up only; board acceptance requires independent downloaded-array verification"
+}

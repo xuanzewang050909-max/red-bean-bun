@@ -1,0 +1,2 @@
+First packaging attempt: Q3 validator compared the existing W4a candidate ID string to the full Q3 candidate dictionary. Corrected comparison to protocol candidate id; frozen candidate unchanged. Failed package preserved at build/q3_initial_package_failure.
+First test attempt: 13 tests, 12 passed; integration stopped at an incorrect test-only HOST evidence literal (HOST_TEST_NO_BOARD instead of existing HOST_TEST_DOUBLE_NOT_BOARD), after all 80 collection tasks/export completed. Corrected test literal; no runtime change. Original collection remains explicitly HOST only.

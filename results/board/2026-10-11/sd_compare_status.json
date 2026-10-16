@@ -1,0 +1,10 @@
+{
+  "state": "COMPLETE",
+  "timestamp": "2026-10-11 17:25:16",
+  "scope": "Source SD read-only; no card writes or repairs",
+  "percent": 100,
+  "result_file": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\sd_compare_result.json",
+  "exact_image_match": false,
+  "differing_sectors": 6,
+  "linux_partition_exact_match": true
+}

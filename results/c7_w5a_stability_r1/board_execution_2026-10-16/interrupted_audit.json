@@ -1,0 +1,46 @@
+{
+  "status": "INTERRUPTED_NOT_STABILITY_PASS",
+  "interruption": {
+    "classification": "INCOMPLETE_NOT_PASS",
+    "reason": "Browser observation rejected with HTTP 422; page later refreshed",
+    "before_close": {
+      "session_id": "bfd719de89da4ce5aaef62fbcb1f521b",
+      "service_state": "READY",
+      "hardware_state": "IDLE",
+      "overlay_downloads": 1,
+      "last_completed_frame_status": 81925,
+      "active_run_id": null,
+      "pending": 0,
+      "completed": 5,
+      "accepted": 5,
+      "run_limit": 1000,
+      "retained_buffer_count": 0,
+      "error": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+    },
+    "after_close": {
+      "session_id": "bfd719de89da4ce5aaef62fbcb1f521b",
+      "service_state": "CLOSED",
+      "hardware_state": "IDLE",
+      "overlay_downloads": 1,
+      "last_completed_frame_status": 81925,
+      "active_run_id": null,
+      "pending": 0,
+      "completed": 5,
+      "accepted": 5,
+      "run_limit": 1000,
+      "retained_buffer_count": 0,
+      "error": null,
+      "evidence_kind": "PYNQ_PL_DMA",
+      "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION"
+    }
+  },
+  "tasks": 5,
+  "matched_words": 1310720,
+  "matched_pngs": 25,
+  "saved_browser_observations": 4,
+  "missing_observation_runs": [
+    "7e5ab1b2a7a04a33911e7c29004341c2"
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "status": "HOST_UI_ONLY_NOT_BOARD_PASS",
+  "archive": {
+    "bytes": 85196367,
+    "sha256": "7f10b198cab47173d1bf459e00684cc0b0af0c57c93819fd5b8edfdfb8e1320d"
+  },
+  "evidence_kind": "HOST_TEST_DOUBLE_NOT_BOARD",
+  "session_id": "bb95cc6b71ff43cc8a8b496df517cc2a",
+  "tasks": 50,
+  "matched_words": 13107200,
+  "matched_png_images": 250,
+  "matched_png_values": 117964800,
+  "groups": [
+    {
+      "png_profile": "baseline",
+      "warmup": 3,
+      "measured": 20,
+      "all_foreground": true,
+      "same_PL_output_hash": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62",
+      "loop_id": "33fb6adb-a30f-44ae-95e8-7e2e9cb1d95c"
+    },
+    {
+      "png_profile": "fast",
+      "warmup": 3,
+      "measured": 20,
+      "all_foreground": true,
+      "same_PL_output_hash": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62",
+      "loop_id": "6999dfb6-275d-496f-86aa-38509e90725a"
+    }
+  ],
+  "two_profiles_per_algorithm_equal_output": true,
+  "current_metric_invalidation_visually_verified": true,
+  "board_fps": null,
+  "board_status": "NOT_RUN",
+  "screenshot": {
+    "bytes": 206090,
+    "sha256": "c63ba9a8c71c80faa7170e47f39dad7a39575ea1f2da40e0e6975c0363ac73db"
+  }
+}

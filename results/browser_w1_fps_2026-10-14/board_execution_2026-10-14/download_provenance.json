@@ -1,0 +1,26 @@
+{
+  "received_date_local": "2026-10-14",
+  "board_wall_clock_verified": false,
+  "original_files_unchanged": true,
+  "files": [
+    {
+      "source": "C:\\Users\\Gabriel\\Downloads\\browser_session_bundle.zip",
+      "preserved_path": "D:\\PLD\\retina_fpga\\build\\board_results\\browser_w1_fps_2026-10-14\\browser_session_bundle.zip",
+      "bytes": 29770719,
+      "sha256": "98bf23e8e4eaa2523e86340761659ca89d2a237958bade2dbaf0f4c03ceded9f"
+    },
+    {
+      "source": "C:\\Users\\Gabriel\\Downloads\\browser_start.ipynb",
+      "preserved_path": "D:\\PLD\\retina_fpga\\build\\board_results\\browser_w1_fps_2026-10-14\\browser_start.ipynb",
+      "bytes": 11766,
+      "sha256": "b1adc4342eae58f2cca350fd48e0a76248225932ce27007bae9c684352c5e628"
+    },
+    {
+      "source": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-69370c74-e77a-4c16-b51a-e7f7e6de9002.png",
+      "preserved_path": "D:\\PLD\\retina_fpga\\build\\board_results\\browser_w1_fps_2026-10-14\\browser_user_screenshot.png",
+      "bytes": 509003,
+      "sha256": "6ae25cf0962fb9101031c524172bdbadd0eba2c96aad7216937422f8dbb49bb2"
+    }
+  ],
+  "session_id": "73cc892efe2b4bb282032f54757be104"
+}

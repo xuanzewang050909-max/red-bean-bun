@@ -1,0 +1,45 @@
+{
+  "original_notebook": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code_sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201",
+    "current_notebook_sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "autosaved_notebook": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code_sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201",
+    "current_notebook_sha256": "f0ffa8bef03573f7de01ca2e2f1b04b0240621de987130287c23da4ea1fd1b87",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "status": "PASS_HOST_PROFILING_PACKAGE",
+  "board_status": "NOT_RUN",
+  "files": 17,
+  "destination": "D:\\PLD\\retina_fpga\\build\\deploy\\b_profile_2017_4_r1",
+  "inherited_files_unchanged": [
+    "a0_dma_board_test.py",
+    "a1_point_board_test.py",
+    "a2_gaussian_board_test.py",
+    "a3_background_board_test.py",
+    "a4_segmentation_board_test.py",
+    "b_integration.bit",
+    "b_integration.hwh",
+    "b_integration_board_test.py",
+    "b_integration_check.ipynb",
+    "b_manifest.json",
+    "stare_im0001_256.npy",
+    "stare_im0001_512.npy",
+    "使用说明.txt"
+  ]
+}

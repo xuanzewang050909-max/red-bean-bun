@@ -1,0 +1,32 @@
+{
+  "source_archive_sha256": "8eb87d0c3c6dfdba411b8f9a0b73e6b37ee3509b1cb321c8c1f85f6e966edccb",
+  "runs": {
+    "A": "9c97e6ee56cd4656a68785463c7b6610",
+    "C2": "8893d1c547dc4bddbf4faee46b0589c6"
+  },
+  "output_sha256": {
+    "A": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+    "C2": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62"
+  },
+  "crop": [
+    180,
+    145,
+    340,
+    385
+  ],
+  "annotation": "AH",
+  "scope": "ILLUSTRATIVE_CROP_NOT_FULL_BRIGHT_REGION_OR_QUALITY_ACCEPTANCE",
+  "confusion_counts": {
+    "A": {
+      "tp": 2149,
+      "fp": 5781,
+      "fn": 702
+    },
+    "C2": {
+      "tp": 2143,
+      "fp": 4919,
+      "fn": 708
+    }
+  },
+  "image_sha256": "fc07b8466457f4a0a5c86f3fcce9888b444e7926a94240e6397a2fb47916fe1d"
+}

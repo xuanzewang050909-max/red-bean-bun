@@ -1,0 +1,21 @@
+--- original/retina_quality_hls.cpp
++++ derived/retina_refined_base.cpp
+@@ -1,3 +1,4 @@
++// Exact original quality pipeline, only top interfaces removed for hierarchical reuse.
+ // Q2 WORKING PIPELINE: derived from the immutable board-verified A4.
+ // C2 support and dynamic threshold are not yet a paired production overlay.
+ #include "retina_quality_hls.hpp"
+@@ -176,12 +177,8 @@
+     }
+ }
+ 
+-void retina_quality_hls(hls::stream<ap_uint<32> >& source,
++void retina_refined_base(hls::stream<ap_uint<32> >& source,
+                              hls::stream<ap_uint<32> >& result, ap_uint<32> control) {
+-#pragma HLS INTERFACE axis port=source
+-#pragma HLS INTERFACE axis port=result
+-#pragma HLS INTERFACE ap_none port=control
+-#pragma HLS INTERFACE ap_ctrl_hs port=return
+ #pragma HLS DATAFLOW
+     int side=control[2] ? 256 : 512;
+     int count=side*side;

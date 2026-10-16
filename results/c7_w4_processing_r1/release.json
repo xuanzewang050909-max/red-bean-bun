@@ -1,0 +1,14 @@
+{
+  "status": "HOST_PACKAGE_ONLY_BOARD_NOT_RUN",
+  "files": {
+    "c7_w4_processing.ipynb": {
+      "bytes": 6352,
+      "sha256": "5f72f9286ad5d521dd8d03fd8bee3dd05a7dbc74e4ca32df7df85f9c0f089457"
+    },
+    "c7_w4_processing_r1.zip": {
+      "bytes": 14799590,
+      "sha256": "1da919fc24d4de91c5fbb31ba14664b041c7a949b2a1ed91e9756c6c662a6fa6"
+    }
+  },
+  "embedded_files": 148
+}

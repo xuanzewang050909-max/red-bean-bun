@@ -1,0 +1,277 @@
+{
+  "status": "HOST_ONLY_PASS_BOARD_NOT_RUN",
+  "matched": [
+    {
+      "image_id": "im0001",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "0a40e1469acfd90f3f8a8ae6c1e06f6bf83d6e23aff0bbbdf889eb5f7d4f96b1"
+    },
+    {
+      "image_id": "im0001",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "fecc4f581caee421298f5ba264e8d260099b23210044aac0dbe445146da75f8b"
+    },
+    {
+      "image_id": "im0002",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "7a9123188b350c2a9c007589798c56a115ad5088d0308dac81d8f035ad6e573f"
+    },
+    {
+      "image_id": "im0002",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "647afaca4de6450666d423cecf9e56aa9b619f515776c862eefb39906a682447"
+    },
+    {
+      "image_id": "im0003",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "6913d60702afae5921c252f2adcb7e404468c79cc32e5f85e9fe5c41594b9a01"
+    },
+    {
+      "image_id": "im0003",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "5fffa857076f1d2e4c3415ca820884684801b8ea150a3f8cd2be8d0fcb65185f"
+    },
+    {
+      "image_id": "im0004",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "451240b5b3b731939e3996e348e08798670214f9f73a19cbb415361292bd0dfe"
+    },
+    {
+      "image_id": "im0004",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "5ed92971ac4ef76c41fc0cf5f5c87c9a813b56b00af2ef670522319da4b0641a"
+    },
+    {
+      "image_id": "im0005",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "0f877c8e9264fdd927da6f57f1bee1e71bbd9e3152c8e03d8ec789f6cca80c21"
+    },
+    {
+      "image_id": "im0005",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "f0106c42b0e04728b257f82c24baf2a1ee7735c1bc6c7a7e6644fe8089ea392a"
+    },
+    {
+      "image_id": "im0044",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "08ea5b2dfaf395bc90a4b570865859d49b641dad643e6fcc36464d16bec24f57"
+    },
+    {
+      "image_id": "im0044",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "492338eb79c4224e17a734446b66ebc12843f33b8dcbaf1e6d3c47c7d5365819"
+    },
+    {
+      "image_id": "im0077",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "888fc80d76dc3eafebbe6326777ce5a86a0d7cd56dc75ef206be81fd1492de58"
+    },
+    {
+      "image_id": "im0077",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "0a5e28a3c3016702bb4abfde650acdd527503ea1ebb9835c8d7a686e0b47b580"
+    },
+    {
+      "image_id": "im0081",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "13f046628e681676a697b7a10471a9e1ad9218e0599faf6109f561cccbb8bbfe"
+    },
+    {
+      "image_id": "im0081",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "fd70541cb0071a67f8f3eb97eaad5662fe412d201c77153eef68ddc58a29b411"
+    },
+    {
+      "image_id": "im0082",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "67391f8109edd34377488ee3221362827edb5f0bcb72e8b0440c538e30e6df87"
+    },
+    {
+      "image_id": "im0082",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "1b6b6cc2e0570d41598ae52ac6eb7cca70021baf7c1e44abd772698ef471add2"
+    },
+    {
+      "image_id": "im0139",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "e26c7f8ece109c34a103db5cf831a42317ec0e6bd9b1bd5028b4fbd4fc1b48fc"
+    },
+    {
+      "image_id": "im0139",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "cde13b3990e6461468f16b624279798bd133e39ff5a96fd3ba764864fc11f350"
+    },
+    {
+      "image_id": "im0162",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "edcb2954ecfeceb5d419091b1fc69c57cb399283cc34594f6798d33c92dde128"
+    },
+    {
+      "image_id": "im0162",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "c485fe156cbc0242a73a0d061726c407cf600775598ba8b07689281ccf97aabd"
+    },
+    {
+      "image_id": "im0163",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "68ad02f9bf342fe810b2bb9c4d0ce5ff4c49e2b193672ba5a44e0b0e6d32e256"
+    },
+    {
+      "image_id": "im0163",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "0e39aa28d670773059343a5cb9e43502045b1c2689ac2b4369e1cccfd6707eb0"
+    },
+    {
+      "image_id": "im0235",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "e1ab0d0772a1db52d0a3e4756e83c63a4a031329f81877ca49dfc23ee7104523"
+    },
+    {
+      "image_id": "im0235",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "84aea82e9a2eae5543ae0b89dc38222ea1b9f249b40cdca362f0a2f051f06910"
+    },
+    {
+      "image_id": "im0236",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "97193895982ccf9dad52ce8b3d22e2549ed1ee3463e4835d6f627b6d90859054"
+    },
+    {
+      "image_id": "im0236",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "dc3ccc072c625c591ddbf9e39eceaa7c84f67747d5beaff4b3955bf80e234320"
+    },
+    {
+      "image_id": "im0239",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "a98334d5b3320e233ea9200e13b539d1270459cff2ebacea9e7089ff114d2c3f"
+    },
+    {
+      "image_id": "im0239",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "7235d40a09f4a3761e6b47e959140dc452fad28d86bdd22235f45aa98ed3f8d5"
+    },
+    {
+      "image_id": "im0240",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "ebf3cfaa3f7e4b430c79d04fe83cab2b49ce1257f25df3d6da1a7080fb5b7a23"
+    },
+    {
+      "image_id": "im0240",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "a25cca398b9cf695c47ac7ae00fa9c6ba094a2a6d277f83899b193d43343c89d"
+    },
+    {
+      "image_id": "im0255",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "9617c23a490033f3ed8fb36a98705060718b83bc3ed223555c770609a0b95ef7"
+    },
+    {
+      "image_id": "im0255",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "72e8457035fe37bba07b00d3e28d10d72fa2b6c25e84d0832306bc83aa3ec25e"
+    },
+    {
+      "image_id": "im0291",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "dbd0b700f8769e1c4853d2673815cf5e86a77eca2c2ab2dca60fae1441fb42fe"
+    },
+    {
+      "image_id": "im0291",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "4cd0d3c69c168498e0449aded6089277cb2134a6028d9010f22c9ed813d80c31"
+    },
+    {
+      "image_id": "im0319",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "68fe8e101d4b3656f1438cd7169e82908897f1703db219106189d565d68952ab"
+    },
+    {
+      "image_id": "im0319",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "81c6a3a7ef04f8de06748998778d2c42ed1560725017baf47835b34afe346bc6"
+    },
+    {
+      "image_id": "im0324",
+      "side": 256,
+      "words": 65536,
+      "output_sha256": "13d1c8fc7f13ee150df4943df9442769ee5e10ca1e38fcc20c49172544a0db5a"
+    },
+    {
+      "image_id": "im0324",
+      "side": 512,
+      "words": 262144,
+      "output_sha256": "67d7e20fc4ebd4c8258eb042a802ba91d9a2e7f9707ac3bb516d044c214175b1"
+    }
+  ],
+  "matched_words": 6553600,
+  "compared_to": "Real archived C7 DMA outputs, all 40 distinct image/size combinations",
+  "package": {
+    "bytes": 24003,
+    "sha256": "89fc97a42111b43d93c46f140b4d45b66d47230209f043553f9dbb3886e90dfd"
+  },
+  "release": {
+    "status": "HOST_PACKAGE_ONLY_BOARD_NOT_RUN",
+    "files": {
+      "c7_w4_processing.ipynb": {
+        "bytes": 6352,
+        "sha256": "5f72f9286ad5d521dd8d03fd8bee3dd05a7dbc74e4ca32df7df85f9c0f089457"
+      },
+      "c7_w4_processing_r1.zip": {
+        "bytes": 14799590,
+        "sha256": "1da919fc24d4de91c5fbb31ba14664b041c7a949b2a1ed91e9756c6c662a6fa6"
+      }
+    },
+    "embedded_files": 148
+  },
+  "checks": [
+    "148-member package hashes",
+    "frozen baseline manifest pin",
+    "40 actual C7 DMA whole-word comparisons",
+    "immutable inputs",
+    "Python 3.10 syntax",
+    "seven clean code cells",
+    "actual ZIP Notebook extraction",
+    "repeat extraction rejected",
+    "unchanged production CPU separation"
+  ],
+  "caveat": "CPU comparator functionally equivalent; PS timing and 618 new real PL requests have NOT run."
+}

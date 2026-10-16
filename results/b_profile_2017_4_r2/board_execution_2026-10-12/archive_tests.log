@@ -1,0 +1,25 @@
+test_code_changes_in_core_or_trailing_cell_rejected (test_b_profile_archive.ActualEvidence.test_code_changes_in_core_or_trailing_cell_rejected) ... ok
+test_complete_actual_data_and_independent_stage_metrics (test_b_profile_archive.ActualEvidence.test_complete_actual_data_and_independent_stage_metrics) ... ok
+test_corrupted_raw_array_even_with_updated_file_hash_rejected (test_b_profile_archive.ActualEvidence.test_corrupted_raw_array_even_with_updated_file_hash_rejected) ... ok
+test_counter_dma_length_error_or_golden_hash_rejected (test_b_profile_archive.ActualEvidence.test_counter_dma_length_error_or_golden_hash_rejected) ... ok
+test_executed_or_output_bearing_blank_tail_rejected (test_b_profile_archive.ActualEvidence.test_executed_or_output_bearing_blank_tail_rejected) ... ok
+test_missing_embedded_image_rejected (test_b_profile_archive.ActualEvidence.test_missing_embedded_image_rejected) ... ok
+test_missing_sample_and_wrong_warmup_rejected (test_b_profile_archive.ActualEvidence.test_missing_sample_and_wrong_warmup_rejected) ... ok
+test_no_trailing_cell_also_matches_fixed_executed_sources (test_b_profile_archive.ActualEvidence.test_no_trailing_cell_also_matches_fixed_executed_sources) ... ok
+test_original_visual_pending_not_promoted (test_b_profile_archive.ActualEvidence.test_original_visual_pending_not_promoted) ... ok
+test_overlap_and_non_native_frame_properties_rejected (test_b_profile_archive.ActualEvidence.test_overlap_and_non_native_frame_properties_rejected) ... ok
+test_profile_package_or_inherited_code_validation_tampering_rejected (test_b_profile_archive.ActualEvidence.test_profile_package_or_inherited_code_validation_tampering_rejected) ... ok
+test_stage_share_mean_and_loop_metrics_cannot_be_changed (test_b_profile_archive.ActualEvidence.test_stage_share_mean_and_loop_metrics_cannot_be_changed) ... ok
+test_timestamp_reverse_overlap_or_duration_change_rejected (test_b_profile_archive.ActualEvidence.test_timestamp_reverse_overlap_or_duration_change_rejected) ... ok
+test_wrong_execution_order_and_error_rejected (test_b_profile_archive.ActualEvidence.test_wrong_execution_order_and_error_rejected) ... ok
+test_wrong_preview_pixels_even_with_updated_hash_rejected (test_b_profile_archive.ActualEvidence.test_wrong_preview_pixels_even_with_updated_hash_rejected) ... ok
+test_wrong_release_runtime_driver_or_reload_rejected (test_b_profile_archive.ActualEvidence.test_wrong_release_runtime_driver_or_reload_rejected) ... ok
+test_duplicate_or_unexpected_path (test_b_profile_archive.ZipBoundaries.test_duplicate_or_unexpected_path) ... ok
+test_large_member (test_b_profile_archive.ZipBoundaries.test_large_member) ... ok
+test_missing_member (test_b_profile_archive.ZipBoundaries.test_missing_member) ... ok
+test_symlink (test_b_profile_archive.ZipBoundaries.test_symlink) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 1.331s
+
+OK

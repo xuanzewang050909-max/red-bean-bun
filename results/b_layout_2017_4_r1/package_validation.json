@@ -1,0 +1,48 @@
+{
+  "original_notebooks": {
+    "fixed_artifacts": "PASS_EXACT_SHA256_EXCLUDING_NOTEBOOK_JSON",
+    "notebook_code_sha256": "ffba5e1e79cd6ec1185feb91b0cfd939be0617b5ac2a932328a694badb49c9c2",
+    "current_notebook_sha256": "b00de641b4b7951dec1ae52cd972e3e67f2d1430368c241b8d56c00e83359317",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "autosaved_notebooks": {
+    "fixed_artifacts": "PASS_EXACT_SHA256_EXCLUDING_NOTEBOOK_JSON",
+    "notebook_code_sha256": "ffba5e1e79cd6ec1185feb91b0cfd939be0617b5ac2a932328a694badb49c9c2",
+    "current_notebook_sha256": "239a48cd4f49b80c3bc4fd93c250056fbc8ebdfe05a3190d3e8c640eb42750be",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "f6e1fcaed2de887af6534ccc5035425671c19268546a293205210712ddea1abf",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "status": "PASS_HOST_LAYOUT_PACKAGE",
+  "board_status": "NOT_RUN",
+  "performance_improvement": "NOT_MEASURED",
+  "files": 18,
+  "code_cells": 7,
+  "destination": "D:\\PLD\\retina_fpga\\build\\deploy\\b_layout_2017_4_r1",
+  "inherited_files_unchanged": [
+    "a0_dma_board_test.py",
+    "a1_point_board_test.py",
+    "a2_gaussian_board_test.py",
+    "a3_background_board_test.py",
+    "a4_segmentation_board_test.py",
+    "b_integration.bit",
+    "b_integration.hwh",
+    "b_integration_board_test.py",
+    "b_integration_check.ipynb",
+    "b_manifest.json",
+    "b_profile_board_test.py",
+    "stare_im0001_256.npy",
+    "stare_im0001_512.npy",
+    "使用说明.txt"
+  ]
+}

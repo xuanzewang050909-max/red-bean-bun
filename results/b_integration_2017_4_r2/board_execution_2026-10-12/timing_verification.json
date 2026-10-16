@@ -1,0 +1,50 @@
+[
+  {
+    "sum_seconds": 0.249274487,
+    "frames_per_sum_transaction_seconds": 401.16419936710173,
+    "mean_ms": 2.4927448699999997,
+    "median_ms": 2.3754555,
+    "p95_ms": 2.5097405,
+    "side": 256,
+    "with_display": false,
+    "timed_frames": 100,
+    "warmup_frames": 3,
+    "dma_mean_ms": 2.49274487,
+    "loop_seconds": 2.030904779,
+    "loop_fps": 49.2391376661387,
+    "status": "PASS_RAW_NS_SAMPLES_AND_NOTEBOOK_METRICS_RECOMPUTED",
+    "limits": "Individual transaction durations independently recomputed from frame ledger. Loop seconds are the original aggregate; start/end timestamps were not retained, so only its formula and Notebook agreement are checked. Display Hz and pure PL cycles not measured."
+  },
+  {
+    "sum_seconds": 0.48658512299999995,
+    "frames_per_sum_transaction_seconds": 205.51388703267037,
+    "mean_ms": 4.865851229999999,
+    "median_ms": 4.8036520000000005,
+    "p95_ms": 5.48849405,
+    "side": 512,
+    "with_display": false,
+    "timed_frames": 100,
+    "warmup_frames": 3,
+    "dma_mean_ms": 4.86585123,
+    "loop_seconds": 7.610382382,
+    "loop_fps": 13.13994422100511,
+    "status": "PASS_RAW_NS_SAMPLES_AND_NOTEBOOK_METRICS_RECOMPUTED",
+    "limits": "Individual transaction durations independently recomputed from frame ledger. Loop seconds are the original aggregate; start/end timestamps were not retained, so only its formula and Notebook agreement are checked. Display Hz and pure PL cycles not measured."
+  },
+  {
+    "sum_seconds": 59.032173986000004,
+    "frames_per_sum_transaction_seconds": 1.6939914837579229,
+    "mean_ms": 590.32173986,
+    "median_ms": 588.9684364999999,
+    "p95_ms": 599.5610391,
+    "side": 512,
+    "with_display": true,
+    "timed_frames": 100,
+    "warmup_frames": 3,
+    "dma_mean_ms": 4.85150078,
+    "loop_seconds": 62.474630953,
+    "loop_fps": 1.6006497113241138,
+    "status": "PASS_RAW_NS_SAMPLES_AND_NOTEBOOK_METRICS_RECOMPUTED",
+    "limits": "Individual transaction durations independently recomputed from frame ledger. Loop seconds are the original aggregate; start/end timestamps were not retained, so only its formula and Notebook agreement are checked. Display Hz and pure PL cycles not measured."
+  }
+]

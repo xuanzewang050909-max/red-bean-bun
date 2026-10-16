@@ -1,0 +1,14 @@
+test_constant_has_no_line_edge_or_coherence (tests.test_q4_profile_features.ProfileFeatureTests.test_constant_has_no_line_edge_or_coherence) ... ok
+test_dark_line_and_step_have_different_paired_edge_costs (tests.test_q4_profile_features.ProfileFeatureTests.test_dark_line_and_step_have_different_paired_edge_costs) ... ok
+test_integer_features_match_independent_spatial_sum_oracle (tests.test_q4_profile_features.ProfileFeatureTests.test_integer_features_match_independent_spatial_sum_oracle) ... ok
+test_invalid_input_and_non_square_tiny_images (tests.test_q4_profile_features.ProfileFeatureTests.test_invalid_input_and_non_square_tiny_images) ... ok
+test_kernels_zero_dc_and_symmetry (tests.test_q4_profile_features.ProfileFeatureTests.test_kernels_zero_dc_and_symmetry) ... ok
+test_auc_and_ap_ties_match_pairwise_definition (tests.test_q4_profile_statistics.ProfileStatisticsTests.test_auc_and_ap_ties_match_pairwise_definition) ... ok
+test_one_class_and_empty_do_not_claim_auc (tests.test_q4_profile_statistics.ProfileStatisticsTests.test_one_class_and_empty_do_not_claim_auc) ... ok
+test_random_histogram_oracle_and_no_high_precision_claim (tests.test_q4_profile_statistics.ProfileStatisticsTests.test_random_histogram_oracle_and_no_high_precision_claim) ... ok
+test_threshold_bounds_preserve_ties_and_exact_eighty_percent (tests.test_q4_profile_statistics.ProfileStatisticsTests.test_threshold_bounds_preserve_ties_and_exact_eighty_percent) ... ok
+
+----------------------------------------------------------------------
+Ran 9 tests in 0.073s
+
+OK

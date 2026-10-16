@@ -1,0 +1,63 @@
+--- proven_layout_r1/cached_loop
++++ snapshot_r1/selected_source_loop
+@@ -1,6 +1,6 @@
+-for index in range(33):
++for index in range(WARMUP + COUNT):
+     boundaries = [time.perf_counter_ns()]
+-    if index == 3:
++    if index == WARMUP:
+         loop_start = boundaries[0]
+     context['dma'].recvchannel.transfer(rx)
+     context['dma'].sendchannel.transfer(tx)
+@@ -8,20 +8,20 @@
+     context['dma'].sendchannel.wait()
+     context['dma'].recvchannel.wait()
+     boundaries.append(time.perf_counter_ns())
+-    b.require(np.array_equal(rx, expected), 'Layout benchmark FPGA word mismatch')
++    data = context['cpu_snapshot'].capture(rx) if name == 'snapshot' else np.asarray(rx)
+     boundaries.append(time.perf_counter_ns())
+-    send_bytes = int(context['dma'].sendchannel.transferred)
+-    recv_bytes = int(context['dma'].recvchannel.transferred)
+-    b.require(send_bytes == recv_bytes == 1048576, 'Layout benchmark DMA byte count mismatch')
++    b.require(np.array_equal(data, expected), 'Snapshot benchmark FPGA words differ')
++    boundaries.append(time.perf_counter_ns())
++    send_bytes, recv_bytes = int(context['dma'].sendchannel.transferred), int(context['dma'].recvchannel.transferred)
+     count = 3 + group_index * 33 + index
+     frame_status = int(context['gpio'].channel2.read())
+-    b.require(frame_status == (count | count << 14), 'Layout benchmark frame counter/error mismatch')
++    b.require(send_bytes == recv_bytes == 1048576 and frame_status == (count | count << 14), 'Snapshot benchmark bytes/counter differ')
+     boundaries.append(time.perf_counter_ns())
+-    image = renderer(np.asarray(rx).reshape(512, 512), index - 3)
++    image = context['cached_canvas'].render(data.reshape(512, 512), index - WARMUP)
+     boundaries.append(time.perf_counter_ns())
+     frame = context['hdmi_out'].newframe()
+     context['display_retained'].append(frame)
+-    b.require(frame.shape == (720, 1280, 3) and frame.dtype == np.uint8 and frame.strides == (3840, 3, 1), 'Wrong native video frame')
++    b.require(frame.shape == (720, 1280, 3) and frame.dtype == np.uint8 and frame.strides == (3840, 3, 1), 'Wrong native display frame')
+     b.require(frame.physical_address % 8 == 0 and 0x100000 <= frame.physical_address <= 0x20000000 - frame.nbytes,
+               'Invalid native video DDR frame')
+     description = p.buffer_info(frame)
+@@ -33,14 +33,15 @@
+     boundaries.append(time.perf_counter_ns())
+     vdma_status = b.video_status(context)
+     boundaries.append(time.perf_counter_ns())
+-    output_hash = hashlib.sha256(np.asarray(rx).tobytes()).hexdigest()
++    output_hash = hashlib.sha256(data.tobytes()).hexdigest()
++    b.require(output_hash == report['expected_sha256'], 'Snapshot benchmark output hash differs')
+     boundaries.append(time.perf_counter_ns())
+-    row = {'index': index, 'warmup': index < 3, 'frame_count': count, 'frame_status': frame_status,
+-           'words': 262144, 'send_bytes': send_bytes, 'recv_bytes': recv_bytes,
+-           'dma_status': dma_status, 'vdma_status': vdma_status, 'display_buffer': description,
+-           'output_sha256': output_hash, 'status': 'PASS_EXACT_SEGMENTATION_WORDS'}
++    row = {'index': index, 'warmup': index < WARMUP, 'frame_count': count, 'frame_status': frame_status,
++           'words': 262144, 'send_bytes': send_bytes, 'recv_bytes': recv_bytes, 'dma_status': dma_status,
++           'vdma_status': vdma_status, 'display_buffer': description, 'output_sha256': output_hash,
++           'cpu_copy_performed': name == 'snapshot', 'status': 'PASS_EXACT_SEGMENTATION_WORDS'}
+     group['samples'].append(row)
+-    if index >= 3 and (index - 2) % 5 == 0:
+-        print('B_LAYOUT_PROGRESS: {} {}/30'.format(name, index - 2), flush=True)
++    if index >= WARMUP and (index - WARMUP + 1) % 5 == 0:
++        print('B_SNAPSHOT_PROGRESS: {} {}/30'.format(name, index - WARMUP + 1), flush=True)
+     boundaries.append(time.perf_counter_ns())
+-    row.update(boundaries_ns=boundaries, durations_ns=p.stage_durations(boundaries), sample_ns=boundaries[-1] - boundaries[0])
++    row.update(boundaries_ns=boundaries, durations_ns=stage_durations(boundaries), sample_ns=boundaries[-1] - boundaries[0])

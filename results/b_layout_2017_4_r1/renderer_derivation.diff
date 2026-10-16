@@ -1,0 +1,56 @@
+--- proven_B_r2/medical_canvas
++++ layout_r1/CachedCanvas
+@@ -1,16 +1,37 @@
+-def medical_canvas(output, index=0):
+-    require(output.shape==(512,512) and output.dtype==np.uint32,'Expected real 512x512 packed algorithm output')
+-    green=(output&255).astype(np.uint8);mask=((output>>16)&255).astype(np.uint8)
+-    require(np.all((mask==0)|(mask==255)),'Mask must remain binary')
+-    grey=np.repeat(green[:,:,None],3,axis=2);marked=grey.copy();marked[mask!=0]=[0,255,0]
+-    # PS layout only. Both panels derive directly from the actual FPGA output.
+-    image=np.full((720,1280,3),16,dtype=np.uint8)
+-    image[128:640,64:576]=grey;image[128:640,704:1216]=marked
+-    from PIL import Image,ImageDraw
+-    canvas=Image.fromarray(image[:,:,::-1]);draw=ImageDraw.Draw(canvas)
+-    draw.text((64,80),'RAW GREEN - FPGA OUTPUT',fill='white')
+-    draw.text((704,80),'FPGA VESSEL CANDIDATES - GREEN',fill='white')
+-    draw.text((64,665),'B: ONE OVERLAY / 512 x 512 / FIXED M0 ALGORITHM A',fill='white')
+-    image=np.asarray(canvas)[:,:,::-1].copy()
+-    x=16+(int(index)%100)*12;image[24:48,x:x+48]=255
+-    return image
++class CachedCanvas:
++    """Cache static captions once and reuse ordinary CPU image/scratch storage.
++
++    render returns borrowed storage, consumed/copied before the next render.
++    No native PynqBuffer is cached, mutated after submission, or freed here.
++    """
++    def __init__(self):
++        started = time.perf_counter_ns()
++        self.template = b.medical_canvas(np.zeros((512, 512), dtype=np.uint32), 0)
++        self.template[24:48] = 16  # Clear the original initial progress marker.
++        self.template.setflags(write=False)
++        self.image = self.template.copy()
++        self.green = np.empty((512, 512), dtype=np.uint8)
++        self.mask = np.empty((512, 512), dtype=np.uint8)
++        self.shifted = np.empty((512, 512), dtype=np.uint32)
++        self.valid = np.empty((512, 512), dtype=bool)
++        self.selected = np.empty((512, 512), dtype=bool)
++        self.left = self.image[128:640, 64:576]
++        self.right = self.image[128:640, 704:1216]
++        self.initialization_ns = time.perf_counter_ns() - started
++
++    def render(self, output, index=0):
++        b.require(output.shape == (512, 512) and output.dtype == np.uint32, 'Expected real 512 packed algorithm output')
++        np.bitwise_and(output, np.uint32(255), out=self.green, casting='unsafe')
++        np.right_shift(output, np.uint32(16), out=self.shifted)
++        np.bitwise_and(self.shifted, np.uint32(255), out=self.mask, casting='unsafe')
++        np.equal(self.mask, 0, out=self.valid)
++        np.equal(self.mask, 255, out=self.selected)
++        np.logical_or(self.valid, self.selected, out=self.valid)
++        b.require(bool(np.all(self.valid)), 'Mask must remain binary')
++        self.left[:] = self.green[:, :, None]
++        self.right[:] = self.left
++        self.right[self.selected] = [0, 255, 0]
++        self.image[24:48] = self.template[24:48]
++        x = 16 + (int(index) % 100) * 12
++        self.image[24:48, x:x + 48] = 255
++        return self.image

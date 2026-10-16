@@ -1,0 +1,15 @@
+{
+  "artifacts": 26,
+  "zip_members": 27,
+  "board_status": "NOT_RUN",
+  "upload": {
+    "browser_w4a_png_r1.zip": {
+      "bytes": 1737505,
+      "sha256": "5a782132d4e350eb2392451ed7693abfdfa512db81b2c466cd7e5c22bed807ef"
+    },
+    "browser_w4a_start.ipynb": {
+      "bytes": 7774,
+      "sha256": "8ab618c37a59f5b334b82c0a306660b37d468a25ddf34ac7a314335d1ce3691e"
+    }
+  }
+}

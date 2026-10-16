@@ -1,0 +1,11 @@
+{
+  "status": "Q4_R4_ARCHIVE_PROVENANCE_AND_PROTECTION_PASS",
+  "source_commit": "2d2e86fdce355e8dcb7ef6ac51b6565377c482ec",
+  "protocol_sources_exact": 22,
+  "protected_files": 179,
+  "gates_and_split_unchanged": true,
+  "independent_masks": 600,
+  "independent_pixels": 98304000,
+  "host_tests": 35,
+  "board_execution": false
+}

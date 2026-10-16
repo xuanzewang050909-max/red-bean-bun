@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/scripts/environment_probe.sv" into library work
+INFO: [VRFC 10-311] analyzing module environment_probe
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/PLD/retina_fpga/scripts/environment_probe_tb.sv" into library work
+INFO: [VRFC 10-311] analyzing module environment_probe_tb

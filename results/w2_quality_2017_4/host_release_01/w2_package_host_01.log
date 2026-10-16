@@ -1,0 +1,11 @@
+test_complete_precheck_constructs_metadata_only_without_allocation_or_download (test_w2_package_validation.PackageTests.test_complete_precheck_constructs_metadata_only_without_allocation_or_download) ... ok
+test_execution_output_autosave_allowed_but_code_change_rejected (test_w2_package_validation.PackageTests.test_execution_output_autosave_allowed_but_code_change_rejected) ... ok
+test_fixed_bit_hwh_and_script_tampering_rejected (test_w2_package_validation.PackageTests.test_fixed_bit_hwh_and_script_tampering_rejected) ... ok
+test_manifest_missing_members_revision_and_clock_rejected (test_w2_package_validation.PackageTests.test_manifest_missing_members_revision_and_clock_rejected) ... ok
+test_release_manifest_is_not_run_and_notebook_has_seven_empty_ordered_cells (test_w2_package_validation.PackageTests.test_release_manifest_is_not_run_and_notebook_has_seven_empty_ordered_cells) ... ok
+test_stale_import_path_rejected (test_w2_package_validation.PackageTests.test_stale_import_path_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 1.029s
+
+OK

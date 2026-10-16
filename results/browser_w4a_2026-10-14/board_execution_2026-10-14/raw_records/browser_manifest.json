@@ -1,0 +1,356 @@
+{
+  "revision": "browser_w4a_png_r1_lossless_profile",
+  "board_status": "NOT_RUN",
+  "phase": "W4A_LOSSLESS_PNG_COMPARISON_PENDING_REAL_BOARD",
+  "baseline_manifest": {
+    "bytes": 2083,
+    "sha256": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035"
+  },
+  "images": {
+    "im0001": {
+      "256": {
+        "input": "inputs/im0001_256.npy",
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+        },
+        "input_word_sha256": "5d2fb5051e9db6058413eb7c892faeb8ecf8fb9d17d32e7a87e5844bd305f8af",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0001_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "446eb61780e82160c02ad895bf9393a2829f73819d0576e2605976c2a5f6cb27"
+          },
+          "VK": {
+            "path": "evaluation_only/im0001_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "408ba08964cf6a79afed4769f8bbf6c00afd8fd808f4730345736c1727b91ac1"
+          }
+        },
+        "rgb_source_member": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7",
+        "rgb_sha256": "7bf39582f043a1919a72c37e24bc634bef17ff1c190cfc155587e8cee3a91297"
+      },
+      "512": {
+        "input": "inputs/im0001_512.npy",
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+        },
+        "input_word_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0001_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "446eb61780e82160c02ad895bf9393a2829f73819d0576e2605976c2a5f6cb27"
+          },
+          "VK": {
+            "path": "evaluation_only/im0001_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "408ba08964cf6a79afed4769f8bbf6c00afd8fd808f4730345736c1727b91ac1"
+          }
+        },
+        "rgb_source_member": "e5ad70ebd32f3281201402d3ffd6c0a1723686103f85cb69059e5a4890277df7",
+        "rgb_sha256": "40e3e886e745feaaec6733f6f3317b038c6171b334c47e491fa60d0d0978f5ef"
+      }
+    },
+    "im0002": {
+      "256": {
+        "input": "inputs/im0002_256.npy",
+        "input_file": {
+          "bytes": 262272,
+          "sha256": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a"
+        },
+        "input_word_sha256": "3c9243960b5795d8f48ce5de91de06b9f0525d85686cfe284a4df3cddd0319bc",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 256,
+          "nominal_scale": 0.3657142857142857,
+          "resized_width": 256,
+          "resized_height": 221,
+          "pad_left": 0,
+          "pad_top": 17,
+          "pad_right": 0,
+          "pad_bottom": 18,
+          "effective_scale_x": 0.3657142857142857,
+          "effective_scale_y": 0.3652892561983471,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0002_256_AH.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "013739e1cf1de77cf6c54950e77dc15c275db840cb05d0dddcb1bf3036be7acf"
+          },
+          "VK": {
+            "path": "evaluation_only/im0002_256_VK.npy",
+            "file": {
+              "bytes": 65664,
+              "sha256": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "695d8868e60f130f72eb994c80bf5fe35a20323953e8f72aa972ff0581d2a4d5"
+          }
+        },
+        "rgb_source_member": "a54e11ae0b07fd53e9fdd198836ed43b9df3b1946f18540c6f823552b3292b7a",
+        "rgb_sha256": "510328b024bfe986bf012e277b91725a125be227c5f2ca093d9ac02dc735bc7f"
+      },
+      "512": {
+        "input": "inputs/im0002_512.npy",
+        "input_file": {
+          "bytes": 1048704,
+          "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+        },
+        "input_word_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+        "geometry": {
+          "source_width": 700,
+          "source_height": 605,
+          "size": 512,
+          "nominal_scale": 0.7314285714285714,
+          "resized_width": 512,
+          "resized_height": 443,
+          "pad_left": 0,
+          "pad_top": 34,
+          "pad_right": 0,
+          "pad_bottom": 35,
+          "effective_scale_x": 0.7314285714285714,
+          "effective_scale_y": 0.7322314049586777,
+          "image_interpolation": "OpenCV INTER_LINEAR",
+          "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+          "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+          "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+        },
+        "evaluation_only": {
+          "AH": {
+            "path": "evaluation_only/im0002_512_AH.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "013739e1cf1de77cf6c54950e77dc15c275db840cb05d0dddcb1bf3036be7acf"
+          },
+          "VK": {
+            "path": "evaluation_only/im0002_512_VK.npy",
+            "file": {
+              "bytes": 262272,
+              "sha256": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873"
+            },
+            "role": "Evaluation after actual PL completion only",
+            "source_member": "695d8868e60f130f72eb994c80bf5fe35a20323953e8f72aa972ff0581d2a4d5"
+          }
+        },
+        "rgb_source_member": "a54e11ae0b07fd53e9fdd198836ed43b9df3b1946f18540c6f823552b3292b7a",
+        "rgb_sha256": "a5e9ba5aa45834867a59115b43d30d1ba540a64c578f60a864ef58149ebc6c25"
+      }
+    }
+  },
+  "modes": {
+    "bypass": 0,
+    "threshold_candidate": 1,
+    "closed_candidate": 2,
+    "final": 3
+  },
+  "algorithms": [
+    "A",
+    "C2"
+  ],
+  "threshold_range": [
+    1,
+    255
+  ],
+  "png_profiles": {
+    "baseline": {},
+    "fast": {
+      "compress_level": 1
+    }
+  },
+  "candidate": "C2_l9_d12345_m1_p28",
+  "artifacts": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "evaluation_only/im0001_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4"
+    },
+    "evaluation_only/im0001_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070"
+    },
+    "evaluation_only/im0001_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba"
+    },
+    "evaluation_only/im0001_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0"
+    },
+    "evaluation_only/im0002_256_AH.npy": {
+      "bytes": 65664,
+      "sha256": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0"
+    },
+    "evaluation_only/im0002_256_VK.npy": {
+      "bytes": 65664,
+      "sha256": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a"
+    },
+    "evaluation_only/im0002_512_AH.npy": {
+      "bytes": 262272,
+      "sha256": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7"
+    },
+    "evaluation_only/im0002_512_VK.npy": {
+      "bytes": 262272,
+      "sha256": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873"
+    },
+    "inputs/im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "inputs/im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "inputs/im0002_256.npy": {
+      "bytes": 262272,
+      "sha256": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a"
+    },
+    "inputs/im0002_512.npy": {
+      "bytes": 1048704,
+      "sha256": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510"
+    },
+    "pynq_w4a/__init__.py": {
+      "bytes": 85,
+      "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+    },
+    "pynq_w4a/evaluation.py": {
+      "bytes": 1912,
+      "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+    },
+    "pynq_w4a/hardware.py": {
+      "bytes": 12701,
+      "sha256": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a"
+    },
+    "pynq_w4a/launch.py": {
+      "bytes": 4611,
+      "sha256": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b"
+    },
+    "pynq_w4a/protocol.py": {
+      "bytes": 5402,
+      "sha256": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab"
+    },
+    "pynq_w4a/quality_observer.py": {
+      "bytes": 4929,
+      "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+    },
+    "pynq_w4a/service.py": {
+      "bytes": 28566,
+      "sha256": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee"
+    },
+    "ui/app.js": {
+      "bytes": 13617,
+      "sha256": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55"
+    },
+    "ui/index.html": {
+      "bytes": 6429,
+      "sha256": "e083dd94ad18b8b0f56f0bde32d4d95a16ae7689aa340e4335fc61af110150b1"
+    },
+    "ui/style.css": {
+      "bytes": 5073,
+      "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+    },
+    "w2_manifest.json": {
+      "bytes": 2083,
+      "sha256": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035"
+    },
+    "w2_quality.bit": {
+      "bytes": 4045678,
+      "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+    },
+    "w2_quality.hwh": {
+      "bytes": 379601,
+      "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+    }
+  },
+  "provenance": {
+    "W3_board_verification": {
+      "bytes": 134650,
+      "sha256": "f2d69bc3b0857e6562d0ecaf768705e0e8f50e1fa34096e7081fba4d3904afcf"
+    },
+    "W1_manifest": {
+      "bytes": 17166,
+      "sha256": "ba641b74d460786bfea54b9bc57dee280798bfdb745f4cba993f67caf67a675f"
+    }
+  },
+  "scope": "50 requested real tasks, 4 gates and two (3 warmup + 20 measured) profile groups; formal Q3 quality/W4 performance/W5 stability pending. No golden/reference arrays shipped.",
+  "ps_role": "Read input/DDR/DMA/control; snapshot actual PL; unpack/score/display/export. No PS vessel computation.",
+  "hardware": {
+    "resources": {
+      "Slice LUTs": 11835.0,
+      "Slice Registers": 11591.0,
+      "Block RAM Tile": 57.5,
+      "DSPs": 1.0
+    },
+    "wns_ns": 0.909,
+    "whs_ns": 0.009
+  }
+}

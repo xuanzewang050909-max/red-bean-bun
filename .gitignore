@@ -1,0 +1,21 @@
+references/cache/
+build/
+.venv/
+data/raw/
+__pycache__/
+*.pyc
+.Xil/
+*.jou
+*.wdb
+*.pb
+*.str
+*.zip
+tmp/
+results/audit/simulation/xsim.dir/
+results/audit/vivado_probe/*.dcp
+references/board/*_extracted.txt
+**/webtalk*
+# Never silently drop original upstream files or manufacturer archives.
+!references/PYNQ/**
+!references/xfopencv/**
+!references/board/*.zip

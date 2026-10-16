@@ -1,0 +1,74 @@
+{
+  "status": "PASS_B_PROFILE_R2_GIT_SOURCE_AND_MINIMAL_FIX_PAIRING",
+  "source_commit": "8e651528c13397e0929e8e485302a815b440eed3",
+  "captured_utc": "2026-10-12T05:26:04.470763+00:00",
+  "board_status": "NOT_RUN",
+  "source_pairs": {
+    "scripts/b_profile_board_test.py": {
+      "bytes": 17036,
+      "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff",
+      "git_blob_matches_exact_bytes": true
+    },
+    "scripts/package_b_profile.py": {
+      "bytes": 11575,
+      "sha256": "c6e893a144d5dba4e20d7b6a8663efc66d26b9965521dd534780a9d1235e8359",
+      "git_blob_matches_exact_bytes": true
+    },
+    "tests/test_b_profile.py": {
+      "bytes": 21723,
+      "sha256": "789267bb9f2845cda51cfe469ca89b3e723ad22625997f42c09925a5d46c5cd5",
+      "git_blob_matches_exact_bytes": true
+    },
+    "notebooks/b_performance_profile.ipynb": {
+      "bytes": 3607,
+      "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7",
+      "git_blob_matches_exact_bytes": true
+    },
+    "docs/b_performance_profile_steps.md": {
+      "bytes": 4077,
+      "sha256": "e148127749758661369894cc863a7e14b3d6bf9e1a43798957f64bd64f0fc2db",
+      "git_blob_matches_exact_bytes": true
+    },
+    "docs/b_profile_precheck_recovery_steps.md": {
+      "bytes": 2336,
+      "sha256": "1801cf565b1bc7fd15df1b4314b1a20cba1edfaeefeca0991e14403f94fefc54",
+      "git_blob_matches_exact_bytes": true
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+      "bytes": 20367,
+      "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f",
+      "git_blob_matches_exact_bytes": true
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+      "bytes": 12224,
+      "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950",
+      "git_blob_matches_exact_bytes": true
+    },
+    "references/PYNQ/v3.0.1/pynq/buffer.py": {
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236",
+      "git_blob_matches_exact_bytes": true
+    }
+  },
+  "release_manifest": {
+    "bytes": 6385,
+    "sha256": "60146fc140ee2e38b4089d9eb46a8d7963d852aae37018574cd426127240d694"
+  },
+  "minimal_patch": {
+    "b_profile_board_test.py": {
+      "bytes": 17036,
+      "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+    },
+    "b_profile_manifest.json": {
+      "bytes": 6385,
+      "sha256": "60146fc140ee2e38b4089d9eb46a8d7963d852aae37018574cd426127240d694"
+    },
+    "\u5206\u6bb5\u8ba1\u65f6\u8bf4\u660e.txt": {
+      "bytes": 4077,
+      "sha256": "e148127749758661369894cc863a7e14b3d6bf9e1a43798957f64bd64f0fc2db"
+    }
+  },
+  "measurement_code_and_contract_unchanged": true,
+  "hardware_rebuilt": false,
+  "limit": "Software validation fix only; no corrected real board execution yet"
+}

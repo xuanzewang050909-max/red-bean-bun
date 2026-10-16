@@ -1,0 +1,8 @@
+test_c7_ui_threshold_selection_distinct (test_q4d_release.PackageTests.test_c7_ui_threshold_selection_distinct) ... ok
+test_exact_package_inventory_and_source_pairing (test_q4d_release.PackageTests.test_exact_package_inventory_and_source_pairing) ... ok
+test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import (test_browser_q4d.NativeTests.test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.602s
+
+OK

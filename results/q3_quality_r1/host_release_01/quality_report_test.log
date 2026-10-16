@@ -1,0 +1,6 @@
+test_quality_report_separates_splits_observers_and_reports_empty_regions (test_q3_quality.ReleaseTests.test_quality_report_separates_splits_observers_and_reports_empty_regions) ... ok
+
+----------------------------------------------------------------------
+Ran 1 test in 0.118s
+
+OK

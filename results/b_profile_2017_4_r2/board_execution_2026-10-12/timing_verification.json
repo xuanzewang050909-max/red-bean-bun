@@ -1,0 +1,90 @@
+{
+  "count": 30,
+  "sum_seconds": 18.48822723,
+  "mean_ms": 616.274241,
+  "median_ms": 614.6171315,
+  "p95_ms": 630.69428885,
+  "frames_per_sum_transaction_seconds": 1.6226542235115098,
+  "loop_seconds": 18.493421566,
+  "loop_fps": 1.6221984608383528,
+  "stages": {
+    "dma_transfer": {
+      "sum_ns": 151415785,
+      "mean_ms": 5.047192833333333,
+      "median_ms": 4.8521875,
+      "p95_ms": 5.7741156,
+      "share_of_sample_time_percent": 0.8189848767885357
+    },
+    "word_compare": {
+      "sum_ns": 1112600286,
+      "mean_ms": 37.0866762,
+      "median_ms": 36.880357,
+      "p95_ms": 37.920854950000006,
+      "share_of_sample_time_percent": 6.017885177193379
+    },
+    "algorithm_status": {
+      "sum_ns": 3862744,
+      "mean_ms": 0.12875813333333333,
+      "median_ms": 0.126348,
+      "p95_ms": 0.15194114999999994,
+      "share_of_sample_time_percent": 0.020892992886479143
+    },
+    "ps_layout": {
+      "sum_ns": 15691892632,
+      "mean_ms": 523.0630877333333,
+      "median_ms": 521.4326425,
+      "p95_ms": 534.10163875,
+      "share_of_sample_time_percent": 84.87505284734647
+    },
+    "frame_allocate": {
+      "sum_ns": 24715500,
+      "mean_ms": 0.82385,
+      "median_ms": 0.8142585,
+      "p95_ms": 0.8916735,
+      "share_of_sample_time_percent": 0.13368236820399573
+    },
+    "frame_copy": {
+      "sum_ns": 299515299,
+      "mean_ms": 9.9838433,
+      "median_ms": 9.7651045,
+      "p95_ms": 11.103357499999998,
+      "share_of_sample_time_percent": 1.6200325497622088
+    },
+    "display_submit": {
+      "sum_ns": 193162485,
+      "mean_ms": 6.4387495,
+      "median_ms": 6.3700185,
+      "p95_ms": 6.50246475,
+      "share_of_sample_time_percent": 1.0447864070307622
+    },
+    "video_status": {
+      "sum_ns": 4212965,
+      "mean_ms": 0.14043216666666666,
+      "median_ms": 0.138111,
+      "p95_ms": 0.15237944999999997,
+      "share_of_sample_time_percent": 0.02278728483585389
+    },
+    "output_hash": {
+      "sum_ns": 977961261,
+      "mean_ms": 32.5987087,
+      "median_ms": 32.5881045,
+      "p95_ms": 33.1903487,
+      "share_of_sample_time_percent": 5.28964323530764
+    },
+    "record_and_progress": {
+      "sum_ns": 28888273,
+      "mean_ms": 0.9629424333333333,
+      "median_ms": 0.0437505,
+      "p95_ms": 4.67890715,
+      "share_of_sample_time_percent": 0.15625226064467837
+    }
+  },
+  "warmup_frames": 3,
+  "loop_start_ns": 57470980698714,
+  "loop_end_ns": 57489474120280,
+  "loop_ns": 18493421566,
+  "sample_sum_ns": 18488227230,
+  "loop_unattributed_ns": 5194336,
+  "status": "PASS_INDEPENDENT_RAW_BOUNDARIES_STAGE_TOTALS_LOOP_AND_NOTEBOOK_METRICS",
+  "limit": "Repeated fixed input with verification/layout/native submission/hash; no SD input latency, PL-only cycles or calibrated display scan Hz."
+}

@@ -1,0 +1,1334 @@
+{
+  "status": "PASS_Q4_HOST_ROUTED_HARDWARE_NOT_BOARD",
+  "hardware_clock_hz": 100000000,
+  "wns_ns": 0.517,
+  "whs_ns": 0.025,
+  "wpws_ns": 3.75,
+  "resources": {
+    "Slice LUTs": 24630.0,
+    "Slice Registers": 18044.0,
+    "Block RAM Tile": 80.0,
+    "DSPs": 1.0
+  },
+  "original_a4_standard_ip_parameters_exact": [
+    "ps7_0",
+    "axi_dma_0",
+    "loopback_fifo",
+    "point_control",
+    "reset_100m",
+    "memory_axi",
+    "const_one",
+    "const_zero"
+  ],
+  "reviewed_warnings": [
+    "DPIP-1",
+    "DPOP-1",
+    "DPOP-2",
+    "RTSTAT-10"
+  ],
+  "reviewed_critical_warnings": {
+    "CRITICAL WARNING: [BD 41-737] Cannot set the parameter POLARITY on /reset_100m/aux_reset_in. It is read-only.": 1
+  },
+  "generated_rtl_rom": {
+    "background_sum.v": {
+      "bytes": 10278,
+      "sha256": "dadee79f5b6dbcdf01f8fe2c0214e2c8c403672dd82b355d879583d8b49d92ac"
+    },
+    "Block_proc.v": {
+      "bytes": 14857,
+      "sha256": "616bffd0d90929d3df08d0834eb0fd1d3f2fe93db495000d0ab364d5ebab29c8"
+    },
+    "Block_proc286.v": {
+      "bytes": 5274,
+      "sha256": "d54abbc798533970bea8b66a1fa09ec1a877735f48e6eb436068406aa5c11877"
+    },
+    "closed_carrier.v": {
+      "bytes": 14517,
+      "sha256": "2456a429e9e1f6d732ec175e6a5626b99228918fabd6cb6fa2bd35499305fabd"
+    },
+    "column_filter.v": {
+      "bytes": 136481,
+      "sha256": "4ed7ab9d475b32c2f433e7fafdd2b15879112cb3b84deb431d4f596189e9bf68"
+    },
+    "count_neighbors.v": {
+      "bytes": 8662,
+      "sha256": "389c47e620d088b1f3a6f2f547c35e9fea427666930eae301e60b8c765cc94a1"
+    },
+    "dilate_zero.v": {
+      "bytes": 43559,
+      "sha256": "b8080069854c4beede3279d5cfcc2bc1ab378140223d3300bdd91f76b8c4e6c5"
+    },
+    "enhance_aligned.v": {
+      "bytes": 22146,
+      "sha256": "7159ebbb3d0aee4a080bd4f2bfdef5e2351fe19d089354ef579688d2b1427d93"
+    },
+    "enhance_aligned_lut.v": {
+      "bytes": 1250,
+      "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992"
+    },
+    "enhance_aligned_lut_rom.dat": {
+      "bytes": 1026,
+      "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4"
+    },
+    "erode_zero.v": {
+      "bytes": 44620,
+      "sha256": "2d54ff21e1ddd8eed6065238d0bcedba52a8ace7e493cabe7c1437a22d44dddd"
+    },
+    "fifo_w10_d10_A.v": {
+      "bytes": 3110,
+      "sha256": "92ae694ff4c25841aaa2ae320d0ed8afdf8b700eb125962b7974cca72d386e30"
+    },
+    "fifo_w10_d12_A.v": {
+      "bytes": 3110,
+      "sha256": "af7a5341dfb2ce0d310f178d8fb693e9e9d2c30c16d02f134ccaee4634a85364"
+    },
+    "fifo_w10_d1_A.v": {
+      "bytes": 3100,
+      "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2"
+    },
+    "fifo_w10_d2_A.v": {
+      "bytes": 3104,
+      "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f"
+    },
+    "fifo_w10_d2_A_x.v": {
+      "bytes": 3112,
+      "sha256": "cc112adf98e9d1307621f206583c9ee236adaf2ae6b14fae90398bf92be7b76f"
+    },
+    "fifo_w10_d4_A.v": {
+      "bytes": 3104,
+      "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f"
+    },
+    "fifo_w10_d4_A_x.v": {
+      "bytes": 3112,
+      "sha256": "86f0c7fc1712f0728ab8b29ef99f9df83ec54aaff0a29543b8363eddffbe5a9f"
+    },
+    "fifo_w10_d6_A.v": {
+      "bytes": 3104,
+      "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f"
+    },
+    "fifo_w10_d7_A.v": {
+      "bytes": 3104,
+      "sha256": "7e788023725d4a6f27ae2cf3c9f456c46f13ee3e8cf0bb1354b5e1f8ca11d94e"
+    },
+    "fifo_w10_d9_A.v": {
+      "bytes": 3106,
+      "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea"
+    },
+    "fifo_w14_d1_A.v": {
+      "bytes": 3100,
+      "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20"
+    },
+    "fifo_w16_d32_A.v": {
+      "bytes": 3110,
+      "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54"
+    },
+    "fifo_w16_d32_A_x.v": {
+      "bytes": 3118,
+      "sha256": "50bc9db2437234918d64b1a5e25a8601d282456b2a133f2ba86a39073a8e26a2"
+    },
+    "fifo_w19_d1_A.v": {
+      "bytes": 3100,
+      "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013"
+    },
+    "fifo_w19_d1_A_x.v": {
+      "bytes": 3108,
+      "sha256": "aed88d36445e864f4b7052865321d1e4654c3f926a19cd3c2c59193a6be29000"
+    },
+    "fifo_w19_d2_A.v": {
+      "bytes": 3104,
+      "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca"
+    },
+    "fifo_w19_d2_A_x.v": {
+      "bytes": 3112,
+      "sha256": "f787f5b7e87a36eb7086c0f6c52449ff5fb95712d8083e293a91fff26c706e8d"
+    },
+    "fifo_w19_d3_A.v": {
+      "bytes": 3104,
+      "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26"
+    },
+    "fifo_w1_d16384_B.v": {
+      "bytes": 4145,
+      "sha256": "7207612c7f5ea66d81d69b5a91f89b4c2687cafecdac669c21e8eb66e657925f"
+    },
+    "fifo_w1_d7_A.v": {
+      "bytes": 3098,
+      "sha256": "4a8e92948572d683523e59d92e703de345e039cc2c6caba6b70b41845d69de1e"
+    },
+    "fifo_w32_d1_A.v": {
+      "bytes": 3100,
+      "sha256": "f2c43b40e5e75edb6f924ca2dbfc6e1b965db4b3f643a944e491676efa491d29"
+    },
+    "fifo_w32_d1_A_x.v": {
+      "bytes": 3108,
+      "sha256": "e3502036cc2e6b8f03bfdc05d9590338b5d287640502b3c6f2d8211db0922218"
+    },
+    "fifo_w32_d2048_B.v": {
+      "bytes": 4145,
+      "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3"
+    },
+    "fifo_w32_d2_A.v": {
+      "bytes": 3104,
+      "sha256": "e3bbc15ab31fbff266f0870fd2f834f4233ca1bc20585e848ec9bfcbc6dd3bde"
+    },
+    "fifo_w32_d32_A.v": {
+      "bytes": 3110,
+      "sha256": "80ae8bfee5b405163f5352ca7f1adf7bab28a7483b94f6b55d7af3801e264f90"
+    },
+    "fifo_w32_d4096_B.v": {
+      "bytes": 4145,
+      "sha256": "7b3a7e14b262f96fd45451165f3879b1564a65baa59d1d7c24119642c86fc292"
+    },
+    "fifo_w32_d6_A.v": {
+      "bytes": 3104,
+      "sha256": "29d6f5e496bf22e7470d07ccda5b151dc8453af95e8a55d9d8072bbbcfced473"
+    },
+    "fifo_w32_d8192_B.v": {
+      "bytes": 4145,
+      "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2"
+    },
+    "fifo_w64_d2048_B.v": {
+      "bytes": 4145,
+      "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882"
+    },
+    "fifo_w64_d32_A.v": {
+      "bytes": 4140,
+      "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f"
+    },
+    "fifo_w64_d8192_B.v": {
+      "bytes": 4145,
+      "sha256": "3308b68ac61ffa07980d9df29bfb7abc7848f419d7e61e200a19381909013b50"
+    },
+    "fifo_w8_d16384_B.v": {
+      "bytes": 4145,
+      "sha256": "1401cf4d09793b92c0ebbadbadaae05c8602d41235e802bd9a312c4a844c1707"
+    },
+    "fifo_w8_d32_A.v": {
+      "bytes": 3104,
+      "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09"
+    },
+    "fifo_w8_d32_A_x.v": {
+      "bytes": 3112,
+      "sha256": "35d34f0cb8a2dce856cbb202f0dcce8012afba384aef3d407fc857b9ccbf7c61"
+    },
+    "fifo_w8_d8192_B.v": {
+      "bytes": 4143,
+      "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918"
+    },
+    "Filter2D.v": {
+      "bytes": 55515,
+      "sha256": "db9af2b6cd7f9d9947f9330d2c0396affe395e86bbe07792928ff580a0b461c4"
+    },
+    "Filter2D_1.v": {
+      "bytes": 56152,
+      "sha256": "7a7defd5f9df285a5875ce4afc9c6df49a8f1003f0460e581e6e99cd6c975254"
+    },
+    "Filter2D_k_buf_0_bkb.v": {
+      "bytes": 1668,
+      "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180"
+    },
+    "filter_sum.v": {
+      "bytes": 8570,
+      "sha256": "898967798c4e98cd991b716f72e1ee87ef83eaa75c570f47132762a9555e1ed8"
+    },
+    "final_join.v": {
+      "bytes": 18001,
+      "sha256": "00427b70fc93da1be02db5121112ef246256c3e52dbc50781da9b56c58229a45"
+    },
+    "finite_gap_filter.v": {
+      "bytes": 148491,
+      "sha256": "8c5602fced2da28f05525d7825e8c1505e73c67d6a08a2355933cedc24c5a1a2"
+    },
+    "fork_input.v": {
+      "bytes": 18729,
+      "sha256": "19bc2422364670559c8d84461738127597e1c3db99080af12d804c33d32e0fc4"
+    },
+    "gaussian_round.v": {
+      "bytes": 14148,
+      "sha256": "24e06af2eda4da34f1c663590816063470ca39f5b443787cf4458a40da748a15"
+    },
+    "gaussian_sum.v": {
+      "bytes": 8574,
+      "sha256": "6c280180179aa6004cfbcb5bbd77e83967b5c2b9d4eb4721b77c448c98c5b8d5"
+    },
+    "initial_fov.v": {
+      "bytes": 16906,
+      "sha256": "cf0dff76e372eb2fd9e6f2680d726b938ce6015d2b2ac37c614a64e4e8c6df65"
+    },
+    "profile_evidence.v": {
+      "bytes": 1029117,
+      "sha256": "aecf3d4f541fb574b75d926aa6d62ba13f5eff7a6811d47be3b827ea5b6eb1ba"
+    },
+    "refined_join.v": {
+      "bytes": 20046,
+      "sha256": "044e0c4bfcc95e0a45251a49fd004f0c6e07e6e56207246f27ec09d1fe9e9b36"
+    },
+    "response_carrier.v": {
+      "bytes": 23090,
+      "sha256": "9e06d9c1d6c80902c8dd0e61dc2510fbfe32b4afb2cbbecb86a9c54643f394e0"
+    },
+    "retina_c2_support.v": {
+      "bytes": 494963,
+      "sha256": "90f64e784cb16a900889c9225188035ac355d2e1453051700d6c294500839a68"
+    },
+    "retina_refined_base.v": {
+      "bytes": 75889,
+      "sha256": "c64ab2819ed3206de2d524be85ae573697801a5cb2b4ea0f3650efccfda6ea49"
+    },
+    "retina_refined_base_s.v": {
+      "bytes": 31101,
+      "sha256": "122c5e9b8cea4e55f6af794f22703c43eb4ee3eee329547c6e3bd32d3aa5a369"
+    },
+    "retina_refined_hleOg.v": {
+      "bytes": 1170,
+      "sha256": "1437b0115ee12abfcfc9b02b99b5e77ae839d66f34710f11837bc0e5329675e5"
+    },
+    "retina_refined_hls.v": {
+      "bytes": 46524,
+      "sha256": "8f595872ef2feb7fab1ce845adedb19e894df4f1a1ed1c9d15a2762cf37f9019"
+    },
+    "retina_refined_hls_e.v": {
+      "bytes": 5375,
+      "sha256": "87ac07db0134fd6dbe40469ad66b53661e852a1321e2db61f86733ec1e4241da"
+    },
+    "retina_refined_hlShg.v": {
+      "bytes": 3671,
+      "sha256": "b8643a795c5c898c91638fddf3d56e7f65e8e1190ceadda983575f91e2a0de75"
+    },
+    "retina_refined_hludo.v": {
+      "bytes": 2942,
+      "sha256": "923fa45048f136fb41f3e0b71b2a0366ec0b2d6af59a43657d681675273ab40b"
+    },
+    "retina_refined_hlyd2.v": {
+      "bytes": 783,
+      "sha256": "ea2dd5ad3f59beba1b77ca6edc97c2567bf70a49d4f71e1f70436ecd460714bd"
+    },
+    "row_filter.v": {
+      "bytes": 61276,
+      "sha256": "33e37646938f6026bcf05931ac9418f7836cb44e0eca92ccfc3d6dc1575b9957"
+    },
+    "row_filter_l_bordvdy.v": {
+      "bytes": 1674,
+      "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7"
+    },
+    "seed_flags.v": {
+      "bytes": 19383,
+      "sha256": "6385f3c1429d096cd1382f712585b1e8d4393a0635cfba17e0d2ddd417a17904"
+    },
+    "select_response.v": {
+      "bytes": 21174,
+      "sha256": "460c02fdc8700435b5f48979ed405cae9d35e777caa8521df11618ec3966266a"
+    },
+    "SepFilter2D.v": {
+      "bytes": 7857,
+      "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d"
+    },
+    "split_words.v": {
+      "bytes": 14143,
+      "sha256": "b7404a137c747ece753a7efd30fc0fb4a1e6200f44c395d388abff5e5b776293"
+    },
+    "start_for_backgro1iI.v": {
+      "bytes": 3130,
+      "sha256": "eafefee21e4cecbad6db0461336332b13cb2c90659474c510fb88560a3748feb"
+    },
+    "start_for_Block_pbCo.v": {
+      "bytes": 3126,
+      "sha256": "c49ee9cbc774187200027e08cc4c875c124d2590874c08feb04deab88bef3233"
+    },
+    "start_for_Block_pbDo.v": {
+      "bytes": 3126,
+      "sha256": "e3a2a9b10a21b4a81ba3b172678ac679d4746d7738399f17fb35f0ce86be7d13"
+    },
+    "start_for_closed_bck.v": {
+      "bytes": 3132,
+      "sha256": "68125441b6d476eb00fa91dc095582e91d93ff1dac83c4d7a4aabb4850baf1d7"
+    },
+    "start_for_count_n7jG.v": {
+      "bytes": 3132,
+      "sha256": "230419c2b7e1c2353398608aac0f048d1341f995ead5a4196fec4e033c5def1f"
+    },
+    "start_for_dilate_5jm.v": {
+      "bytes": 3132,
+      "sha256": "fcaf4b7fb0d1365e69fa7c551ddd9223f91dc95bf4bde412fafad89351396730"
+    },
+    "start_for_enhance8jQ.v": {
+      "bytes": 3130,
+      "sha256": "4a6bc8a3b2dc8a0d2417e1d762d4b712dff120814c2d2e301e94468c4f4ff071"
+    },
+    "start_for_erode_z6jw.v": {
+      "bytes": 3132,
+      "sha256": "a522af4702b24ce2b3feabb6c99dbe8a3091dd28c5fa0c992be22fa4e5fb7f4c"
+    },
+    "start_for_filter_0iy.v": {
+      "bytes": 3130,
+      "sha256": "f6e25649113cbe7f3433897d5c416a4a05935bd50e425ec0a405a1e4fb9e983f"
+    },
+    "start_for_final_jbbk.v": {
+      "bytes": 3132,
+      "sha256": "28d69e83a305058d46250024543691698205d25e52fa2764f8d53bae7f643179"
+    },
+    "start_for_finite_bFp.v": {
+      "bytes": 3130,
+      "sha256": "d83bbdeb99d7e7eea5ca8f51bd9e35e944a017ccc079b8c22ef075a991c60e7f"
+    },
+    "start_for_gaussiabHp.v": {
+      "bytes": 3130,
+      "sha256": "07c0e48d14dafd29018db6ef7aaf116c9a501b17e8964c08f0efb8d0d72c69de"
+    },
+    "start_for_gaussiabIp.v": {
+      "bytes": 3130,
+      "sha256": "9cf64bc423b9de58ab0b85c554ae6142a82896f1dc7f22984103c79e377b37c5"
+    },
+    "start_for_initialbak.v": {
+      "bytes": 3130,
+      "sha256": "61c481d5eaa5d4ba5edaf013fb80fd7b8131f4394bfe2c5a62b388d0967ed561"
+    },
+    "start_for_profilebEo.v": {
+      "bytes": 3130,
+      "sha256": "4f708ea546dd8193949ca4fd67b0895625d0d3d78c9db0ea598f33423eaef9af"
+    },
+    "start_for_refinedbKp.v": {
+      "bytes": 3130,
+      "sha256": "d898f6408027f93e9d1b663bf1f8a0cef4d547bf6fcbf6e4c83a64bacbfc6d5d"
+    },
+    "start_for_respons9j0.v": {
+      "bytes": 3130,
+      "sha256": "957d61e348393d392ad562f3c89c2da681f1d0f42c859fcb1ebab9f430a4cb6a"
+    },
+    "start_for_retina_2iS.v": {
+      "bytes": 3130,
+      "sha256": "d89d0765cd3ef640a912ba53888d1efae2422e5fe5421c08333ef1945333eda1"
+    },
+    "start_for_retina_bGp.v": {
+      "bytes": 3130,
+      "sha256": "2fa6c8fc90ea0ad65c28e35a4893f6f66f6c4ef57616158a6ba1d2214ffc9a4e"
+    },
+    "start_for_row_filxdS.v": {
+      "bytes": 3126,
+      "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2"
+    },
+    "start_for_seed_flbJp.v": {
+      "bytes": 3130,
+      "sha256": "530faea873f464f858750687e8dfbb6e9288608b18da70b6d3b966af6cef85dd"
+    },
+    "start_for_select_3i2.v": {
+      "bytes": 3130,
+      "sha256": "b1e6f13e1fb95842fe46974f4eea60e0de270d0cb397d9dbb5b9867c4befab4b"
+    },
+    "start_for_thresho4jc.v": {
+      "bytes": 3130,
+      "sha256": "e5ec1b91981d5cefbd60099b63b7337791ff9577df55cf6ab10a77228d5e8e24"
+    },
+    "threshold_binary.v": {
+      "bytes": 19627,
+      "sha256": "86c1aee9afbf7e656b9ca4b55640fa342e958e409604df98d8dab2b86b722e95"
+    }
+  },
+  "ip_dict": {
+    "axi_dma_0": {
+      "fullpath": "axi_dma_0",
+      "type": "xilinx.com:ip:axi_dma:7.1",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1077936128,
+      "mem_id": "S_AXI_LITE",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_S_AXI_LITE_ADDR_WIDTH": "10",
+        "C_S_AXI_LITE_DATA_WIDTH": "32",
+        "C_DLYTMR_RESOLUTION": "125",
+        "C_PRMRY_IS_ACLK_ASYNC": "0",
+        "C_ENABLE_MULTI_CHANNEL": "0",
+        "C_NUM_MM2S_CHANNELS": "1",
+        "C_NUM_S2MM_CHANNELS": "1",
+        "C_INCLUDE_SG": "0",
+        "C_SG_INCLUDE_STSCNTRL_STRM": "0",
+        "C_SG_USE_STSAPP_LENGTH": "0",
+        "C_SG_LENGTH_WIDTH": "23",
+        "C_M_AXI_SG_ADDR_WIDTH": "32",
+        "C_M_AXI_SG_DATA_WIDTH": "32",
+        "C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_STS_TDATA_WIDTH": "32",
+        "C_MICRO_DMA": "0",
+        "C_INCLUDE_MM2S": "1",
+        "C_INCLUDE_MM2S_SF": "1",
+        "C_MM2S_BURST_SIZE": "16",
+        "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+        "C_M_AXI_MM2S_DATA_WIDTH": "64",
+        "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+        "C_INCLUDE_MM2S_DRE": "0",
+        "C_INCLUDE_S2MM": "1",
+        "C_INCLUDE_S2MM_SF": "1",
+        "C_S2MM_BURST_SIZE": "16",
+        "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+        "C_M_AXI_S2MM_DATA_WIDTH": "32",
+        "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+        "C_INCLUDE_S2MM_DRE": "0",
+        "C_FAMILY": "zynq",
+        "Component_Name": "q4_refined_axi_dma_0_0",
+        "c_include_sg": "0",
+        "c_enable_multi_channel": "0",
+        "c_num_mm2s_channels": "1",
+        "c_num_s2mm_channels": "1",
+        "c_sg_length_width": "23",
+        "c_dlytmr_resolution": "125",
+        "c_prmry_is_aclk_async": "0",
+        "c_sg_include_stscntrl_strm": "0",
+        "c_micro_dma": "0",
+        "c_include_mm2s": "1",
+        "c_m_axi_mm2s_data_width": "64",
+        "c_m_axis_mm2s_tdata_width": "32",
+        "c_include_mm2s_dre": "0",
+        "c_include_mm2s_sf": "1",
+        "c_mm2s_burst_size": "16",
+        "c_include_s2mm": "1",
+        "c_sg_use_stsapp_length": "0",
+        "c_m_axi_s2mm_data_width": "32",
+        "c_s_axis_s2mm_tdata_width": "32",
+        "c_include_s2mm_dre": "0",
+        "c_include_s2mm_sf": "1",
+        "c_s2mm_burst_size": "16",
+        "c_addr_width": "32",
+        "c_single_interface": "0",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x40400000",
+        "C_HIGHADDR": "0x4040FFFF"
+      },
+      "registers": {
+        "MM2S_DMACR": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Control Register",
+          "fields": {
+            "RS": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Reset": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Keyhole": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Cyclic_BD_Enable": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "IOC_IrqEn": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Dly_IrqEn": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "Err_IrqEn": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQThreshold": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQDelay": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "MM2S DMA Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_DMASR": {
+          "address_offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Status Register",
+          "fields": {
+            "Halted": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "Idle": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIncld": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "DMAIntErr": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "DMASlvErr": {
+              "bit_offset": 5,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "DMADecErr": {
+              "bit_offset": 6,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIntErr": {
+              "bit_offset": 8,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGSlvErr": {
+              "bit_offset": 9,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "SGDecErr": {
+              "bit_offset": 10,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "IOC_Irq": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-write"
+            },
+            "Dly_Irq": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-write"
+            },
+            "Err_Irq": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "MM2S DMA Status Register",
+              "access": "read-write"
+            },
+            "IRQThresholdSts": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            },
+            "IRQDelaySts": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "MM2S DMA Status Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "MM2S_CURDESC": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "MM2S DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_CURDESC_MSB": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_TAILDESC": {
+          "address_offset": 16,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "MM2S DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_TAILDESC_MSB": {
+          "address_offset": 20,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA": {
+          "address_offset": 24,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Source Address Register",
+          "fields": {
+            "Source_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Source Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_SA_MSB": {
+          "address_offset": 28,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S Source Address Register",
+          "fields": {
+            "Source_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "MM2S Source Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "MM2S_LENGTH": {
+          "address_offset": 40,
+          "size": 32,
+          "access": "read-write",
+          "description": "MM2S DMA Transfer Length Register",
+          "fields": {
+            "Length": {
+              "bit_offset": 0,
+              "bit_width": 23,
+              "description": "MM2S DMA Transfer Length Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "SG_CTL": {
+          "address_offset": 44,
+          "size": 32,
+          "access": "read-write",
+          "description": "Scatter/Gather User and Cache Control Register",
+          "fields": {
+            "SG_CACHE": {
+              "bit_offset": 0,
+              "bit_width": 4,
+              "description": "Scatter/Gather User and Cache Control Register",
+              "access": "read-write"
+            },
+            "SG_USER": {
+              "bit_offset": 8,
+              "bit_width": 4,
+              "description": "Scatter/Gather User and Cache Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DMACR": {
+          "address_offset": 48,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Control Register",
+          "fields": {
+            "RS": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Reset": {
+              "bit_offset": 2,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Keyhole": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Cyclic_BD_Enable": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "IOC_IrqEn": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Dly_IrqEn": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "Err_IrqEn": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQThreshold": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            },
+            "IRQDelay": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "S2MM DMA Control Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DMASR": {
+          "address_offset": 52,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Status Register",
+          "fields": {
+            "Halted": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "Idle": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIncld": {
+              "bit_offset": 3,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "DMAIntErr": {
+              "bit_offset": 4,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "DMASlvErr": {
+              "bit_offset": 5,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "DMADecErr": {
+              "bit_offset": 6,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGIntErr": {
+              "bit_offset": 8,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGSlvErr": {
+              "bit_offset": 9,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "SGDecErr": {
+              "bit_offset": 10,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "IOC_Irq": {
+              "bit_offset": 12,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-write"
+            },
+            "Dly_Irq": {
+              "bit_offset": 13,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-write"
+            },
+            "Err_Irq": {
+              "bit_offset": 14,
+              "bit_width": 1,
+              "description": "S2MM DMA Status Register",
+              "access": "read-write"
+            },
+            "IRQThresholdSts": {
+              "bit_offset": 16,
+              "bit_width": 8,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            },
+            "IRQDelaySts": {
+              "bit_offset": 24,
+              "bit_width": 8,
+              "description": "S2MM DMA Status Register",
+              "access": "read-only"
+            }
+          }
+        },
+        "S2MM_CURDESC": {
+          "address_offset": 56,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "S2MM DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_CURDESC_MSB": {
+          "address_offset": 60,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Current Descriptor Pointer Register",
+          "fields": {
+            "Current_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM DMA Current Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_TAILDESC": {
+          "address_offset": 64,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 6,
+              "bit_width": 26,
+              "description": "S2MM DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_TAILDESC_MSB": {
+          "address_offset": 68,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Tail Descriptor Pointer Register",
+          "fields": {
+            "Tail_Descriptor_Pointer": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM DMA Tail Descriptor Pointer Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DA": {
+          "address_offset": 72,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Destination Address Register",
+          "fields": {
+            "Destination_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM DMA Destination Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_DA_MSB": {
+          "address_offset": 76,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM Destination Address Register",
+          "fields": {
+            "Destination_Address": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "S2MM Destination Address Register",
+              "access": "read-write"
+            }
+          }
+        },
+        "S2MM_LENGTH": {
+          "address_offset": 88,
+          "size": 32,
+          "access": "read-write",
+          "description": "S2MM DMA Transfer Length Register",
+          "fields": {
+            "Length": {
+              "bit_offset": 0,
+              "bit_width": 23,
+              "description": "S2MM DMA Transfer Length Register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "point_control": {
+      "fullpath": "point_control",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092616192,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "32",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "1",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "0",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "1",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "q4_refined_point_control_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41200000",
+        "C_HIGHADDR": "0x4120FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    },
+    "point_observe": {
+      "fullpath": "point_observe",
+      "type": "xilinx.com:ip:axi_gpio:2.0",
+      "bdtype": null,
+      "state": null,
+      "addr_range": 65536,
+      "phys_addr": 1092681728,
+      "mem_id": "S_AXI",
+      "memtype": "REGISTER",
+      "gpio": {},
+      "interrupts": {},
+      "parameters": {
+        "C_FAMILY": "zynq",
+        "C_S_AXI_ADDR_WIDTH": "9",
+        "C_S_AXI_DATA_WIDTH": "32",
+        "C_GPIO_WIDTH": "32",
+        "C_GPIO2_WIDTH": "32",
+        "C_ALL_INPUTS": "0",
+        "C_ALL_INPUTS_2": "1",
+        "C_ALL_OUTPUTS": "1",
+        "C_ALL_OUTPUTS_2": "0",
+        "C_INTERRUPT_PRESENT": "0",
+        "C_DOUT_DEFAULT": "0x00000000",
+        "C_TRI_DEFAULT": "0xFFFFFFFF",
+        "C_IS_DUAL": "1",
+        "C_DOUT_DEFAULT_2": "0x00000000",
+        "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+        "Component_Name": "q4_refined_point_observe_0",
+        "USE_BOARD_FLOW": "false",
+        "GPIO_BOARD_INTERFACE": "Custom",
+        "GPIO2_BOARD_INTERFACE": "Custom",
+        "EDK_IPTYPE": "PERIPHERAL",
+        "C_BASEADDR": "0x41210000",
+        "C_HIGHADDR": "0x4121FFFF"
+      },
+      "registers": {
+        "GPIO_DATA": {
+          "address_offset": 0,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO Data register",
+          "fields": {
+            "Channel-1 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-1 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO_TRI": {
+          "address_offset": 4,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-1 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-1 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-1 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_DATA": {
+          "address_offset": 8,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO Data register",
+          "fields": {
+            "Channel-2 GPIO DATA": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO Data register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GPIO2_TRI": {
+          "address_offset": 12,
+          "size": 32,
+          "access": "read-write",
+          "description": "Channel-2 AXI GPIO 3-State Control register",
+          "fields": {
+            "Channel-2 GPIO TRI": {
+              "bit_offset": 0,
+              "bit_width": 32,
+              "description": "Channel-2 AXI GPIO 3-State Control register",
+              "access": "read-write"
+            }
+          }
+        },
+        "GIER": {
+          "address_offset": 284,
+          "size": 32,
+          "access": "read-write",
+          "description": "Global Interrupt Enable register",
+          "fields": {
+            "Global Interrupt Enable": {
+              "bit_offset": 31,
+              "bit_width": 1,
+              "description": "Global Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_IER": {
+          "address_offset": 296,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Enable register",
+          "fields": {
+            "Channel-1 Interrupt Enable": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Enable": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Enable register",
+              "access": "read-write"
+            }
+          }
+        },
+        "IP_ISR": {
+          "address_offset": 288,
+          "size": 32,
+          "access": "read-write",
+          "description": "IP Interrupt Status register",
+          "fields": {
+            "Channel-1 Interrupt Status": {
+              "bit_offset": 0,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            },
+            "Channel-2 Interrupt Status": {
+              "bit_offset": 1,
+              "bit_width": 1,
+              "description": "IP Interrupt Status register",
+              "access": "read-write"
+            }
+          }
+        }
+      }
+    }
+  },
+  "artifacts": {
+    "q4_refined.hwh": {
+      "bytes": 379601,
+      "sha256": "b36d6b9e6e3ae87643eb37f93258cedd4d5b721eb69ccaa1866e95cda7274e64"
+    },
+    "q4_refined.bit": {
+      "bytes": 4045678,
+      "sha256": "c15352853e7d973e4131a04c50bd28476d9b33ed432e1d31e19d0ebdf5d4591b"
+    }
+  },
+  "board_status": "NOT_RUN"
+}

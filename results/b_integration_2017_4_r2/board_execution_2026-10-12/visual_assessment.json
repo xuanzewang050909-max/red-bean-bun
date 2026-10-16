@@ -1,0 +1,27 @@
+{
+  "status": "PASS_USER_PHOTOS_COLOR_LAYOUT_AND_MEDICAL_RESULT_PRESENTATION",
+  "reviewed_host_utc": "2026-10-12T03:41:50.220187+00:00",
+  "color_photo": {
+    "raw_name": "monitor_color_photo.jpg",
+    "bytes": 4958627,
+    "sha256": "d58adf50f0b69e4e28a4e4b891daf0b0ecd4e2fd6396e4a88076b3b1d2306a0d",
+    "observations": [
+      "Left-to-right blue, green, red panels",
+      "White border and central horizontal/vertical position lines"
+    ]
+  },
+  "medical_photo": {
+    "raw_name": "monitor_medical_photo.jpg",
+    "bytes": 7290986,
+    "sha256": "4b531737d62ef4b44578285129b8ad8f6b63ae6cda7f98b6dfc1aa58ebe35d52",
+    "observations": [
+      "Left raw green grayscale fundus panel",
+      "Right same fundus with green FPGA vessel candidates",
+      "Expected captions, bottom one-overlay label and upper-left progress block",
+      "Matches archived medical-display PNG in arrangement and image features"
+    ]
+  },
+  "method": "Human-visible attached photos reviewed in conversation; downloaded medical PNG also viewed. Numerical PNG/panel/array/Notebook verification is stored separately.",
+  "original_board_visual_status_preserved": "PENDING_USER_OBSERVATION",
+  "limits": "Photos support visible color/layout/image correctness at photographed instants. No calibrated color measurement, continuous-stability video or measured display refresh rate. Candidate quality unchanged from frozen M0; photo appearance is not a clinical accuracy test."
+}

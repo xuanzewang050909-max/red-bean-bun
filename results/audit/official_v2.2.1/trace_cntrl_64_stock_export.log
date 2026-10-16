@@ -1,0 +1,98 @@
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2017.4/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Gabriel' on host 'laptop-dpjt23tc' (Windows NT_amd64 version 6.2) on Sun Oct 11 03:03:57 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls'
+INFO: [HLS 200-10] Creating and opening project 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/trace_cntrl_64'.
+INFO: [HLS 200-10] Adding design file 'trace_cntrl_64/trace_cntrl_64.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/trace_cntrl_64/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'trace_cntrl_64/trace_cntrl_64.cpp' ...
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.645 ; gain = 46.406
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 101.664 ; gain = 46.426
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 108.273 ; gain = 53.035
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 111.984 ; gain = 56.746
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'capture_64.data.V' (trace_cntrl_64/trace_cntrl_64.cpp:7).
+WARNING: [XFORM 203-1103] Ignored data pack directive on non-struct variable 'trace_64.data.V' (trace_cntrl_64/trace_cntrl_64.cpp:6).
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (trace_cntrl_64/trace_cntrl_64.cpp:20:32) to (trace_cntrl_64/trace_cntrl_64.cpp:26:3) in function 'trace_cntrl_64'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 137.957 ; gain = 82.719
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 139.227 ; gain = 83.988
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'trace_cntrl_64' ...
+WARNING: [SYN 201-107] Renaming port name 'trace_cntrl_64/length' to 'trace_cntrl_64/length_r' to avoid the conflict with HDL keywords or other object names.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'trace_cntrl_64'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 4.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 6.391 seconds; current allocated memory: 88.798 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.019 seconds; current allocated memory: 89.040 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'trace_cntrl_64'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trace_64_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_data_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_keep_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_strb_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_id_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/capture_64_dest_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/trigger_V' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'trace_cntrl_64/length_r' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'trace_cntrl_64' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'trigger_V' and 'length_r' to AXI-Lite port trace_cntrl.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'trace_cntrl_64'.
+INFO: [HLS 200-111]  Elapsed time: 0.038 seconds; current allocated memory: 90.443 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 142.176 ; gain = 86.938
+INFO: [SYSC 207-301] Generating SystemC RTL for trace_cntrl_64.
+INFO: [VHDL 208-304] Generating VHDL RTL for trace_cntrl_64.
+INFO: [VLOG 209-307] Generating Verilog RTL for trace_cntrl_64.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2610110304 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 953)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 03:04:07 2026...
+ERROR: [IMPL 213-28] Failed to generate IP.
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 10.364 seconds; peak allocated memory: 90.443 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sun Oct 11 03:04:07 2026...
+child process exited abnormally

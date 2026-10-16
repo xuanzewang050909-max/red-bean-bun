@@ -1,0 +1,6 @@
+Vivado Simulator 2017.4
+Time resolution is 1 ps
+CHECK: ext=1 aux=0 ic=1 per=1 GSR=0
+Fatal: Faulty auxiliary tie-low was not reproduced
+Time: 3996 ns  Iteration: 0  Process: /a0_reset_tb/Initial20_1  File: D:/PLD/retina_fpga/scripts/a0_reset_tb.sv
+$finish called at time : 3996 ns : File "D:/PLD/retina_fpga/scripts/a0_reset_tb.sv" Line 28

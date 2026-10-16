@@ -1,0 +1,13 @@
+test_fresh_extraction_and_preserve_old_folder (test_c7_w4_browser.ProtocolTests.test_fresh_extraction_and_preserve_old_folder) ... ok
+test_hidden_missing_duplicate_wrong_nonce_and_clock_rejected (test_c7_w4_browser.ProtocolTests.test_hidden_missing_duplicate_wrong_nonce_and_clock_rejected) ... ok
+test_independent_summary_excludes_warmup (test_c7_w4_browser.ProtocolTests.test_independent_summary_excludes_warmup) ... ok
+test_no_cpu_comparator_in_deployment (test_c7_w4_browser.ProtocolTests.test_no_cpu_comparator_in_deployment) ... ok
+test_original_processor_and_display_math_unchanged (test_c7_w4_browser.ProtocolTests.test_original_processor_and_display_math_unchanged) ... ok
+test_python310_and_exact_seven_cells (test_c7_w4_browser.ProtocolTests.test_python310_and_exact_seven_cells) ... ok
+test_reference_hardware_evaluation_observer_and_inputs_preserved (test_c7_w4_browser.ProtocolTests.test_reference_hardware_evaluation_observer_and_inputs_preserved) ... ok
+test_schedule_boundaries (test_c7_w4_browser.ProtocolTests.test_schedule_boundaries) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.787s
+
+OK

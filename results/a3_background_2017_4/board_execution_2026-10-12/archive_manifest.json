@@ -1,0 +1,66 @@
+{
+  "status": "PASS_BOARD_RECORDS_AND_RAW_ARRAYS_VERIFIED_AND_ARCHIVED",
+  "verified_host_utc": "2026-10-11T18:43:12.845984+00:00",
+  "revision": "a3_background_r1_vendor_box",
+  "hardware_source_commit": "3d203d55e09d483dcb2638e53fa869f89c206d7e",
+  "release_manifest_sha256": "27cd1ad1a6360ca65e3dd99afed2d2d7158d8721989f53784fa8877cba7b8d17",
+  "board_clock_utc_unverified": "2022-10-22T05:18:49.960253+00:00",
+  "frames_verified": 45,
+  "input_words_verified": 7274496,
+  "raw_output_words_verified": 655360,
+  "notebook_code_sha256": "a63c867bc18b026c641866f23b699517bad22eeb8939778f1780fb7b7304ce07",
+  "source_paths": {
+    "notebook": "C:\\Users\\Gabriel\\Downloads\\a3_background_check.ipynb",
+    "bundle": "C:\\Users\\Gabriel\\Downloads\\a3_results_bundle.zip"
+  },
+  "raw_files": {
+    "a3_background_check_executed.ipynb": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_background_check_executed.ipynb",
+      "bytes": 227615,
+      "sha256": "0d5541f31e6a50e50f6aa4fc12b440131df9b3d9c19b1cbaf5b92693f35eeb90"
+    },
+    "a3_results_bundle.zip": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_results_bundle.zip",
+      "bytes": 1249553,
+      "sha256": "a5045a8b19675c3a82609007ca757002a1e1919079740f98c4b128ae68a87c8e"
+    },
+    "a3_background_result.json": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_background_result.json",
+      "bytes": 52889,
+      "sha256": "af0fbedf61ecaa772cc3c62b4b28e00d945aeb5751a21719155cf6e236f83c7a"
+    },
+    "a3_preview.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_preview.png",
+      "bytes": 163467,
+      "sha256": "a92ce1e96f55c30601e7aa0b3c551ab82d4eebb4301078ae89b1233dae8c5a43"
+    },
+    "a3_output_stare_256_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_output_stare_256_mode2.npy",
+      "bytes": 262272,
+      "sha256": "e8f1b4cf5ea694995205a91e47844ef23cbe653defada4eb301df40f4b9347bf"
+    },
+    "a3_output_stare_256_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_output_stare_256_mode3.npy",
+      "bytes": 262272,
+      "sha256": "c09273e7846e62e0460b388f3a096577468fb0d36ac2d1047a88800d930abb8b"
+    },
+    "a3_output_stare_512_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_output_stare_512_mode2.npy",
+      "bytes": 1048704,
+      "sha256": "7f1cbb01332a983748ee2e310c796088bf68a46b29f55e2901831b5ca493f492"
+    },
+    "a3_output_stare_512_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\a3_output_stare_512_mode3.npy",
+      "bytes": 1048704,
+      "sha256": "6534f5b8f32a0cc741a0b582e4a80297c210921b90b71743857e5a9bea32a416"
+    },
+    "user_result_screenshot.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a3_background_2026-10-12\\user_result_screenshot.png",
+      "bytes": 341733,
+      "sha256": "e4601f46e66f854367f50e7453053b62664000a29315d67bfec35bcd66eaeddc"
+    }
+  },
+  "local_archive_policy": "Retinal arrays, PNG and output-bearing Notebook stay in ignored build/board_results. Original JSON and hashes are tracked; no dataset redistribution.",
+  "scope": "Actual PYNQ-Z2 A3: 45 bypass/enhanced/background/response frames, standard DMA/GPIO/DDR, original G and center FOV alignment in modes 0-2.",
+  "limits": "All 45 board output hashes recomputed independently; all 4 saved STARE buffers compared word by word on the host. Other 41 raw buffers are not downloaded. No full vessel segmentation, final HDMI integration, FPS or clinical validation."
+}

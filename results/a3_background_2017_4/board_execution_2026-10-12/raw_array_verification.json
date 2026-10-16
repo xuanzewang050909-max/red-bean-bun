@@ -1,0 +1,54 @@
+[
+  {
+    "name": "a3_output_stare_256_mode2.npy",
+    "shape": [
+      256,
+      256
+    ],
+    "dtype": "uint32",
+    "words": 65536,
+    "file_sha256": "e8f1b4cf5ea694995205a91e47844ef23cbe653defada4eb301df40f4b9347bf",
+    "word_sha256": "055a9c543d6097cb24bde9ea86db93746de9858243cc0643f266947165cc1ab2",
+    "mismatched_words": 0,
+    "status": "PASS_EVERY_RAW_WORD"
+  },
+  {
+    "name": "a3_output_stare_256_mode3.npy",
+    "shape": [
+      256,
+      256
+    ],
+    "dtype": "uint32",
+    "words": 65536,
+    "file_sha256": "c09273e7846e62e0460b388f3a096577468fb0d36ac2d1047a88800d930abb8b",
+    "word_sha256": "be6d200a8d9948ebc81550ed21ba720c9506360a19a5ca53a967b1073cc6b5d9",
+    "mismatched_words": 0,
+    "status": "PASS_EVERY_RAW_WORD"
+  },
+  {
+    "name": "a3_output_stare_512_mode2.npy",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file_sha256": "7f1cbb01332a983748ee2e310c796088bf68a46b29f55e2901831b5ca493f492",
+    "word_sha256": "670a82cdc9e4d32679cb8fac4f215a9b14798e68872488cacf7bc0de88571ed9",
+    "mismatched_words": 0,
+    "status": "PASS_EVERY_RAW_WORD"
+  },
+  {
+    "name": "a3_output_stare_512_mode3.npy",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file_sha256": "6534f5b8f32a0cc741a0b582e4a80297c210921b90b71743857e5a9bea32a416",
+    "word_sha256": "a7bfc4bc9894185391630f2cec60595d41bd57a67fc6b847f8559027467c726c",
+    "mismatched_words": 0,
+    "status": "PASS_EVERY_RAW_WORD"
+  }
+]

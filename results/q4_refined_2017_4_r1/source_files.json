@@ -1,0 +1,226 @@
+{
+  "docs/q4_board_protocol_r1.json": {
+    "bytes": 1283,
+    "sha256": "afdc589fed9b79d4932b747f030b8d8b327cc3e581733be274c3e78cabed67a0"
+  },
+  "hls/retina_refined_base.cpp": {
+    "bytes": 10392,
+    "sha256": "c683a174ac03cba878c37ce3af203f686b9e6802f6c11f8ce018e6ddb1370af1"
+  },
+  "hls/retina_refined_hls.cpp": {
+    "bytes": 8143,
+    "sha256": "52b6c5097d702dac92bfd8a90c188125c45f45a902f27e31e18340bbc958377b"
+  },
+  "hls/retina_refined_hls.hpp": {
+    "bytes": 538,
+    "sha256": "9b3abe9bd3ccd1dae07f1456a45f626b95472179c65783901f705750d22df55a"
+  },
+  "notebooks/q4_quality_start.ipynb": {
+    "bytes": 7671,
+    "sha256": "5c5fe6c9c25ecd29d764302f023211c1209f0866806ce04cdfa6d29f54874fe3"
+  },
+  "pynq_q4/__init__.py": {
+    "bytes": 85,
+    "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+  },
+  "pynq_q4/evaluation.py": {
+    "bytes": 1912,
+    "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+  },
+  "pynq_q4/hardware.py": {
+    "bytes": 12756,
+    "sha256": "a3d48cb2165164f76c80153adb2ae84a5d4e6d7ae1574bb8fd2b29baac73c730"
+  },
+  "pynq_q4/launch.py": {
+    "bytes": 4605,
+    "sha256": "14dfc8bfdf2e37a6fbe50bd269352dda9d6f3badf38d420e4c60f391470cb870"
+  },
+  "pynq_q4/protocol.py": {
+    "bytes": 5355,
+    "sha256": "2edd67602bfd1a9e9e43a5fb92572bd8c122528c23530f93698c7aaf2fe9da21"
+  },
+  "pynq_q4/quality_observer.py": {
+    "bytes": 5020,
+    "sha256": "b6457450bf1b66589ca3d8956cbf508a140a21723fa5200093f412eb27b37be1"
+  },
+  "pynq_q4/service.py": {
+    "bytes": 28568,
+    "sha256": "eb302213552b84baf5ffe643cb73251c38c73892fc5f685cc542ce4f9b79b4a1"
+  },
+  "rtl/core/retina_refined_guard.v": {
+    "bytes": 10096,
+    "sha256": "c5005adbec38ae0284d94d51ccfdec535149e6e00c7f43f24121c7e9b6e72d39"
+  },
+  "scripts/audit_q4_fusion_errors.py": {
+    "bytes": 7528,
+    "sha256": "fa3e2252433f8e2a96d8073e589eebecc29de3fd3bba75120e4a2b424a999ff0"
+  },
+  "scripts/audit_q4_gradient_errors.py": {
+    "bytes": 6043,
+    "sha256": "3ff80b52c29ac9a6b2d970240b1d5ca47bbdb5c0ccbf691119292e975c0f9464"
+  },
+  "scripts/audit_q4_missing_paths.py": {
+    "bytes": 3373,
+    "sha256": "b3aba6373da2dda6297a5580a0274bab9e489a050829aae797bc91548fb66565"
+  },
+  "scripts/audit_q4_profiles.py": {
+    "bytes": 9286,
+    "sha256": "71e03c85f02756f4decc9e842d985a2cd6c203bc8d2b74f571a6b8635919c399"
+  },
+  "scripts/check_q4_hardware.py": {
+    "bytes": 8242,
+    "sha256": "67fb64edcc81c481cace68b654e1a704868ecff13d70e397e97acd9da0b78301"
+  },
+  "scripts/evaluate_q4_fusion.py": {
+    "bytes": 366,
+    "sha256": "a3f4bf2c0891d72c96045fb892f91fb4ff338e4cdb7171fbb5529aed43531b62"
+  },
+  "scripts/evaluate_q4_gradient.py": {
+    "bytes": 365,
+    "sha256": "0e1da0a1aa16dbf159189d7ec9dbbec7660eeec068b01a6b35abd41a4e120a45"
+  },
+  "scripts/evaluate_q4_refinement.py": {
+    "bytes": 11511,
+    "sha256": "1e53249abe5f2bdd9eb8a7600a6fb35627a774d8eded4799cd337510e317e875"
+  },
+  "scripts/evaluate_q4_ridge.py": {
+    "bytes": 367,
+    "sha256": "9b7e52c6b6bc568129026a5e7ae9b6b599edea470e4bf2f22f20d836a7fd55ce"
+  },
+  "scripts/package_q4_quality.py": {
+    "bytes": 7642,
+    "sha256": "97ea877724b7c370c44a6d65bb47780f85217bccf670004c0aba3c7f9d297383"
+  },
+  "scripts/plot_q4_profile_audit.py": {
+    "bytes": 3625,
+    "sha256": "23215f8563675ef60e7fb0383b25498190bf1a2cdf627175ceeff25423e1d57a"
+  },
+  "scripts/prepare_q4_board_hashes.py": {
+    "bytes": 1463,
+    "sha256": "7dce214222728cb8727c47746659c08cdfe2d9d550737929bf1642ddf5a46158"
+  },
+  "scripts/prepare_q4_refined_vectors.py": {
+    "bytes": 7232,
+    "sha256": "51c63e4879d78606cdf548a211b174ed21af06c144cc64059f1546563b201b2e"
+  },
+  "scripts/q4_board.py": {
+    "bytes": 8189,
+    "sha256": "e5e953ad07d6f02bfe2ff7d0b66a9e1b13914ff321b2834c407670518c0732cb"
+  },
+  "scripts/run_q4_guard_simulation.ps1": {
+    "bytes": 1532,
+    "sha256": "efde5a9d5f812ee2de1f92350168c29241a906a5838f74b7c4a980757d84f5fc"
+  },
+  "scripts/run_q4_refined_simulation.ps1": {
+    "bytes": 2331,
+    "sha256": "8dca2c8a7a65423faf4cf88c91eb574aef9fee9467b5a61c6179fd8dbddcdd08"
+  },
+  "scripts/verify_q4_archive.py": {
+    "bytes": 19599,
+    "sha256": "a8e3f226d7e4254043bdd166d44b9ed1f20ec9f4df624b5b3ef56561dc4a4c66"
+  },
+  "scripts/verify_q4_fusion.py": {
+    "bytes": 2614,
+    "sha256": "706cdda699aa15049cc98a5dd45cac7f2526c05910c2cb70387ff24486b53afc"
+  },
+  "scripts/verify_q4_gradient.py": {
+    "bytes": 3491,
+    "sha256": "981536da0e226b835140585bb7502674d64cbfae0f3a432a22d23615e74ae418"
+  },
+  "scripts/verify_q4_profile_features.py": {
+    "bytes": 9521,
+    "sha256": "4b4ffffdb235af3f48dcc63115fd45df8711040d19ba8a34f2d997ebb912b050"
+  },
+  "scripts/verify_q4_run.py": {
+    "bytes": 16228,
+    "sha256": "76ebd9f57adb9aeb3e2de10f55ee61bef8399e9a703b7f244ed75d1bcec80edb"
+  },
+  "scripts/verify_q4_training.py": {
+    "bytes": 9153,
+    "sha256": "f585f52be22be94e002256adeb9c2379deb62e64475ce87fc8f75029a5d3864d"
+  },
+  "tests/browser_q4_fixtures.py": {
+    "bytes": 6854,
+    "sha256": "a93cc19a57e871eb9969e1ff2c368ef9441d27744869610d9816a63d3249de45"
+  },
+  "tests/retina_q4_refined_axis_tb.sv": {
+    "bytes": 12838,
+    "sha256": "9b3adbc0dcb2f833c5c209568fa25fe40f42a17a3d7e5885adbd4126da833b97"
+  },
+  "tests/retina_refined_guard_tb.sv": {
+    "bytes": 10549,
+    "sha256": "125fe478e63f9a4e18a344c44fe958d84f54cdd4010de3a2ea477636f11109df"
+  },
+  "tests/retina_refined_hls_tb.cpp": {
+    "bytes": 1379,
+    "sha256": "de44d880008e74eb70b82a3efb136dcdf053a0f8392c39617d214701927de2ac"
+  },
+  "tests/test_browser_q4.py": {
+    "bytes": 25327,
+    "sha256": "e34f73036627fa75980473be795196380e38138bfc14e752a0bae68ab917a6b4"
+  },
+  "tests/test_q4_archive_coverage.py": {
+    "bytes": 5060,
+    "sha256": "d1d5c3cb289eee7a24edd55eafccb01af4d1ae2d6a59a0e443482c2bc65bbfdc"
+  },
+  "tests/test_q4_batch.py": {
+    "bytes": 6511,
+    "sha256": "d23133fbfe50e894733ca195bdc25cf56f2be73c1f283ef8ddacf192797bc18d"
+  },
+  "tests/test_q4_fusion.py": {
+    "bytes": 5051,
+    "sha256": "87cb4a11194ca8f7451a5ac199c000ddb80741b2114ccee99a3c78bb77aaaead"
+  },
+  "tests/test_q4_gradient.py": {
+    "bytes": 6587,
+    "sha256": "e377f1e0a9d8ddbe2ea78fedbf3ce749bfea537797d29f8775f98b21baa99ab2"
+  },
+  "tests/test_q4_profile_features.py": {
+    "bytes": 2703,
+    "sha256": "c296438159711bff32f5dea8193df5c83719be20ad8ee448c385a03b86e16b83"
+  },
+  "tests/test_q4_profile_statistics.py": {
+    "bytes": 2196,
+    "sha256": "4f26a090a635635b42e5d58bb8f7a333a6a864a5d37be07c78a38a2a8a0c12ed"
+  },
+  "tests/test_q4_refinement.py": {
+    "bytes": 5693,
+    "sha256": "083529d0df9f9b5a0574031c337adbebd6c29bc3d237788eb49095825cd923da"
+  },
+  "tests/test_q4_release.py": {
+    "bytes": 5714,
+    "sha256": "50c727b08e5b4476cca01e75f591022dc66c78917eca26ab555d319b7277fb87"
+  },
+  "tests/test_q4_ridge.py": {
+    "bytes": 3732,
+    "sha256": "3425edc598bf17a449b594eff89fc09a8bb4875e201a59d7426e3e9c899a808c"
+  },
+  "ui_q4/app.js": {
+    "bytes": 13620,
+    "sha256": "0371f495eab05cc4a79fa9b3cd6d49b5ad747916d616c85283c640e983334f4a"
+  },
+  "ui_q4/index.html": {
+    "bytes": 6556,
+    "sha256": "210b7fff6638a90ab4988e27e2a11c76cb871d4ca22074be26533e1ec03a963d"
+  },
+  "ui_q4/style.css": {
+    "bytes": 5073,
+    "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+  },
+  "vivado/scripts/build_q4_refined.tcl": {
+    "bytes": 12019,
+    "sha256": "6882cadf5222de821fbe454a129c290b08ef96241921715118ff149f6f184d74"
+  },
+  "vivado/scripts/build_q4_refined_hls.tcl": {
+    "bytes": 1367,
+    "sha256": "aa9ff4360530f2d0c6485f135cbceffd0bf0b60ca3b45e7332f96c2078ec4519"
+  },
+  "vivado/scripts/export_q4_refined_hls.tcl": {
+    "bytes": 864,
+    "sha256": "92b54b4d793f19d6bbf2a84e5f8df70b95a852dc16a2df769db05e747e63f4d5"
+  },
+  "vivado/scripts/simulate_q4_reset.tcl": {
+    "bytes": 1483,
+    "sha256": "0afeb50bfb4530251d89d768808801a3041b41fbb67e43eb286dd457028c0661"
+  }
+}

@@ -1,0 +1,9 @@
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\scripts\check_q4d_sharded_rtl.py", line 108, in <module>
+    result = check(args.directory)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\check_q4d_sharded_rtl.py", line 66, in check
+    require(info(folder / 'xsim.dir/q4d_detector_shard' / path.relative_to(snapshot)) == info(path), 'Shard executable image mismatch')
+  File "D:\PLD\retina_fpga\scripts\check_q4d_sharded_rtl.py", line 21, in require
+    raise RuntimeError(message)
+RuntimeError: Shard executable image mismatch

@@ -1,0 +1,64 @@
+{
+  "status": "PASS_REQUIREMENT_MAPPING_AND_POWER_TASK_CORRECTION_ONLY",
+  "client_date": "2026-10-13",
+  "prior_scope_commit": "2f7d5500b27217788c93bf0def6389b2550b40ac",
+  "competition_source": {
+    "path": "D:\\PLD\\关于举办东南大学第二十届PLD设计竞赛的通知.pdf",
+    "bytes": 3306680,
+    "sha256": "6835b52a721934f39d4d5a97b0bd35886ec30b78801dd609da3c66429f946e71",
+    "pages": 11,
+    "reviewed_relevant_pages": [
+      4,
+      6
+    ],
+    "method": "Scanned PDF rendered with bundled Poppler; full pages viewed. No OCR text inferred.",
+    "verified_facts": [
+      "Topic one covers fundus analysis and requires substantive PL computation.",
+      "Appendix A permits HDMI/VGA/LCD or host user interface as output alternatives.",
+      "At least three basic processing/display functions and one meaningful analysis task are required.",
+      "Stable interactive display of mode/threshold/result/timing/rate/resource data is required; CPU comparison is an extension."
+    ]
+  },
+  "expected_basic_coverage": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "targeted_extension_coverage": [
+    3,
+    5,
+    6
+  ],
+  "extensions_out_of_current_scope": [
+    1,
+    2,
+    4
+  ],
+  "clarifications": [
+    "Extension 3 is targeted through real threshold interaction; ROI/point/box input is not currently planned.",
+    "Extension 6 needs power estimation as well as CPU/performance/resource/accuracy comparison; missing plan entry corrected.",
+    "No browser, threshold firmware, core-cycle, CPU comparison or power experiment newly executed."
+  ],
+  "changed_documents": {
+    "docs/browser_development_plan.md": {
+      "bytes": 5863,
+      "sha256": "142424b2a01da68f319cd21f5e16307ea3ddc442e16432e0b5faa818def30913"
+    },
+    "docs/browser_acceptance.md": {
+      "bytes": 5916,
+      "sha256": "dcf3b36a40078e316465859283adc7dab0e1bd6c615dee85a0f641e896159a66"
+    },
+    "docs/browser_contract.json": {
+      "bytes": 5337,
+      "sha256": "d0294c38399b8ee5695b41bf7c3ccee96580bcaaba4761f702dea2ea4e7aa56d"
+    }
+  },
+  "original_45_file_integrity": "PASS_EXACT_BYTES",
+  "browser_board_status": "NOT_RUN",
+  "power_status": "NOT_MEASURED",
+  "power_estimate_watts": null,
+  "historical_scope_validation": "Earlier scope_validation.json describes its earlier commit; this record covers the incremental plan correction."
+}

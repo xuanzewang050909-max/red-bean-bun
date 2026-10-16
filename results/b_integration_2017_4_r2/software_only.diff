@@ -1,0 +1,22 @@
+--- r1/b_integration_board_test.py
++++ r2/b_integration_board_test.py
+@@ -16,7 +16,7 @@
+ from a1_point_board_test import notebook_code_hash
+ from a4_segmentation_board_test import transfer_a4, full_cases, make_pattern, segmentation_expected
+ 
+-REVISION='b_integration_r1_official_base_a4'
++REVISION='b_integration_r2_explicit_video_imports'
+ NOTEBOOK='b_integration_check.ipynb'
+ FIXED={'b_integration.bit','b_integration.hwh','b_integration_board_test.py',
+     'a4_segmentation_board_test.py','a3_background_board_test.py','a2_gaussian_board_test.py',
+@@ -57,7 +57,9 @@
+     from pynq import Overlay,allocate
+     from pynq.lib import DMA,AxiGPIO
+     # Import registers the original hierarchy and IP drivers, before Overlay.
+-    from pynq.lib.video import AxiVDMA,VideoOut,HDMIWrapper,VideoMode,PIXEL_BGR
++    from pynq.lib.video.common import VideoMode,PIXEL_BGR
++    from pynq.lib.video.dma import AxiVDMA
++    from pynq.lib.video.hierarchies import VideoOut,HDMIWrapper
+     require(pynq.__version__=='3.0.1' and platform.machine() in ('armv7l','armv7'),'Use measured PYNQ-Z2 3.0.1')
+     require(not retained,'Earlier in-flight buffers remain')
+     directory=Path(directory).resolve(); output=directory/'b_integration_result.json'

@@ -1,0 +1,29 @@
+{
+  "status": "W5A_BOARD_ENDURANCE_VERIFIED_ONLY",
+  "archive": {
+    "bytes": 91526766,
+    "sha256": "b9533ddc3f58b516a5e83674f6883060eb35ffeab6a27f1cd1b082ece36af80e"
+  },
+  "notebook": {
+    "bytes": 12428,
+    "sha256": "f7ba0947e0e2618d4fbcd9d85eef45b2b83393a1a532a986bad9f6eaac468ea7"
+  },
+  "tasks": 1000,
+  "matched_words": 183500800,
+  "matched_pngs": 5000,
+  "summary": {
+    "status": "COLLECTED_PENDING_DOWNLOAD_AUDIT",
+    "tasks": 1000,
+    "suite": "mv9zpv40wdtilv41wa",
+    "server_elapsed_seconds": 2023.638384209,
+    "browser_elapsed_seconds": 2023.856900000006,
+    "paced_display_fps": 0.4941060803261323,
+    "rss_growth_after_100_bytes": 3235840,
+    "min_available_bytes": 245874688,
+    "scope": "W5a endurance only; W5b recovery/queue, instrument power and final quality remain pending"
+  },
+  "ignored_empty_cells": 1,
+  "power": "NOT_MEASURED_NO_INSTRUMENT",
+  "w5b": "NOT_RUN",
+  "quality": "NOT_FINALLY_ACCEPTED"
+}

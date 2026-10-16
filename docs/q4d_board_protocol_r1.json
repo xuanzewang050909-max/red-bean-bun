@@ -1,0 +1,107 @@
+{
+  "split": {
+    "train": [
+      "im0001",
+      "im0003",
+      "im0005",
+      "im0077",
+      "im0082",
+      "im0162",
+      "im0235",
+      "im0239",
+      "im0255",
+      "im0319"
+    ],
+    "heldout": [
+      "im0002",
+      "im0004",
+      "im0044",
+      "im0081",
+      "im0139",
+      "im0163",
+      "im0236",
+      "im0240",
+      "im0291",
+      "im0324"
+    ]
+  },
+  "sizes": [
+    256,
+    512
+  ],
+  "mode": "final",
+  "png_profile": "fast",
+  "revision": "q4d_c7_experimental_r1",
+  "algorithms": [
+    "A",
+    "C2",
+    "C5",
+    "C7"
+  ],
+  "candidate": {
+    "id": "C7_d6_8trees_r1",
+    "trees": 8,
+    "max_depth": 6,
+    "recommended_score_threshold": 112,
+    "features": 36,
+    "model_sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6"
+  },
+  "decision_commit": "6c13730",
+  "scope": "Frozen experimental C7 versus preserved A/C2/C5. Reused train/heldout benchmark, no new external validation. No retuning on heldout/VK. All features and classifier in PL.",
+  "original_strict_failures": [
+    "A28:256:bright_band_recall",
+    "A28:512:bright_band_recall",
+    "256:bright_recall",
+    "256:bridge_added_precision",
+    "512:bright_recall",
+    "512:bridge_added_precision"
+  ],
+  "acceptance": "Exact PL words/parameters required; actual quality and visual tradeoffs audited after download; no automatic overall quality PASS.",
+  "thresholds": {
+    "A": 28,
+    "C2": 28,
+    "C5": 28,
+    "C7": 112
+  },
+  "c5_candidate": {
+    "id": "C5_l5_9_r8_m1_a4_g3",
+    "lengths": [
+      5,
+      9
+    ],
+    "ratio": 8,
+    "retain_margin": 1,
+    "add_margin": 4,
+    "gap": 3
+  },
+  "new_grouped_screen_unmet": [
+    "512:bright_recall"
+  ],
+  "manual": {
+    "three_images": [
+      "im0001",
+      "im0002",
+      "im0324"
+    ],
+    "algorithms": [
+      "C5",
+      "C7"
+    ],
+    "C7_thresholds": [
+      96,
+      128
+    ],
+    "C5_thresholds": [
+      20,
+      36
+    ],
+    "continuous": {
+      "algorithm": "C7",
+      "threshold": 112,
+      "warmup": 3,
+      "measured": 20
+    },
+    "planned_total": 193,
+    "foreground_required": true
+  }
+}

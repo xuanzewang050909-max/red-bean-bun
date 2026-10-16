@@ -1,0 +1,65 @@
+{
+  "revision": "w2_q2_c2_observer_r1",
+  "board_status": "NOT_RUN",
+  "hardware_clock_hz": 100000000,
+  "source_commit": "e523875d5603bd73f7acff461e723bd29fe5ef5b",
+  "candidate": "C2_l9_d12345_m1_p28",
+  "frames": 80,
+  "words": 13303808,
+  "notebook_validation": {
+    "algorithm": "sha256-code-cells-v1",
+    "sha256": "5dd16eae930a84a2efc1655535413d601bc78f411d171e991dde3c749dd98ccd"
+  },
+  "hardware": {
+    "resources": {
+      "Slice LUTs": 11835.0,
+      "Slice Registers": 11591.0,
+      "Block RAM Tile": 57.5,
+      "DSPs": 1.0
+    },
+    "wns_ns": 0.909,
+    "whs_ns": 0.009
+  },
+  "artifacts": {
+    "a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "quality_observer.py": {
+      "bytes": 4929,
+      "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+    },
+    "w2_quality.bit": {
+      "bytes": 4045678,
+      "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+    },
+    "w2_quality.hwh": {
+      "bytes": 379601,
+      "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+    },
+    "w2_quality_board_test.py": {
+      "bytes": 14433,
+      "sha256": "921eacbb256801e83bcfd440a0d7f6751220f8d5047dc5b5ca848ffef254eda4"
+    },
+    "w2_quality_check.ipynb": {
+      "bytes": 4849,
+      "sha256": "f5f9b45e1cdbc31f7c8cc7b848ba66f7bd8cb7ef9f1fadd77bdc275c86e69a52"
+    },
+    "w2_vectors.json": {
+      "bytes": 37983,
+      "sha256": "123103cb2c8bf9c838aa23911d9690bae998512f295124e5d43656f40ae6b56b"
+    },
+    "w2_vectors.npz": {
+      "bytes": 21583044,
+      "sha256": "7890e664c58a7f9d69a6573c07763021ed3fab6096f8dfadcba247ee1945602b"
+    },
+    "使用说明.txt": {
+      "bytes": 319,
+      "sha256": "667721a781210fa1447a6e99b2ab525b4756ce1f158224ec98541bfa73c52105"
+    }
+  }
+}

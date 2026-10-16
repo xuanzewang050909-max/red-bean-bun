@@ -1,0 +1,22 @@
+{
+  "status": "PASS_SUPPLIED_PHOTOS_VISIBLE_LAYOUT_MATCHES_VERIFIED_PNG",
+  "photos": {
+    "monitor_color_photo.jpg": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\monitor_color_photo.jpg",
+      "bytes": 4661308,
+      "sha256": "05f8305842b99bb633f3e57b850a81b4f0e72d239cd8d93fe06d329830998f90"
+    },
+    "monitor_medical_photo.jpg": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_layout_2026-10-12\\monitor_medical_photo.jpg",
+      "bytes": 8056251,
+      "sha256": "5125509fe2f4812be9a79a5ec444cfc5e6328a71a2cb6c0bb3afbde058fc4a4a"
+    }
+  },
+  "observations": [
+    "Color photo shows BLUE/GREEN/RED, white border and central cross in expected positions.",
+    "Medical photo shows grayscale raw panel left, bright green candidate overlay right, same visible vessel structure and eye boundary as saved PNG.",
+    "Visible static captions and white progress marker correspond to the saved marker-29 canvas."
+  ],
+  "limits": "Still photos with perspective/camera moire and cropping; no proof of every displayed pixel, frame motion, flicker-free duration or actual scan Hz. Full source PNG equality independently verified.",
+  "raw_visual_status_preserved": "PENDING_USER_OBSERVATION"
+}

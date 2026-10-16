@@ -1,0 +1,450 @@
+{
+  "status": "A1_PASS_17_POINT_FRAMES_NOT_FULL_MEDICAL_ALGORITHM",
+  "manifest": {
+    "revision": "a1_point_r2_notebook_precheck_fix",
+    "host_status": "PASS_REUSED_R1_HARDWARE_AND_R2_PACKAGE_REGRESSION",
+    "board_status": "NOT_RUN",
+    "vivado": "2017.4",
+    "pynq_target": "3.0.1",
+    "scope": "Diagnostic point-stage only; no Gaussian, segmentation or HDMI",
+    "build_directory": "D:\\PLD\\retina_fpga\\build\\a1_point_02",
+    "source_files": {
+      "rtl\\core\\retina_point_axis.v": {
+        "bytes": 4174,
+        "sha256": "4691aedce8949e8a69123f491b8cdcb742538df1bd6170a128581819346d8f15"
+      },
+      "rtl\\core\\contrast_lut.vh": {
+        "bytes": 10268,
+        "sha256": "735866f64a1597847ba58307b1611f45118c149c44d22a1408230cde01fe5ddd"
+      },
+      "tests\\retina_point_axis_tb.sv": {
+        "bytes": 8151,
+        "sha256": "614cd77f8c1d106995d6fd850a4bdf36033476dcc845925ea78b57b49274b8c2"
+      },
+      "vivado\\scripts\\build_a1_point.tcl": {
+        "bytes": 10214,
+        "sha256": "108acbfd8872d0598f14db5f188adc4097b81fcdbaf5a30cf83348fd7cd35349"
+      },
+      "scripts\\derive_a1_tcl.py": {
+        "bytes": 3825,
+        "sha256": "2e73c3ab66f11a472e2c9ebbce31794d6959a1686a040b0bf4549ec9ceeb5240"
+      },
+      "scripts\\run_point_simulation.ps1": {
+        "bytes": 1304,
+        "sha256": "b8406cd36e1c828805956918eb652f4220d76d6256e7926800c2b317ad72d2fb"
+      },
+      "vivado\\scripts\\simulate_a1_reset.tcl": {
+        "bytes": 1475,
+        "sha256": "ccec8e8dbd4cbe3b8cbc53238a5dba00fbf73971ef1ce4e7cfee722b35171239"
+      },
+      "scripts\\a0_reset_tb.sv": {
+        "bytes": 2064,
+        "sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8"
+      },
+      "scripts\\package_a1.py": {
+        "bytes": 7546,
+        "sha256": "1f5e329cb79866458482f7fcfc4ae6c9ed65761b2012100921d48dffbdb5bb44"
+      }
+    },
+    "artifacts": {
+      "a1_point.bit": {
+        "bytes": 4045676,
+        "sha256": "b1aa476219a423a5eecf7967f6d9f029fb013503176ed8bd068d0206ab743938"
+      },
+      "a1_point.hwh": {
+        "bytes": 336062,
+        "sha256": "6219f6e292df98a962f9f392e274bb5040bcb72c7aba426e6fb6df2d666fb6c6"
+      },
+      "a1_point_check.ipynb": {
+        "bytes": 3339,
+        "sha256": "69e1203a503506f572639b8ed1f85e0c18e07a5ad18e71c31ce88f81d177012a"
+      },
+      "a1_point_board_test.py": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "a0_dma_board_test.py": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "\u4f7f\u7528\u8bf4\u660e.txt": {
+        "bytes": 3460,
+        "sha256": "1187f707b4d6e6b32d604727ba510f2f9bb75721cff6d9a459b3b5a23852a267"
+      }
+    },
+    "reviewed_warning": "Inherited read-only aux polarity setter warning; propagated C_AUX_RESET_HIGH=0, constant-one wiring and actual vendor reset simulation independently checked",
+    "gpio_parameters": {
+      "C_IS_DUAL": 1,
+      "C_GPIO_WIDTH": 32,
+      "C_GPIO2_WIDTH": 32,
+      "C_ALL_OUTPUTS": 1,
+      "C_ALL_INPUTS_2": 1,
+      "C_INTERRUPT_PRESENT": 0
+    },
+    "gpio_address": "0x41200000",
+    "dma_address": "0x40400000",
+    "hardware_provenance": {
+      "baseline_manifest": "results\\a1_point_2017_4\\release_manifest.json",
+      "baseline_manifest_sha256": "b27dafc949f96600d01f46a15f68305c6329a225070b606782c17b102726607d",
+      "baseline_git_attestation": "results/a1_point_2017_4/release_git_attestation.json",
+      "hardware_rebuilt": false,
+      "policy": "Original bit/HWH, HDL, timing, reset simulation and build evidence reused byte-for-byte"
+    },
+    "notebook_validation": {
+      "algorithm": "sha256-code-cells-v1",
+      "sha256": "43564417f1f5c78a261c4938d29645a902763d800ab53a9463a9f97d790b880b"
+    },
+    "software_patch_sources": {
+      "scripts\\a1_point_board_test.py": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "scripts\\package_a1_precheck_fix.py": {
+        "bytes": 5830,
+        "sha256": "0b6d3ae0209b2eef494481bd8ad7be579b8af9321eed78e25a2583f33148ab58"
+      },
+      "tests\\test_a1_package_validation.py": {
+        "bytes": 4180,
+        "sha256": "079c8234e1975434d2715c8aeec14da6b973d7a1a05cc89483417a58f6be37bb"
+      }
+    }
+  },
+  "package_validation": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "43564417f1f5c78a261c4938d29645a902763d800ab53a9463a9f97d790b880b",
+    "current_notebook_sha256": "e83657f54d80717d6914d18bc975460b0922e97c6c4cd512ce1519a283cdd8f7",
+    "original_notebook_sha256": "69e1203a503506f572639b8ed1f85e0c18e07a5ad18e71c31ce88f81d177012a",
+    "policy": "Execution counts, outputs, notebook metadata and Markdown are excluded; all executable code must match"
+  },
+  "board_clock_utc_unverified": "2022-10-22T03:12:35.461607+00:00",
+  "pynq": "3.0.1",
+  "python": "3.10.4",
+  "kernel": "5.15.19-xilinx-v2022.1",
+  "transfers": [
+    {
+      "side": 256,
+      "mode": 1,
+      "pattern": "ramp",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 16385,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "4139db7f0179ac33fe3a207e78941e7e95a99551098fabac78619be13241b20d",
+      "expected_sha256": "d269bfa8adeb1bd67ea1f46ec4e32e87fc2856fbb69da03c064ff2bb8238fade",
+      "output_sha256": "d269bfa8adeb1bd67ea1f46ec4e32e87fc2856fbb69da03c064ff2bb8238fade"
+    },
+    {
+      "side": 256,
+      "mode": 0,
+      "pattern": "ramp",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 32770,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "4139db7f0179ac33fe3a207e78941e7e95a99551098fabac78619be13241b20d",
+      "expected_sha256": "4139db7f0179ac33fe3a207e78941e7e95a99551098fabac78619be13241b20d",
+      "output_sha256": "4139db7f0179ac33fe3a207e78941e7e95a99551098fabac78619be13241b20d"
+    },
+    {
+      "side": 256,
+      "mode": 0,
+      "pattern": "random",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 49155,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "0dd5723905fb72f1a15da73c9304d884546a7244b72bfccb1b09b16fafaad870",
+      "expected_sha256": "0dd5723905fb72f1a15da73c9304d884546a7244b72bfccb1b09b16fafaad870",
+      "output_sha256": "0dd5723905fb72f1a15da73c9304d884546a7244b72bfccb1b09b16fafaad870"
+    },
+    {
+      "side": 256,
+      "mode": 1,
+      "pattern": "ramp",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 65540,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "4139db7f0179ac33fe3a207e78941e7e95a99551098fabac78619be13241b20d",
+      "expected_sha256": "d269bfa8adeb1bd67ea1f46ec4e32e87fc2856fbb69da03c064ff2bb8238fade",
+      "output_sha256": "d269bfa8adeb1bd67ea1f46ec4e32e87fc2856fbb69da03c064ff2bb8238fade"
+    },
+    {
+      "side": 256,
+      "mode": 1,
+      "pattern": "random",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 81925,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "9a7a7d78fcf4123a75b2468d9989f1063ba7a9013957a0e68181dde2893600d0",
+      "expected_sha256": "e236d9121bc5a2bc4a3c67f5655a7393540365a07983fce2a02db4e8cf2d8d4b",
+      "output_sha256": "e236d9121bc5a2bc4a3c67f5655a7393540365a07983fce2a02db4e8cf2d8d4b"
+    },
+    {
+      "side": 256,
+      "mode": 2,
+      "pattern": "ramp",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 98310,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "4139db7f0179ac33fe3a207e78941e7e95a99551098fabac78619be13241b20d",
+      "expected_sha256": "f3d923188d37d86bbbb59afce00a69ca241dc7d114a7fdc5206ab8cf41fc20be",
+      "output_sha256": "f3d923188d37d86bbbb59afce00a69ca241dc7d114a7fdc5206ab8cf41fc20be"
+    },
+    {
+      "side": 256,
+      "mode": 2,
+      "pattern": "random",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 114695,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "314c3e570812fe6359292c02fd50a595ff3b93716adc092cc1e55ab9705521b1",
+      "expected_sha256": "0e823a5967d72383d1df671475cd98a246db21f3b395f41d02bf302cbc8fca44",
+      "output_sha256": "0e823a5967d72383d1df671475cd98a246db21f3b395f41d02bf302cbc8fca44"
+    },
+    {
+      "side": 512,
+      "mode": 0,
+      "pattern": "ramp",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 131080,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "a25574b16e0b26b4368aab47b091027eda08753054119c1630206fb3e5fe5407",
+      "expected_sha256": "a25574b16e0b26b4368aab47b091027eda08753054119c1630206fb3e5fe5407",
+      "output_sha256": "a25574b16e0b26b4368aab47b091027eda08753054119c1630206fb3e5fe5407"
+    },
+    {
+      "side": 512,
+      "mode": 0,
+      "pattern": "random",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 147465,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "6867bc812f947c5e7b873281fe92d9fa31b786882fea2036392b09e74a89496a",
+      "expected_sha256": "6867bc812f947c5e7b873281fe92d9fa31b786882fea2036392b09e74a89496a",
+      "output_sha256": "6867bc812f947c5e7b873281fe92d9fa31b786882fea2036392b09e74a89496a"
+    },
+    {
+      "side": 512,
+      "mode": 1,
+      "pattern": "ramp",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 163850,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "a25574b16e0b26b4368aab47b091027eda08753054119c1630206fb3e5fe5407",
+      "expected_sha256": "8f45cb73a74e205fb88a36cbffaab30f5c6d0527edebc078a1d39a1eeb94732d",
+      "output_sha256": "8f45cb73a74e205fb88a36cbffaab30f5c6d0527edebc078a1d39a1eeb94732d"
+    },
+    {
+      "side": 512,
+      "mode": 1,
+      "pattern": "random",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 180235,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "0e0a4dad342e7123e66941025091a81e29cfab76c8eddaa61f1ad0eff7bd4bae",
+      "expected_sha256": "61b27980530d471874bf3d24d2dc1e3b4c92333817385b24147fb0385cfa3315",
+      "output_sha256": "61b27980530d471874bf3d24d2dc1e3b4c92333817385b24147fb0385cfa3315"
+    },
+    {
+      "side": 512,
+      "mode": 2,
+      "pattern": "ramp",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 196620,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "a25574b16e0b26b4368aab47b091027eda08753054119c1630206fb3e5fe5407",
+      "expected_sha256": "72a0f8e0badfc87353f79bc174f00f4b5358bd4b14fcf10c2ca04a4db6616694",
+      "output_sha256": "72a0f8e0badfc87353f79bc174f00f4b5358bd4b14fcf10c2ca04a4db6616694"
+    },
+    {
+      "side": 512,
+      "mode": 2,
+      "pattern": "random",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 213005,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "fb9ea5291e34601f91a9562a1146c1a3741a3e2b38e93f8ca1d7f1b6d339c04c",
+      "expected_sha256": "9e403eb7fadadf2d52c1412b89ad24cab872e083fc26a0a9a9f66356b95eed57",
+      "output_sha256": "9e403eb7fadadf2d52c1412b89ad24cab872e083fc26a0a9a9f66356b95eed57"
+    },
+    {
+      "side": 256,
+      "mode": 2,
+      "pattern": "black",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 229390,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "0b17117af4bea82050f55d5f9603b45ec6a122342a7699a10428696951f95bb9",
+      "expected_sha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90",
+      "output_sha256": "8a39d2abd3999ab73c34db2476849cddf303ce389b35826850f9a700589b4a90"
+    },
+    {
+      "side": 256,
+      "mode": 2,
+      "pattern": "white",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 245775,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "a69f92ed73547112a071c09c061e821f72fec6c0b0359a99ee6d94004acb5554",
+      "expected_sha256": "94a640d4bea7efac5c6d5a54175ee33abb2a211330722442d729f89c168f67ef",
+      "output_sha256": "94a640d4bea7efac5c6d5a54175ee33abb2a211330722442d729f89c168f67ef"
+    },
+    {
+      "side": 512,
+      "mode": 2,
+      "pattern": "black",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 262160,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "836e63b9c97a81c1e75c711a1593cd098ca867c5c888a0baa4f599758b788647",
+      "expected_sha256": "30e14955ebf1352266dc2ff8067e68104607e750abb9d3b36582b8af909fcb58",
+      "output_sha256": "30e14955ebf1352266dc2ff8067e68104607e750abb9d3b36582b8af909fcb58"
+    },
+    {
+      "side": 512,
+      "mode": 2,
+      "pattern": "white",
+      "words": 262144,
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "tx_address": 378535936,
+      "rx_address": 379584512,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 278545,
+      "status": "PASS_EXACT_POINT_STAGE_WORDS",
+      "input_sha256": "b08623d38b2f5ade0b996decb3820dc73978fcfd37b40b4b2a3d4dbf4315c3c6",
+      "expected_sha256": "609bc20d3c7189cefe64cbf62b6f6f5488ad796ff641f188101eeba745c1d07f",
+      "output_sha256": "609bc20d3c7189cefe64cbf62b6f6f5488ad796ff641f188101eeba745c1d07f"
+    }
+  ],
+  "scope": "Point-stage bypass/green/LUT only; no Gaussian, segmentation, HDMI or FPS PASS"
+}

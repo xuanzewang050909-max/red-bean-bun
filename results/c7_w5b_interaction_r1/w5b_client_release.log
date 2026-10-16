@@ -1,0 +1,5 @@
+HOST_CLIENT_PASS insecure_HTTP_page_identity
+HOST_CLIENT_PASS same_task_observation_and_panels
+HOST_CLIENT_PASS no_GT_and_bypass_clear_metrics
+HOST_CLIENT_PASS unexpected_error_no_retry
+HOST_CLIENT_PASS hidden_frame_tracked

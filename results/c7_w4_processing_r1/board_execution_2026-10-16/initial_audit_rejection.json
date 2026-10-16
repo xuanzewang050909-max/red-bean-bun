@@ -1,0 +1,15 @@
+{
+  "initial_offline_audit": "REJECTED_NOTEBOOK_CODE_CELL_COUNT",
+  "cause": "7 original code cells byte-identical; Jupyter appended an eighth empty unexecuted cell. No board error.",
+  "correction": "Ignore only trailing whitespace-empty, execution_count=None, outputs=[] cells; preserve exact 7 executable cells and all evidence checks.",
+  "original_files": {
+    "c7_w4_processing.ipynb": {
+      "bytes": 85948,
+      "sha256": "d90f6b4a11497e1eb3c76323f95877f017d3643335f86db4f55cc1f96805eae3"
+    },
+    "c7_w4_processing_results.zip": {
+      "bytes": 343750271,
+      "sha256": "0879c9a18d74986bd25a220fdd0e7002df4edef779edf250d2a4c50602649a17"
+    }
+  }
+}

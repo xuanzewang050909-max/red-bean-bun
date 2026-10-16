@@ -1,0 +1,144 @@
+test_flat_and_dark_line_vs_step (test_q4d_features.Q4dFeatureTests.test_flat_and_dark_line_vs_step) ... ok
+test_integer_tree_export_matches_quantized_leaf_oracle (test_q4d_features.Q4dFeatureTests.test_integer_tree_export_matches_quantized_leaf_oracle) ... ok
+test_random_edges_extremes_and_small_images_against_scalar (test_q4d_features.Q4dFeatureTests.test_random_edges_extremes_and_small_images_against_scalar) ... ok
+test_all_algorithms_sizes_modes_thresholds_tag_controls (test_q4d_release.CoreTests.test_all_algorithms_sizes_modes_thresholds_tag_controls) ... ok
+test_c7_intermediate_rejected_and_no_labels_or_boolean_thresholds (test_q4d_release.CoreTests.test_c7_intermediate_rejected_and_no_labels_or_boolean_thresholds) ... ok
+test_existing_c5_arithmetic_exact_except_external_top_interface (test_q4d_release.CoreTests.test_existing_c5_arithmetic_exact_except_external_top_interface) ... ok
+test_fixed_cohort_c7_threshold_is_distinct_and_has_no_labels (test_q4d_release.CoreTests.test_fixed_cohort_c7_threshold_is_distinct_and_has_no_labels) ... ok
+test_frozen_model_score_and_threshold_masks_are_monotonic (test_q4d_release.CoreTests.test_frozen_model_score_and_threshold_masks_are_monotonic) ... ok
+test_model_constants_are_same_integer_model_as_frozen_final_fit (test_q4d_release.CoreTests.test_model_constants_are_same_integer_model_as_frozen_final_fit) ... ok
+test_runtime_contains_no_classifier_features_or_label_inference (test_q4d_release.CoreTests.test_runtime_contains_no_classifier_features_or_label_inference) ... ok
+test_c7_ui_threshold_selection_distinct (test_q4d_release.PackageTests.test_c7_ui_threshold_selection_distinct) ... ok
+test_exact_package_inventory_and_source_pairing (test_q4d_release.PackageTests.test_exact_package_inventory_and_source_pairing) ... ok
+test_all_pairs_both_threshold_families_and_warmup (test_q4d_coverage.CoverageTests.test_all_pairs_both_threshold_families_and_warmup) ... ok
+test_each_distinct_manual_configuration_requires_visible_observation (test_q4d_coverage.CoverageTests.test_each_distinct_manual_configuration_requires_visible_observation) ... ok
+test_hidden_warmup_and_missing_frame_fail (test_q4d_coverage.CoverageTests.test_hidden_warmup_and_missing_frame_fail) ... ok
+test_wrong_algorithm_or_threshold_cannot_count_as_c7_performance (test_q4d_coverage.CoverageTests.test_wrong_algorithm_or_threshold_cannot_count_as_c7_performance) ... ok
+test_bounded_queue_is_responsive_and_nonce_retries_do_not_add_frames (test_browser_q4d.ApiTests.test_bounded_queue_is_responsive_and_nonce_retries_do_not_add_frames) ... Executing <Task pending name='Task-1' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.344 seconds
+ok
+test_bypass_exposes_no_stale_enhanced_mask_or_scores (test_browser_q4d.ApiTests.test_bypass_exposes_no_stale_enhanced_mask_or_scores) ... Executing <Task pending name='Task-12' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.328 seconds
+404 GET /api/runs/e0358faecfb54844ac4991574f8940b0/images/mask (127.0.0.1) 5.23ms
+ok
+test_continuous_group_rejects_parameter_change (test_browser_q4d.ApiTests.test_continuous_group_rejects_parameter_change) ... Executing <Task pending name='Task-30' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.265 seconds
+ok
+test_cross_origin_posts_rejected_without_hardware_access (test_browser_q4d.ApiTests.test_cross_origin_posts_rejected_without_hardware_access) ... Executing <Task pending name='Task-45' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.266 seconds
+422 POST /api/runs (127.0.0.1) 5.06ms
+ok
+test_export_preserves_native_arrays_browser_observation_and_null_timing_csv (test_browser_q4d.ApiTests.test_export_preserves_native_arrays_browser_observation_and_null_timing_csv) ... Executing <Task pending name='Task-55' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.297 seconds
+ok
+test_fault_cancels_pending_preserves_native_refs_and_blocks_close_or_retry (test_browser_q4d.ApiTests.test_fault_cancels_pending_preserves_native_refs_and_blocks_close_or_retry) ... Executing <Task pending name='Task-66' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.359 seconds
+409 POST /api/runs (127.0.0.1) 3.04ms
+ok
+test_fps_counts_unique_consecutive_results_and_hidden_interval_invalidates_loop (test_browser_q4d.ApiTests.test_fps_counts_unique_consecutive_results_and_hidden_interval_invalidates_loop) ... Executing <Task pending name='Task-77' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.296 seconds
+ok
+test_host_preview_cannot_be_accepted_as_new_board_evidence (test_browser_q4d.ApiTests.test_host_preview_cannot_be_accepted_as_new_board_evidence) ... Executing <Task pending name='Task-100' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.281 seconds
+ERROR
+test_http_invalid_requests_never_allocate_or_change_config (test_browser_q4d.ApiTests.test_http_invalid_requests_never_allocate_or_change_config) ... Executing <Task pending name='Task-111' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.281 seconds
+422 POST /api/runs (127.0.0.1) 5.06ms
+ok
+test_images_same_frame_match_real_packed_channels_and_headers (test_browser_q4d.ApiTests.test_images_same_frame_match_real_packed_channels_and_headers) ... Executing <Task pending name='Task-121' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.344 seconds
+Executing <Task finished name='Task-134' coro=<ApiTests.asyncTearDown() done, defined at D:\PLD\retina_fpga\tests\test_browser_q4d.py:259> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.109 seconds
+ok
+test_interrupted_async_wait_does_not_restart_free_or_hide_native_operation (test_browser_q4d.ApiTests.test_interrupted_async_wait_does_not_restart_free_or_hide_native_operation) ... Executing <Task pending name='Task-138' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.265 seconds
+ok
+test_offline_verifier_checks_all_words_and_detects_rehashed_tampering (test_browser_q4d.ApiTests.test_offline_verifier_checks_all_words_and_detects_rehashed_tampering) ... Executing <Task pending name='Task-146' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.266 seconds
+ok
+test_stale_replayed_nonfinite_or_nonmonotonic_client_observations_rejected (test_browser_q4d.ApiTests.test_stale_replayed_nonfinite_or_nonmonotonic_client_observations_rejected) ... Executing <Task pending name='Task-157' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.281 seconds
+422 POST /api/runs/0aea4ee909c04493a8a50559952ed2a2/browser-timing (127.0.0.1) 3.83ms
+422 POST /api/runs/0aea4ee909c04493a8a50559952ed2a2/browser-timing (127.0.0.1) 3.00ms
+422 POST /api/runs/0aea4ee909c04493a8a50559952ed2a2/browser-timing (127.0.0.1) 5.95ms
+422 POST /api/runs/0aea4ee909c04493a8a50559952ed2a2/browser-timing (127.0.0.1) 3.24ms
+409 POST /api/runs/0aea4ee909c04493a8a50559952ed2a2/browser-timing (127.0.0.1) 5.00ms
+ok
+test_storage_fault_keeps_protection_and_cancels_pending_even_when_journaling_fails (test_browser_q4d.ApiTests.test_storage_fault_keeps_protection_and_cancels_pending_even_when_journaling_fails) ... Executing <Task pending name='Task-186' coro=<ApiTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_browser_q4d.py:252> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.328 seconds
+ok
+test_a_c2_threshold_sequence_reaches_gpio_and_actual_output (test_browser_q4d.NativeTests.test_a_c2_threshold_sequence_reaches_gpio_and_actual_output) ... ok
+test_c7_threshold_and_algorithm_roundtrip_uses_new_gpio_bits (test_browser_q4d.NativeTests.test_c7_threshold_and_algorithm_roundtrip_uses_new_gpio_bits) ... ok
+test_c7_unavailable_intermediate_rejected_before_dma_or_configuration (test_browser_q4d.NativeTests.test_c7_unavailable_intermediate_rejected_before_dma_or_configuration) ... ok
+test_changed_package_bytes_fail_before_hardware_loading (test_browser_q4d.NativeTests.test_changed_package_bytes_fail_before_hardware_loading) ... ok
+test_counter_wrap_and_consecutive_frames (test_browser_q4d.NativeTests.test_counter_wrap_and_consecutive_frames) ... ok
+test_faults_keep_all_native_references_and_prohibit_new_transfers (test_browser_q4d.NativeTests.test_faults_keep_all_native_references_and_prohibit_new_transfers) ... ok
+test_gt_missing_bypass_and_scores_recomputed_only_from_current_output (test_browser_q4d.NativeTests.test_gt_missing_bypass_and_scores_recomputed_only_from_current_output) ... ok
+test_new_catalog_matches_original_tested_geometry_and_is_gt_independent (test_browser_q4d.NativeTests.test_new_catalog_matches_original_tested_geometry_and_is_gt_independent) ... ok
+test_other_thread_cannot_access_gpio_or_dma (test_browser_q4d.NativeTests.test_other_thread_cannot_access_gpio_or_dma) ... ok
+test_request_rejects_unsupported_threshold_algorithm_invalid_types_and_paths (test_browser_q4d.NativeTests.test_request_rejects_unsupported_threshold_algorithm_invalid_types_and_paths) ... ok
+test_snapshot_exception_retains_dma_buffers (test_browser_q4d.NativeTests.test_snapshot_exception_retains_dma_buffers) ... ok
+test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import (test_browser_q4d.NativeTests.test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import) ... ERROR
+test_threshold_endpoints_and_tag_wrap (test_browser_q4d.NativeTests.test_threshold_endpoints_and_tag_wrap) ... ok
+test_two_images_two_sizes_all_modes_real_native_order_and_readonly_snapshot (test_browser_q4d.NativeTests.test_two_images_two_sizes_all_modes_real_native_order_and_readonly_snapshot) ... ok
+test_dma_failure_retains_buffers_journal_and_blocks_more_work (test_q4d_batch.BatchTests.test_dma_failure_retains_buffers_journal_and_blocks_more_work) ... Executing <Task pending name='Task-194' coro=<BatchTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_q4d_batch.py:39> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.297 seconds
+ok
+test_full_160_single_load_exclusive_gate_export_and_independent_all_words_png (test_q4d_batch.BatchTests.test_full_160_single_load_exclusive_gate_export_and_independent_all_words_png) ... Executing <Task pending name='Task-200' coro=<BatchTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_q4d_batch.py:39> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.313 seconds
+Executing <Task finished name='Task-201' coro=<BatchTests.test_full_160_single_load_exclusive_gate_export_and_independent_all_words_png() done, defined at D:\PLD\retina_fpga\tests\test_q4d_batch.py:48> exception=FileNotFoundError(2, 'No such file or directory') created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 138.375 seconds
+ERROR
+Executing <Task finished name='Task-363' coro=<BatchTests.asyncTearDown() done, defined at D:\PLD\retina_fpga\tests\test_q4d_batch.py:43> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.531 seconds
+test_prior_manual_run_prevents_contamination_of_cohort (test_q4d_batch.BatchTests.test_prior_manual_run_prevents_contamination_of_cohort) ... Executing <Task pending name='Task-366' coro=<BatchTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_q4d_batch.py:39> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.328 seconds
+ok
+test_reference_mismatch_stops_collection_preserves_actual_output_and_no_retry (test_q4d_batch.BatchTests.test_reference_mismatch_stops_collection_preserves_actual_output_and_no_retry) ... Executing <Task pending name='Task-372' coro=<BatchTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_q4d_batch.py:39> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.328 seconds
+ok
+test_timeout_does_not_cancel_native_worker_or_release_inflight (test_q4d_batch.BatchTests.test_timeout_does_not_cancel_native_worker_or_release_inflight) ... Executing <Task pending name='Task-378' coro=<BatchTests.asyncSetUp() running at D:\PLD\retina_fpga\tests\test_q4d_batch.py:39> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.344 seconds
+ok
+
+======================================================================
+ERROR: test_host_preview_cannot_be_accepted_as_new_board_evidence (test_browser_q4d.ApiTests.test_host_preview_cannot_be_accepted_as_new_board_evidence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\tests\test_browser_q4d.py", line 417, in test_host_preview_cannot_be_accepted_as_new_board_evidence
+    notebook = json.loads((ROOT / 'notebooks/q4d_quality_start.ipynb').read_bytes())
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\PLD\\retina_fpga\\notebooks\\q4d_quality_start.ipynb'
+
+======================================================================
+ERROR: test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import (test_browser_q4d.NativeTests.test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\tests\test_browser_q4d.py", line 220, in test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import
+    release = json.loads((ROOT / 'notebooks/q4d_quality_start.ipynb').read_bytes())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\PLD\\retina_fpga\\notebooks\\q4d_quality_start.ipynb'
+
+======================================================================
+ERROR: test_full_160_single_load_exclusive_gate_export_and_independent_all_words_png (test_q4d_batch.BatchTests.test_full_160_single_load_exclusive_gate_export_and_independent_all_words_png)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py", line 691, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\tests\test_q4d_batch.py", line 78, in test_full_160_single_load_exclusive_gate_export_and_independent_all_words_png
+    verify(self.root/'HOST_TEST_q4.zip',self.root/'host.ipynb',self.root)
+  File "D:\PLD\retina_fpga\scripts\verify_q4d_archive.py", line 116, in verify
+    release = json.loads((ROOT / 'notebooks/q4d_quality_start.ipynb').read_bytes())
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\PLD\\retina_fpga\\notebooks\\q4d_quality_start.ipynb'
+
+----------------------------------------------------------------------
+Ran 49 tests in 342.290s
+
+FAILED (errors=3)

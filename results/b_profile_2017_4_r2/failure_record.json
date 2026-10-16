@@ -1,0 +1,15 @@
+{
+  "observed_error": "RuntimeError: Profiling package mismatch: b_integration_check.ipynb",
+  "observed_phase": "prepare_profile / validate_profile_package, before b.prepare_b",
+  "original_profiler_revision": "b_profile_r1_stage_timestamps",
+  "screenshot": {
+    "bytes": 153703,
+    "sha256": "3b394598b00683207ad6b4ea83bd661ee1d142a9d5af82387673edc24b0ec1c4"
+  },
+  "diagnosis": "R1 checks inherited notebook full JSON before original canonical code-cell validation; benign save can reproduce this exact rejection",
+  "unverified": "Screenshot does not show which notebook fields changed; actual code hash must still pass R2 validation",
+  "hardware_touched_in_failed_call": false,
+  "dma_allocated_in_failed_call": false,
+  "recovery_scope": "This precheck-only failure: replace 3 files, restart this notebook kernel, rerun import/precheck. Not applicable to an in-flight DMA failure.",
+  "corrected_profiler_board_status": "NOT_RUN"
+}

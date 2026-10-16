@@ -1,0 +1,31 @@
+test_all_offsets_and_replicated_edges_match_scalar (tests.test_q1_bilateral.BilateralTests.test_all_offsets_and_replicated_edges_match_scalar) ... ok
+test_constant_has_no_support_including_margin_zero (tests.test_q1_bilateral.BilateralTests.test_constant_has_no_support_including_margin_zero) ... ok
+test_dark_line_crossing_bright_region_preserved (tests.test_q1_bilateral.BilateralTests.test_dark_line_crossing_bright_region_preserved) ... ok
+test_direction_and_width_union_rotation_reflection (tests.test_q1_bilateral.BilateralTests.test_direction_and_width_union_rotation_reflection) ... ok
+test_empty_diagnostics_are_null_not_perfect_recall (tests.test_q1_bilateral.BilateralTests.test_empty_diagnostics_are_null_not_perfect_recall) ... ok
+test_horizontal_vertical_and_diagonal_steps_rejected (tests.test_q1_bilateral.BilateralTests.test_horizontal_vertical_and_diagonal_steps_rejected) ... ok
+test_majority_does_not_accept_single_dark_dot (tests.test_q1_bilateral.BilateralTests.test_majority_does_not_accept_single_dark_dot) ... ok
+test_original_postprocessing_fov_and_subset (tests.test_q1_bilateral.BilateralTests.test_original_postprocessing_fov_and_subset) ... ok
+test_preregistered_grid_and_bad_inputs (tests.test_q1_bilateral.BilateralTests.test_preregistered_grid_and_bad_inputs) ... ok
+test_quality_gate_rejects_recall_damage_despite_dice_gain (tests.test_q1_bilateral.BilateralTests.test_quality_gate_rejects_recall_damage_despite_dice_gain) ... ok
+test_reader_never_decodes_heldout_members (tests.test_q1_bilateral.BilateralTests.test_reader_never_decodes_heldout_members) ... ok
+test_signed_extremes_and_exact_threshold (tests.test_q1_bilateral.BilateralTests.test_signed_extremes_and_exact_threshold) ... ok
+test_thin_lines_in_four_directions_preserved (tests.test_q1_bilateral.BilateralTests.test_thin_lines_in_four_directions_preserved) ... ok
+test_grid_count_and_no_majority_or_unregistered_penalty (tests.test_q1_soft_support.SoftSupportTests.test_grid_count_and_no_majority_or_unregistered_penalty) ... ok
+test_response_saturates_and_supported_pixels_are_unchanged (tests.test_q1_soft_support.SoftSupportTests.test_response_saturates_and_supported_pixels_are_unchanged) ... ok
+test_soft_mask_is_between_hard_gate_and_baseline (tests.test_q1_soft_support.SoftSupportTests.test_soft_mask_is_between_hard_gate_and_baseline) ... ok
+test_wider_flanks_match_scalar_including_frame_edges (tests.test_q1_soft_support.SoftSupportTests.test_wider_flanks_match_scalar_including_frame_edges) ... ok
+test_box_matches_scalar_replicate_and_rounding (tests.test_reference.ReferenceTests.test_box_matches_scalar_replicate_and_rounding) ... ok
+test_channel_pack_no_ground_truth_and_fov_filter (tests.test_reference.ReferenceTests.test_channel_pack_no_ground_truth_and_fov_filter) ... ok
+test_direction_constant_and_dark_line (tests.test_reference.ReferenceTests.test_direction_constant_and_dark_line) ... ok
+test_fov_rgb_only_fills_hole (tests.test_reference.ReferenceTests.test_fov_rgb_only_fills_hole) ... ok
+test_gaussian_hand_calculated_corner_and_constant (tests.test_reference.ReferenceTests.test_gaussian_hand_calculated_corner_and_constant) ... ok
+test_labels_cannot_override_fov_or_enter_pixel_packet (tests.test_reference.ReferenceTests.test_labels_cannot_override_fov_or_enter_pixel_packet) ... ok
+test_letterbox_alignment_and_binary_labels (tests.test_reference.ReferenceTests.test_letterbox_alignment_and_binary_labels) ... ok
+test_lut_exhaustive_integer_formula_and_saturation (tests.test_reference.ReferenceTests.test_lut_exhaustive_integer_formula_and_saturation) ... ok
+test_metrics_hand_calculated_and_shape_failure (tests.test_reference.ReferenceTests.test_metrics_hand_calculated_and_shape_failure) ... ok
+
+----------------------------------------------------------------------
+Ran 26 tests in 0.213s
+
+OK

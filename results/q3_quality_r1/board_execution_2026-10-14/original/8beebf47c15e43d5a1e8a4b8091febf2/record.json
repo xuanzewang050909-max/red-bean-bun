@@ -1,0 +1,418 @@
+{
+  "run_id": "8beebf47c15e43d5a1e8a4b8091febf2",
+  "session_id": "503f7c3f49614e5392568dc260974a6a",
+  "request": {
+    "image_id": "im0005",
+    "side": 512,
+    "algorithm": "A",
+    "threshold": 28,
+    "mode": "final",
+    "png_profile": "fast",
+    "client_nonce": "q3_04_512_A",
+    "mode_code": 3
+  },
+  "config_id": "c3757681b7040a54e1d1cfd22e9cf7903c910222d441d0f9131f6c822dc73f45",
+  "status": "COMPLETED",
+  "accepted_server_ns": 127415785973749,
+  "revision": "browser_w4a_png_r1_lossless_profile",
+  "hardware_identity": {
+    "bit": {
+      "bytes": 4045678,
+      "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+    },
+    "hwh": {
+      "bytes": 379601,
+      "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+    }
+  },
+  "evidence_kind": "PYNQ_PL_DMA",
+  "evidence": {
+    "evidence_kind": "PYNQ_PL_DMA",
+    "requested_control_word": 1252355,
+    "hardware_latched_parameter_readback": {
+      "abi": "W2_RQ21_V1",
+      "sequence": 19,
+      "latched_control": 1252355,
+      "task_tag": 19,
+      "raw_pages": {
+        "1": 2,
+        "3": 1252355,
+        "5": 302266,
+        "6": 302266,
+        "7": 0,
+        "8": 30700,
+        "9": 262144,
+        "10": 262144,
+        "11": 19,
+        "4": 19
+      },
+      "clock_hz_from_paired_implementation": 100000000,
+      "pl_core_cycles": 302266,
+      "pl_drain_cycles": 302266,
+      "pl_input_empty_cycles": 0,
+      "pl_output_backpressure_cycles": 30700,
+      "pl_core_frame_ns": 3022660,
+      "pl_drain_ns": 3022660,
+      "core_boundary": "First HLS input handshake to final HLS output first valid",
+      "core_includes_stream_stalls": true,
+      "pure_dma_transport_ns": null
+    },
+    "applied_parameters": {
+      "algorithm": "A",
+      "threshold": 28,
+      "side": 512,
+      "mode_code": 3,
+      "task_tag": 19
+    },
+    "config_evidence": "Atomic completed RQ21 control/tag/sequence and native frame counts match this task.",
+    "frame_status_before": 294930,
+    "frame_status_after": 311315,
+    "frame_count": 19,
+    "frame_counter_wrapped": false,
+    "dma_status": {
+      "mm2s": 4098,
+      "s2mm": 4098
+    },
+    "send_bytes": 1048576,
+    "recv_bytes": 1048576,
+    "buffers": {
+      "tx": {
+        "physical_address": 379584512,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      },
+      "rx": {
+        "physical_address": 380633088,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      }
+    },
+    "output_sha256": "bce4b205d78e080c23633fb4e335ad27769b6c0dd50b604f5811c00934a86861",
+    "raw_timestamps_ns": {
+      "config_start_ns": 127415888590143,
+      "config_end_ns": 127415888647312,
+      "dma_start_ns": 127415905330371,
+      "dma_end_ns": 127415910168475,
+      "snapshot_start_ns": 127415910300568,
+      "snapshot_end_ns": 127415917163257,
+      "observer_end_ns": 127415918451331
+    },
+    "timing_ns": {
+      "config_ns": 57169,
+      "dma_transaction_ns": 4838104,
+      "cpu_snapshot_ns": 6862689,
+      "inference_ns": 28573114,
+      "pl_core_frame_ns": 3022660,
+      "pl_core_cycles": 302266,
+      "observer_readback_ns": 1288074,
+      "pure_dma_transport_ns": null
+    },
+    "numeric_validation": "Structural/raw-channel/binary/FOV checks only; download raw NPY for independent full A/C2 integer comparison.",
+    "native_cache_policy": "Unmodified official transfer/wait/flush/invalidate; cacheable flag is not kernel mapping proof."
+  },
+  "input": {
+    "sha256": "32b705365107ebb9cdd950f8a4234c894ccf8a5f477451bcf1ce28dd69cff178",
+    "file": {
+      "bytes": 1048704,
+      "sha256": "607e97600a8f7f6a56af48414c949b29a6f767e39b9328e3a945524991b01a97"
+    },
+    "rgb_sha256": "94522b0bd10637c365afa65671761b3e4419213f0fde7bde082f331c70f68a27",
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 512,
+      "nominal_scale": 0.7314285714285714,
+      "resized_width": 512,
+      "resized_height": 443,
+      "pad_left": 0,
+      "pad_top": 34,
+      "pad_right": 0,
+      "pad_bottom": 35,
+      "effective_scale_x": 0.7314285714285714,
+      "effective_scale_y": 0.7322314049586777,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    }
+  },
+  "output": {
+    "sha256": "bce4b205d78e080c23633fb4e335ad27769b6c0dd50b604f5811c00934a86861",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file": {
+      "bytes": 1048704,
+      "sha256": "5c8ef73b84929949978e8a2f95dfcf2b6ed98194b7c499c6a9ece8d3612038e8"
+    }
+  },
+  "quality": {
+    "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+    "vessel_pixels": 26856,
+    "fov_pixels": 179748,
+    "vessel_area_fraction": 0.14940917284197877,
+    "annotations": {
+      "AH": {
+        "tp": 14207,
+        "fp": 12649,
+        "fn": 6229,
+        "tn": 146663,
+        "dice": 0.6008204347458344,
+        "iou": 0.42940909777844943,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      },
+      "VK": {
+        "tp": 14613,
+        "fp": 12243,
+        "fn": 9109,
+        "tn": 143783,
+        "dice": 0.5778401676618292,
+        "iou": 0.4063116919227026,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      }
+    },
+    "quality_reason": null
+  },
+  "timing_ns": {
+    "config_ns": 57169,
+    "dma_transaction_ns": 4838104,
+    "cpu_snapshot_ns": 6862689,
+    "inference_ns": 28573114,
+    "pl_core_frame_ns": 3022660,
+    "pl_core_cycles": 302266,
+    "observer_readback_ns": 1288074,
+    "pure_dma_transport_ns": null,
+    "queue_wait_ns": 11147859,
+    "input_read_ns": 90986855,
+    "raw_save_ns": 152908886,
+    "evaluation_ns": 164217218,
+    "png_encoding_ns": 999234127,
+    "array_decode_overlay_ns": 230570966,
+    "png_fromarray_ns": 16225027,
+    "png_save_ns": 716773242,
+    "png_file_hash_ns": 31320337,
+    "file_inventory_hash_ns": 101582862,
+    "worker_result_ns": 1539272816
+  },
+  "raw_timestamps_ns": {
+    "worker_start_ns": 127415797121608,
+    "input_ready_ns": 127415888108463,
+    "config_start_ns": 127415888590143,
+    "config_end_ns": 127415888647312,
+    "dma_start_ns": 127415905330371,
+    "dma_end_ns": 127415910168475,
+    "snapshot_start_ns": 127415910300568,
+    "snapshot_end_ns": 127415917163257,
+    "observer_end_ns": 127415918451331,
+    "raw_saved_ns": 127416071360217,
+    "evaluation_end_ns": 127416235577435,
+    "arrays_ready_ns": 127416466148401,
+    "encoding_end_ns": 127417234811562,
+    "worker_result_ready_ns": 127417336394424
+  },
+  "timing_scope": "Worker result excludes final JSON publication, HTTP/polling and browser; DMA overlaps PL. Inference includes config/allocation/native DMA/read-only snapshot. Core comes from the completed hardware snapshot and includes stream stalls; pure transport remains unavailable. Observer GPIO reads are measured separately after the inference snapshot.",
+  "images": {
+    "original": {
+      "url": "/api/runs/8beebf47c15e43d5a1e8a4b8091febf2/images/original",
+      "bytes": 341631,
+      "sha256": "1a9b23f8a636a260f2479c04d2521d0338bc3e491254c0f6c34ba9672a7be56e"
+    },
+    "enhanced": {
+      "url": "/api/runs/8beebf47c15e43d5a1e8a4b8091febf2/images/enhanced",
+      "bytes": 105740,
+      "sha256": "50ae86f0faed16ff64dcb2c5f7d25cae015b3a5152f899b67a496080885832c2"
+    },
+    "mask": {
+      "url": "/api/runs/8beebf47c15e43d5a1e8a4b8091febf2/images/mask",
+      "bytes": 18381,
+      "sha256": "61d13a18174822f335e89f9c2a3656b0cab74b2c4926ed26b6e37a8f304fc73e"
+    },
+    "overlay": {
+      "url": "/api/runs/8beebf47c15e43d5a1e8a4b8091febf2/images/overlay",
+      "bytes": 358189,
+      "sha256": "121c8b92699a420939f93919339d907d694984c49c5be4de4889465aec69b417"
+    },
+    "response": {
+      "url": "/api/runs/8beebf47c15e43d5a1e8a4b8091febf2/images/response",
+      "bytes": 80695,
+      "sha256": "f804be0f53e4e00aff55ee5150e213cbf28837af03142bb9f74cc2d8f08c92bf"
+    }
+  },
+  "files": {
+    "enhanced.png": {
+      "bytes": 105740,
+      "sha256": "50ae86f0faed16ff64dcb2c5f7d25cae015b3a5152f899b67a496080885832c2"
+    },
+    "input_packed.npy": {
+      "bytes": 1048704,
+      "sha256": "607e97600a8f7f6a56af48414c949b29a6f767e39b9328e3a945524991b01a97"
+    },
+    "mask.png": {
+      "bytes": 18381,
+      "sha256": "61d13a18174822f335e89f9c2a3656b0cab74b2c4926ed26b6e37a8f304fc73e"
+    },
+    "original.png": {
+      "bytes": 341631,
+      "sha256": "1a9b23f8a636a260f2479c04d2521d0338bc3e491254c0f6c34ba9672a7be56e"
+    },
+    "output_packed.npy": {
+      "bytes": 1048704,
+      "sha256": "5c8ef73b84929949978e8a2f95dfcf2b6ed98194b7c499c6a9ece8d3612038e8"
+    },
+    "overlay.png": {
+      "bytes": 358189,
+      "sha256": "121c8b92699a420939f93919339d907d694984c49c5be4de4889465aec69b417"
+    },
+    "response.png": {
+      "bytes": 80695,
+      "sha256": "f804be0f53e4e00aff55ee5150e213cbf28837af03142bb9f74cc2d8f08c92bf"
+    }
+  },
+  "browser_timing": null,
+  "formal_quality_experiment": false,
+  "png_profile": "fast",
+  "encoding_details": {
+    "original": {
+      "profile": "fast",
+      "options": {
+        "compress_level": 1
+      },
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "uint8",
+      "raw_timestamps_ns": [
+        127416466357662,
+        127416474059730,
+        127416728212302,
+        127416739357526
+      ],
+      "fromarray_ns": 7702068,
+      "save_ns": 254152572,
+      "file_hash_ns": 11145224,
+      "bytes": 341631
+    },
+    "enhanced": {
+      "profile": "fast",
+      "options": {
+        "compress_level": 1
+      },
+      "mode": "L",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "raw_timestamps_ns": [
+        127416740554566,
+        127416740866179,
+        127416822847963,
+        127416826440578
+      ],
+      "fromarray_ns": 311613,
+      "save_ns": 81981784,
+      "file_hash_ns": 3592615,
+      "bytes": 105740
+    },
+    "mask": {
+      "profile": "fast",
+      "options": {
+        "compress_level": 1
+      },
+      "mode": "L",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "raw_timestamps_ns": [
+        127416826849662,
+        127416827152578,
+        127416868427791,
+        127416869619335
+      ],
+      "fromarray_ns": 302916,
+      "save_ns": 41275213,
+      "file_hash_ns": 1191544,
+      "bytes": 18381
+    },
+    "overlay": {
+      "profile": "fast",
+      "options": {
+        "compress_level": 1
+      },
+      "mode": "RGB",
+      "shape": [
+        512,
+        512,
+        3
+      ],
+      "dtype": "uint8",
+      "raw_timestamps_ns": [
+        127416870096025,
+        127416877668061,
+        127417137156627,
+        127417149301304
+      ],
+      "fromarray_ns": 7572036,
+      "save_ns": 259488566,
+      "file_hash_ns": 12144677,
+      "bytes": 358189
+    },
+    "response": {
+      "profile": "fast",
+      "options": {
+        "compress_level": 1
+      },
+      "mode": "L",
+      "shape": [
+        512,
+        512
+      ],
+      "dtype": "uint8",
+      "raw_timestamps_ns": [
+        127417150554289,
+        127417150890683,
+        127417230765790,
+        127417234012067
+      ],
+      "fromarray_ns": 336394,
+      "save_ns": 79875107,
+      "file_hash_ns": 3246277,
+      "bytes": 80695
+    }
+  },
+  "encoding_scope": "PS-only Pillow PNG settings; baseline is unchanged default, fast uses compress_level=1. Decoded pixels must match actual DMA exactly. No result cache. save_ns includes codec/filter/file-write; file hashes are separate. No assumption of speedup.",
+  "overlay_presentation": {
+    "green_rgb": [
+      0,
+      255,
+      0
+    ],
+    "alpha_percent": 65,
+    "rounding": "integer_half_up",
+    "browser_slider": "Presentation only; exported PNG retains fixed 65%"
+  }
+}

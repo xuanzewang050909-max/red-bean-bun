@@ -1,0 +1,66 @@
+{
+  "status": "PASS_BOARD_RECORDS_AND_RAW_ARRAYS_VERIFIED_AND_ARCHIVED",
+  "verified_host_utc": "2026-10-11T17:48:41.845787+00:00",
+  "revision": "a2_gaussian_r1_vendor_filter",
+  "hardware_source_commit": "f96e3498cfe59628ee6b987a40f2d98d29f05850",
+  "release_manifest_sha256": "d05d69d3b4735604aa8fdb97822f775352ba4357683ada778305d5bf2658e60e",
+  "board_clock_utc_unverified": "2022-10-22T04:20:33.014819+00:00",
+  "frames_verified": 37,
+  "input_words_verified": 5963776,
+  "raw_output_words_verified": 655360,
+  "notebook_code_sha256": "543414cd161c165085348b435b3cb5aa29d9ef88950630ca32a6f3909cd4f737",
+  "source_paths": {
+    "notebook": "C:\\Users\\Gabriel\\Downloads\\a2_gaussian_check.ipynb",
+    "bundle": "C:\\Users\\Gabriel\\Downloads\\a2_results_bundle.zip"
+  },
+  "raw_files": {
+    "a2_gaussian_check_executed.ipynb": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_gaussian_check_executed.ipynb",
+      "bytes": 165775,
+      "sha256": "60a72f5930241f204ba8289c58a0c2bde9fdba5409603e575aeb9a254fc82088"
+    },
+    "a2_results_bundle.zip": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_results_bundle.zip",
+      "bytes": 806837,
+      "sha256": "20aee252f3222d66bfa41c9f480f2076e52e41973785fa680ef4fe44c23bff14"
+    },
+    "a2_gaussian_result.json": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_gaussian_result.json",
+      "bytes": 38567,
+      "sha256": "dae049402356aa2007e92303396ff59b0e7711fda786b70f0eff0a8108557826"
+    },
+    "a2_preview.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_preview.png",
+      "bytes": 117862,
+      "sha256": "e438c1900b890215a922a8171531daa1d17bccdf5452f4c29bb75a656092c098"
+    },
+    "a2_output_stare_256_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_output_stare_256_mode2.npy",
+      "bytes": 262272,
+      "sha256": "a4fc0e1f414da80b4f6e17f0046c6188da846a11dee3c677cb670876b90c17e9"
+    },
+    "a2_output_stare_256_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_output_stare_256_mode3.npy",
+      "bytes": 262272,
+      "sha256": "b0dcf0009f89b408af8f54b491955aa487d071a5664ae03c7320bb3ed22c86ff"
+    },
+    "a2_output_stare_512_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_output_stare_512_mode2.npy",
+      "bytes": 1048704,
+      "sha256": "59dca01256d4b84317f2c23f7795431cb0e729c6d8714bf5de5aef9762994954"
+    },
+    "a2_output_stare_512_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\a2_output_stare_512_mode3.npy",
+      "bytes": 1048704,
+      "sha256": "58590ce9a63fc3877542ee109fb3ac3339a848436df25ba908916d991bf1d8a4"
+    },
+    "user_result_screenshot.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\a2_gaussian_2026-10-12\\user_result_screenshot.png",
+      "bytes": 181588,
+      "sha256": "370c0c7af2452f0200b5aeb55369a0babd75eed20b2f6fc7b135dd0a007e6d7a"
+    }
+  },
+  "local_archive_policy": "Retinal arrays, PNG and output-bearing Notebook stay in ignored build/board_results. Original JSON and hashes are tracked; no dataset redistribution.",
+  "scope": "Actual PYNQ-Z2 A2: 37 bypass/G/Gaussian/Gaussian+LUT frames, standard DMA/GPIO/DDR, original G and center FOV alignment.",
+  "limits": "All 37 board output hashes recomputed independently; all 4 saved STARE buffers compared word by word on the host. Other 33 raw buffers are not downloaded. No full vessel segmentation, final HDMI integration, FPS or clinical validation."
+}

@@ -1,0 +1,18 @@
+{
+  "incomplete_frames": {
+    "status": "PASS_REJECTED",
+    "reason": "Incomplete frame records"
+  },
+  "corrupt_output_hash": {
+    "status": "PASS_REJECTED",
+    "reason": "Frame hashes differ from independently regenerated input/golden data"
+  },
+  "wrong_fpga_counter": {
+    "status": "PASS_REJECTED",
+    "reason": "FPGA frame counts or error flags differ"
+  },
+  "unfinished_suite": {
+    "status": "PASS_REJECTED",
+    "reason": "Suite did not complete"
+  }
+}

@@ -1,0 +1,38 @@
+test_bounded_queue_is_responsive_and_nonce_retries_do_not_add_frames (test_browser_w1.ApiTests.test_bounded_queue_is_responsive_and_nonce_retries_do_not_add_frames) ... ok
+test_bypass_exposes_no_stale_enhanced_mask_or_scores (test_browser_w1.ApiTests.test_bypass_exposes_no_stale_enhanced_mask_or_scores) ... 404 GET /api/runs/cafe7285a39a41b4bfcf5e4ae33d77bf/images/mask (127.0.0.1) 1.35ms
+ok
+test_cross_origin_posts_rejected_without_hardware_access (test_browser_w1.ApiTests.test_cross_origin_posts_rejected_without_hardware_access) ... 422 POST /api/runs (127.0.0.1) 1.11ms
+ok
+test_export_preserves_native_arrays_browser_observation_and_null_timing_csv (test_browser_w1.ApiTests.test_export_preserves_native_arrays_browser_observation_and_null_timing_csv) ... ok
+test_fault_cancels_pending_preserves_native_refs_and_blocks_close_or_retry (test_browser_w1.ApiTests.test_fault_cancels_pending_preserves_native_refs_and_blocks_close_or_retry) ... 409 POST /api/runs (127.0.0.1) 0.00ms
+ok
+test_fps_counts_unique_consecutive_results_and_hidden_interval_invalidates_loop (test_browser_w1.ApiTests.test_fps_counts_unique_consecutive_results_and_hidden_interval_invalidates_loop) ... ok
+test_host_preview_cannot_be_accepted_as_new_board_evidence (test_browser_w1.ApiTests.test_host_preview_cannot_be_accepted_as_new_board_evidence) ... ok
+test_http_invalid_requests_never_allocate_or_change_config (test_browser_w1.ApiTests.test_http_invalid_requests_never_allocate_or_change_config) ... 422 POST /api/runs (127.0.0.1) 1.00ms
+ok
+test_images_same_frame_match_real_packed_channels_and_headers (test_browser_w1.ApiTests.test_images_same_frame_match_real_packed_channels_and_headers) ... Executing <Task pending name='Task-108' coro=<ApiTests.test_images_same_frame_match_real_packed_channels_and_headers() running at D:\PLD\retina_fpga\tests\test_browser_w1.py:260> wait_for=<Future pending cb=[Task.task_wakeup()] created at D:\PLD\retina_fpga\.venv\Lib\site-packages\tornado\httpclient.py:297> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.109 seconds
+ok
+test_interrupted_async_wait_does_not_restart_free_or_hide_native_operation (test_browser_w1.ApiTests.test_interrupted_async_wait_does_not_restart_free_or_hide_native_operation) ... ok
+test_offline_verifier_checks_all_words_and_detects_rehashed_tampering (test_browser_w1.ApiTests.test_offline_verifier_checks_all_words_and_detects_rehashed_tampering) ... ok
+test_stale_replayed_nonfinite_or_nonmonotonic_client_observations_rejected (test_browser_w1.ApiTests.test_stale_replayed_nonfinite_or_nonmonotonic_client_observations_rejected) ... 422 POST /api/runs/c948078d13b2409bab7cf32b7315b520/browser-timing (127.0.0.1) 1.31ms
+422 POST /api/runs/c948078d13b2409bab7cf32b7315b520/browser-timing (127.0.0.1) 1.05ms
+422 POST /api/runs/c948078d13b2409bab7cf32b7315b520/browser-timing (127.0.0.1) 0.51ms
+422 POST /api/runs/c948078d13b2409bab7cf32b7315b520/browser-timing (127.0.0.1) 1.00ms
+409 POST /api/runs/c948078d13b2409bab7cf32b7315b520/browser-timing (127.0.0.1) 0.48ms
+ok
+test_storage_fault_keeps_protection_and_cancels_pending_even_when_journaling_fails (test_browser_w1.ApiTests.test_storage_fault_keeps_protection_and_cancels_pending_even_when_journaling_fails) ... ok
+test_changed_package_bytes_fail_before_hardware_loading (test_browser_w1.NativeTests.test_changed_package_bytes_fail_before_hardware_loading) ... ok
+test_counter_wrap_and_consecutive_frames (test_browser_w1.NativeTests.test_counter_wrap_and_consecutive_frames) ... ok
+test_faults_keep_all_native_references_and_prohibit_new_transfers (test_browser_w1.NativeTests.test_faults_keep_all_native_references_and_prohibit_new_transfers) ... ok
+test_gt_missing_bypass_and_scores_recomputed_only_from_current_output (test_browser_w1.NativeTests.test_gt_missing_bypass_and_scores_recomputed_only_from_current_output) ... ok
+test_new_catalog_matches_original_tested_geometry_and_is_gt_independent (test_browser_w1.NativeTests.test_new_catalog_matches_original_tested_geometry_and_is_gt_independent) ... ok
+test_other_thread_cannot_access_gpio_or_dma (test_browser_w1.NativeTests.test_other_thread_cannot_access_gpio_or_dma) ... ok
+test_request_rejects_unsupported_threshold_algorithm_invalid_types_and_paths (test_browser_w1.NativeTests.test_request_rejects_unsupported_threshold_algorithm_invalid_types_and_paths) ... ok
+test_snapshot_exception_retains_dma_buffers (test_browser_w1.NativeTests.test_snapshot_exception_retains_dma_buffers) ... ok
+test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import (test_browser_w1.NativeTests.test_startup_notebook_safely_extracts_verified_inventory_before_any_fpga_import) ... ok
+test_two_images_two_sizes_all_modes_real_native_order_and_readonly_snapshot (test_browser_w1.NativeTests.test_two_images_two_sizes_all_modes_real_native_order_and_readonly_snapshot) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 3.095s
+
+OK

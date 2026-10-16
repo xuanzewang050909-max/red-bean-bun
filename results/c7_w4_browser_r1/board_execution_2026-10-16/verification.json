@@ -1,0 +1,452 @@
+{
+  "status": "W4B_BOARD_BROWSER_DATA_VERIFIED",
+  "archive": {
+    "bytes": 523401529,
+    "sha256": "25f12c98e8d344c42c4de2d2b41547405e3efa03368471125a62696a1feaa2ef"
+  },
+  "notebook": {
+    "bytes": 11980,
+    "sha256": "42716d2baf9738d98a9e4bf043d32f2325cf2e0ccb3aa60865a846cf4367a5e7"
+  },
+  "session_id": "ad91547ff308484c96bb040fd68d9121",
+  "verified_runs": 309,
+  "matched_words": 81002496,
+  "matched_png_images": 1545,
+  "ignored_trailing_empty_unexecuted_cells": 1,
+  "groups": [
+    {
+      "repeat": 1,
+      "warmup": 3,
+      "n": 100,
+      "loop_id": "5205deb029ed9d0bc9f58d692cd00c64_r1",
+      "mean_ms": 1719.857999999225,
+      "median_ms": 1711.1999999955297,
+      "p95_ms": 1834.9950000002975,
+      "elapsed_ms": 175855.59999999404,
+      "actual_fps": 0.5686483683203912
+    },
+    {
+      "repeat": 2,
+      "warmup": 3,
+      "n": 100,
+      "loop_id": "5205deb029ed9d0bc9f58d692cd00c64_r2",
+      "mean_ms": 1741.2079999996722,
+      "median_ms": 1707.1000000014901,
+      "p95_ms": 1842.9499999999994,
+      "elapsed_ms": 175691.29999999702,
+      "actual_fps": 0.5691801472241466
+    },
+    {
+      "repeat": 3,
+      "warmup": 3,
+      "n": 100,
+      "loop_id": "5205deb029ed9d0bc9f58d692cd00c64_r3",
+      "mean_ms": 1722.2910000002385,
+      "median_ms": 1712.3999999985099,
+      "p95_ms": 1751.9599999912082,
+      "elapsed_ms": 173779.39999999106,
+      "actual_fps": 0.5754421985575111
+    }
+  ],
+  "server_groups": [
+    {
+      "repeat": 1,
+      "metrics": {
+        "pl_core_frame_ns": {
+          "n": 100,
+          "mean": 3.0403717,
+          "median": 3.03961,
+          "p95": 3.0426119999999997,
+          "minimum": 3.0396,
+          "maximum": 3.04289,
+          "percentile_method": "linear"
+        },
+        "dma_transaction_ns": {
+          "n": 100,
+          "mean": 7.30393968,
+          "median": 7.170984499999999,
+          "p95": 11.1725215,
+          "minimum": 4.424412,
+          "maximum": 11.637686,
+          "percentile_method": "linear"
+        },
+        "inference_ns": {
+          "n": 100,
+          "mean": 32.25454567,
+          "median": 31.9357045,
+          "p95": 35.767386699999996,
+          "minimum": 25.77544,
+          "maximum": 57.238406,
+          "percentile_method": "linear"
+        },
+        "cpu_snapshot_ns": {
+          "n": 100,
+          "mean": 7.2299074899999995,
+          "median": 6.8767475000000005,
+          "p95": 9.3411271,
+          "minimum": 6.707157,
+          "maximum": 11.390597,
+          "percentile_method": "linear"
+        },
+        "observer_readback_ns": {
+          "n": 100,
+          "mean": 1.27015595,
+          "median": 1.255732,
+          "p95": 1.39538595,
+          "minimum": 1.085274,
+          "maximum": 3.257778,
+          "percentile_method": "linear"
+        },
+        "input_read_ns": {
+          "n": 100,
+          "mean": 88.30506328,
+          "median": 87.87219350000001,
+          "p95": 92.65681135,
+          "minimum": 85.57963,
+          "maximum": 107.457237,
+          "percentile_method": "linear"
+        },
+        "raw_save_ns": {
+          "n": 100,
+          "mean": 150.67151825000002,
+          "median": 144.474492,
+          "p95": 157.89813285,
+          "minimum": 140.023895,
+          "maximum": 648.243852,
+          "percentile_method": "linear"
+        },
+        "evaluation_ns": {
+          "n": 100,
+          "mean": 158.48082356999998,
+          "median": 157.521243,
+          "p95": 166.99031925,
+          "minimum": 151.7892,
+          "maximum": 184.882252,
+          "percentile_method": "linear"
+        },
+        "array_decode_overlay_ns": {
+          "n": 100,
+          "mean": 184.99476706000002,
+          "median": 182.525843,
+          "p95": 196.20643815,
+          "minimum": 174.833446,
+          "maximum": 270.964689,
+          "percentile_method": "linear"
+        },
+        "png_fromarray_ns": {
+          "n": 100,
+          "mean": 17.011798789999997,
+          "median": 16.4290995,
+          "p95": 20.28825095,
+          "minimum": 15.957477,
+          "maximum": 24.286288,
+          "percentile_method": "linear"
+        },
+        "png_save_ns": {
+          "n": 100,
+          "mean": 723.41066059,
+          "median": 709.25636,
+          "p95": 739.7523193999999,
+          "minimum": 692.933925,
+          "maximum": 1192.490397,
+          "percentile_method": "linear"
+        },
+        "png_file_hash_ns": {
+          "n": 100,
+          "mean": 29.836762930000006,
+          "median": 29.1245775,
+          "p95": 34.1188218,
+          "minimum": 28.188043,
+          "maximum": 37.709316,
+          "percentile_method": "linear"
+        },
+        "file_inventory_hash_ns": {
+          "n": 100,
+          "mean": 99.81528288999998,
+          "median": 99.08003049999999,
+          "p95": 104.97824445,
+          "minimum": 94.403262,
+          "maximum": 115.961465,
+          "percentile_method": "linear"
+        },
+        "worker_result_ns": {
+          "n": 100,
+          "mean": 1490.0713946799995,
+          "median": 1469.1557914999999,
+          "p95": 1541.0167513999997,
+          "minimum": 1434.796386,
+          "maximum": 1990.750366,
+          "percentile_method": "linear"
+        }
+      }
+    },
+    {
+      "repeat": 2,
+      "metrics": {
+        "pl_core_frame_ns": {
+          "n": 100,
+          "mean": 3.0402202000000007,
+          "median": 3.03961,
+          "p95": 3.042443,
+          "minimum": 3.0396,
+          "maximum": 3.0431,
+          "percentile_method": "linear"
+        },
+        "dma_transaction_ns": {
+          "n": 100,
+          "mean": 7.023507269999999,
+          "median": 4.9124,
+          "p95": 11.137655350000001,
+          "minimum": 4.678068,
+          "maximum": 11.378683,
+          "percentile_method": "linear"
+        },
+        "inference_ns": {
+          "n": 100,
+          "mean": 46.2779894,
+          "median": 33.00572,
+          "p95": 38.88041519999999,
+          "minimum": 28.249606,
+          "maximum": 1345.577949,
+          "percentile_method": "linear"
+        },
+        "cpu_snapshot_ns": {
+          "n": 100,
+          "mean": 7.4103951100000005,
+          "median": 6.865304,
+          "p95": 10.0902806,
+          "minimum": 6.698184,
+          "maximum": 16.129723,
+          "percentile_method": "linear"
+        },
+        "observer_readback_ns": {
+          "n": 100,
+          "mean": 1.1991596899999997,
+          "median": 1.1994065,
+          "p95": 1.317095,
+          "minimum": 1.086221,
+          "maximum": 1.341828,
+          "percentile_method": "linear"
+        },
+        "input_read_ns": {
+          "n": 100,
+          "mean": 87.81112066,
+          "median": 87.8307445,
+          "p95": 91.00744279999999,
+          "minimum": 85.52357,
+          "maximum": 93.139163,
+          "percentile_method": "linear"
+        },
+        "raw_save_ns": {
+          "n": 100,
+          "mean": 145.41358774000003,
+          "median": 144.37987700000002,
+          "p95": 150.57279185,
+          "minimum": 139.919483,
+          "maximum": 178.57395,
+          "percentile_method": "linear"
+        },
+        "evaluation_ns": {
+          "n": 100,
+          "mean": 158.19841936,
+          "median": 157.43001500000003,
+          "p95": 166.33442405,
+          "minimum": 151.995427,
+          "maximum": 186.435889,
+          "percentile_method": "linear"
+        },
+        "array_decode_overlay_ns": {
+          "n": 100,
+          "mean": 185.41496845999998,
+          "median": 182.7706735,
+          "p95": 195.8248828,
+          "minimum": 175.534516,
+          "maximum": 228.603311,
+          "percentile_method": "linear"
+        },
+        "png_fromarray_ns": {
+          "n": 100,
+          "mean": 17.02111217,
+          "median": 16.420572,
+          "p95": 20.547709100000002,
+          "minimum": 16.015384,
+          "maximum": 24.506934,
+          "percentile_method": "linear"
+        },
+        "png_save_ns": {
+          "n": 100,
+          "mean": 732.44121996,
+          "median": 706.463008,
+          "p95": 734.7753565999999,
+          "minimum": 691.985735,
+          "maximum": 2578.882237,
+          "percentile_method": "linear"
+        },
+        "png_file_hash_ns": {
+          "n": 100,
+          "mean": 30.343676040000002,
+          "median": 29.100987500000002,
+          "p95": 36.007501850000004,
+          "minimum": 28.080812,
+          "maximum": 43.580781,
+          "percentile_method": "linear"
+        },
+        "file_inventory_hash_ns": {
+          "n": 100,
+          "mean": 99.45608844999998,
+          "median": 98.6034525,
+          "p95": 104.5136614,
+          "minimum": 94.964068,
+          "maximum": 122.952627,
+          "percentile_method": "linear"
+        },
+        "worker_result_ns": {
+          "n": 100,
+          "mean": 1507.6090733899996,
+          "median": 1466.7338285,
+          "p95": 1531.7201009,
+          "minimum": 1434.348891,
+          "maximum": 3351.241699,
+          "percentile_method": "linear"
+        }
+      }
+    },
+    {
+      "repeat": 3,
+      "metrics": {
+        "pl_core_frame_ns": {
+          "n": 100,
+          "mean": 3.0403776,
+          "median": 3.03961,
+          "p95": 3.0426005000000003,
+          "minimum": 3.0396,
+          "maximum": 3.0429,
+          "percentile_method": "linear"
+        },
+        "dma_transaction_ns": {
+          "n": 100,
+          "mean": 6.97749909,
+          "median": 5.4127105,
+          "p95": 10.506523849999999,
+          "minimum": 4.682633,
+          "maximum": 11.877299,
+          "percentile_method": "linear"
+        },
+        "inference_ns": {
+          "n": 100,
+          "mean": 31.985306519999998,
+          "median": 31.164723,
+          "p95": 38.32736715,
+          "minimum": 25.521274,
+          "maximum": 45.302523,
+          "percentile_method": "linear"
+        },
+        "cpu_snapshot_ns": {
+          "n": 100,
+          "mean": 7.425709120000001,
+          "median": 6.867646000000001,
+          "p95": 9.916133799999999,
+          "minimum": 6.688701,
+          "maximum": 11.12304,
+          "percentile_method": "linear"
+        },
+        "observer_readback_ns": {
+          "n": 100,
+          "mean": 1.2040113,
+          "median": 1.2012185,
+          "p95": 1.3478000499999998,
+          "minimum": 1.085816,
+          "maximum": 1.520129,
+          "percentile_method": "linear"
+        },
+        "input_read_ns": {
+          "n": 100,
+          "mean": 88.43316358000001,
+          "median": 88.057991,
+          "p95": 92.65471439999999,
+          "minimum": 85.708382,
+          "maximum": 98.770394,
+          "percentile_method": "linear"
+        },
+        "raw_save_ns": {
+          "n": 100,
+          "mean": 145.19568743999997,
+          "median": 144.519249,
+          "p95": 150.81341515,
+          "minimum": 140.048732,
+          "maximum": 172.876055,
+          "percentile_method": "linear"
+        },
+        "evaluation_ns": {
+          "n": 100,
+          "mean": 157.83910257000002,
+          "median": 157.3479815,
+          "p95": 164.7748769,
+          "minimum": 152.131231,
+          "maximum": 183.52283,
+          "percentile_method": "linear"
+        },
+        "array_decode_overlay_ns": {
+          "n": 100,
+          "mean": 183.77567298999998,
+          "median": 182.288864,
+          "p95": 194.67345345,
+          "minimum": 174.921883,
+          "maximum": 208.756031,
+          "percentile_method": "linear"
+        },
+        "png_fromarray_ns": {
+          "n": 100,
+          "mean": 17.03864466,
+          "median": 16.3718315,
+          "p95": 20.6016685,
+          "minimum": 15.858455,
+          "maximum": 27.511719,
+          "percentile_method": "linear"
+        },
+        "png_save_ns": {
+          "n": 100,
+          "mean": 712.00383957,
+          "median": 709.7006225,
+          "p95": 734.7905002,
+          "minimum": 696.254147,
+          "maximum": 765.847783,
+          "percentile_method": "linear"
+        },
+        "png_file_hash_ns": {
+          "n": 100,
+          "mean": 29.850048769999997,
+          "median": 28.9104645,
+          "p95": 36.30058915,
+          "minimum": 27.993958,
+          "maximum": 41.373569,
+          "percentile_method": "linear"
+        },
+        "file_inventory_hash_ns": {
+          "n": 100,
+          "mean": 100.6077204,
+          "median": 99.8539715,
+          "p95": 108.33577865,
+          "minimum": 94.730683,
+          "maximum": 114.568529,
+          "percentile_method": "linear"
+        },
+        "worker_result_ns": {
+          "n": 100,
+          "mean": 1471.9684494299995,
+          "median": 1469.764527,
+          "p95": 1516.0527143000002,
+          "minimum": 1441.906453,
+          "maximum": 1557.254785,
+          "percentile_method": "linear"
+        }
+      }
+    }
+  ],
+  "measured_frames": 300,
+  "warmup_frames": 9,
+  "pure_dma_transport_ns": null,
+  "clinical_acceptance": false,
+  "realtime_requirement_pass": false,
+  "scope": "Measured foreground client request-to-double-rAF; retains evidence/PNG/scoring overhead. No physical scanout claim, no full W4/quality acceptance."
+}

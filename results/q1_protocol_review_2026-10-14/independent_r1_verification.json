@@ -1,0 +1,16 @@
+{
+  "status": "INDEPENDENT_CPU_Q1_R1_EVIDENCE_VERIFIED_FAMILY_REJECTED_FOR_PL",
+  "source_commit": "1bd73d66a113bf39a767b328b64bc944a78e8013",
+  "trial": "D:\\PLD\\retina_fpga\\build\\q1_bilateral_2026-10-14_r1",
+  "matched_cpu_masks": 1300,
+  "matched_cpu_pixels": 212992000,
+  "independent_confusion_and_csv_rows": 9100,
+  "eligible_count": 0,
+  "selected_candidate": null,
+  "heldout_or_VK_decoded": false,
+  "production_files_unchanged": true,
+  "new_PL_algorithm_verified": false,
+  "new_board_performance": null,
+  "source_sha256": "e7eea4cfd818e8239f0b367d5135bd24f4f53fc80e76906067bdf11c6234b48b",
+  "training_report_sha256": "8c6df8b5e326410da5cfb4d39d72ec9f50285cd06f0f7ecee4479facd8e80c78"
+}

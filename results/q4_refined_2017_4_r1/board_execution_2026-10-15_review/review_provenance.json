@@ -1,0 +1,81 @@
+{
+  "status": "REAL_DATA_AUDIT_COMPLETE_QUALITY_NOT_ACCEPTED",
+  "protected_historical_files": 179,
+  "protected_historical_files_unchanged": true,
+  "q4_package_inventory_members": 138,
+  "q4_package_validation": true,
+  "new_algorithm_implemented": false,
+  "new_hardware_build": false,
+  "sources_and_outputs": {
+    "scripts/audit_q4_board_residuals.py": {
+      "bytes": 11606,
+      "sha256": "0d1985ed39cbfd6226402e29aa17d94a9b32d5bf74e14b1e7ff92be53e16a2f6"
+    },
+    "scripts/verify_q4_archive.py": {
+      "bytes": 20679,
+      "sha256": "81ba5128be677e7f43a40728bd1b9ca27d34eb39af749d67a5670ec185becf5e"
+    },
+    "tests/test_q4_archive_coverage.py": {
+      "bytes": 6325,
+      "sha256": "0311e573b8d5b854c68b1280b3c9814681815324343ae2f29cec8298582fe6bf"
+    },
+    "software/continuity_metrics.py": {
+      "bytes": 2227,
+      "sha256": "28799bed8bac4fe8c9854336162ef46c6252fd36ce2333c8470457336641d530"
+    },
+    "software/metrics.py": {
+      "bytes": 844,
+      "sha256": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "docs/q4d_detection_revision_plan.md": {
+      "bytes": 5324,
+      "sha256": "5af378c5e955c5e6fd55e6829a06a8da992fcd19f7411ebfec3c97348743732c"
+    },
+    "build/board_results/q4_quality_2026-10-15/received.json": {
+      "bytes": 429,
+      "sha256": "8bf4d0f7a0eda91256c79e17ca1bec2e8a689563a8d2fb754db3daa941173ff4"
+    },
+    "build/board_results/q4_quality_2026-10-15/user_c5_screenshot.png": {
+      "bytes": 378171,
+      "sha256": "13cb4cbdb49894bf0b2e010ab51251cb2a115c845d78cfb43859a8ed6205c363"
+    },
+    "build/q4_board_residual_audit_2026-10-15/central_c2_c5_actual.png": {
+      "bytes": 147734,
+      "sha256": "a6a54eca1aeaefb5ba046e9a3128219f9fd9f578475e1ce5999f60c6c7ba8205"
+    },
+    "build/q4_board_residual_audit_2026-10-15/continuity_c2_c5_actual.png": {
+      "bytes": 556188,
+      "sha256": "11185569101aabfc8571ba55c84b02b035b976535d615cc63a151da6c7ba4dfd"
+    },
+    "results/q4_refined_2017_4_r1/board_execution_2026-10-15_review/coverage_tests.log": {
+      "bytes": 1173,
+      "sha256": "a7a3cbf63d13d1b85a57b9cf7352085233405bf1ee551e7c3cbf4fd17043ee38"
+    },
+    "results/q4_refined_2017_4_r1/board_execution_2026-10-15_review/data_verification.log": {
+      "bytes": 101,
+      "sha256": "0a548e0fa86d14d61710921b33a8a9588d909d46ed4b7dcbb82b0125563439c3"
+    },
+    "results/q4_refined_2017_4_r1/board_execution_2026-10-15_review/residual_audit.json": {
+      "bytes": 18187,
+      "sha256": "f2873d6d15f6686e2ebb7e949e7ebe5d7542f1ca04ed365faf79fb1e63859e7d"
+    },
+    "results/q4_refined_2017_4_r1/board_execution_2026-10-15_review/strict_verification_failure.log": {
+      "bytes": 1201,
+      "sha256": "2abece05f0e9c592685dbc6c8d22168b808f47bb7dc4f38e545edc1ff5e1eafe"
+    },
+    "results/q4_refined_2017_4_r1/board_execution_2026-10-15_review/verification.json": {
+      "bytes": 1327778,
+      "sha256": "8857d94b551734713cbd6bd7ae7d3e7dfd1677dfb25ffa905b5a12a53565a43d"
+    },
+    "results/q4_refined_2017_4_r1/board_execution_2026-10-15_review/verification_report.md": {
+      "bytes": 7485,
+      "sha256": "2ca3578a5bf415f6226ffa14039ea17968e8467114ca2b45e6516bd76fe48104"
+    }
+  },
+  "python": "3.12.14",
+  "medical_images_local_only": true
+}

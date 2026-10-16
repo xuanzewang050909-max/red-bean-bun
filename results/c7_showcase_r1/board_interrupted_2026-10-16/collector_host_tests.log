@@ -1,0 +1,18 @@
+READ_ONLY: uname -a
+READ_ONLY: uptime
+READ_ONLY: free -m
+READ_ONLY: df -h /
+READ_ONLY: ps -ww -eo pid,ppid,stat,pcpu,pmem,wchan:24,args
+READ_ONLY: ss -ltnp
+READ_ONLY: dmesg
+READ_ONLY: journalctl -b -n 300 --no-pager -o short-monotonic
+test_missing_os_tools_are_recorded_without_install_or_recovery (test_showcase_failure_collection.CollectionTests.test_missing_os_tools_are_recorded_without_install_or_recovery) ... ok
+FAILURE_RECORDS_READY: C:\Users\Gabriel\AppData\Local\Temp\tmp0d4o3mjn\c7_showcase_failure_20261016_072520_a91c3deb.zip
+FAILURE_RECORDS_READY: C:\Users\Gabriel\AppData\Local\Temp\tmp0d4o3mjn\c7_showcase_failure_20261016_072520_47dbe096.zip
+test_partial_evidence_preserved_and_repeat_is_new_archive (test_showcase_failure_collection.CollectionTests.test_partial_evidence_preserved_and_repeat_is_new_archive) ... ok
+test_wrong_root_rejected_without_artifact (test_showcase_failure_collection.CollectionTests.test_wrong_root_rejected_without_artifact) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 0.018s
+
+OK

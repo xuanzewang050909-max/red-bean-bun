@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 11 23:07:32 2026
+# Process ID: 37376
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -source vivado/scripts/build_a1_point.tcl -log D:/PLD/retina_fpga/build/a1_point_01.log -journal D:/PLD/retina_fpga/build/a1_point_01.jou -tclargs D:/PLD/retina_fpga/build/a1_point_01 full
+# Log file: D:/PLD/retina_fpga/build/a1_point_01.log
+# Journal file: D:/PLD/retina_fpga/build/a1_point_01.jou
+#-----------------------------------------------------------
+source vivado/scripts/build_a1_point.tcl
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne "2017.4"} {error "This baseline is verified only with Vivado 2017.4"}
+# if {[llength $argv] != 2} {error "Expected new output directory and bd|full"}
+# set out [file normalize [lindex $argv 0]]
+# set stage [lindex $argv 1]
+# if {$stage ni {bd full}} {error "Invalid stage"}
+# if {[file exists $out]} {error "Refusing to overwrite existing build directory: $out"}
+# file mkdir $out
+# file copy [info script] [file join $out build_script_used.tcl]
+# set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+# create_project a1_point $out -part xc7z020clg400-1
+# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+# set_property target_language Verilog [current_project]
+# add_files -norecurse [list [file join $root rtl core retina_point_axis.sv] [file join $root rtl core contrast_lut.vh]]
+# set_property include_dirs [list [file join $root rtl core]] [current_fileset]
+# update_compile_order -fileset sources_1
+# create_bd_design a1_point
+Wrote  : <D:/PLD/retina_fpga/build/a1_point_01/a1_point.srcs/sources_1/bd/a1_point/a1_point.bd> 
+# create_bd_cell -type module -reference retina_point_axis point_stage
+ERROR: [filemgmt 56-195] Reference 'retina_point_axis' contains top file 'D:/PLD/retina_fpga/rtl/core/retina_point_axis.sv' of type SystemVerilog. This type is not allowed as the top file in the reference.
+ERROR: [BD 41-1690] Unable to resolve module-source based on inputs: retina_point_axis
+ERROR: [BD 5-7] Error: running create_bd_cell  -type module -reference retina_point_axis -name point_stage .
+ERROR: [Common 17-39] 'create_bd_cell' failed due to earlier errors.
+
+    while executing
+"create_bd_cell -type module -reference retina_point_axis point_stage"
+    (file "vivado/scripts/build_a1_point.tcl" line 23)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 23:07:37 2026...

@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-11",
+  "user_report": "写入成功",
+  "boot_file_check": "PASS",
+  "files": [
+    {
+      "name": "BOOT.BIN",
+      "bytes": 1087568,
+      "sha256": "3fcdd4303567d75ac1e7be96c4a93816acb6c150f6facbf1f123d729a5bd5def",
+      "matches_official_image": true
+    },
+    {
+      "name": "BOOT.PY",
+      "bytes": 991,
+      "sha256": "b2653ef809c3271231c78772342c2be728d39686a877d3c6fe8cdabfd4ac1d42",
+      "matches_official_image": true
+    },
+    {
+      "name": "BOOT.SCR",
+      "bytes": 2776,
+      "sha256": "7013e14923fbe461c4ecd745214fcafcb0ffaddb10865f9135cd8624637359f4",
+      "matches_official_image": true
+    },
+    {
+      "name": "IMAGE.UB",
+      "bytes": 6464328,
+      "sha256": "1cbbd556d8416cb8e5ae3025a6df2fd11b226707dc4a1491cc6382dfbee2ab1f",
+      "matches_official_image": true
+    },
+    {
+      "name": "REVISION",
+      "bytes": 83,
+      "sha256": "4890cc0639e8f20a0fd5ce4610f6cbc227a01a7589e847f7810bf68c80be6b19",
+      "matches_official_image": true
+    }
+  ],
+  "full_image_verification": "COMPARED_EXACT_MISMATCH_6_SECTORS_CLASSIFIED_AS_WINDOWS_BOOT_METADATA",
+  "board_boot": "NOT_YET_TESTED_WITH_NEW_IMAGE",
+  "scope": "Read-only mounted boot files; does not verify Linux root partition or complete SD image",
+  "gui_verify_result": "FAILED_AT_REPORTED_SECTOR_0_USER_SCREENSHOT",
+  "linux_partition_verification": "EXACT_MATCH_FULL_PARTITION",
+  "diagnosis_report": "sd_compare_classification.json"
+}

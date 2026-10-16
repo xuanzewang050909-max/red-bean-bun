@@ -1,0 +1,26 @@
+{
+  "received_date_local": "2026-10-13",
+  "board_wall_clock_verified": false,
+  "session_id": "4341c09cebe24ec3b169c9d696079162",
+  "original_files_unchanged": true,
+  "files": [
+    {
+      "source": "C:\\Users\\Gabriel\\Downloads\\browser_start.ipynb",
+      "preserved_path": "D:\\PLD\\retina_fpga\\build\\board_results\\browser_w1_2026-10-13\\browser_start.ipynb",
+      "bytes": 11762,
+      "sha256": "4a0a7fcdbcd061f972e0a9a1efeebb79d5aaef9b9411be62f31cd645fcbad6b2"
+    },
+    {
+      "source": "C:\\Users\\Gabriel\\Downloads\\browser_session_bundle.zip",
+      "preserved_path": "D:\\PLD\\retina_fpga\\build\\board_results\\browser_w1_2026-10-13\\browser_session_bundle.zip",
+      "bytes": 34745192,
+      "sha256": "fd6be8ab85ca18a541f4d54d7d71783399153c7b1f29db4b7fe331cbd207bdbb"
+    },
+    {
+      "source": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-585bf687-12db-45d7-9410-7ff3e8c23a03.png",
+      "preserved_path": "D:\\PLD\\retina_fpga\\build\\board_results\\browser_w1_2026-10-13\\browser_user_screenshot.png",
+      "bytes": 506599,
+      "sha256": "60856983514d7037f579fbd52aa8ded2e8c504332c315185b9590893d71c0ad6"
+    }
+  ]
+}

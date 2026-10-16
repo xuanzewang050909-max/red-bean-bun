@@ -1,0 +1,28 @@
+INFO: [SIM 2] *************** CSIM start ***************
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../../../tests/retina_refined_hls_tb.cpp in debug mode
+   Compiling ../../../../../hls/retina_c2_support_hls.cpp in debug mode
+   Compiling ../../../../../hls/retina_refined_base.cpp in debug mode
+   Compiling ../../../../../hls/retina_refined_hls.cpp in debug mode
+   Generating csim.exe
+Q4_C5_CSIM_FRAME_PASS 1 words=65536
+Q4_C5_CSIM_FRAME_PASS 2 words=65536
+Q4_C5_CSIM_FRAME_PASS 3 words=65536
+Q4_C5_CSIM_FRAME_PASS 4 words=262144
+Q4_C5_CSIM_FRAME_PASS 5 words=65536
+Q4_C5_CSIM_FRAME_PASS 6 words=262144
+Q4_C5_CSIM_FRAME_PASS 7 words=262144
+Q4_C5_CSIM_FRAME_PASS 8 words=65536
+Q4_C5_CSIM_FRAME_PASS 9 words=65536
+Q4_C5_CSIM_FRAME_PASS 10 words=262144
+Q4_C5_CSIM_FRAME_PASS 11 words=65536
+Q4_C5_CSIM_FRAME_PASS 12 words=262144
+Q4_C5_CSIM_FRAME_PASS 13 words=65536
+Q4_C5_CSIM_FRAME_PASS 14 words=262144
+Q4_C5_CSIM_FRAME_PASS 15 words=65536
+Q4_C5_CSIM_FRAME_PASS 16 words=65536
+Q4_C5_CSIM_FRAME_PASS 17 words=65536
+Q4_C5_CSIM_FRAME_PASS 18 words=262144
+Q4_C5_CSIM_PASS frames=18 words=2555904
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************

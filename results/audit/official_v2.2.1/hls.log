@@ -1,0 +1,295 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sun Oct 11 03:00:15 2026
+# Process ID: 7860
+# Current directory: D:/PLD/retina_fpga
+# Command line: vivado.exe -mode batch -nojournal -log D:\PLD\retina_fpga\results\audit\official_v2.2.1\hls.log -source D:\PLD\retina_fpga\scripts\audit_official_base.tcl -tclargs hls
+# Log file: D:/PLD/retina_fpga/results/audit/official_v2.2.1/hls.log
+# Journal file: 
+#-----------------------------------------------------------
+source {D:\PLD\retina_fpga\scripts\audit_official_base.tcl}
+# set project_root [file normalize [file join [file dirname [info script]] ..]]
+# set work_base [file join $project_root build official_v2.2.1 boards Pynq-Z2 base]
+# set results [file join $project_root results audit official_v2.2.1]
+# file mkdir $results
+# set_param board.repoPaths [list [file join $project_root references board pynq-z2 pynq-z2]]
+# cd $work_base
+# set stage [lindex $argv 0]
+# if {$stage eq "hls"} {
+#     if {[catch {source build_base_ip.tcl} reason opts]} {
+#         puts stderr "OFFICIAL_HLS_FAILED: $reason"
+#         puts stderr [dict get $opts -errorinfo]
+#         exit 1
+#     }
+#     puts "OFFICIAL_HLS_COMPLETE"
+# } elseif {$stage eq "bd"} {
+#     # Stop at the stock script's explicit implementation boundary. No RTL,
+#     # IP parameters, clocks, addresses, XDC or version check are changed.
+#     set fp [open base.tcl r]
+#     set source_text [read $fp]
+#     close $fp
+#     set boundary [string first "# Additional steps to get to bitstream" $source_text]
+#     if {$boundary < 0} {error "Expected upstream boundary missing"}
+#     if {[catch {uplevel #0 [string range $source_text 0 [expr {$boundary-1}]]} reason opts]} {
+#         puts stderr "OFFICIAL_BD_FAILED: $reason"
+#         puts stderr [dict get $opts -errorinfo]
+#         exit 1
+#     }
+#     if {[llength [get_bd_cells -quiet ps7_0]] != 1} {error "Stock reference was not created"}
+#     validate_bd_design
+#     save_bd_design
+#     write_bd_tcl -force [file join $results reconstructed_bd.tcl]
+#     report_ip_status -file [file join $results ip_status.rpt]
+#     set inventory [open [file join $results ip_inventory.tsv] w]
+#     puts $inventory "instance\tvlnv\tinterfaces\tclock_pins"
+#     foreach cell [lsort [get_bd_cells -hier -filter {TYPE == ip}]] {
+#         set clocks [get_bd_pins -quiet -of_objects $cell -filter {TYPE == clk}]
+#         puts $inventory "$cell\t[get_property VLNV $cell]\t[get_bd_intf_pins -quiet -of_objects $cell]\t$clocks"
+#     }
+#     close $inventory
+#     puts "OFFICIAL_BD_VALIDATED: host-only, no bitstream or board verification"
+# } else {
+#     error "Choose hls or bd"
+# }
+## pwd
+Building color_convert IP
+OFFICIAL_HLS_FAILED: 
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2017.4/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Gabriel' on host 'laptop-dpjt23tc' (Windows NT_amd64 version 6.2) on Sun Oct 11 03:00:19 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls'
+INFO: [HLS 200-10] Creating and opening project 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/color_convert'.
+INFO: [HLS 200-10] Adding design file 'color_convert/color_convert.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'color_convert/color_convert_test.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/color_convert/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [SYN 201-201] Setting up clock 'control' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'color_convert/color_convert.cpp' ...
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 101.395 ; gain = 46.020
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 101.414 ; gain = 46.039
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::quantization_adjust' into 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::ap_fixed_base<21, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::ap_fixed_base<21, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 114.629 ; gain = 59.254
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 122.289 ; gain = 66.914
+INFO: [XFORM 203-1101] Packing variable 'stream_out_24.data' (color_convert/color_convert.cpp:26) into a 24-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'stream_in_24.data' (color_convert/color_convert.cpp:26) into a 24-bit variable.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (color_convert/color_convert.cpp:53:1) in function 'color_convert'... converting 19 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 150.539 ; gain = 95.164
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 153.668 ; gain = 98.293
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'color_convert' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'color_convert'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'color_convert'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+WARNING: [SCHED 204-21] Estimated clock period (6.38ns) exceeds the target (target clock period: 7ns, clock uncertainty: 0.875ns, effective delay budget: 6.125ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'mul' operation ('__Val2__', color_convert/color_convert.cpp:46) (3.36 ns)
+	'add' operation ('__Val2__', color_convert/color_convert.cpp:46) (3.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.297 seconds; current allocated memory: 102.521 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 103.101 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'color_convert'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'color_convert' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'c1_c1_V', 'c1_c2_V', 'c1_c3_V', 'c2_c1_V', 'c2_c2_V', 'c2_c3_V', 'c3_c1_V', 'c3_c2_V', 'c3_c3_V', 'bias_c1_V', 'bias_c2_V' and 'bias_c3_V' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Generated clock port 'control' for AXI-Lite bundle 'AXILiteS'.
+INFO: [SYN 201-210] Renamed object name 'color_convert_mac_muladd_8ns_10s_18s_19_1_1' to 'color_convert_macbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'color_convert_mac_muladd_8ns_10s_19s_20_1_1' to 'color_convert_maccud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'color_convert_macbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'color_convert_maccud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'color_convert'.
+INFO: [HLS 200-111]  Elapsed time: 0.353 seconds; current allocated memory: 104.881 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 159.219 ; gain = 103.844
+INFO: [SYSC 207-301] Generating SystemC RTL for color_convert.
+INFO: [VHDL 208-304] Generating VHDL RTL for color_convert.
+INFO: [VLOG 209-307] Generating Verilog RTL for color_convert.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2610110300 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 952)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 03:00:41 2026...
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 22.693 seconds; peak allocated memory: 104.881 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sun Oct 11 03:00:41 2026...
+ERROR: [IMPL 213-28] Failed to generate IP.
+
+****** Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source E:/vivado/Vivado/2017.4/scripts/vivado_hls/hls.tcl -notrace
+INFO: [HLS 200-10] Running 'E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'Gabriel' on host 'laptop-dpjt23tc' (Windows NT_amd64 version 6.2) on Sun Oct 11 03:00:19 +0800 2026
+INFO: [HLS 200-10] In directory 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls'
+INFO: [HLS 200-10] Creating and opening project 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/color_convert'.
+INFO: [HLS 200-10] Adding design file 'color_convert/color_convert.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'color_convert/color_convert_test.cpp' to the project
+INFO: [HLS 200-10] Creating and opening solution 'D:/PLD/retina_fpga/build/official_v2.2.1/boards/ip/hls/color_convert/solution1'.
+INFO: [HLS 200-10] Setting target device to 'xc7z020clg400-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 7ns.
+INFO: [SYN 201-201] Setting up clock 'control' with a period of 10ns.
+INFO: [HLS 200-10] Analyzing design file 'color_convert/color_convert.cpp' ...
+INFO: [HLS 200-10] Validating synthesis directives ...
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 101.395 ; gain = 46.020
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 101.414 ; gain = 46.039
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::quantization_adjust' into 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::ap_fixed_base<21, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+INFO: [XFORM 203-603] Inlining function 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::overflow_adjust' into 'ap_fixed_base<8, 0, false, (ap_q_mode)0, (ap_o_mode)0, 0>::ap_fixed_base<21, 5, true, (ap_q_mode)5, (ap_o_mode)3, 0>' ().
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 114.629 ; gain = 59.254
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:13 . Memory (MB): peak = 122.289 ; gain = 66.914
+INFO: [XFORM 203-1101] Packing variable 'stream_out_24.data' (color_convert/color_convert.cpp:26) into a 24-bit variable.
+INFO: [XFORM 203-1101] Packing variable 'stream_in_24.data' (color_convert/color_convert.cpp:26) into a 24-bit variable.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock to (color_convert/color_convert.cpp:53:1) in function 'color_convert'... converting 19 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:14 . Memory (MB): peak = 150.539 ; gain = 95.164
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:03 ; elapsed = 00:00:14 . Memory (MB): peak = 153.668 ; gain = 98.293
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'color_convert' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'color_convert'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining function 'color_convert'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 7.
+WARNING: [SCHED 204-21] Estimated clock period (6.38ns) exceeds the target (target clock period: 7ns, clock uncertainty: 0.875ns, effective delay budget: 6.125ns).
+WARNING: [SCHED 204-21] The critical path consists of the following:
+	'mul' operation ('__Val2__', color_convert/color_convert.cpp:46) (3.36 ns)
+	'add' operation ('__Val2__', color_convert/color_convert.cpp:46) (3.02 ns)
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.297 seconds; current allocated memory: 102.521 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 103.101 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'color_convert'
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_in_24_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_data' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_user_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/stream_out_24_last_V' to 'axis' (register, both mode).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c1_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c2_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/c3_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c1_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c2_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on port 'color_convert/bias_c3_V' to 's_axilite & ap_none' (register).
+INFO: [RTGEN 206-500] Setting interface mode on function 'color_convert' to 'ap_ctrl_none'.
+INFO: [RTGEN 206-100] Bundling port 'c1_c1_V', 'c1_c2_V', 'c1_c3_V', 'c2_c1_V', 'c2_c2_V', 'c2_c3_V', 'c3_c1_V', 'c3_c2_V', 'c3_c3_V', 'bias_c1_V', 'bias_c2_V' and 'bias_c3_V' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Generated clock port 'control' for AXI-Lite bundle 'AXILiteS'.
+INFO: [SYN 201-210] Renamed object name 'color_convert_mac_muladd_8ns_10s_18s_19_1_1' to 'color_convert_macbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'color_convert_mac_muladd_8ns_10s_19s_20_1_1' to 'color_convert_maccud' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'color_convert_macbkb': 3 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'color_convert_maccud': 3 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'color_convert'.
+INFO: [HLS 200-111]  Elapsed time: 0.353 seconds; current allocated memory: 104.881 MB.
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:04 ; elapsed = 00:00:17 . Memory (MB): peak = 159.219 ; gain = 103.844
+INFO: [SYSC 207-301] Generating SystemC RTL for color_convert.
+INFO: [VHDL 208-304] Generating VHDL RTL for color_convert.
+INFO: [VLOG 209-307] Generating Verilog RTL for color_convert.
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+bad lexical cast: source type value could not be interpreted as target
+    while executing
+"rdi::set_property core_revision 2610110300 {component component_1}"
+    invoked from within
+"set_property core_revision $Revision $core"
+    (file "run_ippack.tcl" line 952)
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 03:00:41 2026...
+command 'ap_source' returned error code
+    while executing
+"source [lindex $::argv 1] "
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel \#0 { source [lindex $::argv 1] } "
+
+INFO: [HLS 200-112] Total elapsed time: 22.693 seconds; peak allocated memory: 104.881 MB.
+INFO: [Common 17-206] Exiting vivado_hls at Sun Oct 11 03:00:41 2026...
+ERROR: [IMPL 213-28] Failed to generate IP.
+    while executing
+"exec vivado_hls -f $item/script.tcl"
+    invoked from within
+"if {[catch { glob -directory ${item}/solution1/impl/ip/ *.zip} zip_file]} {
+# Build IP only if a packaged IP does not exist
+      puts "Building $item..."
+    ("foreach" body line 2)
+    invoked from within
+"foreach item $ip {
+   if {[catch { glob -directory ${item}/solution1/impl/ip/ *.zip} zip_file]} {
+# Build IP only if a packaged IP does not exist
+    ..."
+    (file "build_base_ip.tcl" line 7)
+    invoked from within
+"source build_base_ip.tcl"
+INFO: [Common 17-206] Exiting Vivado at Sun Oct 11 03:00:41 2026...

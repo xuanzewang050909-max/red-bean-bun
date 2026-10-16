@@ -1,0 +1,10 @@
+{
+  "docs/current_work.md": {
+    "before_sha256": "907efdd5167551775a2fae8cb74001426ad1a016d9ed0f294a656cafa3ce1324",
+    "after_sha256": "48db936458026561bfd1e980cbde76be2484a8d80940f3d72ce2dd37549f9009"
+  },
+  "AGENTS.md": {
+    "before_sha256": "a186dc60d5fe43f8cd72400b6a2a51d7a85174e9837996fd80165a141e5a6c92",
+    "after_sha256": "97021bfcb884216ba50e00cd39dfd0232c6fd3928bd2df7ebf007b19df4b21d7"
+  }
+}

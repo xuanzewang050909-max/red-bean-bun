@@ -1,0 +1,209 @@
+{
+  "status": "HOST_RELEASE_READY_BOARD_NOT_RUN",
+  "decision_commit": "237d58d",
+  "candidate": {
+    "id": "C5_l5_9_r8_m1_a4_g3",
+    "lengths": [
+      5,
+      9
+    ],
+    "ratio": 8,
+    "retain_margin": 1,
+    "add_margin": 4,
+    "gap": 3
+  },
+  "original_strict_failures": [
+    "A28:256:bright_band_recall",
+    "A28:512:bright_band_recall",
+    "256:bright_recall",
+    "256:bridge_added_precision",
+    "512:bright_recall",
+    "512:bridge_added_precision"
+  ],
+  "distinct_host_tests": 45,
+  "protected_unchanged_files": 179,
+  "csim": {
+    "frames": 18,
+    "words": 2555904
+  },
+  "actual_generated_rtl": {
+    "complete_frames": 17,
+    "matched_words": 2490368,
+    "reset_recovery": true
+  },
+  "guard_surrogate": {
+    "frames": 6,
+    "matched_words": 589824,
+    "not_medical_rtl_evidence": true
+  },
+  "host_batch_only": {
+    "frames": 120,
+    "words": 19660800,
+    "pngs": 600,
+    "channel_values": 176947200,
+    "board_evidence": false
+  },
+  "hardware": {
+    "hardware_clock_hz": 100000000,
+    "resources": {
+      "Slice LUTs": 24630.0,
+      "Slice Registers": 18044.0,
+      "Block RAM Tile": 80.0,
+      "DSPs": 1.0
+    },
+    "wns_ns": 0.517,
+    "whs_ns": 0.025,
+    "wpws_ns": 3.75
+  },
+  "upload": {
+    "q4_c5_experimental_r1.zip": {
+      "bytes": 14416177,
+      "sha256": "f49fa30dca7ff0e05135f1497398f255f50adb52021d83b2f92f9687a0775758"
+    },
+    "q4_quality_start.ipynb": {
+      "bytes": 7671,
+      "sha256": "5c5fe6c9c25ecd29d764302f023211c1209f0866806ce04cdfa6d29f54874fe3"
+    }
+  },
+  "expected_fixed_board_frames": 120,
+  "planned_with_manual_frames": 151,
+  "board_status": "NOT_RUN",
+  "quality_accepted": false,
+  "formal_performance_pass": false,
+  "visual_acceptance": "PENDING_REAL_BOARD_REVIEW",
+  "archived_evidence": {
+    "base_derivation.diff": {
+      "bytes": 880,
+      "sha256": "1510a5cb424c6fbcc328863a29576f3ad636a425042f0458f2c39db5071ca30f"
+    },
+    "hardware_check.json": {
+      "bytes": 44713,
+      "sha256": "587db49b5949a4a44e862c958237f4d8cb24d4d253bd1a02ccf6f6ccbf425b45"
+    },
+    "package.json": {
+      "bytes": 447,
+      "sha256": "b52fce78687a252d5d5e85e51a36933d8187b6c0d4f863a237091a54def02a3e"
+    },
+    "protected_files.json": {
+      "bytes": 22457,
+      "sha256": "3cbc65f015407bf1162c0a11444bcf96074ce1a52663cef109643fa20cefb8b6"
+    },
+    "source_files.json": {
+      "bytes": 8135,
+      "sha256": "6f934fb1211d5463e499fefc2808120a6703d0a848f839c71bf1fd98d6288476"
+    },
+    "vectors.json": {
+      "bytes": 16006,
+      "sha256": "2fc28e56c0abd1951e7ef4d0d1fb7256257ab21be8af3fdae7b6cc02b800534f"
+    },
+    "failures/export_date_revision.log": {
+      "bytes": 1880,
+      "sha256": "db51115d669752b36823e5f48e7af317fad988f0b48e3f78ae6ebeb810c36302"
+    },
+    "failures/hls_nested_top_interface.log": {
+      "bytes": 237370,
+      "sha256": "1fd28118aff500fa089ca674e4c503fc8c0d23c0b047f5c95b4b5e447420b445"
+    },
+    "failures/repack_initial.log": {
+      "bytes": 382,
+      "sha256": "7099332ac108ede8f455a2a67766f07d3fa63640b5fe3fd5b650f8e23db047bd"
+    },
+    "failures/rtl_command_length.log": {
+      "bytes": 83,
+      "sha256": "099cea10b33ffa0f6ed4d6b50a494a00933382d6944c30ed0814b0e02b339d6d"
+    },
+    "hls/csim.log": {
+      "bytes": 1246,
+      "sha256": "5d8ec55e8f6823050c82f5a2b1d4ae12a8774a7b8e6726f650f4e60e7f46edf5"
+    },
+    "hls/csynth.rpt": {
+      "bytes": 13203,
+      "sha256": "08ea112dfeb8968d5b91a3a3260562dc854a33fa08e5028592f2b95e44b8f69c"
+    },
+    "hls/csynth.xml": {
+      "bytes": 4737,
+      "sha256": "da485c57662ff5dce23cbb72a670f2e6bac880e6146da2f97ee23f1400846455"
+    },
+    "hls/original_ippack.tcl": {
+      "bytes": 66123,
+      "sha256": "088bc7065a5cbe0dd00bb6bedabb040b41c99781f7c1b9741f192f1637a57857"
+    },
+    "hls/repack_success.log": {
+      "bytes": 68986,
+      "sha256": "2e398ec115d544a5bc7f6531ab4020d4814a4c8083ca749655d523de64246967"
+    },
+    "hls/revision_metadata_fixed_ippack.tcl": {
+      "bytes": 64417,
+      "sha256": "26cc5583cd0a27ac15bddd42367125ae9992bd0ea3a160aa57af2248b261fb15"
+    },
+    "hls/session.log": {
+      "bytes": 312156,
+      "sha256": "2c76697fa3187a38e9049a923dbc585019d5c058b448d63569dd5a74dee1963a"
+    },
+    "implementation/build_script_used.tcl": {
+      "bytes": 12219,
+      "sha256": "c7a699386d978767383d548617729e97aa556a31e4c3b980426f5218002e638b"
+    },
+    "implementation/clocks.rpt": {
+      "bytes": 1420,
+      "sha256": "de46a5b12ea2d9cd4a4caa74563f4b58a1f8a8b412aa5b86384855e3993b3605"
+    },
+    "implementation/drc.rpt": {
+      "bytes": 10296,
+      "sha256": "d4a767c244c00ff98f9101d20fc13e9087d7bf544937a100df6655c5747c38a0"
+    },
+    "implementation/session.log": {
+      "bytes": 186156,
+      "sha256": "4d6c275deb4cf3aaf25cfb70cc00430bf8ad868f331c6dee5e3a9ebaae5729d3"
+    },
+    "implementation/timing_summary.rpt": {
+      "bytes": 37353,
+      "sha256": "14ec61b47b81b5812906ce8be72d711afae2f0ac47c8a1d7140da851fe1c49d7"
+    },
+    "implementation/utilization.rpt": {
+      "bytes": 10546,
+      "sha256": "0c38303b558c20883ba11857bccb19a6b25ede57281e019c3f213d117f56a981"
+    },
+    "rtl/guard_surrogate.log": {
+      "bytes": 1869,
+      "sha256": "838ce231582396bf231f7bffd67e96a484aa5d11fa66053afca7e327a574c9b1"
+    },
+    "rtl/session.log": {
+      "bytes": 35776,
+      "sha256": "b94d4ec8906025220c36976dd3c2e0612dc2396b8c9f6d18751784cf5d7782ee"
+    },
+    "rtl/vendor_reset.log": {
+      "bytes": 8127,
+      "sha256": "dea52cafd0a682b1dda31cfad48dd7cc093eb6a0e5dd7d50899dd9665bc0ea0e"
+    },
+    "rtl/xsim.log": {
+      "bytes": 4487,
+      "sha256": "729d95585302544e4f8bd38d8552c5839682ce81cf7fbf66d5c18a1d45aa503f"
+    },
+    "tests/batch4.log": {
+      "bytes": 4362,
+      "sha256": "2c05e50ce50a09bb2a79b0c4d396811c469d26e83e35871912ae470e4d9f70d5"
+    },
+    "tests/browser26.log": {
+      "bytes": 15988,
+      "sha256": "4114c7b4a6a4cfe40d027ea51c59642a05dd30c0662b62d6833419c1399cb261"
+    },
+    "tests/final7.log": {
+      "bytes": 2091,
+      "sha256": "c29d69d248041cc1e06fe82be6d3d9205504b50156f69054ca5d4cbe33bf89ab"
+    },
+    "tests/release8.log": {
+      "bytes": 1214,
+      "sha256": "2ca52cf6b99fa2e1559d96dd468010b893c7297df9aca672440168e3e858290d"
+    }
+  },
+  "environment": {
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "numpy": "2.5.4",
+    "scipy": "1.18.1",
+    "opencv": "5.0.0",
+    "scikit-image": "0.26.0",
+    "tornado": "6.5.10",
+    "Pillow": "12.3.0"
+  }
+}

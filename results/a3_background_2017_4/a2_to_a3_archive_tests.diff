@@ -1,0 +1,110 @@
+--- tests/test_a2_archive.py
++++ tests/test_a3_archive.py
+@@ -14,10 +14,10 @@
+ 
+ ROOT = Path(__file__).resolve().parents[1]
+ sys.path.insert(0, str(ROOT / "scripts"))
+-import archive_a2_board_results as archive
++import archive_a3_board_results as archive
+ 
+-RAW = ROOT / "build/board_results/a2_gaussian_2026-10-12"
+-PACKAGE = ROOT / "build/deploy/a2_gaussian_2017_4_r1"
++RAW = ROOT / "build/board_results/a3_background_2026-10-12"
++PACKAGE = ROOT / "build/deploy/a3_background_2017_4_r1"
+ 
+ 
+ class BundleBoundaryTests(unittest.TestCase):
+@@ -46,7 +46,7 @@
+ 
+     def test_traversal_member_rejected_without_extraction(self):
+         names = sorted(archive.BUNDLE_NAMES)
+-        names[0] = "../a2_gaussian_result.json"
++        names[0] = "../a3_background_result.json"
+         with self.assertRaisesRegex(ValueError, "ZIP member"):
+             archive.read_bundle(self.bundle(names))
+ 
+@@ -62,21 +62,21 @@
+         path = self.bundle(sorted(archive.BUNDLE_NAMES))
+         with ZipFile(path, "w") as output:
+             for name in sorted(archive.BUNDLE_NAMES):
+-                output.writestr(name, b"x" * (500_001 if name == "a2_gaussian_result.json" else 1))
++                output.writestr(name, b"x" * (500_001 if name == "a3_background_result.json" else 1))
+         with self.assertRaisesRegex(ValueError, "member size"):
+             archive.read_bundle(path)
+ 
+ 
+-@unittest.skipUnless((RAW / "a2_results_bundle.zip").is_file() and (PACKAGE / "a2_manifest.json").is_file(),
+-                     "Real A2 data are kept in the ignored local archive, not redistributed in Git")
++@unittest.skipUnless((RAW / "a3_results_bundle.zip").is_file() and (PACKAGE / "a3_manifest.json").is_file(),
++                     "Real A3 data are kept in the ignored local archive, not redistributed in Git")
+ class ActualEvidenceTests(unittest.TestCase):
+     @classmethod
+     def setUpClass(cls):
+-        cls.members = archive.read_bundle(RAW / "a2_results_bundle.zip")
+-        cls.report = json.loads(cls.members["a2_gaussian_result.json"])
+-        cls.notebook = json.loads((RAW / "a2_gaussian_check_executed.ipynb").read_bytes())
+-        cls.manifest = json.loads((PACKAGE / "a2_manifest.json").read_bytes())
+-        archive.validate_a2_package(PACKAGE, cls.manifest)
++        cls.members = archive.read_bundle(RAW / "a3_results_bundle.zip")
++        cls.report = json.loads(cls.members["a3_background_result.json"])
++        cls.notebook = json.loads((RAW / "a3_background_check_executed.ipynb").read_bytes())
++        cls.manifest = json.loads((PACKAGE / "a3_manifest.json").read_bytes())
++        archive.validate_a3_package(PACKAGE, cls.manifest)
+ 
+     def verify(self, report=None, notebook=None, members=None):
+         return archive.verify_records(self.notebook if notebook is None else notebook,
+@@ -85,7 +85,7 @@
+ 
+     def test_actual_downloaded_records_and_all_raw_arrays_match(self):
+         checks = self.verify()
+-        self.assertEqual(sum(item["words"] for item in checks["frames"]), 5_963_776)
++        self.assertEqual(sum(item["words"] for item in checks["frames"]), 7_274_496)
+         self.assertEqual(sum(item["words"] for item in checks["raw_arrays"]), 655_360)
+         self.assertTrue(all(item["mismatched_words"] == 0 for item in checks["raw_arrays"]))
+ 
+@@ -156,21 +156,36 @@
+             self.verify(report=report)
+ 
+     def test_changed_raw_word_rejected_even_if_file_hash_is_updated(self):
++        for mode, shift in ((2, 0), (2, 8), (2, 16), (2, 24), (3, 16), (3, 24)):
++            with self.subTest(mode=mode, diagnostic_byte=shift // 8):
++                report, members = copy.deepcopy(self.report), dict(self.members)
++                record = next(item for item in report["transfers"]
++                              if "saved_output" in item and item["mode"] == mode)
++                name = record["saved_output"]["name"]
++                words = np.load(io.BytesIO(members[name]), allow_pickle=False)
++                words[128, 128] ^= np.uint32(1 << shift)
++                stream = io.BytesIO()
++                np.save(stream, words)
++                members[name] = stream.getvalue()
++                record["saved_output"]["sha256"] = archive.digest(members[name])
++                with self.assertRaisesRegex(ValueError, "differs from the M0 golden"):
++                    self.verify(report=report, members=members)
++
++    def test_changed_background_preview_rejected_even_if_hash_is_updated(self):
++        from PIL import Image
+         report, members = copy.deepcopy(self.report), dict(self.members)
+-        record = next(item for item in report["transfers"] if "saved_output" in item)
+-        name = record["saved_output"]["name"]
+-        words = np.load(io.BytesIO(members[name]), allow_pickle=False)
+-        words[128, 128] ^= np.uint32(1 << 8)
++        pixels = archive.decoded_png(members["a3_preview.png"])
++        pixels[128, 640] ^= np.uint8(1)
+         stream = io.BytesIO()
+-        np.save(stream, words)
+-        members[name] = stream.getvalue()
+-        record["saved_output"]["sha256"] = archive.digest(members[name])
+-        with self.assertRaisesRegex(ValueError, "differs from the M0 golden"):
++        Image.fromarray(pixels).save(stream, format="PNG")
++        members["a3_preview.png"] = stream.getvalue()
++        report["preview"]["sha256"] = archive.digest(members["a3_preview.png"])
++        with self.assertRaisesRegex(ValueError, "FPGA diagnostic byte"):
+             self.verify(report=report, members=members)
+ 
+     def test_changed_preview_rejected(self):
+         members = dict(self.members)
+-        members["a2_preview.png"] += b"alteration"
++        members["a3_preview.png"] += b"alteration"
+         with self.assertRaisesRegex(ValueError, "Preview file hash"):
+             self.verify(members=members)
+ 

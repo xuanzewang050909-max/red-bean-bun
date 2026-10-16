@@ -1,0 +1,6 @@
+{
+  "status": "GENERATED_DATE_REVISION_ONLY_PATCH_PREPARED_NOT_EXPORT_PASS",
+  "original_sha256": "731793609eb1ba26bb9b3b6c4a28d6a18b17222170e97383e9a43af198abc173",
+  "patched_sha256": "62a0f6367c613cd37a2b79caedceb55e8057d8fd47cf35d2cd6ec171f2787b63",
+  "scope": "One generated Revision string set to 1. Installed libraries, HDL and interface mappings unchanged. Run patched Tcl from actual impl/ip directory and verify its log."
+}

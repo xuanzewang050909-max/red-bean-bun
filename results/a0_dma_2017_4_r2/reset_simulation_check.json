@@ -1,0 +1,9 @@
+{
+  "status": "PASS_HOST_VENDOR_RESET_SIMULATION",
+  "scope": "Real Vivado 2017.4 proc_sys_reset 5.0 rev12; old aux=0 holds reset, corrected aux=1 releases; PS assert/release verified. Not board proof or unique stall diagnosis.",
+  "xci_sha256": "d86aede751897564f4944730f3b09f4f4d3ff00ae3c5caf0797892e10ca12eb3",
+  "testbench_sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8",
+  "simulate_log_sha256": "3a94ccf540513f2fb1d36fcaba28b5513c7456914bc0bfbad667fd71d7b90393",
+  "simulation_tcl_sha256": "1d45fe50dd67454086169d41439535c4e3c3c7b55d9f632505a5209659998052",
+  "completion": "RESET_SIM_PASS at 10996 ns; RESET_SIMULATION_GATE_PASS"
+}

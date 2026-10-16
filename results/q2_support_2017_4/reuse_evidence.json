@@ -1,0 +1,87 @@
+{
+  "date": "2026-10-14",
+  "tool": "2017.4",
+  "part": "xc7z020clg400-1",
+  "requested_clock_ns": 10,
+  "candidate": "C2_l9_d12345_m1_p28",
+  "headers": [
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls_video.h",
+      "bytes": 2677,
+      "sha256": "d8435040ab58fd7a0e0c4350ec008ac0fc5dd9d8324d9921ac0c728d74d391e3",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls_video.h",
+      "bytes": 2677,
+      "sha256": "d8435040ab58fd7a0e0c4350ec008ac0fc5dd9d8324d9921ac0c728d74d391e3",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_imgproc.h",
+      "bytes": 118181,
+      "sha256": "3cefce5cfab6e00ded0fcb4272176024e795dcc84702938372b1655087346daa",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_imgproc.h",
+      "bytes": 118604,
+      "sha256": "714a19e21eec27ad8cfc3f67bff13c7247b19fb61556baeaf09ecbb4fb7356af",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_arithm.h",
+      "bytes": 59425,
+      "sha256": "4a2102a9046d44ced2dc26bf5cd53ae82022e00cd77f0c495ff8cc06afca43fc",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_arithm.h",
+      "bytes": 59927,
+      "sha256": "79da376607e67469b66a579fdda29fe84143a39a419d8bc2546ebdcd6f3697f4",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_mem.h",
+      "bytes": 34453,
+      "sha256": "87cfad98c6b3359cab79ffc936846601c3893d6244cb9228c325f8fa3d409266",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_mem.h",
+      "bytes": 34796,
+      "sha256": "e8f0377e1ffaf6717ec2138ea4de684fb7ef259d95694ccd0b493acfa3ef7822",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\include\\hls\\hls_video_types.h",
+      "bytes": 18743,
+      "sha256": "bda9d2a65a94477461c7a439a537a5a340aa3e2b2b878679526821c6e97b4ce8",
+      "matches_original_A4_audit": true
+    },
+    {
+      "path": "E:\\vivado\\Vivado\\2017.4\\common\\technology\\autopilot\\hls\\hls_video_types.h",
+      "bytes": 18743,
+      "sha256": "bda9d2a65a94477461c7a439a537a5a340aa3e2b2b878679526821c6e97b4ce8",
+      "matches_original_A4_audit": true
+    }
+  ],
+  "library_modified": false,
+  "vendor_headers_not_redistributed": true,
+  "reuse": "Unmodified filter_opr<BORDER_REPLICATE>, Window, LineBuffer, Mat and generated AXIS/ap_ctrl_hs",
+  "preserved_files_before": {
+    "hls/retina_segmentation_hls.cpp": "856767221754e0460cef66eb7d07d28e9f1113a92a53affc48521f1e14daf0fa",
+    "hls/retina_segmentation_hls.hpp": "70b6b8d2907778049dc25eb4a675cc486a3b9fc00079bae6d15b2484ef39d9ab",
+    "hls/contrast_lut_values.h": "4b8f3cf0c1afe53bcaeef9dfcea863eb0eb6e073631993a90864124550a16763",
+    "rtl/core/retina_gaussian_guard.v": "18b887b3ad2e0b4b458d7610172bb94596fe26441a181dfd5ba4867704ba7c51",
+    "vivado/scripts/build_a4_segmentation.tcl": "5074a921f500a2671eacb769d74a1fef0f59f87181fd2b7b5d2c7a55e2e3d956",
+    "build/deploy/browser_a4_w1_r1.zip": "e25c3cfeeb6379338e9f590ab4e1d0df8d02d60b9386d6136091188a81feb34d",
+    "build/deploy/browser_start.ipynb": "d9d90ade7106f98e09101b7d7c193acfc0a7086efebf783967fbdf30e391b368",
+    "results/q1_quality_2026-10-14/selected_candidate.json": "867ebcd623b8f9e5a721e95ebbefc2237aeac5df2eb2a2d85d07aee4c14c20b9"
+  },
+  "scope": "Standalone support/response alignment feasibility; no production ABI, new overlay or board measurements",
+  "RTL_verified": false,
+  "board_test_status": "NOT_RUN",
+  "core_time_ms": null,
+  "actual_resource_utilization": null
+}

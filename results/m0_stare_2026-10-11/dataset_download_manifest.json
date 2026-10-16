@@ -1,0 +1,31 @@
+{
+  "source": "https://cecas.clemson.edu/~ahoover/stare/probing/",
+  "files": [
+    {
+      "name": "index.html",
+      "sha256": "93443fa0ffc08dc47a42617b7b384a136cbfe5b999880f86b5da82b407c8badc",
+      "url": "https://cecas.clemson.edu/~ahoover/stare/probing/index.html",
+      "bytes": 7022
+    },
+    {
+      "name": "stare-images.tar",
+      "sha256": "5f7b509b6067cad4f1be84933145d783de9ec087b3eaaf4db0103dd0144dd433",
+      "url": "https://cecas.clemson.edu/~ahoover/stare/probing/stare-images.tar",
+      "bytes": 18674176
+    },
+    {
+      "name": "labels-ah.tar",
+      "sha256": "ebf2f1e17ca955f24579d9edd990e2dae79a5c82def69f0985d8e24f826ddd2f",
+      "url": "https://cecas.clemson.edu/~ahoover/stare/probing/labels-ah.tar",
+      "bytes": 241664
+    },
+    {
+      "name": "labels-vk.tar",
+      "sha256": "47474a701536b0cfdb369fdce012be36141e9f44d80387f0179446b5cb0f5576",
+      "url": "https://cecas.clemson.edu/~ahoover/stare/probing/labels-vk.tar",
+      "bytes": 333824
+    }
+  ],
+  "license": "No explicit license grant inferred from public download. Preserve attribution; see data/README.md.",
+  "downloaded_host_utc": "2026-10-11T14:45:04.1482772Z"
+}

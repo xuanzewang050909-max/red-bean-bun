@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "effective_client_date": "2026-10-14",
+  "authority": "docs/requirements_update_2026-10-13.md",
+  "phase": "W3_REAL_BOARD_VERIFIED_W4A_LOSSLESS_PNG_HOST_READY",
+  "platform": {
+    "board": "PYNQ-Z2",
+    "host": "Windows laptop browser",
+    "connection": "Ethernet",
+    "service_location": "PYNQ PS Python",
+    "hdmi_required_for_experiments": false,
+    "hdmi_required_for_final_demo": false,
+    "hdmi_development_active": false
+  },
+  "existing_baseline": {
+    "package": "build/deploy/a4_segmentation_2017_4_r1",
+    "release_manifest": "results/a4_segmentation_2017_4/release_manifest.json",
+    "real_board_evidence": "results/a4_segmentation_2017_4/board_execution_2026-10-12/verification_report.md",
+    "algorithm": "A",
+    "official_pynq_version": "3.0.1",
+    "vivado_version": "2017.4",
+    "side_choices": [
+      256,
+      512
+    ],
+    "threshold_choices": [
+      28
+    ],
+    "runtime_threshold_supported": false,
+    "core_cycle_readback_supported": false,
+    "latched_parameter_readback_supported": false,
+    "mode_codes": {
+      "bypass": 0,
+      "threshold_candidate": 1,
+      "closed_candidate": 2,
+      "final": 3
+    },
+    "algorithm_B_supported": false,
+    "mode0_uses_segmentation_output_layout": false,
+    "dma_address": "0x40400000",
+    "gpio_address": "0x41200000",
+    "input_word_bytes": [
+      "B",
+      "G",
+      "R",
+      "FOV_0_or_1"
+    ],
+    "mode1_to_3_output_word_bytes": [
+      "raw_G",
+      "enhanced",
+      "mask_0_or_255",
+      "response"
+    ]
+  },
+  "required_final_capabilities": {
+    "core_computation_location": "PL",
+    "production_cpu_segmentation_fallback_allowed": false,
+    "gt_in_algorithm_input_allowed": false,
+    "threshold_min": 1,
+    "threshold_max": 255,
+    "default_and_formal_baseline_threshold": 28,
+    "frame_atomic_parameters": true,
+    "hardware_latched_parameter_evidence": true,
+    "real_image_switch": true,
+    "real_pl_mode_switch": true,
+    "result_panels": [
+      "original_RGB",
+      "PL_enhanced",
+      "PL_mask",
+      "overlay_from_current_PL_mask"
+    ],
+    "metrics": [
+      "vessel_area_fraction_in_FOV",
+      "Dice",
+      "IoU",
+      "actual_FPS",
+      "latency",
+      "FPGA_status"
+    ],
+    "no_gt_quality_value": null,
+    "exports": [
+      "PNG",
+      "packed_NPY",
+      "JSON",
+      "CSV"
+    ],
+    "max_in_flight_hardware_jobs": 1,
+    "max_pending_hardware_jobs": 1
+  },
+  "implementation_status": {
+    "python_service": "W3_REAL_A_C2_PARAMETER_OBSERVER_AND_OUTPUT_VERIFIED",
+    "browser_ui": "W3_REAL_31_TASKS_AND_FOREGROUND_20_FRAME_DIAGNOSTIC_VERIFIED",
+    "parameterized_firmware": "REAL_W2_BOARD_80_FRAMES_EXACT_WORDS_VERIFIED",
+    "hardware_cycle_observer": "REAL_W2_BOARD_80_ATOMIC_SNAPSHOTS_VERIFIED",
+    "new_browser_board_test": "W3_DOWNLOADED_ARRAYS_AND_OBSERVATIONS_VERIFIED_NOT_FINAL_ACCEPTANCE",
+    "host_tests_passed": 23,
+    "browser_ui_qa": "HOST_QA_PLUS_REAL_24_RUN_BRINGUP_AND_20_RUN_VISIBLE_SUPPLEMENT",
+    "offline_archive_regression_tests_passed": 8,
+    "host_and_archive_distinct_tests_passed": 31,
+    "w3_service": "REAL_BOARD_VERIFIED_LIMITED_SCOPE",
+    "w3_host_distinct_tests_passed": 31,
+    "w4a_service": "HOST_READY_PENDING_REAL_BOARD",
+    "w4a_host_distinct_tests_passed": 32,
+    "w4a_ui_qa": "50_HOST_ONLY_TASKS_FOUR_GATES_AND_TWO_3_WARMUP_20_FRAME_LOOPS"
+  },
+  "experiments": {
+    "dataset": "STARE",
+    "sample_count": 20,
+    "split": "Original sorted IDs, alternating train and heldout",
+    "annotations": [
+      "AH",
+      "VK"
+    ],
+    "fov": "Original RGB-only preprocessing",
+    "formal_algorithm": "A",
+    "formal_threshold": 28,
+    "formal_mode": "final",
+    "sides": [
+      256,
+      512
+    ],
+    "warmup_frames": 3,
+    "timed_frames_per_repeat": 100,
+    "original_timing_groups": [
+      {
+        "side": 256,
+        "browser_display": false
+      },
+      {
+        "side": 512,
+        "browser_display": false
+      },
+      {
+        "side": 512,
+        "browser_display": true
+      }
+    ],
+    "new_reliability_repeats": 3,
+    "cpu_comparison": "Same PYNQ PS, input, fixed-point semantics, threshold and measured scope",
+    "power_estimation": "Final paired implementation report with activity, clock, voltage, temperature and coverage assumptions; not board-level measured power",
+    "stability_min_minutes": 30,
+    "stability_min_completed_frames": 1000,
+    "prior_hdmi_fps_is_browser_measurement": false
+  },
+  "timing_contract": {
+    "ps_clock": "perf_counter_ns",
+    "browser_clock": "performance.now",
+    "required_categories": [
+      "PL_core",
+      "DMA",
+      "complete_inference",
+      "browser_display"
+    ],
+    "pl_core_boundary": "First algorithm input accepted to last HLS output first valid; stalled cycles reported",
+    "dma_boundary": "Before official recv.transfer to completion of official recv.wait; overlaps PL",
+    "pure_dma_transport": "Independent reused A0 loopback timing or verified hardware monitor, never subtraction",
+    "inference_boundary": "Before current prepared-input config submission to completed readonly CPU output snapshot",
+    "browser_boundary": "Current request to decoded and drawn current frame followed by double-rAF marker",
+    "browser_boundary_is_physical_pixel_timestamp": false,
+    "ps_and_browser_absolute_timestamps_subtractable": false,
+    "overlapping_stage_times_additive": false,
+    "unmeasured_value": null
+  },
+  "current_new_measurements": {
+    "pl_core_frame_ns": 3023090.5,
+    "dma_transaction_ns": 6887203.149999999,
+    "inference_ns": 32904869.149999995,
+    "browser_request_to_render_ms": 5153.07500000298,
+    "browser_actual_fps": 0.1935184853694964,
+    "pure_dma_transport_ns": null,
+    "new_firmware_resources": {
+      "scope": "Reused W2 actual paired implementation; no W3/W4a rebuild",
+      "LUT": 11835,
+      "FF": 11591,
+      "BRAM_tiles": 57.5,
+      "DSP": 1,
+      "clock_MHz": 100,
+      "WNS_ns": 0.909,
+      "WHS_ns": 0.009
+    },
+    "new_pl_quality": {
+      "scope": "im0001/512/T28 diagnostic only; not formal Q3",
+      "reference": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "A_AH_Dice": 0.490929,
+      "C2_AH_Dice": 0.521735,
+      "A_VK_Dice": 0.478085,
+      "C2_VK_Dice": 0.50501
+    },
+    "power_estimate_watts": null,
+    "measurement_scope": {
+      "reference": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "session_id": "56f410c025a744b9b764ca549f756aad",
+      "phase": "W3_DIAGNOSTIC_ONLY_W4A_BOARD_PENDING",
+      "statistics": "20-frame latency means; FPS from entire foreground loop",
+      "native_samples": 20,
+      "visible_client_samples": 20,
+      "warmup_frames": 0,
+      "formal_performance_experiment": false,
+      "ps_image_and_png_window_mean_ms": 4421.4098198,
+      "ps_image_and_png_window_is_pure_codec_time": false,
+      "mean_ps_image_fraction_of_worker_time": 0.8942523205761752,
+      "loop_duration_ms": 103349.30000001192
+    }
+  },
+  "acceptance": [
+    {
+      "id": "G01",
+      "status": "PASS_CURRENT_W3_TESTED_SCOPE",
+      "evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "31 actual A/C2 output frames fully matched; deployed service has no CPU segmentation fallback"
+    },
+    {
+      "id": "G02",
+      "status": "PARTIAL",
+      "evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "Two images, 256/512, final/threshold/bypass, A/C2 and 28/40 interaction with actual hardware readback verified; complete G02 endpoint/boundary/mode matrix still required"
+    },
+    {
+      "id": "G03",
+      "status": "PARTIAL",
+      "evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "31 sequential tasks, native parameter/sequence/tag and one-load clean-close verified; full real concurrency/disconnect/fault/endurance suite pending"
+    },
+    {
+      "id": "G04",
+      "status": "PARTIAL",
+      "evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "147 PNGs/current DMA arrays/FOV/GT/CSV/session export verified; remaining final mode/no-GT and recovery acceptance pending"
+    },
+    {
+      "id": "G05",
+      "status": "PARTIAL",
+      "evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "Hardware core + DMA transaction + inference + foreground browser times measured; pure transport and formal statistical experiments pending"
+    },
+    {
+      "id": "G06",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "G07",
+      "status": "NOT_RUN",
+      "evidence": null
+    },
+    {
+      "id": "G08",
+      "status": "PARTIAL",
+      "evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "Current paired W2 hardware/W3 source and runtime provenance verified; final release and submission still pending"
+    },
+    {
+      "id": "G09",
+      "status": "NOT_RUN",
+      "evidence": null
+    }
+  ],
+  "next_phase": "W4A_REAL_PNG_AND_PS_STAGE_COMPARISON_THEN_W4_Q3_FULL_EXPERIMENTS",
+  "w1_delivery": {
+    "directory": "build/deploy/browser_a4_w1_r1",
+    "upload_files": [
+      "build/deploy/browser_a4_w1_r1.zip",
+      "build/deploy/browser_start.ipynb"
+    ],
+    "steps": "docs/browser_w1_steps.md",
+    "archive_verifier": "scripts/verify_browser_w1_archive.py",
+    "new_board_status": "W1_DOWNLOADED_ARRAYS_AND_OBSERVATIONS_VERIFIED_NOT_FINAL_ACCEPTANCE",
+    "threshold": 28,
+    "session_run_limit": 200,
+    "expected_manual_runs": 24,
+    "continuous_display_runs": 20,
+    "host_report": "results/browser_w1_2026-10-13/host_validation_report.md",
+    "actual_verified_runs": 44,
+    "matched_output_words": 11337728,
+    "visible_20_frame_loop_verified": true,
+    "independent_board_report": "results/browser_w1_fps_2026-10-14/board_execution_2026-10-14/verification_report.md",
+    "next_steps": "docs/q2_quality_pl_spec.md",
+    "verified_sessions": [
+      {
+        "session_id": "4341c09cebe24ec3b169c9d696079162",
+        "runs": 24,
+        "matched_words": 6094848,
+        "scope": "Original two-image/two-size/two-mode bring-up"
+      },
+      {
+        "session_id": "73cc892efe2b4bb282032f54757be104",
+        "runs": 20,
+        "matched_words": 5242880,
+        "scope": "New visible 20-frame diagnostic supplement"
+      }
+    ]
+  },
+  "final_acceptance_pass": false,
+  "quality_improvement": {
+    "phase": "Q2_BOARD_EXACT_OUTPUT_VERIFIED_Q3_PENDING",
+    "sequence": [
+      "W1",
+      "Q1",
+      "W2+Q2",
+      "W3",
+      "W4a",
+      "W4+Q3",
+      "W5"
+    ],
+    "inserted_between": [
+      "W1_BROWSER_BASELINE",
+      "W2_NEW_PL_IMPLEMENTATION"
+    ],
+    "report": "results/q1_quality_2026-10-14/training_review.md",
+    "selected_candidate_record": "results/q1_quality_2026-10-14/selected_candidate.json",
+    "pl_spec": "docs/q2_quality_pl_spec.md",
+    "candidate_id": "C2_l9_d12345_m1_p28",
+    "r1_candidates": 64,
+    "r1_eligible": 0,
+    "r2_candidates": 32,
+    "r2_eligible": 3,
+    "host_tests_passed": 26,
+    "train_ids_only": true,
+    "heldout_or_VK_evaluated": false,
+    "production_or_original_M0_changed": false,
+    "new_board_quality": {
+      "scope": "im0001 training diagnostic only; not Q3",
+      "report": "results/w2_quality_2017_4/board_execution_2026-10-14/diagnostic_pair.json"
+    },
+    "new_board_performance": {
+      "scope": "W3 foreground 20-frame C2 diagnostic, not formal performance",
+      "report": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json"
+    },
+    "training_512_AH": {
+      "baseline_macro_dice": 0.6058152102733783,
+      "candidate_macro_dice": 0.6246386643499554,
+      "bright_band_fp_before": 5902,
+      "bright_band_fp_after": 4476,
+      "bright_band_tp_before": 2091,
+      "bright_band_tp_after": 1999,
+      "macro_recall_change": -0.0061233180456924385,
+      "bright_band_recall_change": -0.03185595567867039
+    },
+    "q2_reuse_audit": "docs/q2_hls_reuse_audit.md",
+    "deployed_browser_algorithm": "W3 real-board A/C2, T28/40 and per-frame native output/parameter/cycle readback verified; W4a keeps both algorithms unchanged",
+    "q1_selection_scope": "The train_ids_only / heldout_or_VK_evaluated fields describe frozen Q1 candidate selection. Current diagnostic actual-board im0001 scores use both AH and VK without any retuning."
+  },
+  "measurement_history": [
+    {
+      "reference": "results/browser_w1_2026-10-13/board_execution_2026-10-13/verification.json",
+      "scope": "Original 24-run bring-up; its hidden 20-frame loop remains invalid, FPS null"
+    },
+    {
+      "reference": "results/browser_w1_fps_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "New foreground 20-frame diagnostic baseline; raw old evidence is unchanged"
+    },
+    {
+      "reference": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+      "scope": "W3 31 actual tasks; last 20 C2 frames foreground, no warmup; 0.1935184854 FPS diagnostic only"
+    }
+  ],
+  "w2_delivery": {
+    "package": "build/deploy/w2_quality_2017_4_r1",
+    "files": 11,
+    "notebook": "w2_quality_check.ipynb",
+    "steps": "docs/w2_quality_board_steps.md",
+    "host_report": "results/w2_quality_2017_4/host_release_01/verification.json",
+    "board_status": "PASS_DOWNLOADED_W2_EXACT_WORDS_AND_OBSERVERS",
+    "planned_frames": 80,
+    "planned_words": 13303808,
+    "host_distinct_tests": 28,
+    "actual_generated_rtl_frames": 17,
+    "actual_generated_rtl_words": 2490368,
+    "clock_hz": 100000000,
+    "wns_ns": 0.909,
+    "whs_ns": 0.009,
+    "resources": {
+      "LUT": 11835,
+      "FF": 11591,
+      "BRAM_tile": 57.5,
+      "DSP": 1
+    },
+    "browser_integration": "W3_HOST_READY_REAL_BROWSER_NOT_RUN",
+    "new_board_quality": {
+      "scope": "im0001 training diagnostic only; not Q3",
+      "report": "results/w2_quality_2017_4/board_execution_2026-10-14/diagnostic_pair.json"
+    },
+    "new_board_performance": {
+      "scope": "Two diagnostic samples, not statistics or browser speed",
+      "report": "results/w2_quality_2017_4/board_execution_2026-10-14/diagnostic_pair.json"
+    },
+    "verified_frames": 80,
+    "verified_words": 13303808,
+    "board_report": "results/w2_quality_2017_4/board_execution_2026-10-14/verification_report.md"
+  },
+  "w3_delivery": {
+    "package": "build/deploy/browser_w3_upload_r1",
+    "upload_files": [
+      "browser_w3_c2_r1.zip",
+      "browser_w3_start.ipynb"
+    ],
+    "files_to_upload": 2,
+    "app_artifacts": 26,
+    "steps": "docs/browser_w3_board_steps.md",
+    "board_status": "REAL_DOWNLOADED_EVIDENCE_VERIFIED",
+    "host_tests_passed": 31,
+    "planned_manual_runs": 8,
+    "planned_visible_loop_runs": 20,
+    "reused_hardware": "Byte-identical verified W2 bit/HWH; no new synthesis",
+    "parameters": {
+      "algorithm": [
+        "A",
+        "C2"
+      ],
+      "threshold": [
+        1,
+        255
+      ],
+      "stage": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "side": [
+        256,
+        512
+      ]
+    },
+    "real_core_clock_and_parameter_readback": true,
+    "new_browser_fps": 0.1935184853694964,
+    "pure_dma_transport_ns": null,
+    "formal_quality": "PENDING_Q3",
+    "full_performance": "PENDING_W4",
+    "stability": "PENDING_W5",
+    "board_evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+    "actual_runs": 31,
+    "matched_words": 7340032,
+    "matched_png_images": 147
+  },
+  "w1_previous_measurements": {
+    "pl_core_frame_ns": null,
+    "dma_transaction_ns": 6222999.75,
+    "inference_ns": 31724473.849999998,
+    "browser_request_to_render_ms": 5328.199999997019,
+    "browser_actual_fps": 0.18717250660482895,
+    "new_firmware_resources": null,
+    "new_pl_quality": null,
+    "power_estimate_watts": null,
+    "measurement_scope": {
+      "statistics": "Latency mean; FPS from entire 20-frame loop; raw samples and median/p95 in linked evidence",
+      "native_samples": 20,
+      "visible_client_samples": 20,
+      "warmup_frames": 0,
+      "formal_performance_experiment": false,
+      "reference": "results/browser_w1_fps_2026-10-14/board_execution_2026-10-14/verification.json",
+      "browser_actual_fps_reason": "20 new PL frames, all foreground; 20000 / 106853.30000001192 milliseconds; not formal performance acceptance",
+      "ps_image_and_png_window_mean_ms": 4599.1725553,
+      "ps_image_and_png_window_is_pure_codec_time": false,
+      "session_id": "73cc892efe2b4bb282032f54757be104",
+      "phase": "W1_BASELINE_ONLY_NEW_W3_BROWSER_PENDING"
+    },
+    "pure_dma_transport_ns": null
+  },
+  "w4a_delivery": {
+    "package": "build/deploy/browser_w4a_upload_r1",
+    "upload_files": [
+      "browser_w4a_png_r1.zip",
+      "browser_w4a_start.ipynb"
+    ],
+    "files_to_upload": 2,
+    "app_artifacts": 26,
+    "steps": "docs/browser_w4a_board_steps.md",
+    "host_report": "results/browser_w4a_2026-10-14/host_validation_report.md",
+    "board_status": "NOT_RUN",
+    "host_tests_passed": 32,
+    "planned_native_tasks": 50,
+    "manual_gates": 4,
+    "profiles": {
+      "baseline": {},
+      "fast": {
+        "compress_level": 1
+      }
+    },
+    "warmup_per_profile": 3,
+    "measured_per_profile": 20,
+    "reused_hardware": "Byte-identical W2 pair already tested through W3",
+    "medical_algorithm_changed": false,
+    "browser_fps": null,
+    "speedup": null,
+    "formal_performance_replaced": false,
+    "formal_quality_replaced": false
+  }
+}

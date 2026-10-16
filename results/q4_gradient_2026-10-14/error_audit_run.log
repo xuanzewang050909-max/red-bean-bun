@@ -1,0 +1,303 @@
+{
+  "pooled": {
+    "256": {
+      "C6_r2_gradient_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 117,
+            "fp": 9000
+          },
+          "removed_vs_r3_seed": {
+            "tp": 65,
+            "fp": 229
+          },
+          "removed_vs_C2": {
+            "tp": 70,
+            "fp": 1361
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 73,
+            "fp": 488
+          },
+          "removed_vs_r3_seed": {
+            "tp": 6,
+            "fp": 7
+          },
+          "removed_vs_C2": {
+            "tp": 7,
+            "fp": 39
+          }
+        }
+      },
+      "C6_r2_union_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 117,
+            "fp": 9000
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 5,
+            "fp": 1132
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 73,
+            "fp": 488
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 1,
+            "fp": 32
+          }
+        }
+      },
+      "C6_r4_gradient_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 120,
+            "fp": 9650
+          },
+          "removed_vs_r3_seed": {
+            "tp": 4,
+            "fp": 42
+          },
+          "removed_vs_C2": {
+            "tp": 6,
+            "fp": 524
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 74,
+            "fp": 508
+          },
+          "removed_vs_r3_seed": {
+            "tp": 1,
+            "fp": 1
+          },
+          "removed_vs_C2": {
+            "tp": 1,
+            "fp": 13
+          }
+        }
+      },
+      "C6_r4_union_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 120,
+            "fp": 9650
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 2,
+            "fp": 482
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 74,
+            "fp": 508
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 0,
+            "fp": 12
+          }
+        }
+      }
+    },
+    "512": {
+      "C6_r2_gradient_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 597,
+            "fp": 31063
+          },
+          "removed_vs_r3_seed": {
+            "tp": 1091,
+            "fp": 595
+          },
+          "removed_vs_C2": {
+            "tp": 1241,
+            "fp": 3925
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 177,
+            "fp": 1262
+          },
+          "removed_vs_r3_seed": {
+            "tp": 12,
+            "fp": 23
+          },
+          "removed_vs_C2": {
+            "tp": 23,
+            "fp": 144
+          }
+        }
+      },
+      "C6_r2_union_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 597,
+            "fp": 31063
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 150,
+            "fp": 3330
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 177,
+            "fp": 1262
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 11,
+            "fp": 121
+          }
+        }
+      },
+      "C6_r4_gradient_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 692,
+            "fp": 32832
+          },
+          "removed_vs_r3_seed": {
+            "tp": 216,
+            "fp": 135
+          },
+          "removed_vs_C2": {
+            "tp": 271,
+            "fp": 1696
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 186,
+            "fp": 1321
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 2
+          },
+          "removed_vs_C2": {
+            "tp": 2,
+            "fp": 64
+          }
+        }
+      },
+      "C6_r4_union_noadd": {
+        "fov": {
+          "restored_vs_r3_seed": {
+            "tp": 692,
+            "fp": 32832
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 55,
+            "fp": 1561
+          }
+        },
+        "bright_band": {
+          "restored_vs_r3_seed": {
+            "tp": 186,
+            "fp": 1321
+          },
+          "removed_vs_r3_seed": {
+            "tp": 0,
+            "fp": 0
+          },
+          "removed_vs_C2": {
+            "tp": 2,
+            "fp": 62
+          }
+        }
+      }
+    }
+  },
+  "context": {
+    "256": {
+      "1": {
+        "added_tp": 348,
+        "added_fp": 1398,
+        "links": 882,
+        "fully_annotation_supported_links": 115,
+        "unsupported_interior_between_labeled_ends": 63,
+        "added_precision": 0.19931271477663232
+      },
+      "3": {
+        "added_tp": 126,
+        "added_fp": 462,
+        "links": 290,
+        "fully_annotation_supported_links": 46,
+        "unsupported_interior_between_labeled_ends": 20,
+        "added_precision": 0.21428571428571427
+      },
+      "5": {
+        "added_tp": 42,
+        "added_fp": 156,
+        "links": 100,
+        "fully_annotation_supported_links": 16,
+        "unsupported_interior_between_labeled_ends": 6,
+        "added_precision": 0.21212121212121213
+      }
+    },
+    "512": {
+      "1": {
+        "added_tp": 1643,
+        "added_fp": 3092,
+        "links": 2263,
+        "fully_annotation_supported_links": 571,
+        "unsupported_interior_between_labeled_ends": 131,
+        "added_precision": 0.34699049630411827
+      },
+      "3": {
+        "added_tp": 698,
+        "added_fp": 960,
+        "links": 790,
+        "fully_annotation_supported_links": 264,
+        "unsupported_interior_between_labeled_ends": 47,
+        "added_precision": 0.4209891435464415
+      },
+      "5": {
+        "added_tp": 292,
+        "added_fp": 329,
+        "links": 295,
+        "fully_annotation_supported_links": 109,
+        "unsupported_interior_between_labeled_ends": 15,
+        "added_precision": 0.47020933977455714
+      }
+    }
+  },
+  "output": "D:\\PLD\\retina_fpga\\build\\q4_gradient_error_audit_2026-10-14"
+}

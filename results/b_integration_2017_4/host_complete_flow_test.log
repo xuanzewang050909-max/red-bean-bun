@@ -1,0 +1,24 @@
+test_complete_measurements_bundle_stays_visual_pending (test_b_integration.BRunnerTests.test_complete_measurements_bundle_stays_visual_pending) ... ERROR
+
+======================================================================
+ERROR: test_complete_measurements_bundle_stays_visual_pending (test_b_integration.BRunnerTests.test_complete_measurements_bundle_stays_visual_pending)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "D:\PLD\retina_fpga\tests\test_b_integration.py", line 156, in test_complete_measurements_bundle_stays_visual_pending
+    runner.display_medical_b(context);runner.performance_b(context);runner.finish_b(context)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 206, in display_medical_b
+    phase(context,'B_COMPOSING_ACTUAL_FPGA_RESULT',action)
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 49, in phase
+    try: guarded_phase(context,name,action)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\PLD\retina_fpga\scripts\a0_dma_board_test.py", line 173, in guarded_phase
+    action()
+  File "D:\PLD\retina_fpga\scripts\b_integration_board_test.py", line 201, in action
+    from IPython.display import display
+ModuleNotFoundError: No module named 'IPython'
+
+----------------------------------------------------------------------
+Ran 1 test in 1.737s
+
+FAILED (errors=1)

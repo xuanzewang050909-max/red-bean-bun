@@ -1,0 +1,30 @@
+{
+  "status": "PASS_20_ARCHIVE_TOOL_HOST_CHECKS",
+  "tested_host_utc_recorded_after_run": "2026-10-11T18:43:50.289622+00:00",
+  "command": ".\\.venv\\Scripts\\python.exe -m unittest discover -s tests -p test_a3_archive.py -v",
+  "observed_tests_run": 20,
+  "positive_checks": 2,
+  "negative_checks": 18,
+  "raw_word_corruption_subcases": 6,
+  "failures": 0,
+  "errors": 0,
+  "skipped": 0,
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "pillow": "12.3.0",
+  "limits": "Offline verification of real downloaded A3 evidence; negative checks alter in-memory copies only. No new board run or release modification.",
+  "sources": {
+    "scripts/archive_a3_board_results.py": {
+      "sha256": "967567366794f4b264c57afcdb42483cc12e7d69736203c90f35c5603d8a5d2b"
+    },
+    "tests/test_a3_archive.py": {
+      "sha256": "f52fce0b7e81245ec02c76196e30892afc47d35963195e9eb68ff5b5f1dfd09f"
+    },
+    "software/reference.py": {
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    }
+  },
+  "archive_copy_check": "PASS_ALL_9_RAW_FILE_SHA256_AND_TWO_DOWNLOADED_ORIGINALS",
+  "original_json_copy_check": "PASS_EXACT_BYTES",
+  "test_log_sha256": "c2d018ad192c621f93d8fb3f8a99b734a554ca7efb68e5afa415563bb68f6962"
+}

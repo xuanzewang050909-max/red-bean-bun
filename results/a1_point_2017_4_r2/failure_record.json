@@ -1,0 +1,11 @@
+{
+  "source": "user-provided screenshot",
+  "original_path": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-4e6b080a-3d40-4137-b6d1-a8845d4dd92d.png",
+  "screenshot_sha256": "85c10c06463004ec1673d2bc66ad9f97bc97fa7f91137b3bad4f9e4039b5080b",
+  "failure": "ValueError: Package mismatch: a1_point_check.ipynb",
+  "stage": "prepare_a1 artifact hash precheck",
+  "fpga_load_observed": false,
+  "dma_started_observed": false,
+  "evidence_limit": "Screenshot shows notebook mismatch before Overlay construction; board notebook bytes were not retrieved. Host regression reproduced mutable notebook metadata/output issue.",
+  "a1_board_status": "NOT_PASSED_PRECHECK_FAILED"
+}

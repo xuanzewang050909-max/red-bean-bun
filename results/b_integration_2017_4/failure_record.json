@@ -1,0 +1,13 @@
+{
+  "board_status": "NOT_RUN",
+  "attempts": [
+    {"id": "build_01", "status": "FAILED_PROJECT_SETUP", "reason": "Copied BD was added from overlapping project source directory", "log": "build_01.log"},
+    {"id": "build_02", "status": "FAILED_PROJECT_SETUP", "reason": "Source directory existed before create_project", "log": "build_02.log"},
+    {"id": "build_03", "status": "INTENTIONALLY_STOPPED_HOST_BUILD", "reason": "Attempted interface-owned scalar port deletion was refused; empty root nets remained. Corrected builder preserves all interface member ports and deletes only disconnected empty root nets.", "log": "build_03.log"},
+    {"id": "build_04", "status": "ROUTED_BITSTREAM_REJECTED_NOT_RELEASED", "reason": "Retained audio constraints referenced removed ports; rounded HDMI RX constraint produced 599.952 MHz VCO below 600; unconditional vendor PixelClk-to-SerialClk generated clock did not match official external MMCM/BUFR topology", "log": "build_04.log", "reports": ["rejected_04_timing_summary.rpt", "rejected_04_drc.rpt"]},
+    {"id": "host_tests_initial", "status": "FAILED_HOST_TIMER", "reason": "Windows monotonic_ns gave coarse 16 ms samples and zeros in a fake fast transaction; changed B timing only to monotonic high-resolution perf_counter_ns; no zero-duration or artificial board samples accepted", "log": "host_tests_initial.log"},
+    {"id": "host_complete_flow_test", "status": "FAILED_HOST_FIXTURE", "reason": "Host lacks IPython; display side effect stubbed only in host test, board import remains original", "log": "host_complete_flow_test.log"},
+    {"id": "host_tests_before_fixture_fix", "status": "FAILED_HOST_FIXTURE", "reason": "Reused A4 fake save function wrote A4 filename. B fake context now writes B result filename; production B save function was already correct.", "log": "host_tests_before_fixture_fix.log"}
+  ],
+  "release_rule": "Only corrected build_05 plus real candidate reset simulation and passing final host gates can be packaged. Prior hardware builds and all fake tests are not board evidence."
+}

@@ -1,0 +1,89 @@
+{
+  "status": "PASS_B_BOARD_RECORDS_RAW_ARRAYS_DISPLAY_REFERENCES_AND_TIMING_VERIFIED",
+  "verified_host_utc": "2026-10-12T03:31:49.716977+00:00",
+  "revision": "b_integration_r2_explicit_video_imports",
+  "release_manifest_sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b",
+  "board_clock_utc_unverified": "2022-10-22T13:57:29.807916+00:00",
+  "overlay_downloads": 1,
+  "frames_verified": 370,
+  "validation_frames": 61,
+  "benchmark_frames": 309,
+  "timed_frames": 300,
+  "input_words_verified": 70647808,
+  "raw_output_words_verified": 983040,
+  "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+  "raw_files": {
+    "b_integration_check_executed.ipynb": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\b_integration_check_executed.ipynb",
+      "bytes": 310960,
+      "sha256": "9ac40942fc1f5ecc83852bdadc75360f3d6be93e6f924711a16243feb03492ab"
+    },
+    "b_results_bundle.zip": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\b_results_bundle.zip",
+      "bytes": 1571423,
+      "sha256": "568944f141d19a5a1868f91ee1e9998abb4d6e1036306693f736a398cbf2a520"
+    },
+    "b_integration_result.json": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\b_integration_result.json",
+      "bytes": 383835,
+      "sha256": "254702d492235e4dd94de74ab9406dee17ebbc7d52719c271de675f698f51f50"
+    },
+    "b_color_pattern.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\b_color_pattern.png",
+      "bytes": 4378,
+      "sha256": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492"
+    },
+    "b_medical_display.png": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\b_medical_display.png",
+      "bytes": 222467,
+      "sha256": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d"
+    },
+    "a4_output_stare_256_mode1.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\a4_output_stare_256_mode1.npy",
+      "bytes": 262272,
+      "sha256": "a75fe9093456fc5e64510585ca4d5986fbe295ebcb76efdf72dab6f82b5eb4b0"
+    },
+    "a4_output_stare_256_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\a4_output_stare_256_mode2.npy",
+      "bytes": 262272,
+      "sha256": "973e1720c4f45993168b4512b14a6e1fcc416c7597e06a616c3e0ec5f2b0674f"
+    },
+    "a4_output_stare_256_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\a4_output_stare_256_mode3.npy",
+      "bytes": 262272,
+      "sha256": "0c07d9ad198f62c420726882c4cd14877f9da18a72925d2e8d6b09407b944770"
+    },
+    "a4_output_stare_512_mode1.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\a4_output_stare_512_mode1.npy",
+      "bytes": 1048704,
+      "sha256": "e3631b505c733a36e5d0926a4178f8952ef202a64965995a766effff67154e8f"
+    },
+    "a4_output_stare_512_mode2.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\a4_output_stare_512_mode2.npy",
+      "bytes": 1048704,
+      "sha256": "699051e2f1395f7ed641d71e4d1d7d2c53ea4b24b5b23474db30c0b06bc64b2d"
+    },
+    "a4_output_stare_512_mode3.npy": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\a4_output_stare_512_mode3.npy",
+      "bytes": 1048704,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b"
+    },
+    "monitor_color_photo.jpg": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\monitor_color_photo.jpg",
+      "bytes": 4958627,
+      "sha256": "d58adf50f0b69e4e28a4e4b891daf0b0ecd4e2fd6396e4a88076b3b1d2306a0d"
+    },
+    "monitor_medical_photo.jpg": {
+      "path": "D:\\PLD\\retina_fpga\\build\\board_results\\b_integration_2026-10-12\\monitor_medical_photo.jpg",
+      "bytes": 7290986,
+      "sha256": "4b531737d62ef4b44578285129b8ad8f6b63ae6cda7f98b6dfc1aa58ebe35d52"
+    }
+  },
+  "source_paths": {
+    "notebook": "C:\\Users\\Gabriel\\Downloads\\b_integration_check.ipynb",
+    "bundle": "C:\\Users\\Gabriel\\Downloads\\b_results_bundle.zip"
+  },
+  "physical_visual_assessment": "Separate host review of supplied photographs; original JSON PENDING value retained",
+  "limits": "370 output hashes independently recomputed, six actual saved STARE buffers compared word by word; other buffers not downloaded. Timing is repeated fixed-input host-visible transactions, not measured scan refresh, PL-only cycles or complete file-to-screen latency. No new medical quality PASS.",
+  "local_archive_policy": "Original output-bearing notebook/ZIP/PNG/arrays and photos kept under ignored build/board_results; original JSON and verification metadata tracked."
+}

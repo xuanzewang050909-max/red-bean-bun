@@ -1,0 +1,228 @@
+{
+  "client_date": "2026-10-13",
+  "previous_documents": {
+    "AGENTS.md": {
+      "bytes": 14492,
+      "sha256": "d178b0ea1d4839533a36bed66298ad924421cd49ffb7bac23bf5af3d3ebe2d09"
+    },
+    "README.md": {
+      "bytes": 12790,
+      "sha256": "d55bcec8caa82ae662fe0b42caec71ee56b057c5d80b4fdfbe685fcbf1499e45"
+    },
+    "docs/vivado_architecture.md": {
+      "bytes": 8918,
+      "sha256": "d12e41eb443fa535071cae7a9585ac9d3392a053f8d58cfe01570a2ac5fdb68c"
+    },
+    "docs/demo_validation_plan.md": {
+      "bytes": 8177,
+      "sha256": "acc7f286f1dada1a97affe7f9ab8a7a5db383807096538d84de4df4351c939ae"
+    },
+    "docs/reuse_matrix.md": {
+      "bytes": 14265,
+      "sha256": "9ddf9340230fb3d21e2157b6a6105cc83c7b60a4c538532ea2f5d2d7943b020e"
+    },
+    "docs/algorithm_reference.md": {
+      "bytes": 5834,
+      "sha256": "ddb7577e19c7d686a0ecc31af82e47949829c842cef31087b89406aa41bccede"
+    }
+  },
+  "immutable_files": {
+    "build/deploy/a4_segmentation_2017_4_r1/a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a4_manifest.json": {
+      "bytes": 30522,
+      "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a4_segmentation.bit": {
+      "bytes": 4045683,
+      "sha256": "ad0754dcd042ad9c787f49a58a857a0f3c34919241b76a1e66dcc6481817179c"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a4_segmentation.hwh": {
+      "bytes": 350105,
+      "sha256": "499f81c7165bcf585e96a25fc7e3d32f85e33734ee894ccc1b58ed91e7f1d1ea"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/a4_segmentation_check.ipynb": {
+      "bytes": 4556,
+      "sha256": "8125f1b0d4144d55f8d9801f991e031e985069ddb0baf3b07e294791627d33cd"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "build/deploy/a4_segmentation_2017_4_r1/使用说明.txt": {
+      "bytes": 7626,
+      "sha256": "57d3fe8fc9ad01b5e750033eeaea1c52c23060209c13e35c9ec6c806ef4743d5"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/a0_dma_board_test.py": {
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/a2_gaussian_board_test.py": {
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/a3_background_board_test.py": {
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/a4_segmentation_board_test.py": {
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_integration.bit": {
+      "bytes": 4045674,
+      "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_integration.hwh": {
+      "bytes": 1131176,
+      "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_integration_check.ipynb": {
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_layout_board_test.py": {
+      "bytes": 18759,
+      "sha256": "a45aa2b2aa36d24c065a730b7831fd0a5b22d01f941a35a3b79f6c8727185c7b"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_layout_compare.ipynb": {
+      "bytes": 4623,
+      "sha256": "b00de641b4b7951dec1ae52cd972e3e67f2d1430368c241b8d56c00e83359317"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_layout_manifest.json": {
+      "bytes": 6748,
+      "sha256": "c336dff6d41cf4a49b9774b4c6ac69ba06b5b65d199d6f0de2fd66c7c4617ca7"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_manifest.json": {
+      "bytes": 60640,
+      "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_profile_board_test.py": {
+      "bytes": 17036,
+      "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_snapshot_board_test.py": {
+      "bytes": 23025,
+      "sha256": "9b94cc32fe405fff349cb234f21258b99f1aaf59562a6e2974308fa0189ca626"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_snapshot_compare.ipynb": {
+      "bytes": 3851,
+      "sha256": "fdb017b6cef9e6dbbe07f795c0c509db672aff5338f76997f5d456bf0ed76756"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/b_snapshot_manifest.json": {
+      "bytes": 7399,
+      "sha256": "127b08678364cc18590c53c5db85a9959258b1e8901a1a948e4cd774054193f5"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/stare_im0001_256.npy": {
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/stare_im0001_512.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/使用说明.txt": {
+      "bytes": 5437,
+      "sha256": "ca555d63231d76b0f6e67705b24d31c626677692d5cf7ac3a5253a6740120c2f"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/排版对比说明.txt": {
+      "bytes": 4055,
+      "sha256": "283d33a211ad9b7328dd4ce76e5692246db82e728c51643b40441fe4488b0d3f"
+    },
+    "build/deploy/b_snapshot_2017_4_r1/输出暂存对比说明.txt": {
+      "bytes": 3529,
+      "sha256": "031b74624db2011d8967a53298c00a473b50b4d20f571d17fef35ebe6cc12a06"
+    },
+    "docs/original_development_task.md": {
+      "bytes": 11650,
+      "sha256": "deb83cc819166ff3de5a9e71e2701dc763e798451909ea2cd848a5d07d6af168"
+    },
+    "hls/retina_segmentation_hls.cpp": {
+      "bytes": 9252,
+      "sha256": "856767221754e0460cef66eb7d07d28e9f1113a92a53affc48521f1e14daf0fa"
+    },
+    "rtl/core/retina_gaussian_guard.v": {
+      "bytes": 5052,
+      "sha256": "18b887b3ad2e0b4b458d7610172bb94596fe26441a181dfd5ba4867704ba7c51"
+    },
+    "software/preprocessing.py": {
+      "bytes": 4255,
+      "sha256": "ffbca496ffc5f472587ae7c14e15e173664839491450154a4847554e1641ba18"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "software/metrics.py": {
+      "bytes": 844,
+      "sha256": "e4eaee1fdcfcad8b8e19c16a108b43c1876b65d75b272b5fb3fec427ba1b7a99"
+    },
+    "vivado/scripts/build_a4_segmentation.tcl": {
+      "bytes": 10931,
+      "sha256": "5074a921f500a2671eacb769d74a1fef0f59f87181fd2b7b5d2c7a55e2e3d956"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/dma.py": {
+      "bytes": 26228,
+      "sha256": "a7e92fd180d9fa3322e81b49bb4141e08c8f5c8cb685fe608793b46acfe11d49"
+    },
+    "references/PYNQ/v3.0.1/pynq/buffer.py": {
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+    },
+    "results/a4_segmentation_2017_4/board_execution_2026-10-12/verification_report.md": {
+      "bytes": 6486,
+      "sha256": "9763fdb4c3189cb20c0501a71f54a4a6976067cc77b63ebb1a16055ccc1c89d7"
+    },
+    "results/b_snapshot_2017_4_r1/board_execution_2026-10-12/verification_report.md": {
+      "bytes": 7216,
+      "sha256": "8c11f17e8a9cc44115d9aa5ac48df79d4f1389340f4431d29584f3bbfc6c00ab"
+    }
+  },
+  "competition_pdf": {
+    "path": "D:\\PLD\\关于举办东南大学第二十届PLD设计竞赛的通知.pdf",
+    "bytes": 3306680,
+    "sha256": "6835b52a721934f39d4d5a97b0bd35886ec30b78801dd609da3c66429f946e71",
+    "pages": 11,
+    "reviewed_relevant_pages": [
+      4,
+      6
+    ],
+    "method": "Scanned PDF rendered with bundled Poppler; full pages viewed. No OCR text inferred.",
+    "verified_facts": [
+      "Topic one covers fundus analysis and requires substantive PL computation.",
+      "Appendix A permits HDMI/VGA/LCD or host user interface as output alternatives.",
+      "At least three basic processing/display functions and one meaningful analysis task are required.",
+      "Stable interactive display of mode/threshold/result/timing/rate/resource data is required; CPU comparison is an extension."
+    ]
+  }
+}

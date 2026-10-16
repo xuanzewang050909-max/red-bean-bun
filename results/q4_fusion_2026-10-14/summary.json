@@ -1,0 +1,27 @@
+{
+  "status": "REJECT_Q4_FUSION_R3_FOR_PL",
+  "candidate_count": 40,
+  "eligible_count": 0,
+  "Q4_total_candidates": 93,
+  "Q4_total_eligible": 0,
+  "host_tests_passed": 26,
+  "new_tests_this_round": 8,
+  "source_commit": "d154eca23b5671da1a97d6943d3f1146e64825ce",
+  "representative_rejected_candidate": "C5_l5_9_r8_m1_a4_g3",
+  "representative_reason": "highest 512 train AH Dice for diagnosis only, NOT selected for deployment",
+  "source_location": "WINDOWS_OFFLINE_CPU_NOT_PL",
+  "new_hardware_status": "NOT_IMPLEMENTED",
+  "user_board_actions_required": false,
+  "production_files_unchanged": true,
+  "preserved_file_count": 179,
+  "evidence_sha256": {
+    "error_audit.json": "973f99f82bec22516eb2fdc7a8aec40773c511ac8772054d78901d719e86772e",
+    "host_environment.txt": "dcfacbc11221bef97189dedb392e022185c9ed836162302265b8fe644b79c254",
+    "host_tests.log": "039c40fd2e9b0059578b1dc3d2086a235917468b9ef9237cd8396f0acf7e4c2c",
+    "independent_run.log": "ff05c89d8bc5fd2f8cbfae114e7f472409c4a6212c40db7451d803bdd0342b3c",
+    "independent_verification.json": "fb08cc8b4587950cb241f1ce9da2122d893ac3cbd001ad544aa4ddc353cefb87",
+    "provenance.json": "0c0ecccf09cf8c5e985229dd06ecee18c8530f050b3c1bc3c618d718667804d9",
+    "training_report.json": "49c633dcbefe1c18947409a2d8b667ca3db08111ddd00fbee8800839798fe284",
+    "training_run.log": "1f5593a6525548c8e0e06353e54b5a54ea7ec1463bc97b72d8e1a1a22712a972"
+  }
+}

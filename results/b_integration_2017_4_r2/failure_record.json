@@ -1,0 +1,17 @@
+{
+  "received_utc": "2026-10-12T03:09:17.413992+00:00",
+  "stage": "B stage 2 prepare_b import; before Overlay construction/download or DMA allocation",
+  "error": "ImportError: cannot import name 'AxiVDMA' from 'pynq.lib.video'",
+  "observed_installed_package": "PYNQ 3.0.1 / Python 3.10 on PYNQ-Z2",
+  "screenshot": {
+    "bytes": 160771,
+    "sha256": "58e6d8b4e8092532c3ea66e6fd3df58e810b4dc548fb4e7974264e750c095007"
+  },
+  "root_cause": "Application incorrectly imported driver classes from package __init__, which imports their submodules but does not re-export these classes",
+  "host_gap": "Initial tests exercised downstream fake DMA/video contexts and did not execute prepare_b imports against the original video initializer",
+  "correction": "Direct common/dma/hierarchies imports and r2 revision only; actual official initializer export behavior added to regression",
+  "r1_software_status": "WITHDRAWN_AFTER_REAL_PRECHECK_IMPORT_FAILURE",
+  "r1_hardware_status": "UNCHANGED_PREVIOUS_HOST_BUILD_REUSED",
+  "board_status": "NOT_RUN",
+  "kernel_restart_applicability": "Safe for this screenshot import-stage failure; not a general recovery instruction for in-flight DMA failures"
+}

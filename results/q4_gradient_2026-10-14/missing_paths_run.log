@@ -1,0 +1,110 @@
+{
+  "256": {
+    "C2": {
+      "gt_skeleton_pixels": 24665,
+      "missed_pixels": 9003,
+      "bins": {
+        "1": {
+          "components": 986,
+          "pixels": 986
+        },
+        "2-3": {
+          "components": 917,
+          "pixels": 2150
+        },
+        "4-7": {
+          "components": 444,
+          "pixels": 2266
+        },
+        "8-15": {
+          "components": 162,
+          "pixels": 1666
+        },
+        "16+": {
+          "components": 74,
+          "pixels": 1935
+        }
+      }
+    },
+    "C6_r2_union_e3_g3": {
+      "gt_skeleton_pixels": 24665,
+      "missed_pixels": 8933,
+      "bins": {
+        "1": {
+          "components": 971,
+          "pixels": 971
+        },
+        "2-3": {
+          "components": 895,
+          "pixels": 2099
+        },
+        "4-7": {
+          "components": 443,
+          "pixels": 2262
+        },
+        "8-15": {
+          "components": 162,
+          "pixels": 1666
+        },
+        "16+": {
+          "components": 74,
+          "pixels": 1935
+        }
+      }
+    }
+  },
+  "512": {
+    "C2": {
+      "gt_skeleton_pixels": 56945,
+      "missed_pixels": 15453,
+      "bins": {
+        "1": {
+          "components": 656,
+          "pixels": 656
+        },
+        "2-3": {
+          "components": 787,
+          "pixels": 1919
+        },
+        "4-7": {
+          "components": 849,
+          "pixels": 4430
+        },
+        "8-15": {
+          "components": 410,
+          "pixels": 4209
+        },
+        "16+": {
+          "components": 159,
+          "pixels": 4239
+        }
+      }
+    },
+    "C6_r2_union_e3_g3": {
+      "gt_skeleton_pixels": 56945,
+      "missed_pixels": 15201,
+      "bins": {
+        "1": {
+          "components": 615,
+          "pixels": 615
+        },
+        "2-3": {
+          "components": 717,
+          "pixels": 1750
+        },
+        "4-7": {
+          "components": 842,
+          "pixels": 4401
+        },
+        "8-15": {
+          "components": 409,
+          "pixels": 4197
+        },
+        "16+": {
+          "components": 159,
+          "pixels": 4238
+        }
+      }
+    }
+  }
+}

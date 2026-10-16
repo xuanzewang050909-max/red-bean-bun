@@ -1,0 +1,29 @@
+{
+  "status": "HOST_CHECKS_PASS_BOARD_NOT_RUN",
+  "python_unique_checks": 16,
+  "javascript_controller_checks": 3,
+  "release": {
+    "status": "HOST_PACKAGE_BOARD_NOT_RUN",
+    "files": {
+      "c7_w5a_stability.ipynb": {
+        "bytes": 6397,
+        "sha256": "19644071292c5b9c8124f1728c8f782102f4c1f8b58fcecee4936bcf2eea25e1"
+      },
+      "c7_w5a_stability_r1.zip": {
+        "bytes": 14764968,
+        "sha256": "d67413ca20af05ffc22497d5feb422358b4f31114adb9641dbbf4dd985c52840"
+      }
+    },
+    "embedded_files": 137
+  },
+  "baseline_verified_files": 137,
+  "power": "NOT_MEASURED_NO_INSTRUMENT",
+  "w5a": "BOARD_NOT_RUN",
+  "w5b": "NOT_RUN",
+  "quality": "NOT_FINALLY_ACCEPTED",
+  "initial_findings": [
+    "Initial HOST check falsely matched observer expected_words keyword as an algorithm call; corrected to AST call detection. Original log retained.",
+    "Initial JavaScript HOST fixture had one missing brace; fixed; deployed JS syntax and three controller tests pass."
+  ],
+  "scope": "HOST mocks and synthetic clocks do not establish board outputs, duration, performance or final W5 acceptance."
+}

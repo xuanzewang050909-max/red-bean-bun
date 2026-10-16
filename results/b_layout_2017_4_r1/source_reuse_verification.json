@@ -1,0 +1,121 @@
+{
+  "status": "PASS_BYTE_REUSE_AND_NATIVE_CALL_ORDER_HOST_ONLY",
+  "unchanged_inherited_files": {
+    "a0_dma_board_test.py": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\a0_dma_board_test.py",
+      "bytes": 10917,
+      "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+    },
+    "a1_point_board_test.py": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\a1_point_board_test.py",
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "a2_gaussian_board_test.py": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\a2_gaussian_board_test.py",
+      "bytes": 12265,
+      "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+    },
+    "a3_background_board_test.py": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\a3_background_board_test.py",
+      "bytes": 12110,
+      "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+    },
+    "a4_segmentation_board_test.py": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\a4_segmentation_board_test.py",
+      "bytes": 13155,
+      "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+    },
+    "b_integration.bit": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\b_integration.bit",
+      "bytes": 4045674,
+      "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+    },
+    "b_integration.hwh": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\b_integration.hwh",
+      "bytes": 1131176,
+      "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+    },
+    "b_integration_board_test.py": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\b_integration_board_test.py",
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "b_integration_check.ipynb": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\b_integration_check.ipynb",
+      "bytes": 5835,
+      "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    },
+    "b_manifest.json": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\b_manifest.json",
+      "bytes": 60640,
+      "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b"
+    },
+    "b_profile_board_test.py": {
+      "baseline": "build\\deploy\\b_profile_2017_4_r2\\b_profile_board_test.py",
+      "bytes": 17036,
+      "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+    },
+    "stare_im0001_256.npy": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\stare_im0001_256.npy",
+      "bytes": 262272,
+      "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+    },
+    "stare_im0001_512.npy": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\stare_im0001_512.npy",
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "\u4f7f\u7528\u8bf4\u660e.txt": {
+      "baseline": "build\\deploy\\b_integration_2017_4_r2\\\u4f7f\u7528\u8bf4\u660e.txt",
+      "bytes": 5437,
+      "sha256": "ca555d63231d76b0f6e67705b24d31c626677692d5cf7ac3a5253a6740120c2f"
+    }
+  },
+  "official_driver_sources": {
+    "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+      "bytes": 20367,
+      "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+      "bytes": 12224,
+      "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+    },
+    "references/PYNQ/v3.0.1/pynq/buffer.py": {
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+    }
+  },
+  "identical_ordered_native_statements": [
+    "context['dma'].recvchannel.transfer(rx)",
+    "context['dma'].sendchannel.transfer(tx)",
+    "dma_status = b.wait_both_idle(context['dma'])",
+    "context['dma'].sendchannel.wait()",
+    "context['dma'].recvchannel.wait()",
+    "send_bytes = int(context['dma'].sendchannel.transferred)",
+    "recv_bytes = int(context['dma'].recvchannel.transferred)",
+    "frame_status = int(context['gpio'].channel2.read())",
+    "frame = context['hdmi_out'].newframe()",
+    "context['display_retained'].append(frame)",
+    "frame[:] = image",
+    "context['hdmi_out'].writeframe(frame)",
+    "b.require(context['display_retained'].pop() is frame, 'Display ownership ledger changed')",
+    "vdma_status = b.video_status(context)",
+    "output_hash = hashlib.sha256(np.asarray(rx).tobytes()).hexdigest()"
+  ],
+  "identical_stage_boundaries": 10,
+  "full_word_compare_unchanged": true,
+  "hardware_rebuilt": false,
+  "board_status": "NOT_RUN",
+  "performance_improvement": "NOT_MEASURED",
+  "derivation_diffs": {
+    "renderer_derivation.diff": {
+      "bytes": 3098,
+      "sha256": "48ac859bf570fbdf4979c0ad6ad0a6068654bc5143a421808bb03ccc1395fe4f"
+    },
+    "profile_loop_derivation.diff": {
+      "bytes": 4462,
+      "sha256": "552dd4b4582b394ffd9f530bc8376f6ee3ee5916cdcb7848a7f8ad136fdb0e2e"
+    }
+  }
+}

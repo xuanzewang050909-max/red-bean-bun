@@ -1,0 +1,187 @@
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source {D:\PLD\retina_fpga\vivado\scripts\build_w2_quality.tcl}
+# set root [file normalize [file join [file dirname [info script]] ../..]]
+# if {[version -short] ne "2017.4"} {error "This baseline is verified only with Vivado 2017.4"}
+# if {[llength $argv] != 3} {error "Expected new output directory, bd|full and exported HLS IP directory"}
+# set out [file normalize [lindex $argv 0]]
+# set stage [lindex $argv 1]
+# set hls_ip [file normalize [lindex $argv 2]]
+# if {![file exists [file join $hls_ip component.xml]]} {error "Missing exported HLS IP component.xml"}
+# if {$stage ni {bd full}} {error "Invalid stage"}
+# if {[file exists $out]} {error "Refusing to overwrite existing build directory: $out"}
+# file mkdir $out
+# file copy [info script] [file join $out build_script_used.tcl]
+# file copy [file join $root rtl core retina_quality_guard.v] [file join $out quality_guard_used.v]
+# set_param board.repoPaths [list [file join $root references board pynq-z2 pynq-z2]]
+# create_project w2_quality $out -part xc7z020clg400-1
+# set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]
+# set_property target_language Verilog [current_project]
+# set_property ip_repo_paths [list $hls_ip] [current_project]
+# update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/w2_quality_hls_export_02/solution1/impl/ip'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'E:/vivado/Vivado/2017.4/data/ip'.
+# add_files -norecurse [file join $root rtl core retina_quality_guard.v]
+# set_property include_dirs [list [file join $root rtl core]] [current_fileset]
+# update_compile_order -fileset sources_1
+# create_bd_design w2_quality
+Wrote  : <D:/PLD/retina_fpga/build/w2_quality_bd_02/w2_quality.srcs/sources_1/bd/w2_quality/w2_quality.bd> 
+# create_bd_cell -type module -reference retina_quality_guard point_stage
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'next_elapsed' has a dependency on the module local parameter or undefined parameter 'COUNTER_MAX'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'next_gaps' has a dependency on the module local parameter or undefined parameter 'COUNTER_MAX'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'next_stalls' has a dependency on the module local parameter or undefined parameter 'COUNTER_MAX'.
+WARNING: [IP_Flow 19-587] [HDL Parser] HDL port or parameter 'counter_overflow' has a dependency on the module local parameter or undefined parameter 'COUNTER_MAX'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'M_HLS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_AXIS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'S_HLS' of definition 'xilinx.com:interface:axis:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aclk' of definition 'xilinx.com:signal:clock:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_BUSIF' with value 'S_AXIS:M_HLS:S_HLS:M_AXIS'.
+INFO: [IP_Flow 19-4728] Bus Interface 'aclk': Added interface parameter 'ASSOCIATED_RESET' with value 'aresetn'.
+INFO: [IP_Flow 19-5107] Inferred bus interface 'aresetn' of definition 'xilinx.com:signal:reset:1.0' (from 'X_INTERFACE_INFO' attribute).
+INFO: [IP_Flow 19-4728] Bus Interface 'aresetn': Added interface parameter 'POLARITY' with value 'ACTIVE_LOW'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/PLD/retina_fpga/build/w2_quality_hls_export_02/solution1/impl/ip'.
+# create_bd_cell -type ip -vlnv retinafpga.local:hls:retina_quality_hls:1.0 quality_filter
+# foreach {a b} {point_stage/hls_control quality_filter/control_V point_stage/hls_start quality_filter/ap_start quality_filter/ap_idle point_stage/hls_idle quality_filter/ap_done point_stage/hls_done quality_filter/ap_ready point_stage/hls_ready} {connect_bd_net [get_bd_pins $a] [get_bd_pins $b]}
+WARNING: [BD 41-1306] The connection to interface pin /quality_filter/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /quality_filter/ap_idle is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /quality_filter/ap_done is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /quality_filter/ap_ready is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 point_control
+# set_property -dict [list CONFIG.C_GPIO_WIDTH {32} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_DOUT_DEFAULT {0x00000000} \
+#     CONFIG.C_IS_DUAL {1} CONFIG.C_GPIO2_WIDTH {32} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_INTERRUPT_PRESENT {0}] [get_bd_cells point_control]
+# connect_bd_net [get_bd_pins point_control/gpio_io_o] [get_bd_pins point_stage/cfg_control]
+WARNING: [BD 41-1306] The connection to interface pin /point_control/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+# connect_bd_net [get_bd_pins point_stage/status_word] [get_bd_pins point_control/gpio2_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /point_control/gpio2_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 point_observe
+# set_property -dict [list CONFIG.C_GPIO_WIDTH {32} CONFIG.C_ALL_OUTPUTS {1} CONFIG.C_DOUT_DEFAULT {0x00000000} \
+#     CONFIG.C_IS_DUAL {1} CONFIG.C_GPIO2_WIDTH {32} CONFIG.C_ALL_INPUTS_2 {1} CONFIG.C_INTERRUPT_PRESENT {0}] [get_bd_cells point_observe]
+# set_property CONFIG.COUNTER_WIDTH 32 [get_bd_cells point_stage]
+# connect_bd_net [get_bd_pins point_observe/gpio_io_o] [get_bd_pins point_stage/observe_select]
+WARNING: [BD 41-1306] The connection to interface pin /point_observe/gpio_io_o is being overridden by the user. This pin will not be connected as a part of interface connection GPIO
+# connect_bd_net [get_bd_pins point_stage/observe_data] [get_bd_pins point_observe/gpio2_io_i]
+WARNING: [BD 41-1306] The connection to interface pin /point_observe/gpio2_io_i is being overridden by the user. This pin will not be connected as a part of interface connection GPIO2
+# create_bd_cell -type ip -vlnv xilinx.com:ip:processing_system7:5.5 ps7_0
+# apply_bd_automation -rule xilinx.com:bd_rule:processing_system7 \
+#     -config {make_external "FIXED_IO, DDR" apply_board_preset "1" Master "Disable" Slave "Disable"} \
+#     [get_bd_cells ps7_0]
+# set_property -dict [list CONFIG.PCW_USE_M_AXI_GP0 {1} CONFIG.PCW_USE_S_AXI_HP0 {1} \
+#     CONFIG.PCW_S_AXI_HP0_DATA_WIDTH {64} CONFIG.PCW_FPGA3_PERIPHERAL_FREQMHZ {100} \
+#     CONFIG.PCW_EN_CLK0_PORT {1} CONFIG.PCW_EN_RST0_PORT {1}] [get_bd_cells ps7_0]
+# foreach prop {PCW_M_AXI_GP0_FREQMHZ PCW_S_AXI_HP0_FREQMHZ} {
+#     set_property CONFIG.${prop}.VALUE_SRC DEFAULT [get_bd_cells ps7_0]
+# }
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_dma:7.1 axi_dma_0
+# set_property -dict [list CONFIG.c_include_sg {0} CONFIG.c_include_mm2s {1} \
+#     CONFIG.c_include_s2mm {1} CONFIG.c_sg_length_width {23} \
+#     CONFIG.c_m_axi_mm2s_data_width {64} CONFIG.c_m_axis_mm2s_tdata_width {32} \
+#     CONFIG.c_micro_dma {0} \
+#     CONFIG.c_include_mm2s_dre {0} CONFIG.c_include_s2mm_dre {0} \
+#     CONFIG.c_mm2s_burst_size {16} CONFIG.c_s2mm_burst_size {16}] [get_bd_cells axi_dma_0]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axis_data_fifo:1.1 loopback_fifo
+# set_property -dict [list CONFIG.TDATA_NUM_BYTES {4} CONFIG.FIFO_DEPTH {1024} \
+#     CONFIG.HAS_TKEEP {1} CONFIG.HAS_TLAST {1} CONFIG.IS_ACLK_ASYNC {0}] [get_bd_cells loopback_fifo]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 control_axi
+# set_property -dict [list CONFIG.NUM_SI {1} CONFIG.NUM_MI {3}] [get_bd_cells control_axi]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 memory_axi
+# set_property -dict [list CONFIG.NUM_SI {2} CONFIG.NUM_MI {1}] [get_bd_cells memory_axi]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 reset_100m
+INFO: [Ipptcl 7-1463] No Compatible Board Interface found. Board Tab not created in customize GUI
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_one
+# set_property CONFIG.CONST_VAL {1} [get_bd_cells const_one]
+# create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 const_zero
+# set_property CONFIG.CONST_VAL {0} [get_bd_cells const_zero]
+# foreach {a b} {
+#     ps7_0/M_AXI_GP0 control_axi/S00_AXI
+#     control_axi/M00_AXI axi_dma_0/S_AXI_LITE
+#     control_axi/M01_AXI point_control/S_AXI
+#     control_axi/M02_AXI point_observe/S_AXI
+#     axi_dma_0/M_AXI_MM2S memory_axi/S00_AXI
+#     axi_dma_0/M_AXI_S2MM memory_axi/S01_AXI
+#     memory_axi/M00_AXI ps7_0/S_AXI_HP0
+#     axi_dma_0/M_AXIS_MM2S point_stage/S_AXIS
+#     point_stage/M_HLS quality_filter/source_V_V
+#     quality_filter/result_V_V point_stage/S_HLS
+#     point_stage/M_AXIS loopback_fifo/S_AXIS
+#     loopback_fifo/M_AXIS axi_dma_0/S_AXIS_S2MM
+# } {connect_bd_intf_net [get_bd_intf_pins $a] [get_bd_intf_pins $b]}
+# set clk [get_bd_pins ps7_0/FCLK_CLK0]
+# foreach pin {
+#     ps7_0/M_AXI_GP0_ACLK ps7_0/S_AXI_HP0_ACLK
+#     control_axi/ACLK control_axi/S00_ACLK control_axi/M00_ACLK control_axi/M01_ACLK control_axi/M02_ACLK
+#     point_control/s_axi_aclk point_observe/s_axi_aclk point_stage/aclk quality_filter/ap_clk
+#     memory_axi/ACLK memory_axi/S00_ACLK memory_axi/S01_ACLK memory_axi/M00_ACLK
+#     axi_dma_0/s_axi_lite_aclk axi_dma_0/m_axi_mm2s_aclk axi_dma_0/m_axi_s2mm_aclk
+#     loopback_fifo/s_axis_aclk reset_100m/slowest_sync_clk
+# } {connect_bd_net $clk [get_bd_pins $pin]}
+# connect_bd_net [get_bd_pins ps7_0/FCLK_RESET0_N] [get_bd_pins reset_100m/ext_reset_in]
+# connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins reset_100m/dcm_locked]
+# set_property CONFIG.POLARITY ACTIVE_LOW [get_bd_pins reset_100m/aux_reset_in]
+CRITICAL WARNING: [BD 41-737] Cannot set the parameter POLARITY on /reset_100m/aux_reset_in. It is read-only.
+# connect_bd_net [get_bd_pins const_one/dout] [get_bd_pins reset_100m/aux_reset_in]
+# connect_bd_net [get_bd_pins const_zero/dout] [get_bd_pins reset_100m/mb_debug_sys_rst]
+# foreach pin {
+#     control_axi/ARESETN control_axi/S00_ARESETN control_axi/M00_ARESETN control_axi/M01_ARESETN control_axi/M02_ARESETN
+#     memory_axi/ARESETN memory_axi/S00_ARESETN memory_axi/S01_ARESETN memory_axi/M00_ARESETN
+# } {connect_bd_net [get_bd_pins reset_100m/interconnect_aresetn] [get_bd_pins $pin]}
+# foreach pin {axi_dma_0/axi_resetn loopback_fifo/s_axis_aresetn point_stage/aresetn point_control/s_axi_aresetn point_observe/s_axi_aresetn quality_filter/ap_rst_n} {
+#     connect_bd_net [get_bd_pins reset_100m/peripheral_aresetn] [get_bd_pins $pin]
+# }
+# assign_bd_address
+</ps7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_MM2S> at <0x00000000 [ 512M ]>
+</ps7_0/S_AXI_HP0/HP0_DDR_LOWOCM> is being mapped into </axi_dma_0/Data_S2MM> at <0x00000000 [ 512M ]>
+</axi_dma_0/S_AXI_LITE/Reg> is being mapped into </ps7_0/Data> at <0x40400000 [ 64K ]>
+</point_control/S_AXI/Reg> is being mapped into </ps7_0/Data> at <0x41200000 [ 64K ]>
+</point_observe/S_AXI/Reg> is being mapped into </ps7_0/Data> at <0x41210000 [ 64K ]>
+# set dma_seg [get_bd_addr_segs -of_objects [get_bd_addr_spaces ps7_0/Data] -filter {NAME =~ *axi_dma_0*}]
+# if {[llength $dma_seg] != 1} {error "Expected exactly one DMA control address segment"}
+# set_property offset 0x40400000 $dma_seg
+# set_property range 64K $dma_seg
+# set gpio_seg [get_bd_addr_segs -of_objects [get_bd_addr_spaces ps7_0/Data] -filter {NAME =~ *point_control*}]
+# if {[llength $gpio_seg] != 1} {error "Expected one GPIO control segment"}
+# set_property offset 0x41200000 $gpio_seg
+# set_property range 64K $gpio_seg
+# set observer_seg [get_bd_addr_segs -of_objects [get_bd_addr_spaces ps7_0/Data] -filter {NAME =~ *point_observe*}]
+# if {[llength $observer_seg] != 1} {error "Expected one observer GPIO control segment"}
+# set_property offset 0x41210000 $observer_seg
+# set_property range 64K $observer_seg
+# validate_bd_design
+# foreach {pin prop expected} {
+#     reset_100m CONFIG.C_EXT_RESET_HIGH 0
+#     reset_100m CONFIG.C_AUX_RESET_HIGH 0
+#     axi_dma_0 CONFIG.c_s_axis_s2mm_tdata_width 32
+#     axi_dma_0 CONFIG.c_m_axi_s2mm_data_width 32
+#     axi_dma_0 CONFIG.c_m_axis_mm2s_tdata_width 32
+#     axi_dma_0 CONFIG.c_m_axi_mm2s_data_width 64
+#     ps7_0 CONFIG.PCW_M_AXI_GP0_FREQMHZ 100
+#     ps7_0 CONFIG.PCW_S_AXI_HP0_FREQMHZ 100
+# } {
+#     if {[get_property $prop [get_bd_cells $pin]] ne $expected} {error "Unexpected derived parameter $pin $prop"}
+# }
+# save_bd_design
+Wrote  : <D:/PLD/retina_fpga/build/w2_quality_bd_02/w2_quality.srcs/sources_1/bd/w2_quality/w2_quality.bd> 
+# write_bd_tcl -force [file join $out reconstructed_bd.tcl]
+INFO: [BD 5-148] Tcl file written out <D:/PLD/retina_fpga/build/w2_quality_bd_02/reconstructed_bd.tcl>.
+
+# report_ip_status -file [file join $out ip_status.rpt]
+# set fp [open [file join $out configuration.txt] w]
+# puts $fp "Vivado [version -short]; part [get_property PART [current_project]]; board [get_property BOARD_PART [current_project]]"
+# foreach cell {ps7_0 axi_dma_0 loopback_fifo reset_100m point_control point_observe point_stage quality_filter} {
+#     puts $fp "\n$cell [get_property VLNV [get_bd_cells $cell]]"
+#     foreach prop [lsort [list_property [get_bd_cells $cell]]] {
+#         if {[string match CONFIG.* $prop]} {puts $fp "$prop=[get_property $prop [get_bd_cells $cell]]"}
+#     }
+# }
+# foreach seg [get_bd_addr_segs -hier] {puts $fp "$seg offset=[get_property OFFSET $seg] range=[get_property RANGE $seg]"}
+# close $fp
+# puts "W2_QUALITY_BD_VALIDATED (host only, board test pending)"
+W2_QUALITY_BD_VALIDATED (host only, board test pending)
+# if {$stage eq "bd"} {exit 0}
+INFO: [Common 17-206] Exiting Vivado at Wed Oct 14 02:52:16 2026...

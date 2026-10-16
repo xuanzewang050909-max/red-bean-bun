@@ -1,0 +1,62 @@
+{
+  "status": "SHOWCASE_BOARD_ARRAYS_VERIFIED_COVERAGE_REPORTED",
+  "tasks": 39,
+  "matched_words": 10027008,
+  "matched_pngs": 195,
+  "boot": {
+    "boot_id": "774e9cb3-15d3-4241-a3b1-355161302104",
+    "uptime_seconds": 5445.21
+  },
+  "archive": {
+    "bytes": 66865710,
+    "sha256": "c8a28065acaee7ccdc2eab1fa5c86a5f44347736c0437aeb9b36603a9c9fc371"
+  },
+  "notebook": {
+    "bytes": 13380,
+    "sha256": "d3eb9a3fd33270b97323c15e246473622f2d2156123c1ac96d620952330d5b4b"
+  },
+  "ignored_empty_cells": 1,
+  "coverage": {
+    "images_c7_final_t112": [
+      "im0001",
+      "im0002",
+      "im0003",
+      "im0004",
+      "im0005",
+      "im0044",
+      "im0077",
+      "im0081",
+      "im0082",
+      "im0139",
+      "im0162",
+      "im0163",
+      "im0235",
+      "im0236",
+      "im0239",
+      "im0240",
+      "im0255",
+      "im0291",
+      "im0319",
+      "im0324"
+    ],
+    "sides": [
+      256,
+      512
+    ],
+    "visible_frames": 39,
+    "missing_visible_frames": 0,
+    "no_gt": true,
+    "bypass": false,
+    "c2_modes": [
+      1,
+      2
+    ]
+  },
+  "video": "DEFERRED_BY_USER",
+  "exclusions": [
+    "Array verification does not prove a physical power cycle",
+    "Not forced power/network/DMA-fault recovery",
+    "Not a new FPS or quality benchmark",
+    "Navigation gestures require separate user observation; frame identity/order verified here"
+  ]
+}

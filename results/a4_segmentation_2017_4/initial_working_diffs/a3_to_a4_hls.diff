@@ -1,0 +1,185 @@
+--- retina_background_hls.cpp
++++ retina_segmentation_hls.cpp
+@@ -1,6 +1,6 @@
+-// A3 derives the verified A2 Gaussian stage and reuses vendor BoxFilter.
++// A4 derives board-verified A3; all image windows use unmodified vendor code.
+ // Installed HLS headers, line buffers and frame guard are not modified.
+-#include "retina_background_hls.hpp"
++#include "retina_segmentation_hls.hpp"
+ 
+ typedef hls::Mat<512,512,HLS_8UC1> GreenImage;
+ typedef hls::Mat<512,512,HLS_16UC1> SumImage;
+@@ -33,9 +33,10 @@
+     hls::BoxFilter<15,15,false,hls::BORDER_REPLICATE>(enhanced,sums,hls::Point_<int>(7,7));
+ }
+ 
+-static void join_words(SumImage& sums, hls::stream<ap_uint<32> >& centers,
+-                       hls::stream<ap_uint<8> >& enhanced_centers,
+-                       hls::stream<ap_uint<32> >& result, int count, ap_uint<2> mode) {
++static void response_carrier(SumImage& sums, hls::stream<ap_uint<32> >& centers,
++                             hls::stream<ap_uint<8> >& enhanced_centers,
++                             GreenImage& responses, hls::stream<ap_uint<64> >& aligned,
++                             int count) {
+     for(int i=0;i<count;++i) {
+ #pragma HLS PIPELINE II=1
+         hls::Scalar<1,unsigned short> pixel=sums.read();
+@@ -46,12 +47,14 @@
+         ap_int<10> difference=ap_int<10>(background)-ap_int<10>(enhanced);
+         ap_uint<8> response=difference<=0 ? ap_uint<8>(0) :
+                             difference>=64 ? ap_uint<8>(255) : ap_uint<8>(difference*4);
+-        ap_uint<32> output=0;
+-        output.range(7,0)=word.range(15,8);
+-        output.range(15,8)=enhanced;
+-        output.range(23,16)=mode==1 ? ap_uint<8>(0) : background;
+-        output.range(31,24)=mode==3 ? response : ap_uint<8>(word.range(31,24));
+-        result.write(mode==0 ? word : output);
++        ap_uint<64> carrier=0;
++        carrier.range(31,0)=word;
++        carrier.range(39,32)=enhanced;
++        carrier.range(47,40)=response;
++        hls::Scalar<1,unsigned char> value;
++        value.val[0]=response;
++        responses.write(value);
++        aligned.write(carrier);
+     }
+ }
+ 
+@@ -76,8 +79,88 @@
+     }
+ }
+ 
+-void retina_background_hls(hls::stream<ap_uint<32> >& source,
+-                           hls::stream<ap_uint<32> >& result, ap_uint<32> control) {
++static void threshold_binary(GreenImage& responses, GreenImage& binary) {
++    // Vendor BINARY uses >; 27 implements the frozen >=28 specification.
++    hls::Threshold(responses,binary,(unsigned char)27,(unsigned char)1,hls::HLS_THRESH_BINARY);
++}
++
++static void initial_fov(GreenImage& binary, hls::stream<ap_uint<64> >& aligned,
++                        GreenImage& initial, hls::stream<ap_uint<64> >& delayed, int count) {
++    for(int i=0;i<count;++i) {
++#pragma HLS PIPELINE II=1
++        hls::Scalar<1,unsigned char> value=binary.read();
++        ap_uint<64> carrier=aligned.read();
++        ap_uint<1> mask=(value.val[0]!=0) && carrier[24];
++        carrier[48]=mask;
++        value.val[0]=mask;
++        initial.write(value);
++        delayed.write(carrier);
++    }
++}
++
++static void dilate_zero(GreenImage& input, GreenImage& output) {
++    hls::Window<3,3,unsigned char> cross;
++    const unsigned char values[3][3]={{0,1,0},{1,1,1},{0,1,0}};
++    for(int y=0;y<3;++y) for(int x=0;x<3;++x) {
++#pragma HLS UNROLL
++        cross.val[y][x]=values[y][x];
++    }
++    hls::morp_opr<hls::dilate_kernel,hls::BORDER_CONSTANT,hls::MORPH_CROSS,1>(
++        input,output,cross,hls::Point_<int>(1,1));
++}
++
++static void erode_zero(GreenImage& input, GreenImage& output) {
++    hls::Window<3,3,unsigned char> cross;
++    const unsigned char values[3][3]={{0,1,0},{1,1,1},{0,1,0}};
++    for(int y=0;y<3;++y) for(int x=0;x<3;++x) {
++#pragma HLS UNROLL
++        cross.val[y][x]=values[y][x];
++    }
++    hls::morp_opr<hls::erode_kernel,hls::BORDER_CONSTANT,hls::MORPH_CROSS,1>(
++        input,output,cross,hls::Point_<int>(1,1));
++}
++
++static void closed_carrier(GreenImage& closed, hls::stream<ap_uint<64> >& aligned,
++                           GreenImage& count_input, hls::stream<ap_uint<64> >& delayed, int count) {
++    for(int i=0;i<count;++i) {
++#pragma HLS PIPELINE II=1
++        hls::Scalar<1,unsigned char> value=closed.read();
++        ap_uint<64> carrier=aligned.read();
++        carrier[49]=(value.val[0]!=0);
++        count_input.write(value);
++        delayed.write(carrier);
++    }
++}
++
++static void count_neighbors(GreenImage& input, GreenImage& output) {
++    hls::Window<3,3,ap_uint<1> > ones;
++    for(int y=0;y<3;++y) for(int x=0;x<3;++x) {
++#pragma HLS UNROLL
++        ones.val[y][x]=1;
++    }
++    hls::Filter2D<hls::BORDER_REPLICATE>(input,output,ones,hls::Point_<int>(1,1));
++}
++
++static void final_join(GreenImage& counts, hls::stream<ap_uint<64> >& aligned,
++                       hls::stream<ap_uint<32> >& result, int count, ap_uint<2> mode) {
++    for(int i=0;i<count;++i) {
++#pragma HLS PIPELINE II=1
++        hls::Scalar<1,unsigned char> neighbours=counts.read();
++        ap_uint<64> carrier=aligned.read();
++        ap_uint<1> final_mask=carrier[49] && (neighbours.val[0]>=2) && carrier[24];
++        ap_uint<1> selected=mode==1 ? ap_uint<1>(carrier[48]) :
++                             mode==2 ? ap_uint<1>(carrier[49]) : final_mask;
++        ap_uint<32> output=0;
++        output.range(7,0)=carrier.range(15,8);
++        output.range(15,8)=carrier.range(39,32);
++        output.range(23,16)=selected ? 255 : 0;
++        output.range(31,24)=carrier.range(47,40);
++        result.write(mode==0 ? ap_uint<32>(carrier.range(31,0)) : output);
++    }
++}
++
++void retina_segmentation_hls(hls::stream<ap_uint<32> >& source,
++                             hls::stream<ap_uint<32> >& result, ap_uint<32> control) {
+ #pragma HLS INTERFACE axis port=source
+ #pragma HLS INTERFACE axis port=result
+ #pragma HLS INTERFACE ap_none port=control
+@@ -85,23 +168,44 @@
+ #pragma HLS DATAFLOW
+     int side=control[2] ? 256 : 512;
+     int count=side*side;
+-    GreenImage green(side,side),enhanced(side,side);
++    GreenImage green(side,side),enhanced(side,side),responses(side,side),binary(side,side);
++    GreenImage initial(side,side),dilated(side,side),closed(side,side),count_input(side,side),counts(side,side);
+     SumImage gaussian_sums(side,side),box_sums(side,side);
+     hls::stream<ap_uint<32> > original,centers;
+     hls::stream<ap_uint<8> > enhanced_centers;
++    hls::stream<ap_uint<64> > aligned_response,aligned_initial,aligned_closed;
+ #pragma HLS STREAM variable=original depth=2048
+ #pragma HLS RESOURCE variable=original core=FIFO_BRAM
+ #pragma HLS STREAM variable=centers depth=8192
+ #pragma HLS RESOURCE variable=centers core=FIFO_BRAM
+ #pragma HLS STREAM variable=enhanced_centers depth=8192
+ #pragma HLS RESOURCE variable=enhanced_centers core=FIFO_BRAM
++#pragma HLS STREAM variable=aligned_response depth=32
++#pragma HLS STREAM variable=aligned_initial depth=2048
++#pragma HLS RESOURCE variable=aligned_initial core=FIFO_BRAM
++#pragma HLS STREAM variable=aligned_closed depth=1024
++#pragma HLS RESOURCE variable=aligned_closed core=FIFO_BRAM
+ #pragma HLS STREAM variable=green.data_stream depth=32
+ #pragma HLS STREAM variable=gaussian_sums.data_stream depth=32
+ #pragma HLS STREAM variable=enhanced.data_stream depth=32
+ #pragma HLS STREAM variable=box_sums.data_stream depth=32
++#pragma HLS STREAM variable=responses.data_stream depth=32
++#pragma HLS STREAM variable=binary.data_stream depth=32
++#pragma HLS STREAM variable=initial.data_stream depth=32
++#pragma HLS STREAM variable=dilated.data_stream depth=32
++#pragma HLS STREAM variable=closed.data_stream depth=32
++#pragma HLS STREAM variable=count_input.data_stream depth=32
++#pragma HLS STREAM variable=counts.data_stream depth=32
+     split_words(source,green,original,count);
+     filter_sum(green,gaussian_sums);
+     enhance_aligned(gaussian_sums,original,enhanced,centers,enhanced_centers,count);
+     background_sum(enhanced,box_sums);
+-    join_words(box_sums,centers,enhanced_centers,result,count,control.range(1,0));
+-}
++    response_carrier(box_sums,centers,enhanced_centers,responses,aligned_response,count);
++    threshold_binary(responses,binary);
++    initial_fov(binary,aligned_response,initial,aligned_initial,count);
++    dilate_zero(initial,dilated);
++    erode_zero(dilated,closed);
++    closed_carrier(closed,aligned_initial,count_input,aligned_closed,count);
++    count_neighbors(count_input,counts);
++    final_join(counts,aligned_closed,result,count,control.range(1,0));
++}

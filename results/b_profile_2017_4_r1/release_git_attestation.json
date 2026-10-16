@@ -1,0 +1,66 @@
+{
+  "status": "PASS_B_PROFILE_R1_GIT_SOURCE_AND_RELEASE_PAIRING",
+  "source_commit": "7b427848cba2789a6f4ae780d5b4b2beec5cfa57",
+  "captured_utc": "2026-10-12T04:58:46.618608+00:00",
+  "board_status": "NOT_RUN",
+  "hardware_rebuilt": false,
+  "source_pairs": {
+    "scripts/b_profile_board_test.py": {
+      "bytes": 16730,
+      "sha256": "5a693dece2ca6b5ad8afb09712dc16653aac3c04db0d0b1d33a9c78de3cd8211",
+      "git_blob_matches_exact_bytes": true
+    },
+    "scripts/package_b_profile.py": {
+      "bytes": 7330,
+      "sha256": "8ad2c9e8aa50c1e055a24834c93732449b2db11c23a944d2601a58712235cb26",
+      "git_blob_matches_exact_bytes": true
+    },
+    "tests/test_b_profile.py": {
+      "bytes": 17645,
+      "sha256": "794c062c7532fd370ce6a5604357a4e55ff2bdc159fad021dd52c77b0773e6ac",
+      "git_blob_matches_exact_bytes": true
+    },
+    "notebooks/b_performance_profile.ipynb": {
+      "bytes": 3607,
+      "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7",
+      "git_blob_matches_exact_bytes": true
+    },
+    "docs/b_performance_profile_steps.md": {
+      "bytes": 3550,
+      "sha256": "24e0a511a03f9269c94051578619b22ea86104ef9aa3b740a4fa27238dc354fa",
+      "git_blob_matches_exact_bytes": true
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+      "bytes": 20367,
+      "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f",
+      "git_blob_matches_exact_bytes": true
+    },
+    "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+      "bytes": 12224,
+      "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950",
+      "git_blob_matches_exact_bytes": true
+    },
+    "references/PYNQ/v3.0.1/pynq/buffer.py": {
+      "bytes": 4676,
+      "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236",
+      "git_blob_matches_exact_bytes": true
+    }
+  },
+  "release_manifest": {
+    "bytes": 5511,
+    "sha256": "d279a61716d9f54af7609a19439e08c6df9c0d252504144e5dbd741b39e39ceb"
+  },
+  "baseline_release_manifest": {
+    "manifest": "results/b_integration_2017_4_r2/release_manifest.json",
+    "bytes": 60640,
+    "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b",
+    "all_13_original_r2_files_unchanged": true,
+    "hardware_rebuilt": false,
+    "board_timing_evidence": {
+      "path": "results/b_integration_2017_4_r2/board_execution_2026-10-12/timing_verification.json",
+      "bytes": 2259,
+      "sha256": "f720a71f98d4616454184bc6dd3546589a3ffe624cb65d83a77e4ebbc30be1ee"
+    }
+  },
+  "scope": "New host-verified profiler only; all inherited r2 artifact hashes unchanged; physical stage timings pending"
+}

@@ -1,0 +1,52 @@
+{
+  "revision": "browser_w4a_png_r1_lossless_profile",
+  "session_id": "8f2289bdbdc94093b63dbfeb9eeb4d5c",
+  "evidence_kind": "PYNQ_PL_DMA",
+  "board_acceptance": "PENDING_INDEPENDENT_VERIFICATION",
+  "bit": {
+    "bytes": 4045678,
+    "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+  },
+  "hwh": {
+    "bytes": 379601,
+    "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+  },
+  "clock_hz": 100000000,
+  "clock_source": "Paired W2 100MHz implementation plus live FCLK0 register readback",
+  "dma_address": "0x40400000",
+  "gpio_address": "0x41200000",
+  "observer_address": "0x41210000",
+  "algorithms": [
+    "A",
+    "C2"
+  ],
+  "modes": {
+    "bypass": 0,
+    "threshold_candidate": 1,
+    "closed_candidate": 2,
+    "final": 3
+  },
+  "threshold_range": [
+    1,
+    255
+  ],
+  "side_choices": [
+    256,
+    512
+  ],
+  "png_profiles": {
+    "baseline": {},
+    "fast": {
+      "compress_level": 1
+    }
+  },
+  "profile_scope": "PS image delivery only; not a PL medical parameter",
+  "runtime_threshold_supported": true,
+  "core_cycle_readback_supported": true,
+  "latched_parameter_readback_supported": true,
+  "algorithm_B_supported": false,
+  "max_active": 1,
+  "max_pending": 1,
+  "session_run_limit": 200,
+  "timing_notice": "Client and board absolute clocks cannot be subtracted; double-rAF is an approximate paint marker, not physical display or algorithm 60 FPS."
+}

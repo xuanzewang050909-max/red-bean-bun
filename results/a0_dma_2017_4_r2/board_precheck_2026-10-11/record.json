@@ -1,0 +1,9 @@
+{
+  "status": "PASS_BOARD_PREFLIGHT_ONLY_FPGA_UNCHANGED",
+  "evidence": "precheck_user_screenshot.png",
+  "sha256": "11e243641cf41742542933bc484b0c5fbfbf517e0b5838cfe3c4220007404068",
+  "observed_output": "PRECHECK_PASS: hashes, runtime and DMA metadata checked; FPGA unchanged",
+  "execution_count": 2,
+  "board_notebook_path": "Untitled Folder 1/a0_dma_loopback.ipynb",
+  "scope": "Screenshot confirms precheck completed. No FPGA load or DMA transfer result yet; raw board JSON/executed Notebook pending."
+}

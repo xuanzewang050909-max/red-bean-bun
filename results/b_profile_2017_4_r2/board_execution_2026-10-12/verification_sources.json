@@ -1,0 +1,40 @@
+{
+  "tests": 20,
+  "passed": true,
+  "skipped": 0,
+  "log": {
+    "bytes": 2915,
+    "sha256": "acd9bfbbb31c62723598312a1d038cd112382fbe0bdf8168c0b6a7adfc3bc32f"
+  },
+  "sources": {
+    "scripts/archive_b_profile_results.py": {
+      "bytes": 22875,
+      "sha256": "337a2c139f0dbf7e6fab64a301cb1b27ee31f76b5b9a350d1e22ceda1aa7ebc9"
+    },
+    "tests/test_b_profile_archive.py": {
+      "bytes": 11957,
+      "sha256": "0cf8f4a9de50c08876f88967e73919986594472540ec97daacf5794bbcc8c36a"
+    },
+    "scripts/archive_b_board_results.py": {
+      "bytes": 19618,
+      "sha256": "b7141ea9ee4a2fb51d67f3b357106d5cd38527889f3b1da6f9178b556791ce5b"
+    },
+    "scripts/archive_a4_board_results.py": {
+      "bytes": 19806,
+      "sha256": "d64a3d77c1f2b3b61fe6377e05d5d20745ef6b363f174a3ea8a11cb92d4d43f8"
+    },
+    "scripts/a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "scripts/b_profile_board_test.py": {
+      "bytes": 17036,
+      "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    }
+  },
+  "scope": "Verification of received real evidence and corruption rejection; no new FPGA execution"
+}

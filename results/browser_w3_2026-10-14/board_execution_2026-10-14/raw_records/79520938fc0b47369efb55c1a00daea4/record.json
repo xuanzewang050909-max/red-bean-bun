@@ -1,0 +1,295 @@
+{
+  "run_id": "79520938fc0b47369efb55c1a00daea4",
+  "session_id": "56f410c025a744b9b764ca549f756aad",
+  "request": {
+    "image_id": "im0001",
+    "side": 512,
+    "threshold": 28,
+    "algorithm": "C2",
+    "mode": "final",
+    "client_nonce": "mv73trxc6dzu1si8vsi",
+    "mode_code": 3
+  },
+  "config_id": "a617305afd2f3f66164fd463ddb47e3bc989253c2107a8332a0e2f2731ebaa71",
+  "status": "COMPLETED",
+  "accepted_server_ns": 123757977934012,
+  "revision": "browser_w3_c2_r1_real_parameters_observer",
+  "hardware_identity": {
+    "bit": {
+      "bytes": 4045678,
+      "sha256": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b"
+    },
+    "hwh": {
+      "bytes": 379601,
+      "sha256": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+    }
+  },
+  "evidence_kind": "PYNQ_PL_DMA",
+  "evidence": {
+    "evidence_kind": "PYNQ_PL_DMA",
+    "requested_control_word": 859147,
+    "hardware_latched_parameter_readback": {
+      "abi": "W2_RQ21_V1",
+      "sequence": 13,
+      "latched_control": 859147,
+      "task_tag": 13,
+      "raw_pages": {
+        "1": 2,
+        "3": 859147,
+        "5": 302268,
+        "6": 302268,
+        "7": 0,
+        "8": 30701,
+        "9": 262144,
+        "10": 262144,
+        "11": 13,
+        "4": 13
+      },
+      "clock_hz_from_paired_implementation": 100000000,
+      "pl_core_cycles": 302268,
+      "pl_drain_cycles": 302268,
+      "pl_input_empty_cycles": 0,
+      "pl_output_backpressure_cycles": 30701,
+      "pl_core_frame_ns": 3022680,
+      "pl_drain_ns": 3022680,
+      "core_boundary": "First HLS input handshake to final HLS output first valid",
+      "core_includes_stream_stalls": true,
+      "pure_dma_transport_ns": null
+    },
+    "applied_parameters": {
+      "algorithm": "C2",
+      "threshold": 28,
+      "side": 512,
+      "mode_code": 3,
+      "task_tag": 13
+    },
+    "config_evidence": "Atomic completed RQ21 control/tag/sequence and native frame counts match this task.",
+    "frame_status_before": 196620,
+    "frame_status_after": 213005,
+    "frame_count": 13,
+    "frame_counter_wrapped": false,
+    "dma_status": {
+      "mm2s": 4098,
+      "s2mm": 4098
+    },
+    "send_bytes": 1048576,
+    "recv_bytes": 1048576,
+    "buffers": {
+      "tx": {
+        "physical_address": 378535936,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      },
+      "rx": {
+        "physical_address": 379584512,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      }
+    },
+    "output_sha256": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62",
+    "raw_timestamps_ns": {
+      "config_start_ns": 123758079196910,
+      "config_end_ns": 123758079253243,
+      "dma_start_ns": 123758093460240,
+      "dma_end_ns": 123758102842757,
+      "snapshot_start_ns": 123758102973969,
+      "snapshot_end_ns": 123758110537132,
+      "observer_end_ns": 123758111768480
+    },
+    "timing_ns": {
+      "config_ns": 56333,
+      "dma_transaction_ns": 9382517,
+      "cpu_snapshot_ns": 7563163,
+      "inference_ns": 31340222,
+      "pl_core_frame_ns": 3022680,
+      "pl_core_cycles": 302268,
+      "observer_readback_ns": 1231348,
+      "pure_dma_transport_ns": null
+    },
+    "numeric_validation": "Structural/raw-channel/binary/FOV checks only; download raw NPY for independent full A/C2 integer comparison.",
+    "native_cache_policy": "Unmodified official transfer/wait/flush/invalidate; cacheable flag is not kernel mapping proof."
+  },
+  "input": {
+    "sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+    "file": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "rgb_sha256": "40e3e886e745feaaec6733f6f3317b038c6171b334c47e491fa60d0d0978f5ef",
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 512,
+      "nominal_scale": 0.7314285714285714,
+      "resized_width": 512,
+      "resized_height": 443,
+      "pad_left": 0,
+      "pad_top": 34,
+      "pad_right": 0,
+      "pad_bottom": 35,
+      "effective_scale_x": 0.7314285714285714,
+      "effective_scale_y": 0.7322314049586777,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    }
+  },
+  "output": {
+    "sha256": "0d5f26e9b1dd69f76b9af45f10950f13b15e5747470a58f602daafcdf1e62b62",
+    "shape": [
+      512,
+      512
+    ],
+    "dtype": "uint32",
+    "words": 262144,
+    "file": {
+      "bytes": 1048704,
+      "sha256": "7bddf3c7e785b31d31053f911f43d35ada70c55075f1e3f4b7d0f4395f96bcd5"
+    }
+  },
+  "quality": {
+    "source": "PS_COUNTS_OF_CURRENT_REAL_PL_MASK",
+    "vessel_pixels": 21861,
+    "fov_pixels": 211527,
+    "vessel_area_fraction": 0.10334850870101689,
+    "annotations": {
+      "AH": {
+        "tp": 10424,
+        "fp": 11437,
+        "fn": 7674,
+        "tn": 181992,
+        "dice": 0.5217347781476013,
+        "iou": 0.35293719316065686,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      },
+      "VK": {
+        "tp": 10785,
+        "fp": 11076,
+        "fn": 10066,
+        "tn": 179600,
+        "dice": 0.5050103015545983,
+        "iou": 0.33780186049425254,
+        "scope": "Current frame/mode, FOV only; not heldout macro accuracy or clinical acceptance"
+      }
+    },
+    "quality_reason": null
+  },
+  "timing_ns": {
+    "config_ns": 56333,
+    "dma_transaction_ns": 9382517,
+    "cpu_snapshot_ns": 7563163,
+    "inference_ns": 31340222,
+    "pl_core_frame_ns": 3022680,
+    "pl_core_cycles": 302268,
+    "observer_readback_ns": 1231348,
+    "pure_dma_transport_ns": null,
+    "queue_wait_ns": 7266215,
+    "input_read_ns": 93526043,
+    "raw_save_ns": 146751507,
+    "evaluation_ns": 153126923,
+    "png_encoding_ns": 4290957790,
+    "worker_result_ns": 4817738461
+  },
+  "raw_timestamps_ns": {
+    "worker_start_ns": 123757985200227,
+    "input_ready_ns": 123758078726270,
+    "config_start_ns": 123758079196910,
+    "config_end_ns": 123758079253243,
+    "dma_start_ns": 123758093460240,
+    "dma_end_ns": 123758102842757,
+    "snapshot_start_ns": 123758102973969,
+    "snapshot_end_ns": 123758110537132,
+    "observer_end_ns": 123758111768480,
+    "raw_saved_ns": 123758258519987,
+    "evaluation_end_ns": 123758411646910,
+    "encoding_end_ns": 123762702604700,
+    "worker_result_ready_ns": 123762802938688
+  },
+  "timing_scope": "Worker result excludes final JSON publication, HTTP/polling and browser; DMA overlaps PL. Inference includes config/allocation/native DMA/read-only snapshot. Core comes from the completed hardware snapshot and includes stream stalls; pure transport remains unavailable. Observer GPIO reads are measured separately after the inference snapshot.",
+  "images": {
+    "original": {
+      "url": "/api/runs/79520938fc0b47369efb55c1a00daea4/images/original",
+      "bytes": 265478,
+      "sha256": "79b199a965e177eb60309ee4319afb6755916b41fd94b479494ea84fad106d5d"
+    },
+    "enhanced": {
+      "url": "/api/runs/79520938fc0b47369efb55c1a00daea4/images/enhanced",
+      "bytes": 81684,
+      "sha256": "d3bb911d01037704f862f9bc50ae654194f305a05a354d6069e9555690ec8de3"
+    },
+    "mask": {
+      "url": "/api/runs/79520938fc0b47369efb55c1a00daea4/images/mask",
+      "bytes": 11336,
+      "sha256": "f86febc15454141ff236dbe69c58170aa73465ac5c6e558184f291338308768f"
+    },
+    "overlay": {
+      "url": "/api/runs/79520938fc0b47369efb55c1a00daea4/images/overlay",
+      "bytes": 283648,
+      "sha256": "8bba844813bcb54987cb845dcf922f91e3c761ad7ae8f4ca175f661207863d70"
+    },
+    "response": {
+      "url": "/api/runs/79520938fc0b47369efb55c1a00daea4/images/response",
+      "bytes": 53311,
+      "sha256": "41b2d8db3ee75fa06e70392404fc4d8f480b589d0dd11a59035a88330208cd19"
+    }
+  },
+  "files": {
+    "enhanced.png": {
+      "bytes": 81684,
+      "sha256": "d3bb911d01037704f862f9bc50ae654194f305a05a354d6069e9555690ec8de3"
+    },
+    "input_packed.npy": {
+      "bytes": 1048704,
+      "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+    },
+    "mask.png": {
+      "bytes": 11336,
+      "sha256": "f86febc15454141ff236dbe69c58170aa73465ac5c6e558184f291338308768f"
+    },
+    "original.png": {
+      "bytes": 265478,
+      "sha256": "79b199a965e177eb60309ee4319afb6755916b41fd94b479494ea84fad106d5d"
+    },
+    "output_packed.npy": {
+      "bytes": 1048704,
+      "sha256": "7bddf3c7e785b31d31053f911f43d35ada70c55075f1e3f4b7d0f4395f96bcd5"
+    },
+    "overlay.png": {
+      "bytes": 283648,
+      "sha256": "8bba844813bcb54987cb845dcf922f91e3c761ad7ae8f4ca175f661207863d70"
+    },
+    "response.png": {
+      "bytes": 53311,
+      "sha256": "41b2d8db3ee75fa06e70392404fc4d8f480b589d0dd11a59035a88330208cd19"
+    }
+  },
+  "browser_timing": null,
+  "formal_quality_experiment": false,
+  "overlay_presentation": {
+    "green_rgb": [
+      0,
+      255,
+      0
+    ],
+    "alpha_percent": 65,
+    "rounding": "integer_half_up",
+    "browser_slider": "Presentation only; exported PNG retains fixed 65%"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "status": "PASS_FOUR_REAL_ARRAYS_INDEPENDENT_M0_AND_FULL_WORD_EQUALITY",
+  "total_words": 1048576,
+  "mismatched_words": 0,
+  "arrays": [
+    {
+      "name": "b_snapshot_dma_512.npy",
+      "words": 262144,
+      "mismatched_words": 0,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b",
+      "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "mask_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "b_snapshot_cpu_512.npy",
+      "words": 262144,
+      "mismatched_words": 0,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b",
+      "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "mask_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "b_snapshot_direct_final_512.npy",
+      "words": 262144,
+      "mismatched_words": 0,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b",
+      "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "mask_values": [
+        0,
+        255
+      ]
+    },
+    {
+      "name": "b_snapshot_snapshot_final_512.npy",
+      "words": 262144,
+      "mismatched_words": 0,
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b",
+      "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+      "mask_values": [
+        0,
+        255
+      ]
+    }
+  ],
+  "all_npy_bytes_identical": true
+}

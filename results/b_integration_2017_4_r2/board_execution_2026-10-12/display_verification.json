@@ -1,0 +1,14 @@
+{
+  "status": "PASS_COLOR_PIXELS_MEDICAL_RAW_ARRAY_PANES_AND_NOTEBOOK_IMAGE",
+  "color_png_sha256": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492",
+  "medical_png_sha256": "47214e1fe1fb7f4dbad8f0dc945a5d559c2624da99e72dfd14c4aa7f7fe0df0d",
+  "display_size": [
+    1280,
+    720
+  ],
+  "algorithm_panel_size": [
+    512,
+    512
+  ],
+  "limit": "PNG and submitted-byte consistency is numerical; physical display observation comes from two user photographs, not from submission status. Font regions excluded only from independent layout regeneration; entire notebook/PNG pixels match."
+}

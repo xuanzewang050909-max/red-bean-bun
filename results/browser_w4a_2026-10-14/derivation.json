@@ -1,0 +1,137 @@
+{
+  "parent_commit": "34050d45d4fb2ae2981a6efa385d50397d0c9abc",
+  "source_board_evidence": "results/browser_w3_2026-10-14/board_execution_2026-10-14/verification.json",
+  "files": [
+    {
+      "source": "pynq_w3\\__init__.py",
+      "derived": "pynq_w4a\\__init__.py",
+      "source_identity": {
+        "bytes": 85,
+        "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+      },
+      "derived_identity": {
+        "bytes": 85,
+        "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+      },
+      "byte_identical": true
+    },
+    {
+      "source": "pynq_w3\\evaluation.py",
+      "derived": "pynq_w4a\\evaluation.py",
+      "source_identity": {
+        "bytes": 1912,
+        "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+      },
+      "derived_identity": {
+        "bytes": 1912,
+        "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+      },
+      "byte_identical": true
+    },
+    {
+      "source": "pynq_w3\\hardware.py",
+      "derived": "pynq_w4a\\hardware.py",
+      "source_identity": {
+        "bytes": 12701,
+        "sha256": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a"
+      },
+      "derived_identity": {
+        "bytes": 12701,
+        "sha256": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a"
+      },
+      "byte_identical": true
+    },
+    {
+      "source": "pynq_w3\\launch.py",
+      "derived": "pynq_w4a\\launch.py",
+      "source_identity": {
+        "bytes": 4602,
+        "sha256": "e72970625e55bfe97148f64996c2d2da4e413320454d4bf100c9715f8257cba3"
+      },
+      "derived_identity": {
+        "bytes": 4611,
+        "sha256": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b"
+      },
+      "byte_identical": false
+    },
+    {
+      "source": "pynq_w3\\protocol.py",
+      "derived": "pynq_w4a\\protocol.py",
+      "source_identity": {
+        "bytes": 5046,
+        "sha256": "11787772b31b766ed174b5a365d2452356aaa9bb88a547087988c3b98e0ebc18"
+      },
+      "derived_identity": {
+        "bytes": 5402,
+        "sha256": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab"
+      },
+      "byte_identical": false
+    },
+    {
+      "source": "pynq_w3\\quality_observer.py",
+      "derived": "pynq_w4a\\quality_observer.py",
+      "source_identity": {
+        "bytes": 4929,
+        "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+      },
+      "derived_identity": {
+        "bytes": 4929,
+        "sha256": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7"
+      },
+      "byte_identical": true
+    },
+    {
+      "source": "pynq_w3\\service.py",
+      "derived": "pynq_w4a\\service.py",
+      "source_identity": {
+        "bytes": 26949,
+        "sha256": "2d5d93f0f1e31ad5f8c3a9d12bdee351b14cb87e3cee051916c0e3bfd6ed4d9e"
+      },
+      "derived_identity": {
+        "bytes": 28566,
+        "sha256": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee"
+      },
+      "byte_identical": false
+    },
+    {
+      "source": "ui_w3\\app.js",
+      "derived": "ui_w4a\\app.js",
+      "source_identity": {
+        "bytes": 12969,
+        "sha256": "ef1e766f6370857760624e689398795c64387285fab92832ef3b7e5b7154ff7d"
+      },
+      "derived_identity": {
+        "bytes": 13617,
+        "sha256": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55"
+      },
+      "byte_identical": false
+    },
+    {
+      "source": "ui_w3\\index.html",
+      "derived": "ui_w4a\\index.html",
+      "source_identity": {
+        "bytes": 6052,
+        "sha256": "c0d8a2b2704e041b16503fc5b2d7d064d7dbc32384bbdff7684a486e926cc73b"
+      },
+      "derived_identity": {
+        "bytes": 6429,
+        "sha256": "e083dd94ad18b8b0f56f0bde32d4d95a16ae7689aa340e4335fc61af110150b1"
+      },
+      "byte_identical": false
+    },
+    {
+      "source": "ui_w3\\style.css",
+      "derived": "ui_w4a\\style.css",
+      "source_identity": {
+        "bytes": 5073,
+        "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+      },
+      "derived_identity": {
+        "bytes": 5073,
+        "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+      },
+      "byte_identical": true
+    }
+  ],
+  "scope": "PS delivery/measurement only. Same W2 hardware and W3 native driver/observer/evaluation."
+}

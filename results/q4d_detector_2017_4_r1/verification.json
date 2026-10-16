@@ -1,0 +1,2653 @@
+{
+  "status": "HOST_RELEASE_VERIFIED_BOARD_NOT_RUN",
+  "board_status": "NOT_RUN",
+  "quality_accepted": false,
+  "source_commit_before_archive": "77a7662a7d9b2bb3aeb81699214c25726ce3576a",
+  "host_distinct_tests": 49,
+  "initial_failures_preserved": 3,
+  "corrected_rechecks": 3,
+  "host_only_batch": {
+    "frames": 160,
+    "words": 26214400,
+    "png_images": 800,
+    "png_channel_values": 235929600
+  },
+  "actual_hardware": {
+    "status": "PASS_Q4D_HOST_ROUTED_HARDWARE_NOT_BOARD",
+    "hardware_clock_hz": 100000000,
+    "wns_ns": 0.107,
+    "whs_ns": 0.026,
+    "wpws_ns": 3.75,
+    "resources": {
+      "Slice LUTs": 38373.0,
+      "Slice Registers": 24833.0,
+      "Block RAM Tile": 97.5,
+      "DSPs": 30.0
+    },
+    "original_a4_standard_ip_parameters_exact": [
+      "ps7_0",
+      "axi_dma_0",
+      "loopback_fifo",
+      "point_control",
+      "reset_100m",
+      "memory_axi",
+      "const_one",
+      "const_zero"
+    ],
+    "reviewed_warnings": [
+      "DPIP-1",
+      "DPOP-1",
+      "DPOP-2",
+      "RTSTAT-10"
+    ],
+    "reviewed_warning_counts": {
+      "DPIP-1": 22,
+      "DPOP-1": 23,
+      "DPOP-2": 29,
+      "RTSTAT-10": 1
+    },
+    "reviewed_critical_warnings": {
+      "CRITICAL WARNING: [BD 41-737] Cannot set the parameter POLARITY on /reset_100m/aux_reset_in. It is read-only.": 1
+    },
+    "generated_rtl_rom": {
+      "background_sum.v": {
+        "bytes": 10278,
+        "sha256": "dadee79f5b6dbcdf01f8fe2c0214e2c8c403672dd82b355d879583d8b49d92ac"
+      },
+      "Block_proc.v": {
+        "bytes": 7967,
+        "sha256": "805ded7773453fd46ed540564f44e5c8402d0c0b75373881840ed815e31e7720"
+      },
+      "c7_filter.v": {
+        "bytes": 1261143,
+        "sha256": "d553ea3773dfdf838797d9762518efb0aed310714b8ade59b52c39cad6c3f274"
+      },
+      "c7_filter_k_buf_0bLp.v": {
+        "bytes": 1670,
+        "sha256": "a6bbd20db757e544dc42162f5226825ed7549c27aaf2ea6e77cec142bb3b2e52"
+      },
+      "c7_fork.v": {
+        "bytes": 17928,
+        "sha256": "07407b62ac6b54228170e4e0cce2d384b107cc05e07ab56380bf9dd09ef7e6a4"
+      },
+      "c7_join.v": {
+        "bytes": 20787,
+        "sha256": "d50e82a7f59dced19085be472b8065887ea14eeef066ae08c0a63b4eae32a444"
+      },
+      "closed_carrier.v": {
+        "bytes": 14517,
+        "sha256": "2456a429e9e1f6d732ec175e6a5626b99228918fabd6cb6fa2bd35499305fabd"
+      },
+      "column_filter.v": {
+        "bytes": 136481,
+        "sha256": "7c18226d0fa169566a01add3f3716a534cd085cf394f41d4aaf2442f730a6799"
+      },
+      "count_neighbors.v": {
+        "bytes": 8662,
+        "sha256": "389c47e620d088b1f3a6f2f547c35e9fea427666930eae301e60b8c765cc94a1"
+      },
+      "dilate_zero.v": {
+        "bytes": 43559,
+        "sha256": "b8080069854c4beede3279d5cfcc2bc1ab378140223d3300bdd91f76b8c4e6c5"
+      },
+      "enhance_aligned.v": {
+        "bytes": 22146,
+        "sha256": "7159ebbb3d0aee4a080bd4f2bfdef5e2351fe19d089354ef579688d2b1427d93"
+      },
+      "enhance_aligned_lut.v": {
+        "bytes": 1250,
+        "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992"
+      },
+      "enhance_aligned_lut_rom.dat": {
+        "bytes": 1026,
+        "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4"
+      },
+      "erode_zero.v": {
+        "bytes": 44620,
+        "sha256": "2d54ff21e1ddd8eed6065238d0bcedba52a8ace7e493cabe7c1437a22d44dddd"
+      },
+      "fifo_w10_d10_A.v": {
+        "bytes": 3110,
+        "sha256": "92ae694ff4c25841aaa2ae320d0ed8afdf8b700eb125962b7974cca72d386e30"
+      },
+      "fifo_w10_d12_A.v": {
+        "bytes": 3110,
+        "sha256": "af7a5341dfb2ce0d310f178d8fb693e9e9d2c30c16d02f134ccaee4634a85364"
+      },
+      "fifo_w10_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2"
+      },
+      "fifo_w10_d2_A.v": {
+        "bytes": 3104,
+        "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f"
+      },
+      "fifo_w10_d2_A_x.v": {
+        "bytes": 3112,
+        "sha256": "cc112adf98e9d1307621f206583c9ee236adaf2ae6b14fae90398bf92be7b76f"
+      },
+      "fifo_w10_d2_A_x_x.v": {
+        "bytes": 3120,
+        "sha256": "50240c2fea55819491eb355d5ba67334e8e0032d978d82f302917b95ece4899f"
+      },
+      "fifo_w10_d4_A.v": {
+        "bytes": 3104,
+        "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f"
+      },
+      "fifo_w10_d4_A_x.v": {
+        "bytes": 3112,
+        "sha256": "86f0c7fc1712f0728ab8b29ef99f9df83ec54aaff0a29543b8363eddffbe5a9f"
+      },
+      "fifo_w10_d6_A.v": {
+        "bytes": 3104,
+        "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f"
+      },
+      "fifo_w10_d7_A.v": {
+        "bytes": 3104,
+        "sha256": "7e788023725d4a6f27ae2cf3c9f456c46f13ee3e8cf0bb1354b5e1f8ca11d94e"
+      },
+      "fifo_w10_d9_A.v": {
+        "bytes": 3106,
+        "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea"
+      },
+      "fifo_w14_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20"
+      },
+      "fifo_w16_d32768_B.v": {
+        "bytes": 4147,
+        "sha256": "2d9fa1d1f0502160606ad7ea18ce6ca4a7fb0259db0ea955dc6343f0559fabc9"
+      },
+      "fifo_w16_d32_A.v": {
+        "bytes": 3110,
+        "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54"
+      },
+      "fifo_w16_d32_A_x.v": {
+        "bytes": 3118,
+        "sha256": "50bc9db2437234918d64b1a5e25a8601d282456b2a133f2ba86a39073a8e26a2"
+      },
+      "fifo_w16_d32_A_x_x.v": {
+        "bytes": 3126,
+        "sha256": "793d430425c7820373d8d69015e7dad1a2c7ec0977ced1013846e14f0472f4d2"
+      },
+      "fifo_w19_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013"
+      },
+      "fifo_w19_d1_A_x.v": {
+        "bytes": 3108,
+        "sha256": "aed88d36445e864f4b7052865321d1e4654c3f926a19cd3c2c59193a6be29000"
+      },
+      "fifo_w19_d1_A_x_x.v": {
+        "bytes": 3116,
+        "sha256": "961dcb66c097d16edd965e9b82706a5995d18568c8f1d5aa4693f5844743fdb3"
+      },
+      "fifo_w19_d2_A.v": {
+        "bytes": 3104,
+        "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca"
+      },
+      "fifo_w19_d2_A_x.v": {
+        "bytes": 3112,
+        "sha256": "f787f5b7e87a36eb7086c0f6c52449ff5fb95712d8083e293a91fff26c706e8d"
+      },
+      "fifo_w19_d2_A_x_x.v": {
+        "bytes": 3120,
+        "sha256": "810cc5d7180a199659d394e6c38cf7402a420e5dc516687dad52b86c8dac29e8"
+      },
+      "fifo_w19_d3_A.v": {
+        "bytes": 3104,
+        "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26"
+      },
+      "fifo_w1_d16384_B.v": {
+        "bytes": 4145,
+        "sha256": "7207612c7f5ea66d81d69b5a91f89b4c2687cafecdac669c21e8eb66e657925f"
+      },
+      "fifo_w1_d7_A.v": {
+        "bytes": 3098,
+        "sha256": "4a8e92948572d683523e59d92e703de345e039cc2c6caba6b70b41845d69de1e"
+      },
+      "fifo_w32_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "f2c43b40e5e75edb6f924ca2dbfc6e1b965db4b3f643a944e491676efa491d29"
+      },
+      "fifo_w32_d1_A_x.v": {
+        "bytes": 3108,
+        "sha256": "e3502036cc2e6b8f03bfdc05d9590338b5d287640502b3c6f2d8211db0922218"
+      },
+      "fifo_w32_d1_A_x_x.v": {
+        "bytes": 3116,
+        "sha256": "75a9858104ddeba0666f206dc75ff3b0b131ae54f9a4f93762a4bedd7871cf52"
+      },
+      "fifo_w32_d2048_B.v": {
+        "bytes": 4145,
+        "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3"
+      },
+      "fifo_w32_d2_A.v": {
+        "bytes": 3104,
+        "sha256": "e3bbc15ab31fbff266f0870fd2f834f4233ca1bc20585e848ec9bfcbc6dd3bde"
+      },
+      "fifo_w32_d2_A_x.v": {
+        "bytes": 3112,
+        "sha256": "b24e2be3118e0a901003587627ae55cf5711c5408d6b20e7ff8a2397e0435c4d"
+      },
+      "fifo_w32_d32_A.v": {
+        "bytes": 3110,
+        "sha256": "80ae8bfee5b405163f5352ca7f1adf7bab28a7483b94f6b55d7af3801e264f90"
+      },
+      "fifo_w32_d32_A_x.v": {
+        "bytes": 3118,
+        "sha256": "02d8a6d4a63ddc485d87723d550d40f652ebbfcdc26baea0cd22cb422f03883d"
+      },
+      "fifo_w32_d4096_B.v": {
+        "bytes": 4145,
+        "sha256": "7b3a7e14b262f96fd45451165f3879b1564a65baa59d1d7c24119642c86fc292"
+      },
+      "fifo_w32_d6_A.v": {
+        "bytes": 3104,
+        "sha256": "29d6f5e496bf22e7470d07ccda5b151dc8453af95e8a55d9d8072bbbcfced473"
+      },
+      "fifo_w32_d8192_B.v": {
+        "bytes": 4145,
+        "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2"
+      },
+      "fifo_w64_d2048_B.v": {
+        "bytes": 4145,
+        "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882"
+      },
+      "fifo_w64_d32_A.v": {
+        "bytes": 4140,
+        "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f"
+      },
+      "fifo_w64_d8192_B.v": {
+        "bytes": 4145,
+        "sha256": "3308b68ac61ffa07980d9df29bfb7abc7848f419d7e61e200a19381909013b50"
+      },
+      "fifo_w8_d16384_B.v": {
+        "bytes": 4145,
+        "sha256": "1401cf4d09793b92c0ebbadbadaae05c8602d41235e802bd9a312c4a844c1707"
+      },
+      "fifo_w8_d32_A.v": {
+        "bytes": 3104,
+        "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09"
+      },
+      "fifo_w8_d32_A_x.v": {
+        "bytes": 3112,
+        "sha256": "35d34f0cb8a2dce856cbb202f0dcce8012afba384aef3d407fc857b9ccbf7c61"
+      },
+      "fifo_w8_d8192_B.v": {
+        "bytes": 4143,
+        "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918"
+      },
+      "Filter2D.v": {
+        "bytes": 55588,
+        "sha256": "f6792a36f70dd50731edc7b67fefcbca14588783018b896f100e8075070088b3"
+      },
+      "Filter2D_1.v": {
+        "bytes": 56233,
+        "sha256": "7695ac6990f3dba3485e325f36d5440a69b5aa7adf9b4c20ce63ebfaa7a2ca29"
+      },
+      "Filter2D_k_buf_0_bkb.v": {
+        "bytes": 1668,
+        "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180"
+      },
+      "filter_sum.v": {
+        "bytes": 8570,
+        "sha256": "898967798c4e98cd991b716f72e1ee87ef83eaa75c570f47132762a9555e1ed8"
+      },
+      "final_join.v": {
+        "bytes": 18001,
+        "sha256": "42be7de2b1f98dd5a8464e780a557c29496a5f79d6a39eb36339ab70808f5061"
+      },
+      "finite_gap_filter.v": {
+        "bytes": 148491,
+        "sha256": "8c5602fced2da28f05525d7825e8c1505e73c67d6a08a2355933cedc24c5a1a2"
+      },
+      "fork_input.v": {
+        "bytes": 15171,
+        "sha256": "062144100820ed9d5ca917f8e2038341be8bd64db8c16f4dd40756eed7d763fc"
+      },
+      "gaussian_round.v": {
+        "bytes": 14148,
+        "sha256": "24e06af2eda4da34f1c663590816063470ca39f5b443787cf4458a40da748a15"
+      },
+      "gaussian_sum.v": {
+        "bytes": 8574,
+        "sha256": "6c280180179aa6004cfbcb5bbd77e83967b5c2b9d4eb4721b77c448c98c5b8d5"
+      },
+      "initial_fov.v": {
+        "bytes": 16906,
+        "sha256": "cf0dff76e372eb2fd9e6f2680d726b938ce6015d2b2ac37c614a64e4e8c6df65"
+      },
+      "profile_evidence.v": {
+        "bytes": 1029117,
+        "sha256": "b89df57b0b0da1d8fcd46c7f78482c3e36e50848965f4cd4fe870c593cd16987"
+      },
+      "refined_join.v": {
+        "bytes": 16665,
+        "sha256": "673e62fdd12eadf4578e0952a70bee630737812369b7e82e93be8e1b9130f173"
+      },
+      "response_carrier.v": {
+        "bytes": 23090,
+        "sha256": "91211bc0821fae095dad5647f9a937ff73b2fb30b22dd54c9e8fc38882ea161d"
+      },
+      "retina_c2_support.v": {
+        "bytes": 494963,
+        "sha256": "65f753142d92351a79aea6df4d6e6d1c6d4c94050b0634ce620c7044d49f7a5f"
+      },
+      "retina_detector_c5.v": {
+        "bytes": 48433,
+        "sha256": "c0943ca5a2a87f9637357bfd4cf04bc916c76a894cc876b3f7c8c10d3f0ebc74"
+      },
+      "retina_detector_c5_B.v": {
+        "bytes": 5279,
+        "sha256": "3c522b925b2df6393f6f617ab2661024dcded5b4a9fbd6ad493a5e24e3d0ee4a"
+      },
+      "retina_detector_c5_B_1.v": {
+        "bytes": 14881,
+        "sha256": "1b77a981f978527ec6ea9f6af8854a17370751742de9affedd19c58785219457"
+      },
+      "retina_detector_c5_e.v": {
+        "bytes": 7302,
+        "sha256": "8016d742ae4814dfc9d37ca3197e2246b538633d54a52fc5e4d09ebf242b1283"
+      },
+      "retina_detector_hb2s.v": {
+        "bytes": 3485,
+        "sha256": "06ecc81bc44f3e238e51b32d5eeba18c58f8fdd405e421bfe303731c5d052824"
+      },
+      "retina_detector_hb3s.v": {
+        "bytes": 1371,
+        "sha256": "2173557ce6d159810425c090020221df232003b3057b0281bf343acf41e7bcae"
+      },
+      "retina_detector_hb4t.v": {
+        "bytes": 783,
+        "sha256": "262393c29a01ac689a94393e50222649534e18fbc48573a2c273cc93c06c2d43"
+      },
+      "retina_detector_hb5t.v": {
+        "bytes": 1371,
+        "sha256": "ee00204f7673bc0669755afdff90b0b9f4b8fb0bca8e416c263bc283ee490776"
+      },
+      "retina_detector_hb6t.v": {
+        "bytes": 1371,
+        "sha256": "fbda4ad1bf492babab379737111d091bc3b980f42136c9014e28e491eec79758"
+      },
+      "retina_detector_hb7t.v": {
+        "bytes": 783,
+        "sha256": "5725e7505a49b3f5667e029f3160ef6f8a45788a712ddea6f9da569d89ac1cdb"
+      },
+      "retina_detector_hb8t.v": {
+        "bytes": 1370,
+        "sha256": "d67e896950cac045c2fb8eeeb574ff7a493868d3d0c2d64677617a93863422d8"
+      },
+      "retina_detector_hb9t.v": {
+        "bytes": 783,
+        "sha256": "798d10efa2ea9b66087e5ca830dc0d4be1e3f30bb14c99a16d67f45ddca7c6b2"
+      },
+      "retina_detector_hcau.v": {
+        "bytes": 1370,
+        "sha256": "5e76ce16ae267e31d7c9613a1b3951aafd6cf397a6c277075805e1c2992a568b"
+      },
+      "retina_detector_hcbu.v": {
+        "bytes": 783,
+        "sha256": "d6017dde910ce4fc6fb4939971dc159e315807cac59d679c84582bf22125a2ed"
+      },
+      "retina_detector_heOg.v": {
+        "bytes": 1170,
+        "sha256": "94c90a872b6909a31787b4bc50648020a8cdde04d0682a0ecc9be8f0144e01b4"
+      },
+      "retina_detector_hls.v": {
+        "bytes": 20975,
+        "sha256": "26d1de5b4ce61e31cee06921af9cdc01c37b3c3353cf56fbdb3d7440739a3805"
+      },
+      "retina_detector_hShg.v": {
+        "bytes": 3671,
+        "sha256": "359cd1c181ecb813554c3ec448b3df683e5d31ec3723779101626479a24092f8"
+      },
+      "retina_detector_hudo.v": {
+        "bytes": 2942,
+        "sha256": "2844f0cb1a5154b770bfe438a1b3363e11885638ee2e3e354466d808755f1168"
+      },
+      "retina_detector_hyd2.v": {
+        "bytes": 783,
+        "sha256": "72e674738f7158ac7b0a0c2f1c71c0be8de02ec87b84649478a80827c02a552c"
+      },
+      "retina_refined_base.v": {
+        "bytes": 75889,
+        "sha256": "c64ab2819ed3206de2d524be85ae573697801a5cb2b4ea0f3650efccfda6ea49"
+      },
+      "retina_refined_base_s.v": {
+        "bytes": 31101,
+        "sha256": "122c5e9b8cea4e55f6af794f22703c43eb4ee3eee329547c6e3bd32d3aa5a369"
+      },
+      "row_filter.v": {
+        "bytes": 61276,
+        "sha256": "ad77af808b1657f6a0eb52e635f487fa8ad1b699100f660da7f7cb1cb63c0892"
+      },
+      "row_filter_l_bordvdy.v": {
+        "bytes": 1674,
+        "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7"
+      },
+      "seed_flags.v": {
+        "bytes": 19383,
+        "sha256": "6385f3c1429d096cd1382f712585b1e8d4393a0635cfba17e0d2ddd417a17904"
+      },
+      "select_response.v": {
+        "bytes": 21174,
+        "sha256": "460c02fdc8700435b5f48979ed405cae9d35e777caa8521df11618ec3966266a"
+      },
+      "SepFilter2D.v": {
+        "bytes": 7857,
+        "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d"
+      },
+      "split_words.v": {
+        "bytes": 14143,
+        "sha256": "b7404a137c747ece753a7efd30fc0fb4a1e6200f44c395d388abff5e5b776293"
+      },
+      "start_for_backgro1iI.v": {
+        "bytes": 3130,
+        "sha256": "eafefee21e4cecbad6db0461336332b13cb2c90659474c510fb88560a3748feb"
+      },
+      "start_for_c7_filtcdu.v": {
+        "bytes": 3130,
+        "sha256": "7455e273a97e4cb42ed3f6d95e6bf06daa97bb4b0adbdcdc66497f78ec2f95eb"
+      },
+      "start_for_c7_joinceu.v": {
+        "bytes": 3130,
+        "sha256": "2ef0e96d4204127e299169d2d4d976567839293b833bcce5d2ab975da2f1f14b"
+      },
+      "start_for_closed_bck.v": {
+        "bytes": 3132,
+        "sha256": "68125441b6d476eb00fa91dc095582e91d93ff1dac83c4d7a4aabb4850baf1d7"
+      },
+      "start_for_count_n7jG.v": {
+        "bytes": 3132,
+        "sha256": "230419c2b7e1c2353398608aac0f048d1341f995ead5a4196fec4e033c5def1f"
+      },
+      "start_for_dilate_5jm.v": {
+        "bytes": 3132,
+        "sha256": "fcaf4b7fb0d1365e69fa7c551ddd9223f91dc95bf4bde412fafad89351396730"
+      },
+      "start_for_enhance8jQ.v": {
+        "bytes": 3130,
+        "sha256": "4a6bc8a3b2dc8a0d2417e1d762d4b712dff120814c2d2e301e94468c4f4ff071"
+      },
+      "start_for_erode_z6jw.v": {
+        "bytes": 3132,
+        "sha256": "a522af4702b24ce2b3feabb6c99dbe8a3091dd28c5fa0c992be22fa4e5fb7f4c"
+      },
+      "start_for_filter_0iy.v": {
+        "bytes": 3130,
+        "sha256": "f6e25649113cbe7f3433897d5c416a4a05935bd50e425ec0a405a1e4fb9e983f"
+      },
+      "start_for_final_jbbk.v": {
+        "bytes": 3132,
+        "sha256": "28d69e83a305058d46250024543691698205d25e52fa2764f8d53bae7f643179"
+      },
+      "start_for_finite_bFp.v": {
+        "bytes": 3130,
+        "sha256": "d83bbdeb99d7e7eea5ca8f51bd9e35e944a017ccc079b8c22ef075a991c60e7f"
+      },
+      "start_for_gaussiabHp.v": {
+        "bytes": 3130,
+        "sha256": "07c0e48d14dafd29018db6ef7aaf116c9a501b17e8964c08f0efb8d0d72c69de"
+      },
+      "start_for_gaussiabIp.v": {
+        "bytes": 3130,
+        "sha256": "9cf64bc423b9de58ab0b85c554ae6142a82896f1dc7f22984103c79e377b37c5"
+      },
+      "start_for_initialbak.v": {
+        "bytes": 3130,
+        "sha256": "61c481d5eaa5d4ba5edaf013fb80fd7b8131f4394bfe2c5a62b388d0967ed561"
+      },
+      "start_for_profilebEo.v": {
+        "bytes": 3130,
+        "sha256": "4f708ea546dd8193949ca4fd67b0895625d0d3d78c9db0ea598f33423eaef9af"
+      },
+      "start_for_refinedbKp.v": {
+        "bytes": 3130,
+        "sha256": "d898f6408027f93e9d1b663bf1f8a0cef4d547bf6fcbf6e4c83a64bacbfc6d5d"
+      },
+      "start_for_respons9j0.v": {
+        "bytes": 3130,
+        "sha256": "957d61e348393d392ad562f3c89c2da681f1d0f42c859fcb1ebab9f430a4cb6a"
+      },
+      "start_for_retina_2iS.v": {
+        "bytes": 3130,
+        "sha256": "d89d0765cd3ef640a912ba53888d1efae2422e5fe5421c08333ef1945333eda1"
+      },
+      "start_for_retina_bCo.v": {
+        "bytes": 3126,
+        "sha256": "8dbc74a2f806b38a56c0595794d035be64192d321ebdfc993bcdf31c876465a0"
+      },
+      "start_for_retina_bDo.v": {
+        "bytes": 3126,
+        "sha256": "73b49f59ebe7099fd62f6a28f7f1e2a8431596f2d8d8a96549d1516168a3014a"
+      },
+      "start_for_retina_bGp.v": {
+        "bytes": 3130,
+        "sha256": "2fa6c8fc90ea0ad65c28e35a4893f6f66f6c4ef57616158a6ba1d2214ffc9a4e"
+      },
+      "start_for_retina_ccu.v": {
+        "bytes": 3130,
+        "sha256": "bb458899a99bd729e0cfd0406cd1c7b30cb4c3e389d2fac8cf3e998defd93e9d"
+      },
+      "start_for_row_filxdS.v": {
+        "bytes": 3126,
+        "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2"
+      },
+      "start_for_seed_flbJp.v": {
+        "bytes": 3130,
+        "sha256": "530faea873f464f858750687e8dfbb6e9288608b18da70b6d3b966af6cef85dd"
+      },
+      "start_for_select_3i2.v": {
+        "bytes": 3130,
+        "sha256": "b1e6f13e1fb95842fe46974f4eea60e0de270d0cb397d9dbb5b9867c4befab4b"
+      },
+      "start_for_thresho4jc.v": {
+        "bytes": 3130,
+        "sha256": "e5ec1b91981d5cefbd60099b63b7337791ff9577df55cf6ab10a77228d5e8e24"
+      },
+      "threshold_binary.v": {
+        "bytes": 19621,
+        "sha256": "0f156fa6b756c9b9d3289c0e7776ba9d9413ce6b16d9262020266a253beea478"
+      }
+    },
+    "ip_dict": {
+      "axi_dma_0": {
+        "fullpath": "axi_dma_0",
+        "type": "xilinx.com:ip:axi_dma:7.1",
+        "bdtype": null,
+        "state": null,
+        "addr_range": 65536,
+        "phys_addr": 1077936128,
+        "mem_id": "S_AXI_LITE",
+        "memtype": "REGISTER",
+        "gpio": {},
+        "interrupts": {},
+        "parameters": {
+          "C_S_AXI_LITE_ADDR_WIDTH": "10",
+          "C_S_AXI_LITE_DATA_WIDTH": "32",
+          "C_DLYTMR_RESOLUTION": "125",
+          "C_PRMRY_IS_ACLK_ASYNC": "0",
+          "C_ENABLE_MULTI_CHANNEL": "0",
+          "C_NUM_MM2S_CHANNELS": "1",
+          "C_NUM_S2MM_CHANNELS": "1",
+          "C_INCLUDE_SG": "0",
+          "C_SG_INCLUDE_STSCNTRL_STRM": "0",
+          "C_SG_USE_STSAPP_LENGTH": "0",
+          "C_SG_LENGTH_WIDTH": "23",
+          "C_M_AXI_SG_ADDR_WIDTH": "32",
+          "C_M_AXI_SG_DATA_WIDTH": "32",
+          "C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH": "32",
+          "C_S_AXIS_S2MM_STS_TDATA_WIDTH": "32",
+          "C_MICRO_DMA": "0",
+          "C_INCLUDE_MM2S": "1",
+          "C_INCLUDE_MM2S_SF": "1",
+          "C_MM2S_BURST_SIZE": "16",
+          "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+          "C_M_AXI_MM2S_DATA_WIDTH": "64",
+          "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+          "C_INCLUDE_MM2S_DRE": "0",
+          "C_INCLUDE_S2MM": "1",
+          "C_INCLUDE_S2MM_SF": "1",
+          "C_S2MM_BURST_SIZE": "16",
+          "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+          "C_M_AXI_S2MM_DATA_WIDTH": "32",
+          "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+          "C_INCLUDE_S2MM_DRE": "0",
+          "C_FAMILY": "zynq",
+          "Component_Name": "q4d_detector_axi_dma_0_0",
+          "c_include_sg": "0",
+          "c_enable_multi_channel": "0",
+          "c_num_mm2s_channels": "1",
+          "c_num_s2mm_channels": "1",
+          "c_sg_length_width": "23",
+          "c_dlytmr_resolution": "125",
+          "c_prmry_is_aclk_async": "0",
+          "c_sg_include_stscntrl_strm": "0",
+          "c_micro_dma": "0",
+          "c_include_mm2s": "1",
+          "c_m_axi_mm2s_data_width": "64",
+          "c_m_axis_mm2s_tdata_width": "32",
+          "c_include_mm2s_dre": "0",
+          "c_include_mm2s_sf": "1",
+          "c_mm2s_burst_size": "16",
+          "c_include_s2mm": "1",
+          "c_sg_use_stsapp_length": "0",
+          "c_m_axi_s2mm_data_width": "32",
+          "c_s_axis_s2mm_tdata_width": "32",
+          "c_include_s2mm_dre": "0",
+          "c_include_s2mm_sf": "1",
+          "c_s2mm_burst_size": "16",
+          "c_addr_width": "32",
+          "c_single_interface": "0",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x40400000",
+          "C_HIGHADDR": "0x4040FFFF"
+        },
+        "registers": {
+          "MM2S_DMACR": {
+            "address_offset": 0,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Control Register",
+            "fields": {
+              "RS": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "Reset": {
+                "bit_offset": 2,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "Keyhole": {
+                "bit_offset": 3,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "Cyclic_BD_Enable": {
+                "bit_offset": 4,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "IOC_IrqEn": {
+                "bit_offset": 12,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "Dly_IrqEn": {
+                "bit_offset": 13,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "Err_IrqEn": {
+                "bit_offset": 14,
+                "bit_width": 1,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "IRQThreshold": {
+                "bit_offset": 16,
+                "bit_width": 8,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              },
+              "IRQDelay": {
+                "bit_offset": 24,
+                "bit_width": 8,
+                "description": "MM2S DMA Control Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_DMASR": {
+            "address_offset": 4,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Status Register",
+            "fields": {
+              "Halted": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "Idle": {
+                "bit_offset": 1,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "SGIncld": {
+                "bit_offset": 3,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "DMAIntErr": {
+                "bit_offset": 4,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "DMASlvErr": {
+                "bit_offset": 5,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "DMADecErr": {
+                "bit_offset": 6,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "SGIntErr": {
+                "bit_offset": 8,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "SGSlvErr": {
+                "bit_offset": 9,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "SGDecErr": {
+                "bit_offset": 10,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "IOC_Irq": {
+                "bit_offset": 12,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-write"
+              },
+              "Dly_Irq": {
+                "bit_offset": 13,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-write"
+              },
+              "Err_Irq": {
+                "bit_offset": 14,
+                "bit_width": 1,
+                "description": "MM2S DMA Status Register",
+                "access": "read-write"
+              },
+              "IRQThresholdSts": {
+                "bit_offset": 16,
+                "bit_width": 8,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              },
+              "IRQDelaySts": {
+                "bit_offset": 24,
+                "bit_width": 8,
+                "description": "MM2S DMA Status Register",
+                "access": "read-only"
+              }
+            }
+          },
+          "MM2S_CURDESC": {
+            "address_offset": 8,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Current Descriptor Pointer Register",
+            "fields": {
+              "Current_Descriptor_Pointer": {
+                "bit_offset": 6,
+                "bit_width": 26,
+                "description": "MM2S DMA Current Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_CURDESC_MSB": {
+            "address_offset": 12,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Current Descriptor Pointer Register",
+            "fields": {
+              "Current_Descriptor_Pointer": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "MM2S DMA Current Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_TAILDESC": {
+            "address_offset": 16,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Tail Descriptor Pointer Register",
+            "fields": {
+              "Tail_Descriptor_Pointer": {
+                "bit_offset": 6,
+                "bit_width": 26,
+                "description": "MM2S DMA Tail Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_TAILDESC_MSB": {
+            "address_offset": 20,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Tail Descriptor Pointer Register",
+            "fields": {
+              "Tail_Descriptor_Pointer": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "MM2S DMA Tail Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_SA": {
+            "address_offset": 24,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S Source Address Register",
+            "fields": {
+              "Source_Address": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "MM2S Source Address Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_SA_MSB": {
+            "address_offset": 28,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S Source Address Register",
+            "fields": {
+              "Source_Address": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "MM2S Source Address Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "MM2S_LENGTH": {
+            "address_offset": 40,
+            "size": 32,
+            "access": "read-write",
+            "description": "MM2S DMA Transfer Length Register",
+            "fields": {
+              "Length": {
+                "bit_offset": 0,
+                "bit_width": 23,
+                "description": "MM2S DMA Transfer Length Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "SG_CTL": {
+            "address_offset": 44,
+            "size": 32,
+            "access": "read-write",
+            "description": "Scatter/Gather User and Cache Control Register",
+            "fields": {
+              "SG_CACHE": {
+                "bit_offset": 0,
+                "bit_width": 4,
+                "description": "Scatter/Gather User and Cache Control Register",
+                "access": "read-write"
+              },
+              "SG_USER": {
+                "bit_offset": 8,
+                "bit_width": 4,
+                "description": "Scatter/Gather User and Cache Control Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_DMACR": {
+            "address_offset": 48,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Control Register",
+            "fields": {
+              "RS": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "Reset": {
+                "bit_offset": 2,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "Keyhole": {
+                "bit_offset": 3,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "Cyclic_BD_Enable": {
+                "bit_offset": 4,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "IOC_IrqEn": {
+                "bit_offset": 12,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "Dly_IrqEn": {
+                "bit_offset": 13,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "Err_IrqEn": {
+                "bit_offset": 14,
+                "bit_width": 1,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "IRQThreshold": {
+                "bit_offset": 16,
+                "bit_width": 8,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              },
+              "IRQDelay": {
+                "bit_offset": 24,
+                "bit_width": 8,
+                "description": "S2MM DMA Control Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_DMASR": {
+            "address_offset": 52,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Status Register",
+            "fields": {
+              "Halted": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "Idle": {
+                "bit_offset": 1,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "SGIncld": {
+                "bit_offset": 3,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "DMAIntErr": {
+                "bit_offset": 4,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "DMASlvErr": {
+                "bit_offset": 5,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "DMADecErr": {
+                "bit_offset": 6,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "SGIntErr": {
+                "bit_offset": 8,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "SGSlvErr": {
+                "bit_offset": 9,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "SGDecErr": {
+                "bit_offset": 10,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "IOC_Irq": {
+                "bit_offset": 12,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-write"
+              },
+              "Dly_Irq": {
+                "bit_offset": 13,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-write"
+              },
+              "Err_Irq": {
+                "bit_offset": 14,
+                "bit_width": 1,
+                "description": "S2MM DMA Status Register",
+                "access": "read-write"
+              },
+              "IRQThresholdSts": {
+                "bit_offset": 16,
+                "bit_width": 8,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              },
+              "IRQDelaySts": {
+                "bit_offset": 24,
+                "bit_width": 8,
+                "description": "S2MM DMA Status Register",
+                "access": "read-only"
+              }
+            }
+          },
+          "S2MM_CURDESC": {
+            "address_offset": 56,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Current Descriptor Pointer Register",
+            "fields": {
+              "Current_Descriptor_Pointer": {
+                "bit_offset": 6,
+                "bit_width": 26,
+                "description": "S2MM DMA Current Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_CURDESC_MSB": {
+            "address_offset": 60,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Current Descriptor Pointer Register",
+            "fields": {
+              "Current_Descriptor_Pointer": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "S2MM DMA Current Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_TAILDESC": {
+            "address_offset": 64,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Tail Descriptor Pointer Register",
+            "fields": {
+              "Tail_Descriptor_Pointer": {
+                "bit_offset": 6,
+                "bit_width": 26,
+                "description": "S2MM DMA Tail Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_TAILDESC_MSB": {
+            "address_offset": 68,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Tail Descriptor Pointer Register",
+            "fields": {
+              "Tail_Descriptor_Pointer": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "S2MM DMA Tail Descriptor Pointer Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_DA": {
+            "address_offset": 72,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Destination Address Register",
+            "fields": {
+              "Destination_Address": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "S2MM DMA Destination Address Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_DA_MSB": {
+            "address_offset": 76,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM Destination Address Register",
+            "fields": {
+              "Destination_Address": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "S2MM Destination Address Register",
+                "access": "read-write"
+              }
+            }
+          },
+          "S2MM_LENGTH": {
+            "address_offset": 88,
+            "size": 32,
+            "access": "read-write",
+            "description": "S2MM DMA Transfer Length Register",
+            "fields": {
+              "Length": {
+                "bit_offset": 0,
+                "bit_width": 23,
+                "description": "S2MM DMA Transfer Length Register",
+                "access": "read-write"
+              }
+            }
+          }
+        }
+      },
+      "point_control": {
+        "fullpath": "point_control",
+        "type": "xilinx.com:ip:axi_gpio:2.0",
+        "bdtype": null,
+        "state": null,
+        "addr_range": 65536,
+        "phys_addr": 1092616192,
+        "mem_id": "S_AXI",
+        "memtype": "REGISTER",
+        "gpio": {},
+        "interrupts": {},
+        "parameters": {
+          "C_FAMILY": "zynq",
+          "C_S_AXI_ADDR_WIDTH": "9",
+          "C_S_AXI_DATA_WIDTH": "32",
+          "C_GPIO_WIDTH": "32",
+          "C_GPIO2_WIDTH": "32",
+          "C_ALL_INPUTS": "0",
+          "C_ALL_INPUTS_2": "1",
+          "C_ALL_OUTPUTS": "1",
+          "C_ALL_OUTPUTS_2": "0",
+          "C_INTERRUPT_PRESENT": "0",
+          "C_DOUT_DEFAULT": "0x00000000",
+          "C_TRI_DEFAULT": "0xFFFFFFFF",
+          "C_IS_DUAL": "1",
+          "C_DOUT_DEFAULT_2": "0x00000000",
+          "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+          "Component_Name": "q4d_detector_point_control_0",
+          "USE_BOARD_FLOW": "false",
+          "GPIO_BOARD_INTERFACE": "Custom",
+          "GPIO2_BOARD_INTERFACE": "Custom",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x41200000",
+          "C_HIGHADDR": "0x4120FFFF"
+        },
+        "registers": {
+          "GPIO_DATA": {
+            "address_offset": 0,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-1 AXI GPIO Data register",
+            "fields": {
+              "Channel-1 GPIO DATA": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-1 AXI GPIO Data register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GPIO_TRI": {
+            "address_offset": 4,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-1 AXI GPIO 3-State Control register",
+            "fields": {
+              "Channel-1 GPIO TRI": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-1 AXI GPIO 3-State Control register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GPIO2_DATA": {
+            "address_offset": 8,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-2 AXI GPIO Data register",
+            "fields": {
+              "Channel-2 GPIO DATA": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-2 AXI GPIO Data register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GPIO2_TRI": {
+            "address_offset": 12,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-2 AXI GPIO 3-State Control register",
+            "fields": {
+              "Channel-2 GPIO TRI": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-2 AXI GPIO 3-State Control register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GIER": {
+            "address_offset": 284,
+            "size": 32,
+            "access": "read-write",
+            "description": "Global Interrupt Enable register",
+            "fields": {
+              "Global Interrupt Enable": {
+                "bit_offset": 31,
+                "bit_width": 1,
+                "description": "Global Interrupt Enable register",
+                "access": "read-write"
+              }
+            }
+          },
+          "IP_IER": {
+            "address_offset": 296,
+            "size": 32,
+            "access": "read-write",
+            "description": "IP Interrupt Enable register",
+            "fields": {
+              "Channel-1 Interrupt Enable": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "IP Interrupt Enable register",
+                "access": "read-write"
+              },
+              "Channel-2 Interrupt Enable": {
+                "bit_offset": 1,
+                "bit_width": 1,
+                "description": "IP Interrupt Enable register",
+                "access": "read-write"
+              }
+            }
+          },
+          "IP_ISR": {
+            "address_offset": 288,
+            "size": 32,
+            "access": "read-write",
+            "description": "IP Interrupt Status register",
+            "fields": {
+              "Channel-1 Interrupt Status": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "IP Interrupt Status register",
+                "access": "read-write"
+              },
+              "Channel-2 Interrupt Status": {
+                "bit_offset": 1,
+                "bit_width": 1,
+                "description": "IP Interrupt Status register",
+                "access": "read-write"
+              }
+            }
+          }
+        }
+      },
+      "point_observe": {
+        "fullpath": "point_observe",
+        "type": "xilinx.com:ip:axi_gpio:2.0",
+        "bdtype": null,
+        "state": null,
+        "addr_range": 65536,
+        "phys_addr": 1092681728,
+        "mem_id": "S_AXI",
+        "memtype": "REGISTER",
+        "gpio": {},
+        "interrupts": {},
+        "parameters": {
+          "C_FAMILY": "zynq",
+          "C_S_AXI_ADDR_WIDTH": "9",
+          "C_S_AXI_DATA_WIDTH": "32",
+          "C_GPIO_WIDTH": "32",
+          "C_GPIO2_WIDTH": "32",
+          "C_ALL_INPUTS": "0",
+          "C_ALL_INPUTS_2": "1",
+          "C_ALL_OUTPUTS": "1",
+          "C_ALL_OUTPUTS_2": "0",
+          "C_INTERRUPT_PRESENT": "0",
+          "C_DOUT_DEFAULT": "0x00000000",
+          "C_TRI_DEFAULT": "0xFFFFFFFF",
+          "C_IS_DUAL": "1",
+          "C_DOUT_DEFAULT_2": "0x00000000",
+          "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+          "Component_Name": "q4d_detector_point_observe_0",
+          "USE_BOARD_FLOW": "false",
+          "GPIO_BOARD_INTERFACE": "Custom",
+          "GPIO2_BOARD_INTERFACE": "Custom",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x41210000",
+          "C_HIGHADDR": "0x4121FFFF"
+        },
+        "registers": {
+          "GPIO_DATA": {
+            "address_offset": 0,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-1 AXI GPIO Data register",
+            "fields": {
+              "Channel-1 GPIO DATA": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-1 AXI GPIO Data register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GPIO_TRI": {
+            "address_offset": 4,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-1 AXI GPIO 3-State Control register",
+            "fields": {
+              "Channel-1 GPIO TRI": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-1 AXI GPIO 3-State Control register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GPIO2_DATA": {
+            "address_offset": 8,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-2 AXI GPIO Data register",
+            "fields": {
+              "Channel-2 GPIO DATA": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-2 AXI GPIO Data register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GPIO2_TRI": {
+            "address_offset": 12,
+            "size": 32,
+            "access": "read-write",
+            "description": "Channel-2 AXI GPIO 3-State Control register",
+            "fields": {
+              "Channel-2 GPIO TRI": {
+                "bit_offset": 0,
+                "bit_width": 32,
+                "description": "Channel-2 AXI GPIO 3-State Control register",
+                "access": "read-write"
+              }
+            }
+          },
+          "GIER": {
+            "address_offset": 284,
+            "size": 32,
+            "access": "read-write",
+            "description": "Global Interrupt Enable register",
+            "fields": {
+              "Global Interrupt Enable": {
+                "bit_offset": 31,
+                "bit_width": 1,
+                "description": "Global Interrupt Enable register",
+                "access": "read-write"
+              }
+            }
+          },
+          "IP_IER": {
+            "address_offset": 296,
+            "size": 32,
+            "access": "read-write",
+            "description": "IP Interrupt Enable register",
+            "fields": {
+              "Channel-1 Interrupt Enable": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "IP Interrupt Enable register",
+                "access": "read-write"
+              },
+              "Channel-2 Interrupt Enable": {
+                "bit_offset": 1,
+                "bit_width": 1,
+                "description": "IP Interrupt Enable register",
+                "access": "read-write"
+              }
+            }
+          },
+          "IP_ISR": {
+            "address_offset": 288,
+            "size": 32,
+            "access": "read-write",
+            "description": "IP Interrupt Status register",
+            "fields": {
+              "Channel-1 Interrupt Status": {
+                "bit_offset": 0,
+                "bit_width": 1,
+                "description": "IP Interrupt Status register",
+                "access": "read-write"
+              },
+              "Channel-2 Interrupt Status": {
+                "bit_offset": 1,
+                "bit_width": 1,
+                "description": "IP Interrupt Status register",
+                "access": "read-write"
+              }
+            }
+          }
+        }
+      }
+    },
+    "artifacts": {
+      "q4d_detector.hwh": {
+        "bytes": 379665,
+        "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+      },
+      "q4d_detector.bit": {
+        "bytes": 4045680,
+        "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+      }
+    },
+    "board_status": "NOT_RUN"
+  },
+  "actual_rtl": {
+    "status": "PASS_ACTUAL_C7_RTL_SHARDED_NOT_BOARD",
+    "unique_complete_frames": 17,
+    "unique_complete_words": 2490368,
+    "repeated_seed_frames": 7,
+    "total_complete_frames": 24,
+    "total_complete_words": 3145728,
+    "groups": [
+      {
+        "first": 1,
+        "last": 3,
+        "completed_frames": 3,
+        "full_words": 196608,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 3302,
+          "sha256": "f92688bbf0b582e498b5303698d3d74a30154ebfa5d8921ca9048014cbad2a78"
+        }
+      },
+      {
+        "first": 3,
+        "last": 5,
+        "completed_frames": 3,
+        "full_words": 393216,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 4801,
+          "sha256": "dc90207628fa089321fa96f0767f84a492f1828256d95d1cc0896c5a9933e0b6"
+        }
+      },
+      {
+        "first": 5,
+        "last": 7,
+        "completed_frames": 3,
+        "full_words": 589824,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 6301,
+          "sha256": "4667073d6b107643f0921d590779d6ab171283901f36f8d70361a6f158bbb93e"
+        }
+      },
+      {
+        "first": 7,
+        "last": 9,
+        "completed_frames": 3,
+        "full_words": 393216,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 4799,
+          "sha256": "640f7c4a66279122354500047b2ab7d54b800ba6fe8ecf65c4ce0331be8b8ec7"
+        }
+      },
+      {
+        "first": 9,
+        "last": 11,
+        "completed_frames": 3,
+        "full_words": 393216,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 4806,
+          "sha256": "17ed77ea6faab40b17a96d0c0aafbc5e42cfe7c93424b49e8a52f6fa7e0a1d54"
+        }
+      },
+      {
+        "first": 11,
+        "last": 13,
+        "completed_frames": 3,
+        "full_words": 393216,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 4810,
+          "sha256": "49749e674bebb4a27b838446826507eab76944712042901b200fd4daa3815da1"
+        }
+      },
+      {
+        "first": 13,
+        "last": 15,
+        "completed_frames": 3,
+        "full_words": 393216,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 4810,
+          "sha256": "ba0a0fec9b16b0b0e3375541a0693d2b290e36fbe291b6a2dddab5be67e77d12"
+        }
+      },
+      {
+        "first": 15,
+        "last": 18,
+        "completed_frames": 3,
+        "full_words": 393216,
+        "aborted_partial_words": 0,
+        "log": {
+          "bytes": 4944,
+          "sha256": "98db9c8858b5b2bbf0e5926f0fe710528a806646d30a0c96cb116a1f0e79644a"
+        }
+      }
+    ],
+    "compiled_sources": {
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\background_sum.v": {
+        "bytes": 10278,
+        "sha256": "dadee79f5b6dbcdf01f8fe2c0214e2c8c403672dd82b355d879583d8b49d92ac"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Block_proc.v": {
+        "bytes": 7967,
+        "sha256": "805ded7773453fd46ed540564f44e5c8402d0c0b75373881840ed815e31e7720"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_filter.v": {
+        "bytes": 1261143,
+        "sha256": "d553ea3773dfdf838797d9762518efb0aed310714b8ade59b52c39cad6c3f274"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_filter_k_buf_0bLp.v": {
+        "bytes": 1670,
+        "sha256": "a6bbd20db757e544dc42162f5226825ed7549c27aaf2ea6e77cec142bb3b2e52"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_fork.v": {
+        "bytes": 17928,
+        "sha256": "07407b62ac6b54228170e4e0cce2d384b107cc05e07ab56380bf9dd09ef7e6a4"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\c7_join.v": {
+        "bytes": 20787,
+        "sha256": "d50e82a7f59dced19085be472b8065887ea14eeef066ae08c0a63b4eae32a444"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\closed_carrier.v": {
+        "bytes": 14517,
+        "sha256": "2456a429e9e1f6d732ec175e6a5626b99228918fabd6cb6fa2bd35499305fabd"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\column_filter.v": {
+        "bytes": 136481,
+        "sha256": "7c18226d0fa169566a01add3f3716a534cd085cf394f41d4aaf2442f730a6799"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\count_neighbors.v": {
+        "bytes": 8662,
+        "sha256": "389c47e620d088b1f3a6f2f547c35e9fea427666930eae301e60b8c765cc94a1"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\dilate_zero.v": {
+        "bytes": 43559,
+        "sha256": "b8080069854c4beede3279d5cfcc2bc1ab378140223d3300bdd91f76b8c4e6c5"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\enhance_aligned.v": {
+        "bytes": 22146,
+        "sha256": "7159ebbb3d0aee4a080bd4f2bfdef5e2351fe19d089354ef579688d2b1427d93"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\enhance_aligned_lut.v": {
+        "bytes": 1250,
+        "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\erode_zero.v": {
+        "bytes": 44620,
+        "sha256": "2d54ff21e1ddd8eed6065238d0bcedba52a8ace7e493cabe7c1437a22d44dddd"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d10_A.v": {
+        "bytes": 3110,
+        "sha256": "92ae694ff4c25841aaa2ae320d0ed8afdf8b700eb125962b7974cca72d386e30"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d12_A.v": {
+        "bytes": 3110,
+        "sha256": "af7a5341dfb2ce0d310f178d8fb693e9e9d2c30c16d02f134ccaee4634a85364"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d2_A.v": {
+        "bytes": 3104,
+        "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d2_A_x.v": {
+        "bytes": 3112,
+        "sha256": "cc112adf98e9d1307621f206583c9ee236adaf2ae6b14fae90398bf92be7b76f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d2_A_x_x.v": {
+        "bytes": 3120,
+        "sha256": "50240c2fea55819491eb355d5ba67334e8e0032d978d82f302917b95ece4899f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d4_A.v": {
+        "bytes": 3104,
+        "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d4_A_x.v": {
+        "bytes": 3112,
+        "sha256": "86f0c7fc1712f0728ab8b29ef99f9df83ec54aaff0a29543b8363eddffbe5a9f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d6_A.v": {
+        "bytes": 3104,
+        "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d7_A.v": {
+        "bytes": 3104,
+        "sha256": "7e788023725d4a6f27ae2cf3c9f456c46f13ee3e8cf0bb1354b5e1f8ca11d94e"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w10_d9_A.v": {
+        "bytes": 3106,
+        "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w14_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32768_B.v": {
+        "bytes": 4147,
+        "sha256": "2d9fa1d1f0502160606ad7ea18ce6ca4a7fb0259db0ea955dc6343f0559fabc9"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32_A.v": {
+        "bytes": 3110,
+        "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32_A_x.v": {
+        "bytes": 3118,
+        "sha256": "50bc9db2437234918d64b1a5e25a8601d282456b2a133f2ba86a39073a8e26a2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w16_d32_A_x_x.v": {
+        "bytes": 3126,
+        "sha256": "793d430425c7820373d8d69015e7dad1a2c7ec0977ced1013846e14f0472f4d2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d1_A_x.v": {
+        "bytes": 3108,
+        "sha256": "aed88d36445e864f4b7052865321d1e4654c3f926a19cd3c2c59193a6be29000"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d1_A_x_x.v": {
+        "bytes": 3116,
+        "sha256": "961dcb66c097d16edd965e9b82706a5995d18568c8f1d5aa4693f5844743fdb3"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d2_A.v": {
+        "bytes": 3104,
+        "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d2_A_x.v": {
+        "bytes": 3112,
+        "sha256": "f787f5b7e87a36eb7086c0f6c52449ff5fb95712d8083e293a91fff26c706e8d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d2_A_x_x.v": {
+        "bytes": 3120,
+        "sha256": "810cc5d7180a199659d394e6c38cf7402a420e5dc516687dad52b86c8dac29e8"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w19_d3_A.v": {
+        "bytes": 3104,
+        "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w1_d16384_B.v": {
+        "bytes": 4145,
+        "sha256": "7207612c7f5ea66d81d69b5a91f89b4c2687cafecdac669c21e8eb66e657925f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w1_d7_A.v": {
+        "bytes": 3098,
+        "sha256": "4a8e92948572d683523e59d92e703de345e039cc2c6caba6b70b41845d69de1e"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d1_A.v": {
+        "bytes": 3100,
+        "sha256": "f2c43b40e5e75edb6f924ca2dbfc6e1b965db4b3f643a944e491676efa491d29"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d1_A_x.v": {
+        "bytes": 3108,
+        "sha256": "e3502036cc2e6b8f03bfdc05d9590338b5d287640502b3c6f2d8211db0922218"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d1_A_x_x.v": {
+        "bytes": 3116,
+        "sha256": "75a9858104ddeba0666f206dc75ff3b0b131ae54f9a4f93762a4bedd7871cf52"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d2048_B.v": {
+        "bytes": 4145,
+        "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d2_A.v": {
+        "bytes": 3104,
+        "sha256": "e3bbc15ab31fbff266f0870fd2f834f4233ca1bc20585e848ec9bfcbc6dd3bde"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d2_A_x.v": {
+        "bytes": 3112,
+        "sha256": "b24e2be3118e0a901003587627ae55cf5711c5408d6b20e7ff8a2397e0435c4d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d32_A.v": {
+        "bytes": 3110,
+        "sha256": "80ae8bfee5b405163f5352ca7f1adf7bab28a7483b94f6b55d7af3801e264f90"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d32_A_x.v": {
+        "bytes": 3118,
+        "sha256": "02d8a6d4a63ddc485d87723d550d40f652ebbfcdc26baea0cd22cb422f03883d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d4096_B.v": {
+        "bytes": 4145,
+        "sha256": "7b3a7e14b262f96fd45451165f3879b1564a65baa59d1d7c24119642c86fc292"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d6_A.v": {
+        "bytes": 3104,
+        "sha256": "29d6f5e496bf22e7470d07ccda5b151dc8453af95e8a55d9d8072bbbcfced473"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w32_d8192_B.v": {
+        "bytes": 4145,
+        "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w64_d2048_B.v": {
+        "bytes": 4145,
+        "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w64_d32_A.v": {
+        "bytes": 4140,
+        "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w64_d8192_B.v": {
+        "bytes": 4145,
+        "sha256": "3308b68ac61ffa07980d9df29bfb7abc7848f419d7e61e200a19381909013b50"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d16384_B.v": {
+        "bytes": 4145,
+        "sha256": "1401cf4d09793b92c0ebbadbadaae05c8602d41235e802bd9a312c4a844c1707"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d32_A.v": {
+        "bytes": 3104,
+        "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d32_A_x.v": {
+        "bytes": 3112,
+        "sha256": "35d34f0cb8a2dce856cbb202f0dcce8012afba384aef3d407fc857b9ccbf7c61"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fifo_w8_d8192_B.v": {
+        "bytes": 4143,
+        "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Filter2D.v": {
+        "bytes": 55588,
+        "sha256": "f6792a36f70dd50731edc7b67fefcbca14588783018b896f100e8075070088b3"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Filter2D_1.v": {
+        "bytes": 56233,
+        "sha256": "7695ac6990f3dba3485e325f36d5440a69b5aa7adf9b4c20ce63ebfaa7a2ca29"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\Filter2D_k_buf_0_bkb.v": {
+        "bytes": 1668,
+        "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\filter_sum.v": {
+        "bytes": 8570,
+        "sha256": "898967798c4e98cd991b716f72e1ee87ef83eaa75c570f47132762a9555e1ed8"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\final_join.v": {
+        "bytes": 18001,
+        "sha256": "42be7de2b1f98dd5a8464e780a557c29496a5f79d6a39eb36339ab70808f5061"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\finite_gap_filter.v": {
+        "bytes": 148491,
+        "sha256": "8c5602fced2da28f05525d7825e8c1505e73c67d6a08a2355933cedc24c5a1a2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\fork_input.v": {
+        "bytes": 15171,
+        "sha256": "062144100820ed9d5ca917f8e2038341be8bd64db8c16f4dd40756eed7d763fc"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\gaussian_round.v": {
+        "bytes": 14148,
+        "sha256": "24e06af2eda4da34f1c663590816063470ca39f5b443787cf4458a40da748a15"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\gaussian_sum.v": {
+        "bytes": 8574,
+        "sha256": "6c280180179aa6004cfbcb5bbd77e83967b5c2b9d4eb4721b77c448c98c5b8d5"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\initial_fov.v": {
+        "bytes": 16906,
+        "sha256": "cf0dff76e372eb2fd9e6f2680d726b938ce6015d2b2ac37c614a64e4e8c6df65"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\profile_evidence.v": {
+        "bytes": 1029117,
+        "sha256": "b89df57b0b0da1d8fcd46c7f78482c3e36e50848965f4cd4fe870c593cd16987"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\refined_join.v": {
+        "bytes": 16665,
+        "sha256": "673e62fdd12eadf4578e0952a70bee630737812369b7e82e93be8e1b9130f173"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\response_carrier.v": {
+        "bytes": 23090,
+        "sha256": "91211bc0821fae095dad5647f9a937ff73b2fb30b22dd54c9e8fc38882ea161d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_c2_support.v": {
+        "bytes": 494963,
+        "sha256": "65f753142d92351a79aea6df4d6e6d1c6d4c94050b0634ce620c7044d49f7a5f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5.v": {
+        "bytes": 48433,
+        "sha256": "c0943ca5a2a87f9637357bfd4cf04bc916c76a894cc876b3f7c8c10d3f0ebc74"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5_B.v": {
+        "bytes": 5279,
+        "sha256": "3c522b925b2df6393f6f617ab2661024dcded5b4a9fbd6ad493a5e24e3d0ee4a"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5_B_1.v": {
+        "bytes": 14881,
+        "sha256": "1b77a981f978527ec6ea9f6af8854a17370751742de9affedd19c58785219457"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_c5_e.v": {
+        "bytes": 7302,
+        "sha256": "8016d742ae4814dfc9d37ca3197e2246b538633d54a52fc5e4d09ebf242b1283"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb2s.v": {
+        "bytes": 3485,
+        "sha256": "06ecc81bc44f3e238e51b32d5eeba18c58f8fdd405e421bfe303731c5d052824"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb3s.v": {
+        "bytes": 1371,
+        "sha256": "2173557ce6d159810425c090020221df232003b3057b0281bf343acf41e7bcae"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb4t.v": {
+        "bytes": 783,
+        "sha256": "262393c29a01ac689a94393e50222649534e18fbc48573a2c273cc93c06c2d43"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb5t.v": {
+        "bytes": 1371,
+        "sha256": "ee00204f7673bc0669755afdff90b0b9f4b8fb0bca8e416c263bc283ee490776"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb6t.v": {
+        "bytes": 1371,
+        "sha256": "fbda4ad1bf492babab379737111d091bc3b980f42136c9014e28e491eec79758"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb7t.v": {
+        "bytes": 783,
+        "sha256": "5725e7505a49b3f5667e029f3160ef6f8a45788a712ddea6f9da569d89ac1cdb"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb8t.v": {
+        "bytes": 1370,
+        "sha256": "d67e896950cac045c2fb8eeeb574ff7a493868d3d0c2d64677617a93863422d8"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hb9t.v": {
+        "bytes": 783,
+        "sha256": "798d10efa2ea9b66087e5ca830dc0d4be1e3f30bb14c99a16d67f45ddca7c6b2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hcau.v": {
+        "bytes": 1370,
+        "sha256": "5e76ce16ae267e31d7c9613a1b3951aafd6cf397a6c277075805e1c2992a568b"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hcbu.v": {
+        "bytes": 783,
+        "sha256": "d6017dde910ce4fc6fb4939971dc159e315807cac59d679c84582bf22125a2ed"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_heOg.v": {
+        "bytes": 1170,
+        "sha256": "94c90a872b6909a31787b4bc50648020a8cdde04d0682a0ecc9be8f0144e01b4"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hls.v": {
+        "bytes": 20975,
+        "sha256": "26d1de5b4ce61e31cee06921af9cdc01c37b3c3353cf56fbdb3d7440739a3805"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hShg.v": {
+        "bytes": 3671,
+        "sha256": "359cd1c181ecb813554c3ec448b3df683e5d31ec3723779101626479a24092f8"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hudo.v": {
+        "bytes": 2942,
+        "sha256": "2844f0cb1a5154b770bfe438a1b3363e11885638ee2e3e354466d808755f1168"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_detector_hyd2.v": {
+        "bytes": 783,
+        "sha256": "72e674738f7158ac7b0a0c2f1c71c0be8de02ec87b84649478a80827c02a552c"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_refined_base.v": {
+        "bytes": 75889,
+        "sha256": "c64ab2819ed3206de2d524be85ae573697801a5cb2b4ea0f3650efccfda6ea49"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\retina_refined_base_s.v": {
+        "bytes": 31101,
+        "sha256": "122c5e9b8cea4e55f6af794f22703c43eb4ee3eee329547c6e3bd32d3aa5a369"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\row_filter.v": {
+        "bytes": 61276,
+        "sha256": "ad77af808b1657f6a0eb52e635f487fa8ad1b699100f660da7f7cb1cb63c0892"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\row_filter_l_bordvdy.v": {
+        "bytes": 1674,
+        "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\seed_flags.v": {
+        "bytes": 19383,
+        "sha256": "6385f3c1429d096cd1382f712585b1e8d4393a0635cfba17e0d2ddd417a17904"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\select_response.v": {
+        "bytes": 21174,
+        "sha256": "460c02fdc8700435b5f48979ed405cae9d35e777caa8521df11618ec3966266a"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\SepFilter2D.v": {
+        "bytes": 7857,
+        "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\split_words.v": {
+        "bytes": 14143,
+        "sha256": "b7404a137c747ece753a7efd30fc0fb4a1e6200f44c395d388abff5e5b776293"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_backgro1iI.v": {
+        "bytes": 3130,
+        "sha256": "eafefee21e4cecbad6db0461336332b13cb2c90659474c510fb88560a3748feb"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_c7_filtcdu.v": {
+        "bytes": 3130,
+        "sha256": "7455e273a97e4cb42ed3f6d95e6bf06daa97bb4b0adbdcdc66497f78ec2f95eb"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_c7_joinceu.v": {
+        "bytes": 3130,
+        "sha256": "2ef0e96d4204127e299169d2d4d976567839293b833bcce5d2ab975da2f1f14b"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_closed_bck.v": {
+        "bytes": 3132,
+        "sha256": "68125441b6d476eb00fa91dc095582e91d93ff1dac83c4d7a4aabb4850baf1d7"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_count_n7jG.v": {
+        "bytes": 3132,
+        "sha256": "230419c2b7e1c2353398608aac0f048d1341f995ead5a4196fec4e033c5def1f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_dilate_5jm.v": {
+        "bytes": 3132,
+        "sha256": "fcaf4b7fb0d1365e69fa7c551ddd9223f91dc95bf4bde412fafad89351396730"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_enhance8jQ.v": {
+        "bytes": 3130,
+        "sha256": "4a6bc8a3b2dc8a0d2417e1d762d4b712dff120814c2d2e301e94468c4f4ff071"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_erode_z6jw.v": {
+        "bytes": 3132,
+        "sha256": "a522af4702b24ce2b3feabb6c99dbe8a3091dd28c5fa0c992be22fa4e5fb7f4c"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_filter_0iy.v": {
+        "bytes": 3130,
+        "sha256": "f6e25649113cbe7f3433897d5c416a4a05935bd50e425ec0a405a1e4fb9e983f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_final_jbbk.v": {
+        "bytes": 3132,
+        "sha256": "28d69e83a305058d46250024543691698205d25e52fa2764f8d53bae7f643179"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_finite_bFp.v": {
+        "bytes": 3130,
+        "sha256": "d83bbdeb99d7e7eea5ca8f51bd9e35e944a017ccc079b8c22ef075a991c60e7f"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_gaussiabHp.v": {
+        "bytes": 3130,
+        "sha256": "07c0e48d14dafd29018db6ef7aaf116c9a501b17e8964c08f0efb8d0d72c69de"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_gaussiabIp.v": {
+        "bytes": 3130,
+        "sha256": "9cf64bc423b9de58ab0b85c554ae6142a82896f1dc7f22984103c79e377b37c5"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_initialbak.v": {
+        "bytes": 3130,
+        "sha256": "61c481d5eaa5d4ba5edaf013fb80fd7b8131f4394bfe2c5a62b388d0967ed561"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_profilebEo.v": {
+        "bytes": 3130,
+        "sha256": "4f708ea546dd8193949ca4fd67b0895625d0d3d78c9db0ea598f33423eaef9af"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_refinedbKp.v": {
+        "bytes": 3130,
+        "sha256": "d898f6408027f93e9d1b663bf1f8a0cef4d547bf6fcbf6e4c83a64bacbfc6d5d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_respons9j0.v": {
+        "bytes": 3130,
+        "sha256": "957d61e348393d392ad562f3c89c2da681f1d0f42c859fcb1ebab9f430a4cb6a"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_2iS.v": {
+        "bytes": 3130,
+        "sha256": "d89d0765cd3ef640a912ba53888d1efae2422e5fe5421c08333ef1945333eda1"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_bCo.v": {
+        "bytes": 3126,
+        "sha256": "8dbc74a2f806b38a56c0595794d035be64192d321ebdfc993bcdf31c876465a0"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_bDo.v": {
+        "bytes": 3126,
+        "sha256": "73b49f59ebe7099fd62f6a28f7f1e2a8431596f2d8d8a96549d1516168a3014a"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_bGp.v": {
+        "bytes": 3130,
+        "sha256": "2fa6c8fc90ea0ad65c28e35a4893f6f66f6c4ef57616158a6ba1d2214ffc9a4e"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_retina_ccu.v": {
+        "bytes": 3130,
+        "sha256": "bb458899a99bd729e0cfd0406cd1c7b30cb4c3e389d2fac8cf3e998defd93e9d"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_row_filxdS.v": {
+        "bytes": 3126,
+        "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_seed_flbJp.v": {
+        "bytes": 3130,
+        "sha256": "530faea873f464f858750687e8dfbb6e9288608b18da70b6d3b966af6cef85dd"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_select_3i2.v": {
+        "bytes": 3130,
+        "sha256": "b1e6f13e1fb95842fe46974f4eea60e0de270d0cb397d9dbb5b9867c4befab4b"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\start_for_thresho4jc.v": {
+        "bytes": 3130,
+        "sha256": "e5ec1b91981d5cefbd60099b63b7337791ff9577df55cf6ab10a77228d5e8e24"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\threshold_binary.v": {
+        "bytes": 19621,
+        "sha256": "0f156fa6b756c9b9d3289c0e7776ba9d9413ce6b16d9262020266a253beea478"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_hls_03\\solution1\\syn\\verilog\\enhance_aligned_lut_rom.dat": {
+        "bytes": 1026,
+        "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4"
+      },
+      "D:\\PLD\\retina_fpga\\build\\q4d_detector_axis_sim_03\\retina_detector_guard.v": {
+        "bytes": 10163,
+        "sha256": "62f42f39f849557f4ddc91a902bf793dc1b2d620c20da206d55b3a6a3e09c988"
+      },
+      "D:\\PLD\\retina_fpga\\tests\\retina_q4d_detector_shard_tb.sv": {
+        "bytes": 12777,
+        "sha256": "eced455b8415a0eb38fd755f276c37803faf6dec01184faed221d2024f9d65d7"
+      }
+    },
+    "compiled_snapshot": {
+      "Compile_Options.txt": {
+        "bytes": 95,
+        "sha256": "2faf3fba6194269832422a4dc3c9a4044f25724d95465b68ff4c397794c2e146"
+      },
+      "xsim.dbg": {
+        "bytes": 4449252,
+        "sha256": "a0b9efa76056bc861af391555f46342a4a665ca94cb98a1708ba755035517741"
+      },
+      "xsim.mem": {
+        "bytes": 941674,
+        "sha256": "4348af010d4e5702dacd4a235ba12d015d5dd9f25c7768905f37e19c00601ef7"
+      },
+      "xsim.reloc": {
+        "bytes": 798593,
+        "sha256": "0ad7fc4be04c41f275250b75e2521aaa81dad5e32688b15896a4446b6ad1be2d"
+      },
+      "xsim.rtti": {
+        "bytes": 323,
+        "sha256": "79fd1761b243bd323f917e64cd2ed10e283bfe0a0b14e01e64f1dc0a4786f5f4"
+      },
+      "xsim.svtype": {
+        "bytes": 89,
+        "sha256": "2b77d78fb8ca93823b473efcf83588a93103a50e010a3f43c9ed89257133d5fe"
+      },
+      "xsim.type": {
+        "bytes": 24,
+        "sha256": "cf1c5a4aa3dd8007f3756f2f3d607d67751cd98e99c8f5038c3f8b9fd06aa8c8"
+      },
+      "xsim.xdbg": {
+        "bytes": 64,
+        "sha256": "2113f6d87fd6f064cbcfd09c0801b39b683b770d7c535e2a8e5bfc395962d6f9"
+      },
+      "xsimk.exe": {
+        "bytes": 10721837,
+        "sha256": "2a27bb52c5e5862bf66b8eccbece2782b13a6dcd83ff5691311a2a2dc729e1d1"
+      }
+    },
+    "excluded_mutable_snapshot_data": "Simulator logs/waveforms and webtalk usage statistics only; all nine executable/static data components checked.",
+    "vector_manifest": {
+      "bytes": 11934,
+      "sha256": "afd11cc053dd026bb9cc622c386c03ac2c3826f3357b1c961cbd881d08410e1d"
+    },
+    "checker": {
+      "bytes": 8329,
+      "sha256": "376e2835f4ea5ac8adcd62c0e23927c3ac903c81bac647422d391c6040f06073"
+    },
+    "scope": "All original adjacent transitions retained; separate groups reset at start. Not one continuous eighteen-case simulator process. Board NOT_RUN."
+  },
+  "csim": {
+    "frames": 18,
+    "words": 2555904,
+    "scalar_features": 9720
+  },
+  "uploads": {
+    "q4d_c7_experimental_r1.zip": {
+      "bytes": 14771015,
+      "sha256": "9b0817670b34f1f0038ba545b56b318fff1ca74dae6c4cb6af026d50b14f5129"
+    },
+    "q4d_quality_start.ipynb": {
+      "bytes": 8200,
+      "sha256": "ecc677a036b1490fa6182ba6fc911aef4230b28804cc2ffa9780953e5827200e"
+    }
+  },
+  "old_files_unchanged": {
+    "pynq_app/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "pynq_app/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "pynq_app/hardware.py": "8a228dbec14cbaa3f7774c52240c06a1870e1fd5c2dc55ff222bafb0ca11287d",
+    "pynq_app/launch.py": "f80d85c540be305d0206a9bf1e7d846f1526654dbdcac84d3c6c5222064aaced",
+    "pynq_app/protocol.py": "1f540ee7c70e73b90eca064ad532b67bc5bf89743ef4a9f9e2c05e26a05e409a",
+    "pynq_app/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "pynq_app/service.py": "0374acc30bcf55f08b0bb341654569c81b1d6fadcee32bb8ac2158059525e5dc",
+    "pynq_w3/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "pynq_w3/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "pynq_w3/hardware.py": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a",
+    "pynq_w3/launch.py": "e72970625e55bfe97148f64996c2d2da4e413320454d4bf100c9715f8257cba3",
+    "pynq_w3/protocol.py": "11787772b31b766ed174b5a365d2452356aaa9bb88a547087988c3b98e0ebc18",
+    "pynq_w3/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "pynq_w3/service.py": "2d5d93f0f1e31ad5f8c3a9d12bdee351b14cb87e3cee051916c0e3bfd6ed4d9e",
+    "pynq_w4a/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "pynq_w4a/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "pynq_w4a/hardware.py": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a",
+    "pynq_w4a/launch.py": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b",
+    "pynq_w4a/protocol.py": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab",
+    "pynq_w4a/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "pynq_w4a/service.py": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee",
+    "ui/app.js": "481254f329ae938f4fed9440bf59638ddba501ec76f5f4e886bc8afc939249c5",
+    "ui/index.html": "379b6448cffe8adec0f3876d75c07fa9c5361c46f7fff1e2e8a83a8ecb490045",
+    "ui/style.css": "587b0500163935a71b536ccd61c902bac5130e6d468762510be9d6d6dacbdd5f",
+    "ui_w3/app.js": "ef1e766f6370857760624e689398795c64387285fab92832ef3b7e5b7154ff7d",
+    "ui_w3/index.html": "c0d8a2b2704e041b16503fc5b2d7d064d7dbc32384bbdff7684a486e926cc73b",
+    "ui_w3/style.css": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579",
+    "ui_w4a/app.js": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55",
+    "ui_w4a/index.html": "e083dd94ad18b8b0f56f0bde32d4d95a16ae7689aa340e4335fc61af110150b1",
+    "ui_w4a/style.css": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579",
+    "build/deploy/w2_quality_2017_4_r1/a0_dma_board_test.py": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e",
+    "build/deploy/w2_quality_2017_4_r1/a1_point_board_test.py": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990",
+    "build/deploy/w2_quality_2017_4_r1/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "build/deploy/w2_quality_2017_4_r1/w2_manifest.json": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality.bit": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality.hwh": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality_board_test.py": "921eacbb256801e83bcfd440a0d7f6751220f8d5047dc5b5ca848ffef254eda4",
+    "build/deploy/w2_quality_2017_4_r1/w2_quality_check.ipynb": "f5f9b45e1cdbc31f7c8cc7b848ba66f7bd8cb7ef9f1fadd77bdc275c86e69a52",
+    "build/deploy/w2_quality_2017_4_r1/w2_vectors.json": "123103cb2c8bf9c838aa23911d9690bae998512f295124e5d43656f40ae6b56b",
+    "build/deploy/w2_quality_2017_4_r1/w2_vectors.npz": "7890e664c58a7f9d69a6573c07763021ed3fab6096f8dfadcba247ee1945602b",
+    "build/deploy/w2_quality_2017_4_r1/使用说明.txt": "667721a781210fa1447a6e99b2ab525b4756ce1f158224ec98541bfa73c52105",
+    "build/deploy/q3_full_quality_r1/a0_dma_board_test.py": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e",
+    "build/deploy/q3_full_quality_r1/browser_manifest.json": "699a9d92e3a422536bd00f16295afe1d696b1b44e6a8e5e4660ac1a841ce31a6",
+    "build/deploy/q3_full_quality_r1/inputs/im0001_256.npy": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b",
+    "build/deploy/q3_full_quality_r1/inputs/im0001_512.npy": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9",
+    "build/deploy/q3_full_quality_r1/inputs/im0002_256.npy": "e93f1a27eb8cd5b333733b374eb498b5a2cf6651f4385197a85e096b1d2f730a",
+    "build/deploy/q3_full_quality_r1/inputs/im0002_512.npy": "a02301bc0d8e842194f325afa07b527aa7ce78e184ea96605da446f0eece5510",
+    "build/deploy/q3_full_quality_r1/inputs/im0003_256.npy": "72fb6bf19facf1f1154f4d4a253fb31ca61ec991a7eded85d37ace46c1ba6f57",
+    "build/deploy/q3_full_quality_r1/inputs/im0003_512.npy": "8d7cfbad2291daf4f41d0314c494a74c7f21df8c1b05fbb0206901dbd0a6d19d",
+    "build/deploy/q3_full_quality_r1/inputs/im0004_256.npy": "ea3ae66777e62737a4f7e9ddd461ad17191a6f86302fb620c5c745ecdbee819d",
+    "build/deploy/q3_full_quality_r1/inputs/im0004_512.npy": "67d338170cbd5a0c397505d42b6510a0558982b57f8ebf1ac97ab9e537957693",
+    "build/deploy/q3_full_quality_r1/inputs/im0005_256.npy": "4dc3b8f15d05e2bce5140f6714fc605c06aebe6f146d0d9ca00498cad0c0c9ec",
+    "build/deploy/q3_full_quality_r1/inputs/im0005_512.npy": "607e97600a8f7f6a56af48414c949b29a6f767e39b9328e3a945524991b01a97",
+    "build/deploy/q3_full_quality_r1/inputs/im0044_256.npy": "b84f6d77fc7c7ffa118455a4ffc8297140f951b5a4a2215c58b066f2b9045b45",
+    "build/deploy/q3_full_quality_r1/inputs/im0044_512.npy": "7ecb201a1420a517e9f877b8f33949653873754c47a6a1d2f6dba118ace12a0d",
+    "build/deploy/q3_full_quality_r1/inputs/im0077_256.npy": "11be949b837b291ea2ff53152968837f6ba64935b482325e345f87c97ab13370",
+    "build/deploy/q3_full_quality_r1/inputs/im0077_512.npy": "9e6b99144844c183315b6694e9d848da71cc4550d65ae05e5236e0493480eb9b",
+    "build/deploy/q3_full_quality_r1/inputs/im0081_256.npy": "d7165ee17ec26f8068ecc028d1d6662e64c9819c83c93feb0a10112c73c96208",
+    "build/deploy/q3_full_quality_r1/inputs/im0081_512.npy": "c9263b82145c45b5565798d86528f67d7f192dd2a9124de6fb17bc696ff34230",
+    "build/deploy/q3_full_quality_r1/inputs/im0082_256.npy": "78de1858abc1d99e353f9320d6c54d9418a28fd5c48bfc503722ba7e46f7e8a4",
+    "build/deploy/q3_full_quality_r1/inputs/im0082_512.npy": "91ae7cc398269482f0cebc8fc4e53d2e731b3ca451ff9179d36c061d459d9708",
+    "build/deploy/q3_full_quality_r1/inputs/im0139_256.npy": "367f81e8a6e43f507d53e61f2ffe0bcd71d3b6c9f425dd631f9484c012ea2499",
+    "build/deploy/q3_full_quality_r1/inputs/im0139_512.npy": "20d777f7079f4b577b410a93a1803e94a03383484793787215b2e34a80f4944d",
+    "build/deploy/q3_full_quality_r1/inputs/im0162_256.npy": "becb9685766ea716c31f8dc92b4b805f87772f156da167e99a92e2ed1c4c562d",
+    "build/deploy/q3_full_quality_r1/inputs/im0162_512.npy": "dbf3f1f202e333bce3c4c5a75e167438fcf6687d5bab6c096975b8c24906909b",
+    "build/deploy/q3_full_quality_r1/inputs/im0163_256.npy": "5fdfa0e2032d7eeaceabbff8b586ec11e1404c0546a097ad5f91b5f4f92e46a7",
+    "build/deploy/q3_full_quality_r1/inputs/im0163_512.npy": "777844b30dc75d1a103d3744cf95aaf48d1ddb839e2df95431115fd563d9e633",
+    "build/deploy/q3_full_quality_r1/inputs/im0235_256.npy": "357d00e275777098e73faa8c769fe81e36bbf445ed3c99e41bc175164f9a9bf9",
+    "build/deploy/q3_full_quality_r1/inputs/im0235_512.npy": "3f6142f73b1c8ada122325e488586325d301e6baacc7620a2a542327bd0533fd",
+    "build/deploy/q3_full_quality_r1/inputs/im0236_256.npy": "078a0294636067cb3f111eac11ad967ec339aa6847a5d2c55252af374e76ec17",
+    "build/deploy/q3_full_quality_r1/inputs/im0236_512.npy": "fd088e238b28375902b2274305b57f8b8637c903aecb695c81bf9cb53aaa6603",
+    "build/deploy/q3_full_quality_r1/inputs/im0239_256.npy": "3f55c1b90c6c7b32d26a97af16db9d09e89d4ed62ab740d35fc8b1c2f629f143",
+    "build/deploy/q3_full_quality_r1/inputs/im0239_512.npy": "466c8dc4b19293bc89bb7ba299ab567263c904c9a98dc973abe5868162b0c53f",
+    "build/deploy/q3_full_quality_r1/inputs/im0240_256.npy": "b31460d5fc45b2e88d06d2524b5c76a0692adf9694594947f80481bc089bb303",
+    "build/deploy/q3_full_quality_r1/inputs/im0240_512.npy": "0d24807024af54f73677fd83ba1a3221949493f460e91f4f56cf12c4be74be3e",
+    "build/deploy/q3_full_quality_r1/inputs/im0255_256.npy": "1d3888f77191b7be365bcd39969e340988b8a28ffb9215da772f4b925e039b2f",
+    "build/deploy/q3_full_quality_r1/inputs/im0255_512.npy": "2a031ba8e16e52e6b4a46921797f4f0c4c32bcf034023dc02fa9f49f20616d0e",
+    "build/deploy/q3_full_quality_r1/inputs/im0291_256.npy": "d6ec1152b65bf7a02cf40ba3bf337c6a8263856246ade5f5eff1da1b39be77dc",
+    "build/deploy/q3_full_quality_r1/inputs/im0291_512.npy": "dcf44539e9e7751098b8a46c65d126270425afa174448a762de019c35f334296",
+    "build/deploy/q3_full_quality_r1/inputs/im0319_256.npy": "6d4786939ad7a9b8a9159f7549734f3d2f8eb5ad2d631957c70145e482323101",
+    "build/deploy/q3_full_quality_r1/inputs/im0319_512.npy": "492f2928fd82058ca82f82b052b10a6a0f545b988afce7e7678a9461e0d25b65",
+    "build/deploy/q3_full_quality_r1/inputs/im0324_256.npy": "df6de4852d28be929b0497ce4eadea20a44ac6754751f9169cc0269f04a8804a",
+    "build/deploy/q3_full_quality_r1/inputs/im0324_512.npy": "cf478ba3bfd160f253e19bed352c214e8cbb6b7be8095b24c9d2eb4ee7da366f",
+    "build/deploy/q3_full_quality_r1/labels/im0001_256_AH.npy": "11480b7d241c53be0ee9e275ed65312fc9e3a2fd24b923a2e9517cc5c1f4e6a4",
+    "build/deploy/q3_full_quality_r1/labels/im0001_256_VK.npy": "0e6a6d29a9863d66fa5a8b8c8abccae2d93232e81761b5ea44534a9ff21dc070",
+    "build/deploy/q3_full_quality_r1/labels/im0001_512_AH.npy": "c14031619f59161213d25a3a6f4320dd00b28c762712b1c3dac828e08bb839ba",
+    "build/deploy/q3_full_quality_r1/labels/im0001_512_VK.npy": "bbe9326eb71328e2a2f5cda0ee385d11a2f1fccb44d107377e1f52ca773bfeb0",
+    "build/deploy/q3_full_quality_r1/labels/im0002_256_AH.npy": "b6b241a7a40a631af11f5c24034737dac38db183645842cb55864f8ffacb91a0",
+    "build/deploy/q3_full_quality_r1/labels/im0002_256_VK.npy": "5b1e469b5f29c38afdcf4d4a911767ee284d53906ea8380baa2d22e1dff46d0a",
+    "build/deploy/q3_full_quality_r1/labels/im0002_512_AH.npy": "a6af2d58a7ae9e9a0e9f833bf7f9dfc3d67d7a17e25f9c4d5aaec23b0b9bbcf7",
+    "build/deploy/q3_full_quality_r1/labels/im0002_512_VK.npy": "618a58a3681d341280292ce409a85588316ec47ee0f1cdc063306470a9521873",
+    "build/deploy/q3_full_quality_r1/labels/im0003_256_AH.npy": "bf6b3b672c74687c33383a9b6212eb01942afff445c179989cbb7d75b204581d",
+    "build/deploy/q3_full_quality_r1/labels/im0003_256_VK.npy": "9ebf49fad2799c8822dd1d83fd945a7e3c4b03dd5352288b5d18a55792b0ea82",
+    "build/deploy/q3_full_quality_r1/labels/im0003_512_AH.npy": "e63fb219f7eadbf9deff7605d09045e917f7dde3e4c2d901cc2ff34a12588112",
+    "build/deploy/q3_full_quality_r1/labels/im0003_512_VK.npy": "83b24ac6ad92c128867456ccdd7cac63eb4fadcdd6fb56da17fa2c3c84228427",
+    "build/deploy/q3_full_quality_r1/labels/im0004_256_AH.npy": "98a45869690b91f7de4d15193a547890dc8037960188b6caeadf12011acace6c",
+    "build/deploy/q3_full_quality_r1/labels/im0004_256_VK.npy": "2e4da406c6ff90faf23397e7fa83e28ffa48addc9dbc73193d67aa05552ed51e",
+    "build/deploy/q3_full_quality_r1/labels/im0004_512_AH.npy": "a0be8b1b2e6983b39590da315d3033a8ace83881b50f4e85d28eaebf8aa6a188",
+    "build/deploy/q3_full_quality_r1/labels/im0004_512_VK.npy": "f75bfa2afd007bba60d5affd782543bdaf0c9f59aabeb860f93546ae7d57004b",
+    "build/deploy/q3_full_quality_r1/labels/im0005_256_AH.npy": "ae074628a111e40ef652bb703b4cd9820caa187cd881ad71d2888e837a78299e",
+    "build/deploy/q3_full_quality_r1/labels/im0005_256_VK.npy": "59d723da31f4ab340327eceb21426b94b1d39123c85d0d0cf4cd37fd5f63d652",
+    "build/deploy/q3_full_quality_r1/labels/im0005_512_AH.npy": "76d53a68bd33b1997b46818ef661331d0dbe804e70368d4c5cde7ce76ad11965",
+    "build/deploy/q3_full_quality_r1/labels/im0005_512_VK.npy": "aa2182d8c41db618ee4f7eb7e55f7a2e231e65f87a049541008c41a363ebba88",
+    "build/deploy/q3_full_quality_r1/labels/im0044_256_AH.npy": "afb6cff129c9d191cc3780022969ca16a2794892aa8fb9226a5d17dbb057069d",
+    "build/deploy/q3_full_quality_r1/labels/im0044_256_VK.npy": "1ed97e8f76a7d31b4f416b25546afbba3e3ffcec17d8310c1d68998616c4a3df",
+    "build/deploy/q3_full_quality_r1/labels/im0044_512_AH.npy": "fa6f98ea2577509e6d2698768843f01fd293b11cbca1384a1bcc395182edfe63",
+    "build/deploy/q3_full_quality_r1/labels/im0044_512_VK.npy": "ae9dfd8ebfd9ebeedcdf3f5c70ae0dfebe8b630281106a5194c11493c182d8c7",
+    "build/deploy/q3_full_quality_r1/labels/im0077_256_AH.npy": "37cc11976c76e90d2112f485e5d8b164833a0b0ffa8e37532b18047f93f27cb9",
+    "build/deploy/q3_full_quality_r1/labels/im0077_256_VK.npy": "ec133afad113550cdb68991fe2dc92be957ab13b2ebbea9c04e2e023d02cec7b",
+    "build/deploy/q3_full_quality_r1/labels/im0077_512_AH.npy": "47cac59f4b4158b6bed57bf1f89689ce6c1c83f1f1ec39d2de843c5bb8f4aaa5",
+    "build/deploy/q3_full_quality_r1/labels/im0077_512_VK.npy": "4978b3a1d5cab31cce16a04e873a75b06a232d644a3bf2e7969c21c5cfb88ff9",
+    "build/deploy/q3_full_quality_r1/labels/im0081_256_AH.npy": "b733f912c810580ac549e0d660abaa717435e98653afb84fa3fff6ac3c839eeb",
+    "build/deploy/q3_full_quality_r1/labels/im0081_256_VK.npy": "84509820197d9032db20caf81a529e3b1163cf657984ff3f17d485ccb521f801",
+    "build/deploy/q3_full_quality_r1/labels/im0081_512_AH.npy": "c88222c9cc3913f71eb26cc260a6da20d3a1cec376f703948ba09b7bc24da63e",
+    "build/deploy/q3_full_quality_r1/labels/im0081_512_VK.npy": "d048b21052ad2105353c8542ab714fb115ab17f1967b0e6dcd362b9196ab345c",
+    "build/deploy/q3_full_quality_r1/labels/im0082_256_AH.npy": "442ffadcc1b91dd1f0d7a129eef2483155ffb293e723101d1dd7d805bc7df47c",
+    "build/deploy/q3_full_quality_r1/labels/im0082_256_VK.npy": "ead666fc1b843c550f086c1aca733dcbdeec40e7e061c1c054ae251f7cb864d3",
+    "build/deploy/q3_full_quality_r1/labels/im0082_512_AH.npy": "7a228824f105936955b954f935daa38683a27db5145af702d01541befb1ec650",
+    "build/deploy/q3_full_quality_r1/labels/im0082_512_VK.npy": "dd1b33eca34e90f8f919a06b9934562f893f82b48d647e669cd851873a304d6a",
+    "build/deploy/q3_full_quality_r1/labels/im0139_256_AH.npy": "2aaad783302127c9c3bbb286b0493e6dac0b53eb718879efa0c6f21a837e6621",
+    "build/deploy/q3_full_quality_r1/labels/im0139_256_VK.npy": "d9cd63806ae62b238721f35c656a83f6949a33f1ade5870589ef2d18dfaf6120",
+    "build/deploy/q3_full_quality_r1/labels/im0139_512_AH.npy": "89d8afe507a7b662deb1e9a2545225c47c941607ffb96f1b962bfb692d5dea44",
+    "build/deploy/q3_full_quality_r1/labels/im0139_512_VK.npy": "774123398c00a153b0105f7cf286922eb574113d894aa2d70a718a94af9d5266",
+    "build/deploy/q3_full_quality_r1/labels/im0162_256_AH.npy": "3dccaac1b866a192ccf6b78dad70572d0d56c5cf4e24e0f6d4fba3e908a59b32",
+    "build/deploy/q3_full_quality_r1/labels/im0162_256_VK.npy": "0c6f67c0af307f1d3fa30b6063c9c0dad6a0174ab162178967281c16c6bf1e1a",
+    "build/deploy/q3_full_quality_r1/labels/im0162_512_AH.npy": "b00ce1c965c1e3c692e096f15fd119b43f981cae16a0a26bc4f0ba470bc0a4a4",
+    "build/deploy/q3_full_quality_r1/labels/im0162_512_VK.npy": "03a2e1544ec5d779e4a2bc04fe79c2f21194e18c467df32b565e9e27a3432102",
+    "build/deploy/q3_full_quality_r1/labels/im0163_256_AH.npy": "c513b7c5f1ee5ab627bf5872cd3095af375b749d07d5f3bcb4aefa580623cae6",
+    "build/deploy/q3_full_quality_r1/labels/im0163_256_VK.npy": "a7c53714c10a7eb55e92baf2c16c1883f3b3360a787959f4346ddc7c266ffdc7",
+    "build/deploy/q3_full_quality_r1/labels/im0163_512_AH.npy": "57bcaa84c39f672867e90848d0b8a46887609c2f88cb011c338981ca56d2ccfb",
+    "build/deploy/q3_full_quality_r1/labels/im0163_512_VK.npy": "0989a55803c3d523aa3a5567b0f502734e7c6af7ba8696a060aba661fbf8fbc0",
+    "build/deploy/q3_full_quality_r1/labels/im0235_256_AH.npy": "f51308c8177aefadea04021f222fb11ab08f5a1368e28920dfc28dd1b8aced53",
+    "build/deploy/q3_full_quality_r1/labels/im0235_256_VK.npy": "afac0a58039909e55e67359d4adb7a1f0a18f4cd7abec7927847b4fdd0eb312f",
+    "build/deploy/q3_full_quality_r1/labels/im0235_512_AH.npy": "cff2302b1bd7c09273db7dd927afe831bbe4cd71cae5731feccf409c9d2c7839",
+    "build/deploy/q3_full_quality_r1/labels/im0235_512_VK.npy": "4e29ec54e1ac1a8ad161f949859c85b9c113094d1473b8c6d70309d072df39e2",
+    "build/deploy/q3_full_quality_r1/labels/im0236_256_AH.npy": "d943bc90d6e833758d31991c63fcb3e9450a05d6e0486782f91be056b8fcdc88",
+    "build/deploy/q3_full_quality_r1/labels/im0236_256_VK.npy": "381951577ccbbbc09bbb7dfc99943e94f328c93fe88465bc6ac64d637dc27165",
+    "build/deploy/q3_full_quality_r1/labels/im0236_512_AH.npy": "f1d0e00e553efa2cb37994cdee05855f26a752aae985fb2945ab16efb6a8d099",
+    "build/deploy/q3_full_quality_r1/labels/im0236_512_VK.npy": "34c1ea3cdf8a1dfcec989e0b74a84d6194c1a5f6911d276abcbd450a98a05978",
+    "build/deploy/q3_full_quality_r1/labels/im0239_256_AH.npy": "c9eb1afc97530aa5ae506413d649c4ed9d4386e0e0d220b8271413a6d389d725",
+    "build/deploy/q3_full_quality_r1/labels/im0239_256_VK.npy": "0903ed3d4b8b65e04b33b35975bee03014f390a2ca77de53033c04584ea19a86",
+    "build/deploy/q3_full_quality_r1/labels/im0239_512_AH.npy": "8cf1936073c6df1eb7e3fc190a136540456c829be3ddac4d11912f7e36224728",
+    "build/deploy/q3_full_quality_r1/labels/im0239_512_VK.npy": "e87537eb0d31b82595aeb1db372484aba93e9cf51b14844108692d49d7a246bc",
+    "build/deploy/q3_full_quality_r1/labels/im0240_256_AH.npy": "42f67b439c4545c3f01a957eb51a1f917b10885204b8b43d5719e4e14903bbc1",
+    "build/deploy/q3_full_quality_r1/labels/im0240_256_VK.npy": "cad2ec80ed92a6d2a8fb3f7d1121bed310546670fb0685e0ba12e1ff8c7ecb2e",
+    "build/deploy/q3_full_quality_r1/labels/im0240_512_AH.npy": "520aa93cce443a33ecede5ad9eb8162c678842fa0355f6020584025974cde657",
+    "build/deploy/q3_full_quality_r1/labels/im0240_512_VK.npy": "0775f80d85fb78b89ac005ecdf7954c21de628685e9dbef701f763167ff05070",
+    "build/deploy/q3_full_quality_r1/labels/im0255_256_AH.npy": "ae9b6054b93a11eadf07ee5a597a2c084e34c383ce0f280163457e7c4d78f90d",
+    "build/deploy/q3_full_quality_r1/labels/im0255_256_VK.npy": "9d58631af99ac15ef6b3b0cc72e7034a153c1611127dc53ccf66aafe4ece70de",
+    "build/deploy/q3_full_quality_r1/labels/im0255_512_AH.npy": "01534af012dec8a428266c451fb50f826c69f9573a2945f4b8c7d1f4b833ab0b",
+    "build/deploy/q3_full_quality_r1/labels/im0255_512_VK.npy": "24e349567d3b0aad6805f0ffc7aece2441675f763cfcc22684ef512696e731c1",
+    "build/deploy/q3_full_quality_r1/labels/im0291_256_AH.npy": "b1cc49c2d03b45651355587c5cec511c26896633605e09e12b02f9660981fdf2",
+    "build/deploy/q3_full_quality_r1/labels/im0291_256_VK.npy": "a86878d9b535d0c1af4f43155452a198102848be9ff6ed1bb6da174246acc575",
+    "build/deploy/q3_full_quality_r1/labels/im0291_512_AH.npy": "3c5ffbac02ca66fa8ab302b0b1eb970866d5bd1d7b56f8c00ccfb778ed0c8ccd",
+    "build/deploy/q3_full_quality_r1/labels/im0291_512_VK.npy": "afe570033345377a90d28400be9b1176f071db166b6e79937ce42179d13e118d",
+    "build/deploy/q3_full_quality_r1/labels/im0319_256_AH.npy": "514fd116c0874e6289528a70f1af9b2a838a56576ac780e85647789d623ac990",
+    "build/deploy/q3_full_quality_r1/labels/im0319_256_VK.npy": "ce8b799d804ee0263ccc68762957f6f89276dcdd7cef797e638ebc5e48bc55c6",
+    "build/deploy/q3_full_quality_r1/labels/im0319_512_AH.npy": "a1445df8bd2c20c5af4a56a0dc866ccdea7cba26a8dc168b6e47f4d9e71a637d",
+    "build/deploy/q3_full_quality_r1/labels/im0319_512_VK.npy": "aca49d32bfeb300335919794eae62e0b5c315e5a25817139804dd1dde13077de",
+    "build/deploy/q3_full_quality_r1/labels/im0324_256_AH.npy": "40317ab0c76205c5c3fa233be2f18a18e07886433ec585480ba67815a7c1eb05",
+    "build/deploy/q3_full_quality_r1/labels/im0324_256_VK.npy": "e54e467f5e6bd694892587f93476cde0a044026fb8f6fa4f50a59eb3c19f0b43",
+    "build/deploy/q3_full_quality_r1/labels/im0324_512_AH.npy": "8eed40a8a6beef9e49e69d40dd98bf7a4829d5d23ed3492e9c36faf849ff6b0a",
+    "build/deploy/q3_full_quality_r1/labels/im0324_512_VK.npy": "148b4cc96b571c3b12f4ce017007fd6bbdc7dcb016e204f0bdbcee1b089b92b7",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/__init__.py": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/evaluation.py": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/hardware.py": "28e8c5fbac16bc2a62889bff785b0a085ce42a57c689ac857e24b8b9e4ef999a",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/launch.py": "502ac4e9d26f3cc05350e65c7f59ac1dfb9a643641eac08b01547ea86feac72b",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/protocol.py": "d9b7e237dcb4bec9933128d13b69888dca7a4bc8ba4e8f28bbbc2c3c297a2cab",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/quality_observer.py": "32279270434833bec0e95d6a8221ae01e9d312200df133e6d6bb5413b1e964c7",
+    "build/deploy/q3_full_quality_r1/pynq_w4a/service.py": "c658a50b0b0e8d0292fd262f1a64afab95c2846c9752415b97c997d0d6adc6ee",
+    "build/deploy/q3_full_quality_r1/q3_board.py": "36295c0e42ed2bf32dbf819bfda6b856aba91002856d996114dcdb8b25e8dadb",
+    "build/deploy/q3_full_quality_r1/q3_manifest.json": "f85ef540f5d3d795b88093ec9535e90ea224476554ae99667131e4d0700bde80",
+    "build/deploy/q3_full_quality_r1/q3_protocol.json": "299809fefe67d0f565a53135388fb12aefc7d2e5a794f3c8eac082e8bf221d52",
+    "build/deploy/q3_full_quality_r1/ui/app.js": "65b52167b8d34d48fcbad3857d2647cf605005b1e980eaa754a8b437259f1c55",
+    "build/deploy/q3_full_quality_r1/ui/index.html": "0325aea6642189cce1cacdffbd5bf3a0b7c33a63e4476e7eb5198b24f93ef230",
+    "build/deploy/q3_full_quality_r1/ui/style.css": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579",
+    "build/deploy/q3_full_quality_r1/w2_manifest.json": "b5153f0f6fc0a055b95bb2d7d560b99310aac9b7c34da7dd33ce5b89d6f9c035",
+    "build/deploy/q3_full_quality_r1/w2_quality.bit": "d0a42a2df40c629be2d5fa081008e6b7e378e80530938a60a77157fe0a38a14b",
+    "build/deploy/q3_full_quality_r1/w2_quality.hwh": "37debb1a9345f7f9a34f446340fef7cd3c2e8825007bcc57a4471a9dbf6c49e2"
+  },
+  "saved_evidence": {
+    "build/q4d_detector_hls_03/solution1/csim/report/retina_detector_hls_csim.log": {
+      "bytes": 1275,
+      "sha256": "6e78dd283023343a5c2d5502765aa60c830e34d01f9371ffe7ee052581818e14"
+    },
+    "build/q4d_detector_hls_03/solution1/syn/report/retina_detector_hls_csynth.rpt": {
+      "bytes": 10353,
+      "sha256": "3a72e69318f2245ebc3549de97db85d8e2f20e7802e0cfee98dd35846fa83097"
+    },
+    "build/q4d_detector_hls_03/solution1/syn/report/c7_filter_csynth.rpt": {
+      "bytes": 396338,
+      "sha256": "01e932cc2bbd195ea0345acf10993f1d08614e85c1aa44f3a88bdb0584f984fc"
+    },
+    "build/q4d_detector_full_02/timing_summary.rpt": {
+      "bytes": 38351,
+      "sha256": "663d4c610fc2735fd8b9ab94f00f04b7eefcd0967d13bc8ead104af2b242c5ab"
+    },
+    "build/q4d_detector_full_02/utilization.rpt": {
+      "bytes": 10588,
+      "sha256": "ee4e7491dbd4284d6f22df6ca331a49df0faca7ca1a660e02ac6198a8bffce9d"
+    },
+    "build/q4d_detector_full_02/drc.rpt": {
+      "bytes": 59379,
+      "sha256": "30bcaaa4540b78272ec8e8cff128b9c2ed725cb8badeffc3a6d4267af6a9f65d"
+    },
+    "build/q4d_detector_hardware_check_01.json": {
+      "bytes": 48756,
+      "sha256": "5035fda207673a17f64098adb0dcc9d794e766acff19a8c5b6c88deb52bb4d2c"
+    },
+    "build/q4d_guard_sim_01/session.log": {
+      "bytes": 1532,
+      "sha256": "ab9001cf868793614afff1f68a9cf50963f8df8d2970aa6177bf8b1b764747f3"
+    },
+    "build/q4d_detector_reset_session_01.log": {
+      "bytes": 8396,
+      "sha256": "211c8f256f577df4f0978ad4bc4c2fff488cae462424c42d6aa1526c8f060bbf"
+    },
+    "build/q4d_host_suite_01.log": {
+      "bytes": 28563,
+      "sha256": "8f24a480f4d17bb7c2d4ccf47ffb8325ada4325097bc3cf08feefaa6ca62ed69"
+    },
+    "build/q4d_host_recheck_02.log": {
+      "bytes": 2777,
+      "sha256": "87a5f7712da22012c7e266c0ccd9cba9cd467cebb424c88d63e488dd5f827ee4"
+    },
+    "build/q4d_shard_compile_01/compile.log": {
+      "bytes": 31234,
+      "sha256": "997da8cb76d59d62953abc94a00883d210bf15f6cea4a427a2654d555a57d32c"
+    },
+    "build/q4d_shard_compile_01/elaborate.log": {
+      "bytes": 10020,
+      "sha256": "014227ce0e356b24dc57d92e182f6e90cb28e07f2b6f05d78e9405633cd95625"
+    },
+    "build/q4d_shard_compile_01/source_identity.json": {
+      "bytes": 26694,
+      "sha256": "3088d6b189a65bee352c0dbcae27f54fd26c59a04253161089471a1cec7a0d56"
+    },
+    "build/q4d_shard_compile_01/sources.prj": {
+      "bytes": 12764,
+      "sha256": "bc197f859ad4ee491df2c4d8f467620a258d7ede70d920996874e14e53ca4cca"
+    },
+    "build/q4d_detector_axis_sim_03/vector_manifest.json": {
+      "bytes": 11934,
+      "sha256": "afd11cc053dd026bb9cc622c386c03ac2c3826f3357b1c961cbd881d08410e1d"
+    },
+    "build/q4d_board_references_01/frozen_evaluation.json": {
+      "bytes": 1095752,
+      "sha256": "1f888547d78fe206b21ed77536f8fbb7986bd8f34a5021b526c898225d1fb849"
+    },
+    "build/q4d_frozen_visual_02/review.md": {
+      "bytes": 1801,
+      "sha256": "f1ea5cc4e4aa985d5071628e10d6bb03ebc72fe0f017eb146f0215185838b9d2"
+    },
+    "build/q4d_host_ui_preview_01.jpg": {
+      "bytes": 209290,
+      "sha256": "b04e6190b836bd1d1d61dbd44949c5e21d602405dddea048de3d7e794fcd6024"
+    },
+    "build/q4d_host_ui_state_01.json": {
+      "bytes": 6174,
+      "sha256": "23e0ec8cfc066a50c19bd98954924e4a3548db1cf56d7e348f299386aae2703f"
+    },
+    "build/q4d_original_region_review_01/audit.json": {
+      "bytes": 10971,
+      "sha256": "9d9ea5fe6d8e168eddcd4911012d242f62c5ff800d538206430fa749e9a66ae3"
+    },
+    "build/q4d_original_region_review_01/same_roi_c5_real_c7_reference.png": {
+      "bytes": 144656,
+      "sha256": "08dfbbdedfcfeefee3b6b78b8822d708271dad033b51fa2a36ec7b563f273151"
+    },
+    "build/q4d_original_region_review_01/same_full_fov_centerline.png": {
+      "bytes": 517115,
+      "sha256": "65acd28cb4175c00a8d09bc295a6cdc7eba728cb35b070357c497f693ad573a5"
+    },
+    "build/q4d_bounded_host_rejection_03.log": {
+      "bytes": 997,
+      "sha256": "4daf69ad38d4520c5aeb156b5523b6008de707ff3cbc0aff7abb02f3cfadf03a"
+    },
+    "build/q4d_rtl_gate_pending_02.log": {
+      "bytes": 574,
+      "sha256": "57d88f4c91e6614529a4256bafca5e00ddbb7bcac7511a8f53246d5a0e80a377"
+    },
+    "build/q4d_rtl_gate_pending_03.log": {
+      "bytes": 569,
+      "sha256": "6a3e59a57340cc68699aa48ef66ba4a096a8b4dfa1ef1112f7f73fd931b4641a"
+    },
+    "build/q4d_final_package_recheck_01.log": {
+      "bytes": 558,
+      "sha256": "7d671778e1546f8915a7e207d42b474b0bc8afafcb6e4daffffa34f601686719"
+    },
+    "build/q4d_release_package_01.log": {
+      "bytes": 449,
+      "sha256": "1c90a4073d4605fa3beed447e325ec7cd6f89993ed1dcdcaf891e4ed818c6e9f"
+    },
+    "build/q4d_sharded_rtl_verified_01.json": {
+      "bytes": 32055,
+      "sha256": "259e9a52366dfb1c5f71ae9a241cf13e35207d00d29f39138dfad2b9a3631c3f"
+    },
+    "build/q4d_sharded_rtl_verified_01.log": {
+      "bytes": 2043,
+      "sha256": "80654826c3579e899b8229bf6ba15cdaa4e1205727a1cdf5e41bbf4565c6e4e6"
+    },
+    "build/q4d_sharded_rtl_02/group_01/xsim.log": {
+      "bytes": 3302,
+      "sha256": "f92688bbf0b582e498b5303698d3d74a30154ebfa5d8921ca9048014cbad2a78"
+    },
+    "build/q4d_sharded_rtl_02/group_02/xsim.log": {
+      "bytes": 4801,
+      "sha256": "dc90207628fa089321fa96f0767f84a492f1828256d95d1cc0896c5a9933e0b6"
+    },
+    "build/q4d_sharded_rtl_02/group_03/xsim.log": {
+      "bytes": 6301,
+      "sha256": "4667073d6b107643f0921d590779d6ab171283901f36f8d70361a6f158bbb93e"
+    },
+    "build/q4d_sharded_rtl_02/group_04/xsim.log": {
+      "bytes": 4799,
+      "sha256": "640f7c4a66279122354500047b2ab7d54b800ba6fe8ecf65c4ce0331be8b8ec7"
+    },
+    "build/q4d_sharded_rtl_02/group_05/xsim.log": {
+      "bytes": 4806,
+      "sha256": "17ed77ea6faab40b17a96d0c0aafbc5e42cfe7c93424b49e8a52f6fa7e0a1d54"
+    },
+    "build/q4d_sharded_rtl_02/group_06/xsim.log": {
+      "bytes": 4810,
+      "sha256": "49749e674bebb4a27b838446826507eab76944712042901b200fd4daa3815da1"
+    },
+    "build/q4d_sharded_rtl_02/group_07/xsim.log": {
+      "bytes": 4810,
+      "sha256": "ba0a0fec9b16b0b0e3375541a0693d2b290e36fbe291b6a2dddab5be67e77d12"
+    },
+    "build/q4d_sharded_rtl_02/group_08/xsim.log": {
+      "bytes": 4944,
+      "sha256": "98db9c8858b5b2bbf0e5926f0fe710528a806646d30a0c96cb116a1f0e79644a"
+    }
+  },
+  "model": {
+    "bytes": 62706,
+    "sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6"
+  },
+  "current_sources": {
+    "pynq_q4d/evaluation.py": {
+      "bytes": 1912,
+      "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+    },
+    "pynq_q4d/hardware.py": {
+      "bytes": 12913,
+      "sha256": "5b7662c7f9010ce918dd77cfcf59734b0aa95032bf2884b2cd5f71f119a18770"
+    },
+    "pynq_q4d/launch.py": {
+      "bytes": 4619,
+      "sha256": "71cda32bfa02b452cbd833d1e558a2327e2471f9cc227aa6e2b1302be4b11fde"
+    },
+    "pynq_q4d/protocol.py": {
+      "bytes": 5571,
+      "sha256": "1cb93d41ae09525e9597372da6873beb4296787f3ee7a29af611b91130a74ed8"
+    },
+    "pynq_q4d/quality_observer.py": {
+      "bytes": 5088,
+      "sha256": "b3321acdb8d8cc961e32c0d36cf530093477346bf98cbbcf2190ebc94eb81086"
+    },
+    "pynq_q4d/service.py": {
+      "bytes": 28601,
+      "sha256": "d56669705f281d99ebbffacbc8f0bc53a737d1dc711738c30789133f80340b8d"
+    },
+    "pynq_q4d/__init__.py": {
+      "bytes": 85,
+      "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+    },
+    "ui_q4d/app.js": {
+      "bytes": 14265,
+      "sha256": "1e204de553f7a1f3f94168edead2ff6f25f2f0de006ce1fb0107f7e2e0e633c1"
+    },
+    "ui_q4d/index.html": {
+      "bytes": 6670,
+      "sha256": "d0fa90a8299975d5d07ea5c896beed0082d4ea20d69f9e5f9cce70a3fe4a9531"
+    },
+    "ui_q4d/style.css": {
+      "bytes": 5073,
+      "sha256": "22c3207d857cefa6c429b57ce334ec3874728c03f4155ca29c9186a34926e579"
+    },
+    "hls/retina_detector_c5.cpp": {
+      "bytes": 7978,
+      "sha256": "57b6eafcf44e9e053e060a7fc85ff20712592b37dcb5cbef47286ffb7e80259f"
+    },
+    "hls/retina_detector_hls.cpp": {
+      "bytes": 7994,
+      "sha256": "9358b7176badaf87ae9e05a76c4ec01a0ff64db8f3bc93fd2fc0d6c41614d212"
+    },
+    "hls/retina_detector_hls.hpp": {
+      "bytes": 577,
+      "sha256": "1981862493a66289c315e0cbf1efeb019b4a3b58471aeb0486f5d8916bdcee91"
+    },
+    "hls/retina_c7_model.hpp": {
+      "bytes": 42825,
+      "sha256": "0aef40c2006daf2d2d0255861505bdcc1c9f1db5a16743594701a320fa5e3668"
+    },
+    "software/models/c7_d6_r1.json": {
+      "bytes": 62706,
+      "sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6"
+    },
+    "scripts/archive_q4d_host.py": {
+      "bytes": 7128,
+      "sha256": "f35f5edb1f84c5af04fe5bbbc5528f5317ebe6aedd35ca7a90da73213b0bec55"
+    },
+    "scripts/audit_q4d_original_region.py": {
+      "bytes": 6189,
+      "sha256": "b7da59e261184af5f912986dccfcf8c3a5d5cf5aa9369ece41e09cfcdb1bf4d2"
+    },
+    "scripts/check_q4d_hardware.py": {
+      "bytes": 9091,
+      "sha256": "8c06278cd1ca818d3f88081f3ccd9628f6ea4002bd3fc3841acb3e90845f6684"
+    },
+    "scripts/check_q4d_sharded_rtl.py": {
+      "bytes": 8329,
+      "sha256": "376e2835f4ea5ac8adcd62c0e23927c3ac903c81bac647422d391c6040f06073"
+    },
+    "scripts/derive_q4d_hardware_tools.py": {
+      "bytes": 3290,
+      "sha256": "292fa9896312a62b0c7a41e9f146c91f2653a269acc9322134a00f8ec1a48fbf"
+    },
+    "scripts/derive_q4d_runtime.py": {
+      "bytes": 1660,
+      "sha256": "7354f9b8e0b0ed024166f14b8b0763747e97b8741170d5fd9508eb84d735b941"
+    },
+    "scripts/fit_q4d_final.py": {
+      "bytes": 4769,
+      "sha256": "081a0fb747640653de3169a7b9c1dff0e9314e29692e12e246cbe5a01fd888ba"
+    },
+    "scripts/package_q4d_quality.py": {
+      "bytes": 9107,
+      "sha256": "e3985f4a726a179aa43024ba8cc9e9102e0ef853f3c7a6b24f3215fcca23d0d7"
+    },
+    "scripts/prepare_q4d_board_hashes.py": {
+      "bytes": 3756,
+      "sha256": "d25781323c3195096c28f6371378cbe3a9b4cc099ba1f0d16a4c981eaf62272f"
+    },
+    "scripts/prepare_q4d_detector_vectors.py": {
+      "bytes": 4733,
+      "sha256": "513370de23141a19ca07513831686db2c72e7fcb3ceb2a255c9f365c3711b1af"
+    },
+    "scripts/preview_browser_q4d_host.py": {
+      "bytes": 1333,
+      "sha256": "7f096581f8af8f7e7a3905bb4d687315520129413b8b3e78879a25dc9e78f30a"
+    },
+    "scripts/q4d_board.py": {
+      "bytes": 8304,
+      "sha256": "a6edbaafde713262c6b50127da4e2e32641aaf0a10273e4c8c83c15377ed6498"
+    },
+    "scripts/review_q4d_frozen.py": {
+      "bytes": 4599,
+      "sha256": "893470a977d1b64d24041ccebc15c7e9a0d6e0554ab0f21b1f794cacaf0b28e1"
+    },
+    "scripts/review_q4d_oof.py": {
+      "bytes": 1833,
+      "sha256": "898e6347ef24c5b4b70516912d4e681137bbce5db951d626990b2eac935a13e3"
+    },
+    "scripts/train_q4d_detector.py": {
+      "bytes": 9745,
+      "sha256": "003293edfd321bfce5f41d9ed69f16215409612e1df0206025187bb9a338e025"
+    },
+    "scripts/verify_q4d_archive.py": {
+      "bytes": 21351,
+      "sha256": "487ab92f6071243b7a850e2b2b6f9c03ca094da1894ac9f9e9675a61140ce7d8"
+    },
+    "scripts/verify_q4d_run.py": {
+      "bytes": 16237,
+      "sha256": "ad15d465191accc9704053cc782890a17e5a2dc9350ff26ac35c3d12f28bf6d0"
+    },
+    "tests/browser_q4d_fixtures.py": {
+      "bytes": 6900,
+      "sha256": "caca0538a08da0f54188e09b0457cd141876529fb266f42115c9b6c9f476e0cc"
+    },
+    "tests/retina_q4d_detector_axis_tb.sv": {
+      "bytes": 12920,
+      "sha256": "df15f6659a91f0c44e9852761aa4594824074b2167d5f06b0c476917211bc2fe"
+    },
+    "tests/retina_q4d_detector_shard_tb.sv": {
+      "bytes": 12777,
+      "sha256": "eced455b8415a0eb38fd755f276c37803faf6dec01184faed221d2024f9d65d7"
+    },
+    "tests/test_browser_q4d.py": {
+      "bytes": 27040,
+      "sha256": "a0b7aa2446e748f9369648e13f49ed8f69e04e38484a33463f405a1f5a27584c"
+    },
+    "tests/test_q4d_batch.py": {
+      "bytes": 6642,
+      "sha256": "dac3abe24b60401dccfdac0e4f803a042ffa9cdb67b4034d49ce6320b71718df"
+    },
+    "tests/test_q4d_coverage.py": {
+      "bytes": 2719,
+      "sha256": "ec8ea54053673750081cb05563d3d79d221116adf5f489373056a395234d03a6"
+    },
+    "tests/test_q4d_features.py": {
+      "bytes": 2062,
+      "sha256": "a9ecdcf5c1fb68a4ea4b819bd1944b1578ca28a85a002934951926ca9199dba8"
+    },
+    "tests/test_q4d_release.py": {
+      "bytes": 6377,
+      "sha256": "ff6bbd11d8ba2b0ec3754046d9a50185788e5a8f8095e7656476cec52cf70b9e"
+    },
+    "rtl/core/retina_detector_guard.v": {
+      "bytes": 10163,
+      "sha256": "62f42f39f849557f4ddc91a902bf793dc1b2d620c20da206d55b3a6a3e09c988"
+    },
+    "tests/retina_detector_hls_tb.cpp": {
+      "bytes": 1883,
+      "sha256": "ec2e45ee77702a0dba0f4a5d5c85ddd447af33b7ebdd6eb74449de302c751582"
+    }
+  },
+  "fixed_protocol": {
+    "bytes": 2224,
+    "sha256": "b72b038269eac2f690f70a7cd63c83ab235b633cea1f0029a46b2b9eb93ab1c2"
+  },
+  "limitations": [
+    "C7 optional, not final quality acceptance",
+    "512 training OOF bright-vessel recall protection failed",
+    "im0324 and im0004 reused-heldout regressions retained; no post-holdout retuning",
+    "Actual board time/FPS and algorithm outputs require the new physical-board experiment"
+  ]
+}

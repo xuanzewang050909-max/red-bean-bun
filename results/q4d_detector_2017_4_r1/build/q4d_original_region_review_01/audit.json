@@ -1,0 +1,360 @@
+{
+  "status": "MIXED_REAL_C5_FROZEN_CPU_C7_DIAGNOSTIC_NOT_BOARD_ACCEPTANCE",
+  "metrics": {
+    "C5 actual DMA": {
+      "regions": {
+        "fov": {
+          "pixels": 211527,
+          "predicted": 17558,
+          "negative_in_both": 5856,
+          "annotations": {
+            "AH": {
+              "tp": 10548,
+              "fp": 7010,
+              "fn": 7550,
+              "tn": 186419,
+              "dice": 0.5916535786403411,
+              "iou": 0.4201051457702724,
+              "precision": 0.6007517940539925,
+              "recall": 0.5828268316941099
+            },
+            "VK": {
+              "tp": 10908,
+              "fp": 6650,
+              "fn": 9943,
+              "tn": 184026,
+              "dice": 0.5679918769038507,
+              "iou": 0.3966401221773754,
+              "precision": 0.6212552682537874,
+              "recall": 0.5231403769603377
+            }
+          }
+        },
+        "rectangle": {
+          "pixels": 38400,
+          "predicted": 6554,
+          "negative_in_both": 3958,
+          "annotations": {
+            "AH": {
+              "tp": 2184,
+              "fp": 4370,
+              "fn": 667,
+              "tn": 31179,
+              "dice": 0.46443381180223287,
+              "iou": 0.30245118404653093,
+              "precision": 0.3332316142813549,
+              "recall": 0.7660470010522623
+            },
+            "VK": {
+              "tp": 2281,
+              "fp": 4273,
+              "fn": 969,
+              "tn": 30877,
+              "dice": 0.4653202774377805,
+              "iou": 0.3032035092383358,
+              "precision": 0.34803173634421725,
+              "recall": 0.7018461538461539
+            }
+          }
+        },
+        "bright_band": {
+          "pixels": 5334,
+          "predicted": 2034,
+          "negative_in_both": 1933,
+          "annotations": {
+            "AH": {
+              "tp": 88,
+              "fp": 1946,
+              "fn": 14,
+              "tn": 3286,
+              "dice": 0.08239700374531835,
+              "iou": 0.04296875,
+              "precision": 0.043264503441494594,
+              "recall": 0.8627450980392157
+            },
+            "VK": {
+              "tp": 68,
+              "fp": 1966,
+              "fn": 20,
+              "tn": 3280,
+              "dice": 0.0640904806786051,
+              "iou": 0.033106134371957155,
+              "precision": 0.03343166175024582,
+              "recall": 0.7727272727272727
+            }
+          }
+        }
+      },
+      "continuity": {
+        "AH": {
+          "prediction_skeleton_pixels": 5448,
+          "truth_skeleton_pixels": 5444,
+          "prediction_skeleton_inside_truth": 3547,
+          "truth_skeleton_inside_prediction": 3565,
+          "topology_precision": 0.651064610866373,
+          "topology_recall": 0.6548493754592212,
+          "cldice": 0.6529515087116107,
+          "truth_adjacent_edges": 5531,
+          "covered_adjacent_edges": 3487,
+          "adjacent_edge_coverage": 0.6304465738564455
+        },
+        "VK": {
+          "prediction_skeleton_pixels": 5448,
+          "truth_skeleton_pixels": 6579,
+          "prediction_skeleton_inside_truth": 3456,
+          "truth_skeleton_inside_prediction": 3628,
+          "topology_precision": 0.6343612334801763,
+          "topology_recall": 0.5514515883872929,
+          "cldice": 0.5900079732028108,
+          "truth_adjacent_edges": 6644,
+          "covered_adjacent_edges": 3525,
+          "adjacent_edge_coverage": 0.5305538832028899
+        }
+      },
+      "missed_skeleton": {
+        "AH": {
+          "truth_skeleton_pixels": 5444,
+          "missed_pixels": 1879,
+          "missed_pixels_in_components_over_three": 1668,
+          "bins": {
+            "1": {
+              "components": 52,
+              "pixels": 52
+            },
+            "2-3": {
+              "components": 64,
+              "pixels": 159
+            },
+            "4-7": {
+              "components": 75,
+              "pixels": 393
+            },
+            "8-15": {
+              "components": 68,
+              "pixels": 700
+            },
+            "16+": {
+              "components": 22,
+              "pixels": 575
+            }
+          }
+        },
+        "VK": {
+          "truth_skeleton_pixels": 6579,
+          "missed_pixels": 2951,
+          "missed_pixels_in_components_over_three": 2623,
+          "bins": {
+            "1": {
+              "components": 73,
+              "pixels": 73
+            },
+            "2-3": {
+              "components": 102,
+              "pixels": 255
+            },
+            "4-7": {
+              "components": 130,
+              "pixels": 686
+            },
+            "8-15": {
+              "components": 91,
+              "pixels": 958
+            },
+            "16+": {
+              "components": 40,
+              "pixels": 979
+            }
+          }
+        }
+      }
+    },
+    "C7 CPU reference": {
+      "regions": {
+        "fov": {
+          "pixels": 211527,
+          "predicted": 13989,
+          "negative_in_both": 2692,
+          "annotations": {
+            "AH": {
+              "tp": 10409,
+              "fp": 3580,
+              "fn": 7689,
+              "tn": 189849,
+              "dice": 0.6487985788637143,
+              "iou": 0.4801642217916782,
+              "precision": 0.744084637929802,
+              "recall": 0.5751464250193391
+            },
+            "VK": {
+              "tp": 10543,
+              "fp": 3446,
+              "fn": 10308,
+              "tn": 187230,
+              "dice": 0.6052238805970149,
+              "iou": 0.4339218833600856,
+              "precision": 0.7536635928229323,
+              "recall": 0.5056352213323102
+            }
+          }
+        },
+        "rectangle": {
+          "pixels": 38400,
+          "predicted": 4106,
+          "negative_in_both": 1825,
+          "annotations": {
+            "AH": {
+              "tp": 2033,
+              "fp": 2073,
+              "fn": 818,
+              "tn": 33476,
+              "dice": 0.5844473192468018,
+              "iou": 0.4128757108042242,
+              "precision": 0.49512907939600587,
+              "recall": 0.7130831287267625
+            },
+            "VK": {
+              "tp": 2038,
+              "fp": 2068,
+              "fn": 1212,
+              "tn": 33082,
+              "dice": 0.55410549211528,
+              "iou": 0.3832267769838285,
+              "precision": 0.4963468095470044,
+              "recall": 0.6270769230769231
+            }
+          }
+        },
+        "bright_band": {
+          "pixels": 5334,
+          "predicted": 1083,
+          "negative_in_both": 1007,
+          "annotations": {
+            "AH": {
+              "tp": 70,
+              "fp": 1013,
+              "fn": 32,
+              "tn": 4219,
+              "dice": 0.11814345991561181,
+              "iou": 0.06278026905829596,
+              "precision": 0.06463527239150507,
+              "recall": 0.6862745098039216
+            },
+            "VK": {
+              "tp": 53,
+              "fp": 1030,
+              "fn": 35,
+              "tn": 4216,
+              "dice": 0.09052092228864218,
+              "iou": 0.04740608228980322,
+              "precision": 0.048938134810710986,
+              "recall": 0.6022727272727273
+            }
+          }
+        }
+      },
+      "continuity": {
+        "AH": {
+          "prediction_skeleton_pixels": 5565,
+          "truth_skeleton_pixels": 5444,
+          "prediction_skeleton_inside_truth": 4181,
+          "truth_skeleton_inside_prediction": 3833,
+          "topology_precision": 0.7513027852650495,
+          "topology_recall": 0.7040778839088905,
+          "cldice": 0.7269241462778437,
+          "truth_adjacent_edges": 5531,
+          "covered_adjacent_edges": 3585,
+          "adjacent_edge_coverage": 0.6481648888085337
+        },
+        "VK": {
+          "prediction_skeleton_pixels": 5565,
+          "truth_skeleton_pixels": 6579,
+          "prediction_skeleton_inside_truth": 4072,
+          "truth_skeleton_inside_prediction": 3752,
+          "topology_precision": 0.7317160826594789,
+          "topology_recall": 0.5702994376044992,
+          "cldice": 0.6410019910396503,
+          "truth_adjacent_edges": 6644,
+          "covered_adjacent_edges": 3453,
+          "adjacent_edge_coverage": 0.5197170379289585
+        }
+      },
+      "missed_skeleton": {
+        "AH": {
+          "truth_skeleton_pixels": 5444,
+          "missed_pixels": 1611,
+          "missed_pixels_in_components_over_three": 1210,
+          "bins": {
+            "1": {
+              "components": 150,
+              "pixels": 150
+            },
+            "2-3": {
+              "components": 105,
+              "pixels": 251
+            },
+            "4-7": {
+              "components": 95,
+              "pixels": 486
+            },
+            "8-15": {
+              "components": 38,
+              "pixels": 381
+            },
+            "16+": {
+              "components": 13,
+              "pixels": 343
+            }
+          }
+        },
+        "VK": {
+          "truth_skeleton_pixels": 6579,
+          "missed_pixels": 2827,
+          "missed_pixels_in_components_over_three": 2243,
+          "bins": {
+            "1": {
+              "components": 179,
+              "pixels": 179
+            },
+            "2-3": {
+              "components": 167,
+              "pixels": 405
+            },
+            "4-7": {
+              "components": 146,
+              "pixels": 769
+            },
+            "8-15": {
+              "components": 82,
+              "pixels": 805
+            },
+            "16+": {
+              "components": 26,
+              "pixels": 669
+            }
+          }
+        }
+      }
+    }
+  },
+  "original_roi": [
+    180,
+    145,
+    340,
+    385
+  ],
+  "model_unchanged": true,
+  "retuned": false,
+  "quality_accepted": false,
+  "c5_archive_sha256": "f9496ba5ca16f00d026e8c7c5a0fa939b44a7328600aa2ea1b56a1b948b6d4a5",
+  "c5_run": {
+    "run_id": "6dacc0131eeb49248ab24e1116365670",
+    "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+    "output_sha256": "67e6c1befc3448b1964f56d55cbb86671b20976e68173aa96e3969f10bf32555"
+  },
+  "c7_array_sha256": "67967181d6b40a9c54671588b7a7e14c20234602de44dc31d080ecae0950fced",
+  "model_sha256": "6f3d83ac760c91988f5edd27f45b6f69cc7c610ff13500d77161cfcc525f44a6",
+  "figures": {
+    "same_full_fov_centerline.png": "65acd28cb4175c00a8d09bc295a6cdc7eba728cb35b070357c497f693ad573a5",
+    "same_roi_c5_real_c7_reference.png": "08dfbbdedfcfeefee3b6b78b8822d708271dad033b51fa2a36ec7b563f273151"
+  }
+}

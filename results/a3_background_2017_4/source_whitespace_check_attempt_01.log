@@ -1,0 +1,1230 @@
+results/a3_background_2017_4/a2_to_a3_package.diff:16: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_package.diff:19: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_package.diff:20: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_package.diff:87: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_package.diff:88: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_package.diff:282: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_package.diff:283: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:14: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:24: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:25: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:37: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:38: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:62: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:63: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:81: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:88: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:89: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:128: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:129: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:148: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:149: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:182: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:183: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:197: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:198: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:213: trailing whitespace.
++ 
+results/a3_background_2017_4/a2_to_a3_runner.diff:214: trailing whitespace.
++ 
+results/a3_background_2017_4/axis_simulation_attempt_01.log:94: trailing whitespace.
++Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe retina_background_axis_tb -s background_axis_sim -mt off 
+results/a3_background_2017_4/axis_simulation_attempt_02.log:94: trailing whitespace.
++Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe retina_background_axis_tb -s background_axis_sim -mt off 
+results/a3_background_2017_4/clocks.rpt:46: new blank line at EOF.
+results/a3_background_2017_4/drc.rpt:42: trailing whitespace.
++Input pipelining  
+results/a3_background_2017_4/drc.rpt:47: trailing whitespace.
++PREG Output pipelining  
+results/a3_background_2017_4/drc.rpt:52: trailing whitespace.
++MREG Output pipelining  
+results/a3_background_2017_4/drc.rpt:57: trailing whitespace.
++No routable loads  
+results/a3_background_2017_4/drc.rpt:62: trailing whitespace.
++writefirst  
+results/a3_background_2017_4/drc.rpt:67: trailing whitespace.
++writefirst  
+results/a3_background_2017_4/drc.rpt:72: trailing whitespace.
++writefirst  
+results/a3_background_2017_4/drc.rpt:75: new blank line at EOF.
+results/a3_background_2017_4/hls_attempt_01.log:333: trailing whitespace.
++INFO: [XFORM 203-712] Applying dataflow to function 'hls::SepFilter2D<hls::BORDER_REPLICATE, 0, 2, ap_ufixed<1, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<1, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, int, 512, 512, 15, 15>' (E:/vivado/Vivado/2017.4/common/technology/autopilot/hls/hls_video_imgproc.h:977:1), detected/extracted 2 process function(s): 
+results/a3_background_2017_4/hls_attempt_01.log:336: trailing whitespace.
++INFO: [XFORM 203-712] Applying dataflow to function 'retina_background_hls' (D:/PLD/retina_fpga/hls/retina_background_hls.cpp:79), detected/extracted 6 process function(s): 
+results/a3_background_2017_4/hls_csynth.rpt:18: trailing whitespace.
+++ Timing (ns): 
+results/a3_background_2017_4/hls_csynth.rpt:19: trailing whitespace.
++    * Summary: 
+results/a3_background_2017_4/hls_csynth.rpt:26: trailing whitespace.
+++ Latency (clock cycles): 
+results/a3_background_2017_4/hls_csynth.rpt:27: trailing whitespace.
++    * Summary: 
+results/a3_background_2017_4/hls_csynth.rpt:35: trailing whitespace.
++    + Detail: 
+results/a3_background_2017_4/hls_csynth.rpt:36: trailing whitespace.
++        * Instance: 
+results/a3_background_2017_4/hls_csynth.rpt:49: trailing whitespace.
++        * Loop: 
+results/a3_background_2017_4/hls_csynth.rpt:57: trailing whitespace.
++* Summary: 
+results/a3_background_2017_4/hls_csynth.rpt:76: trailing whitespace.
+++ Detail: 
+results/a3_background_2017_4/hls_csynth.rpt:77: trailing whitespace.
++    * Instance: 
+results/a3_background_2017_4/hls_csynth.rpt:91: trailing whitespace.
++    * DSP48: 
+results/a3_background_2017_4/hls_csynth.rpt:94: trailing whitespace.
++    * Memory: 
+results/a3_background_2017_4/hls_csynth.rpt:97: trailing whitespace.
++    * FIFO: 
+results/a3_background_2017_4/hls_csynth.rpt:120: trailing whitespace.
++    * Expression: 
+results/a3_background_2017_4/hls_csynth.rpt:137: trailing whitespace.
++    * Multiplexer: 
+results/a3_background_2017_4/hls_csynth.rpt:149: trailing whitespace.
++    * Register: 
+results/a3_background_2017_4/hls_csynth.rpt:166: trailing whitespace.
++* Summary: 
+results/a3_background_2017_4/hls_csynth.rpt:184: new blank line at EOF.
+results/a3_background_2017_4/hls_tool_session.log:333: trailing whitespace.
++INFO: [XFORM 203-712] Applying dataflow to function 'hls::SepFilter2D<hls::BORDER_REPLICATE, 0, 2, ap_ufixed<1, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, ap_ufixed<1, 1, (ap_q_mode)5, (ap_o_mode)3, 0>, int, 512, 512, 15, 15>' (E:/vivado/Vivado/2017.4/common/technology/autopilot/hls/hls_video_imgproc.h:977:1), detected/extracted 2 process function(s): 
+results/a3_background_2017_4/hls_tool_session.log:336: trailing whitespace.
++INFO: [XFORM 203-712] Applying dataflow to function 'retina_background_hls' (D:/PLD/retina_fpga/hls/retina_background_hls.cpp:79), detected/extracted 6 process function(s): 
+results/a3_background_2017_4/ip_packaging_console_02.log:228: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:232: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:246: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:350: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:355: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:364: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:373: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:377: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:385: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:395: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:402: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:417: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:435: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:438: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:442: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:453: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:473: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:476: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:482: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:485: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:490: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:531: trailing whitespace.
++#   # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/ip_packaging_console_02.log:535: trailing whitespace.
++#                set_property modified_write_value modify $obj 
+results/a3_background_2017_4/ip_packaging_console_02.log:540: trailing whitespace.
++#                set_property read_action modify $obj 
+results/a3_background_2017_4/ip_packaging_console_02.log:549: trailing whitespace.
++#              set_property access "read-only" $obj 
+results/a3_background_2017_4/ip_packaging_console_02.log:551: trailing whitespace.
++#                set_property modified_write_value oneToToggle $obj 
+results/a3_background_2017_4/ip_packaging_console_02.log:552: trailing whitespace.
++#                set_property read_action modify $obj 
+results/a3_background_2017_4/ip_packaging_console_02.log:557: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:562: trailing whitespace.
++#     set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/ip_packaging_console_02.log:565: trailing whitespace.
++#       set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/ip_packaging_console_02.log:568: trailing whitespace.
++#       set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/ip_packaging_console_02.log:577: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:581: trailing whitespace.
++#       set_property base_address 0 $address_block 
+results/a3_background_2017_4/ip_packaging_console_02.log:582: trailing whitespace.
++#       set_property range 4096 $address_block 
+results/a3_background_2017_4/ip_packaging_console_02.log:583: trailing whitespace.
++#       set_property width 8 $address_block 
+results/a3_background_2017_4/ip_packaging_console_02.log:587: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:588: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:596: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:598: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:605: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:608: trailing whitespace.
++#       set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:609: trailing whitespace.
++#       set_property size 32 $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:610: trailing whitespace.
++#       set_property size_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:611: trailing whitespace.
++#       set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:612: trailing whitespace.
++#       set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:613: trailing whitespace.
++#       set_property description $descr $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:614: trailing whitespace.
++#       set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:615: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:616: trailing whitespace.
++#       # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/ip_packaging_console_02.log:618: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:627: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:630: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:633: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:634: trailing whitespace.
++#          #  set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $offset ] ] $ipx_field 
+results/a3_background_2017_4/ip_packaging_console_02.log:635: trailing whitespace.
++#          # set_property reset_value_format long $ipx_field 
+results/a3_background_2017_4/ip_packaging_console_02.log:636: trailing whitespace.
++#          set_property description $description $ipx_field 
+results/a3_background_2017_4/ip_packaging_console_02.log:638: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:640: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:645: trailing whitespace.
++#     set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/ip_packaging_console_02.log:648: trailing whitespace.
++#       set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/ip_packaging_console_02.log:651: trailing whitespace.
++#       set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/ip_packaging_console_02.log:660: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:664: trailing whitespace.
++#       set_property base_address 0 $address_block 
+results/a3_background_2017_4/ip_packaging_console_02.log:665: trailing whitespace.
++#       set_property range 4096 $address_block 
+results/a3_background_2017_4/ip_packaging_console_02.log:666: trailing whitespace.
++#       set_property width 8 $address_block 
+results/a3_background_2017_4/ip_packaging_console_02.log:670: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:671: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:679: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:687: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:690: trailing whitespace.
++#       set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:691: trailing whitespace.
++#       set_property size $range $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:692: trailing whitespace.
++#       set_property size_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:693: trailing whitespace.
++#       set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:694: trailing whitespace.
++#       set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:695: trailing whitespace.
++#       set_property description $descr $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:696: trailing whitespace.
++#       set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/ip_packaging_console_02.log:697: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:698: trailing whitespace.
++#       # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/ip_packaging_console_02.log:713: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:724: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:731: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:736: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:745: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:750: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:755: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:760: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:769: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:771: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_console_02.log:810: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:823: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:842: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:852: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:905: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:912: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:933: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:939: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:947: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:950: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:956: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:962: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:968: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:974: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:977: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:982: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:989: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1000: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1003: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1004: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1008: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1012: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1016: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1022: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1042: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1045: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1050: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1063: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1066: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1070: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1075: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1080: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1086: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1089: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1100: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1106: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1187: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1228: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1284: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1289: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1302: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1305: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1311: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1317: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1323: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1329: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1337: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1340: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1351: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1358: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1363: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1369: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1375: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1384: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1387: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1398: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1405: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1410: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1416: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1422: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1428: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1434: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1452: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1455: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1461: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1467: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1472: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1495: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1498: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1504: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1510: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1515: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1521: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1525: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1530: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1539: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1544: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1552: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1557: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1563: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1568: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1575: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1580: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_console_02.log:1591: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_01.log:10: trailing whitespace.
++# Journal file: 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:10: trailing whitespace.
++# Journal file: 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:233: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:237: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:251: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:355: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:360: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:369: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:378: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:382: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:390: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:400: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:407: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:422: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:440: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:443: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:447: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:458: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:478: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:481: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:487: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:490: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:495: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:536: trailing whitespace.
++#   # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:540: trailing whitespace.
++#                set_property modified_write_value modify $obj 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:545: trailing whitespace.
++#                set_property read_action modify $obj 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:554: trailing whitespace.
++#              set_property access "read-only" $obj 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:556: trailing whitespace.
++#                set_property modified_write_value oneToToggle $obj 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:557: trailing whitespace.
++#                set_property read_action modify $obj 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:562: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:567: trailing whitespace.
++#     set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:570: trailing whitespace.
++#       set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:573: trailing whitespace.
++#       set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:582: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:586: trailing whitespace.
++#       set_property base_address 0 $address_block 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:587: trailing whitespace.
++#       set_property range 4096 $address_block 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:588: trailing whitespace.
++#       set_property width 8 $address_block 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:592: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:593: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:601: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:603: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:610: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:613: trailing whitespace.
++#       set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:614: trailing whitespace.
++#       set_property size 32 $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:615: trailing whitespace.
++#       set_property size_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:616: trailing whitespace.
++#       set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:617: trailing whitespace.
++#       set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:618: trailing whitespace.
++#       set_property description $descr $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:619: trailing whitespace.
++#       set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:620: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:621: trailing whitespace.
++#       # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:623: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:632: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:635: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:638: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:639: trailing whitespace.
++#          #  set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $offset ] ] $ipx_field 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:640: trailing whitespace.
++#          # set_property reset_value_format long $ipx_field 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:641: trailing whitespace.
++#          set_property description $description $ipx_field 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:643: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:645: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:650: trailing whitespace.
++#     set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:653: trailing whitespace.
++#       set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:656: trailing whitespace.
++#       set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:665: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:669: trailing whitespace.
++#       set_property base_address 0 $address_block 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:670: trailing whitespace.
++#       set_property range 4096 $address_block 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:671: trailing whitespace.
++#       set_property width 8 $address_block 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:675: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:676: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:684: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:692: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:695: trailing whitespace.
++#       set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:696: trailing whitespace.
++#       set_property size $range $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:697: trailing whitespace.
++#       set_property size_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:698: trailing whitespace.
++#       set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:699: trailing whitespace.
++#       set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:700: trailing whitespace.
++#       set_property description $descr $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:701: trailing whitespace.
++#       set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:702: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:703: trailing whitespace.
++#       # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:718: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:729: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:736: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:741: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:750: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:755: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:760: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:765: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:774: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:776: trailing whitespace.
++#     
+results/a3_background_2017_4/ip_packaging_fixed_02.log:815: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:828: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:847: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:857: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:910: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:917: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:938: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:944: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:952: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:955: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:961: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:967: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:973: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:979: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:982: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:987: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:994: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1005: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1008: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1009: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1013: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1017: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1021: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1027: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1047: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1050: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1055: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1068: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1071: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1075: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1080: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1085: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1091: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1094: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1105: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1111: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1192: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1233: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1289: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1294: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1307: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1310: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1316: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1322: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1328: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1334: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1342: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1345: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1356: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1363: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1368: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1374: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1380: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1389: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1392: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1403: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1410: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1415: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1421: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1427: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1433: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1439: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1457: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1460: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1466: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1472: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1477: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1500: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1503: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1509: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1515: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1520: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1526: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1530: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1535: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1544: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1549: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1557: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1562: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1568: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1573: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1580: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1585: trailing whitespace.
++# 
+results/a3_background_2017_4/ip_packaging_fixed_02.log:1596: trailing whitespace.
++# 
+results/a3_background_2017_4/reconstructed_bd.tcl:41: trailing whitespace.
++# The design that will be created by this Tcl script contains the following 
+results/a3_background_2017_4/reconstructed_bd.tcl:99: trailing whitespace.
++   # USE CASES: 
+results/a3_background_2017_4/reconstructed_bd.tcl:133: trailing whitespace.
++   set list_check_ips "\ 
+results/a3_background_2017_4/reconstructed_bd.tcl:165: trailing whitespace.
++   set list_check_mods "\ 
+results/a3_background_2017_4/reconstructed_bd.tcl:311: trailing whitespace.
++  
+results/a3_background_2017_4/reconstructed_bd.tcl:1138: new blank line at EOF.
+results/a3_background_2017_4/run_ippack.tcl:5: trailing whitespace.
++# 
+results/a3_background_2017_4/run_ippack.tcl:56: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:403: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:553: trailing whitespace.
++  # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/run_ippack.tcl:557: trailing whitespace.
++               set_property modified_write_value modify $obj 
+results/a3_background_2017_4/run_ippack.tcl:562: trailing whitespace.
++               set_property read_action modify $obj 
+results/a3_background_2017_4/run_ippack.tcl:571: trailing whitespace.
++             set_property access "read-only" $obj 
+results/a3_background_2017_4/run_ippack.tcl:573: trailing whitespace.
++               set_property modified_write_value oneToToggle $obj 
+results/a3_background_2017_4/run_ippack.tcl:574: trailing whitespace.
++               set_property read_action modify $obj 
+results/a3_background_2017_4/run_ippack.tcl:585: trailing whitespace.
++    set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/run_ippack.tcl:588: trailing whitespace.
++      set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/run_ippack.tcl:591: trailing whitespace.
++      set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/run_ippack.tcl:600: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:604: trailing whitespace.
++      set_property base_address 0 $address_block 
+results/a3_background_2017_4/run_ippack.tcl:605: trailing whitespace.
++      set_property range 4096 $address_block 
+results/a3_background_2017_4/run_ippack.tcl:606: trailing whitespace.
++      set_property width 8 $address_block 
+results/a3_background_2017_4/run_ippack.tcl:610: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:611: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:619: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:621: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:628: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:631: trailing whitespace.
++      set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:632: trailing whitespace.
++      set_property size 32 $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:633: trailing whitespace.
++      set_property size_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:634: trailing whitespace.
++      set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:635: trailing whitespace.
++      set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:636: trailing whitespace.
++      set_property description $descr $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:637: trailing whitespace.
++      set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:638: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:639: trailing whitespace.
++      # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/run_ippack.tcl:641: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:650: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:653: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:656: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:657: trailing whitespace.
++         #  set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $offset ] ] $ipx_field 
+results/a3_background_2017_4/run_ippack.tcl:658: trailing whitespace.
++         # set_property reset_value_format long $ipx_field 
+results/a3_background_2017_4/run_ippack.tcl:659: trailing whitespace.
++         set_property description $description $ipx_field 
+results/a3_background_2017_4/run_ippack.tcl:661: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:669: trailing whitespace.
++    set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/run_ippack.tcl:672: trailing whitespace.
++      set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/run_ippack.tcl:675: trailing whitespace.
++      set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/run_ippack.tcl:688: trailing whitespace.
++      set_property base_address 0 $address_block 
+results/a3_background_2017_4/run_ippack.tcl:689: trailing whitespace.
++      set_property range 4096 $address_block 
+results/a3_background_2017_4/run_ippack.tcl:690: trailing whitespace.
++      set_property width 8 $address_block 
+results/a3_background_2017_4/run_ippack.tcl:694: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:695: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:703: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:711: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:714: trailing whitespace.
++      set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:715: trailing whitespace.
++      set_property size $range $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:716: trailing whitespace.
++      set_property size_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:717: trailing whitespace.
++      set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:718: trailing whitespace.
++      set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:719: trailing whitespace.
++      set_property description $descr $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:720: trailing whitespace.
++      set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/run_ippack.tcl:721: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack.tcl:722: trailing whitespace.
++      # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/run_ippack.tcl:801: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:5: trailing whitespace.
++# 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:56: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:403: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:553: trailing whitespace.
++  # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:557: trailing whitespace.
++               set_property modified_write_value modify $obj 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:562: trailing whitespace.
++               set_property read_action modify $obj 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:571: trailing whitespace.
++             set_property access "read-only" $obj 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:573: trailing whitespace.
++               set_property modified_write_value oneToToggle $obj 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:574: trailing whitespace.
++               set_property read_action modify $obj 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:585: trailing whitespace.
++    set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:588: trailing whitespace.
++      set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:591: trailing whitespace.
++      set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:600: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:604: trailing whitespace.
++      set_property base_address 0 $address_block 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:605: trailing whitespace.
++      set_property range 4096 $address_block 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:606: trailing whitespace.
++      set_property width 8 $address_block 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:610: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:611: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:619: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:621: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:628: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:631: trailing whitespace.
++      set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:632: trailing whitespace.
++      set_property size 32 $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:633: trailing whitespace.
++      set_property size_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:634: trailing whitespace.
++      set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:635: trailing whitespace.
++      set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:636: trailing whitespace.
++      set_property description $descr $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:637: trailing whitespace.
++      set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:638: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:639: trailing whitespace.
++      # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:641: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:650: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:653: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:656: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:657: trailing whitespace.
++         #  set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $offset ] ] $ipx_field 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:658: trailing whitespace.
++         # set_property reset_value_format long $ipx_field 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:659: trailing whitespace.
++         set_property description $description $ipx_field 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:661: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:669: trailing whitespace.
++    set memory_maps [ ipx::get_memory_maps -quiet -of_objects [ ipx::current_core ] ] 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:672: trailing whitespace.
++      set slave_axi [ lindex $slaves_axi 0  ] 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:675: trailing whitespace.
++      set_property  slave_memory_map_ref [get_property name $memory_map ] $slave_axi 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:688: trailing whitespace.
++      set_property base_address 0 $address_block 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:689: trailing whitespace.
++      set_property range 4096 $address_block 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:690: trailing whitespace.
++      set_property width 8 $address_block 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:694: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:695: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:703: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:711: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:714: trailing whitespace.
++      set_property address_offset $offset_value $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:715: trailing whitespace.
++      set_property size $range $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:716: trailing whitespace.
++      set_property size_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:717: trailing whitespace.
++      set_property reset_value  [::math::bignum::tostr [ ::math::bignum::fromstr $reset_val ] ] $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:718: trailing whitespace.
++      set_property reset_value_format long $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:719: trailing whitespace.
++      set_property description $descr $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:720: trailing whitespace.
++      set_property display_name $name $ipx_reg 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:721: trailing whitespace.
++    
+results/a3_background_2017_4/run_ippack_a3meta.tcl:722: trailing whitespace.
++      # read-only, write-only, read-write, writeOnce, read-writeOnce 
+results/a3_background_2017_4/run_ippack_a3meta.tcl:801: trailing whitespace.
++    
+results/a3_background_2017_4/timing_summary.rpt:28: trailing whitespace.
++  Corner  Analyze    Analyze    
+results/a3_background_2017_4/timing_summary.rpt:29: trailing whitespace.
++  Name    Max Paths  Min Paths  
+results/a3_background_2017_4/timing_summary.rpt:30: trailing whitespace.
++  ------  ---------  ---------  
+results/a3_background_2017_4/timing_summary.rpt:31: trailing whitespace.
++  Slow    Yes        Yes        
+results/a3_background_2017_4/timing_summary.rpt:32: trailing whitespace.
++  Fast    Yes        Yes        
+results/a3_background_2017_4/timing_summary.rpt:127: trailing whitespace.
++    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+results/a3_background_2017_4/timing_summary.rpt:128: trailing whitespace.
++    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+results/a3_background_2017_4/timing_summary.rpt:129: trailing whitespace.
++      1.461        0.000                      0                17611        0.035        0.000                      0                17611        3.750        0.000                       0                  6494  
+results/a3_background_2017_4/timing_summary.rpt:142: trailing whitespace.
++clk_fpga_0  {0.000 5.000}      10.000          100.000         
+results/a3_background_2017_4/timing_summary.rpt:150: trailing whitespace.
++Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+results/a3_background_2017_4/timing_summary.rpt:151: trailing whitespace.
++-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+results/a3_background_2017_4/timing_summary.rpt:152: trailing whitespace.
++clk_fpga_0          1.461        0.000                      0                17515        0.035        0.000                      0                17515        3.750        0.000                       0                  6494  
+results/a3_background_2017_4/timing_summary.rpt:160: trailing whitespace.
++From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+results/a3_background_2017_4/timing_summary.rpt:161: trailing whitespace.
++----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+results/a3_background_2017_4/timing_summary.rpt:169: trailing whitespace.
++Path Group         From Clock         To Clock               WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+results/a3_background_2017_4/timing_summary.rpt:170: trailing whitespace.
++----------         ----------         --------               -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+results/a3_background_2017_4/timing_summary.rpt:171: trailing whitespace.
++**async_default**  clk_fpga_0         clk_fpga_0               6.724        0.000                      0                   96        0.499        0.000                      0                   96  
+results/a3_background_2017_4/timing_summary.rpt:203: trailing whitespace.
++    Destination Clock Delay (DCD):    2.659ns = ( 12.659 - 10.000 ) 
+results/a3_background_2017_4/timing_summary.rpt:215: trailing whitespace.
++                                                      0.000     0.000 r  
+results/a3_background_2017_4/timing_summary.rpt:241: trailing whitespace.
++                                                     10.000    10.000 r  
+results/a3_background_2017_4/timing_summary.rpt:247: trailing whitespace.
++                         clock pessimism              0.229    12.888    
+results/a3_background_2017_4/timing_summary.rpt:248: trailing whitespace.
++                         clock uncertainty           -0.154    12.734    
+results/a3_background_2017_4/timing_summary.rpt:251: trailing whitespace.
++                         required time                         12.529    
+results/a3_background_2017_4/timing_summary.rpt:252: trailing whitespace.
++                         arrival time                         -11.068    
+results/a3_background_2017_4/timing_summary.rpt:254: trailing whitespace.
++                         slack                                  1.461    
+results/a3_background_2017_4/timing_summary.rpt:271: trailing whitespace.
++  Logic Levels:           0  
+results/a3_background_2017_4/timing_summary.rpt:280: trailing whitespace.
++                                                      0.000     0.000 r  
+results/a3_background_2017_4/timing_summary.rpt:293: trailing whitespace.
++                                                      0.000     0.000 r  
+results/a3_background_2017_4/timing_summary.rpt:299: trailing whitespace.
++                         clock pessimism             -0.035     1.156    
+results/a3_background_2017_4/timing_summary.rpt:302: trailing whitespace.
++                         required time                         -1.226    
+results/a3_background_2017_4/timing_summary.rpt:303: trailing whitespace.
++                         arrival time                           1.260    
+results/a3_background_2017_4/timing_summary.rpt:305: trailing whitespace.
++                         slack                                  0.035    
+results/a3_background_2017_4/timing_summary.rpt:348: trailing whitespace.
++    Destination Clock Delay (DCD):    2.759ns = ( 12.759 - 10.000 ) 
+results/a3_background_2017_4/timing_summary.rpt:360: trailing whitespace.
++                                                      0.000     0.000 r  
+results/a3_background_2017_4/timing_summary.rpt:375: trailing whitespace.
++                                                     10.000    10.000 r  
+results/a3_background_2017_4/timing_summary.rpt:381: trailing whitespace.
++                         clock pessimism              0.230    12.989    
+results/a3_background_2017_4/timing_summary.rpt:382: trailing whitespace.
++                         clock uncertainty           -0.154    12.835    
+results/a3_background_2017_4/timing_summary.rpt:385: trailing whitespace.
++                         required time                         12.430    
+results/a3_background_2017_4/timing_summary.rpt:386: trailing whitespace.
++                         arrival time                          -5.706    
+results/a3_background_2017_4/timing_summary.rpt:388: trailing whitespace.
++                         slack                                  6.724    
+results/a3_background_2017_4/timing_summary.rpt:414: trailing whitespace.
++                                                      0.000     0.000 r  
+results/a3_background_2017_4/timing_summary.rpt:429: trailing whitespace.
++                                                      0.000     0.000 r  
+results/a3_background_2017_4/timing_summary.rpt:435: trailing whitespace.
++                         clock pessimism             -0.283     0.949    
+results/a3_background_2017_4/timing_summary.rpt:438: trailing whitespace.
++                         required time                         -0.882    
+results/a3_background_2017_4/timing_summary.rpt:439: trailing whitespace.
++                         arrival time                           1.381    
+results/a3_background_2017_4/timing_summary.rpt:441: trailing whitespace.
++                         slack                                  0.499    
+results/a3_background_2017_4/timing_summary.rpt:442: new blank line at EOF.
+results/a3_background_2017_4/utilization.rpt:237: new blank line at EOF.
+results/a3_background_2017_4/vendor_reset_build.log:10: trailing whitespace.
++# Journal file: 
+results/a3_background_2017_4/vendor_reset_build.log:61: trailing whitespace.
++Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto b21780fc877d4b5a81fd4087e62d2832 --incr --debug typical --relax --mt 2 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot a0_reset_tb_behav xil_defaultlib.a0_reset_tb xil_defaultlib.glbl -log elaborate.log 
+results/a3_background_2017_4/vendor_reset_console.log:66: trailing whitespace.
++Running: E:/vivado/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto b21780fc877d4b5a81fd4087e62d2832 --incr --debug typical --relax --mt 2 -L lib_cdc_v1_0_2 -L proc_sys_reset_v5_0_12 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot a0_reset_tb_behav xil_defaultlib.a0_reset_tb xil_defaultlib.glbl -log elaborate.log 
+results/a3_background_2017_4/vivado_build_01.log:10: trailing whitespace.
++# Journal file: 
+results/a3_background_2017_4/vivado_build_01.log:36: trailing whitespace.
++Wrote  : <D:/PLD/retina_fpga/build/a3_background_01/a3_background.srcs/sources_1/bd/a3_background/a3_background.bd> 
+results/a3_background_2017_4/vivado_build_01.log:154: trailing whitespace.
++Wrote  : <D:/PLD/retina_fpga/build/a3_background_01/a3_background.srcs/sources_1/bd/a3_background/a3_background.bd> 
+results/a3_background_2017_4/vivado_build_01.log:255: trailing whitespace.
++INFO: Helper process launched with PID 39860 
+results/a3_background_2017_4/vivado_build_01.log:363: trailing whitespace.
++Report Check Netlist: 
+results/a3_background_2017_4/vivado_build_01.log:711: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_build_01.log:717: trailing whitespace.
++Start RTL Component Statistics 
+results/a3_background_2017_4/vivado_build_01.log:719: trailing whitespace.
++Detailed RTL Component Info : 
+results/a3_background_2017_4/vivado_build_01.log:721: trailing whitespace.
++Finished RTL Component Statistics 
+results/a3_background_2017_4/vivado_build_01.log:724: trailing whitespace.
++Start RTL Hierarchical Component Statistics 
+results/a3_background_2017_4/vivado_build_01.log:726: trailing whitespace.
++Hierarchical RTL Component report 
+results/a3_background_2017_4/vivado_build_01.log:768: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_build_01.log:788: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_build_01.log:800: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_build_01.log:824: trailing whitespace.
++Report Check Netlist: 
+results/a3_background_2017_4/vivado_build_01.log:837: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_build_01.log:870: trailing whitespace.
++Report BlackBoxes: 
+results/a3_background_2017_4/vivado_build_01.log:890: trailing whitespace.
++Report Cell Usage: 
+results/a3_background_2017_4/vivado_build_01.log:910: trailing whitespace.
++Report Instance Areas: 
+results/a3_background_2017_4/vivado_build_01.log:1483: trailing whitespace.
++INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file a3_background_wrapper_timing_summary_routed.rpt -rpx a3_background_wrapper_timing_summary_routed.rpx -warn_on_violation 
+results/a3_background_2017_4/vivado_console_01.log:31: trailing whitespace.
++Wrote  : <D:/PLD/retina_fpga/build/a3_background_01/a3_background.srcs/sources_1/bd/a3_background/a3_background.bd> 
+results/a3_background_2017_4/vivado_console_01.log:149: trailing whitespace.
++Wrote  : <D:/PLD/retina_fpga/build/a3_background_01/a3_background.srcs/sources_1/bd/a3_background/a3_background.bd> 
+results/a3_background_2017_4/vivado_console_01.log:250: trailing whitespace.
++INFO: Helper process launched with PID 39860 
+results/a3_background_2017_4/vivado_console_01.log:358: trailing whitespace.
++Report Check Netlist: 
+results/a3_background_2017_4/vivado_console_01.log:706: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_console_01.log:712: trailing whitespace.
++Start RTL Component Statistics 
+results/a3_background_2017_4/vivado_console_01.log:714: trailing whitespace.
++Detailed RTL Component Info : 
+results/a3_background_2017_4/vivado_console_01.log:716: trailing whitespace.
++Finished RTL Component Statistics 
+results/a3_background_2017_4/vivado_console_01.log:719: trailing whitespace.
++Start RTL Hierarchical Component Statistics 
+results/a3_background_2017_4/vivado_console_01.log:721: trailing whitespace.
++Hierarchical RTL Component report 
+results/a3_background_2017_4/vivado_console_01.log:763: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_console_01.log:783: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_console_01.log:795: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_console_01.log:819: trailing whitespace.
++Report Check Netlist: 
+results/a3_background_2017_4/vivado_console_01.log:832: trailing whitespace.
++Report RTL Partitions: 
+results/a3_background_2017_4/vivado_console_01.log:865: trailing whitespace.
++Report BlackBoxes: 
+results/a3_background_2017_4/vivado_console_01.log:885: trailing whitespace.
++Report Cell Usage: 
+results/a3_background_2017_4/vivado_console_01.log:905: trailing whitespace.
++Report Instance Areas: 
+results/a3_background_2017_4/vivado_console_01.log:1478: trailing whitespace.
++INFO: [runtcl-4] Executing : report_timing_summary -max_paths 10 -file a3_background_wrapper_timing_summary_routed.rpt -rpx a3_background_wrapper_timing_summary_routed.rpx -warn_on_violation 

@@ -1,0 +1,46 @@
+{
+  "status": "OFFLINE_HOST_AND_ARCHIVE_REGRESSIONS_PASS_NOT_NEW_BOARD_RUNS",
+  "distinct_tests": 31,
+  "skipped": 0,
+  "logs": [
+    {
+      "path": "results\\browser_w1_2026-10-13\\board_execution_2026-10-13\\offline_archive_regressions.log",
+      "executed_tests": 30,
+      "bytes": 6444,
+      "sha256": "23282e5b773b77398aa32c0586ce99ab3bd48683e36950e10f794bceed17518c"
+    },
+    {
+      "path": "results\\browser_w1_2026-10-13\\board_execution_2026-10-13\\offline_archive_regressions_final.log",
+      "executed_tests": 8,
+      "bytes": 1514,
+      "sha256": "a6b65caffb0f7c108934b897382059d1dd51476b6dfde4651582f28d957a160b"
+    }
+  ],
+  "sources": {
+    "scripts/verify_browser_w1_archive.py": {
+      "bytes": 25232,
+      "sha256": "7b3c1a62812287209f4f19ad67770999a9fa179b3ec1ed19799f3ba6cf2a3efb"
+    },
+    "scripts/prepare_a4_vectors.py": {
+      "bytes": 3379,
+      "sha256": "bed8caf8c2c15b842b8ea2d6ca4d6e56e1d097a6ea3547d30066ffd900aa9da0"
+    },
+    "scripts/a1_point_board_test.py": {
+      "bytes": 11449,
+      "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+    },
+    "software/reference.py": {
+      "bytes": 3845,
+      "sha256": "00f66edf4622db5a97c16e1bfb33ea334bb2cfc89afcb9c37fd1990656bd491e"
+    },
+    "tests/test_browser_w1_board_archive.py": {
+      "bytes": 7030,
+      "sha256": "3a7ab690d744c6eb4e7f8922bfad6e82ed14212a30b8a4d51f51895256d2f94d"
+    }
+  },
+  "verification_json": {
+    "bytes": 85800,
+    "sha256": "2442eab4359e0e718102269cba1253462d324129108e3ce37c2cbf28cf3e2d03"
+  },
+  "positive_board_result_scope": "24 original tasks; visibility gate remains false; no new board tasks executed by host validation"
+}

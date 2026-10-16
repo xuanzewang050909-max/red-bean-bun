@@ -1,0 +1,1412 @@
+{
+  "status": "PASS_ALL_EXACT_WORD_COMPARE",
+  "transfers": [
+    {
+      "index": 0,
+      "words": 1,
+      "bytes": 4,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 4,
+      "recv_bytes": 4,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0016718279998713115,
+      "input_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119",
+      "output_sha256": "df3f619804a92fdb4057192dc43dd748ea778adc52bc498ce80524c014b81119"
+    },
+    {
+      "index": 1,
+      "words": 1,
+      "bytes": 4,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 4,
+      "recv_bytes": 4,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0016153359997588268,
+      "input_sha256": "484e550183a87f96ca56d2001e32e6bc1e20ec67d884f00c598f31c0b737595f",
+      "output_sha256": "484e550183a87f96ca56d2001e32e6bc1e20ec67d884f00c598f31c0b737595f"
+    },
+    {
+      "index": 2,
+      "words": 3,
+      "bytes": 12,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 12,
+      "recv_bytes": 12,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0014231260001906776,
+      "input_sha256": "2f7617ed3c04a1138f0ee8c649cfd835ddcd779c378ac88ad30ff32390949364",
+      "output_sha256": "2f7617ed3c04a1138f0ee8c649cfd835ddcd779c378ac88ad30ff32390949364"
+    },
+    {
+      "index": 3,
+      "words": 3,
+      "bytes": 12,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 12,
+      "recv_bytes": 12,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0014150469996820902,
+      "input_sha256": "c2ede22c6e79573193192499f5e70215fbef1e31e6b755a93feb7d7d98ee546c",
+      "output_sha256": "c2ede22c6e79573193192499f5e70215fbef1e31e6b755a93feb7d7d98ee546c"
+    },
+    {
+      "index": 4,
+      "words": 17,
+      "bytes": 68,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 68,
+      "recv_bytes": 68,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0015568119997624308,
+      "input_sha256": "f6659966f83f70e8aa2002cefb9f85490c4a1983e2fc69dbe4df61952a8c97dd",
+      "output_sha256": "f6659966f83f70e8aa2002cefb9f85490c4a1983e2fc69dbe4df61952a8c97dd"
+    },
+    {
+      "index": 5,
+      "words": 17,
+      "bytes": 68,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 68,
+      "recv_bytes": 68,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0014122210000095947,
+      "input_sha256": "be1a672e38755f2d8c457e5d652735c6a0aaf02b5d7e534d1f3fa4e8f85a4155",
+      "output_sha256": "be1a672e38755f2d8c457e5d652735c6a0aaf02b5d7e534d1f3fa4e8f85a4155"
+    },
+    {
+      "index": 6,
+      "words": 1023,
+      "bytes": 4092,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 4092,
+      "recv_bytes": 4092,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0016203440000026603,
+      "input_sha256": "8674a82380a8fb27d194d4520a0e577c6c822a9d511da8cea3f68a9298fb4ab2",
+      "output_sha256": "8674a82380a8fb27d194d4520a0e577c6c822a9d511da8cea3f68a9298fb4ab2"
+    },
+    {
+      "index": 7,
+      "words": 1023,
+      "bytes": 4092,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 4092,
+      "recv_bytes": 4092,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.001652091999858385,
+      "input_sha256": "d78a6c2e8fa86799188e21bcb652d430c2c749e36239fbf3d082e9ef7a890fda",
+      "output_sha256": "d78a6c2e8fa86799188e21bcb652d430c2c749e36239fbf3d082e9ef7a890fda"
+    },
+    {
+      "index": 8,
+      "words": 1024,
+      "bytes": 4096,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 4096,
+      "recv_bytes": 4096,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.0015556059997834382,
+      "input_sha256": "24f287edcb03157ed1906f827fe06ad5d1b1b96bd82326b7d4b1126a6bee81a1",
+      "output_sha256": "24f287edcb03157ed1906f827fe06ad5d1b1b96bd82326b7d4b1126a6bee81a1"
+    },
+    {
+      "index": 9,
+      "words": 1024,
+      "bytes": 4096,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 4096,
+      "recv_bytes": 4096,
+      "send_physical_address": 377786368,
+      "recv_physical_address": 377790464,
+      "elapsed_seconds": 0.001553371999762021,
+      "input_sha256": "ea94208eff964da9205387c61034061f79c3c85ac27462836a410bc0055fae47",
+      "output_sha256": "ea94208eff964da9205387c61034061f79c3c85ac27462836a410bc0055fae47"
+    },
+    {
+      "index": 10,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.00896528000021135,
+      "input_sha256": "a7a57abfdc51e727b39241de7f1c631d4df81a2a87c0bd498b76fee8b0eb8752",
+      "output_sha256": "a7a57abfdc51e727b39241de7f1c631d4df81a2a87c0bd498b76fee8b0eb8752"
+    },
+    {
+      "index": 11,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.010321199999907549,
+      "input_sha256": "aed7f386a02a784e6ec32cad403b9ebbed20f6de4cf44c4fadd952d54cb819af",
+      "output_sha256": "aed7f386a02a784e6ec32cad403b9ebbed20f6de4cf44c4fadd952d54cb819af"
+    },
+    {
+      "index": 12,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.008928861000185861,
+      "input_sha256": "a63c8ce4536f437d82ef81b61f5b01aa4654bee0e9cad6ca49cc35b24e659432",
+      "output_sha256": "a63c8ce4536f437d82ef81b61f5b01aa4654bee0e9cad6ca49cc35b24e659432"
+    },
+    {
+      "index": 13,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009727698000006058,
+      "input_sha256": "58108ce301f29f4426bea495a78a69ecaf3b3516449068e1048d198a9a3e854e",
+      "output_sha256": "58108ce301f29f4426bea495a78a69ecaf3b3516449068e1048d198a9a3e854e"
+    },
+    {
+      "index": 14,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.00894847400013532,
+      "input_sha256": "a1fb06a9b1c7267e3b3d0ca9535a0c391dc3eac29d72fba10dd28671b415692c",
+      "output_sha256": "a1fb06a9b1c7267e3b3d0ca9535a0c391dc3eac29d72fba10dd28671b415692c"
+    },
+    {
+      "index": 15,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009747002999574761,
+      "input_sha256": "a3e4c57f3fdb040cd5440f33566975c64451368de71e04fd0aa16dd42208859e",
+      "output_sha256": "a3e4c57f3fdb040cd5440f33566975c64451368de71e04fd0aa16dd42208859e"
+    },
+    {
+      "index": 16,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.008916060999581532,
+      "input_sha256": "a14c1f38b8b71b9d9efe67725bedd332b590067fb4791603bb9c5e6366af97f5",
+      "output_sha256": "a14c1f38b8b71b9d9efe67725bedd332b590067fb4791603bb9c5e6366af97f5"
+    },
+    {
+      "index": 17,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.00990352000007988,
+      "input_sha256": "8233aca297d187a44de0f3ec16cb4edbe105252d623672f0497d48d6869a00c1",
+      "output_sha256": "8233aca297d187a44de0f3ec16cb4edbe105252d623672f0497d48d6869a00c1"
+    },
+    {
+      "index": 18,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009084966000045824,
+      "input_sha256": "70cd2b38ec6f69139315e72b35d7fc0ccb1de0276163c1ae1008371ebdd1d037",
+      "output_sha256": "70cd2b38ec6f69139315e72b35d7fc0ccb1de0276163c1ae1008371ebdd1d037"
+    },
+    {
+      "index": 19,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009834013000272535,
+      "input_sha256": "33b70cee1e098377a9c3f682631c1c6d938ff7d8d4a98e65de653acc264c85a9",
+      "output_sha256": "33b70cee1e098377a9c3f682631c1c6d938ff7d8d4a98e65de653acc264c85a9"
+    },
+    {
+      "index": 20,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.010167674000058469,
+      "input_sha256": "1bdfcdafc89481768ea3a8c2326af53dbae1a4d513a2c0475e8402b8e1db1d93",
+      "output_sha256": "1bdfcdafc89481768ea3a8c2326af53dbae1a4d513a2c0475e8402b8e1db1d93"
+    },
+    {
+      "index": 21,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.010590013000182807,
+      "input_sha256": "29f889b00cea8b6a3eb66adc576ea5a48508a6202647d3eded9d40f1df0bdd74",
+      "output_sha256": "29f889b00cea8b6a3eb66adc576ea5a48508a6202647d3eded9d40f1df0bdd74"
+    },
+    {
+      "index": 22,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009033162999912747,
+      "input_sha256": "93f9e9add5360bd7ebecee1bee413d88ec412d8588ff5e4445c818681028272d",
+      "output_sha256": "93f9e9add5360bd7ebecee1bee413d88ec412d8588ff5e4445c818681028272d"
+    },
+    {
+      "index": 23,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009833132000039768,
+      "input_sha256": "66605de549ef859fbfc6039f17fff01f53641996b0537009fbe481cfedd9375e",
+      "output_sha256": "66605de549ef859fbfc6039f17fff01f53641996b0537009fbe481cfedd9375e"
+    },
+    {
+      "index": 24,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009061113999905501,
+      "input_sha256": "4a7e5c59bdb0615ebaae89c5b2d24df55503f9057d54ac0a596dbdc3fb680b88",
+      "output_sha256": "4a7e5c59bdb0615ebaae89c5b2d24df55503f9057d54ac0a596dbdc3fb680b88"
+    },
+    {
+      "index": 25,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009166714000002685,
+      "input_sha256": "54112d3366383ba188f343ef71c61da4721ef105753aade92447c23ec5226dbc",
+      "output_sha256": "54112d3366383ba188f343ef71c61da4721ef105753aade92447c23ec5226dbc"
+    },
+    {
+      "index": 26,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.008954479999829346,
+      "input_sha256": "5e3529333778905e6b316340036b9d721ea4f39fd72fac4260018af5e66adfc8",
+      "output_sha256": "5e3529333778905e6b316340036b9d721ea4f39fd72fac4260018af5e66adfc8"
+    },
+    {
+      "index": 27,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009064171999852988,
+      "input_sha256": "b116c38bf1f571d048b1841ea84241416fc20d2fb7e3f16d47747b4b644b280d",
+      "output_sha256": "b116c38bf1f571d048b1841ea84241416fc20d2fb7e3f16d47747b4b644b280d"
+    },
+    {
+      "index": 28,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009026953000102367,
+      "input_sha256": "f70e117caf0e0d9507769eb1cabdd0845738ccffac35f0061bfa2f5ce42ba47f",
+      "output_sha256": "f70e117caf0e0d9507769eb1cabdd0845738ccffac35f0061bfa2f5ce42ba47f"
+    },
+    {
+      "index": 29,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009133802999713225,
+      "input_sha256": "15af10aaf03b10a6001e55a930fb39be5d45c62ace7d5aaef6c0d5b030a61562",
+      "output_sha256": "15af10aaf03b10a6001e55a930fb39be5d45c62ace7d5aaef6c0d5b030a61562"
+    },
+    {
+      "index": 30,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.008915906999845902,
+      "input_sha256": "85f62c6d4da79121ed62504a55bd56890ebbd3ef6cb2b8d56f0ac5410287d6cc",
+      "output_sha256": "85f62c6d4da79121ed62504a55bd56890ebbd3ef6cb2b8d56f0ac5410287d6cc"
+    },
+    {
+      "index": 31,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.00916681199987579,
+      "input_sha256": "4b30557d786ba8c19243c6eab267a0e2284450c2557927dec50d3c66c4732515",
+      "output_sha256": "4b30557d786ba8c19243c6eab267a0e2284450c2557927dec50d3c66c4732515"
+    },
+    {
+      "index": 32,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.008954160000030242,
+      "input_sha256": "bcab913ce7b906871cb2d46751c4e3fc054db81934e6a9b0149341b7e5409c77",
+      "output_sha256": "bcab913ce7b906871cb2d46751c4e3fc054db81934e6a9b0149341b7e5409c77"
+    },
+    {
+      "index": 33,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009180226999887964,
+      "input_sha256": "42a4cd4c17e8be0a2b9079fb5b49ef8f35c3b4c10430fca80ff36d72a5077686",
+      "output_sha256": "42a4cd4c17e8be0a2b9079fb5b49ef8f35c3b4c10430fca80ff36d72a5077686"
+    },
+    {
+      "index": 34,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009114984000007098,
+      "input_sha256": "a709dae833db1c5d6116e7b8525e1a624640eaac38270b6260aa04f5bd48ad5e",
+      "output_sha256": "a709dae833db1c5d6116e7b8525e1a624640eaac38270b6260aa04f5bd48ad5e"
+    },
+    {
+      "index": 35,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009092842999962159,
+      "input_sha256": "7d7f6115751f9981f96a3e8979f17cab91880d9af545cc63c6e90f293fbc45ab",
+      "output_sha256": "7d7f6115751f9981f96a3e8979f17cab91880d9af545cc63c6e90f293fbc45ab"
+    },
+    {
+      "index": 36,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.008997206000003644,
+      "input_sha256": "97b0d3baa48eb3228ff6f4a3774f3f899233592f2becb9d755e2e6e20f31b4a6",
+      "output_sha256": "97b0d3baa48eb3228ff6f4a3774f3f899233592f2becb9d755e2e6e20f31b4a6"
+    },
+    {
+      "index": 37,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009058886000275379,
+      "input_sha256": "9a6657c6d4afed498b076e289b3fed774b90800419689103709be13508043a46",
+      "output_sha256": "9a6657c6d4afed498b076e289b3fed774b90800419689103709be13508043a46"
+    },
+    {
+      "index": 38,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009039988000040466,
+      "input_sha256": "53ca9b96cad0c4fd0156186be2ff65b0a5d19003fb861aab3bd47c66e97f3370",
+      "output_sha256": "53ca9b96cad0c4fd0156186be2ff65b0a5d19003fb861aab3bd47c66e97f3370"
+    },
+    {
+      "index": 39,
+      "words": 65536,
+      "bytes": 262144,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "send_physical_address": 378011648,
+      "recv_physical_address": 378273792,
+      "elapsed_seconds": 0.009129028000188555,
+      "input_sha256": "b86ed7fe5aa87d97e6f3bf942c321ae4e414d73ef69e2243309fec826a3bae6b",
+      "output_sha256": "b86ed7fe5aa87d97e6f3bf942c321ae4e414d73ef69e2243309fec826a3bae6b"
+    },
+    {
+      "index": 40,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03069670100012445,
+      "input_sha256": "e92c6a8b8e51e83c5ad03af425f02015a6110a3985fff5762592ea62c6321532",
+      "output_sha256": "e92c6a8b8e51e83c5ad03af425f02015a6110a3985fff5762592ea62c6321532"
+    },
+    {
+      "index": 41,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030646806000277138,
+      "input_sha256": "13cbaf0175acb852364b9adb0ff11a9eade9693ec5e31026d7789ca68f7a2f6e",
+      "output_sha256": "13cbaf0175acb852364b9adb0ff11a9eade9693ec5e31026d7789ca68f7a2f6e"
+    },
+    {
+      "index": 42,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03219497899999624,
+      "input_sha256": "948890479026a3b5335db6dbf605115d0ae34921579f0869b402311c8f199135",
+      "output_sha256": "948890479026a3b5335db6dbf605115d0ae34921579f0869b402311c8f199135"
+    },
+    {
+      "index": 43,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030805625000084547,
+      "input_sha256": "4990746a67ea0bea9a7d59d63a8a796cf1a838dae93bf1acae0d9345aa603a55",
+      "output_sha256": "4990746a67ea0bea9a7d59d63a8a796cf1a838dae93bf1acae0d9345aa603a55"
+    },
+    {
+      "index": 44,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03254033199982587,
+      "input_sha256": "ff5748f5f6ae7985813fca318f2a22c73f86f7a8e6fb9aea7717ce400e02348f",
+      "output_sha256": "ff5748f5f6ae7985813fca318f2a22c73f86f7a8e6fb9aea7717ce400e02348f"
+    },
+    {
+      "index": 45,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03070420300036858,
+      "input_sha256": "09b08179befee8fce8925b80cad74e5b8c0a4839f65a33097c2d1da8510ecbc4",
+      "output_sha256": "09b08179befee8fce8925b80cad74e5b8c0a4839f65a33097c2d1da8510ecbc4"
+    },
+    {
+      "index": 46,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03238955100005114,
+      "input_sha256": "18d077c76136da06dd1c6415370d5dc8f990d50ac8428dcb94b643599fcb80f3",
+      "output_sha256": "18d077c76136da06dd1c6415370d5dc8f990d50ac8428dcb94b643599fcb80f3"
+    },
+    {
+      "index": 47,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030682959999921877,
+      "input_sha256": "7cadf4e975ba17e592264de964f8adeec057b00a8fc7eae3ed40bfa1d7a1ad7a",
+      "output_sha256": "7cadf4e975ba17e592264de964f8adeec057b00a8fc7eae3ed40bfa1d7a1ad7a"
+    },
+    {
+      "index": 48,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03268392000018139,
+      "input_sha256": "356115dfbfb7b107d883bfc8c1c96c71561080f90d8422813562619f2c6bf25e",
+      "output_sha256": "356115dfbfb7b107d883bfc8c1c96c71561080f90d8422813562619f2c6bf25e"
+    },
+    {
+      "index": 49,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030615162999765744,
+      "input_sha256": "d3325bdc2ef490897e413894f7a686196d78ee063815011a20903b2d29d89456",
+      "output_sha256": "d3325bdc2ef490897e413894f7a686196d78ee063815011a20903b2d29d89456"
+    },
+    {
+      "index": 50,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.032464509999954316,
+      "input_sha256": "25d73ce28aa2354cf0657e54979190e5446796e07cbf45239a41ef5581342f61",
+      "output_sha256": "25d73ce28aa2354cf0657e54979190e5446796e07cbf45239a41ef5581342f61"
+    },
+    {
+      "index": 51,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030777668000155245,
+      "input_sha256": "29eba1e712575803686f9d04e18f6b4b3ae4b30de6e97e71e17164004201f571",
+      "output_sha256": "29eba1e712575803686f9d04e18f6b4b3ae4b30de6e97e71e17164004201f571"
+    },
+    {
+      "index": 52,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03268587700040371,
+      "input_sha256": "58d5afc61822c43cbee585f1b8799322e5aeb148b6e71365edba9a84b5a1cc4b",
+      "output_sha256": "58d5afc61822c43cbee585f1b8799322e5aeb148b6e71365edba9a84b5a1cc4b"
+    },
+    {
+      "index": 53,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030737465000129305,
+      "input_sha256": "b4188d588a56fd16779e79bef86f1b40b384de4c1e2c70084a3506f98ee0dc2e",
+      "output_sha256": "b4188d588a56fd16779e79bef86f1b40b384de4c1e2c70084a3506f98ee0dc2e"
+    },
+    {
+      "index": 54,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "increment",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.032483692999903724,
+      "input_sha256": "19937a204047e8f3a404b2db22a1b8aa3c990294a01f39a2288ab37446a221b0",
+      "output_sha256": "19937a204047e8f3a404b2db22a1b8aa3c990294a01f39a2288ab37446a221b0"
+    },
+    {
+      "index": 55,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030556782000076055,
+      "input_sha256": "d394d3872171f4d40819173d3effb766cd7ad8608a93f3822a0657f5627f267b",
+      "output_sha256": "d394d3872171f4d40819173d3effb766cd7ad8608a93f3822a0657f5627f267b"
+    },
+    {
+      "index": 56,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030835452000246732,
+      "input_sha256": "3878c2726b83ea42640a1aea3fc3ea245498100226d1818ca109d24829899da4",
+      "output_sha256": "3878c2726b83ea42640a1aea3fc3ea245498100226d1818ca109d24829899da4"
+    },
+    {
+      "index": 57,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030589026999678026,
+      "input_sha256": "8e5a439045966a4532dc878f9ba799a7f45d98fe3d4b005fa663660c540d23fd",
+      "output_sha256": "8e5a439045966a4532dc878f9ba799a7f45d98fe3d4b005fa663660c540d23fd"
+    },
+    {
+      "index": 58,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030610172000251623,
+      "input_sha256": "9e7e9cfaf0262c2a959f82aa19d1321a6eb302e690ef43c193f7b17632a138b1",
+      "output_sha256": "9e7e9cfaf0262c2a959f82aa19d1321a6eb302e690ef43c193f7b17632a138b1"
+    },
+    {
+      "index": 59,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03085257200018532,
+      "input_sha256": "fdbcda2c161cd359259d106c91ff821cc12e4d9b756ce6f2c27f407bb0ddfe50",
+      "output_sha256": "fdbcda2c161cd359259d106c91ff821cc12e4d9b756ce6f2c27f407bb0ddfe50"
+    },
+    {
+      "index": 60,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.031206283000301482,
+      "input_sha256": "d6f488268c826652813a4819d9db591573a3360a5fc255c6b2fa54f246785426",
+      "output_sha256": "d6f488268c826652813a4819d9db591573a3360a5fc255c6b2fa54f246785426"
+    },
+    {
+      "index": 61,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030878596999627916,
+      "input_sha256": "5b2b33cb766e55970b81d3c3bfffad9c2439c012589a1401fdfddcd0dcce153c",
+      "output_sha256": "5b2b33cb766e55970b81d3c3bfffad9c2439c012589a1401fdfddcd0dcce153c"
+    },
+    {
+      "index": 62,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030881465000220487,
+      "input_sha256": "5429e62c8ed2877f7518d1115e5906860c0abf8a1378404cd301a8c3b25c995e",
+      "output_sha256": "5429e62c8ed2877f7518d1115e5906860c0abf8a1378404cd301a8c3b25c995e"
+    },
+    {
+      "index": 63,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.035942183999850386,
+      "input_sha256": "3ce5881030755d903a595c4f828a16ef58933b2a1a55c37c419f9564c4e3c09e",
+      "output_sha256": "3ce5881030755d903a595c4f828a16ef58933b2a1a55c37c419f9564c4e3c09e"
+    },
+    {
+      "index": 64,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030723539000064193,
+      "input_sha256": "97aac39d1c8f99ef28ba3cf04ad558a26b874a27543b1363bb2a30a6f47bbd97",
+      "output_sha256": "97aac39d1c8f99ef28ba3cf04ad558a26b874a27543b1363bb2a30a6f47bbd97"
+    },
+    {
+      "index": 65,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.03116678200012757,
+      "input_sha256": "d5c69dcb4f4282d1a71c06582dfc601f0c4496a23fdb31c483872a51cadeea25",
+      "output_sha256": "d5c69dcb4f4282d1a71c06582dfc601f0c4496a23fdb31c483872a51cadeea25"
+    },
+    {
+      "index": 66,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.031928400000197144,
+      "input_sha256": "1f3c7e11c4a1a75e7483cfd1669f28a4dd06943f2692ef80a5b8b93a5cefca7f",
+      "output_sha256": "1f3c7e11c4a1a75e7483cfd1669f28a4dd06943f2692ef80a5b8b93a5cefca7f"
+    },
+    {
+      "index": 67,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.031060282999987976,
+      "input_sha256": "8054f722335e3845c0c4299af457cb323bcf306efa83d6e07bf89d8a8dfbdeb8",
+      "output_sha256": "8054f722335e3845c0c4299af457cb323bcf306efa83d6e07bf89d8a8dfbdeb8"
+    },
+    {
+      "index": 68,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030658023999876605,
+      "input_sha256": "a95dba0ede85df04e86f375d4ed2e1e2b905a12de115ceaca7a2260c84b0cdfd",
+      "output_sha256": "a95dba0ede85df04e86f375d4ed2e1e2b905a12de115ceaca7a2260c84b0cdfd"
+    },
+    {
+      "index": 69,
+      "words": 262144,
+      "bytes": 1048576,
+      "pattern": "random",
+      "status": "PASS_EXACT_WORD_COMPARE",
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "send_bytes": 1048576,
+      "recv_bytes": 1048576,
+      "send_physical_address": 378535936,
+      "recv_physical_address": 379584512,
+      "elapsed_seconds": 0.030998474000170972,
+      "input_sha256": "127cb8f5d3aa963a2057447aeac1e09571eeb0b72d62a603dcb979378d200e53",
+      "output_sha256": "127cb8f5d3aa963a2057447aeac1e09571eeb0b72d62a603dcb979378d200e53"
+    }
+  ],
+  "board_clock_utc_unverified": "2022-10-22T00:48:21.945996+00:00",
+  "pynq": "3.0.1",
+  "python": "3.10.4",
+  "kernel": "5.15.19-xilinx-v2022.1",
+  "manifest": {
+    "created_host_utc": "2026-10-11T13:53:10.890928+00:00",
+    "status": "HOST_BUILD_COMPLETE_BOARD_TEST_PENDING",
+    "source_commit": "cde3be90d2184af067d47b9f2e2bdbd20b37e166",
+    "tool": "Vivado 2017.4",
+    "part": "xc7z020clg400-1",
+    "board_part": "tul.com.tw:pynq-z2:part0:1.0",
+    "pcb_revision": null,
+    "target_runtime": "PYNQ 3.0.1",
+    "build_directory": "build\\a0_dma_2017_4_04",
+    "revision": "r2_auxiliary_reset_fix",
+    "sources": {
+      "vivado/scripts/build_minimal_dma.tcl": {
+        "bytes": 8630,
+        "sha256": "8441fd4035bd83bc8601698556043dc6ac36722efbbe0af17fc0fab26a077fd0"
+      },
+      "scripts/a0_dma_board_test.py": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "scripts/build_a0_notebook.py": {
+        "bytes": 3730,
+        "sha256": "5a33cb6af0da77a46e01d67b5db9397f90f2539a40a471afeac6e710b823ee65"
+      },
+      "scripts/check_a0_hwh.py": {
+        "bytes": 4231,
+        "sha256": "70ce3b9a7fc1f6ba5552e1e7dd6257d515e8b3d9825c515858272ba2ee7287d6"
+      },
+      "scripts/package_a0.py": {
+        "bytes": 8589,
+        "sha256": "6c896d6d69d6acb3fec053d1ff865ba6bade4cbf303e0ee7e6c5931968dd1e68"
+      },
+      "scripts/a0_reset_tb.sv": {
+        "bytes": 2064,
+        "sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8"
+      },
+      "scripts/simulate_a0_reset.tcl": {
+        "bytes": 1279,
+        "sha256": "1d45fe50dd67454086169d41439535c4e3c3c7b55d9f632505a5209659998052"
+      },
+      "tests/test_a0_board_runner.py": {
+        "bytes": 5465,
+        "sha256": "2aa50863f9587cf4b66aa7c47e1c61a8a64a5ed6016127f74f3e91b5d535d469"
+      },
+      "notebooks/a0_dma_loopback.ipynb": {
+        "bytes": 17540,
+        "sha256": "199c5820f650aa310b56e27cdb7629fb6a917844333499c4f7bd83040199a023"
+      }
+    },
+    "board_reference": {
+      "board.xml": {
+        "bytes": 54479,
+        "sha256": "a565dcb39737d551cbbbb73c0053b973c40bb3dce2274943370d3032c0fea9ae"
+      },
+      "preset.xml": {
+        "bytes": 74492,
+        "sha256": "18528f84aea4da503cdb3104f7706fabfb3b6ad09b78b25199cc316afa4c8cfe"
+      },
+      "part0_pins.xml": {
+        "bytes": 9007,
+        "sha256": "3c809473938e135a925b563b5371c8687ee05c4089376e7318c0c56524cc8a0f"
+      }
+    },
+    "hwh_parser_reference": "PYNQ v3.0.1 / 93ddd21ab623883590a8c8b07f0b157b2855da4b",
+    "artifacts": {
+      "a0_dma.bit": {
+        "bytes": 4045674,
+        "sha256": "c27921b683d4c2ec2e1a9d01b34b8d128f6557624d887abce43649767d1fd5af"
+      },
+      "a0_dma.hwh": {
+        "bytes": 300147,
+        "sha256": "fa3f7ff7c7d543ca157fcb78d0f2b6af938ce550a49228b23ef4d0eb784f7fde"
+      }
+    },
+    "notebook": {
+      "bytes": 17540,
+      "sha256": "199c5820f650aa310b56e27cdb7629fb6a917844333499c4f7bd83040199a023"
+    },
+    "timing": {
+      "wns_ns": 1.346,
+      "tns_ns": 0.0,
+      "setup_failing_endpoints": 0,
+      "whs_ns": 0.02,
+      "ths_ns": 0.0,
+      "hold_failing_endpoints": 0,
+      "wpws_ns": 3.75,
+      "tpws_ns": 0.0,
+      "pulse_width_failing_endpoints": 0
+    },
+    "reset_simulation": {
+      "status": "PASS_HOST_VENDOR_RESET_SIMULATION",
+      "scope": "Real Vivado 2017.4 proc_sys_reset 5.0 rev12; old aux=0 holds reset, corrected aux=1 releases; PS assert/release verified. Not board proof or unique stall diagnosis.",
+      "xci_sha256": "d86aede751897564f4944730f3b09f4f4d3ff00ae3c5caf0797892e10ca12eb3",
+      "testbench_sha256": "a29703afd92adc0477c3a052a94c3020b948dce945728c1a6cc59e5941a0b4b8",
+      "simulate_log_sha256": "3a94ccf540513f2fb1d36fcaba28b5513c7456914bc0bfbad667fd71d7b90393",
+      "simulation_tcl_sha256": "1d45fe50dd67454086169d41439535c4e3c3c7b55d9f632505a5209659998052",
+      "completion": "RESET_SIM_PASS at 10996 ns; RESET_SIMULATION_GATE_PASS"
+    },
+    "test_plan": "70 exact DMA/FIFO loopbacks; short packets, 256/512 frames, increment/random",
+    "scope": "Host implementation + metadata + vendor reset simulation; board DMA, medical algorithm and final HDMI overlay unverified"
+  },
+  "scope": "A0 DMA/FIFO exact loopback only; no medical algorithm or HDMI",
+  "dma_description": {
+    "type": "xilinx.com:ip:axi_dma:7.1",
+    "phys_addr": 1077936128,
+    "parameters_checked": {
+      "c_include_sg": 0,
+      "c_micro_dma": 0,
+      "c_include_mm2s": 1,
+      "c_include_s2mm": 1,
+      "c_sg_length_width": 23,
+      "c_m_axi_mm2s_data_width": 64,
+      "c_m_axi_s2mm_data_width": 32,
+      "c_m_axis_mm2s_tdata_width": 32,
+      "c_s_axis_s2mm_tdata_width": 32
+    },
+    "driver": "pynq.lib.dma.DMA"
+  },
+  "smoke": {
+    "transfers": [
+      {
+        "index": 0,
+        "words": 17,
+        "bytes": 68,
+        "pattern": "increment",
+        "status": "PASS_EXACT_WORD_COMPARE",
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "send_bytes": 68,
+        "recv_bytes": 68,
+        "send_physical_address": 377786368,
+        "recv_physical_address": 377790464,
+        "elapsed_seconds": 0.001683236000189936,
+        "input_sha256": "3ef6f38adb85f46f95c0597848fda1b8e74e65c025e441c66700d9802fa6e085",
+        "output_sha256": "3ef6f38adb85f46f95c0597848fda1b8e74e65c025e441c66700d9802fa6e085"
+      }
+    ],
+    "expected_transfers": 1,
+    "status": "PASS_ALL_EXACT_WORD_COMPARE"
+  },
+  "expected_transfers": 70
+}

@@ -1,0 +1,25 @@
+{
+  "status": "PASS_A4_ARCHIVER_FROM_UNCHANGED_A3",
+  "base_commit": "b3d4ef316db044e027593d4567a94f637fc15545",
+  "pairs": [
+    {
+      "base": "scripts/archive_a3_board_results.py",
+      "derived": "scripts/archive_a4_board_results.py",
+      "base_sha256": "967567366794f4b264c57afcdb42483cc12e7d69736203c90f35c5603d8a5d2b",
+      "derived_sha256": "8ce756fc65c395f94b4a7651b102dafdbe2483001af94f6bbdf12711fbbac759",
+      "diff": "a3_to_a4_archive.diff",
+      "diff_sha256": "514c8f045a1d27b1d4c1b1c467f8ed28621ef34b8cf323270f45157e58e3592e",
+      "status": "PASS_EXACT_DIFF_REPRODUCTION"
+    },
+    {
+      "base": "tests/test_a3_archive.py",
+      "derived": "tests/test_a4_archive.py",
+      "base_sha256": "f52fce0b7e81245ec02c76196e30892afc47d35963195e9eb68ff5b5f1dfd09f",
+      "derived_sha256": "740cce3053143a0f407f825113dd1c142eb8ce8de68e0dac46f4bf65ff35704b",
+      "diff": "a3_to_a4_archive_tests.diff",
+      "diff_sha256": "24f6fec9e3668f87c41026559a68e7da077062ae7f74407bf3474025de8f29c0",
+      "status": "PASS_EXACT_DIFF_REPRODUCTION"
+    }
+  ],
+  "scope": "Host downloaded-evidence verifier, not a new hardware release"
+}

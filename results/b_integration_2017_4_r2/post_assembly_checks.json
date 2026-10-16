@@ -1,0 +1,25 @@
+{
+  "status": "PASS_R2_CURRENT_SOURCES_EXACT_ARTIFACTS_AND_TWO_FILE_PATCH",
+  "board_status": "NOT_RUN",
+  "full_files": 13,
+  "patch_files": {
+    "b_integration_board_test.py": {
+      "bytes": 19456,
+      "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+    },
+    "b_manifest.json": {
+      "bytes": 60640,
+      "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b"
+    }
+  },
+  "hardware_unchanged": {
+    "b_integration.bit": {
+      "bytes": 4045674,
+      "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+    },
+    "b_integration.hwh": {
+      "bytes": 1131176,
+      "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+    }
+  }
+}

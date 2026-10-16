@@ -1,0 +1,3923 @@
+{
+  "status": "B_PROFILE_RECORDS_READY_VISUAL_PENDING",
+  "manifest": {
+    "revision": "b_integration_r2_explicit_video_imports",
+    "host_status": "PASS_REUSED_R1_HARDWARE_AND_R2_EXPLICIT_DRIVER_IMPORT_REGRESSION",
+    "board_status": "NOT_RUN",
+    "vivado": "2017.4",
+    "pynq_target": "3.0.1",
+    "scope": "Same B bitstream frozen M0 algorithm A + official HDMI; board digital/display/FPS pending; no clinical quality PASS",
+    "build_directory": "D:\\PLD\\retina_fpga\\build\\b_integration_05",
+    "host_checks": {
+      "wns_ns": 0.341,
+      "whs_ns": 0.008,
+      "wpws_ns": 0.0,
+      "resources": {
+        "Slice LUTs": 15823.0,
+        "Slice Registers": 24316.0,
+        "Block RAM Tile": 46.0,
+        "DSPs": 19.0
+      },
+      "reviewed_drc_warnings": [
+        "DPIP-1",
+        "DPOP-1",
+        "DPOP-2",
+        "RTSTAT-10"
+      ],
+      "board_status": "NOT_RUN",
+      "reviewed_critical_warnings": {},
+      "constraint_derivation": {
+        "original_gpio_hdmi_pin_assignments_unchanged": 36,
+        "rx_period_ns": 8.333333,
+        "external_serial_clock_policy": "Only inapplicable unconditional rgb2dvi_clocks.xdc excluded; actual MMCM/BUFR clocks auto-derived"
+      },
+      "actual_generated_reset_simulation": {
+        "bytes": 272,
+        "sha256": "07d526c103bb57bd485cc14a2df6ddd585dfdf249578ad482368e9eba30c1b8f"
+      },
+      "host_test_count": 20
+    },
+    "reuse_provenance": {
+      "status": "PASS_FROZEN_A4_AND_OFFICIAL_VIDEO_GENERATED_RTL_BYTE_COMPARISON",
+      "reused_a4_csim_rtl_and_board_evidence": "results/a4_segmentation_2017_4/release_manifest.json and board_execution_2026-10-12; no new algorithm synthesis",
+      "exports": {
+        "a4": {
+          "background_sum.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/background_sum.v",
+            "bytes": 10278,
+            "sha256": "c28faadbb009f705f7b8a5da34168e514d6b6712e1f3d09b68ae16b819e2d972",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/background_sum.v"
+            ]
+          },
+          "Block_proc.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Block_proc.v",
+            "bytes": 24669,
+            "sha256": "70d8fdd3e3a5a1b9b823e785300e4b07b9debd4c3b62ec13f85b04e11526ef95",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Block_proc.v"
+            ]
+          },
+          "closed_carrier.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/closed_carrier.v",
+            "bytes": 14517,
+            "sha256": "68918b8d08226e34e43701de3123e768328f78433fc5f83012eb0da34d5257c4",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/closed_carrier.v"
+            ]
+          },
+          "column_filter.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/column_filter.v",
+            "bytes": 135696,
+            "sha256": "1a69be74c585a09375f6e9f378390b8179bf75dcd59f5fd0b505bf5d718f0fb7",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/column_filter.v"
+            ]
+          },
+          "count_neighbors.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/count_neighbors.v",
+            "bytes": 8662,
+            "sha256": "ced8806c86b88eb4c39b3fb46e5c660d7391f73bb5b4e9ce366a1fb8a3402450",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/count_neighbors.v"
+            ]
+          },
+          "dilate_zero.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/dilate_zero.v",
+            "bytes": 43351,
+            "sha256": "d582140ec4681ff092162188f23ee491d16867a779c85ebcc144ae4d5b5b8f37",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/dilate_zero.v"
+            ]
+          },
+          "enhance_aligned.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned.v",
+            "bytes": 20873,
+            "sha256": "fb53540a3a86f12980484d8bc3f1726d190b62a244514061b8f6647eee1a5cd3",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/enhance_aligned.v"
+            ]
+          },
+          "enhance_aligned_lut.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned_lut.v",
+            "bytes": 1250,
+            "sha256": "4f40928d1b53c0f574cb529a2b52828d307ba598e83058cf64840060ed51a992",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/enhance_aligned_lut.v"
+            ]
+          },
+          "enhance_aligned_lut_rom.dat": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/enhance_aligned_lut_rom.dat",
+            "bytes": 1026,
+            "sha256": "66423f85ef6f52888ca2f694c5e4117e8178ad83832fe1ea5756b6b4c34647e4",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ip/system_segmentation_filter_0/hdl/verilog/enhance_aligned_lut_rom.dat"
+            ]
+          },
+          "erode_zero.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/erode_zero.v",
+            "bytes": 44364,
+            "sha256": "4112ca49a842b540573f55583cafc7f8db9672dc81b9cdf779ad94dff7a6bb7d",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/erode_zero.v"
+            ]
+          },
+          "fifo_w10_d11_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d11_A.v",
+            "bytes": 3110,
+            "sha256": "77b3dc66f8d971e5fd0f2f9d6ac2c0905f9ff67c8cb90f9a98c8b8de541f7d42",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d11_A.v"
+            ]
+          },
+          "fifo_w10_d1_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d1_A.v",
+            "bytes": 3100,
+            "sha256": "e1a4cd71782bba0dfacb23495e72bdad60007e7e4290c77a589c798271037ec2",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d1_A.v"
+            ]
+          },
+          "fifo_w10_d2_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d2_A.v",
+            "bytes": 3104,
+            "sha256": "8fffe6eccbe73e094713ee435bd1e439aa83e2a36621a8073ae59553b95e396f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d2_A.v"
+            ]
+          },
+          "fifo_w10_d4_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d4_A.v",
+            "bytes": 3104,
+            "sha256": "e0bf3a4d54641c7bfaf92adbc7d3ff0b5342efb4c8037c86c917269cbbe3ec3f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d4_A.v"
+            ]
+          },
+          "fifo_w10_d6_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d6_A.v",
+            "bytes": 3104,
+            "sha256": "f0aa19b5dbc606733e2f011fbf7c6cd46764286aeba5eec52c3ddb63ed23205f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d6_A.v"
+            ]
+          },
+          "fifo_w10_d8_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d8_A.v",
+            "bytes": 3104,
+            "sha256": "4b14a30819e55aa0734169603f8dc80b0b09c6c1e367fe008a7ef3bfccdb91ba",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d8_A.v"
+            ]
+          },
+          "fifo_w10_d9_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w10_d9_A.v",
+            "bytes": 3106,
+            "sha256": "80019ed2962766b8f3723ad3dca780564849e79c4b84e197a53d4101f19abeea",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w10_d9_A.v"
+            ]
+          },
+          "fifo_w14_d1_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w14_d1_A.v",
+            "bytes": 3100,
+            "sha256": "d000378c898086f8b60e432056cbfdec32eebaede2b1bf9f944c5f2bc1c66b20",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w14_d1_A.v"
+            ]
+          },
+          "fifo_w16_d32_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w16_d32_A.v",
+            "bytes": 3110,
+            "sha256": "71c3ca823d3a4d8644764f26567a1cb37580c076aed1a6b5d787657efb8dec54",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w16_d32_A.v"
+            ]
+          },
+          "fifo_w19_d1_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d1_A.v",
+            "bytes": 3100,
+            "sha256": "2667bca73783f21c56cdf3da5c26f22a0a246f31f9a056a3dff34fa82e384013",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d1_A.v"
+            ]
+          },
+          "fifo_w19_d2_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d2_A.v",
+            "bytes": 3104,
+            "sha256": "012301d9d3958d4c01153ee04f85da48fcc7b16230dbafd3f083a153215d7dca",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d2_A.v"
+            ]
+          },
+          "fifo_w19_d3_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w19_d3_A.v",
+            "bytes": 3104,
+            "sha256": "14a2449e14ebfaed8773d2814c1383181f325f111deb6f4ee924d376fc0e4c26",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w19_d3_A.v"
+            ]
+          },
+          "fifo_w32_d12_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d12_A.v",
+            "bytes": 3110,
+            "sha256": "8d7be4e34c2349c43f00483a2ed1d2ec25795732a689cc11eb7951f1b9aa432c",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d12_A.v"
+            ]
+          },
+          "fifo_w32_d2048_B.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d2048_B.v",
+            "bytes": 4145,
+            "sha256": "58d96beec1e2f43216ad5a1d646d4a5cce010597020516986a5072c32c8624f3",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d2048_B.v"
+            ]
+          },
+          "fifo_w32_d8192_B.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w32_d8192_B.v",
+            "bytes": 4145,
+            "sha256": "0cc25fad72b5dac66f78fc93aee88079ba576397f2644e777cea5d91f59533b2",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w32_d8192_B.v"
+            ]
+          },
+          "fifo_w64_d2048_B.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w64_d2048_B.v",
+            "bytes": 4145,
+            "sha256": "6e00ae4250ff8b185c4ade03434650c2bc1b681fc64aec67ed9244016307c882",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w64_d2048_B.v"
+            ]
+          },
+          "fifo_w64_d32_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w64_d32_A.v",
+            "bytes": 4140,
+            "sha256": "a5d8e9aeb8557c965944cb1e22d368f4f5688aa30094614ebc5db094c1ade02f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w64_d32_A.v"
+            ]
+          },
+          "fifo_w8_d32_A.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w8_d32_A.v",
+            "bytes": 3104,
+            "sha256": "f70c3511a65ad9d7d6f0b6c4356b5580e275c20d50a44f4e6addd42b375fad09",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w8_d32_A.v"
+            ]
+          },
+          "fifo_w8_d8192_B.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/fifo_w8_d8192_B.v",
+            "bytes": 4143,
+            "sha256": "49d4303af2afffa5e297f1665cdaade0d09bde406d653b1c09cfc14112c8f918",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/fifo_w8_d8192_B.v"
+            ]
+          },
+          "Filter2D.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D.v",
+            "bytes": 55255,
+            "sha256": "91c1f9020b2a227d49c8bd4a75f7334d96ab45766c64958b59b773eaf65854c5",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D.v"
+            ]
+          },
+          "Filter2D_1.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D_1.v",
+            "bytes": 55768,
+            "sha256": "e60b6df8f85329f2c6f8b757999c6cacfb1b9842209cb193b5564a0fa0a0000a",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D_1.v"
+            ]
+          },
+          "Filter2D_k_buf_0_bkb.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/Filter2D_k_buf_0_bkb.v",
+            "bytes": 1668,
+            "sha256": "a3549356d3632c4bc15e890287b6e97f28c485c7369719291ee1019b602b7180",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/Filter2D_k_buf_0_bkb.v"
+            ]
+          },
+          "filter_sum.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/filter_sum.v",
+            "bytes": 8570,
+            "sha256": "7b04f5df4463f4e7f0ef52baa326a840e4e5fe84734b42c5cdd51bc44b9b95c5",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/filter_sum.v"
+            ]
+          },
+          "final_join.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/final_join.v",
+            "bytes": 21645,
+            "sha256": "791e66bf1dc82ded2f73d86e501c34d0c0ee2579660dedb4cb88f9e10d5f80db",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/final_join.v"
+            ]
+          },
+          "initial_fov.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/initial_fov.v",
+            "bytes": 16903,
+            "sha256": "c8c68d17694eeb286fb3fbb000909f3646caea4143612ca76fdb4f4b9b9df8e2",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/initial_fov.v"
+            ]
+          },
+          "response_carrier.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/response_carrier.v",
+            "bytes": 24299,
+            "sha256": "a0bfd295ddf799887d74c2dedb806afebb95345be0cd75baa232983028dd5508",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/response_carrier.v"
+            ]
+          },
+          "retina_segmentatieOg.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatieOg.v",
+            "bytes": 1170,
+            "sha256": "d2cfe33fa26d8f6469f7c04d83f5ff798c469fa8f25dcd5d9403c398da41fae1",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatieOg.v"
+            ]
+          },
+          "retina_segmentation_hls.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentation_hls.v",
+            "bytes": 62669,
+            "sha256": "60412b007ed940f195d63cb00bd3effca3a21fff6419b4c83ab4a8108447305f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentation_hls.v"
+            ]
+          },
+          "retina_segmentatiudo.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatiudo.v",
+            "bytes": 2942,
+            "sha256": "a1bd5568dae55a3d2fa29a10d5a1e4779cf5badd260f41d37fae6f23c8e5910d",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatiudo.v"
+            ]
+          },
+          "retina_segmentatiyd2.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/retina_segmentatiyd2.v",
+            "bytes": 783,
+            "sha256": "12f2937f1e27daa32c585c75d368243520904644b736b2595d85744c40697294",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/retina_segmentatiyd2.v"
+            ]
+          },
+          "row_filter.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/row_filter.v",
+            "bytes": 61065,
+            "sha256": "e3c208ca828962b28c446bb81bb59ea0f05ff742ab22240bc3f8d7b6d788a0bc",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/row_filter.v"
+            ]
+          },
+          "row_filter_l_bordvdy.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/row_filter_l_bordvdy.v",
+            "bytes": 1674,
+            "sha256": "9a1398e49086af02ecf50c1af70c4bef6e2f38ef8e499e36c8d6180d446f61b7",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/row_filter_l_bordvdy.v"
+            ]
+          },
+          "SepFilter2D.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/SepFilter2D.v",
+            "bytes": 7857,
+            "sha256": "d77d3ff733b5e8065975cde7b50231c7fe226d558ea1c174058d81c880032a9d",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/SepFilter2D.v"
+            ]
+          },
+          "split_words.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/split_words.v",
+            "bytes": 17695,
+            "sha256": "be8b50078aabb0c381fa77a5256059150bff769a3524fcd51a1d6a20baac2cc3",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/split_words.v"
+            ]
+          },
+          "start_for_backgroHfu.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_backgroHfu.v",
+            "bytes": 3130,
+            "sha256": "3c5559bbd4c463e87567f8bfc4261af4483810459b638bdcb219cd269b7edc5f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_backgroHfu.v"
+            ]
+          },
+          "start_for_closed_QgW.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_closed_QgW.v",
+            "bytes": 3132,
+            "sha256": "d009712902ab3abe9828fe4592b95f3036dd29c9a461e0f5d57d1727ccfa0002",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_closed_QgW.v"
+            ]
+          },
+          "start_for_count_nLf8.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_count_nLf8.v",
+            "bytes": 3132,
+            "sha256": "94fed373ec61b8c56c8eaecdd43a62ec9809d84eeb79ba6026619f68d2fa5ec2",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_count_nLf8.v"
+            ]
+          },
+          "start_for_dilate_JfO.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_dilate_JfO.v",
+            "bytes": 3130,
+            "sha256": "f29ca6da9bdd4497426158ed8ae3a0f84b13a6e36073341a122439a7b4585864",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_dilate_JfO.v"
+            ]
+          },
+          "start_for_enhanceNgs.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_enhanceNgs.v",
+            "bytes": 3130,
+            "sha256": "f37f4d18e6622de673d009321a76c49ffa189f54e28fa99ea4fd7ae2eb7c60d3",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_enhanceNgs.v"
+            ]
+          },
+          "start_for_erode_zKfY.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_erode_zKfY.v",
+            "bytes": 3132,
+            "sha256": "2966825d49706117829e5b04b677459276d73d614e4aa5afb8946d168f0b091d",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_erode_zKfY.v"
+            ]
+          },
+          "start_for_filter_Gfk.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_filter_Gfk.v",
+            "bytes": 3130,
+            "sha256": "5336252dc8ef2c1576ee4ce2d15cfb90070887104ba8d0c1d973da219be09650",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_filter_Gfk.v"
+            ]
+          },
+          "start_for_final_jMgi.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_final_jMgi.v",
+            "bytes": 3132,
+            "sha256": "e8de0b2de2fe03542f0a0d6b766a2c2cd8cb3615ce65170f77dbd1d3d909d775",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_final_jMgi.v"
+            ]
+          },
+          "start_for_initialPgM.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_initialPgM.v",
+            "bytes": 3130,
+            "sha256": "9bd7a84ddff58e6db2cb3cbdef40ce95518e9a4d3f9df133516f5a4a7d52ef33",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_initialPgM.v"
+            ]
+          },
+          "start_for_responsOgC.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_responsOgC.v",
+            "bytes": 3130,
+            "sha256": "efb1dc33d57958e4a246627444332fa146845a789bb85bcdb6d33f22eb53b330",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_responsOgC.v"
+            ]
+          },
+          "start_for_row_filxdS.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_row_filxdS.v",
+            "bytes": 3126,
+            "sha256": "c055fd1228a8b2e475818157764fc8f6f243936c30a04de3588eb43ef8e893e2",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_row_filxdS.v"
+            ]
+          },
+          "start_for_threshoIfE.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/start_for_threshoIfE.v",
+            "bytes": 3130,
+            "sha256": "18f626b78dd2e0c8f339c823f38856c1219c8d37d93f6a449c4ca6d30ea4245d",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/start_for_threshoIfE.v"
+            ]
+          },
+          "threshold_binary.v": {
+            "source": "build/a4_hls_02/solution1/impl/ip/hdl/verilog/threshold_binary.v",
+            "bytes": 16688,
+            "sha256": "9126c19602b886486c97b8a5addb947a779d9e54a2a6d691e4ef839a5584cf66",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8669/hdl/verilog/threshold_binary.v"
+            ]
+          }
+        },
+        "color_convert": {
+          "color_convert.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert.v",
+            "bytes": 62819,
+            "sha256": "05552688afd691be3caa92889856b9a72e5be40082f9ed76d84964bd225ab0d6",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert.v"
+            ]
+          },
+          "color_convert_AXILiteS_s_axi.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_AXILiteS_s_axi.v",
+            "bytes": 13406,
+            "sha256": "8d7b95b749dfb49d62c47476dc5bf48255d613d3651993a1a20bf24a769904d7",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_AXILiteS_s_axi.v"
+            ]
+          },
+          "color_convert_macbkb.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_macbkb.v",
+            "bytes": 1392,
+            "sha256": "9042bc931e24fb3486f3e77084d75eb54dce3085225f42f954650a9999dce744",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_macbkb.v"
+            ]
+          },
+          "color_convert_maccud.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/color_convert/solution1/impl/ip/hdl/verilog/color_convert_maccud.v",
+            "bytes": 1392,
+            "sha256": "745e2b1f3ba431579934de16df1cd3b9781b1745c10cfcb718e7a20bd2ee945b",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/ea09/hdl/verilog/color_convert_maccud.v"
+            ]
+          }
+        },
+        "pixel_pack": {
+          "pixel_pack.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog/pixel_pack.v",
+            "bytes": 113577,
+            "sha256": "7b9fc53c8220a1b69ebc85b4200de2733a89e52d04f0297a848d43a19f9968ed",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/2ea5/hdl/verilog/pixel_pack.v"
+            ]
+          },
+          "pixel_pack_AXILiteS_s_axi.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/pixel_pack/solution1/impl/ip/hdl/verilog/pixel_pack_AXILiteS_s_axi.v",
+            "bytes": 6356,
+            "sha256": "d583cd2ced0e92b05ae04a00f721ec5a0ac0ca2a1c8dd91c2902beb6b391ef1a",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/2ea5/hdl/verilog/pixel_pack_AXILiteS_s_axi.v"
+            ]
+          }
+        },
+        "pixel_unpack": {
+          "pixel_unpack.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1/impl/ip/hdl/verilog/pixel_unpack.v",
+            "bytes": 79755,
+            "sha256": "ecf22f650a02cbaab238493d91085b045b0d51c3b70555003bcfaa6f646c74e0",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8caf/hdl/verilog/pixel_unpack.v"
+            ]
+          },
+          "pixel_unpack_AXILiteS_s_axi.v": {
+            "source": "build/official_v2.2.1/boards/ip/hls/pixel_unpack/solution1/impl/ip/hdl/verilog/pixel_unpack_AXILiteS_s_axi.v",
+            "bytes": 5645,
+            "sha256": "5a49d2dd06dbc57ca6e7749f4f01aa8328cabdbc08860fb3c3026e5922ad097d",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/8caf/hdl/verilog/pixel_unpack_AXILiteS_s_axi.v"
+            ]
+          }
+        },
+        "rgb2dvi_v1_2": {
+          "ClockGen.vhd": {
+            "bytes": 8885,
+            "sha256": "a3ac3a940d9455b342d5217b008502ebeef2da35a2b27a4074eb9ab3c58e6b1b",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/ClockGen.vhd"
+            ]
+          },
+          "DVI_Constants.vhd": {
+            "bytes": 3151,
+            "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/DVI_Constants.vhd"
+            ]
+          },
+          "OutputSERDES.vhd": {
+            "bytes": 8366,
+            "sha256": "6205d58405919d4f899a525256e2cafa725408f6644642755cd0de63e69b286e",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/OutputSERDES.vhd"
+            ]
+          },
+          "rgb2dvi.vhd": {
+            "bytes": 7781,
+            "sha256": "7268a67d557e36200847d494536733026dc7e2ca0980b6d2138fe9bac735f0cc",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/rgb2dvi.vhd"
+            ]
+          },
+          "rgb2dvi.xdc": {
+            "bytes": 292,
+            "sha256": "51b9ac7f1229a2250cddb1d490e45e536dd836eb5c42851f67359c7a5aef6130",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi.xdc"
+            ]
+          },
+          "rgb2dvi_clocks.xdc": {
+            "bytes": 114,
+            "sha256": "d39d2f58a6cf74c30eef3c4b7d37c436359ea3fcfaff3ddcc0a1a69388b73ac8",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_clocks.xdc"
+            ]
+          },
+          "rgb2dvi_ooc.xdc": {
+            "bytes": 136,
+            "sha256": "77f9820235b2c3ce1e99d369db4932a76705633eeb5f950908855183931dc1a2",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ip/system_rgb2dvi_0_0/src/rgb2dvi_ooc.xdc"
+            ]
+          },
+          "SyncAsync.vhd": {
+            "bytes": 3727,
+            "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsync.vhd"
+            ]
+          },
+          "SyncAsyncReset.vhd": {
+            "bytes": 3734,
+            "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/SyncAsyncReset.vhd"
+            ]
+          },
+          "TMDS_Encoder.vhd": {
+            "bytes": 7863,
+            "sha256": "b047a257c1172412d1b354a98e3cc77d013d0f3c1af6ff646233abf8b669c196",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/bd5a/src/TMDS_Encoder.vhd"
+            ]
+          }
+        },
+        "dvi2rgb_v1_7": {
+          "ChannelBond.vhd": {
+            "bytes": 6809,
+            "sha256": "9f8359aeb6c1e60cc3cbbc9cf3ddc69895576ef86c032e85e77d0d4fdcf80f3f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/ChannelBond.vhd"
+            ]
+          },
+          "dvi2rgb.vhd": {
+            "bytes": 11324,
+            "sha256": "0116904c3264b246bb15008781e31f3f2ad11fec0f8d8dcc6e2474d4c101177c",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/dvi2rgb.vhd"
+            ]
+          },
+          "dvi2rgb.xdc": {
+            "bytes": 940,
+            "sha256": "2dc9a20273f63cd0cecaa01a6ad2551cfc65460037d8a8ea9f8948f7eab7242a",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ip/system_dvi2rgb_0_0/src/dvi2rgb.xdc"
+            ]
+          },
+          "dvi2rgb_ooc.xdc": {
+            "bytes": 95,
+            "sha256": "0b74ab740aeab92ea0f247b5bbd931e34d4c8cffc5b118eec9f95a2d63b0e8a9",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ip/system_dvi2rgb_0_0/src/dvi2rgb_ooc.xdc"
+            ]
+          },
+          "DVI_Constants.vhd": {
+            "bytes": 3151,
+            "sha256": "d8dbbbc3c8696d4527ee0d3c4757f1a40d0acebc845899483bc61c2bb8270cde",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/DVI_Constants.vhd"
+            ]
+          },
+          "EEPROM_8b.vhd": {
+            "bytes": 8403,
+            "sha256": "db5cede08b24e5c4a3068d9de6e6cd5fc19d5aad2c3245b0da6f2265545ce676",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/EEPROM_8b.vhd"
+            ]
+          },
+          "GlitchFilter.vhd": {
+            "bytes": 3919,
+            "sha256": "914d9844fd56b3d7f4e67720fc9f0ca965dee6c26e8cf7a5822529a34256e8ab",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/GlitchFilter.vhd"
+            ]
+          },
+          "InputSERDES.vhd": {
+            "bytes": 10056,
+            "sha256": "9f28ba82371f70e4597e79648a433343d424de7c55ff48e766944f20b19adb00",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/InputSERDES.vhd"
+            ]
+          },
+          "PhaseAlign.vhd": {
+            "bytes": 14475,
+            "sha256": "6019634663033456653d5415205fd3df21b5527c1390ce5012c0702f38490632",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/PhaseAlign.vhd"
+            ]
+          },
+          "ResyncToBUFG.vhd": {
+            "bytes": 3719,
+            "sha256": "5ede27161ccf2723207c9c55e359cdcf1c9c998cb16fcaa909fdc8d58ff81689",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/ResyncToBUFG.vhd"
+            ]
+          },
+          "SyncAsync.vhd": {
+            "bytes": 3727,
+            "sha256": "5561ac8099ed13f3114e97387aab5f7f30ad28a8be2fc540004cbee3f19eb3a7",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncAsync.vhd"
+            ]
+          },
+          "SyncAsyncReset.vhd": {
+            "bytes": 3734,
+            "sha256": "3ce7ade3267959da59b4d448cc6641018e4f0ac3de9f8f998d0b9ff84a3794bc",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncAsyncReset.vhd"
+            ]
+          },
+          "SyncBase.vhd": {
+            "bytes": 3854,
+            "sha256": "10dc70c19caa969071c2c0be52c3757a62d15d661f4b1b65b3f76818671e478c",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/SyncBase.vhd"
+            ]
+          },
+          "TMDS_Clocking.vhd": {
+            "bytes": 11908,
+            "sha256": "07ac631d46b6a948a9cceb141fe370a9cd08d3066236d715f139d5c2519fd6ec",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TMDS_Clocking.vhd"
+            ]
+          },
+          "TMDS_Decoder.vhd": {
+            "bytes": 10863,
+            "sha256": "26fa9528105d63a9c85b5dc6f23e64da26ae0258d68c7da61ad63dc279864d47",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TMDS_Decoder.vhd"
+            ]
+          },
+          "TWI_SlaveCtl.vhd": {
+            "bytes": 11349,
+            "sha256": "b1c9a001d8a7bedb2366d9c1d6d0b061de59327b68d6867df887d0cb73f62f2f",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/269e/src/TWI_SlaveCtl.vhd"
+            ]
+          }
+        },
+        "axi_dynclk_v1_0": {
+          "axi_dynclk.vhd": {
+            "bytes": 10008,
+            "sha256": "2b8d2de5d2731fd0b83c06efb0566f83bd64016e699d067e39dc396de681ecaf",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk.vhd"
+            ]
+          },
+          "axi_dynclk_S00_AXI.vhd": {
+            "bytes": 18625,
+            "sha256": "871c0b0a56ad7caefecc844d23faf5af6ad904019c2cdbbb3ef5edc5048495e0",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/axi_dynclk_S00_AXI.vhd"
+            ]
+          },
+          "mmcme2_drp.v": {
+            "bytes": 15355,
+            "sha256": "3833e1439bc56a53d682cd4a8c99b6a9d3e6378b9e27667df290f0f8896faeac",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/9097/src/mmcme2_drp.v"
+            ]
+          }
+        },
+        "color_swap_1.0": {
+          "color_swap.v": {
+            "bytes": 1426,
+            "sha256": "62706648f324e069e0b9021c569272cbf1d3d69b3b2802ff7c12f4f5e0558224",
+            "actual_project_copies": [
+              "b_integration.srcs/sources_1/bd/system/ipshared/fac8/color_swap.v"
+            ]
+          }
+        }
+      },
+      "original_snapshots_unchanged": {
+        "v2.2.1": {
+          "commit": "3d2641653c6d1a5ea55c4c41e15f9dd9a2e32ab3",
+          "files_checked": 1417,
+          "manifest": {
+            "bytes": 279317,
+            "sha256": "a7bb4b04392da3cf0810f657ccbe747b1ef37f4f067632c7a0fbc3ed61fedb20"
+          }
+        },
+        "v3.0.1": {
+          "commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+          "files_checked": 958,
+          "manifest": {
+            "bytes": 186251,
+            "sha256": "44bbd24ff78b5897ada72b551c9a7520101b771ed221790c956dc5614e526e22"
+          }
+        }
+      },
+      "a4_manifest": {
+        "bytes": 30522,
+        "sha256": "ed001a615ee884b2a2585eb18ab28a588f4cb1a1ffb6e017f86045ffb9473dae"
+      }
+    },
+    "control_addresses": {
+      "axi_dma_0": "0x40400000",
+      "point_control": "0x43c80000",
+      "video/axi_vdma": "0x43000000",
+      "video/hdmi_out/pixel_unpack": "0x43c70000",
+      "video/hdmi_out/color_convert": "0x43c60000",
+      "video/hdmi_out/frontend/axi_dynclk": "0x43c10000",
+      "video/hdmi_out/frontend/vtc_out": "0x43c20000"
+    },
+    "driver_metadata": {
+      "axi_dma_0": {
+        "type": "xilinx.com:ip:axi_dma:7.1",
+        "parameters": {
+          "C_S_AXI_LITE_ADDR_WIDTH": "10",
+          "C_S_AXI_LITE_DATA_WIDTH": "32",
+          "C_DLYTMR_RESOLUTION": "125",
+          "C_PRMRY_IS_ACLK_ASYNC": "0",
+          "C_ENABLE_MULTI_CHANNEL": "0",
+          "C_NUM_MM2S_CHANNELS": "1",
+          "C_NUM_S2MM_CHANNELS": "1",
+          "C_INCLUDE_SG": "0",
+          "C_SG_INCLUDE_STSCNTRL_STRM": "0",
+          "C_SG_USE_STSAPP_LENGTH": "0",
+          "C_SG_LENGTH_WIDTH": "23",
+          "C_M_AXI_SG_ADDR_WIDTH": "32",
+          "C_M_AXI_SG_DATA_WIDTH": "32",
+          "C_M_AXIS_MM2S_CNTRL_TDATA_WIDTH": "32",
+          "C_S_AXIS_S2MM_STS_TDATA_WIDTH": "32",
+          "C_MICRO_DMA": "0",
+          "C_INCLUDE_MM2S": "1",
+          "C_INCLUDE_MM2S_SF": "1",
+          "C_MM2S_BURST_SIZE": "16",
+          "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+          "C_M_AXI_MM2S_DATA_WIDTH": "64",
+          "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+          "C_INCLUDE_MM2S_DRE": "0",
+          "C_INCLUDE_S2MM": "1",
+          "C_INCLUDE_S2MM_SF": "1",
+          "C_S2MM_BURST_SIZE": "16",
+          "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+          "C_M_AXI_S2MM_DATA_WIDTH": "32",
+          "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+          "C_INCLUDE_S2MM_DRE": "0",
+          "C_FAMILY": "zynq",
+          "Component_Name": "system_axi_dma_0_2",
+          "c_include_sg": "0",
+          "c_enable_multi_channel": "0",
+          "c_num_mm2s_channels": "1",
+          "c_num_s2mm_channels": "1",
+          "c_sg_length_width": "23",
+          "c_dlytmr_resolution": "125",
+          "c_prmry_is_aclk_async": "0",
+          "c_sg_include_stscntrl_strm": "0",
+          "c_micro_dma": "0",
+          "c_include_mm2s": "1",
+          "c_m_axi_mm2s_data_width": "64",
+          "c_m_axis_mm2s_tdata_width": "32",
+          "c_include_mm2s_dre": "0",
+          "c_include_mm2s_sf": "1",
+          "c_mm2s_burst_size": "16",
+          "c_include_s2mm": "1",
+          "c_sg_use_stsapp_length": "0",
+          "c_m_axi_s2mm_data_width": "32",
+          "c_s_axis_s2mm_tdata_width": "32",
+          "c_include_s2mm_dre": "0",
+          "c_include_s2mm_sf": "1",
+          "c_s2mm_burst_size": "16",
+          "c_addr_width": "32",
+          "c_single_interface": "0",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x40400000",
+          "C_HIGHADDR": "0x4040FFFF"
+        }
+      },
+      "point_control": {
+        "type": "xilinx.com:ip:axi_gpio:2.0",
+        "parameters": {
+          "C_FAMILY": "zynq",
+          "C_S_AXI_ADDR_WIDTH": "9",
+          "C_S_AXI_DATA_WIDTH": "32",
+          "C_GPIO_WIDTH": "32",
+          "C_GPIO2_WIDTH": "32",
+          "C_ALL_INPUTS": "0",
+          "C_ALL_INPUTS_2": "1",
+          "C_ALL_OUTPUTS": "1",
+          "C_ALL_OUTPUTS_2": "0",
+          "C_INTERRUPT_PRESENT": "0",
+          "C_DOUT_DEFAULT": "0x00000000",
+          "C_TRI_DEFAULT": "0xFFFFFFFF",
+          "C_IS_DUAL": "1",
+          "C_DOUT_DEFAULT_2": "0x00000000",
+          "C_TRI_DEFAULT_2": "0xFFFFFFFF",
+          "Component_Name": "system_point_control_0",
+          "USE_BOARD_FLOW": "false",
+          "GPIO_BOARD_INTERFACE": "Custom",
+          "GPIO2_BOARD_INTERFACE": "Custom",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x43C80000",
+          "C_HIGHADDR": "0x43C8FFFF"
+        }
+      },
+      "video/axi_vdma": {
+        "type": "xilinx.com:ip:axi_vdma:6.3",
+        "parameters": {
+          "C_S_AXI_LITE_ADDR_WIDTH": "9",
+          "C_S_AXI_LITE_DATA_WIDTH": "32",
+          "C_DLYTMR_RESOLUTION": "125",
+          "C_PRMRY_IS_ACLK_ASYNC": "0",
+          "C_ENABLE_VIDPRMTR_READS": "1",
+          "C_DYNAMIC_RESOLUTION": "1",
+          "C_NUM_FSTORES": "4",
+          "C_USE_FSYNC": "1",
+          "C_USE_MM2S_FSYNC": "0",
+          "C_USE_S2MM_FSYNC": "2",
+          "C_FLUSH_ON_FSYNC": "1",
+          "C_INCLUDE_INTERNAL_GENLOCK": "1",
+          "C_INCLUDE_SG": "0",
+          "C_M_AXI_SG_ADDR_WIDTH": "32",
+          "C_M_AXI_SG_DATA_WIDTH": "32",
+          "C_INCLUDE_MM2S": "1",
+          "C_MM2S_GENLOCK_MODE": "1",
+          "C_MM2S_GENLOCK_NUM_MASTERS": "1",
+          "C_MM2S_GENLOCK_REPEAT_EN": "0",
+          "C_MM2S_SOF_ENABLE": "1",
+          "C_INCLUDE_MM2S_DRE": "0",
+          "C_INCLUDE_MM2S_SF": "0",
+          "C_MM2S_LINEBUFFER_DEPTH": "512",
+          "C_MM2S_LINEBUFFER_THRESH": "4",
+          "C_MM2S_MAX_BURST_LENGTH": "32",
+          "C_M_AXI_MM2S_ADDR_WIDTH": "32",
+          "C_M_AXI_MM2S_DATA_WIDTH": "32",
+          "C_M_AXIS_MM2S_TDATA_WIDTH": "32",
+          "C_M_AXIS_MM2S_TUSER_BITS": "1",
+          "C_INCLUDE_S2MM": "1",
+          "C_S2MM_GENLOCK_MODE": "0",
+          "C_S2MM_GENLOCK_NUM_MASTERS": "1",
+          "C_S2MM_GENLOCK_REPEAT_EN": "1",
+          "C_S2MM_SOF_ENABLE": "1",
+          "C_INCLUDE_S2MM_DRE": "0",
+          "C_INCLUDE_S2MM_SF": "1",
+          "C_S2MM_LINEBUFFER_DEPTH": "4096",
+          "C_S2MM_LINEBUFFER_THRESH": "4",
+          "C_S2MM_MAX_BURST_LENGTH": "32",
+          "C_M_AXI_S2MM_ADDR_WIDTH": "32",
+          "C_M_AXI_S2MM_DATA_WIDTH": "64",
+          "C_S_AXIS_S2MM_TDATA_WIDTH": "32",
+          "C_S_AXIS_S2MM_TUSER_BITS": "1",
+          "C_ENABLE_DEBUG_ALL": "0",
+          "C_ENABLE_DEBUG_INFO_0": "0",
+          "C_ENABLE_DEBUG_INFO_1": "0",
+          "C_ENABLE_DEBUG_INFO_2": "0",
+          "C_ENABLE_DEBUG_INFO_3": "0",
+          "C_ENABLE_DEBUG_INFO_4": "0",
+          "C_ENABLE_DEBUG_INFO_5": "0",
+          "C_ENABLE_DEBUG_INFO_6": "1",
+          "C_ENABLE_DEBUG_INFO_7": "1",
+          "C_ENABLE_DEBUG_INFO_8": "0",
+          "C_ENABLE_DEBUG_INFO_9": "0",
+          "C_ENABLE_DEBUG_INFO_10": "0",
+          "C_ENABLE_DEBUG_INFO_11": "0",
+          "C_ENABLE_DEBUG_INFO_12": "0",
+          "C_ENABLE_DEBUG_INFO_13": "0",
+          "C_ENABLE_DEBUG_INFO_14": "1",
+          "C_ENABLE_DEBUG_INFO_15": "1",
+          "C_INSTANCE": "axi_vdma",
+          "C_SELECT_XPM": "0",
+          "C_ENABLE_VERT_FLIP": "0",
+          "C_FAMILY": "zynq",
+          "Component_Name": "system_axi_vdma_0",
+          "c_m_axi_mm2s_data_width": "32",
+          "c_m_axis_mm2s_tdata_width": "32",
+          "c_m_axi_s2mm_data_width": "64",
+          "c_s_axis_s2mm_tdata_width": "32",
+          "c_include_s2mm_dre": "0",
+          "c_include_s2mm_sf": "1",
+          "c_include_mm2s_sf": "0",
+          "c_enable_vidprmtr_reads": "1",
+          "c_num_fstores": "4",
+          "c_use_fsync": "1",
+          "c_use_mm2s_fsync": "0",
+          "c_use_s2mm_fsync": "2",
+          "c_mm2s_sof_enable": "1",
+          "c_s2mm_sof_enable": "1",
+          "c_include_internal_genlock": "1",
+          "c_mm2s_genlock_mode": "1",
+          "c_mm2s_genlock_num_masters": "1",
+          "c_s2mm_genlock_mode": "0",
+          "c_s2mm_genlock_num_masters": "1",
+          "c_mm2s_linebuffer_depth": "512",
+          "c_mm2s_linebuffer_thresh": "4",
+          "c_s2mm_linebuffer_depth": "4096",
+          "c_s2mm_linebuffer_thresh": "4",
+          "c_include_mm2s": "1",
+          "c_mm2s_max_burst_length": "32",
+          "c_include_sg": "0",
+          "c_dlytmr_resolution": "125",
+          "c_prmry_is_aclk_async": "0",
+          "c_dynamic_resolution": "1",
+          "c_s2mm_max_burst_length": "32",
+          "c_include_s2mm": "1",
+          "c_enable_all": "0",
+          "c_enable_mm2s_rst_out": "0",
+          "c_enable_mm2s_buf_empty": "0",
+          "c_enable_mm2s_param_updt": "0",
+          "c_enable_mm2s_fsync_out": "0",
+          "c_enable_tstvec": "0",
+          "c_enable_mm2s_frmstr_reg": "0",
+          "c_enable_mm2s_delay_counter": "1",
+          "c_enable_mm2s_frm_counter": "1",
+          "c_enable_s2mm_rst_out": "0",
+          "c_enable_s2mm_buf_full": "0",
+          "c_enable_s2mm_param_updt": "0",
+          "c_enable_s2mm_fsync_out": "0",
+          "c_enable_s2mm_sts_reg": "0",
+          "c_enable_s2mm_frmstr_reg": "0",
+          "c_enable_s2mm_delay_counter": "1",
+          "c_enable_s2mm_frm_counter": "1",
+          "c_include_mm2s_dre": "0",
+          "c_flush_on_fsync": "1",
+          "c_s2mm_genlock_repeat_en": "1",
+          "c_mm2s_genlock_repeat_en": "0",
+          "c_addr_width": "32",
+          "c_single_interface": "0",
+          "c_enable_vert_flip": "0",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x43000000",
+          "C_HIGHADDR": "0x4300FFFF"
+        }
+      },
+      "video/hdmi_out/pixel_unpack": {
+        "type": "xilinx.com:hls:pixel_unpack:1.0",
+        "parameters": {
+          "C_S_AXI_AXILITES_ADDR_WIDTH": "5",
+          "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+          "Component_Name": "system_pixel_unpack_0",
+          "clk_period": "7",
+          "machine": "64",
+          "combinational": "0",
+          "latency": "undef",
+          "II": "x",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_S_AXI_AXILITES_BASEADDR": "0x43C70000",
+          "C_S_AXI_AXILITES_HIGHADDR": "0x43C7FFFF"
+        }
+      },
+      "video/hdmi_out/color_convert": {
+        "type": "xilinx.com:hls:color_convert:1.0",
+        "parameters": {
+          "C_S_AXI_AXILITES_ADDR_WIDTH": "7",
+          "C_S_AXI_AXILITES_DATA_WIDTH": "32",
+          "Component_Name": "system_color_convert_0",
+          "clk_period": "7",
+          "machine": "64",
+          "combinational": "0",
+          "latency": "6",
+          "II": "1",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_S_AXI_AXILITES_BASEADDR": "0x43C60000",
+          "C_S_AXI_AXILITES_HIGHADDR": "0x43C6FFFF"
+        }
+      },
+      "video/hdmi_out/frontend/axi_dynclk": {
+        "type": "digilentinc.com:ip:axi_dynclk:1.0",
+        "parameters": {
+          "C_S00_AXI_DATA_WIDTH": "32",
+          "C_S00_AXI_ADDR_WIDTH": "5",
+          "ADD_BUFMR": "false",
+          "Component_Name": "system_axi_dynclk_0",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x43C10000",
+          "C_HIGHADDR": "0x43C1FFFF"
+        }
+      },
+      "video/hdmi_out/frontend/vtc_out": {
+        "type": "xilinx.com:ip:v_tc:6.1",
+        "parameters": {
+          "C_HAS_AXI4_LITE": "1",
+          "C_HAS_INTC_IF": "0",
+          "C_GEN_INTERLACED": "0",
+          "C_GEN_HACTIVE_SIZE": "1280",
+          "C_GEN_VACTIVE_SIZE": "720",
+          "C_GEN_CPARITY": "0",
+          "C_GEN_FIELDID_POLARITY": "1",
+          "C_GEN_VBLANK_POLARITY": "1",
+          "C_GEN_HBLANK_POLARITY": "1",
+          "C_GEN_VSYNC_POLARITY": "1",
+          "C_GEN_HSYNC_POLARITY": "1",
+          "C_GEN_AVIDEO_POLARITY": "1",
+          "C_GEN_ACHROMA_POLARITY": "1",
+          "C_GEN_VIDEO_FORMAT": "2",
+          "C_GEN_HFRAME_SIZE": "1650",
+          "C_GEN_F0_VFRAME_SIZE": "750",
+          "C_GEN_F1_VFRAME_SIZE": "750",
+          "C_GEN_HSYNC_START": "1390",
+          "C_GEN_HSYNC_END": "1430",
+          "C_GEN_F0_VBLANK_HSTART": "1280",
+          "C_GEN_F0_VBLANK_HEND": "1280",
+          "C_GEN_F0_VSYNC_VSTART": "724",
+          "C_GEN_F0_VSYNC_VEND": "729",
+          "C_GEN_F0_VSYNC_HSTART": "1280",
+          "C_GEN_F0_VSYNC_HEND": "1280",
+          "C_GEN_F1_VBLANK_HSTART": "1280",
+          "C_GEN_F1_VBLANK_HEND": "1280",
+          "C_GEN_F1_VSYNC_VSTART": "724",
+          "C_GEN_F1_VSYNC_VEND": "729",
+          "C_GEN_F1_VSYNC_HSTART": "1280",
+          "C_GEN_F1_VSYNC_HEND": "1280",
+          "C_FSYNC_HSTART0": "0",
+          "C_FSYNC_VSTART0": "0",
+          "C_FSYNC_HSTART1": "0",
+          "C_FSYNC_VSTART1": "0",
+          "C_FSYNC_HSTART2": "0",
+          "C_FSYNC_VSTART2": "0",
+          "C_FSYNC_HSTART3": "0",
+          "C_FSYNC_VSTART3": "0",
+          "C_FSYNC_HSTART4": "0",
+          "C_FSYNC_VSTART4": "0",
+          "C_FSYNC_HSTART5": "0",
+          "C_FSYNC_VSTART5": "0",
+          "C_FSYNC_HSTART6": "0",
+          "C_FSYNC_VSTART6": "0",
+          "C_FSYNC_HSTART7": "0",
+          "C_FSYNC_VSTART7": "0",
+          "C_FSYNC_HSTART8": "0",
+          "C_FSYNC_VSTART8": "0",
+          "C_FSYNC_HSTART9": "0",
+          "C_FSYNC_VSTART9": "0",
+          "C_FSYNC_HSTART10": "0",
+          "C_FSYNC_VSTART10": "0",
+          "C_FSYNC_HSTART11": "0",
+          "C_FSYNC_VSTART11": "0",
+          "C_FSYNC_HSTART12": "0",
+          "C_FSYNC_VSTART12": "0",
+          "C_FSYNC_HSTART13": "0",
+          "C_FSYNC_VSTART13": "0",
+          "C_FSYNC_HSTART14": "0",
+          "C_FSYNC_VSTART14": "0",
+          "C_FSYNC_HSTART15": "0",
+          "C_FSYNC_VSTART15": "0",
+          "C_MAX_PIXELS": "4096",
+          "C_MAX_LINES": "4096",
+          "C_NUM_FSYNCS": "1",
+          "C_INTERLACE_EN": "0",
+          "C_GEN_AUTO_SWITCH": "0",
+          "C_DETECT_EN": "0",
+          "C_SYNC_EN": "0",
+          "C_GENERATE_EN": "1",
+          "C_DET_HSYNC_EN": "1",
+          "C_DET_VSYNC_EN": "1",
+          "C_DET_HBLANK_EN": "1",
+          "C_DET_VBLANK_EN": "1",
+          "C_DET_AVIDEO_EN": "1",
+          "C_DET_ACHROMA_EN": "0",
+          "C_GEN_HSYNC_EN": "1",
+          "C_GEN_VSYNC_EN": "1",
+          "C_GEN_HBLANK_EN": "1",
+          "C_GEN_VBLANK_EN": "1",
+          "C_GEN_AVIDEO_EN": "1",
+          "C_GEN_ACHROMA_EN": "0",
+          "C_GEN_FIELDID_EN": "0",
+          "C_DET_FIELDID_EN": "0",
+          "Component_Name": "system_vtc_out_0",
+          "C_FAMILY": "virtex7",
+          "HAS_AXI4_LITE": "true",
+          "HAS_INTC_IF": "false",
+          "INTERLACE_EN": "false",
+          "SYNC_EN": "false",
+          "max_clocks_per_line": "4096",
+          "max_lines_per_frame": "4096",
+          "VIDEO_MODE": "720p",
+          "FSYNC_HSTART0": "0",
+          "FSYNC_VSTART0": "0",
+          "FSYNC_HSTART1": "0",
+          "FSYNC_VSTART1": "0",
+          "FSYNC_HSTART2": "0",
+          "FSYNC_VSTART2": "0",
+          "FSYNC_HSTART3": "0",
+          "FSYNC_VSTART3": "0",
+          "FSYNC_HSTART4": "0",
+          "FSYNC_VSTART4": "0",
+          "FSYNC_HSTART5": "0",
+          "FSYNC_VSTART5": "0",
+          "FSYNC_HSTART6": "0",
+          "FSYNC_VSTART6": "0",
+          "FSYNC_HSTART7": "0",
+          "FSYNC_VSTART7": "0",
+          "FSYNC_HSTART8": "0",
+          "FSYNC_VSTART8": "0",
+          "FSYNC_HSTART9": "0",
+          "FSYNC_VSTART9": "0",
+          "FSYNC_HSTART10": "0",
+          "FSYNC_VSTART10": "0",
+          "FSYNC_HSTART11": "0",
+          "FSYNC_VSTART11": "0",
+          "FSYNC_HSTART12": "0",
+          "FSYNC_VSTART12": "0",
+          "FSYNC_HSTART13": "0",
+          "FSYNC_VSTART13": "0",
+          "FSYNC_HSTART14": "0",
+          "FSYNC_VSTART14": "0",
+          "FSYNC_HSTART15": "0",
+          "FSYNC_VSTART15": "0",
+          "GEN_F0_VSYNC_VSTART": "724",
+          "GEN_F1_VSYNC_VSTART": "724",
+          "GEN_HACTIVE_SIZE": "1280",
+          "GEN_HSYNC_END": "1430",
+          "GEN_HFRAME_SIZE": "1650",
+          "GEN_F0_VSYNC_HSTART": "1280",
+          "GEN_F1_VSYNC_HSTART": "1280",
+          "GEN_F0_VSYNC_HEND": "1280",
+          "GEN_F1_VSYNC_HEND": "1280",
+          "GEN_F0_VFRAME_SIZE": "750",
+          "GEN_F1_VFRAME_SIZE": "750",
+          "GEN_F0_VSYNC_VEND": "729",
+          "GEN_F1_VSYNC_VEND": "729",
+          "GEN_F0_VBLANK_HEND": "1280",
+          "GEN_F1_VBLANK_HEND": "1280",
+          "GEN_HSYNC_START": "1390",
+          "GEN_VACTIVE_SIZE": "720",
+          "GEN_F0_VBLANK_HSTART": "1280",
+          "GEN_F1_VBLANK_HSTART": "1280",
+          "GEN_ACHROMA_POLARITY": "High",
+          "GEN_HSYNC_POLARITY": "High",
+          "GEN_VSYNC_POLARITY": "High",
+          "GEN_HBLANK_POLARITY": "High",
+          "GEN_AVIDEO_POLARITY": "High",
+          "GEN_VBLANK_POLARITY": "High",
+          "GEN_FIELDID_POLARITY": "High",
+          "GEN_INTERLACED": "false",
+          "GEN_CPARITY": "0",
+          "GEN_VIDEO_FORMAT": "RGB",
+          "horizontal_sync_generation": "true",
+          "enable_detection": "false",
+          "vertical_blank_generation": "true",
+          "GEN_FIELDID_EN": "false",
+          "horizontal_blank_detection": "true",
+          "active_chroma_detection": "false",
+          "horizontal_sync_detection": "true",
+          "enable_generation": "true",
+          "auto_generation_mode": "false",
+          "vertical_sync_generation": "true",
+          "active_chroma_generation": "false",
+          "DET_FIELDID_EN": "false",
+          "vertical_blank_detection": "true",
+          "active_video_generation": "true",
+          "vertical_sync_detection": "true",
+          "horizontal_blank_generation": "true",
+          "active_video_detection": "true",
+          "frame_syncs": "1",
+          "EDK_IPTYPE": "PERIPHERAL",
+          "C_BASEADDR": "0x43C20000",
+          "C_HIGHADDR": "0x43C2FFFF"
+        }
+      }
+    },
+    "test_contract": {
+      "validation_frames": 61,
+      "benchmark_frames": 309,
+      "total_frames": 370,
+      "words": 70647808,
+      "benchmark_groups": [
+        [
+          256,
+          false
+        ],
+        [
+          512,
+          false
+        ],
+        [
+          512,
+          true
+        ]
+      ],
+      "timed_frames_per_group": 100,
+      "warmup_per_group": 3,
+      "display_submissions": 105
+    },
+    "timing_meaning": "Monotonic perf_counter_ns completed transactions and whole checked loops; not PL-only cycles or measured display Hz",
+    "source_files": {
+      "scripts/package_b.py": {
+        "bytes": 17997,
+        "sha256": "c92f53a0f30351f95ed61d84ad76923224563831cc9f62086b3bc1057f284f3c"
+      },
+      "scripts/check_b_hardware.py": {
+        "bytes": 11820,
+        "sha256": "6a14ed744eb9175d928172593cfbd23de39bdca2c9456e5cc443e0287c0935c5"
+      },
+      "scripts/b_integration_board_test.py": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "scripts/build_b_notebook.py": {
+        "bytes": 4385,
+        "sha256": "4a31cc52213e8ca316ff427121c785ffaac8ef8fe6cc7d04eb5e8223911f71ff"
+      },
+      "tests/test_b_integration.py": {
+        "bytes": 16373,
+        "sha256": "28784c0e92f880ff4ecd1890ae858848b6c42e521b70d7e27441bcec035198c1"
+      },
+      "tests/b_reset_tb.sv": {
+        "bytes": 2023,
+        "sha256": "fc230299285d6618666daa70c5498808a006e239b883f32d9cc25bca1ac0bacb"
+      },
+      "vivado/scripts/build_b_integration.tcl": {
+        "bytes": 13022,
+        "sha256": "50a8eaa9bc2ca10963b09dfc03b70afd1be563ec9431a283109876971282f080"
+      },
+      "vivado/scripts/simulate_b_reset.tcl": {
+        "bytes": 1413,
+        "sha256": "bda1fa7214ba8a418c810f4d536ed2717be892d4f53fa5b8d8d20e7698dbec18"
+      },
+      "vivado/constraints/b_integration.xdc": {
+        "bytes": 5469,
+        "sha256": "a8df869b30cf3144c77a616183b62c93aa64aa4f928fe1bd3cdbc725c880e99c"
+      },
+      "notebooks/b_integration_check.ipynb": {
+        "bytes": 5835,
+        "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+      },
+      "docs/b_integration_validation_steps.md": {
+        "bytes": 2765,
+        "sha256": "fe4d3a8ba94d9f2f5c231a5362670be6b189f05495ed1983972a7eabbeeb8152"
+      },
+      "docs/b_integration_reuse_audit.md": {
+        "bytes": 4556,
+        "sha256": "133cc7613fba4410e4c945757cdad9e1528d01592635426b7bcbfbf9f6d45821"
+      },
+      "scripts/package_b_import_fix.py": {
+        "bytes": 6595,
+        "sha256": "18617cbdba1731305661f85d5776bc826a509b9d2153140f14de2a4de8c7b7ac"
+      },
+      "scripts/check_b_driver_imports.py": {
+        "bytes": 4688,
+        "sha256": "2bc677f4a6dd096bdfd0101154e4838d1c01f1def6d0d9b16e017edec10b9467"
+      },
+      "tests/test_b_video_imports.py": {
+        "bytes": 5497,
+        "sha256": "fb7035d51ff05945ac6a42de447cd698fb8fc9d36f0aa2511acd746ffd1900d8"
+      },
+      "docs/b_video_import_recovery_steps.md": {
+        "bytes": 2616,
+        "sha256": "0a7f5ac892c3a5cf294dd197d319f2432fb7639a7bb8a88e0b9c61b938a5097e"
+      }
+    },
+    "notebook_validation": {
+      "algorithm": "sha256-code-cells-v1",
+      "sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "code_cells": 9
+    },
+    "failed_attempts": "failure_record.json preserves incomplete builds, rejected 04 constraints and initial coarse host timer test; only build 05 is supplied",
+    "artifacts": {
+      "a0_dma_board_test.py": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "a1_point_board_test.py": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "a2_gaussian_board_test.py": {
+        "bytes": 12265,
+        "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+      },
+      "a3_background_board_test.py": {
+        "bytes": 12110,
+        "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+      },
+      "a4_segmentation_board_test.py": {
+        "bytes": 13155,
+        "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+      },
+      "b_integration.bit": {
+        "bytes": 4045674,
+        "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+      },
+      "b_integration.hwh": {
+        "bytes": 1131176,
+        "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+      },
+      "b_integration_board_test.py": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "b_integration_check.ipynb": {
+        "bytes": 5835,
+        "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+      },
+      "stare_im0001_256.npy": {
+        "bytes": 262272,
+        "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+      },
+      "stare_im0001_512.npy": {
+        "bytes": 1048704,
+        "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+      },
+      "\u4f7f\u7528\u8bf4\u660e.txt": {
+        "bytes": 5437,
+        "sha256": "ca555d63231d76b0f6e67705b24d31c626677692d5cf7ac3a5253a6740120c2f"
+      }
+    },
+    "hardware_provenance": {
+      "baseline_manifest": "results/b_integration_2017_4/release_manifest.json",
+      "baseline_manifest_sha256": "67c770caddc1b12a7a518cc60895fa3a6e273f0863d4b0187d1dcf743dbf1201",
+      "hardware_rebuilt": false,
+      "policy": "Identical paired bit/HWH, inputs, unchanged A4 helpers, notebook and guide; original build/reset/timing evidence retained"
+    },
+    "software_checks": {
+      "host_test_count": 23,
+      "log": {
+        "bytes": 3610,
+        "sha256": "10e8437bec02fdd47416379dc2cf42b96a6af925bc9c4db0dc18f8ca267c4be0"
+      },
+      "driver_import_check": {
+        "status": "PASS_PINNED_PYNQ_3_0_1_VIDEO_IMPORT_NAMESPACES",
+        "board_status": "NOT_RUN",
+        "runner": {
+          "bytes": 19456,
+          "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+        },
+        "resolved_imports": [
+          {
+            "module": "pynq.lib.video.common",
+            "symbol": "VideoMode",
+            "source": "references/PYNQ/v3.0.1/pynq/lib/video/common.py"
+          },
+          {
+            "module": "pynq.lib.video.common",
+            "symbol": "PIXEL_BGR",
+            "source": "references/PYNQ/v3.0.1/pynq/lib/video/common.py"
+          },
+          {
+            "module": "pynq.lib.video.dma",
+            "symbol": "AxiVDMA",
+            "source": "references/PYNQ/v3.0.1/pynq/lib/video/dma.py"
+          },
+          {
+            "module": "pynq.lib.video.hierarchies",
+            "symbol": "VideoOut",
+            "source": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py"
+          },
+          {
+            "module": "pynq.lib.video.hierarchies",
+            "symbol": "HDMIWrapper",
+            "source": "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py"
+          }
+        ],
+        "official_sources": {
+          "references/PYNQ/v3.0.1/pynq/lib/video/common.py": {
+            "bytes": 3312,
+            "sha256": "2c4d6c2cb3ede0aca97aa2980dec7d5147ce6f4d446635ddd7dd1e894282cbf7"
+          },
+          "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+            "bytes": 20367,
+            "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+          },
+          "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+            "bytes": 12224,
+            "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+          }
+        },
+        "pynq_commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+        "limit": "Source-level Python export validation; installed board driver binding and display still require board execution"
+      },
+      "original_failure_reproduced": true,
+      "limit": "Official initializer export behavior and precheck tested on host; real installed video binding/display remains pending"
+    }
+  },
+  "package_validation": {
+    "fixed_artifacts": "PASS_EXACT_SHA256",
+    "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+    "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+    "current_notebook_sha256": "c41f19b98f6464215ddba52a0804982399fc7d167d1d5eaf196acfb2e7dda6a0",
+    "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+  },
+  "pynq": "3.0.1",
+  "python": "3.10.4",
+  "kernel": "5.15.19-xilinx-v2022.1",
+  "board_clock_utc_unverified": "2022-10-22T16:12:16.016988+00:00",
+  "transfers": [
+    {
+      "side": 256,
+      "mode": 3,
+      "pattern": "vessel_stripes",
+      "words": 65536,
+      "send_bytes": 262144,
+      "recv_bytes": 262144,
+      "tx_address": 378011648,
+      "rx_address": 378273792,
+      "dma_status": {
+        "mm2s": 4098,
+        "s2mm": 4098
+      },
+      "frame_status": 16385,
+      "status": "PASS_EXACT_SEGMENTATION_WORDS",
+      "input_sha256": "e1cf19a748f9c8f1772d3cdbcbf66c8c30c4a9afce2410e43b7b98a09ab28c7b",
+      "expected_sha256": "4b76371bc0f0d5f55f8f69599c262514ca1b0414da9ba197edc4aa38a7c0b51d",
+      "output_sha256": "4b76371bc0f0d5f55f8f69599c262514ca1b0414da9ba197edc4aa38a7c0b51d"
+    }
+  ],
+  "overlay_downloads": 1,
+  "display": {
+    "visual_status": "PENDING_USER_OBSERVATION",
+    "submissions": [
+      {
+        "label": "BLUE_GREEN_RED_WITH_POSITION_LINES",
+        "sha256_bgr": "9f55520d4ba8152f26eeeca699eee6b7b950ab71869f5fd194f6b3d219774cc6",
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        }
+      }
+    ],
+    "configured_mode": {
+      "width": 1280,
+      "height": 720,
+      "bpp": 24,
+      "requested_hz": 60,
+      "format": "BGR24"
+    },
+    "color_reference": {
+      "name": "b_color_pattern.png",
+      "sha256": "348288a235f361f36d69b6fa8514cefd899296fbc601208a5a141934b0bc6492"
+    },
+    "final_vdma_status": {
+      "mm2s": 69632,
+      "s2mm": 65537
+    },
+    "closed": true
+  },
+  "scope": "Frozen M0 algorithm A and official HDMI in one bitstream; digital comparisons and measured host-visible timings; visual confirmation and clinical quality separate",
+  "profile_manifest": {
+    "revision": "b_profile_r2_inherited_notebook_code_check",
+    "board_status": "NOT_RUN",
+    "host_status": "PASS_COMPOSITION_AND_HOST_CONTRACT_TESTS_ONLY",
+    "contract": {
+      "side": 512,
+      "mode": 3,
+      "pattern": "stare",
+      "timed_frames": 30,
+      "warmup_frames": 3,
+      "stages": [
+        "dma_transfer",
+        "word_compare",
+        "algorithm_status",
+        "ps_layout",
+        "frame_allocate",
+        "frame_copy",
+        "display_submit",
+        "video_status",
+        "output_hash",
+        "record_and_progress"
+      ],
+      "clock": "perf_counter_ns",
+      "layout": "unchanged_b_r2_medical_canvas",
+      "driver": "unchanged_official_pynq_3.0.1",
+      "overlay_downloads": 1
+    },
+    "artifacts": {
+      "a0_dma_board_test.py": {
+        "bytes": 10917,
+        "sha256": "230715a4a252f9f4722f1f7bf59ee09548449ecd302690521d8d5a936dd6694e"
+      },
+      "a1_point_board_test.py": {
+        "bytes": 11449,
+        "sha256": "765b022bbdf59d96fdbef66eb29577a4136d314ca44a2167a0bfc68d9e8c7990"
+      },
+      "a2_gaussian_board_test.py": {
+        "bytes": 12265,
+        "sha256": "744d2ba1f8be12d028b4b660a46ff5200a8abf52379ff3caaa654f8cf7c495ac"
+      },
+      "a3_background_board_test.py": {
+        "bytes": 12110,
+        "sha256": "0605edee5c6d92bf35b46d18718dd37121d8e58813174e4fe99ed2d486261ef1"
+      },
+      "a4_segmentation_board_test.py": {
+        "bytes": 13155,
+        "sha256": "3f21bf54d8b77ec010a10d0b7b082f59f8d3683be5116c7482e9eb9e1845c228"
+      },
+      "b_integration.bit": {
+        "bytes": 4045674,
+        "sha256": "7172d7910cef649dd98c78c62c85d7ea0d41596024f64f676523bc07f7809ef0"
+      },
+      "b_integration.hwh": {
+        "bytes": 1131176,
+        "sha256": "69df6de4f2e5783e5cf9dc8da9aef82889525704eac1126967154989dc1103c2"
+      },
+      "b_integration_board_test.py": {
+        "bytes": 19456,
+        "sha256": "3426a6a0cfe2a92adef2629779082f0c4e3e9b92393c9b3bf2e91c02285d2ab9"
+      },
+      "b_integration_check.ipynb": {
+        "bytes": 5835,
+        "sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+      },
+      "b_manifest.json": {
+        "bytes": 60640,
+        "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b"
+      },
+      "b_performance_profile.ipynb": {
+        "bytes": 3607,
+        "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7"
+      },
+      "b_profile_board_test.py": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "stare_im0001_256.npy": {
+        "bytes": 262272,
+        "sha256": "31a80e7b3744e808dba783747f8013fd745fedddc0712b37249ff1e386839b2b"
+      },
+      "stare_im0001_512.npy": {
+        "bytes": 1048704,
+        "sha256": "ea90c11bc30971e2827a09dd1a8a993809f23d63e652f20269429173dc989ec9"
+      },
+      "\u4f7f\u7528\u8bf4\u660e.txt": {
+        "bytes": 5437,
+        "sha256": "ca555d63231d76b0f6e67705b24d31c626677692d5cf7ac3a5253a6740120c2f"
+      },
+      "\u5206\u6bb5\u8ba1\u65f6\u8bf4\u660e.txt": {
+        "bytes": 4077,
+        "sha256": "e148127749758661369894cc863a7e14b3d6bf9e1a43798957f64bd64f0fc2db"
+      }
+    },
+    "notebook_validation": {
+      "algorithm": "sha256-code-cells-v1",
+      "sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201"
+    },
+    "inherited_notebook_validation": {
+      "algorithm": "sha256-code-cells-v1",
+      "sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "code_cells": 9
+    },
+    "software_fix": {
+      "superseded_release": "results/b_profile_2017_4_r1/release_manifest.json",
+      "superseded_manifest": {
+        "bytes": 5511,
+        "sha256": "d279a61716d9f54af7609a19439e08c6df9c0d252504144e5dbd741b39e39ceb"
+      },
+      "reason": "R1 incorrectly locked inherited notebook full JSON before canonical B validation",
+      "measurement_contract_unchanged": true,
+      "runtime_notebook_policy": "Canonical code-cell SHA256 for both notebooks; output/metadata/Markdown save changes accepted"
+    },
+    "baseline": {
+      "manifest": "results/b_integration_2017_4_r2/release_manifest.json",
+      "bytes": 60640,
+      "sha256": "4a38b364e7c3977dbfbe9b87b905fbf4dc58fd1d486c27e308141417cb41af1b",
+      "all_13_original_r2_files_unchanged": true,
+      "hardware_rebuilt": false,
+      "board_timing_evidence": {
+        "path": "results/b_integration_2017_4_r2/board_execution_2026-10-12/timing_verification.json",
+        "bytes": 2259,
+        "sha256": "f720a71f98d4616454184bc6dd3546589a3ffe624cb65d83a77e4ebbc30be1ee"
+      }
+    },
+    "sources": {
+      "scripts/b_profile_board_test.py": {
+        "bytes": 17036,
+        "sha256": "0e2085277e923d9ceabf9fba0732b19361ab27421beb515b8ae61f249dc23aff"
+      },
+      "scripts/package_b_profile.py": {
+        "bytes": 11575,
+        "sha256": "c6e893a144d5dba4e20d7b6a8663efc66d26b9965521dd534780a9d1235e8359"
+      },
+      "tests/test_b_profile.py": {
+        "bytes": 21723,
+        "sha256": "789267bb9f2845cda51cfe469ca89b3e723ad22625997f42c09925a5d46c5cd5"
+      },
+      "notebooks/b_performance_profile.ipynb": {
+        "bytes": 3607,
+        "sha256": "f93e76157e156a359f850cdd615b4490d38eb049a0a06219ad720e3536dd12e7"
+      },
+      "docs/b_performance_profile_steps.md": {
+        "bytes": 4077,
+        "sha256": "e148127749758661369894cc863a7e14b3d6bf9e1a43798957f64bd64f0fc2db"
+      },
+      "docs/b_profile_precheck_recovery_steps.md": {
+        "bytes": 2336,
+        "sha256": "1801cf565b1bc7fd15df1b4314b1a20cba1edfaeefeca0991e14403f94fefc54"
+      }
+    },
+    "official_driver_sources": {
+      "references/PYNQ/v3.0.1/pynq/lib/video/dma.py": {
+        "bytes": 20367,
+        "sha256": "94346a4ae6a7a7f9e4b78887179e2a55ff821c7ed3724b584a7bb4c228fea30f"
+      },
+      "references/PYNQ/v3.0.1/pynq/lib/video/hierarchies.py": {
+        "bytes": 12224,
+        "sha256": "528106d7ea2c95cfd64ec27f2696f9daab76fb2c96341f1a48cd04b211f85950"
+      },
+      "references/PYNQ/v3.0.1/pynq/buffer.py": {
+        "bytes": 4676,
+        "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+      }
+    },
+    "official_pynq_commit": "93ddd21ab623883590a8c8b07f0b157b2855da4b",
+    "host_regression": {
+      "tests": 23,
+      "log": {
+        "bytes": 4082,
+        "sha256": "b45ed2a0bfaacf3426458d4e0b07f55cda3a1e7c32104264d5af1c1480192c41"
+      },
+      "scope": "Host fakes for timing attribution and ownership/error handling; never physical board evidence"
+    },
+    "limits": "Stage profiling has not run on the board. No performance improvement, PL-cycle, display-scan-rate or medical-quality PASS. Original B r2 evidence stays separate."
+  },
+  "profile_package_validation": {
+    "fixed_artifacts": "PASS_EXACT_SHA256_EXCLUDING_NOTEBOOK_JSON",
+    "notebook_code_sha256": "72310bc3261a58ce143f3054641c3746ea1bdc0be070ace483bc2251d13ac201",
+    "mutable_notebook_json": [
+      "b_integration_check.ipynb",
+      "b_performance_profile.ipynb"
+    ],
+    "current_notebook_sha256": "8fd1ee7f735ee6d75c3115d4f01b7f8443f79d407fb2999c2f2ebd6f6464e0c9",
+    "baseline": {
+      "fixed_artifacts": "PASS_EXACT_SHA256",
+      "notebook_code": "PASS_CANONICAL_CODE_SHA256",
+      "notebook_code_sha256": "276b51b4742cb35530dc4285d90fa6fd21b48a04babd74a2bafd5a80287d2a2b",
+      "current_notebook_sha256": "c41f19b98f6464215ddba52a0804982399fc7d167d1d5eaf196acfb2e7dda6a0",
+      "original_notebook_sha256": "36c5a8f497bf10db44213b72f4f1ffd823dc665e6ac93aa7cc2179ec73cafb17"
+    }
+  },
+  "profile": {
+    "contract": {
+      "side": 512,
+      "mode": 3,
+      "pattern": "stare",
+      "timed_frames": 30,
+      "warmup_frames": 3,
+      "stages": [
+        "dma_transfer",
+        "word_compare",
+        "algorithm_status",
+        "ps_layout",
+        "frame_allocate",
+        "frame_copy",
+        "display_submit",
+        "video_status",
+        "output_hash",
+        "record_and_progress"
+      ],
+      "clock": "perf_counter_ns",
+      "layout": "unchanged_b_r2_medical_canvas",
+      "driver": "unchanged_official_pynq_3.0.1",
+      "overlay_downloads": 1
+    },
+    "samples": [
+      {
+        "index": 0,
+        "warmup": true,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 32770,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57469052961154,
+          57469057814760,
+          57469094993203,
+          57469095117868,
+          57469643223067,
+          57469668046519,
+          57469679770070,
+          57469686094334,
+          57469686229510,
+          57469717420248,
+          57469717456784
+        ],
+        "durations_ns": {
+          "dma_transfer": 4853606,
+          "word_compare": 37178443,
+          "algorithm_status": 124665,
+          "ps_layout": 548105199,
+          "frame_allocate": 24823452,
+          "frame_copy": 11723551,
+          "display_submit": 6324264,
+          "video_status": 135176,
+          "output_hash": 31190738,
+          "record_and_progress": 36536
+        },
+        "sample_ns": 664495630
+      },
+      {
+        "index": 1,
+        "warmup": true,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 49155,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57469717639577,
+          57469722456747,
+          57469759092162,
+          57469759215867,
+          57470285153534,
+          57470299969164,
+          57470312143127,
+          57470318401380,
+          57470318535404,
+          57470349701226,
+          57470349736740
+        ],
+        "durations_ns": {
+          "dma_transfer": 4817170,
+          "word_compare": 36635415,
+          "algorithm_status": 123705,
+          "ps_layout": 525937667,
+          "frame_allocate": 14815630,
+          "frame_copy": 12173963,
+          "display_submit": 6258253,
+          "video_status": 134024,
+          "output_hash": 31165822,
+          "record_and_progress": 35514
+        },
+        "sample_ns": 632097163
+      },
+      {
+        "index": 2,
+        "warmup": true,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 65540,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57470349917109,
+          57470354797700,
+          57470391432770,
+          57470391579367,
+          57470915353723,
+          57470930960800,
+          57470942551656,
+          57470948985785,
+          57470949122511,
+          57470980467200,
+          57470980518726
+        ],
+        "durations_ns": {
+          "dma_transfer": 4880591,
+          "word_compare": 36635070,
+          "algorithm_status": 146597,
+          "ps_layout": 523774356,
+          "frame_allocate": 15607077,
+          "frame_copy": 11590856,
+          "display_submit": 6434129,
+          "video_status": 136726,
+          "output_hash": 31344689,
+          "record_and_progress": 51526
+        },
+        "sample_ns": 630601617
+      },
+      {
+        "index": 3,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 81925,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 378535936,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57470980698714,
+          57470985507348,
+          57471022152271,
+          57471022293656,
+          57471543871575,
+          57471544691501,
+          57471556225864,
+          57471562598689,
+          57471562734516,
+          57471593786615,
+          57471593830529
+        ],
+        "durations_ns": {
+          "dma_transfer": 4808634,
+          "word_compare": 36644923,
+          "algorithm_status": 141385,
+          "ps_layout": 521577919,
+          "frame_allocate": 819926,
+          "frame_copy": 11534363,
+          "display_submit": 6372825,
+          "video_status": 135827,
+          "output_hash": 31052099,
+          "record_and_progress": 43914
+        },
+        "sample_ns": 613131815
+      },
+      {
+        "index": 4,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 98310,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 381681664,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57471594002252,
+          57471598774750,
+          57471635667827,
+          57471635785913,
+          57472151088454,
+          57472151874595,
+          57472161952694,
+          57472168237802,
+          57472168370743,
+          57472199786195,
+          57472199829494
+        ],
+        "durations_ns": {
+          "dma_transfer": 4772498,
+          "word_compare": 36893077,
+          "algorithm_status": 118086,
+          "ps_layout": 515302541,
+          "frame_allocate": 786141,
+          "frame_copy": 10078099,
+          "display_submit": 6285108,
+          "video_status": 132941,
+          "output_hash": 31415452,
+          "record_and_progress": 43299
+        },
+        "sample_ns": 605827242
+      },
+      {
+        "index": 5,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 114695,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57472200050983,
+          57472204835401,
+          57472241424731,
+          57472241550189,
+          57472765017148,
+          57472765795739,
+          57472775431118,
+          57472781979530,
+          57472782184465,
+          57472815009961,
+          57472815052219
+        ],
+        "durations_ns": {
+          "dma_transfer": 4784418,
+          "word_compare": 36589330,
+          "algorithm_status": 125458,
+          "ps_layout": 523466959,
+          "frame_allocate": 778591,
+          "frame_copy": 9635379,
+          "display_submit": 6548412,
+          "video_status": 204935,
+          "output_hash": 32825496,
+          "record_and_progress": 42258
+        },
+        "sample_ns": 615001236
+      },
+      {
+        "index": 6,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 131080,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57472815222785,
+          57472820048496,
+          57472856591757,
+          57472856714502,
+          57473377076397,
+          57473377870317,
+          57473387585197,
+          57473393959301,
+          57473394094840,
+          57473425263615,
+          57473425306778
+        ],
+        "durations_ns": {
+          "dma_transfer": 4825711,
+          "word_compare": 36543261,
+          "algorithm_status": 122745,
+          "ps_layout": 520361895,
+          "frame_allocate": 793920,
+          "frame_copy": 9714880,
+          "display_submit": 6374104,
+          "video_status": 135539,
+          "output_hash": 31168775,
+          "record_and_progress": 43163
+        },
+        "sample_ns": 610083993
+      },
+      {
+        "index": 7,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 147465,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57473425480187,
+          57473430323750,
+          57473466839517,
+          57473466962052,
+          57473987134039,
+          57473987942691,
+          57473997684359,
+          57474004061706,
+          57474004195608,
+          57474035522703,
+          57474040440359
+        ],
+        "durations_ns": {
+          "dma_transfer": 4843563,
+          "word_compare": 36515767,
+          "algorithm_status": 122535,
+          "ps_layout": 520171987,
+          "frame_allocate": 808652,
+          "frame_copy": 9741668,
+          "display_submit": 6377347,
+          "video_status": 133902,
+          "output_hash": 31327095,
+          "record_and_progress": 4917656
+        },
+        "sample_ns": 614960172
+      },
+      {
+        "index": 8,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 163850,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 378535936,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57474040591368,
+          57474048305214,
+          57474086055356,
+          57474086179713,
+          57474609782733,
+          57474610667570,
+          57474620708432,
+          57474627001312,
+          57474627139515,
+          57474659652124,
+          57474659697429
+        ],
+        "durations_ns": {
+          "dma_transfer": 7713846,
+          "word_compare": 37750142,
+          "algorithm_status": 124357,
+          "ps_layout": 523603020,
+          "frame_allocate": 884837,
+          "frame_copy": 10040862,
+          "display_submit": 6292880,
+          "video_status": 138203,
+          "output_hash": 32512609,
+          "record_and_progress": 45305
+        },
+        "sample_ns": 619106061
+      },
+      {
+        "index": 9,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 180235,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 381681664,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57474659872635,
+          57474664763379,
+          57474701325041,
+          57474701499742,
+          57475239749378,
+          57475240627403,
+          57475250307286,
+          57475256572683,
+          57475256706431,
+          57475287802825,
+          57475287844825
+        ],
+        "durations_ns": {
+          "dma_transfer": 4890744,
+          "word_compare": 36561662,
+          "algorithm_status": 174701,
+          "ps_layout": 538249636,
+          "frame_allocate": 878025,
+          "frame_copy": 9679883,
+          "display_submit": 6265397,
+          "video_status": 133748,
+          "output_hash": 31096394,
+          "record_and_progress": 42000
+        },
+        "sample_ns": 627972190
+      },
+      {
+        "index": 10,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 196620,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57475288020683,
+          57475292870874,
+          57475329412615,
+          57475329534394,
+          57475851588799,
+          57475852378005,
+          57475862011187,
+          57475868306202,
+          57475868439661,
+          57475900078756,
+          57475900121076
+        ],
+        "durations_ns": {
+          "dma_transfer": 4850191,
+          "word_compare": 36541741,
+          "algorithm_status": 121779,
+          "ps_layout": 522054405,
+          "frame_allocate": 789206,
+          "frame_copy": 9633182,
+          "display_submit": 6295015,
+          "video_status": 133459,
+          "output_hash": 31639095,
+          "record_and_progress": 42320
+        },
+        "sample_ns": 612100393
+      },
+      {
+        "index": 11,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 213005,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57475900297254,
+          57475905095981,
+          57475942329254,
+          57475942452491,
+          57476463035783,
+          57476463825629,
+          57476473431444,
+          57476479750570,
+          57476479882275,
+          57476511091266,
+          57476511133475
+        ],
+        "durations_ns": {
+          "dma_transfer": 4798727,
+          "word_compare": 37233273,
+          "algorithm_status": 123237,
+          "ps_layout": 520583292,
+          "frame_allocate": 789846,
+          "frame_copy": 9605815,
+          "display_submit": 6319126,
+          "video_status": 131705,
+          "output_hash": 31208991,
+          "record_and_progress": 42209
+        },
+        "sample_ns": 610836221
+      },
+      {
+        "index": 12,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 229390,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57476511304977,
+          57476516093438,
+          57476552669253,
+          57476552792638,
+          57477073630810,
+          57477074418139,
+          57477084105339,
+          57477090472551,
+          57477090607628,
+          57477122224797,
+          57477126824816
+        ],
+        "durations_ns": {
+          "dma_transfer": 4788461,
+          "word_compare": 36575815,
+          "algorithm_status": 123385,
+          "ps_layout": 520838172,
+          "frame_allocate": 787329,
+          "frame_copy": 9687200,
+          "display_submit": 6367212,
+          "video_status": 135077,
+          "output_hash": 31617169,
+          "record_and_progress": 4600019
+        },
+        "sample_ns": 615519839
+      },
+      {
+        "index": 13,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 245775,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 378535936,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57477126973271,
+          57477132787388,
+          57477170709597,
+          57477170837197,
+          57477695856643,
+          57477696690046,
+          57477706525289,
+          57477712867252,
+          57477713009621,
+          57477745949639,
+          57477745992181
+        ],
+        "durations_ns": {
+          "dma_transfer": 5814117,
+          "word_compare": 37922209,
+          "algorithm_status": 127600,
+          "ps_layout": 525019446,
+          "frame_allocate": 833403,
+          "frame_copy": 9835243,
+          "display_submit": 6341963,
+          "video_status": 142369,
+          "output_hash": 32940018,
+          "record_and_progress": 42542
+        },
+        "sample_ns": 619018910
+      },
+      {
+        "index": 14,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 262160,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 381681664,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57477746172015,
+          57477751092181,
+          57477788096335,
+          57477788223842,
+          57478311938494,
+          57478312751023,
+          57478322481534,
+          57478328824715,
+          57478328962734,
+          57478361680777,
+          57478361725005
+        ],
+        "durations_ns": {
+          "dma_transfer": 4920166,
+          "word_compare": 37004154,
+          "algorithm_status": 127507,
+          "ps_layout": 523714652,
+          "frame_allocate": 812529,
+          "frame_copy": 9730511,
+          "display_submit": 6343181,
+          "video_status": 138019,
+          "output_hash": 32718043,
+          "record_and_progress": 44228
+        },
+        "sample_ns": 615552990
+      },
+      {
+        "index": 15,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 278545,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57478361903072,
+          57478366769528,
+          57478403648131,
+          57478403777645,
+          57478924845028,
+          57478925665724,
+          57478935427896,
+          57478941816382,
+          57478941956708,
+          57478974620308,
+          57478974663847
+        ],
+        "durations_ns": {
+          "dma_transfer": 4866456,
+          "word_compare": 36878603,
+          "algorithm_status": 129514,
+          "ps_layout": 521067383,
+          "frame_allocate": 820696,
+          "frame_copy": 9762172,
+          "display_submit": 6388486,
+          "video_status": 140326,
+          "output_hash": 32663600,
+          "record_and_progress": 43539
+        },
+        "sample_ns": 612760775
+      },
+      {
+        "index": 16,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 294930,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57478974844056,
+          57478979719945,
+          57479016618001,
+          57479016746893,
+          57479533764664,
+          57479534577132,
+          57479544439163,
+          57479550840006,
+          57479550979415,
+          57479583740080,
+          57479583786110
+        ],
+        "durations_ns": {
+          "dma_transfer": 4875889,
+          "word_compare": 36898056,
+          "algorithm_status": 128892,
+          "ps_layout": 517017771,
+          "frame_allocate": 812468,
+          "frame_copy": 9862031,
+          "display_submit": 6400843,
+          "video_status": 139409,
+          "output_hash": 32760665,
+          "record_and_progress": 46030
+        },
+        "sample_ns": 608942054
+      },
+      {
+        "index": 17,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 311315,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57479583964387,
+          57479588827495,
+          57479625711538,
+          57479625839052,
+          57480149453248,
+          57480150362725,
+          57480160130762,
+          57480166465014,
+          57480166604805,
+          57480199336263,
+          57480203881039
+        ],
+        "durations_ns": {
+          "dma_transfer": 4863108,
+          "word_compare": 36884043,
+          "algorithm_status": 127514,
+          "ps_layout": 523614196,
+          "frame_allocate": 909477,
+          "frame_copy": 9768037,
+          "display_submit": 6334252,
+          "video_status": 139791,
+          "output_hash": 32731458,
+          "record_and_progress": 4544776
+        },
+        "sample_ns": 619916652
+      },
+      {
+        "index": 18,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 327700,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 378535936,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57480204036036,
+          57480209539193,
+          57480247223205,
+          57480247347863,
+          57480768635229,
+          57480769442343,
+          57480779084293,
+          57480785425376,
+          57480785562263,
+          57480817385075,
+          57480817426798
+        ],
+        "durations_ns": {
+          "dma_transfer": 5503157,
+          "word_compare": 37684012,
+          "algorithm_status": 124658,
+          "ps_layout": 521287366,
+          "frame_allocate": 807114,
+          "frame_copy": 9641950,
+          "display_submit": 6341083,
+          "video_status": 136887,
+          "output_hash": 31822812,
+          "record_and_progress": 41723
+        },
+        "sample_ns": 613390762
+      },
+      {
+        "index": 19,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 344085,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 381681664,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57480817600872,
+          57480822480638,
+          57480859000299,
+          57480859120693,
+          57481379410982,
+          57481380271320,
+          57481389869597,
+          57481396256305,
+          57481396390662,
+          57481427597757,
+          57481427641025
+        ],
+        "durations_ns": {
+          "dma_transfer": 4879766,
+          "word_compare": 36519661,
+          "algorithm_status": 120394,
+          "ps_layout": 520290289,
+          "frame_allocate": 860338,
+          "frame_copy": 9598277,
+          "display_submit": 6386708,
+          "video_status": 134357,
+          "output_hash": 31207095,
+          "record_and_progress": 43268
+        },
+        "sample_ns": 610040153
+      },
+      {
+        "index": 20,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 360470,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57481427814471,
+          57481432620822,
+          57481469159240,
+          57481469282323,
+          57481989593781,
+          57481990491048,
+          57482000235233,
+          57482006466113,
+          57482006599399,
+          57482037728710,
+          57482037771208
+        ],
+        "durations_ns": {
+          "dma_transfer": 4806351,
+          "word_compare": 36538418,
+          "algorithm_status": 123083,
+          "ps_layout": 520311458,
+          "frame_allocate": 897267,
+          "frame_copy": 9744185,
+          "display_submit": 6230880,
+          "video_status": 133286,
+          "output_hash": 31129311,
+          "record_and_progress": 42498
+        },
+        "sample_ns": 609956737
+      },
+      {
+        "index": 21,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 376855,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57482037946802,
+          57482042738704,
+          57482079518113,
+          57482079641904,
+          57482599426955,
+          57482600280568,
+          57482609839386,
+          57482616231534,
+          57482616368149,
+          57482647493195,
+          57482647533909
+        ],
+        "durations_ns": {
+          "dma_transfer": 4791902,
+          "word_compare": 36779409,
+          "algorithm_status": 123791,
+          "ps_layout": 519785051,
+          "frame_allocate": 853613,
+          "frame_copy": 9558818,
+          "display_submit": 6392148,
+          "video_status": 136615,
+          "output_hash": 31125046,
+          "record_and_progress": 40714
+        },
+        "sample_ns": 609587107
+      },
+      {
+        "index": 22,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 393240,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57482647708783,
+          57482652514869,
+          57482689072789,
+          57482689198912,
+          57483209186148,
+          57483209979570,
+          57483219620720,
+          57483225959477,
+          57483226097810,
+          57483257239422,
+          57483261982874
+        ],
+        "durations_ns": {
+          "dma_transfer": 4806086,
+          "word_compare": 36557920,
+          "algorithm_status": 126123,
+          "ps_layout": 519987236,
+          "frame_allocate": 793422,
+          "frame_copy": 9641150,
+          "display_submit": 6338757,
+          "video_status": 138333,
+          "output_hash": 31141612,
+          "record_and_progress": 4743452
+        },
+        "sample_ns": 614274091
+      },
+      {
+        "index": 23,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 409625,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 378535936,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57483262130923,
+          57483267856148,
+          57483305775348,
+          57483305902314,
+          57483834341200,
+          57483835163015,
+          57483844905507,
+          57483851288960,
+          57483851437193,
+          57483884382713,
+          57483884425686
+        ],
+        "durations_ns": {
+          "dma_transfer": 5725225,
+          "word_compare": 37919200,
+          "algorithm_status": 126966,
+          "ps_layout": 528438886,
+          "frame_allocate": 821815,
+          "frame_copy": 9742492,
+          "display_submit": 6383453,
+          "video_status": 148233,
+          "output_hash": 32945520,
+          "record_and_progress": 42973
+        },
+        "sample_ns": 622294763
+      },
+      {
+        "index": 24,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 426010,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 381681664,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57483884605778,
+          57483889445316,
+          57483926421784,
+          57483926548596,
+          57484446793851,
+          57484447622602,
+          57484457466466,
+          57484463826762,
+          57484463965322,
+          57484497236983,
+          57484497282460
+        ],
+        "durations_ns": {
+          "dma_transfer": 4839538,
+          "word_compare": 36976468,
+          "algorithm_status": 126812,
+          "ps_layout": 520245255,
+          "frame_allocate": 828751,
+          "frame_copy": 9843864,
+          "display_submit": 6360296,
+          "video_status": 138560,
+          "output_hash": 33271661,
+          "record_and_progress": 45477
+        },
+        "sample_ns": 612676682
+      },
+      {
+        "index": 25,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 442395,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57484497457592,
+          57484502313980,
+          57484539487180,
+          57484539616152,
+          57485062555130,
+          57485063366650,
+          57485073166275,
+          57485079417518,
+          57485079554816,
+          57485112405598,
+          57485112448311
+        ],
+        "durations_ns": {
+          "dma_transfer": 4856388,
+          "word_compare": 37173200,
+          "algorithm_status": 128972,
+          "ps_layout": 522938978,
+          "frame_allocate": 811520,
+          "frame_copy": 9799625,
+          "display_submit": 6251243,
+          "video_status": 137298,
+          "output_hash": 32850782,
+          "record_and_progress": 42713
+        },
+        "sample_ns": 614990719
+      },
+      {
+        "index": 26,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 458780,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57485112624527,
+          57485117476945,
+          57485154359056,
+          57485154488847,
+          57485678029855,
+          57485678843486,
+          57485689042723,
+          57485695439874,
+          57485695578151,
+          57485728651492,
+          57485728697234
+        ],
+        "durations_ns": {
+          "dma_transfer": 4852418,
+          "word_compare": 36882111,
+          "algorithm_status": 129791,
+          "ps_layout": 523541008,
+          "frame_allocate": 813631,
+          "frame_copy": 10199237,
+          "display_submit": 6397151,
+          "video_status": 138277,
+          "output_hash": 33073341,
+          "record_and_progress": 45742
+        },
+        "sample_ns": 616072707
+      },
+      {
+        "index": 27,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 475165,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57485728877160,
+          57485733753129,
+          57485770712255,
+          57485770840070,
+          57486304373171,
+          57486305186340,
+          57486314964187,
+          57486321410494,
+          57486321552728,
+          57486354441688,
+          57486358924876
+        ],
+        "durations_ns": {
+          "dma_transfer": 4875969,
+          "word_compare": 36959126,
+          "algorithm_status": 127815,
+          "ps_layout": 533533101,
+          "frame_allocate": 813169,
+          "frame_copy": 9777847,
+          "display_submit": 6446307,
+          "video_status": 142234,
+          "output_hash": 32888960,
+          "record_and_progress": 4483188
+        },
+        "sample_ns": 630047716
+      },
+      {
+        "index": 28,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 491550,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 378535936,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57486359078937,
+          57486364684027,
+          57486402352494,
+          57486402478033,
+          57486922895220,
+          57486923685970,
+          57486934262543,
+          57486940593472,
+          57486940729336,
+          57486971997084,
+          57486972058506
+        ],
+        "durations_ns": {
+          "dma_transfer": 5605090,
+          "word_compare": 37668467,
+          "algorithm_status": 125539,
+          "ps_layout": 520417187,
+          "frame_allocate": 790750,
+          "frame_copy": 10576573,
+          "display_submit": 6330929,
+          "video_status": 135864,
+          "output_hash": 31267748,
+          "record_and_progress": 61422
+        },
+        "sample_ns": 612979569
+      },
+      {
+        "index": 29,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 507935,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 381681664,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57486972236752,
+          57486977080906,
+          57487013659662,
+          57487013786235,
+          57487542937176,
+          57487543802966,
+          57487556925249,
+          57487565733471,
+          57487565889243,
+          57487612500271,
+          57487612544659
+        ],
+        "durations_ns": {
+          "dma_transfer": 4844154,
+          "word_compare": 36578756,
+          "algorithm_status": 126573,
+          "ps_layout": 529150941,
+          "frame_allocate": 865790,
+          "frame_copy": 13122283,
+          "display_submit": 8808222,
+          "video_status": 155772,
+          "output_hash": 46611028,
+          "record_and_progress": 44388
+        },
+        "sample_ns": 640307907
+      },
+      {
+        "index": 30,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 524320,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 69632,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 386924544,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57487612727742,
+          57487617649280,
+          57487658848511,
+          57487659009089,
+          57488193575895,
+          57488194390781,
+          57488204290116,
+          57488210675753,
+          57488210816491,
+          57488243907458,
+          57488243951045
+        ],
+        "durations_ns": {
+          "dma_transfer": 4921538,
+          "word_compare": 41199231,
+          "algorithm_status": 160578,
+          "ps_layout": 534566806,
+          "frame_allocate": 814886,
+          "frame_copy": 9899335,
+          "display_submit": 6385637,
+          "video_status": 140738,
+          "output_hash": 33090967,
+          "record_and_progress": 43587
+        },
+        "sample_ns": 631223303
+      },
+      {
+        "index": 31,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 540705,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 390070272,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57488244132430,
+          57488248972147,
+          57488285829722,
+          57488285955236,
+          57488802700552,
+          57488803518503,
+          57488813720503,
+          57488820132134,
+          57488820274878,
+          57488853096891,
+          57488853141038
+        ],
+        "durations_ns": {
+          "dma_transfer": 4839717,
+          "word_compare": 36857575,
+          "algorithm_status": 125514,
+          "ps_layout": 516745316,
+          "frame_allocate": 817951,
+          "frame_copy": 10202000,
+          "display_submit": 6411631,
+          "video_status": 142744,
+          "output_hash": 32822013,
+          "record_and_progress": 44147
+        },
+        "sample_ns": 609008608
+      },
+      {
+        "index": 32,
+        "warmup": false,
+        "words": 262144,
+        "send_bytes": 1048576,
+        "recv_bytes": 1048576,
+        "frame_status": 557090,
+        "dma_status": {
+          "mm2s": 4098,
+          "s2mm": 4098
+        },
+        "vdma_status": {
+          "mm2s": 65536,
+          "s2mm": 65537
+        },
+        "display_buffer": {
+          "physical_address": 393216000,
+          "nbytes": 2764800,
+          "shape": [
+            720,
+            1280,
+            3
+          ],
+          "strides": [
+            3840,
+            3,
+            1
+          ],
+          "dtype": "uint8",
+          "cacheable": true,
+          "coherent": false
+        },
+        "output_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+        "status": "PASS_EXACT_SEGMENTATION_WORDS",
+        "boundaries_ns": [
+          57488853318054,
+          57488858170011,
+          57488895040687,
+          57488895168127,
+          57489419178607,
+          57489419999044,
+          57489429857382,
+          57489436249271,
+          57489436387788,
+          57489469424194,
+          57489473963917
+        ],
+        "durations_ns": {
+          "dma_transfer": 4851957,
+          "word_compare": 36870676,
+          "algorithm_status": 127440,
+          "ps_layout": 524010480,
+          "frame_allocate": 820437,
+          "frame_copy": 9858338,
+          "display_submit": 6391889,
+          "video_status": 138517,
+          "output_hash": 33036406,
+          "record_and_progress": 4539723
+        },
+        "sample_ns": 620645863
+      }
+    ],
+    "clock": {
+      "name": "perf_counter_ns",
+      "monotonic": true,
+      "resolution_seconds": 1e-09,
+      "implementation": "clock_gettime(CLOCK_MONOTONIC)"
+    },
+    "scope": "Repeated fixed STARE input; full packed-word verification and original PS layout. No SD input latency, pure PL cycles, calibrated scan rate, optimization, or clinical quality claim.",
+    "algorithm_buffers": {
+      "tx": {
+        "physical_address": 384827392,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      },
+      "rx": {
+        "physical_address": 385875968,
+        "nbytes": 1048576,
+        "shape": [
+          262144
+        ],
+        "strides": [
+          4
+        ],
+        "dtype": "uint32",
+        "cacheable": true,
+        "coherent": false
+      }
+    },
+    "native_video_cacheable_frames": true,
+    "input_sha256": "542cc86b09e9aa5e582521a1f9c74ff855a575d328313a5a9cd038f6090894e5",
+    "expected_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa",
+    "summary": {
+      "count": 30,
+      "sum_seconds": 18.48822723,
+      "frames_per_sum_transaction_seconds": 1.6226542235115098,
+      "mean_ms": 616.274241,
+      "median_ms": 614.6171314999999,
+      "p95_ms": 630.69428885,
+      "stages": {
+        "dma_transfer": {
+          "sum_ns": 151415785,
+          "mean_ms": 5.047192833333333,
+          "median_ms": 4.8521875,
+          "p95_ms": 5.7741156,
+          "share_of_sample_time_percent": 0.8189848767885357
+        },
+        "word_compare": {
+          "sum_ns": 1112600286,
+          "mean_ms": 37.08667620000001,
+          "median_ms": 36.880357,
+          "p95_ms": 37.920854950000006,
+          "share_of_sample_time_percent": 6.017885177193379
+        },
+        "algorithm_status": {
+          "sum_ns": 3862744,
+          "mean_ms": 0.12875813333333333,
+          "median_ms": 0.126348,
+          "p95_ms": 0.15194114999999994,
+          "share_of_sample_time_percent": 0.020892992886479143
+        },
+        "ps_layout": {
+          "sum_ns": 15691892632,
+          "mean_ms": 523.0630877333333,
+          "median_ms": 521.4326425,
+          "p95_ms": 534.10163875,
+          "share_of_sample_time_percent": 84.87505284734647
+        },
+        "frame_allocate": {
+          "sum_ns": 24715500,
+          "mean_ms": 0.82385,
+          "median_ms": 0.8142585,
+          "p95_ms": 0.8916735,
+          "share_of_sample_time_percent": 0.13368236820399573
+        },
+        "frame_copy": {
+          "sum_ns": 299515299,
+          "mean_ms": 9.9838433,
+          "median_ms": 9.7651045,
+          "p95_ms": 11.103357499999998,
+          "share_of_sample_time_percent": 1.6200325497622088
+        },
+        "display_submit": {
+          "sum_ns": 193162485,
+          "mean_ms": 6.4387495,
+          "median_ms": 6.3700185,
+          "p95_ms": 6.50246475,
+          "share_of_sample_time_percent": 1.0447864070307622
+        },
+        "video_status": {
+          "sum_ns": 4212965,
+          "mean_ms": 0.14043216666666666,
+          "median_ms": 0.138111,
+          "p95_ms": 0.15237944999999997,
+          "share_of_sample_time_percent": 0.02278728483585389
+        },
+        "output_hash": {
+          "sum_ns": 977961261,
+          "mean_ms": 32.598708699999996,
+          "median_ms": 32.5881045,
+          "p95_ms": 33.1903487,
+          "share_of_sample_time_percent": 5.28964323530764
+        },
+        "record_and_progress": {
+          "sum_ns": 28888273,
+          "mean_ms": 0.9629424333333334,
+          "median_ms": 0.0437505,
+          "p95_ms": 4.67890715,
+          "share_of_sample_time_percent": 0.15625226064467837
+        }
+      },
+      "loop_start_ns": 57470980698714,
+      "loop_end_ns": 57489474120280,
+      "loop_ns": 18493421566,
+      "loop_seconds": 18.493421566,
+      "loop_fps": 1.6221984608383528,
+      "sample_sum_ns": 18488227230,
+      "loop_unattributed_ns": 5194336,
+      "loop_unattributed_scope": "Timing-ledger assignment and inter-frame bookkeeping outside measured stages",
+      "loop_includes": "DMA/cache/wait, full word compare, counters/status, original layout, native allocation, copy, original writeframe, output hash, record building, timing overhead, progress printing",
+      "loop_excludes": "Input loading, golden generation, initial algorithm allocation/fill/flush, warmup, final PNG/NPY/JSON/ZIP writes, final display close"
+    },
+    "final_output": {
+      "name": "b_profile_output_512.npy",
+      "sha256": "14ddd40a2b05061c212f56c00b90df87d5cd4ea3f196cd3659935251a636088b",
+      "word_sha256": "067e9b68c3543145ff8506c5dd81f75d31b61cfb8e5056e6eaee048cc4850caa"
+    },
+    "final_display": {
+      "name": "b_profile_display.png",
+      "sha256": "8f3af874a94f6101dbd7acd11fb19a08088a5ca08b2e8c29b365064fa1c0f084",
+      "sha256_bgr": "e1d8a7a200de453b1c200b849ab9d27a20d8b8b0c0d50bbb7c93993e50183835",
+      "marker_index": 29
+    },
+    "total_algorithm_frames": 34
+  },
+  "drivers": {
+    "dma": "pynq.lib.dma.DMA",
+    "gpio": "pynq.lib.axigpio.AxiGPIO",
+    "video": "pynq.lib.video.hierarchies.HDMIWrapper",
+    "hdmi_out": "pynq.lib.video.hierarchies.VideoOut",
+    "vdma": "pynq.lib.video.dma.AxiVDMA"
+  }
+}

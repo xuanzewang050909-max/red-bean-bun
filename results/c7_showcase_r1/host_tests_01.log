@@ -1,0 +1,12 @@
+test_27_frames_variable_close_export_and_audit (test_c7_showcase.LiveTests.test_27_frames_variable_close_export_and_audit) ... Executing <Task pending name='Task-1' coro=<LiveTests.asyncSetUp() running at D:\PLD\retina_c7_system\tests\test_c7_showcase.py:60> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.125 seconds
+SHOWCASE_CLOSED_IDLE: {'session_id': '3d5a9e7090ee450aa75def4fa1283e5e', 'service_state': 'CLOSED', 'hardware_state': 'IDLE', 'overlay_downloads': 1, 'last_completed_frame_status': 442395, 'active_run_id': None, 'pending': 0, 'completed': 27, 'accepted': 27, 'run_limit': 100, 'retained_buffer_count': 0, 'error': None, 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD', 'board_acceptance': 'PENDING_INDEPENDENT_VERIFICATION'}
+SHOWCASE_RESULTS_READY: C:\Users\Gabriel\AppData\Local\Temp\tmprj16u0lq\c7_showcase_results.zip
+Executing <Task finished name='Task-3' coro=<LiveTests.test_27_frames_variable_close_export_and_audit() done, defined at D:\PLD\retina_c7_system\tests\test_c7_showcase.py:72> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 52.859 seconds
+ok
+test_notebook_extraction_and_integrity (test_c7_showcase.PackageTests.test_notebook_extraction_and_integrity) ... ok
+test_pair_and_frozen_math (test_c7_showcase.PackageTests.test_pair_and_frozen_math) ... ok
+
+----------------------------------------------------------------------
+Ran 3 tests in 109.264s
+
+OK

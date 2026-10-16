@@ -1,0 +1,45 @@
+{
+  "date_local": "2026-10-11",
+  "source_path": "C:\\Users\\Gabriel\\Downloads\\hdmi_output_check.ipynb",
+  "archive_path": "D:\\PLD\\retina_fpga\\results\\board\\2026-10-11\\hdmi_output_check_executed.ipynb",
+  "bytes": 7629,
+  "sha256": "42af16d86e5892961f65c77574c6db955e716bd50d4a0c01a7212f369a17967a",
+  "copy_sha256_match": true,
+  "archive_preserved_byte_for_byte": true,
+  "saved_close_completion_output": true,
+  "saved_100_frames_completion_output": true,
+  "saved_errors": [],
+  "saved_stream_outputs": [
+    {
+      "cell": 2,
+      "execution_count": 1,
+      "text": "HDMI output started: 1280 x 720, 60 Hz, BGR24\n"
+    },
+    {
+      "cell": 4,
+      "execution_count": 6,
+      "text": "Color bars submitted. Check the display: BLUE | GREEN | RED.\n"
+    },
+    {
+      "cell": 5,
+      "execution_count": 2,
+      "text": "Mode: VideoMode: width=1280 height=720 bpp=24 fps=60\nShape: (720, 1280, 3)\nType: uint8 Strides: (3840, 3, 1)\nRed frame submitted; check the display.\n"
+    },
+    {
+      "cell": 6,
+      "execution_count": 3,
+      "text": "Position test submitted.\n"
+    },
+    {
+      "cell": 7,
+      "execution_count": 4,
+      "text": "Submitted 100 frames.\n"
+    },
+    {
+      "cell": 9,
+      "execution_count": 5,
+      "text": "HDMI output closed.\n"
+    }
+  ],
+  "execution_scope": "Archived user-exported notebook; not re-executed by host; saved execution counts are not a full timestamped chronology"
+}

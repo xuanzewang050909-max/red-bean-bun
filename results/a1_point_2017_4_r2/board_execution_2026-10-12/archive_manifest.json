@@ -1,0 +1,25 @@
+{
+  "status": "PASS_BOARD_RECORDS_VERIFIED_AND_ARCHIVED",
+  "verified_host_utc": "2026-10-11T16:33:46.181738+00:00",
+  "files": {
+    "a1_point_check_executed.ipynb": {
+      "source_path": "C:\\Users\\Gabriel\\Downloads\\a1_point_check.ipynb",
+      "bytes": 6312,
+      "sha256": "30bbe2814869b3f92c13c13256bb61516fba95ea7eedc04b1e9c7b26a80b25fe"
+    },
+    "a1_point_result.json": {
+      "source_path": "C:\\Users\\Gabriel\\Downloads\\a1_point_result.json",
+      "bytes": 16090,
+      "sha256": "beb76f603d4fb3135cbaf2a48d8e5307db49cec4986e6c67c5dd942658c27b1a"
+    }
+  },
+  "revision": "a1_point_r2_notebook_precheck_fix",
+  "release_manifest_sha256": "1ff047435e078dcb15a312be27faf68f0a15e9029ea5c75e6e9d5da09bc67d5c",
+  "hardware_source_commit": "1d206a483e75c2b425e790d6718f6fe52892dd09",
+  "runner_fix_source_commit": "2c845bfe16096ee346dd7555cdf1c70cabf3bd2e",
+  "board_clock_utc_unverified": "2022-10-22T03:12:35.461607+00:00",
+  "frames_verified": 17,
+  "input_words_verified": 2686976,
+  "scope": "A1 point-stage only: bypass/green/direct LUT(G), standard DMA/GPIO/DDR and PYNQ 3.0.1",
+  "limits": "Board runner performed full word comparisons; host checks deterministic hashes and metadata, not raw output buffers. No Gaussian, segmentation, final HDMI integration, FPS or clinical proof."
+}

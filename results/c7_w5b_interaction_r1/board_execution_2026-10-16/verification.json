@@ -1,0 +1,37 @@
+{
+  "status": "W5B_BOARD_BOUNDED_INTERACTION_VERIFIED_ONLY",
+  "archive": {
+    "bytes": 96904811,
+    "sha256": "fe8cd2265394d3f9d127e4a7a4aa3531e954ae6598eaf505041a50cceb21c2be"
+  },
+  "notebook": {
+    "bytes": 13970,
+    "sha256": "83e99d1db52a3e36000e68f2267a308dd0f4278c43aa961e35901676feaa104d"
+  },
+  "tasks": 42,
+  "matched_words": 7667712,
+  "matched_pngs": 198,
+  "threshold_extremes_changed": {
+    "256_C7": true,
+    "256_C2": true,
+    "512_C7": true,
+    "512_C2": true
+  },
+  "automatic_checks": 51,
+  "manual_page_ids": [
+    "52090e8b8c282bdc7675ea9aac152cd7",
+    "52090e8b8c282bdc7675ea9aac152cd7",
+    "52090e8b8c282bdc7675ea9aac152cd7",
+    "52090e8b8c282bdc7675ea9aac152cd7",
+    "52090e8b8c282bdc7675ea9aac152cd7",
+    "52090e8b8c282bdc7675ea9aac152cd7",
+    "ed2f444f29087a547c6b22945528fae6"
+  ],
+  "ignored_empty_cells": 1,
+  "exclusions": [
+    "No physical Ethernet/power interruption",
+    "No forced real DMA fault",
+    "No new segmentation quality acceptance",
+    "No measured power"
+  ]
+}

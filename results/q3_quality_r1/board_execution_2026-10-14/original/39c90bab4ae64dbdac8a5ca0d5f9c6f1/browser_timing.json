@@ -1,0 +1,22 @@
+{
+  "client_nonce": "mv76b51t6nit589n4a3",
+  "config_id": "57f3f54547b53f5210f733b61a853a9cebb99da85d0d5725f6ac4f7e8eca0d60",
+  "input_sha256": "49522c86fcb4a5b05a7c46c7f7f3db8d76305404cbc0a859fc9c11d0f8bbc94d",
+  "output_sha256": "2c60fe2811b3a1a3197c1905ec5efcd89026ded44a8247d561be179ad84d2953",
+  "request_start_ms": 39419.69999998808,
+  "result_received_ms": 41078.80000001192,
+  "images_decoded_ms": 41180.5,
+  "render_done_ms": 41202.5,
+  "visibility": "visible",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/150.0.0.0 Safari/537.36 Edg/150.0.0.0",
+  "loop_id": null,
+  "loop_index": null,
+  "loop_start_ms": null,
+  "run_id": "39c90bab4ae64dbdac8a5ca0d5f9c6f1",
+  "session_id": "503f7c3f49614e5392568dc260974a6a",
+  "request_to_render_ms": 1782.800000011921,
+  "result_received_to_render_ms": 123.69999998807907,
+  "browser_actual_fps": null,
+  "evidence_kind": "PYNQ_PL_DMA",
+  "scope": "Client monotonic first-render approximation. FPS counts consecutive unique visible PL results including HTTP/poll/decode/render; no cross-clock subtraction or scanout claim."
+}
