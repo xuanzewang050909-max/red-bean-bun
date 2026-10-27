@@ -805,8 +805,8 @@
       "sha256": "690c74f84d7958fbbecdb43843b933de7eae4e122416125ebb578e5aaf4819b5"
     },
     "updates/c7_demo_r1/SOURCE_MANIFEST.json": {
-      "bytes": 107422,
-      "sha256": "a59e7a8147fcfa7c9140bfa12a9dda0616453df3093a5178821ac8d3db1108fa"
+      "bytes": 110035,
+      "sha256": "9b15eb3a6db4efe0dfbafbc376d0d576ab30a700484f52bdf120679328c2d74d"
     },
     "updates/c7_demo_r1/three_repair/board/board_run.py": {
       "bytes": 9540,
@@ -1071,6 +1071,14 @@
     "updates/c7_demo_r1/three_web/verify_download.py": {
       "bytes": 9022,
       "sha256": "07dd839eeb8aa17e7834fbd2792cea9bc54c73128842c5a2530777429d5ab6cd"
+    },
+    "updates/c7_demo_r1/three_web/demo/展示操作.md": {
+      "bytes": 3911,
+      "sha256": "111cb7a8b5515088aa23f9d648b8a7020fdbae8b4f863a73fea577ad100d07d8"
+    },
+    "updates/c7_demo_r1/three_web/更新步骤.md": {
+      "bytes": 3303,
+      "sha256": "5e6cc1f22f3a7394d8255ea8ee63466e1f2afdec9991b2f6c75b0fe229fc6509"
     }
   },
   "exclusions": "STARE originals, annotations, derived arrays/images/screenshots, full data-containing ZIPs, virtual environments and private research history are not published.",

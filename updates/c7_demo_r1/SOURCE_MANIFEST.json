@@ -1563,17 +1563,21 @@
       "source": "D:\\PLD\\tmp\\single_repair_design_r2\\utilization_routed.rpt",
       "bytes": 10141,
       "sha256": "2a02cd8479087e07e9c07a129d37a4efee58ab7264e94bfe69c5481694d43e68"
+    },
+    {
+      "path": "updates/c7_demo_r1/three_web/demo/展示操作.md",
+      "source": "git:6da0de644b8379188904960866057fc20006cf5e:three_web/demo/展示操作.md",
+      "bytes": 3911,
+      "sha256": "111cb7a8b5515088aa23f9d648b8a7020fdbae8b4f863a73fea577ad100d07d8"
+    },
+    {
+      "path": "updates/c7_demo_r1/three_web/更新步骤.md",
+      "source": "git:6da0de644b8379188904960866057fc20006cf5e:three_web/更新步骤.md",
+      "bytes": 3303,
+      "sha256": "5e6cc1f22f3a7394d8255ea8ee63466e1f2afdec9991b2f6c75b0fe229fc6509"
     }
   ],
   "excluded": [
-    {
-      "path": "\"three_web/demo/\\345\\261\\225\\347\\244\\272\\346\\223\\215\\344\\275\\234.md\"",
-      "reason": "Outside selected source extension list"
-    },
-    {
-      "path": "\"three_web/\\346\\233\\264\\346\\226\\260\\346\\255\\245\\351\\252\\244.md\"",
-      "reason": "Outside selected source extension list"
-    },
     {
       "path": "C7_Demo_r1.zip!app/inputs/im0001_256.npy",
       "bytes": 262272,
