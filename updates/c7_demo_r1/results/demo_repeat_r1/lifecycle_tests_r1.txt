@@ -1,0 +1,18 @@
+test_busy_start_idempotent_and_stop_refused (__main__.LifecycleTests.test_busy_start_idempotent_and_stop_refused) ... ok
+test_concurrent_start_one_real_lifecycle (__main__.LifecycleTests.test_concurrent_start_one_real_lifecycle) ... ok
+test_export_snapshots_do_not_overwrite (__main__.LifecycleTests.test_export_snapshots_do_not_overwrite) ... ok
+test_fault_preserved_export_allowed_no_reload (__main__.LifecycleTests.test_fault_preserved_export_allowed_no_reload) ... ok
+test_manual_confirmation_required (__main__.LifecycleTests.test_manual_confirmation_required) ... ok
+test_new_boot_keeps_prior_unfinished_records (__main__.LifecycleTests.test_new_boot_keeps_prior_unfinished_records) ... ok
+test_normal_repeat_actual_server_export_and_unique_records (__main__.LifecycleTests.test_normal_repeat_actual_server_export_and_unique_records) ... ok
+test_open_demo_keeps_live_object_and_immutable_file_guard (__main__.LifecycleTests.test_open_demo_keeps_live_object_and_immutable_file_guard) ... ok
+test_owner_conflict_blocks_before_prepare (__main__.LifecycleTests.test_owner_conflict_blocks_before_prepare) ... ok
+test_port_busy_never_calls_hardware_prepare_or_open (__main__.LifecycleTests.test_port_busy_never_calls_hardware_prepare_or_open) ... ok
+test_same_boot_lost_python_context_blocks_before_prepare (__main__.LifecycleTests.test_same_boot_lost_python_context_blocks_before_prepare) ... ok
+test_start_failure_preservation_and_no_retry (__main__.LifecycleTests.test_start_failure_preservation_and_no_retry) ... ok
+test_delivered_notebook_first_cell_twice_no_hardware_import (__main__.OfflineNotebookTests.test_delivered_notebook_first_cell_twice_no_hardware_import) ... ok
+
+----------------------------------------------------------------------
+Ran 13 tests in 8.030s
+
+OK

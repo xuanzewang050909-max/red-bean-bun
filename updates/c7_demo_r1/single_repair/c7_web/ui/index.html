@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Retina · FPGA 影像工作台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='3' fill='%231a2537'/%3E%3Cpath d='M8 8h16v16H8zM3 12h5m-5 8h5m16-8h5m-5 8h5M12 3v5m8-5v5M12 24v5m8-5v5' stroke='%23b7cdfa' fill='none' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <svg class="chip" viewBox="0 0 40 40" aria-hidden="true"><path d="M9 9h22v22H9zM3 14h6m-6 6h6m-6 6h6m22-12h6m-6 6h6m-6 6h6M14 3v6m6-6v6m6-6v6M14 31v6m6-6v6m6-6v6"/><path class="chip-core" d="M15 15h10v10H15z"/></svg>
+      <div><div class="wordmark">RETINA <span>/ FPGA</span></div><h1>眼底影像工作台</h1></div>
+    </div>
+    <div class="signal-path" aria-label="数据通路"><span>DDR</span><i>→</i><span>DMA</span><i>⇄</i><b>PL · C7</b><i>→</i><span>浏览器</span></div>
+    <div class="status"><div><span id="state-dot"></span><span id="state">连接中</span></div><small id="frame-count">等待服务</small></div>
+  </header>
+  <div id="host-warning" class="warning" hidden>主机测试预览 · 使用软件测试替身，所有图像和计时均不是本次实体板结果。</div>
+  <main class="workspace">
+    <aside class="sidebar" aria-label="运行设置">
+      <section class="controls" aria-label="FPGA 参数">
+        <div class="section-heading"><h2>运行设置</h2><span>01 / INPUT</span></div>
+        <label>展示内容<select id="view" disabled><option value="all">全部 20 张</option><option value="examples">讲解样例 8 张</option><option value="functions">功能演示</option></select></label>
+        <label>眼底图像<select id="image" disabled></select></label>
+        <p id="example-note" class="sample-note"></p>
+        <label>处理尺寸<select id="side" disabled><option value="512">512 × 512 像素</option><option value="256">256 × 256 像素</option></select></label>
+        <div class="actions">
+          <button id="run" class="primary" disabled><span aria-hidden="true">▶</span> 运行 FPGA</button>
+          <div class="step-buttons"><button id="previous" disabled>← 上一张并运行</button><button id="next" disabled>下一张并运行 →</button></div>
+          <button id="list-run" disabled>逐张运行当前列表</button>
+          <button id="continuous" hidden disabled>保留</button><button id="stop" class="stop" disabled>停止后续请求</button>
+        </div>
+        <p id="playlist-status" class="playlist-status" role="status">自由展示</p>
+        <div class="section-heading processing-heading"><h2>处理配置</h2><span>02 / PROCESS</span></div>
+        <label>PL 算法<select id="algorithm" disabled><option value="C7">C7</option><option value="C5">C5 · 上轮对照</option><option value="C2">C2 · 双侧支持</option><option value="A">A · 原始基线</option></select></label>
+        <label>PL 处理模式<select id="mode" disabled><option value="final">最终掩膜 · 模式 3</option><option value="closed_candidate">闭运算候选 · 模式 2</option><option value="threshold_candidate">初始阈值候选 · 模式 1</option><option value="bypass">输入旁路 · 模式 0</option></select></label>
+        <label class="threshold">分割阈值<input id="threshold" type="number" value="112" min="1" max="255" step="1" disabled><small id="threshold-help">C7 分数：推荐112；运行写入 PL</small></label>
+        <label>图像传输<select id="png-profile" disabled><option value="baseline">默认 PNG · 无损</option><option value="fast" selected>快速 PNG · 无损</option></select></label>
+        <details class="help"><summary>操作说明</summary><p>全部图像与讲解样例使用 C7 最终模式、阈值112。算法、模式和阈值可在“功能演示”中调整。</p><p>上一张、下一张及逐张运行都会提交新任务。逐张运行从列表第一张开始，帧间至少停留2秒，不用于最大FPS测试。单会话最多100次。</p><p>停止只取消后续请求。关闭服务前等待当前帧完成；异常时保留 Notebook 与记录。</p></details>
+      </section>
+      <div class="device-label"><span class="device-mark" aria-hidden="true">▣</span><div><b>PYNQ-Z2</b><span>Zynq-7000 · Ethernet</span></div><span class="revision">UI R2</span></div>
+    </aside>
+    <div class="results">
+      <section class="image-section" aria-label="图像结果">
+        <div class="result-line"><div><div class="section-heading"><h2>图像观察</h2><span>03 / OUTPUT</span></div><strong id="optimized-badge" class="optimized-badge" hidden>此图已专项优化</strong><p id="selection-state">等待第一次 FPGA 计算</p></div>
+          <label class="alpha-label" for="alpha">叠加透明度 <span class="display-only">仅显示</span><input id="alpha" type="range" min="0" max="100" value="65"><output id="alpha-value" for="alpha">65%</output></label>
+        </div>
+        <section id="panels" class="panels stale" aria-label="同帧图像">
+          <article><h3><span class="channel">01</span> 原始眼底 <span class="source">RGB / 输入</span></h3><div class="picture"><canvas id="original" role="img" aria-label="本次任务原始眼底图像"></canvas><p class="placeholder">等待图像</p></div><p class="panel-caption">原始输入</p></article>
+          <article><h3><span class="channel">02</span> FPGA 增强 <span class="source">PL / 输出</span></h3><div class="picture"><canvas id="enhanced" role="img" aria-label="本次任务FPGA增强图像"></canvas><p class="placeholder">等待图像</p></div><p class="panel-caption">增强结果</p></article>
+          <article><h3><span class="channel">03</span> 血管候选 <span class="source">PL / 掩膜</span></h3><div class="picture"><canvas id="mask" role="img" aria-label="本次任务血管候选掩膜"></canvas><p class="placeholder">等待图像</p></div><p class="panel-caption">二值候选掩膜</p></article>
+          <article><h3><span class="channel">04</span> 血管叠加 <span class="source">RGB + MASK</span></h3><div class="picture"><canvas id="overlay" role="img" aria-label="本次任务实际掩膜叠加图像"></canvas><p class="placeholder">等待图像</p></div><p class="panel-caption"><span class="mask-key"></span> 实际掩膜 · 显示叠加</p></article>
+        </section>
+      </section>
+      <section class="measurement-section" aria-label="评价与性能">
+        <div class="section-heading"><h2>测量读数</h2><span>04 / MEASURE</span><span class="heading-note">以当前任务记录为准</span></div>
+        <div class="metrics">
+          <div class="metric"><h3>血管面积 / 有效 FOV</h3><strong id="area">—</strong><small id="area-detail">当前 PL 掩膜，PS 计数</small></div>
+          <div class="metric quality-metric"><h3>Dice / IoU</h3><strong id="quality">—</strong><small id="quality-detail">AH / VK 仅用于完成后的评价</small></div>
+          <div class="metric"><h3>PL 核心窗口</h3><strong id="core">—</strong><small>原C7硬件周期；不含专项补标</small></div>
+          <div class="metric"><h3>DMA 事务</h3><strong id="dma">—</strong><small>原C7 DMA事务；专项核通过DDR访问</small></div>
+          <div class="metric"><h3>完整推理</h3><strong id="inference">—</strong><small>含C7、适用的专项补标、切换和核验</small></div>
+          <div class="metric"><h3>请求 → 浏览器绘制</h3><strong id="browser">—</strong><small>客户端单调时钟，双 rAF 近似</small></div>
+          <div class="metric"><h3>实际展示 FPS</h3><strong id="fps">—</strong><small>完整请求 / 解码 / 绘制</small></div>
+        </div>
+      </section>
+      <section class="evidence" aria-label="运行记录">
+        <div class="evidence-heading"><div class="section-heading"><h2>运行记录</h2><span>05 / RECORD</span></div><div class="evidence-actions"><button id="export-run" disabled>导出当前任务</button><button id="export-session" disabled>导出本次会话</button></div></div>
+        <p id="message" role="status">正在读取板端能力…</p>
+        <details class="technical"><summary>任务标识与硬件回读 <span>参数 · 数据哈希 · 分段耗时</span></summary>
+          <dl><dt>任务 / 配置</dt><dd id="identity">—</dd><dt>真实收发</dt><dd id="bytes">—</dd><dt>输入 / 输出 SHA</dt><dd id="hashes">—</dd><dt>硬件实际参数</dt><dd id="applied">—</dd><dt>PL 周期 / 纯 DMA 搬运</dt><dd id="observer">等待当前帧硬件回读；纯搬运需独立实验。</dd><dt>PS 分段耗时</dt><dd id="ps-timing">等待当前帧记录。</dd><dt>质量范围</dt><dd>当前图像与当前模式的候选结果，不代表留出集整体医学精度验收。眼底边界、亮区响应属于现有算法结果。</dd></dl>
+        </details>
+      </section>
+      <footer><span>本作品仅用于工程教学与算法演示，不作为临床诊断依据。</span><span>RETINA / C7 · UI R2</span></footer>
+    </div>
+  </main>
+</body>
+</html>

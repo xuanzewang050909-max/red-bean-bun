@@ -1,0 +1,24 @@
+{
+  "scope": "HOST_TEST_DOUBLE_ONLY_NOT_BOARD",
+  "browser": "Playwright local127.0.0.1:18765",
+  "render": true,
+  "download": true,
+  "bypass_after_refinement": true,
+  "console_errors": 0,
+  "algorithms_preserved": [
+    "A",
+    "C2",
+    "C5",
+    "C7"
+  ],
+  "tests": 10,
+  "client_regression_checks": 11,
+  "mask_pixels": 9540,
+  "added_pixels": 3083,
+  "original_pixels": 6457,
+  "screenshot": "host_web_preview.png",
+  "operations_to_board": 0,
+  "training_updates": 0,
+  "new_inference": 0,
+  "new_synthesis": 0
+}

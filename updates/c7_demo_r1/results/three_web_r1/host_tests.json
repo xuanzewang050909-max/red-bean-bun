@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "tests": 11,
+  "log": {
+    "path": "D:\\PLD\\three_web_tests_r2.console.log",
+    "bytes": 2947,
+    "sha256": "fdb08116ce7e49504aefbd25480bb83c39f9500553c18a207c69be21730aa309"
+  },
+  "earlier_environment_failure": {
+    "path": "D:\\PLD\\three_web_tests_r1.console.log",
+    "bytes": 394,
+    "sha256": "b1ad45f7c52933307313e538edb3f89c1917f941e93969818d62dd523ab992af"
+  },
+  "remedy": "Use existing retina_fpga site-packages for PIL/Tornado; no dependency installation or upgrade",
+  "board_operations": 0,
+  "scope": "Actual dispatch/worker/control and failure paths with explicit host test doubles"
+}

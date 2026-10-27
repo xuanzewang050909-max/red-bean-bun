@@ -1,0 +1,7 @@
+{
+  "returncode": 0,
+  "stdout": "OFFLINE_PACKAGE_VERIFIED three-image-vessel-completion-v1 ['noise_0', 'noise_1', 'noise_2', 'im0004', 'im0291', 'im0319']\n此格只核验文件；尚未执行板测\n",
+  "stderr": "",
+  "hardware_operations": 0,
+  "scope": "Actual delivered second code cell; AST-checked other cells, never executed hardware cell"
+}

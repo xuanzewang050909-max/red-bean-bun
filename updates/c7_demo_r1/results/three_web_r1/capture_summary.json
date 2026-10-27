@@ -1,0 +1,142 @@
+{
+  "archive": {
+    "path": "C:\\Users\\Gabriel\\Downloads\\three_image_board_results_r1.zip",
+    "bytes": 5488557,
+    "sha256": "43ba743bb9d086e0ffc57dbd63ffcbd61f9b116d33dc02828339552f3ab0a00e"
+  },
+  "session": {
+    "algorithm": "three-image-vessel-completion-v1",
+    "board": "PYNQ-Z2",
+    "confirmation": "I_AUTHORIZE_THREE_IMAGE_BOARD_TEST_ONCE",
+    "manifest_sha256": "047db42963e3c4b4f69fd0132e2da31b427629d993594e497b310db0bf55aa1b",
+    "session": "befe1925c36f41a7a011bdfca694a173"
+  },
+  "records": [
+    {
+      "actual": {
+        "bytes": 44248,
+        "path": "noise_0_actual.npy",
+        "raw_sha256": "50f8013880a0936df845093b2cff05e4584d372e990ee3caa496a3bf84445f55",
+        "sha256": "794fa85b2cc02a14861a6d9f234ffff84e634e5bac99578f4cdd81e4d900b946"
+      },
+      "case": "noise_0",
+      "differences": 0,
+      "guard_ok": true,
+      "guard_words": 32,
+      "input_sha256": "e7ca5cc1a694a5fdac1db57171c69dd584466297b030fd269305804bbc8bcf0c",
+      "physical_address": 377815040,
+      "seconds": 1.4406030499994813,
+      "shape": [
+        39,
+        47
+      ],
+      "source": "REAL_PYNQ_PL",
+      "words": 10998
+    },
+    {
+      "actual": {
+        "bytes": 44248,
+        "path": "noise_1_actual.npy",
+        "raw_sha256": "f359ae8b4cac93653e338c87916dd2594895c9981a3eafd3fc7a09d5a0f91369",
+        "sha256": "40200c9eccfe5a1678db317563e562cbfe3d3ead9a1246bb3b3cdd9f71e4bc85"
+      },
+      "case": "noise_1",
+      "differences": 0,
+      "guard_ok": true,
+      "guard_words": 32,
+      "input_sha256": "e7ca5cc1a694a5fdac1db57171c69dd584466297b030fd269305804bbc8bcf0c",
+      "physical_address": 377880576,
+      "seconds": 1.4090668159988127,
+      "shape": [
+        39,
+        47
+      ],
+      "source": "REAL_PYNQ_PL",
+      "words": 10998
+    },
+    {
+      "actual": {
+        "bytes": 44248,
+        "path": "noise_2_actual.npy",
+        "raw_sha256": "853bffb6d412827456b596a6a223fa3cf733c470172b6e763acdbe3c3cd0e95d",
+        "sha256": "3e0a5353426ae2cfdae77b5da28b6132c6045921073755d489a1ab3629cd537b"
+      },
+      "case": "noise_2",
+      "differences": 0,
+      "guard_ok": true,
+      "guard_words": 32,
+      "input_sha256": "e7ca5cc1a694a5fdac1db57171c69dd584466297b030fd269305804bbc8bcf0c",
+      "physical_address": 377946112,
+      "seconds": 1.403478410000389,
+      "shape": [
+        39,
+        47
+      ],
+      "source": "REAL_PYNQ_PL",
+      "words": 10998
+    },
+    {
+      "actual": {
+        "bytes": 6291712,
+        "path": "im0004_actual.npy",
+        "raw_sha256": "92d5deca056690dbeb2583956d02ae378de05ac4d189c1e3635ad9b56f6fae8d",
+        "sha256": "a7f510945f92db8c884fda58c0c5b87ba3a25a06cd42af30e4a0060c1c54f2cb"
+      },
+      "case": "im0004",
+      "differences": 0,
+      "guard_ok": true,
+      "guard_words": 32,
+      "input_sha256": "95e1372fe9f1fcbb3b936a1afb7e05153e6707d4a20f537aad723969e1837def",
+      "physical_address": 383778816,
+      "seconds": 29.645794151998416,
+      "shape": [
+        512,
+        512
+      ],
+      "source": "REAL_PYNQ_PL",
+      "words": 1572864
+    },
+    {
+      "actual": {
+        "bytes": 6291712,
+        "path": "im0291_actual.npy",
+        "raw_sha256": "ad39d2103a6d3e3eceaca7e7dec4ecc7eccfb7956c3f7e492e59147e0660fc14",
+        "sha256": "8b013ee4804704c6820b878425ecb105ac23f0a7e12a63358da4733d48c1e746"
+      },
+      "case": "im0291",
+      "differences": 0,
+      "guard_ok": true,
+      "guard_words": 32,
+      "input_sha256": "338f89885fece5c5ebdc5e4e9a86a79048fd7407609c88ec3cdd0eb92b36448e",
+      "physical_address": 391118848,
+      "seconds": 29.53933198699815,
+      "shape": [
+        512,
+        512
+      ],
+      "source": "REAL_PYNQ_PL",
+      "words": 1572864
+    },
+    {
+      "actual": {
+        "bytes": 6291712,
+        "path": "im0319_actual.npy",
+        "raw_sha256": "fb54914c186242b9d305acbbef300a1b9d4764180675d5c871e037663e525965",
+        "sha256": "093b66e9aac0c74b335298d3b8b8eacae5fe7509f7419d318e0f16088d2b063c"
+      },
+      "case": "im0319",
+      "differences": 0,
+      "guard_ok": true,
+      "guard_words": 32,
+      "input_sha256": "03b3fbb74a8f6f4ab095c5aa24f1e4795241ce01dfe962b248ef244d50054dbf",
+      "physical_address": 398458880,
+      "seconds": 29.535057968001638,
+      "shape": [
+        512,
+        512
+      ],
+      "source": "REAL_PYNQ_PL",
+      "words": 1572864
+    }
+  ]
+}

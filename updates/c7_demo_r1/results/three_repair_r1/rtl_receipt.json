@@ -1,0 +1,261 @@
+{
+  "status": "RTL_REFERENCE_EXACT",
+  "frames": [
+    {
+      "case": "edges_0",
+      "profile": 0,
+      "height": 35,
+      "width": 37,
+      "cycles": 6367421,
+      "simulated_seconds_50mhz": 0.12734842,
+      "ddr_read_beats32": 28490,
+      "ddr_write_beats32": 25900,
+      "stall_cycles": 134115,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_edges_0.console.log",
+        "bytes": 1444,
+        "sha256": "04986680a8a5815ef8f6bb70e54b58e50c648100ff8cdc7f6b6291d43eed8bfa"
+      }
+    },
+    {
+      "case": "edges_1",
+      "profile": 1,
+      "height": 35,
+      "width": 37,
+      "cycles": 6389084,
+      "simulated_seconds_50mhz": 0.12778168,
+      "ddr_read_beats32": 28490,
+      "ddr_write_beats32": 25900,
+      "stall_cycles": 135226,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_edges_1.console.log",
+        "bytes": 1444,
+        "sha256": "3b64046031f9fba2cfda4cc3d786e2e0d162c6f02cabc2c677eb7ddc205981dc"
+      }
+    },
+    {
+      "case": "edges_2",
+      "profile": 2,
+      "height": 35,
+      "width": 37,
+      "cycles": 6385952,
+      "simulated_seconds_50mhz": 0.12771904,
+      "ddr_read_beats32": 28490,
+      "ddr_write_beats32": 25900,
+      "stall_cycles": 134966,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_edges_2.console.log",
+        "bytes": 1444,
+        "sha256": "b9e6ca8c7bf5a9561c1575eea3914d33a7f8feda6670e4976fd0d82d28d5af98"
+      }
+    },
+    {
+      "case": "empty_0",
+      "profile": 0,
+      "height": 32,
+      "width": 32,
+      "cycles": 5030318,
+      "simulated_seconds_50mhz": 0.10060636,
+      "ddr_read_beats32": 22528,
+      "ddr_write_beats32": 20480,
+      "stall_cycles": 99584,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_empty_0.console.log",
+        "bytes": 1439,
+        "sha256": "0ed2bd714111d5d95109763328daded1a163c8b9baecea0abb8d7e5f3e6ff3f4"
+      }
+    },
+    {
+      "case": "empty_1",
+      "profile": 1,
+      "height": 32,
+      "width": 32,
+      "cycles": 5030318,
+      "simulated_seconds_50mhz": 0.10060636,
+      "ddr_read_beats32": 22528,
+      "ddr_write_beats32": 20480,
+      "stall_cycles": 99584,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_empty_1.console.log",
+        "bytes": 1439,
+        "sha256": "60b8da657db570627e1a14f27c577bb6469189185069b06fb332a4be3ffdd542"
+      }
+    },
+    {
+      "case": "empty_2",
+      "profile": 2,
+      "height": 32,
+      "width": 32,
+      "cycles": 5030318,
+      "simulated_seconds_50mhz": 0.10060636,
+      "ddr_read_beats32": 22528,
+      "ddr_write_beats32": 20480,
+      "stall_cycles": 99584,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_empty_2.console.log",
+        "bytes": 1439,
+        "sha256": "bc3344f606b4ef87f358f8ff34c20e5a684a61301f4afb16e9c14c0d0b8dc554"
+      }
+    },
+    {
+      "case": "im0004",
+      "profile": 0,
+      "height": 512,
+      "width": 512,
+      "cycles": 1294511519,
+      "simulated_seconds_50mhz": 25.89023038,
+      "ddr_read_beats32": 5767168,
+      "ddr_write_beats32": 5242880,
+      "stall_cycles": 27739387,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_im0004.console.log",
+        "bytes": 1605,
+        "sha256": "8125e3ab471903fbbe8c2bb50ff01fa557be753470362e5d16a5f2232de7a3a9"
+      }
+    },
+    {
+      "case": "im0291",
+      "profile": 1,
+      "height": 512,
+      "width": 512,
+      "cycles": 1296821108,
+      "simulated_seconds_50mhz": 25.93642216,
+      "ddr_read_beats32": 5767168,
+      "ddr_write_beats32": 5242880,
+      "stall_cycles": 27750440,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_im0291.console.log",
+        "bytes": 1605,
+        "sha256": "e68600fe1201ffbc42775fc08362cc271bf12ffa6bd50328b80bc95f29557cb0"
+      }
+    },
+    {
+      "case": "im0319",
+      "profile": 2,
+      "height": 512,
+      "width": 512,
+      "cycles": 1295531507,
+      "simulated_seconds_50mhz": 25.91063014,
+      "ddr_read_beats32": 5767168,
+      "ddr_write_beats32": 5242880,
+      "stall_cycles": 27744671,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_im0319.console.log",
+        "bytes": 1605,
+        "sha256": "2a0275b584af5b059d805f4562a323d6d61c3942b71f71e808360c19bdc41e16"
+      }
+    },
+    {
+      "case": "noise_0",
+      "profile": 0,
+      "height": 39,
+      "width": 47,
+      "cycles": 9001955,
+      "simulated_seconds_50mhz": 0.1800391,
+      "ddr_read_beats32": 40326,
+      "ddr_write_beats32": 36660,
+      "stall_cycles": 184522,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_noise_0.console.log",
+        "bytes": 1465,
+        "sha256": "0fcf6fe8f6cebcff39b3e555f0ec0f06954480c607e30395e71a1acc128aa2a2"
+      }
+    },
+    {
+      "case": "noise_1",
+      "profile": 1,
+      "height": 39,
+      "width": 47,
+      "cycles": 9056765,
+      "simulated_seconds_50mhz": 0.1811353,
+      "ddr_read_beats32": 40326,
+      "ddr_write_beats32": 36660,
+      "stall_cycles": 184291,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_noise_1.console.log",
+        "bytes": 1465,
+        "sha256": "fec334d782a1134ed442a2ca4d8366b8e9547edd992c4fc4f267a73f7b4c26b8"
+      }
+    },
+    {
+      "case": "noise_2",
+      "profile": 2,
+      "height": 39,
+      "width": 47,
+      "cycles": 9051545,
+      "simulated_seconds_50mhz": 0.1810309,
+      "ddr_read_beats32": 40326,
+      "ddr_write_beats32": 36660,
+      "stall_cycles": 183463,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_noise_2.console.log",
+        "bytes": 1466,
+        "sha256": "7f37d1e22d41b9010061488b165398f0538cd15e815bcf536efe63b8db56bf99"
+      }
+    },
+    {
+      "case": "uniform_0",
+      "profile": 0,
+      "height": 33,
+      "width": 41,
+      "cycles": 6667571,
+      "simulated_seconds_50mhz": 0.13335142,
+      "ddr_read_beats32": 29766,
+      "ddr_write_beats32": 27060,
+      "stall_cycles": 138114,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_uniform_0.console.log",
+        "bytes": 1444,
+        "sha256": "cfc680b38a4121993652c614761c66544b1aa11f7206ceb9bc7b4f8cf4a603d1"
+      }
+    },
+    {
+      "case": "uniform_1",
+      "profile": 1,
+      "height": 33,
+      "width": 41,
+      "cycles": 6667571,
+      "simulated_seconds_50mhz": 0.13335142,
+      "ddr_read_beats32": 29766,
+      "ddr_write_beats32": 27060,
+      "stall_cycles": 138114,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_uniform_1.console.log",
+        "bytes": 1444,
+        "sha256": "03603130b22094719f9263e770a0ad42672e62414486399e8a4494715078fcee"
+      }
+    },
+    {
+      "case": "uniform_2",
+      "profile": 2,
+      "height": 33,
+      "width": 41,
+      "cycles": 6667571,
+      "simulated_seconds_50mhz": 0.13335142,
+      "ddr_read_beats32": 29766,
+      "ddr_write_beats32": 27060,
+      "stall_cycles": 138114,
+      "log": {
+        "path": "D:\\PLD\\three_repair_rtl_uniform_2.console.log",
+        "bytes": 1444,
+        "sha256": "d6e3742043a15bd34bdf703bb6de51e876e332af2ca6e2d885875395623132b1"
+      }
+    }
+  ],
+  "measurement": "RTL_SIMULATION; not board time",
+  "core": {
+    "path": "D:\\PLD\\retina_c7_three_image_completion\\three_repair\\hardware\\repair.cpp",
+    "bytes": 6099,
+    "sha256": "366373732840a372d1bcd60dbaa30c371a713f4ec3e9c5bc0e0dcf3e50320028"
+  },
+  "rtl_top": {
+    "path": "D:\\PLD\\tmp\\three_repair_hls_r1\\solution\\syn\\verilog\\valley_repair.v",
+    "bytes": 150500,
+    "sha256": "23a987424826f8700da37303411f276c17894a5479db8ab80ad7adf1f590d058"
+  },
+  "bench": {
+    "path": "D:\\PLD\\tmp\\three_repair_rtl_r1\\repair_tb.sv",
+    "bytes": 8735,
+    "sha256": "10258f454e092043c591b656283060a8201372b1c9f304f5fdac2a2836a6d0ae"
+  }
+}

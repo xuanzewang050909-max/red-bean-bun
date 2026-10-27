@@ -1,0 +1,174 @@
+{
+  "schema": "three-image-board-package-v1",
+  "algorithm": "three-image-vessel-completion-v1",
+  "clock_mhz": 50,
+  "processing_shape": [
+    512,
+    512
+  ],
+  "hardware_release": "OFFLINE_PHYSICAL_GATES_PASS",
+  "board_status": "BOARD_NOT_RUN",
+  "implementation_commit": "764a28bd740cf0404e6701d4215688276eb0a84e",
+  "case_order": [
+    "noise_0",
+    "noise_1",
+    "noise_2",
+    "im0004",
+    "im0291",
+    "im0319"
+  ],
+  "image_cases": [
+    "im0004",
+    "im0291",
+    "im0319"
+  ],
+  "cases": {
+    "noise_0": {
+      "profile": 0
+    },
+    "noise_1": {
+      "profile": 1
+    },
+    "noise_2": {
+      "profile": 2
+    },
+    "im0004": {
+      "profile": 0
+    },
+    "im0291": {
+      "profile": 1
+    },
+    "im0319": {
+      "profile": 2
+    }
+  },
+  "default_hardware_access": false,
+  "expected_arrays": "Post-execution host verification only; not transferred to PL",
+  "files": {
+    "board_run.py": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\board_run.py",
+      "bytes": 9540,
+      "sha256": "7cc91680dca3e146663e1e4565cd830d9d9a958033344f4e1379680e78830692"
+    },
+    "evidence_io.py": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\evidence_io.py",
+      "bytes": 7228,
+      "sha256": "499f488ca8bdc143ffecca731a408da6f5e84cb8feaef479e4582d23bbebcebf"
+    },
+    "frozen_algorithm.json": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\frozen_algorithm.json",
+      "bytes": 3893,
+      "sha256": "1b80a76fbbb4e248654916ed1a54d295ee5d1567dc04e574d44b135c7f9fab39"
+    },
+    "im0004_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\im0004_expected.npy",
+      "bytes": 6291584,
+      "sha256": "3f6b4584fe57145280b17d6a25857638fa090ed5133a274ec9a5aefddd33fe6b"
+    },
+    "im0004_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\im0004_input.npy",
+      "bytes": 1048704,
+      "sha256": "95e1372fe9f1fcbb3b936a1afb7e05153e6707d4a20f537aad723969e1837def"
+    },
+    "im0291_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\im0291_expected.npy",
+      "bytes": 6291584,
+      "sha256": "adea9c7ef873e6eb21f4ba64c17ffb185b3e14ffaf768f6a8466bcab9a1bc3e3"
+    },
+    "im0291_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\im0291_input.npy",
+      "bytes": 1048704,
+      "sha256": "338f89885fece5c5ebdc5e4e9a86a79048fd7407609c88ec3cdd0eb92b36448e"
+    },
+    "im0319_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\im0319_expected.npy",
+      "bytes": 6291584,
+      "sha256": "4cf1daea2bf1047f8358c763a83a8f9d2fd90716d46a1b3d3bd5d1fbe7988af7"
+    },
+    "im0319_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\im0319_input.npy",
+      "bytes": 1048704,
+      "sha256": "03b3fbb74a8f6f4ab095c5aa24f1e4795241ce01dfe962b248ef244d50054dbf"
+    },
+    "implementation_seal.json": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\implementation_seal.json",
+      "bytes": 2174,
+      "sha256": "56e863af3e7efa80e6c3962c27ac1e7cbc41311b4493dc76b18c185ed5f8fac3"
+    },
+    "input_source_manifest.json": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\input_source_manifest.json",
+      "bytes": 6556,
+      "sha256": "934da046ae9eb67cb4798488db113341208e9f9d452ec4889d9801287dadaab5"
+    },
+    "native_c7_provenance.json": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\native_c7_provenance.json",
+      "bytes": 5706,
+      "sha256": "fefe7bf350730cf161462cfb5239a08379cc057d1f12201840207077dd787bd4"
+    },
+    "noise_0_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\noise_0_expected.npy",
+      "bytes": 44120,
+      "sha256": "41b83834841bc739e5dd5bfb2603e7ab63b04b270da4e96eb944fe07377625cb"
+    },
+    "noise_0_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\noise_0_input.npy",
+      "bytes": 7460,
+      "sha256": "e7ca5cc1a694a5fdac1db57171c69dd584466297b030fd269305804bbc8bcf0c"
+    },
+    "noise_1_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\noise_1_expected.npy",
+      "bytes": 44120,
+      "sha256": "7c47f2cbdda7f0213fce557e5fb560c617adf54e36ca4d10cef349f3d982e957"
+    },
+    "noise_1_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\noise_1_input.npy",
+      "bytes": 7460,
+      "sha256": "e7ca5cc1a694a5fdac1db57171c69dd584466297b030fd269305804bbc8bcf0c"
+    },
+    "noise_2_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\noise_2_expected.npy",
+      "bytes": 44120,
+      "sha256": "53f096edda6b468ac55dbca72d239d581fa661097685c384210a3f6f78a7e171"
+    },
+    "noise_2_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\noise_2_input.npy",
+      "bytes": 7460,
+      "sha256": "e7ca5cc1a694a5fdac1db57171c69dd584466297b030fd269305804bbc8bcf0c"
+    },
+    "physical_gates.json": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\physical_gates.json",
+      "bytes": 11415,
+      "sha256": "11cd96551e4787601c9635f62d3a3e667d3ee45194a0b5a997e77521b87cd230"
+    },
+    "refinement_clock_contract.py": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\refinement_clock_contract.py",
+      "bytes": 1396,
+      "sha256": "412ba79980d8d5dcb0e56005829af37e201127b3ddd5aad99c88b2543afe104d"
+    },
+    "registers.h": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\registers.h",
+      "bytes": 2798,
+      "sha256": "64f0a7e64674732c88d9cbbc4cb65e5c3749be9afd92cacb639ddb06bd7bbfa1"
+    },
+    "runtime_contract.json": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\runtime_contract.json",
+      "bytes": 428,
+      "sha256": "fd0b8c0f739fb5dca9163af3a2e2d4d2bb0e528f14c8bf200142121125ece2c8"
+    },
+    "single_repair.bit": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\single_repair.bit",
+      "bytes": 4045681,
+      "sha256": "d27644111db9481287dd58e26ca6bf3cf8fe6cb61a1e39c6ac12d60c7f0962a2"
+    },
+    "single_repair.hwh": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\single_repair.hwh",
+      "bytes": 224227,
+      "sha256": "3813c7257f4a0d23894361f69caf5cdf034fb7395399d3497c1d9a188d448f31"
+    },
+    "transport.py": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\transport.py",
+      "bytes": 12784,
+      "sha256": "2e06f5bd3212bd9fb8bcb0480a053622ed520dd72317d57d0f23d341c3399899"
+    }
+  }
+}

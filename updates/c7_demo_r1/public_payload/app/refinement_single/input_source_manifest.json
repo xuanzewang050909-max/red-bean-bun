@@ -1,0 +1,169 @@
+{
+  "status": "INPUT_IDENTIFIED",
+  "image": "im0324",
+  "processing_shape": [
+    512,
+    512
+  ],
+  "resampled_for_inference": false,
+  "old_mask": "Real original C7 M7; preserved exactly",
+  "label_arrays_read": false,
+  "source_pair": {
+    "bytes": 720929,
+    "path": "D:\\PLD\\retina_c7_structured_refine\\build\\c7_structured_refine_r1\\pairs\\im0324_512.npz",
+    "sha256": "f481b7b22c50eec53333b361aeb8a4e226456c57571d81eca0fe412a9eda4507"
+  },
+  "native_capture": {
+    "key": "im0324_512",
+    "image_id": "im0324",
+    "size": 512,
+    "role": "REUSED_EVAL",
+    "patient_eye_group": "UNKNOWN; original-image grouped",
+    "source_native_npz": "D:\\PLD\\retina_c7_data_refine_r4\\build\\c7_data_refine_r4_data_r3\\inference\\im0324_512.npz",
+    "source_native_npz_sha": "ef1d09c19060e15749cfd8a2b55adc6de655814056e3b7c1b342c41f74f2fd8e",
+    "new_pair_sha": "f481b7b22c50eec53333b361aeb8a4e226456c57571d81eca0fe412a9eda4507",
+    "input_word_sha": "a06d509bed95c572a7619b927c55e563936ce498f305c55d3362e25bba367811",
+    "output_word_sha": "67d7e20fc4ebd4c8258eb042a802ba91d9a2e7f9707ac3bb516d044c214175b1",
+    "capture_record_sha": "5decd2d7ac74521b985823d9856f976fd23de1dc636dc19e4d71858e6fd7d899",
+    "capture_run": "565b1f2d58424d5589ac1d476b928365",
+    "hardware_identity": {
+      "bit": {
+        "bytes": 4045680,
+        "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+      },
+      "hwh": {
+        "bytes": 379665,
+        "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+      }
+    },
+    "geometry": {
+      "source_width": 700,
+      "source_height": 605,
+      "size": 512,
+      "nominal_scale": 0.7314285714285714,
+      "resized_width": 512,
+      "resized_height": 443,
+      "pad_left": 0,
+      "pad_top": 34,
+      "pad_right": 0,
+      "pad_bottom": 35,
+      "effective_scale_x": 0.7314285714285714,
+      "effective_scale_y": 0.7322314049586777,
+      "image_interpolation": "OpenCV INTER_LINEAR",
+      "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+      "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+      "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+    },
+    "arrays": {
+      "x": {
+        "dtype": "uint8",
+        "shape": [
+          6,
+          512,
+          512
+        ],
+        "sha": "1358812048ee30e507e252ac79e739639464e4854cbce82e20db3c89484dd8ba"
+      },
+      "PB": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "b445d85826ec5b133e8d00c001ea937c38439a65fccd7ced6d8e2f243aabd170"
+      },
+      "Q": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "6123f0139eedf3f0d61db922bb029ea8aafccd807482289a02af50f0318568b6"
+      },
+      "ah": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "59c47a22df13d1eeffa9a9ef057c906ac65407e89755dda31670afabf6d58a3c"
+      },
+      "thin_ah": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "6019260d740f594cfa51abfba916d8eaa88fbc79a85d701275a8d2c79fae8217"
+      },
+      "vk": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "40fa1ac54d8d43778ac70238cd662c297e1e014c77d67cef2b916b7f997717d5"
+      },
+      "thin_vk": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "e56efce969865523b25ff2f2fc1f1bfbf7d9c0ce9174762006f6ea54e4cede5d"
+      },
+      "roi_core": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "74c29498adf8a5c07dfe9c809e9ce35e41659849d757f055549978ebe7a2e77c"
+      },
+      "roi_band": {
+        "dtype": "bool",
+        "shape": [
+          512,
+          512
+        ],
+        "sha": "a00bb28758e9b176a0ebce6f040f980994699a071a9a305c3eb737fe2f244b53"
+      }
+    }
+  },
+  "identity_record_sha256": "481ba68bd7fa1db68937f799ea634dbf56e38163cfa4015f6bb0e4ff43f9a2e7",
+  "user_sources": [
+    {
+      "path": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-48b3c53f-a426-4751-ac5c-b361d458b2ae.png",
+      "sha256": "ea155840abd21b1478f675602e9fc271655c466e696c7179367a238625061e6d"
+    },
+    {
+      "path": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-ae1a498c-023c-4da7-a87c-e51351bf7059.png",
+      "sha256": "f258b9c1438a52854c45e033e732dd8adc027ba190ccdf3edbdcbc1236c51f5d"
+    },
+    {
+      "path": "C:\\Users\\Gabriel\\AppData\\Local\\Temp\\codex-clipboard-712661c4-72c5-425c-9cf0-19324bcc86d8.png",
+      "sha256": "e93c03fd00672e1aa04e93102db2153ec9d80dd268e7aef7d6e0b9f307edaea6"
+    }
+  ],
+  "screenshot_registration": {
+    "mean_absolute_rgb_error": 1.2244482040405273,
+    "source_side": 512,
+    "display_size": 373,
+    "x_offset": 7,
+    "y_offset": 1,
+    "visible_area": [
+      7,
+      1,
+      380,
+      350
+    ],
+    "mapping": "source_x=(screenshot_x-x_offset)*512/display_size; same for y; display/crop only"
+  },
+  "budget": {
+    "software_max_candidates": 20,
+    "physical_max_builds": 3,
+    "board_operations": 0
+  },
+  "old_research": "Paused by new scope; no active old research process at start",
+  "caveat": "Screenshot is scaled/cropped display. Native inputs and M7 are authoritative; no manual ground-truth mask loaded."
+}

@@ -1,0 +1,138 @@
+{
+  "schema": "three-image-vessel-completion-v1",
+  "selected": "v13",
+  "config": {
+    "profiles": {
+      "im0004": {
+        "mode": "valley",
+        "length": 6,
+        "widths": [
+          2,
+          4,
+          6
+        ],
+        "fraction": true,
+        "low": 1.5,
+        "high": 3,
+        "ridge_tolerance": 2,
+        "grow_steps": 16,
+        "min_support": 8,
+        "anisotropy": 0.75
+      },
+      "im0291": {
+        "mode": "valley",
+        "length": 6,
+        "widths": [
+          2,
+          4,
+          6
+        ],
+        "fraction": true,
+        "low": 1.5,
+        "high": 4,
+        "ridge_tolerance": 2,
+        "grow_steps": 16,
+        "min_support": 8,
+        "anisotropy": 0.75,
+        "coherence_seed_only": true,
+        "coherence": 15
+      },
+      "im0319": {
+        "mode": "valley",
+        "length": 6,
+        "widths": [
+          2,
+          4,
+          6
+        ],
+        "fraction": true,
+        "low": 1.5,
+        "high": 3,
+        "ridge_tolerance": 2,
+        "grow_steps": 16,
+        "min_support": 8,
+        "anisotropy": 0.75,
+        "coherence": 10
+      }
+    }
+  },
+  "profile_register_mapping": {
+    "im0004": 0,
+    "im0291": 1,
+    "im0319": 2
+  },
+  "frames": {
+    "im0004": {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\input\\im0004.npz",
+      "bytes": 1226398,
+      "sha256": "faff2ec789258cff96573888208b9ca9235ae9b914534c327671c802b823f6fc"
+    },
+    "im0291": {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\input\\im0291.npz",
+      "bytes": 1357001,
+      "sha256": "60bfcc64499361c65e38f35f377f9e843d45ddf935e15c22f7d25dce8ab48be4"
+    },
+    "im0319": {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\input\\im0319.npz",
+      "bytes": 1128663,
+      "sha256": "4e148b230843bb3e8283806814c9d1c44a1d567faabc4edf18e39b5704495596"
+    }
+  },
+  "outputs": {
+    "im0004": {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\selected\\im0004\\arrays.npz",
+      "bytes": 683157,
+      "sha256": "76b90574165ea15623781b34b5f7164be471fab4dcad6cb971e6bcff8d1ba59b"
+    },
+    "im0291": {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\selected\\im0291\\arrays.npz",
+      "bytes": 674922,
+      "sha256": "6ae2613a531d19f9023a0a1c8d336d9e75b130e89f511cdc71fbd3408efd8af7"
+    },
+    "im0319": {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\selected\\im0319\\arrays.npz",
+      "bytes": 672028,
+      "sha256": "dfc4fdcf5217e5d092b02cde7665fa224975765c48da76d90d62b5035fab9aeb"
+    }
+  },
+  "inference_inputs": [
+    "RGB uint8",
+    "C7 M7 bool",
+    "FOV bool",
+    "explicit profile 0/1/2"
+  ],
+  "GT_used": false,
+  "ROI_used_for_inference": false,
+  "integer_arithmetic": true,
+  "software_candidates": 13,
+  "physical_builds": 0,
+  "board_operations": 0,
+  "manual_hints": false,
+  "numeric": {
+    "smoothing": "3x3 [1,2,1]^2 unsigned12 Q4",
+    "response": "8 directions, 3 flank distances, 13 samples; two flanks must be brighter",
+    "low": 312,
+    "high_by_profile": [
+      624,
+      832,
+      624
+    ],
+    "anisotropy": 156,
+    "ridge_tolerance": 2,
+    "coherence_min": [
+      0,
+      15,
+      10
+    ],
+    "coherence_mode": [
+      "disabled",
+      "seed-only",
+      "all weak"
+    ],
+    "coherence_geometry": "17 centre samples, 3 cross samples; weak direction within one cyclic bin",
+    "hysteresis": "16 synchronous 8-neighbor passes",
+    "cleanup": "9x9 support >=8",
+    "boundary": "sample clamp, additions require 25x25 all-FOV",
+    "output": "old OR added; weak not added goes to uncertain"
+  }
+}

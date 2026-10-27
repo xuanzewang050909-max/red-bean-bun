@@ -1,0 +1,91 @@
+{
+  "source_commit": "72406576187331566a209ffa9ab43911fe3e5148",
+  "files": [
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\host_console_r1.txt",
+      "bytes": 18260,
+      "sha256": "b258691b90db6b4a59c87d087829b7f10bb0c77c178d7a93b880d31b6d6e1f2e"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\lifecycle_tests_r1.json",
+      "bytes": 270,
+      "sha256": "ee07c9295ac31ea012f2d8b4bfbb2fba3a4e9625d84b7d1d1d3215a17fae9727"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\lifecycle_tests_r1.txt",
+      "bytes": 1796,
+      "sha256": "12f7fd4a638312c51b6c2e477ca8a0df3f37ada8033f8f5c171f5be13035f0ba"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\notebook_console.txt",
+      "bytes": 728,
+      "sha256": "0330da45bce4a1beb6561422ea7e8f0e8698e9e2f174fe31a14074d12412650f"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\notebook_verification.json",
+      "bytes": 425,
+      "sha256": "1b6fe6c984fb0193459bad2ca779ad213edf6a3bd8d8a8028d6b3221e3edddc5"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\report.md",
+      "bytes": 2609,
+      "sha256": "09a0f2d85c649882bda571b6004361cd168921fc982ae59271f4263406745de8"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\demo_repeat_r1\\status.json",
+      "bytes": 461,
+      "sha256": "b0dd0f09cec80b325fc4aaa3ac9b2d9e43fc248ba8fe6571806292396e638c0e"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\demo\\c7_demo.py",
+      "bytes": 8781,
+      "sha256": "6856b048456419d487f675f2c742c4a479428d84d2fb5e8a70991022f8854a02"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\demo\\package_demo.py",
+      "bytes": 8117,
+      "sha256": "2db9671ad879c32a20ba9b5675ad1f15817149547523d031f6c222d0385749e2"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\demo\\test_demo.py",
+      "bytes": 10530,
+      "sha256": "dbb3741cef508c50b26367aab5bf3470a33311d6aaf85e26ab3137f98a03724e"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\demo\\verify_release.py",
+      "bytes": 2610,
+      "sha256": "ba4d7f873c71a6155bd83b774cfba0b393dd01b4358048b54ec58b67b680db17"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\demo\\展示操作.md",
+      "bytes": 3911,
+      "sha256": "111cb7a8b5515088aa23f9d648b8a7020fdbae8b4f863a73fea577ad100d07d8"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Demo_r1_release\\assembly_receipt.json",
+      "bytes": 566,
+      "sha256": "1b93f4c0d2ce4e50ee1352691854c94be5eb42e14654c742ed06cd21bb36ede1"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Demo_r1_release\\C7_Demo_r1.ipynb",
+      "bytes": 6757,
+      "sha256": "2f61b4beeff4d6a16e8ae136d0a92c04b975c3b3ac26e892a2e49347e5db9057"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Demo_r1_release\\C7_Demo_r1.zip",
+      "bytes": 21678781,
+      "sha256": "2f8c1a21b542bce6eb2370d03610c45805cf510a559a3c6a5f73c06add26c053"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Demo_r1_release\\C7_Demo_r1.zip.sha256",
+      "bytes": 82,
+      "sha256": "a8cd0a18c1b8444e01b7278dad0c4660bab00599a885e997ed8e1e88ea994871"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Demo_r1_release\\展示操作.md",
+      "bytes": 3911,
+      "sha256": "111cb7a8b5515088aa23f9d648b8a7020fdbae8b4f863a73fea577ad100d07d8"
+    }
+  ],
+  "seal_order": "Completed artifacts -> manifest -> external final receipt; no self hash"
+}

@@ -1,0 +1,45 @@
+{
+  "status": "HOST_BROWSER_PASS_NOT_BOARD",
+  "images": [
+    "im0004",
+    "im0291",
+    "im0319",
+    "im0324"
+  ],
+  "panes": 4,
+  "algorithm_name": "C7",
+  "optimized_badge": true,
+  "source": "HOST_TEST_DOUBLE_NOT_BOARD",
+  "screenshots": [
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\output\\playwright\\three_web\\im0004.png",
+      "bytes": 404984,
+      "sha256": "fd52b81607536f0b32e1918b9a870b89a90c37405ee63ff27e6374da1ae067c0"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\output\\playwright\\three_web\\im0291.png",
+      "bytes": 423295,
+      "sha256": "0f728a9c983679bd710b83466d817d74d89b9f482d3a098469a1776cc1e49923"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\output\\playwright\\three_web\\im0319.png",
+      "bytes": 394487,
+      "sha256": "e01a69514f7eaa685477c1bb09fd398866483001182f5d33d0cd9a3d6e4d59b6"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\output\\playwright\\three_web\\im0324_preserved.png",
+      "bytes": 390786,
+      "sha256": "995add7d2097c359a2ae4a7b5b4b8b6f5a9a19b6655f87046d7b85a963a7609b"
+    }
+  ],
+  "browser_errors": 0,
+  "browser_warnings": [
+    "Canvas2D willReadFrequently performance advice; no pixel or functional failure"
+  ],
+  "archive_verification": {
+    "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_web_r1\\host_browser_verification.json",
+    "bytes": 1231,
+    "sha256": "b6301224218ddb9bf9bcdcbde7a7a7c3d865e09a515942bf2bef963b31fc00f9"
+  },
+  "board_operations": 0
+}

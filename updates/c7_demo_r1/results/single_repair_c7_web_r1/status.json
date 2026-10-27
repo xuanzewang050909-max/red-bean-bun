@@ -1,0 +1,23 @@
+{
+  "status": "READY_FOR_MANUAL_C7_WEB_DEPLOYMENT",
+  "implementation_commit": "79e8718bbbc64822fd9d5baf04acca206c5a4526",
+  "STANDALONE_REPAIR_BOARD": "SINGLE_IMAGE_BOARD_NUMERIC_VERIFIED",
+  "WEB_COMBINED_BOARD": "NOT_RUN",
+  "C7_ALGORITHM_NAME": "C7",
+  "SPECIAL_INPUT": "im0324/512/final/T112, exact bytes matched",
+  "annotation": "此图已专项优化",
+  "original_pixels": 6457,
+  "added_pixels": 3083,
+  "final_pixels": 9540,
+  "uncertain_pixels": 2441,
+  "old_pixels_deleted": 0,
+  "host_tests": 10,
+  "client_checks": 11,
+  "local_browser_checked": true,
+  "notebook_offline_checked": true,
+  "new_board_operations": 0,
+  "new_training": 0,
+  "new_inference": 0,
+  "new_synthesis": 0,
+  "LATENCY_TARGET_UNSET": true
+}

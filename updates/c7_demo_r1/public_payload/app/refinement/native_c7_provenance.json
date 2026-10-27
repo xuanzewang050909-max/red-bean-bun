@@ -1,0 +1,128 @@
+{
+  "source": {
+    "path": "D:\\PLD\\retina_c7_structured_refine\\results\\c7_structured_refine_r1\\audit\\native_pair_identity.json",
+    "bytes": 141603,
+    "sha256": "481ba68bd7fa1db68937f799ea634dbf56e38163cfa4015f6bb0e4ff43f9a2e7"
+  },
+  "frames": [
+    {
+      "image_id": "im0004",
+      "size": 512,
+      "source_native_npz": "D:\\PLD\\retina_c7_data_refine_r4\\build\\c7_data_refine_r4_data_r3\\inference\\im0004_512.npz",
+      "source_native_npz_sha": "1d1a908c34ab0ed93eaa3b12a88322b2cc779a8bf3ce7ec5126d37852367250e",
+      "new_pair_sha": "70928396ffd20376cf86fc7dcdfbf2d787039aff8cb414c38d92fa208252a30c",
+      "input_word_sha": "6fd3926203498f6986ccc602fa1a5a780176edcbcc11cc917c503391f17dea52",
+      "output_word_sha": "5ed92971ac4ef76c41fc0cf5f5c87c9a813b56b00af2ef670522319da4b0641a",
+      "capture_record_sha": "9d9a7a44a843fc7b67a8fa41654cbf5147359440abe7615a475ea5518a045747",
+      "capture_run": "585f0c4c514747d79ba24a3915210e5e",
+      "hardware_identity": {
+        "bit": {
+          "bytes": 4045680,
+          "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+        },
+        "hwh": {
+          "bytes": 379665,
+          "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+        }
+      },
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      }
+    },
+    {
+      "image_id": "im0291",
+      "size": 512,
+      "source_native_npz": "D:\\PLD\\retina_c7_data_refine_r4\\build\\c7_data_refine_r4_data_r3\\inference\\im0291_512.npz",
+      "source_native_npz_sha": "6f1ca8ce905b93a78b401c45a90541c2a9899711f54499d449245c44018d132c",
+      "new_pair_sha": "2535e43759ea3f164854f8033d29c5049952402867b7f5c899d356207627e45d",
+      "input_word_sha": "38ae63c03cd1e2ebbb4995d809b8f8078e1837a628b12fb47c0c55d46f9737e0",
+      "output_word_sha": "4cd0d3c69c168498e0449aded6089277cb2134a6028d9010f22c9ed813d80c31",
+      "capture_record_sha": "51785e747bbb7d016f6b9c8b6c3f526be75a73f3c9833fde3c25608888abdaf6",
+      "capture_run": "c1ca7d0b0d924c4c975a10b2e90ec631",
+      "hardware_identity": {
+        "bit": {
+          "bytes": 4045680,
+          "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+        },
+        "hwh": {
+          "bytes": 379665,
+          "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+        }
+      },
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      }
+    },
+    {
+      "image_id": "im0319",
+      "size": 512,
+      "source_native_npz": "D:\\PLD\\retina_c7_data_refine_r4\\build\\c7_data_refine_r4_data_r3\\inference\\im0319_512.npz",
+      "source_native_npz_sha": "1422ba67e98e26361ef283d9c47d709ffe29a4ffbd10bb44d823b32037d36548",
+      "new_pair_sha": "c34d6da3683aecd36907fa9ba375ba5830e2c9be44828b04faa87f7c0aa219ca",
+      "input_word_sha": "37cbe7bf97565556e4661f70fb44063255d0ce384fc71ff66e345cd56ae41c44",
+      "output_word_sha": "81c6a3a7ef04f8de06748998778d2c42ed1560725017baf47835b34afe346bc6",
+      "capture_record_sha": "405a2d615a1f8a9eb85cc3233ae31f75178edc63bd5f1daba603ef4422742321",
+      "capture_run": "c0bfcc868b3f4f0c9ba8044790099981",
+      "hardware_identity": {
+        "bit": {
+          "bytes": 4045680,
+          "sha256": "5e2db8efe220d24620c30e22bc3bfac3771330ab54c415cb8326da3ec775c294"
+        },
+        "hwh": {
+          "bytes": 379665,
+          "sha256": "2e40e3a8bf176b6cabd4916df97ad00e2a72d3a6fc4fd32c13db14e6d8ed3890"
+        }
+      },
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      }
+    }
+  ],
+  "raw_words_rehashed": true,
+  "new_board_access": false
+}

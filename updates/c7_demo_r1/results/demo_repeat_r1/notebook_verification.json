@@ -1,0 +1,14 @@
+{
+  "status": "PASS_OFFLINE",
+  "offline_cell_executions": 2,
+  "same_python_object": true,
+  "default_start_blocked": true,
+  "no_hardware_module_import": true,
+  "attempts_created": 0,
+  "exact_original_members": 181,
+  "original_artifacts": 180,
+  "algorithm_changes": 0,
+  "hardware_operations": 0,
+  "model_forwards": 0,
+  "zip_sha256": "2f8c1a21b542bce6eb2370d03610c45805cf510a559a3c6a5f73c06add26c053"
+}

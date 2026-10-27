@@ -1,0 +1,12 @@
+{
+  "Overlay": {
+    "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/overlay.py",
+    "bytes": 39749,
+    "sha256": "949bbd3a1d296b487702f4c49013de24c3d6eb44da9fb2ebe1ada70d054237d7"
+  },
+  "allocate": {
+    "path": "/usr/local/share/pynq-venv/lib/python3.10/site-packages/pynq/buffer.py",
+    "bytes": 4676,
+    "sha256": "c3cfea4e2a94aa9b1981ae79210a69eee0f17b5a5c4cd26e7bc2cf7de01fb236"
+  }
+}

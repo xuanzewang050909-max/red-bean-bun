@@ -1,0 +1,21 @@
+{
+  "report": {
+    "path": "D:\\PLD\\tmp\\three_repair_design_r1\\final_drc.rpt",
+    "bytes": 22593,
+    "sha256": "1a0c687326985bca0bc520207a88f84f6b5ffed7f1ffa1053c17d92f9f497452"
+  },
+  "warnings": {
+    "DPIP-1": 5,
+    "DPOP-1": 5,
+    "DPOP-2": 5,
+    "REQP-1840": 8,
+    "RTSTAT-10": 1
+  },
+  "accepted_without_suppression": true,
+  "review": {
+    "DPIP-1/DPOP-1/DPOP-2": "15 DSP pipeline performance recommendations. Actual routed 50MHz setup/hold/pulse checks pass; no inference of timing from HLS estimates.",
+    "REQP-1840": "8 HLS AXI buffer BRAM control pins driven by stock AXI protocol-converter FIFO asynchronous-reset registers. Reset can invalidate buffer contents. Independent overlay only starts from fresh initialized workspace after reset release; no hot reset permitted while active, all outputs invalid on error/reset. Actual production reset-chain functional simulation and routed reset cell release/reassert tests pass; all workspace words compared under randomized AXI stalls. This is not proof of data retention across asynchronous reset; that operation is unsupported.",
+    "RTSTAT-10": "15 unused stock protocol-converter FIFO status nets reported as 1 warning. Generated-top complete AXI endpoint and routed 316 boundary-bit audits pass. These optional unused FIFO status outputs are not the previously missing AXI endpoints."
+  },
+  "limits": "No rules disabled, severity demoted, artificial false paths or multicycle exceptions introduced. 24 warnings retained; DRC is not zero-warning. Board remains untested."
+}

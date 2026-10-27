@@ -1,0 +1,41 @@
+{
+  "parent_commit": "cbb76db8676e29d17b7ab995209624acc6a6338e",
+  "user_fact": "重启或断电过板卡",
+  "old_volatile_scene": "UNAVAILABLE_AFTER_REBOOT; do not read old physical addresses",
+  "old_zip": {
+    "path": "C:\\Users\\Gabriel\\Downloads\\single_image_existing_a980b3cb.zip",
+    "bytes": 7751,
+    "sha256": "375fc10e1890c702fa5d26ad567d52a63ccd6abd5c0c122307ddf58ed28a8009"
+  },
+  "old_top": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r1\\single_repair.srcs\\sources_1\\bd\\single_repair\\synth\\single_repair.v",
+    "bytes": 81849,
+    "sha256": "2a086c8c685d0bafd4816dcd5de478c49a133fb82f8ed82dd437cea8549ec0bd"
+  },
+  "old_reset": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r1\\single_repair.srcs\\sources_1\\bd\\single_repair\\ip\\single_repair_reset_50m_0\\synth\\single_repair_reset_50m_0.vhd",
+    "bytes": 8083,
+    "sha256": "f818fca3f004aab9d73097867dc7ca313ab88259e408de213c59cd9ef2469c7c"
+  },
+  "old_hwh": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r1\\single_repair.srcs\\sources_1\\bd\\single_repair\\hw_handoff\\single_repair.hwh",
+    "bytes": 223179,
+    "sha256": "5dd9addb1508f4b2897a668b8cde229177d1b728ebef453f8eede75fe6edd294"
+  },
+  "frozen_core": {
+    "path": "D:\\PLD\\retina_c7_single_image_repair\\single_repair\\hardware\\repair.cpp",
+    "bytes": 4835,
+    "sha256": "35ee12e3fbec2f3b525d6c4186bbf9aa099feec174a138e992d85a251b72f247"
+  },
+  "frozen_algorithm": {
+    "path": "D:\\PLD\\retina_c7_single_image_repair\\results\\single_repair_r1\\frozen_algorithm.json",
+    "bytes": 1887,
+    "sha256": "4e1969b45af1640e2d4bf8d719ab8abc53eb409c5a3ce1f20bc8d40f437888de"
+  },
+  "frozen_output": {
+    "path": "D:\\PLD\\retina_c7_single_image_repair\\results\\single_repair_r1\\selected\\arrays.npz",
+    "bytes": 679564,
+    "sha256": "01d1feb3943645be4ec4b5a9439dbda8a2f0fae724c6c9700159039635bcc47b"
+  },
+  "hardware_operations": 0
+}

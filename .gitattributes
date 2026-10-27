@@ -1,4 +1,5 @@
 * text=auto
+updates/** -text !eol
 *.md text eol=lf
 scripts/** text eol=lf
 software/** text eol=lf

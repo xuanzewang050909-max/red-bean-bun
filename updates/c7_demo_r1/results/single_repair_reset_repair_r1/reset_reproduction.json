@@ -1,0 +1,22 @@
+{
+  "status": "ACTUAL_GENERATED_RESET_DEFECT_REPRODUCED",
+  "clock_ns": 20,
+  "original_aux_polarity": "ACTIVE_LOW",
+  "original_aux_constant": 0,
+  "fixed_aux_constant": 1,
+  "testbench": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r1\\sim_export\\single_repair\\xsim\\reset_repro_gate_tb.sv",
+    "bytes": 1323,
+    "sha256": "32b402795d0e28d371b15786f371e4d6e895ac750ff3aa28bac031e8e2e2ea09"
+  },
+  "actual_generated_functional_netlist": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r1\\single_repair.srcs\\sources_1\\bd\\single_repair\\ip\\single_repair_reset_50m_0\\single_repair_reset_50m_0_sim_netlist.v",
+    "bytes": 25248,
+    "sha256": "3dabfaf257a458e63361ea7243dd89d81077fd95d00446e7b7763864fe0e99a6"
+  },
+  "simulation_only": true,
+  "model_forwards": 0,
+  "board_operations": 0,
+  "retained_failure": "repro_sim: mixed-language behavioral initial reset assertion; functional primitive netlist passes unchanged assertions",
+  "limitation": "Live board bus state unavailable after reboot. Reproduced sufficient design defect, not recovered live trace."
+}

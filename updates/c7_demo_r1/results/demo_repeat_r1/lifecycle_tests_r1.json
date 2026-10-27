@@ -1,0 +1,10 @@
+{
+  "tests": 13,
+  "failures": 0,
+  "errors": 0,
+  "status": "PASS_HOST_ONLY",
+  "actual_board_operations": 0,
+  "model_forwards": 0,
+  "image_frames": 0,
+  "scope": "Actual original launch/HTTP/Manager/export with hardware and Linux lock/boot test doubles"
+}

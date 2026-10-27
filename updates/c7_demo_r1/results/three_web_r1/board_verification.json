@@ -1,0 +1,62 @@
+{
+  "status": "THREE_IMAGE_BOARD_NUMERIC_VERIFIED",
+  "archive_sha256": "43ba743bb9d086e0ffc57dbd63ffcbd61f9b116d33dc02828339552f3ab0a00e",
+  "manifest_sha256": "047db42963e3c4b4f69fd0132e2da31b427629d993594e497b310db0bf55aa1b",
+  "frames": [
+    {
+      "case": "noise_0",
+      "profile": 0,
+      "words": 10998,
+      "differences": 0,
+      "old_preserved": true,
+      "added": 86,
+      "actual_sha256": "794fa85b2cc02a14861a6d9f234ffff84e634e5bac99578f4cdd81e4d900b946"
+    },
+    {
+      "case": "noise_1",
+      "profile": 1,
+      "words": 10998,
+      "differences": 0,
+      "old_preserved": true,
+      "added": 0,
+      "actual_sha256": "40200c9eccfe5a1678db317563e562cbfe3d3ead9a1246bb3b3cdd9f71e4bc85"
+    },
+    {
+      "case": "noise_2",
+      "profile": 2,
+      "words": 10998,
+      "differences": 0,
+      "old_preserved": true,
+      "added": 2,
+      "actual_sha256": "3e0a5353426ae2cfdae77b5da28b6132c6045921073755d489a1ab3629cd537b"
+    },
+    {
+      "case": "im0004",
+      "profile": 0,
+      "words": 1572864,
+      "differences": 0,
+      "old_preserved": true,
+      "added": 3812,
+      "actual_sha256": "a7f510945f92db8c884fda58c0c5b87ba3a25a06cd42af30e4a0060c1c54f2cb"
+    },
+    {
+      "case": "im0291",
+      "profile": 1,
+      "words": 1572864,
+      "differences": 0,
+      "old_preserved": true,
+      "added": 1033,
+      "actual_sha256": "8b013ee4804704c6820b878425ecb105ac23f0a7e12a63358da4733d48c1e746"
+    },
+    {
+      "case": "im0319",
+      "profile": 2,
+      "words": 1572864,
+      "differences": 0,
+      "old_preserved": true,
+      "added": 1648,
+      "actual_sha256": "093b66e9aac0c74b335298d3b8b8eacae5fe7509f7419d318e0f16088d2b063c"
+    }
+  ],
+  "scope": "Captured numerical outputs and identity verified; visual quality separate; no independent GT accuracy claimed"
+}

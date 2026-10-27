@@ -1,0 +1,13 @@
+{
+  "status": "INTEGRATED_SIM_PASS",
+  "control_and_numeric": true,
+  "actual_reset_chain": true,
+  "full_top_elaborated": true,
+  "measurement": "RTL_SIMULATION",
+  "summary": [
+    "PRODUCTION_RESET_RELEASE_PASS actual_generated_reset_netlist=1 clock_ns=20",
+    "INTEGRATED_CONTROL_PASS AW/W/b/r",
+    "INTEGRATED_NUMERIC_DDR_PASS words=10998 cycles=9129564 reads=29050 writes=36660 stalls=160823"
+  ],
+  "top_sha256": "7c15786e5f7e0c18eb2d125b379307648f5408f27daf280f392b2d5663e1ce4f"
+}

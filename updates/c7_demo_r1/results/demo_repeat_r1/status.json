@@ -1,0 +1,15 @@
+{
+  "status": "OFFLINE_DEMO_READY_FOR_MANUAL_DEPLOYMENT",
+  "source_commit": "72406576187331566a209ffa9ab43911fe3e5148",
+  "branch": "c7-demo-repeatable",
+  "parent": "deef7cf",
+  "host_lifecycle_tests": 13,
+  "host_failures": 0,
+  "offline_notebook_runs": 2,
+  "immutable_inherited_files": 181,
+  "board_operations": 0,
+  "model_forwards": 0,
+  "algorithm_changes": 0,
+  "WEB_LIFECYCLE_BOARD_STATUS": "NOT_RUN",
+  "LATENCY_TARGET_UNSET": true
+}

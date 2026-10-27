@@ -1,0 +1,40 @@
+{
+  "status": "SAME_BUILD_BIT_GENERATED",
+  "seconds": 69.27715209999587,
+  "command": [
+    "E:/vivado/Vivado/2017.4/bin/vivado.bat",
+    "-mode",
+    "batch",
+    "-notrace",
+    "-source",
+    "D:\\PLD\\retina_c7_single_image_repair\\single_repair\\hardware\\write_bit_r2.tcl",
+    "-log",
+    "D:/PLD/tmp/single_repair_resetfix_bit_tool.log",
+    "-journal",
+    "D:/PLD/tmp/single_repair_resetfix_bit.jou"
+  ],
+  "bit": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r2\\single_repair_release.bit",
+    "bytes": 4045681,
+    "sha256": "4ba1b128149e53fae000d803c03de071fe4d277a7a08d5ed1b9886a2a3cc26c0"
+  },
+  "hwh": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r2\\single_repair.srcs\\sources_1\\bd\\single_repair\\hw_handoff\\single_repair.hwh",
+    "bytes": 223177,
+    "sha256": "b66a0f913ecd9f282c575676c6fe5c7284427e265a11990200f8f5a1c6380274"
+  },
+  "dcp": {
+    "path": "D:\\PLD\\tmp\\single_repair_design_r2\\single_repair.runs\\impl_1\\single_repair_wrapper_routed.dcp",
+    "bytes": 3817118,
+    "sha256": "f04e933eb536385244fba6d4fd43a0031ef43ad78608ba9625dfbf893fed6b04"
+  },
+  "log": {
+    "path": "D:\\PLD\\single_repair_resetfix_write_bit.log",
+    "bytes": 23384,
+    "sha256": "d116ff75d1bf31e3abcb595ac99387db59fa3b92ad535c35e01b4266c2a81674"
+  },
+  "hardware_operations": 0,
+  "physical_builds": 2,
+  "previous_release": "results/single_repair_r1/release_bit_r2.json",
+  "repair": "Second physical build corrects auxiliary reset constant only; same frozen algorithm and HLS core."
+}

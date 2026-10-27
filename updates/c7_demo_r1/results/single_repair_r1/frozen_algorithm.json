@@ -1,0 +1,52 @@
+{
+  "schema": "single-image-vessel-valley-v1",
+  "selected": "v08",
+  "config": {
+    "mode": "valley",
+    "length": 6,
+    "widths": [
+      2,
+      4,
+      6
+    ],
+    "low": 2,
+    "high": 4,
+    "ridge_tolerance": 2,
+    "grow_steps": 16,
+    "min_support": 8,
+    "fraction": true,
+    "anisotropy": 1
+  },
+  "input_sha256": "56f783f220f88534becaf4d7c0e9fa37ba88dd2b3b36cdbe36655c3965898b7b",
+  "reference_sha256": "01d1feb3943645be4ec4b5a9439dbda8a2f0fae724c6c9700159039635bcc47b",
+  "source_sha256": "9a6137e5a25bc118e0331ee3606d0a290a319e283c0b618fc4efa359ca84ef31",
+  "inputs": [
+    "RGB uint8",
+    "old_mask bool",
+    "FOV bool"
+  ],
+  "manual_hints": false,
+  "regional_inference_parameters": false,
+  "output": "old_mask OR added_mask",
+  "GT_used": false,
+  "board_operations": 0,
+  "software_candidates": 11,
+  "physical_builds": 0,
+  "numeric": {
+    "green_binomial_sum": "unsigned12 Q4, no rounding before response",
+    "line_sum": "unsigned16 max53040",
+    "score": "signed32 during subtraction; nonnegative result",
+    "offsets": "fixed rounded integer geometry, ties to even from Python generation",
+    "threshold_scale": 208,
+    "border": "image-edge replication for samples; additions restricted to 25x25 all-FOV; outside FOV rejected",
+    "tie": "first direction wins strict >; orthogonal=(direction+4)%8",
+    "hysteresis": "16 synchronous 8-neighbor updates (not in-place raster growth)",
+    "support": "9x9 zero padded sum >=8"
+  },
+  "limits": [
+    "Single image visually reviewed, not independent annotated validation.",
+    "Faint vessel ends and low-contrast intersection interiors remain uncertain and may be absent.",
+    "Old C7 false labels retained by explicit add-only requirement.",
+    "No claim of per-pixel accuracy, complete topology safety or clinical annotation validity."
+  ]
+}

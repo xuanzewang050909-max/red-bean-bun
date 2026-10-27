@@ -1,0 +1,14 @@
+{
+  "status": "DELIVERY_SEAL_VERIFIED",
+  "manifest": {
+    "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\delivery_manifest.json",
+    "bytes": 9409,
+    "sha256": "4c2e5b2647849cae79198dade1378e11c36f9802d2e0c53e153f4039c0cea060"
+  },
+  "release": {
+    "path": "D:\\PLD\\review_packages\\C7_Web_FourImage_r4_release\\C7_Web_FourImage_r4.zip",
+    "bytes": 21662847,
+    "sha256": "9b6040142a0333792cf58f273a92629bd59c64aea83a6abe145d4bf8b33e03f7"
+  },
+  "WEB_BOARD_STATUS": "NOT_RUN"
+}

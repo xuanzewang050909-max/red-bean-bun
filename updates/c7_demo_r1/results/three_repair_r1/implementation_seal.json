@@ -1,0 +1,52 @@
+{
+  "schema": "fixed-three-image-core-v1",
+  "implementation_commit": "e0053aae5a7fbcd257f3832e5cd50b6a63ab563c",
+  "files": [
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\three_repair\\reference.py",
+      "bytes": 3781,
+      "sha256": "3637a1728f528efda8019ba9d9fa1523356a7c1341b26a99ff24808ff378a8c4"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\three_repair\\candidates.py",
+      "bytes": 5533,
+      "sha256": "2ca7732ed0ee7d62c7f85ad84641cea70b544d98f1263a921aea48aa33e405ec"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\three_repair\\run_frozen.py",
+      "bytes": 1346,
+      "sha256": "c35d19069995941ba922ddc50ff5463c51518b33a2d36b04bd063be3909eb1a7"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\three_repair\\hardware\\repair.cpp",
+      "bytes": 6099,
+      "sha256": "366373732840a372d1bcd60dbaa30c371a713f4ec3e9c5bc0e0dcf3e50320028"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\three_repair\\hardware\\geometry.hpp",
+      "bytes": 2331,
+      "sha256": "b99f4301884a9818c60aa7e4dab950894095bed40c10c5287957cf7955726448"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\frozen_algorithm.json",
+      "bytes": 3893,
+      "sha256": "1b80a76fbbb4e248654916ed1a54d295ee5d1567dc04e574d44b135c7f9fab39"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\selected\\im0004\\arrays.npz",
+      "bytes": 683157,
+      "sha256": "76b90574165ea15623781b34b5f7164be471fab4dcad6cb971e6bcff8d1ba59b"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\selected\\im0291\\arrays.npz",
+      "bytes": 674922,
+      "sha256": "6ae2613a531d19f9023a0a1c8d336d9e75b130e89f511cdc71fbd3408efd8af7"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\selected\\im0319\\arrays.npz",
+      "bytes": 672028,
+      "sha256": "dfc4fdcf5217e5d092b02cde7665fa224975765c48da76d90d62b5035fab9aeb"
+    }
+  ],
+  "board_operations": 0
+}

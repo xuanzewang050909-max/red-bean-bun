@@ -1,0 +1,156 @@
+{
+  "parent_commit": "4d33090",
+  "task": {
+    "path": "C:\\Users\\Gabriel\\Downloads\\CODEX_ThreeImage_VesselCompletion_PreBoard.md",
+    "bytes": 11885,
+    "sha256": "1c10f5ed8354d2bc126dd550716b590ac462a65f7f23f60ba0283b854cca7f45"
+  },
+  "index": {
+    "path": "D:\\PLD\\retina_c7_isolated_recovery\\results\\atomic_bridge_quality_repair_r1\\output_index.json",
+    "bytes": 270515,
+    "sha256": "ae25ed56fbb576ac834a7cc0c45be9024f07a1830b6509741d92042cb7c5d149"
+  },
+  "web_manifest": {
+    "path": "D:\\PLD\\retina_c7_system\\build\\deploy\\c7_showcase_ui_r2\\package\\browser_manifest.json",
+    "bytes": 86466,
+    "sha256": "3801ccb53a68a6e3293ac9413dd2805a824a42d1c4f429b80b323be420b88388"
+  },
+  "frames": [
+    {
+      "id": "im0004",
+      "processing_shape": [
+        512,
+        512
+      ],
+      "source": {
+        "bytes": 791032,
+        "path": "D:\\PLD\\retina_c7_structured_refine\\build\\c7_structured_refine_r1\\pairs\\im0004_512.npz",
+        "sha256": "70928396ffd20376cf86fc7dcdfbf2d787039aff8cb414c38d92fa208252a30c"
+      },
+      "web_input": {
+        "path": "D:\\PLD\\retina_c7_system\\build\\deploy\\c7_showcase_ui_r2\\package\\inputs\\im0004_512.npy",
+        "bytes": 1048704,
+        "sha256": "67d338170cbd5a0c397505d42b6510a0558982b57f8ebf1ac97ab9e537957693"
+      },
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "input": {
+        "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\input\\im0004.npz",
+        "bytes": 1226398,
+        "sha256": "faff2ec789258cff96573888208b9ca9235ae9b914534c327671c802b823f6fc"
+      },
+      "original_mask_pixels": 4008,
+      "display_unpack": "M7 = output[23:16] != 0, exact T112/FOV match",
+      "input_mapping": "existing packed RGB/FOV used unchanged; no rotation, new scaling or channel swap",
+      "historical_role": "REUSED_EVAL",
+      "current_role": "three-image targeted visual development only"
+    },
+    {
+      "id": "im0291",
+      "processing_shape": [
+        512,
+        512
+      ],
+      "source": {
+        "bytes": 863448,
+        "path": "D:\\PLD\\retina_c7_structured_refine\\build\\c7_structured_refine_r1\\pairs\\im0291_512.npz",
+        "sha256": "2535e43759ea3f164854f8033d29c5049952402867b7f5c899d356207627e45d"
+      },
+      "web_input": {
+        "path": "D:\\PLD\\retina_c7_system\\build\\deploy\\c7_showcase_ui_r2\\package\\inputs\\im0291_512.npy",
+        "bytes": 1048704,
+        "sha256": "dcf44539e9e7751098b8a46c65d126270425afa174448a762de019c35f334296"
+      },
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "input": {
+        "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\input\\im0291.npz",
+        "bytes": 1357001,
+        "sha256": "60bfcc64499361c65e38f35f377f9e843d45ddf935e15c22f7d25dce8ab48be4"
+      },
+      "original_mask_pixels": 5909,
+      "display_unpack": "M7 = output[23:16] != 0, exact T112/FOV match",
+      "input_mapping": "existing packed RGB/FOV used unchanged; no rotation, new scaling or channel swap",
+      "historical_role": "REUSED_EVAL",
+      "current_role": "three-image targeted visual development only"
+    },
+    {
+      "id": "im0319",
+      "processing_shape": [
+        512,
+        512
+      ],
+      "source": {
+        "bytes": 757515,
+        "path": "D:\\PLD\\retina_c7_structured_refine\\build\\c7_structured_refine_r1\\pairs\\im0319_512.npz",
+        "sha256": "c34d6da3683aecd36907fa9ba375ba5830e2c9be44828b04faa87f7c0aa219ca"
+      },
+      "web_input": {
+        "path": "D:\\PLD\\retina_c7_system\\build\\deploy\\c7_showcase_ui_r2\\package\\inputs\\im0319_512.npy",
+        "bytes": 1048704,
+        "sha256": "492f2928fd82058ca82f82b052b10a6a0f545b988afce7e7678a9461e0d25b65"
+      },
+      "geometry": {
+        "source_width": 700,
+        "source_height": 605,
+        "size": 512,
+        "nominal_scale": 0.7314285714285714,
+        "resized_width": 512,
+        "resized_height": 443,
+        "pad_left": 0,
+        "pad_top": 34,
+        "pad_right": 0,
+        "pad_bottom": 35,
+        "effective_scale_x": 0.7314285714285714,
+        "effective_scale_y": 0.7322314049586777,
+        "image_interpolation": "OpenCV INTER_LINEAR",
+        "mask_interpolation": "OpenCV INTER_NEAREST_EXACT",
+        "inverse_pixel_center": "x=(dst_x-left+0.5)*source_width/resized_width-0.5; y likewise",
+        "fov_definition": "RGB max>20, largest 8-component, holes filled; resized then 7x7 erosion"
+      },
+      "input": {
+        "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_repair_r1\\input\\im0319.npz",
+        "bytes": 1128663,
+        "sha256": "4e148b230843bb3e8283806814c9d1c44a1d567faabc4edf18e39b5704495596"
+      },
+      "original_mask_pixels": 5130,
+      "display_unpack": "M7 = output[23:16] != 0, exact T112/FOV match",
+      "input_mapping": "existing packed RGB/FOV used unchanged; no rotation, new scaling or channel swap",
+      "historical_role": "CAL",
+      "current_role": "three-image targeted visual development only"
+    }
+  ],
+  "board_operations": 0
+}

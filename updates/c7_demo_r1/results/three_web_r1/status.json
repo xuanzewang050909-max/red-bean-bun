@@ -1,0 +1,36 @@
+{
+  "status": "C7_THREE_IMAGE_WEB_READY_FOR_MANUAL_UPDATE",
+  "C7_NAME": "C7",
+  "IMAGE_PANELS": 4,
+  "THREE_IMAGE_BOARD_NUMERIC": "VERIFIED_6_OF_6",
+  "WEB_SOFTWARE": "HOST_TESTS_AND_BROWSER_PASS",
+  "WEB_COMBINED_BOARD": "NOT_RUN",
+  "targets": [
+    "im0004",
+    "im0291",
+    "im0319"
+  ],
+  "preserved_optimization": "im0324",
+  "side": 512,
+  "mode": "final",
+  "threshold": 112,
+  "model_training": 0,
+  "model_forwards": 0,
+  "physical_builds": 0,
+  "board_operations_this_task": 0,
+  "LATENCY_TARGET": "UNSET",
+  "code_commit": "b79b56aa4eb00de62e7c443b2599b9d9a73b1d5f",
+  "release": {
+    "status": "OFFLINE_WEB_INTEGRATION_READY_FOR_MANUAL_DEPLOYMENT",
+    "WEB_BOARD_STATUS": "NOT_RUN",
+    "zip": {
+      "path": "D:\\PLD\\review_packages\\C7_Web_ThreeImage_r1_release\\C7_Web_ThreeImage_r1.zip",
+      "bytes": 21660113,
+      "sha256": "a56545a26de8520bac556d062adc096808e45198c7388aa6559509a62fad8c08"
+    },
+    "notebook": {
+      "path": "D:\\PLD\\review_packages\\C7_Web_ThreeImage_r1_release\\C7_Web_ThreeImage_r1.ipynb",
+      "sha256": "f5d125a2813077d1345ced798f343063be4cdf3ecf482acd38e30370de64ae82"
+    }
+  }
+}

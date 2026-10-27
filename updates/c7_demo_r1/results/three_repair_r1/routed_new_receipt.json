@@ -1,0 +1,20 @@
+{
+  "status": "ROUTED_RESET_EXPECTATION_VERIFIED",
+  "mode": "new",
+  "actual_routed_cell": {
+    "path": "D:\\PLD\\tmp\\three_repair_design_r1\\routed_reset.v",
+    "bytes": 23152,
+    "sha256": "a94c9d7d34366ab38e47affec53e1bc17fc4cb187bf80301c7627bad61e970e6"
+  },
+  "testbench": {
+    "path": "D:\\PLD\\tmp\\three_repair_routed_reset_new\\routed_reset_tb.sv",
+    "bytes": 735,
+    "sha256": "01906935d73e888aa19ed57474597135a932e948cad5a2cfc5796ff9ee17c52c"
+  },
+  "released_after_external_reset": true,
+  "tested_production_output": "peripheral_aresetn; optimized unused outputs not claimed",
+  "clock_ns": 20,
+  "cycles_limit": 2000,
+  "simulation": "FUNCTIONAL_ROUTED_CELL; no SDF, STA checked separately",
+  "board_operations": 0
+}

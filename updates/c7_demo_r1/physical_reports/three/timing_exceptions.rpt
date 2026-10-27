@@ -1,0 +1,20 @@
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2017.4 (win64) Build 2086221 Fri Dec 15 20:55:39 MST 2017
+| Date         : Wed Oct 28 01:54:11 2026
+| Host         : LAPTOP-DPJT23TC running 64-bit major release  (build 9200)
+| Command      : report_exceptions -file D:/PLD/tmp/three_repair_design_r1/timing_exceptions.rpt
+| Design       : single_repair_wrapper
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-------------------------------------------------------------------------------------------------
+
+Exceptions Report
+
+Position  From            Through                                            To                           Setup           Hold            Status           
+--------  --------------  -------------------------------------------------  ---------------------------  --------------  --------------  -----------------
+3         *               *                                                  [get_pins -hier *cdc_to*/D]  false           false           Invalid endpoint 
+4         *               [get_ports -scoped_to_current_instance src_arst]   [all_registers]              false           false           
+5         *               [get_ports -scoped_to_current_instance src_arst]   [all_registers]              false           false           
+6         *               [get_ports -scoped_to_current_instance src_arst]   [all_registers]              false           false           
+

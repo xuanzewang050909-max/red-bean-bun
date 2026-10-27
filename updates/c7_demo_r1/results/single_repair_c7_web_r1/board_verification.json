@@ -1,0 +1,5 @@
+{
+  "status": "SINGLE_IMAGE_BOARD_NUMERIC_VERIFIED",
+  "capture_zip_sha256": "96471b03ad184a495b860ece15fa151b97f0637026bab0b3ab19015d51ebb595",
+  "quality": "Single-image visual review only; no independent GT accuracy claim"
+}

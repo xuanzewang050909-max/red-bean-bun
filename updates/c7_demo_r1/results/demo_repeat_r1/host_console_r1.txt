@@ -1,0 +1,98 @@
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62666
+Executing <Task pending name='Task-2' coro=<LifecycleTests.test_busy_start_idempotent_and_stop_refused() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:103> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.297 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62666/
+Session: c980a217cc5a41fd90160dae27479db9
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\c980a217cc5a41fd90160dae27479db9\exports\HOST_TEST_browser_session_c980a217cc5a41fd90160dae27479db9.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62671
+Executing <Task pending name='Task-10' coro=<LifecycleTests.start() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:83> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[gather.<locals>._done_callback() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\tasks.py:767] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\tasks.py:695> took 0.219 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62671/
+Session: 6931077413a54844879a31b44fbc1707
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\6931077413a54844879a31b44fbc1707\exports\HOST_TEST_browser_session_6931077413a54844879a31b44fbc1707.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62678
+Executing <Task pending name='Task-18' coro=<LifecycleTests.test_export_snapshots_do_not_overwrite() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:177> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.312 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62678/
+Session: d1de683b19f64c7b8a06c1167a9619ad
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\d1de683b19f64c7b8a06c1167a9619ad\exports\HOST_TEST_browser_session_d1de683b19f64c7b8a06c1167a9619ad.zip
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\d1de683b19f64c7b8a06c1167a9619ad\exports\HOST_TEST_browser_session_d1de683b19f64c7b8a06c1167a9619ad.zip
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\d1de683b19f64c7b8a06c1167a9619ad\exports\HOST_TEST_browser_session_d1de683b19f64c7b8a06c1167a9619ad.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62683
+Executing <Task pending name='Task-25' coro=<LifecycleTests.test_fault_preserved_export_allowed_no_reload() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:111> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.328 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62683/
+Session: 161b87982b2b4bcf83a456c6be933521
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\161b87982b2b4bcf83a456c6be933521\exports\HOST_TEST_browser_session_161b87982b2b4bcf83a456c6be933521.zip
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62691
+Executing <Task pending name='Task-37' coro=<LifecycleTests.test_new_boot_keeps_prior_unfinished_records() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:127> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.313 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62691/
+Session: e8ce8eb8021142488d6f0fc84224af53
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62691
+Executing <Task pending name='Task-37' coro=<LifecycleTests.test_new_boot_keeps_prior_unfinished_records() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:132> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.297 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62691/
+Session: c8bd2ca3c2574dd5a564b25e3205b095
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\c8bd2ca3c2574dd5a564b25e3205b095\exports\HOST_TEST_browser_session_c8bd2ca3c2574dd5a564b25e3205b095.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62697
+Executing <Task pending name='Task-44' coro=<LifecycleTests.test_normal_repeat_actual_server_export_and_unique_records() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:86> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.313 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62697/
+Session: 52f09bb73a154629bf91a18ed214565b
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\52f09bb73a154629bf91a18ed214565b\exports\HOST_TEST_browser_session_52f09bb73a154629bf91a18ed214565b.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62697
+Executing <Task pending name='Task-44' coro=<LifecycleTests.test_normal_repeat_actual_server_export_and_unique_records() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:96> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.234 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62697/
+Session: 1b7a93b91e8747b7b38f9aaa2da25f69
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\1b7a93b91e8747b7b38f9aaa2da25f69\exports\HOST_TEST_browser_session_1b7a93b91e8747b7b38f9aaa2da25f69.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+Executing <Task finished name='Task-54' coro=<LifecycleTests.test_open_demo_keeps_live_object_and_immutable_file_guard() done, defined at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:169> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.875 seconds
+Executing <Task finished name='Task-59' coro=<LifecycleTests.test_owner_conflict_blocks_before_prepare() done, defined at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:182> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.563 seconds
+Executing <Task finished name='Task-64' coro=<LifecycleTests.test_port_busy_never_calls_hardware_prepare_or_open() done, defined at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:151> result=None created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.765 seconds
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62713
+Executing <Task pending name='Task-69' coro=<LifecycleTests.test_same_boot_lost_python_context_blocks_before_prepare() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:121> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.687 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62713/
+Session: 05bf1890683b417d92b8dd294847e176
+Executing <Task pending name='Task-69' coro=<LifecycleTests.test_same_boot_lost_python_context_blocks_before_prepare() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:124> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.469 seconds
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\05bf1890683b417d92b8dd294847e176\exports\HOST_TEST_browser_session_05bf1890683b417d92b8dd294847e176.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62718
+Executing <Task pending name='Task-76' coro=<LifecycleTests.test_start_failure_preservation_and_no_retry() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:139> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.656 seconds
+BROWSER_PRECHECK_PASS: paired Q4d hashes/runtime/metadata checked; FPGA unchanged
+Runtime: {'numpy': '2.5.4', 'Pillow': '12.3.0', 'tornado': '6.5.10', 'evidence_kind': 'HOST_TEST_DOUBLE_NOT_BOARD'}
+Port reserved: 62718
+Executing <Task pending name='Task-76' coro=<LifecycleTests.test_start_failure_preservation_and_no_retry() running at D:\PLD\retina_c7_staged_web\three_web\demo\test_demo.py:147> wait_for=<Future pending cb=[_chain_future.<locals>._call_check_cancel() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\futures.py:389, Task.task_wakeup()] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:448> cb=[_run_until_complete_cb() at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\base_events.py:181] created at C:\Users\Gabriel\.cache\codex-runtimes\codex-primary-runtime\dependencies\python\Lib\asyncio\runners.py:100> took 0.719 seconds
+BROWSER_SERVICE_READY: C7; im0004/im0291/im0319/im0324 at512/final/T112 use live PL targeted refinement; no frame sent yet
+Open http://127.0.0.1:62718/
+Session: 5df88f9ee5594f9a8e889befc430df14
+BROWSER_RECORDS_READY: D:\PLD\retina_c7_staged_web\build\deploy\C7_Demo_host_r1\payload\app\browser_results\5df88f9ee5594f9a8e889befc430df14\exports\HOST_TEST_browser_session_5df88f9ee5594f9a8e889befc430df14.zip
+BROWSER_SERVICE_CLOSED_IDLE: native buffers already released; original records retained
+{"tests": 13, "failures": 0, "errors": 0, "status": "PASS_HOST_ONLY", "actual_board_operations": 0, "model_forwards": 0, "image_frames": 0, "scope": "Actual original launch/HTTP/Manager/export with hardware and Linux lock/boot test doubles"}

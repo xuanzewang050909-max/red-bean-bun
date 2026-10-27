@@ -1,0 +1,7 @@
+{
+  "purpose": "Pre-registered inspection crops only; never provided to inference",
+  "coordinates": "existing 512x512 image x0,y0,x1,y1",
+  "im0004": {"lower_right": [260,260,460,430], "upper_centre": [110,125,315,240], "left_centre": [25,180,210,310]},
+  "im0291": {"lower_fan": [140,315,400,440], "right_branches": [310,180,480,330], "upper_branches": [130,70,360,200]},
+  "im0319": {"right_lower": [275,240,465,405], "middle_gap": [120,215,325,330], "upper_middle": [200,140,445,245]}
+}

@@ -1,0 +1,52 @@
+{
+  "status": "READY_FOR_BOARD_AUTHORIZATION",
+  "SOFTWARE": "THREE_IMAGE_VISUAL_REPAIR_REVIEWED_WITH_LIMITATIONS",
+  "INTEGER": "EXACT_15_CASES",
+  "RTL": "EXACT_15_CASES",
+  "INTEGRATION": "GENERATED_CONTROL_DDR_RESET_PASS",
+  "ROUTE": "PASS",
+  "RELEASE": "SAME_BUILD_PASS",
+  "DRC": "0_ERRORS_0_CRITICAL_24_REVIEWED_WARNINGS",
+  "BOARD": "BOARD_NOT_RUN",
+  "LATENCY_TARGET": "UNSET",
+  "images": [
+    {
+      "id": "im0004",
+      "old": 4008,
+      "added": 3812,
+      "final": 7820,
+      "uncertain": 2288,
+      "old_deleted": 0
+    },
+    {
+      "id": "im0291",
+      "old": 5909,
+      "added": 1033,
+      "final": 6942,
+      "uncertain": 4050,
+      "old_deleted": 0
+    },
+    {
+      "id": "im0319",
+      "old": 5130,
+      "added": 1648,
+      "final": 6778,
+      "uncertain": 5573,
+      "old_deleted": 0
+    }
+  ],
+  "software_configurations": 13,
+  "physical_builds": 1,
+  "model_training": 0,
+  "model_forwards": 0,
+  "board_operations": 0,
+  "gt_loaded": false,
+  "manual_hints": false,
+  "implementation_commit": "764a28bd740cf0404e6701d4215688276eb0a84e",
+  "limitations": [
+    "Targeted three-image settings; no independent GT accuracy or complete topology guarantee",
+    "Faint central branches and far ends remain incomplete; im0291 radial texture deliberately not fully selected",
+    "Native-resolution texture mapped into existing512 letterbox; no live web or board update in this task",
+    "DRC warnings and reset-aborts-invalid-data restrictions remain explicit; board timing not measured"
+  ]
+}

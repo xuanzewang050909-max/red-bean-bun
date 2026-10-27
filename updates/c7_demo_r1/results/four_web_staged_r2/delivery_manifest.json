@@ -1,0 +1,221 @@
+{
+  "source_commit": "44b488860d5582f1cbeb4ac72142f4c395ae38d7",
+  "files": [
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\build\\deploy\\C7_Web_FourImage_r4\\browser_manifest.json",
+      "bytes": 96231,
+      "sha256": "a591d483f86fb1dc16a8e0b71048470e8f365c8d8a0af5f700b4321dfbdef382"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\build\\preview\\im0324_staged_r4\\HOST_browser_session.zip",
+      "bytes": 5751888,
+      "sha256": "00ec11218cbd61cdddc64946f9088be6499adafb75b9118c13ed1cd4de644bf4"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\build\\preview\\im0324_staged_r4\\HOST_original_only.zip",
+      "bytes": 1752891,
+      "sha256": "a00b06c8156097e231a136ad1386f4871ccfcc5a00c8c169ee00c20dc56a902e"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\browser_check.json",
+      "bytes": 2293,
+      "sha256": "68abd47b99443076722a8ecbb04c84755affcab1c8c722e5469bb9d690567b25"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\browser_independent_verification.json",
+      "bytes": 716,
+      "sha256": "98f6a28ba6ebb0c4c9e6b8c31a953fa77d4be603472f2cfd55e9b03c894e38a3"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\four_web_im0324_affected_tests_r1.log",
+      "bytes": 2997,
+      "sha256": "47413796ab9d14c5eb1ddb002c80a7e5fc599614feffd3ec3e74fb835c96b22b"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\four_web_im0324_affected_tests_r2.log",
+      "bytes": 990,
+      "sha256": "f25e7c805dc417567f43b18f5b93e30056ed01b4e26cf87ae6222dc521cbc5c1"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\four_web_im0324_browser_r4.log",
+      "bytes": 6855,
+      "sha256": "fb949bc2b758dbebe586bf2b9cd97148cf641ce049c86380a09b561d97399d26"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\im0324_improved_desktop.png",
+      "bytes": 394973,
+      "sha256": "99b7907b4c98300021eeb8cefef38a8d1cc152272ea8a5261d2c3ad87cd38d51"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\im0324_original_desktop.png",
+      "bytes": 379490,
+      "sha256": "756b4bc328749014d9b7ceb10d42b6825496c0307c29965e5d372d325d88c8a7"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\notebook_offline_verification.json",
+      "bytes": 249,
+      "sha256": "195ba80b531e01545d581a21e2981f1ff6dad8c2447a442f08fc83de49ffcd89"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\original_export_verification.json",
+      "bytes": 459,
+      "sha256": "c3f28752749ac6a219b92be8cc7ea33229d843f2659fca3df861f6ea7b781ad6"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\preserved_artifacts.json",
+      "bytes": 27094,
+      "sha256": "6fe198224c7f4db992c02eeda1c81b71d3693d4cd830bcf3fbbf0cf406455e53"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\release_reference.json",
+      "bytes": 528,
+      "sha256": "76d8fd9e4b15535e879aef3369fcc916b29d7e8118e0ac96f52b506f5789d0d2"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\report.md",
+      "bytes": 1832,
+      "sha256": "355c8fa26d70b859f1d33cb329130d9eb264358c7d640b6d3338fcff1abe962c"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\results\\four_web_staged_r2\\status.json",
+      "bytes": 647,
+      "sha256": "5265a360f88d5a10e72fb10eb7fec1ce0dd2732f027df5b462a4ad1ffdf8df67"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\AGENTS.md",
+      "bytes": 749,
+      "sha256": "15a3ff8ddcd932cb6d9025fdc938c5d0fbf9cd3853cec704643c91c543130abb"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\browser_check.js",
+      "bytes": 3899,
+      "sha256": "323eb7afdae5ed794a03837b57d7a261f33ffc2cce26d79971543d2b5b574267"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\browser_check_im0324.js",
+      "bytes": 4599,
+      "sha256": "6e24b01fff289f04e37efdac5ba8532a2eaa6313b06dde5cd02685ec4cf216ed"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\build_web.py",
+      "bytes": 3126,
+      "sha256": "46464481b77ddd645885f1cac41ffe7e464764f2726d57752a62150e8b7c37c0"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\integration.json",
+      "bytes": 4986,
+      "sha256": "091d67c43698bf865553d3138e4be65ffb2edf3772c2065c7b97009f0b6bfe75"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\__init__.py",
+      "bytes": 85,
+      "sha256": "86b97c9eec59959fbf4265f877fd13fb8e75306dd0dd854285a5a869b7f8fa6f"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\evaluation.py",
+      "bytes": 1912,
+      "sha256": "63119108f0a8e264343b73fa9efbfb1f952fff492631bd857f4c0ac23f978e9a"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\hardware.py",
+      "bytes": 12913,
+      "sha256": "5b7662c7f9010ce918dd77cfcf59734b0aa95032bf2884b2cd5f71f119a18770"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\launch.py",
+      "bytes": 4755,
+      "sha256": "531d47ef7aa7a1727e00a089e6b27864995ed94bcf4723d843f531aebab3a5c7"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\protocol.py",
+      "bytes": 7761,
+      "sha256": "c3356af791826621ebec0567df0ad6d01edfede3f1f3a0e1ea2f4d29f7ce7ee5"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\quality_observer.py",
+      "bytes": 5088,
+      "sha256": "b3321acdb8d8cc961e32c0d36cf530093477346bf98cbbcf2190ebc94eb81086"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\service.py",
+      "bytes": 37995,
+      "sha256": "9bc255a7a5e0b7799446dbfb7c8ffa956af5a921706d3d285b266a50b7e0ef65"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\pynq_showcase\\single_image.py",
+      "bytes": 12784,
+      "sha256": "7a2caee47be497c7446a65e0f0be4d1aaef19ee27c899a7567f7d992f91e251e"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\ui\\app.js",
+      "bytes": 22989,
+      "sha256": "931e06310bcc3c25a6d26775f126895818748d8a8d066d0d1e88788e70fac3ce"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\ui\\index.html",
+      "bytes": 10011,
+      "sha256": "54b166877fbb20c8634d679f16358209bd0bc7ff5adf65d62630e86d64a36fc2"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\c7_web\\ui\\style.css",
+      "bytes": 11702,
+      "sha256": "c27c846a638cd3745126ca3f3c36ec223eec58c20b67ab0c7d170ea905736a5c"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\host_preview.py",
+      "bytes": 1649,
+      "sha256": "422a3c18762fd8644f6e02e665bd339b9a4432749c317e0fea6e4276c7bd3369"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\package_web.py",
+      "bytes": 9125,
+      "sha256": "f41ca451b700211983d4965e75cc8ce2043c8e7a10ab89e5ec653b1336e8e285"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\README.md",
+      "bytes": 2504,
+      "sha256": "d518d8c30d29ece0fcc288b277558540fdcd148f18bd8a98712fc88d798b01fd"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\test_web.py",
+      "bytes": 25168,
+      "sha256": "baa9dbc728ae05adb1cb8ca67e3d48e4e67df7613956ed6344e9b71fa6548ca0"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\verify_download.py",
+      "bytes": 9022,
+      "sha256": "07dd839eeb8aa17e7834fbd2792cea9bc54c73128842c5a2530777429d5ab6cd"
+    },
+    {
+      "path": "D:\\PLD\\retina_c7_staged_web\\three_web\\更新步骤.md",
+      "bytes": 3303,
+      "sha256": "5e6cc1f22f3a7394d8255ea8ee63466e1f2afdec9991b2f6c75b0fe229fc6509"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Web_FourImage_r4_release\\C7_Web_FourImage_r4.ipynb",
+      "bytes": 8679,
+      "sha256": "ae782f7efe17f281f22742646c752be1686bef594abcf9cdc412901dbe69846b"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Web_FourImage_r4_release\\C7_Web_FourImage_r4.zip",
+      "bytes": 21662847,
+      "sha256": "9b6040142a0333792cf58f273a92629bd59c64aea83a6abe145d4bf8b33e03f7"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Web_FourImage_r4_release\\C7_Web_FourImage_r4.zip.sha256",
+      "bytes": 91,
+      "sha256": "107f36618d7a4bb126a93719c187b1be4d65ce5183eaef9ada63832683875d1e"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Web_FourImage_r4_release\\release_receipt.json",
+      "bytes": 528,
+      "sha256": "76d8fd9e4b15535e879aef3369fcc916b29d7e8118e0ac96f52b506f5789d0d2"
+    },
+    {
+      "path": "D:\\PLD\\review_packages\\C7_Web_FourImage_r4_release\\操作步骤.md",
+      "bytes": 3303,
+      "sha256": "5e6cc1f22f3a7394d8255ea8ee63466e1f2afdec9991b2f6c75b0fe229fc6509"
+    }
+  ],
+  "scope": "Closed files, no board operations; original PL bytes unchanged"
+}

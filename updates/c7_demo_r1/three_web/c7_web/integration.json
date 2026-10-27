@@ -1,0 +1,96 @@
+{
+  "schema": "c7-targeted-images-web-v1",
+  "algorithm_name": "C7",
+  "annotation": "此图已专项优化",
+  "side": 512,
+  "threshold": 112,
+  "mode_code": 3,
+  "targets": {
+    "im0004": {
+      "image_id": "im0004",
+      "profile": 0,
+      "payload": "refinement",
+      "implementation": "three-image-vessel-completion-v1",
+      "input_word_sha256": "6fd3926203498f6986ccc602fa1a5a780176edcbcc11cc917c503391f17dea52",
+      "c7_output_word_sha256": "5ed92971ac4ef76c41fc0cf5f5c87c9a813b56b00af2ef670522319da4b0641a",
+      "refinement_input_raw_sha256": "647d9247b713d315554dfa6a20427210d8850725ce97880947888335791a3f4a",
+      "expected_workspace_raw_sha256": "eb6bb105e2f8dc2a47ab034e9886f99eec8e8a390b8b1cbc3c9c979ce02d6da9",
+      "expected_final_mask_raw_sha256": "b7f8a64ae082402fc157193777a199aa358a6062fb26318b3593260b0f7c70f0"
+    },
+    "im0291": {
+      "image_id": "im0291",
+      "profile": 1,
+      "payload": "refinement",
+      "implementation": "three-image-vessel-completion-v1",
+      "input_word_sha256": "38ae63c03cd1e2ebbb4995d809b8f8078e1837a628b12fb47c0c55d46f9737e0",
+      "c7_output_word_sha256": "4cd0d3c69c168498e0449aded6089277cb2134a6028d9010f22c9ed813d80c31",
+      "refinement_input_raw_sha256": "155abc497fcf69dd1606cf701f787ebb5f796fc84ba0a27f78c8def48ecfed9f",
+      "expected_workspace_raw_sha256": "c01347af2135e4277a36cea186935b2b6bef7a5ec9d3249a44d21d1a62d5fae4",
+      "expected_final_mask_raw_sha256": "b0618089107dccf1d614c778e5376125a3a24a74aa9104797d037220919f507b"
+    },
+    "im0319": {
+      "image_id": "im0319",
+      "profile": 2,
+      "payload": "refinement",
+      "implementation": "three-image-vessel-completion-v1",
+      "input_word_sha256": "37cbe7bf97565556e4661f70fb44063255d0ce384fc71ff66e345cd56ae41c44",
+      "c7_output_word_sha256": "81c6a3a7ef04f8de06748998778d2c42ed1560725017baf47835b34afe346bc6",
+      "refinement_input_raw_sha256": "cda6ab04fc4d948af6a1dedced91d73f37cea07942429508131a3c432d4ec2a6",
+      "expected_workspace_raw_sha256": "9033fdba88b4ba22312ce9a0ac2a2c9a43481fcce87e2ee74a6f0c92e315ba6a",
+      "expected_final_mask_raw_sha256": "335e17dce606c30c25abcd431812867f73537b69cc9ca1bb0c64eb68f9da3d61"
+    },
+    "im0324": {
+      "input_word_sha256": "a06d509bed95c572a7619b927c55e563936ce498f305c55d3362e25bba367811",
+      "c7_output_word_sha256": "67d7e20fc4ebd4c8258eb042a802ba91d9a2e7f9707ac3bb516d044c214175b1",
+      "refinement_input_raw_sha256": "73649f12150c84c9253fbd4daf8453c78491bee8066a10f7fee08cd83477df38",
+      "expected_workspace_raw_sha256": "96efabda1a91de13c292a2f07d6751a07c5b39a04e99c0884d7cb9a07c510bd2",
+      "expected_final_mask_raw_sha256": "669ab75f42beb1d9ffb9949351afce613e6d384fc5bb40a651cd29c019070a51",
+      "image_id": "im0324",
+      "profile": null,
+      "payload": "refinement_single",
+      "implementation": "single-image-vessel-valley-v1"
+    }
+  },
+  "baseline_web": {
+    "path": "D:\\PLD\\review_packages\\C7_Web_SingleImage_r2_release\\C7_Web_SingleImage_r2.zip",
+    "bytes": 16393622,
+    "sha256": "0b7c3183f5a32c82365b1fe46948bc483c20ce468a72d8b15d71b7524c090797"
+  },
+  "baseline_manifest": {
+    "path": "D:\\PLD\\retina_c7_system\\build\\deploy\\c7_showcase_ui_r2\\package\\browser_manifest.json",
+    "bytes": 86466,
+    "sha256": "3801ccb53a68a6e3293ac9413dd2805a824a42d1c4f429b80b323be420b88388"
+  },
+  "payload_manifests": {
+    "refinement": {
+      "path": "D:\\PLD\\review_packages\\C7_ThreeImage_Completion_Board_r1\\payload\\manifest.json",
+      "bytes": 7256,
+      "sha256": "047db42963e3c4b4f69fd0132e2da31b427629d993594e497b310db0bf55aa1b"
+    },
+    "refinement_single": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\manifest.json",
+      "bytes": 6139,
+      "sha256": "85575fadde1c84f3e188467d8b3310cce4aabb3ed3cf13c2a2e784bfb4bc4635"
+    }
+  },
+  "verified_board_capture": {
+    "path": "C:\\Users\\Gabriel\\Downloads\\three_image_board_results_r1.zip",
+    "bytes": 5488557,
+    "sha256": "43ba743bb9d086e0ffc57dbd63ffcbd61f9b116d33dc02828339552f3ab0a00e"
+  },
+  "board_verification": {
+    "path": "D:\\PLD\\retina_c7_three_image_completion\\results\\three_web_r1\\board_verification.json",
+    "bytes": 1891,
+    "sha256": "184c65b40908c5d04371141531b49bbb4d2a1b76632ba624ceb977492df7f987"
+  },
+  "preserved_im0324_capture": {
+    "path": "C:\\Users\\Gabriel\\Downloads\\single_image_board_results_r2.zip",
+    "bytes": 1636949,
+    "sha256": "96471b03ad184a495b860ece15fa151b97f0637026bab0b3ab19015d51ebb595"
+  },
+  "dispatch": "Exact live RGB/FOV bytes and original default C7 configuration; profile selects limited parameters, never a stored mask",
+  "runtime": "Original C7 PL100MHz -> live RGB/FOV/C7 mask -> selected verified refinement PL50MHz; next explicit request restores C7",
+  "no_ps_inference": true,
+  "web_board_status": "NOT_RUN",
+  "LATENCY_TARGET_UNSET": true
+}

@@ -1,0 +1,121 @@
+{
+  "schema": "single-image-board-package-v1",
+  "release_revision": "RESET_FIXED_R2",
+  "algorithm": "single-image-vessel-valley-v1",
+  "clock_mhz": 50,
+  "processing_shape": [
+    512,
+    512
+  ],
+  "hardware_release": "OFFLINE_PHYSICAL_GATES_PASS",
+  "board_status": "BOARD_NOT_RUN",
+  "implementation_commit": "bceea2e6bd16da2cfff9d9d7c9568c5a7b1ccea0",
+  "default_hardware_access": false,
+  "expected_arrays": "Host verification only; never written to PL",
+  "previous_manifest": {
+    "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r1\\payload\\manifest.json",
+    "bytes": 4164,
+    "sha256": "ab8f6996f39313b023044d3dd302849c1a4bd85d516949941c3e7031677d33b8"
+  },
+  "unchanged_payload_sha256": {
+    "board_run.py": "3d26e1f2b0ccde6f86da552df52c9b9b836f7ab0b3464bee0806295aa6a460f9",
+    "evidence_io.py": "499f488ca8bdc143ffecca731a408da6f5e84cb8feaef479e4582d23bbebcebf",
+    "frozen_algorithm.json": "4e1969b45af1640e2d4bf8d719ab8abc53eb409c5a3ce1f20bc8d40f437888de",
+    "input_source_manifest.json": "2eadcc9dae34d4f5af34b91e703616b7ef496ebf75b5cc52d79be8982efd7c1e",
+    "native_expected.npy": "a804070ad4c1561e45388fd7a06187aa0cfb6a201c2a837dfa62fffa77f147a7",
+    "native_input.npy": "870c71344b078d59a14c612907daa418a6c032c018011f95202b0d0c5cdb1bc9",
+    "refinement_clock_contract.py": "412ba79980d8d5dcb0e56005829af37e201127b3ddd5aad99c88b2543afe104d",
+    "registers.h": "2f4f2f96060426019874b24216d7cd0ba7b90121e5a5ca2cc6988d42f25e5a74",
+    "runtime_contract.json": "fd0b8c0f739fb5dca9163af3a2e2d4d2bb0e528f14c8bf200142121125ece2c8",
+    "smoke_expected.npy": "d0f4c0a1ee6998273946a028b64f084322c204e4ea147dd6b9005e5ad2a0fcb6",
+    "smoke_input.npy": "8791c4880ccaa9939d48811ca30e24c75cec46ddd51e1ae1c9a92bff10dec1ee",
+    "transport.py": "2e06f5bd3212bd9fb8bcb0480a053622ed520dd72317d57d0f23d341c3399899"
+  },
+  "files": {
+    "board_run.py": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\board_run.py",
+      "bytes": 9174,
+      "sha256": "3d26e1f2b0ccde6f86da552df52c9b9b836f7ab0b3464bee0806295aa6a460f9"
+    },
+    "evidence_io.py": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\evidence_io.py",
+      "bytes": 7228,
+      "sha256": "499f488ca8bdc143ffecca731a408da6f5e84cb8feaef479e4582d23bbebcebf"
+    },
+    "frozen_algorithm.json": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\frozen_algorithm.json",
+      "bytes": 1887,
+      "sha256": "4e1969b45af1640e2d4bf8d719ab8abc53eb409c5a3ce1f20bc8d40f437888de"
+    },
+    "input_source_manifest.json": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\input_source_manifest.json",
+      "bytes": 5603,
+      "sha256": "2eadcc9dae34d4f5af34b91e703616b7ef496ebf75b5cc52d79be8982efd7c1e"
+    },
+    "native_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\native_expected.npy",
+      "bytes": 6291584,
+      "sha256": "a804070ad4c1561e45388fd7a06187aa0cfb6a201c2a837dfa62fffa77f147a7"
+    },
+    "native_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\native_input.npy",
+      "bytes": 1048704,
+      "sha256": "870c71344b078d59a14c612907daa418a6c032c018011f95202b0d0c5cdb1bc9"
+    },
+    "physical_gates.json": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\physical_gates.json",
+      "bytes": 11407,
+      "sha256": "5ff7dd951611b05533088599a18ef168c1f673623f8c5608a2eacfa0f80c60c3"
+    },
+    "refinement_clock_contract.py": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\refinement_clock_contract.py",
+      "bytes": 1396,
+      "sha256": "412ba79980d8d5dcb0e56005829af37e201127b3ddd5aad99c88b2543afe104d"
+    },
+    "registers.h": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\registers.h",
+      "bytes": 2585,
+      "sha256": "2f4f2f96060426019874b24216d7cd0ba7b90121e5a5ca2cc6988d42f25e5a74"
+    },
+    "reset_integration_receipt.json": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\reset_integration_receipt.json",
+      "bytes": 502,
+      "sha256": "e2d9bdac9e82912619fd47dda5b53444fb2a56ce1d1be915b99ccfec9a919430"
+    },
+    "reset_reproduction.json": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\reset_reproduction.json",
+      "bytes": 1099,
+      "sha256": "440cdf0b63bca36f01495c854883f168054e385f9b65e7878a409d6146580425"
+    },
+    "runtime_contract.json": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\runtime_contract.json",
+      "bytes": 428,
+      "sha256": "fd0b8c0f739fb5dca9163af3a2e2d4d2bb0e528f14c8bf200142121125ece2c8"
+    },
+    "single_repair.bit": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\single_repair.bit",
+      "bytes": 4045681,
+      "sha256": "4ba1b128149e53fae000d803c03de071fe4d277a7a08d5ed1b9886a2a3cc26c0"
+    },
+    "single_repair.hwh": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\single_repair.hwh",
+      "bytes": 223177,
+      "sha256": "b66a0f913ecd9f282c575676c6fe5c7284427e265a11990200f8f5a1c6380274"
+    },
+    "smoke_expected.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\smoke_expected.npy",
+      "bytes": 24704,
+      "sha256": "d0f4c0a1ee6998273946a028b64f084322c204e4ea147dd6b9005e5ad2a0fcb6"
+    },
+    "smoke_input.npy": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\smoke_input.npy",
+      "bytes": 4224,
+      "sha256": "8791c4880ccaa9939d48811ca30e24c75cec46ddd51e1ae1c9a92bff10dec1ee"
+    },
+    "transport.py": {
+      "path": "D:\\PLD\\review_packages\\C7_SingleImage_Repair_Board_r2\\payload\\transport.py",
+      "bytes": 12784,
+      "sha256": "2e06f5bd3212bd9fb8bcb0480a053622ed520dd72317d57d0f23d341c3399899"
+    }
+  }
+}

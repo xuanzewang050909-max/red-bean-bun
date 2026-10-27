@@ -1,0 +1,273 @@
+{
+  "status": "OFFLINE_PHYSICAL_GATES_PASS",
+  "physical_builds": 1,
+  "tool": "Vivado 2017.4",
+  "device": "xc7z020clg400-1",
+  "clock_mhz": 50,
+  "period_ns": 20,
+  "clock_divisors": [
+    5,
+    4
+  ],
+  "wns_ns": 6.089,
+  "whs_ns": 0.027,
+  "wpws_ns": 8.75,
+  "routed_nets": 8008,
+  "routing_errors": 0,
+  "unconstrained_endpoints": 0,
+  "drc_errors": 0,
+  "drc_critical_warnings": 0,
+  "resources": {
+    "LUT": 4237.0,
+    "FF": 4823.0,
+    "BRAM36_equivalent": 13.0,
+    "DSP": 6.0
+  },
+  "drc_warnings": {
+    "DPIP-1": 5,
+    "DPOP-1": 5,
+    "DPOP-2": 5,
+    "REQP-1840": 8,
+    "RTSTAT-10": 1
+  },
+  "drc_interpretation": "Warning review is recorded; not zero-DRC. No rule disabled or severity changed.",
+  "constraints": "Only generated PS clock and stock reset IP/XPM scoped exceptions; no user false/multicycle paths.",
+  "dcp": {
+    "path": "D:\\PLD\\tmp\\three_repair_design_r1\\single_repair.runs\\impl_1\\single_repair_wrapper_routed.dcp",
+    "bytes": 4003179,
+    "sha256": "de5eeb5479099a100aa4745424a93249044d10baafef3798978ce33613cff1fc"
+  },
+  "hwh": {
+    "path": "D:\\PLD\\tmp\\three_repair_design_r1\\single_repair.srcs\\sources_1\\bd\\single_repair\\hw_handoff\\single_repair.hwh",
+    "bytes": 224227,
+    "sha256": "3813c7257f4a0d23894361f69caf5cdf034fb7395399d3497c1d9a188d448f31"
+  },
+  "reports": {
+    "check_timing.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\check_timing.rpt",
+      "bytes": 2926,
+      "sha256": "15bf6008f9d70d0c3621a9aa0c4484815fd7ea65c3d68497157cddb739aa9214"
+    },
+    "clocks.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\clocks.rpt",
+      "bytes": 1402,
+      "sha256": "fad80a3f64f44b55398ba558d057469b4adc2047b0d5e984ef3439d7b130e4ab"
+    },
+    "drc.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\drc.rpt",
+      "bytes": 22554,
+      "sha256": "0c0678417867b166da8445a70f99dc5a4e54a992f9410eeaa198109385187569"
+    },
+    "final_drc.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\final_drc.rpt",
+      "bytes": 22593,
+      "sha256": "1a0c687326985bca0bc520207a88f84f6b5ffed7f1ffa1053c17d92f9f497452"
+    },
+    "final_route_status.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\final_route_status.rpt",
+      "bytes": 651,
+      "sha256": "c9ef8281eb9b4cd9bd82bdfc314ccfda887bb063954babb49341b889892eb438"
+    },
+    "final_timing_summary.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\final_timing_summary.rpt",
+      "bytes": 54589,
+      "sha256": "18be1f32ce002b246b4a6fcf2f80f2c63349c4ea4a58279761805b2efe742fc9"
+    },
+    "route_status.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\route_status.rpt",
+      "bytes": 651,
+      "sha256": "c9ef8281eb9b4cd9bd82bdfc314ccfda887bb063954babb49341b889892eb438"
+    },
+    "timing_exceptions.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\timing_exceptions.rpt",
+      "bytes": 1592,
+      "sha256": "3f88b082cc6363c811f4694cd9d89e6f3cbc36c503bd2d164c4da221e87352fd"
+    },
+    "timing_summary.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\timing_summary.rpt",
+      "bytes": 54628,
+      "sha256": "a6fc69dae1e2225493ca22d3aadfdfd6353b4237f9a7a8144fe73f3df7e698d1"
+    },
+    "utilization_routed.rpt": {
+      "path": "D:\\PLD\\tmp\\three_repair_design_r1\\utilization_routed.rpt",
+      "bytes": 10138,
+      "sha256": "8c911c02a5b33ea0211af83d692b403c01d6224c0da9c9ff3e3b30441dd7db63"
+    }
+  },
+  "top": {
+    "path": "D:\\PLD\\tmp\\three_repair_design_r1\\single_repair.srcs\\sources_1\\bd\\single_repair\\synth\\single_repair.v",
+    "bytes": 81848,
+    "sha256": "f11efdb50b1815fcdd72655706ac3c7f3a63576728dacdffc50ef0e605191930"
+  },
+  "rtl": {
+    "get.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\get.v",
+      "bytes": 4997,
+      "sha256": "00e474cc76c213623f5270a0d58da174e02319843cf8a1854582656d9ee7f20f"
+    },
+    "loadrow.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\loadrow.v",
+      "bytes": 18320,
+      "sha256": "e9cfed9f82db6882417bba73008f99f259e146c1a40d2885ad554b6762daa005"
+    },
+    "valley_repair.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair.v",
+      "bytes": 150500,
+      "sha256": "23a987424826f8700da37303411f276c17894a5479db8ab80ad7adf1f590d058"
+    },
+    "valley_repair_cache.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_cache.v",
+      "bytes": 1540,
+      "sha256": "b97e896a5d1944e75df32b2d76837e3ffeec47825693903c2cb88900983b8c78"
+    },
+    "valley_repair_cache_ram.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_cache_ram.dat",
+      "bytes": 163842,
+      "sha256": "04f067e46ef9d983991e6021328e0538551a40ef66117bc8358d7fd1b5dcb675"
+    },
+    "valley_repair_COH_0.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_COH_0.v",
+      "bytes": 1313,
+      "sha256": "13f8994dce8fc56d15363eea2d09002777a2bc9883ef919acfdcf6d96a426ff6"
+    },
+    "valley_repair_COH_0_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_COH_0_rom.dat",
+      "bytes": 546,
+      "sha256": "174c1d7413b087cfbc0db1eb05c8edee73cb32b44d9a32f3f26f0aa10887442a"
+    },
+    "valley_repair_COH_1.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_COH_1.v",
+      "bytes": 1313,
+      "sha256": "9d2c8f05c65dd6b1dcb8d4b37335cf06c522917d529832fa047d9303008debba"
+    },
+    "valley_repair_COH_1_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_COH_1_rom.dat",
+      "bytes": 546,
+      "sha256": "8239a6d07f8fcd461ebc7b5e1e2d6370e329d19a8cae44e5e8a61450d2aecf61"
+    },
+    "valley_repair_control_s_axi.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_control_s_axi.v",
+      "bytes": 14079,
+      "sha256": "e429ff7d225c88cb703b1b8b14de60a48caa48b8236f2670414a5641a036f6c2"
+    },
+    "valley_repair_macg8j.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_macg8j.v",
+      "bytes": 1391,
+      "sha256": "9d40d2af2dee8b8443d0ab1ee8b4097946bc3654ebd5b315820a6d3627173476"
+    },
+    "valley_repair_machbi.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_machbi.v",
+      "bytes": 1395,
+      "sha256": "0d1b12b4ecdb0340f801d65fcf0602a353d5cd56c22e232d40fbaab453cee03a"
+    },
+    "valley_repair_muxfYi.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_muxfYi.v",
+      "bytes": 1867,
+      "sha256": "d22023e520276b82b2fbed4b489653bea810e6d52c16cd97dfb008bad846dc0f"
+    },
+    "valley_repair_NORbkb.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_NORbkb.v",
+      "bytes": 1316,
+      "sha256": "cab61b2025b2b5b09e26b91c4335cecc9790d9dbcf4887d0dc58d5d30a8f044b"
+    },
+    "valley_repair_NORbkb_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_NORbkb_rom.dat",
+      "bytes": 74,
+      "sha256": "6a2916021d35d07554c05d2040e9a32636ff08764438e0fad676e69e759b21ec"
+    },
+    "valley_repair_NORcud.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_NORcud.v",
+      "bytes": 1316,
+      "sha256": "7cbc99c3d0fb62c48e1b3d9dfcd9221773296cdfde1bc0aaf5e462dca676e6e5"
+    },
+    "valley_repair_NORcud_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_NORcud_rom.dat",
+      "bytes": 74,
+      "sha256": "0051c07e7ddbe580dd74aa02f018fdf397788823b5dcd30ddc22a9816e74e8ec"
+    },
+    "valley_repair_POS_0.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_POS_0.v",
+      "bytes": 1313,
+      "sha256": "a481c0a766b91121a4b8b20b5c5dcaaf2e246c1a3b26267f17e66648d7d57561"
+    },
+    "valley_repair_POS_0_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_POS_0_rom.dat",
+      "bytes": 314,
+      "sha256": "21b8a7c45e40f9aa1f53924d39698fe6765a27bbebc0dca2da276a27cbeb5aea"
+    },
+    "valley_repair_POS_1.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_POS_1.v",
+      "bytes": 1313,
+      "sha256": "43f34c2d24b06161967acbef3311dce04d009367196573c76b1c65e693d22add"
+    },
+    "valley_repair_POS_1_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_POS_1_rom.dat",
+      "bytes": 314,
+      "sha256": "2a9216db4e8c7ad2d70a2658aa990260cf80680e32cbd682c5dd5159a4e22b6a"
+    },
+    "valley_repair_ram_m_axi.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_ram_m_axi.v",
+      "bytes": 87291,
+      "sha256": "e7f82b8c07121c70ab2a3a855c81216b90f5b9c1340248af24c2fab985171ea3"
+    },
+    "valley_repair_UNIdEe.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_UNIdEe.v",
+      "bytes": 1314,
+      "sha256": "90cd4ebc170bf0533b816fd151b7ec4d5128f77f38fbb70789e1c147ab7d66e4"
+    },
+    "valley_repair_UNIdEe_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_UNIdEe_rom.dat",
+      "bytes": 26,
+      "sha256": "5d187bdbe359f4a8db35a8e3450753cddd4a592a0a3707a419320c61ad544f70"
+    },
+    "valley_repair_UNIeOg.v": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_UNIeOg.v",
+      "bytes": 1314,
+      "sha256": "10efc871f0beda8855bbefbdd1686e57e5e69691396338a58002ad7d25011613"
+    },
+    "valley_repair_UNIeOg_rom.dat": {
+      "path": "D:\\PLD\\tmp\\three_repair_ip_r1\\hdl\\verilog\\valley_repair_UNIeOg_rom.dat",
+      "bytes": 26,
+      "sha256": "34878b04d41e658705ffeaee06d2c0d7a3ce8e0c21a7630d16debd31ffb00449"
+    }
+  },
+  "reset_polarities": {
+    "C_FAMILY": "zynq",
+    "C_EXT_RST_WIDTH": "4",
+    "C_AUX_RST_WIDTH": "4",
+    "C_EXT_RESET_HIGH": "0",
+    "C_AUX_RESET_HIGH": "0",
+    "C_NUM_BUS_RST": "1",
+    "C_NUM_PERP_RST": "1",
+    "C_NUM_INTERCONNECT_ARESETN": "1",
+    "C_NUM_PERP_ARESETN": "1",
+    "Component_Name": "single_repair_reset_50m_0",
+    "USE_BOARD_FLOW": "false",
+    "RESET_BOARD_INTERFACE": "Custom",
+    "EDK_IPTYPE": "PERIPHERAL"
+  },
+  "reset_release": "GENERATED_AND_ROUTED_CELL_RELEASE_VERIFIED",
+  "routed_reset_checks": {
+    "new": {
+      "status": "ROUTED_RESET_EXPECTATION_VERIFIED",
+      "mode": "new",
+      "actual_routed_cell": {
+        "path": "D:\\PLD\\tmp\\three_repair_design_r1\\routed_reset.v",
+        "bytes": 23152,
+        "sha256": "a94c9d7d34366ab38e47affec53e1bc17fc4cb187bf80301c7627bad61e970e6"
+      },
+      "testbench": {
+        "path": "D:\\PLD\\tmp\\three_repair_routed_reset_new\\routed_reset_tb.sv",
+        "bytes": 735,
+        "sha256": "01906935d73e888aa19ed57474597135a932e948cad5a2cfc5796ff9ee17c52c"
+      },
+      "released_after_external_reset": true,
+      "tested_production_output": "peripheral_aresetn; optimized unused outputs not claimed",
+      "clock_ns": 20,
+      "cycles_limit": 2000,
+      "simulation": "FUNCTIONAL_ROUTED_CELL; no SDF, STA checked separately",
+      "board_operations": 0
+    }
+  },
+  "board_status": "BOARD_NOT_RUN"
+}
